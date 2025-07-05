@@ -1,0 +1,119 @@
+<Window x:Class="GodmistWPF.Dialogs.DungeonDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Dungeon Exploration" Height="900" Width="1400"
+        WindowStartupLocation="CenterScreen"
+        Background="{DynamicResource MaterialDesignPaper}"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}">
+    
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Header -->
+        <Border Grid.Row="0" Background="#2C3E50" Padding="10">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="DungeonName" Text="Dungeon: Catacombs" Foreground="White" FontSize="20" FontWeight="Bold" VerticalAlignment="Center"/>
+                <TextBlock x:Name="FloorNumber" Text="Floor: 1" Foreground="LightBlue" FontSize="16" Margin="30,0,0,0" VerticalAlignment="Center"/>
+                <TextBlock x:Name="RoomNumber" Text="Room: 1" Foreground="LightBlue" FontSize="16" Margin="30,0,0,0" VerticalAlignment="Center"/>
+                <TextBlock x:Name="DungeonType" Text="Type: Forest" Foreground="LightGreen" FontSize="16" Margin="30,0,0,0" VerticalAlignment="Center"/>
+                <TextBlock x:Name="Difficulty" Text="Difficulty: Normal" Foreground="Yellow" FontSize="16" Margin="30,0,0,0" VerticalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+        
+        <!-- Main Content -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="350"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="350"/>
+            </Grid.ColumnDefinitions>
+            
+            <!-- Dungeon Selection (Hidden by default) -->
+            <Border Grid.Column="0" x:Name="DungeonSelectionPanel" Background="#34495E" Margin="5" Padding="10" Visibility="Collapsed">
+                <StackPanel>
+                    <TextBlock Text="Select Dungeon" Foreground="White" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                    <ListBox x:Name="DungeonsListBox" Height="200" Background="#2C3E50" Foreground="White"/>
+                    <TextBlock x:Name="DungeonInfoText" Text="Select a dungeon to see information" Foreground="LightBlue" Margin="0,10,0,0" TextWrapping="Wrap"/>
+                </StackPanel>
+            </Border>
+            
+            <!-- Left Panel: Player & Actions -->
+            <Border Grid.Column="0" Background="#34495E" Margin="5" Padding="10">
+                <StackPanel>
+                    <TextBlock Text="Player" Foreground="White" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                    <TextBlock x:Name="PlayerName" Text="Name" Foreground="White" FontWeight="Bold"/>
+                    <TextBlock x:Name="PlayerLevel" Text="Level: 1" Foreground="LightBlue"/>
+                    <TextBlock x:Name="PlayerHealth" Text="HP: 100/100" Foreground="LightGreen"/>
+                    <TextBlock x:Name="PlayerResource" Text="MP: 50/50" Foreground="LightCyan"/>
+                    <TextBlock x:Name="PlayerGold" Text="Gold: 100" Foreground="Yellow"/>
+                    <TextBlock x:Name="PlayerAttack" Text="Attack: 10-15" Foreground="Orange"/>
+                    <TextBlock x:Name="PlayerDefense" Text="Defense: 5/5" Foreground="LightGray"/>
+                    <TextBlock x:Name="PlayerSpeed" Text="Speed: 10" Foreground="Yellow"/>
+                    <Separator Margin="0,10,0,10"/>
+                    <TextBlock Text="Actions" Foreground="White" FontSize="14" FontWeight="Bold" Margin="0,0,0,5"/>
+                    <Button x:Name="MoveForwardButton" Content="Move Forward" Background="#27AE60" Foreground="White" Padding="10,5" Margin="0,0,0,5" Click="MoveForwardButton_Click"/>
+                    <Button x:Name="MoveBackButton" Content="Move Back" Background="#2980B9" Foreground="White" Padding="10,5" Margin="0,0,0,5" Click="MoveBackButton_Click"/>
+                    <Button x:Name="RestBonfireButton" Content="Rest at Bonfire" Background="#E67E22" Foreground="White" Padding="10,5" Margin="0,0,0,5" Click="RestBonfireButton_Click"/>
+                    <Button x:Name="CollectPlantButton" Content="Collect Plant" Background="#16A085" Foreground="White" Padding="10,5" Margin="0,0,0,5" Click="CollectPlantButton_Click"/>
+                    <Button x:Name="OpenStashButton" Content="Open Stash" Background="#8E44AD" Foreground="White" Padding="10,5" Margin="0,0,0,5" Click="OpenStashButton_Click"/>
+                    <Button x:Name="DisarmTrapButton" Content="Disarm Trap" Background="#C0392B" Foreground="White" Padding="10,5" Margin="0,0,0,5" Click="DisarmTrapButton_Click"/>
+                    <Button x:Name="DescendButton" Content="Descend Floor" Background="#34495E" Foreground="White" Padding="10,5" Margin="0,0,0,5" Click="DescendButton_Click"/>
+                    <Button x:Name="AscendButton" Content="Ascend Floor" Background="#34495E" Foreground="White" Padding="10,5" Margin="0,0,0,5" Click="AscendButton_Click"/>
+                    <Button x:Name="ExitDungeonButton" Content="Exit Dungeon" Background="#E74C3C" Foreground="White" Padding="10,5" Margin="0,0,0,5" Click="ExitDungeonButton_Click"/>
+                    <Separator Margin="0,10,0,10"/>
+                    <Button x:Name="OpenInventoryButton" Content="Inventory" Background="#2C3E50" Foreground="White" Padding="10,5" Margin="0,0,0,5" Click="OpenInventoryButton_Click"/>
+                    <Button x:Name="OpenQuestLogButton" Content="Quest Log" Background="#2C3E50" Foreground="White" Padding="10,5" Margin="0,0,0,5" Click="OpenQuestLogButton_Click"/>
+                </StackPanel>
+            </Border>
+            
+            <!-- Center Panel: Map & Log -->
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="300"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <!-- Minimap / Map -->
+                <Border Grid.Row="0" Background="#22313F" Margin="5" Padding="10">
+                    <StackPanel>
+                        <TextBlock Text="Dungeon Map" Foreground="White" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                        <ScrollViewer x:Name="MapScroll" VerticalScrollBarVisibility="Auto">
+                            <TextBlock x:Name="MapDisplay" Foreground="White" FontFamily="Consolas" TextWrapping="Wrap"/>
+                        </ScrollViewer>
+                    </StackPanel>
+                </Border>
+                <!-- Dungeon Log -->
+                <Border Grid.Row="1" Background="#22313F" Margin="5" Padding="10">
+                    <StackPanel>
+                        <TextBlock Text="Dungeon Log" Foreground="White" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                        <ScrollViewer x:Name="DungeonLogScroll" Height="300" VerticalScrollBarVisibility="Auto">
+                            <TextBlock x:Name="DungeonLog" Foreground="White" TextWrapping="Wrap" FontFamily="Consolas"/>
+                        </ScrollViewer>
+                    </StackPanel>
+                </Border>
+            </Grid>
+            
+            <!-- Right Panel: Room Info & Events -->
+            <Border Grid.Column="2" Background="#34495E" Margin="5" Padding="10">
+                <StackPanel>
+                    <TextBlock Text="Current Room" Foreground="White" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                    <TextBlock x:Name="RoomType" Text="Type: Bonfire" Foreground="LightBlue"/>
+                    <TextBlock x:Name="RoomDescription" Text="A safe resting place" Foreground="LightGreen" TextWrapping="Wrap"/>
+                    <TextBlock x:Name="RoomEvents" Text="Events: None" Foreground="Yellow"/>
+                    <Separator Margin="0,10,0,10"/>
+                    <TextBlock Text="Upcoming Events" Foreground="White" FontSize="14" FontWeight="Bold" Margin="0,0,0,5"/>
+                    <ListBox x:Name="UpcomingEventsList" Height="200" Background="#2C3E50" Foreground="White"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+        
+        <!-- Status Bar -->
+        <Border Grid.Row="2" Background="#2C3E50" Padding="10">
+            <TextBlock x:Name="StatusText" Text="Exploring the dungeon..." Foreground="White" FontSize="12"/>
+        </Border>
+    </Grid>
+</Window> 

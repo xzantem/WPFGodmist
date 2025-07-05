@@ -1,0 +1,3932 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true"></xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ChooseDifficulty" xml:space="preserve">
+    <value>Choose difficulty</value>
+        <comment />
+  </data>
+  <data name="ChooseLanguage" xml:space="preserve">
+    <value>Choose language</value>
+        <comment />
+  </data>
+  <data name="DeleteSaveFile" xml:space="preserve">
+    <value>Delete save file</value>
+        <comment />
+  </data>
+  <data name="Easy" xml:space="preserve">
+    <value>Easy</value>
+        <comment />
+  </data>
+  <data name="English (Language)" xml:space="preserve">
+    <value>English</value>
+        <comment />
+  </data>
+  <data name="ExitGame" xml:space="preserve">
+    <value>Exit game</value>
+        <comment />
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>Hard</value>
+  </data>
+  <data name="LoadGame" xml:space="preserve">
+    <value>Load game</value>
+        <comment />
+  </data>
+  <data name="NewGame" xml:space="preserve">
+    <value>New game</value>
+        <comment />
+  </data>
+  <data name="Nightmare" xml:space="preserve">
+    <value>Nightmare</value>
+        <comment />
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>Normal</value>
+        <comment />
+  </data>
+  <data name="Polish (Language)" xml:space="preserve">
+    <value>Polish</value>
+        <comment />
+  </data>
+  <data name="Opening_1" xml:space="preserve">
+    <value>You are on your way to the town of Arungard. Supposedly for twenty years no inhabitant of this city has experienced any daylight.</value>
+        <comment />
+  </data>
+  <data name="Opening_2" xml:space="preserve">
+    <value>You've heard legends of the so-called Ghorn who uttered a spell and darkness enveloped the town.</value>
+        <comment />
+  </data>
+  <data name="Opening_3" xml:space="preserve">
+    <value>This is all that you know though.</value>
+        <comment />
+  </data>
+  <data name="Opening_4" xml:space="preserve">
+    <value>You reach the town. Its aged elfish walls and towers immediately had you impressed.</value>
+        <comment />
+  </data>
+  <data name="Opening_5" xml:space="preserve">
+    <value>You walk up to the guard near the gate.</value>
+        <comment />
+  </data>
+  <data name="TownGuard_Name" xml:space="preserve">
+    <value>Arungard Town Guard</value>
+        <comment />
+  </data>
+  <data name="TownGuard_Line" xml:space="preserve">
+    <value>Who are you, and what is your business in this town?</value>
+        <comment />
+  </data>
+  <data name="Iam" xml:space="preserve">
+    <value>I am a</value>
+        <comment />
+  </data>
+  <data name="WarriorLocative" xml:space="preserve">
+    <value>warrior</value>
+        <comment />
+  </data>
+  <data name="ScoutLocative" xml:space="preserve">
+    <value>scout</value>
+        <comment />
+  </data>
+  <data name="SorcererLocative" xml:space="preserve">
+    <value>sorcerer</value>
+        <comment />
+  </data>
+  <data name="PaladinLocative" xml:space="preserve">
+    <value>paladin</value>
+        <comment />
+  </data>
+  <data name="MyNameIs" xml:space="preserve">
+    <value>My name is</value>
+        <comment />
+  </data>
+  <data name="WarriorNominativeC" xml:space="preserve">
+    <value>Warrior</value>
+        <comment />
+  </data>
+  <data name="ScoutNominativeC" xml:space="preserve">
+    <value>Scout</value>
+        <comment />
+  </data>
+  <data name="SorcererNominativeC" xml:space="preserve">
+    <value>Sorcerer</value>
+        <comment />
+  </data>
+  <data name="PaladinNominativeC" xml:space="preserve">
+    <value>Paladin</value>
+        <comment />
+  </data>
+  <data name="StartExpedition" xml:space="preserve">
+    <value>Start expedition</value>
+        <comment />
+  </data>
+  <data name="Blacksmith" xml:space="preserve">
+    <value>Blacksmith</value>
+        <comment />
+  </data>
+  <data name="Alchemist" xml:space="preserve">
+    <value>Alchemist</value>
+        <comment />
+  </data>
+  <data name="Enchanter" xml:space="preserve">
+    <value>Enchanter</value>
+        <comment />
+  </data>
+  <data name="QuestLog" xml:space="preserve">
+    <value>Quest log</value>
+        <comment />
+  </data>
+  <data name="OpenInventory" xml:space="preserve">
+    <value>Open inventory</value>
+        <comment />
+  </data>
+  <data name="SaveGame" xml:space="preserve">
+    <value>Save game</value>
+        <comment />
+  </data>
+  <data name="Nameless" xml:space="preserve">
+    <value>Nameless</value>
+  </data>
+  <data name="Catacombs" xml:space="preserve">
+    <value>Catacombs</value>
+  </data>
+  <data name="Forest" xml:space="preserve">
+    <value>Forest</value>
+  </data>
+  <data name="ElvishRuins" xml:space="preserve">
+    <value>Elvish Ruins</value>
+  </data>
+  <data name="Cove" xml:space="preserve">
+    <value>Cove</value>
+  </data>
+  <data name="Desert" xml:space="preserve">
+    <value>Desert</value>
+  </data>
+  <data name="Temple" xml:space="preserve">
+    <value>Temple</value>
+  </data>
+  <data name="Mountains" xml:space="preserve">
+    <value>Mountains</value>
+  </data>
+  <data name="Swamp" xml:space="preserve">
+    <value>Swamp</value>
+  </data>
+  <data name="SelectDestination" xml:space="preserve">
+    <value>Select expedition destination:</value>
+  </data>
+  <data name="GoForward" xml:space="preserve">
+    <value>Go forward</value>
+  </data>
+  <data name="GoBack" xml:space="preserve">
+    <value>Go back</value>
+  </data>
+  <data name="ShowCharacter" xml:space="preserve">
+    <value>Show character</value>
+  </data>
+  <data name="GoUp" xml:space="preserve">
+    <value>Go up</value>
+  </data>
+  <data name="GoDown" xml:space="preserve">
+    <value>Go down</value>
+  </data>
+  <data name="RestAtBonfire" xml:space="preserve">
+    <value>Rest at bonfire</value>
+  </data>
+  <data name="CollectPlant" xml:space="preserve">
+    <value>Collect plant</value>
+  </data>
+  <data name="OpenStash" xml:space="preserve">
+    <value>Loot stash</value>
+  </data>
+  <data name="ExitDungeon" xml:space="preserve">
+    <value>Exit dungeon</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="Floor" xml:space="preserve">
+    <value>Floor</value>
+  </data>
+  <data name="Map" xml:space="preserve">
+    <value>Map</value>
+  </data>
+  <data name="DisarmTrap" xml:space="preserve">
+    <value>Disarm trap</value>
+  </data>
+  <data name="LocationScouted" xml:space="preserve">
+    <value>You were able to find a map of the current floor!</value>
+  </data>
+  <data name="NotEnoughWeight" xml:space="preserve">
+    <value>Pack is too heavy to pick up</value>
+  </data>
+  <data name="NotEnoughItem" xml:space="preserve">
+    <value>You don't have enough of</value>
+  </data>
+  <data name="ItemNotFound" xml:space="preserve">
+    <value>Item not in inventory</value>
+  </data>
+  <data name="Inventory" xml:space="preserve">
+    <value>Inventory</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="ExitToMenu" xml:space="preserve">
+    <value>Exit to menu</value>
+  </data>
+  <data name="CurrentGold" xml:space="preserve">
+    <value>Current gold</value>
+  </data>
+  <data name="YouGain" xml:space="preserve">
+    <value>You gain</value>
+  </data>
+  <data name="ExperienceGenitive" xml:space="preserve">
+    <value>experience</value>
+  </data>
+  <data name="LevelUp" xml:space="preserve">
+    <value>Level up! You are now level</value>
+  </data>
+  <data name="CurrentLevel" xml:space="preserve">
+    <value>Current level</value>
+  </data>
+  <data name="InspectItem" xml:space="preserve">
+    <value>Inspect item</value>
+  </data>
+  <data name="DeleteItem" xml:space="preserve">
+    <value>Remove item</value>
+  </data>
+  <data name="DeleteJunk" xml:space="preserve">
+    <value>Remove equipment for other classes</value>
+  </data>
+  <data name="SortInventory" xml:space="preserve">
+    <value>Sort inventory</value>
+  </data>
+  <data name="Y" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="DeleteJunkConfirmation" xml:space="preserve">
+    <value>Are you sure you want to remove all equipment for other classes?</value>
+  </data>
+  <data name="ChooseSortingMethod" xml:space="preserve">
+    <value>Choose sorting method</value>
+  </data>
+  <data name="ChooseItem" xml:space="preserve">
+    <value>Choose item</value>
+  </data>
+  <data name="ToRemove" xml:space="preserve">
+    <value>to remove</value>
+  </data>
+  <data name="ToInspect" xml:space="preserve">
+    <value>to inspect</value>
+  </data>
+  <data name="UseItem" xml:space="preserve">
+    <value>Use item</value>
+  </data>
+  <data name="ToUse" xml:space="preserve">
+    <value>to use</value>
+  </data>
+  <data name="HowManyToDelete" xml:space="preserve">
+    <value>How many pieces do you want to delete?</value>
+  </data>
+  <data name="ChoseTooMany" xml:space="preserve">
+    <value>The amount entered is too high!</value>
+  </data>
+  <data name="IntBelowZero" xml:space="preserve">
+    <value>The amount cannot be negative!</value>
+  </data>
+  <data name="DeleteItemConfirmation" xml:space="preserve">
+    <value>Are you sure you want to remove</value>
+  </data>
+  <data name="SelectDungeonLevel" xml:space="preserve">
+    <value>Select dungeon level</value>
+  </data>
+  <data name="InvalidLevel" xml:space="preserve">
+    <value>The chosen level is not valid</value>
+  </data>
+  <data name="PressAnyKey" xml:space="preserve">
+    <value>Press any key to continue</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="LootBag" xml:space="preserve">
+    <value>Loot Bag</value>
+  </data>
+  <data name="Uncommon" xml:space="preserve">
+    <value>Uncommon</value>
+  </data>
+  <data name="Weapon" xml:space="preserve">
+    <value>Weapon</value>
+  </data>
+  <data name="Weight" xml:space="preserve">
+    <value>Weight</value>
+  </data>
+  <data name="Smithing" xml:space="preserve">
+    <value>Smithing</value>
+  </data>
+  <data name="Armor" xml:space="preserve">
+    <value>Armor</value>
+  </data>
+  <data name="Ancient" xml:space="preserve">
+    <value>Ancient</value>
+  </data>
+  <data name="Common" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="Alchemy" xml:space="preserve">
+    <value>Alchemy</value>
+  </data>
+  <data name="Damaged" xml:space="preserve">
+    <value>Damaged</value>
+  </data>
+  <data name="Destroyed" xml:space="preserve">
+    <value>Destroyed</value>
+  </data>
+  <data name="Junk" xml:space="preserve">
+    <value>Junk</value>
+  </data>
+  <data name="Legendary" xml:space="preserve">
+    <value>Legendary</value>
+  </data>
+  <data name="Mythical" xml:space="preserve">
+    <value>Mythical</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="WeaponGaldurite" xml:space="preserve">
+    <value>Weapon Galdurite</value>
+  </data>
+  <data name="Runeforging" xml:space="preserve">
+    <value>Runeforging</value>
+  </data>
+  <data name="Rarity" xml:space="preserve">
+    <value>Rarity</value>
+  </data>
+  <data name="Rare" xml:space="preserve">
+    <value>Rare</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="Potion" xml:space="preserve">
+    <value>Potion</value>
+  </data>
+  <data name="Godly" xml:space="preserve">
+    <value>Godly</value>
+  </data>
+  <data name="ArmorGaldurite" xml:space="preserve">
+    <value>Armor Galdurite</value>
+  </data>
+  <data name="UnknownItem" xml:space="preserve">
+    <value>Unknown item</value>
+  </data>
+  <data name="PlantCollected" xml:space="preserve">
+    <value>Material collected</value>
+  </data>
+  <data name="TrapDisarmed" xml:space="preserve">
+    <value>Trap disarmed</value>
+  </data>
+  <data name="AnnoditeOre" xml:space="preserve">
+    <value>Annodite ore</value>
+  </data>
+  <data name="AdamantiteOre" xml:space="preserve">
+    <value>Adamantite ore</value>
+  </data>
+  <data name="CifilmOre" xml:space="preserve">
+    <value>Cifilm ore</value>
+  </data>
+  <data name="DesertGem" xml:space="preserve">
+    <value>Desert gem</value>
+  </data>
+  <data name="IronOre" xml:space="preserve">
+    <value>Iron ore</value>
+  </data>
+  <data name="SilverOre" xml:space="preserve">
+    <value>Silver ore</value>
+  </data>
+  <data name="NefoliteOre" xml:space="preserve">
+    <value>Nefolite ore</value>
+  </data>
+  <data name="Moondust" xml:space="preserve">
+    <value>Moon dust</value>
+  </data>
+  <data name="OrichalcumOre" xml:space="preserve">
+    <value>Orichalcum ore</value>
+  </data>
+  <data name="Sphalerite" xml:space="preserve">
+    <value>Sphalerite</value>
+  </data>
+  <data name="Chromium" xml:space="preserve">
+    <value>Chromium</value>
+  </data>
+  <data name="CopperOre" xml:space="preserve">
+    <value>Copper ore</value>
+  </data>
+  <data name="NickelOre" xml:space="preserve">
+    <value>Nickel ore</value>
+  </data>
+  <data name="TinOre" xml:space="preserve">
+    <value>Tin ore</value>
+  </data>
+  <data name="GoldOre" xml:space="preserve">
+    <value>Gold ore</value>
+  </data>
+  <data name="PieceOfZinc" xml:space="preserve">
+    <value>Piece of zinc</value>
+  </data>
+  <data name="CobaltOre" xml:space="preserve">
+    <value>Cobalt ore</value>
+  </data>
+  <data name="MeteoriteChunk" xml:space="preserve">
+    <value>Meteorite chunk</value>
+  </data>
+  <data name="Rutile" xml:space="preserve">
+    <value>Rutile</value>
+  </data>
+  <data name="Coal" xml:space="preserve">
+    <value>Coal</value>
+  </data>
+  <data name="TrapDisarmedFail" xml:space="preserve">
+    <value>Trap disarming failed</value>
+  </data>
+  <data name="TrapActivated" xml:space="preserve">
+    <value>You stepped on a trap</value>
+  </data>
+  <data name="TryDisarmTrap" xml:space="preserve">
+    <value>Try to disarm it or take damage</value>
+  </data>
+  <data name="YouTake" xml:space="preserve">
+    <value>You take</value>
+  </data>
+  <data name="DamageGenitive" xml:space="preserve">
+    <value>damage</value>
+  </data>
+  <data name="Takes" xml:space="preserve">
+    <value>takes</value>
+  </data>
+  <data name="Heals" xml:space="preserve">
+    <value>heals</value>
+  </data>
+  <data name="HealthGenitive" xml:space="preserve">
+    <value>health</value>
+  </data>
+  <data name="HealthC" xml:space="preserve">
+    <value>Health</value>
+  </data>
+  <data name="UseSkill" xml:space="preserve">
+    <value>Use skill</value>
+  </data>
+  <data name="UsePotion" xml:space="preserve">
+    <value>Use potion</value>
+  </data>
+  <data name="Escape" xml:space="preserve">
+    <value>Escape</value>
+  </data>
+  <data name="ShowStats" xml:space="preserve">
+    <value>Show stats</value>
+  </data>
+  <data name="BattleStart" xml:space="preserve">
+    <value>Battle! You meet</value>
+  </data>
+  <data name="Uses" xml:space="preserve">
+    <value>uses</value>
+  </data>
+  <data name="On" xml:space="preserve">
+    <value>on</value>
+  </data>
+  <data name="StrikesCritically" xml:space="preserve">
+    <value>strikes critically</value>
+  </data>
+  <data name="Attack" xml:space="preserve">
+    <value>Attack</value>
+  </data>
+  <data name="Crit" xml:space="preserve">
+    <value>Critical</value>
+  </data>
+  <data name="Accuracy" xml:space="preserve">
+    <value>Accuracy</value>
+  </data>
+  <data name="Speed" xml:space="preserve">
+    <value>Speed</value>
+  </data>
+  <data name="Defense" xml:space="preserve">
+    <value>Defense</value>
+  </data>
+  <data name="Dodge" xml:space="preserve">
+    <value>Dodge</value>
+  </data>
+  <data name="Resistances" xml:space="preserve">
+    <value>Resistances</value>
+  </data>
+  <data name="Debuff" xml:space="preserve">
+    <value>Debuff</value>
+  </data>
+  <data name="Stun" xml:space="preserve">
+    <value>Stun</value>
+  </data>
+  <data name="Freeze" xml:space="preserve">
+    <value>Freeze</value>
+  </data>
+  <data name="Bleed" xml:space="preserve">
+    <value>Bleed</value>
+  </data>
+  <data name="Poison" xml:space="preserve">
+    <value>Poison</value>
+  </data>
+  <data name="Burn" xml:space="preserve">
+    <value>Burn</value>
+  </data>
+  <data name="Frostbite" xml:space="preserve">
+    <value>Frostbite</value>
+  </data>
+  <data name="Paralysis" xml:space="preserve">
+    <value>Paralysis</value>
+  </data>
+  <data name="Provocation" xml:space="preserve">
+    <value>Provocation</value>
+  </data>
+  <data name="Moving" xml:space="preserve">
+    <value>Moving now</value>
+  </data>
+  <data name="TurnOrder" xml:space="preserve">
+    <value>Turn Order</value>
+  </data>
+  <data name="Victory" xml:space="preserve">
+    <value>Victory</value>
+  </data>
+  <data name="Defeat" xml:space="preserve">
+    <value>Defeat</value>
+  </data>
+  <data name="GameOver" xml:space="preserve">
+    <value>Game over</value>
+  </data>
+  <data name="Dies" xml:space="preserve">
+    <value>drops on the ground, dead</value>
+  </data>
+  <data name="Exile" xml:space="preserve">
+    <value>Exile</value>
+  </data>
+  <data name="Useless" xml:space="preserve">
+    <value>Useless</value>
+  </data>
+  <data name="Shameful" xml:space="preserve">
+    <value>Shameful</value>
+  </data>
+  <data name="Uncertain" xml:space="preserve">
+    <value>Uncertain</value>
+  </data>
+  <data name="Recruit" xml:space="preserve">
+    <value>Recruit</value>
+  </data>
+  <data name="Mercenary" xml:space="preserve">
+    <value>Mercenary</value>
+  </data>
+  <data name="Fighter" xml:space="preserve">
+    <value>Fighter</value>
+  </data>
+  <data name="Knight" xml:space="preserve">
+    <value>Knight</value>
+  </data>
+  <data name="Leader" xml:space="preserve">
+    <value>Leader</value>
+  </data>
+  <data name="CurrentHonor" xml:space="preserve">
+    <value>Current honor</value>
+  </data>
+  <data name="TryEscape" xml:space="preserve">
+    <value>Trying to escape</value>
+  </data>
+  <data name="EscapeFail" xml:space="preserve">
+    <value>Escape failed</value>
+  </data>
+  <data name="EscapeSuccess" xml:space="preserve">
+    <value>Escape successful</value>
+  </data>
+  <data name="ShowStatus" xml:space="preserve">
+    <value>Show status effects</value>
+  </data>
+  <data name="Turns" xml:space="preserve">
+    <value>turns</value>
+  </data>
+  <data name="Sleep" xml:space="preserve">
+    <value>Sleep</value>
+  </data>
+  <data name="SkeletonSwordsman" xml:space="preserve">
+    <value>Skeleton Swordsman</value>
+  </data>
+  <data name="NoStatusEffects" xml:space="preserve">
+    <value>No status effects</value>
+  </data>
+  <data name="Misses" xml:space="preserve">
+    <value>misses</value>
+  </data>
+  <data name="Bleeds" xml:space="preserve">
+    <value>starts bleeding</value>
+  </data>
+  <data name="And1" xml:space="preserve">
+    <value>and</value>
+  </data>
+  <data name="ForTheNext" xml:space="preserve">
+    <value>for the next</value>
+  </data>
+  <data name="Longsword" xml:space="preserve">
+    <value>Longsword</value>
+  </data>
+  <data name="SwordAndDagger" xml:space="preserve">
+    <value>Sword &amp; Dagger</value>
+  </data>
+  <data name="Wand" xml:space="preserve">
+    <value>Wand</value>
+  </data>
+  <data name="Hammer" xml:space="preserve">
+    <value>Hammer</value>
+  </data>
+  <data name="Hauberk" xml:space="preserve">
+    <value>Hauberk</value>
+  </data>
+  <data name="Tunic" xml:space="preserve">
+    <value>Tunic</value>
+  </data>
+  <data name="Robe" xml:space="preserve">
+    <value>Robe</value>
+  </data>
+  <data name="Cuirass" xml:space="preserve">
+    <value>Cuirass</value>
+  </data>
+  <data name="NameTooLong" xml:space="preserve">
+    <value>The name is too long</value>
+  </data>
+  <data name="ChooseNameForSave" xml:space="preserve">
+    <value>Choose a name for the save file</value>
+  </data>
+  <data name="Burns" xml:space="preserve">
+    <value>burns</value>
+  </data>
+  <data name="IsPoisoned" xml:space="preserve">
+    <value>is poisoned</value>
+  </data>
+  <data name="Return" xml:space="preserve">
+    <value>Return</value>
+  </data>
+  <data name="NoSavesFound" xml:space="preserve">
+    <value>No saves found</value>
+  </data>
+  <data name="RestedAtBonfire" xml:space="preserve">
+    <value>You rest at the bonfire until it goes out</value>
+  </data>
+  <data name="Ambushed" xml:space="preserve">
+    <value>Ambush! You were interrupted by enemy ambush while resting</value>
+  </data>
+  <data name="Ambush" xml:space="preserve">
+    <value>Ambush</value>
+  </data>
+  <data name="Regenerates" xml:space="preserve">
+    <value>regenerates</value>
+  </data>
+  <data name="FuryGenitive" xml:space="preserve">
+    <value>fury</value>
+  </data>
+  <data name="FuryShort" xml:space="preserve">
+    <value>FP</value>
+  </data>
+  <data name="ManaShort" xml:space="preserve">
+    <value>MP</value>
+  </data>
+  <data name="MomentumShort" xml:space="preserve">
+    <value>SP</value>
+  </data>
+  <data name="HealthShort" xml:space="preserve">
+    <value>HP</value>
+  </data>
+  <data name="ManaGenitive" xml:space="preserve">
+    <value>mana</value>
+  </data>
+  <data name="MomentumGenitive" xml:space="preserve">
+    <value>momentum</value>
+  </data>
+  <data name="ICanTreat" xml:space="preserve">
+    <value>I can treat these wounds for</value>
+  </data>
+  <data name="IDontHaveEnough" xml:space="preserve">
+    <value>Unfortunately, I don't have the crowns</value>
+  </data>
+  <data name="WantTreatment" xml:space="preserve">
+    <value>Are you sure you want me to treat you?</value>
+  </data>
+  <data name="WantTreatmentThird" xml:space="preserve">
+    <value>Are you sure you want to get treated?</value>
+  </data>
+  <data name="CrownsGenitive" xml:space="preserve">
+    <value>crowns</value>
+  </data>
+  <data name="AlchemistGreeting1" xml:space="preserve">
+    <value>Oh</value>
+  </data>
+  <data name="AlchemistGreeting2" xml:space="preserve">
+    <value>Would you like to sample my strongest potions?</value>
+  </data>
+  <data name="ICanGiveYou" xml:space="preserve">
+    <value>For this, I can give you</value>
+  </data>
+  <data name="WantSellThird" xml:space="preserve">
+    <value>Are you sure you want to sell this?</value>
+  </data>
+  <data name="NoSorry" xml:space="preserve">
+    <value>No, sorry</value>
+  </data>
+  <data name="Sold" xml:space="preserve">
+    <value>Sold</value>
+  </data>
+  <data name="Bought" xml:space="preserve">
+    <value>Bought</value>
+  </data>
+  <data name="HowManyToBuy" xml:space="preserve">
+    <value>How many pieces do you want to buy?</value>
+  </data>
+  <data name="HowManyToSell" xml:space="preserve">
+    <value>How many pieces do you want to sell?</value>
+  </data>
+  <data name="NotEnoughGold" xml:space="preserve">
+    <value>You don't have enough gold</value>
+  </data>
+  <data name="CureWounds" xml:space="preserve">
+    <value>Cure wounds</value>
+  </data>
+  <data name="OpenShop" xml:space="preserve">
+    <value>Open shop</value>
+  </data>
+  <data name="CreateAlchemy" xml:space="preserve">
+    <value>Create alchemical ingredient</value>
+  </data>
+  <data name="CreatePotion" xml:space="preserve">
+    <value>Create potion</value>
+  </data>
+  <data name="RefillPotion" xml:space="preserve">
+    <value>Refill potion</value>
+  </data>
+  <data name="BuyItem" xml:space="preserve">
+    <value>Buy item</value>
+  </data>
+  <data name="SellItem" xml:space="preserve">
+    <value>Sell item</value>
+  </data>
+  <data name="WantBuyThird" xml:space="preserve">
+    <value>Are you sure you want to buy this?</value>
+  </data>
+  <data name="InventoryEmpty" xml:space="preserve">
+    <value>Your inventory is empty</value>
+  </data>
+  <data name="LoyaltyLevel" xml:space="preserve">
+    <value>Loyalty level</value>
+  </data>
+  <data name="CreateSmithing" xml:space="preserve">
+    <value>Create smithing material</value>
+  </data>
+  <data name="CreateWeapon" xml:space="preserve">
+    <value>Create weapon</value>
+  </data>
+  <data name="CreateArmor" xml:space="preserve">
+    <value>Create armor</value>
+  </data>
+  <data name="UpgradeWeapon" xml:space="preserve">
+    <value>Upgrade weapon</value>
+  </data>
+  <data name="UpgradeArmor" xml:space="preserve">
+    <value>Upgrade armor</value>
+  </data>
+  <data name="ReforgeWeapon" xml:space="preserve">
+    <value>Reforge weapon</value>
+  </data>
+  <data name="ReforgeArmor" xml:space="preserve">
+    <value>Reforge armor</value>
+  </data>
+  <data name="BlacksmithGreeting1" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="BlacksmithGreeting2" xml:space="preserve">
+    <value>What do you need?</value>
+  </data>
+  <data name="EnchanterGreeting" xml:space="preserve">
+    <value>Why does thou cometh</value>
+  </data>
+  <data name="CreateEnchanting" xml:space="preserve">
+    <value>Create galdurite material</value>
+  </data>
+  <data name="CreateGaldurite" xml:space="preserve">
+    <value>Create galdurite</value>
+  </data>
+  <data name="RevealGaldurite" xml:space="preserve">
+    <value>Reveal galdurite</value>
+  </data>
+  <data name="ApplyWeaponGaldurite" xml:space="preserve">
+    <value>Apply galdurite onto weapon</value>
+  </data>
+  <data name="ApplyArmorGaldurite" xml:space="preserve">
+    <value>Apply galdurite onto armor</value>
+  </data>
+  <data name="RemoveWeaponGaldurite" xml:space="preserve">
+    <value>Remove galdurite from weapon</value>
+  </data>
+  <data name="RemoveArmorGaldurite" xml:space="preserve">
+    <value>Remove galdurite from armor</value>
+  </data>
+  <data name="ChooseUpgradeChance" xml:space="preserve">
+    <value>Choose upgrade chance (between 1% and 100%)</value>
+  </data>
+  <data name="ChooseModifier" xml:space="preserve">
+    <value>Choose modifier (between</value>
+  </data>
+  <data name="And2" xml:space="preserve">
+    <value>and</value>
+  </data>
+  <data name="CurrentChosenModifier" xml:space="preserve">
+    <value>Modifier (Current -&gt; Chosen)</value>
+  </data>
+  <data name="MaxUpgradeAlready" xml:space="preserve">
+    <value>I doubt this beauty could get any better, I would only destroy it trying!</value>
+  </data>
+  <data name="ToolsTooWeak" xml:space="preserve">
+    <value>My tools ain't good enough to get this upgraded any further</value>
+  </data>
+  <data name="ChosenUpgradeChance" xml:space="preserve">
+    <value>Chosen upgrade chance</value>
+  </data>
+  <data name="ServiceCost" xml:space="preserve">
+    <value>Service cost</value>
+  </data>
+  <data name="ChangeModifier" xml:space="preserve">
+    <value>Change modifier</value>
+  </data>
+  <data name="ChangeUpgradeChance" xml:space="preserve">
+    <value>Change upgrade chance</value>
+  </data>
+  <data name="WantUpgrade" xml:space="preserve">
+    <value>Are you sure you want me to upgrade?</value>
+  </data>
+  <data name="WantUpgradeThird" xml:space="preserve">
+    <value>Are you sure you want to upgrade?</value>
+  </data>
+  <data name="SuccessC" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="CurrentWeaponModifier" xml:space="preserve">
+    <value>Your weapon's modifier is</value>
+  </data>
+  <data name="FailureC" xml:space="preserve">
+    <value>Failure</value>
+  </data>
+  <data name="CurrentArmorModifier" xml:space="preserve">
+    <value>Your armor's modifier is</value>
+  </data>
+  <data name="TryReforgeJunk" xml:space="preserve">
+    <value>Sorry, but that belongs only in the bin</value>
+  </data>
+  <data name="ICanReforge" xml:space="preserve">
+    <value>I can reforge this for</value>
+  </data>
+  <data name="Failure" xml:space="preserve">
+    <value>failure</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>success</value>
+  </data>
+  <data name="CriticalM" xml:space="preserve">
+    <value>Critical</value>
+  </data>
+  <data name="WeaponDestroyed" xml:space="preserve">
+    <value>Weapon destroyed</value>
+  </data>
+  <data name="ReforgeNoChange" xml:space="preserve">
+    <value>The weapon's rarity did not change</value>
+  </data>
+  <data name="CurrentRarity" xml:space="preserve">
+    <value>Current rarity</value>
+  </data>
+  <data name="WantReforge" xml:space="preserve">
+    <value>Are you sure you want me to reforge this?</value>
+  </data>
+  <data name="WantReforgeThird" xml:space="preserve">
+    <value>Are you sure you want to reforge?</value>
+  </data>
+  <data name="ArmorDestroyed" xml:space="preserve">
+    <value>Armor destroyed</value>
+  </data>
+  <data name="CannotMoveThisTurn" xml:space="preserve">
+    <value>cannot move this turn</value>
+  </data>
+  <data name="Regeneration" xml:space="preserve">
+    <value>Regeneration</value>
+  </data>
+  <data name="Weak" xml:space="preserve">
+    <value>Weak</value>
+  </data>
+  <data name="Excellent" xml:space="preserve">
+    <value>Excellent</value>
+  </data>
+  <data name="CritChance" xml:space="preserve">
+    <value>Critical strike chance</value>
+  </data>
+  <data name="ChooseRefillPotion" xml:space="preserve">
+    <value>Which potion should I refill?</value>
+  </data>
+  <data name="NoPotions" xml:space="preserve">
+    <value>You don't seem to have any potions I can refill</value>
+  </data>
+  <data name="ChooseRefillAmount" xml:space="preserve">
+    <value>Choose amount of charges to refill</value>
+  </data>
+  <data name="ICanRefill" xml:space="preserve">
+    <value>I can refill this potion for</value>
+  </data>
+  <data name="WantRefill" xml:space="preserve">
+    <value>Are you sure you want me to refill this potion?</value>
+  </data>
+  <data name="WantRefillThird" xml:space="preserve">
+    <value>Are you sure you want to refill this potion?</value>
+  </data>
+  <data name="DamageDealt" xml:space="preserve">
+    <value>Damage dealt</value>
+  </data>
+  <data name="DamageTaken" xml:space="preserve">
+    <value>Damage taken</value>
+  </data>
+  <data name="Charges" xml:space="preserve">
+    <value>Charges</value>
+  </data>
+  <data name="Crowns" xml:space="preserve">
+    <value>Crowns</value>
+  </data>
+  <data name="SelectItem" xml:space="preserve">
+    <value>Select item</value>
+  </data>
+  <data name="WrongClass" xml:space="preserve">
+    <value>This cannot be equipped by your character class!</value>
+  </data>
+  <data name="LevelTooLow" xml:space="preserve">
+    <value>Your level is not high enough to equip this</value>
+  </data>
+  <data name="NewItem" xml:space="preserve">
+    <value>New item</value>
+  </data>
+  <data name="HowManyToCraft" xml:space="preserve">
+    <value>How many pieces do you want to craft?</value>
+  </data>
+  <data name="WantCraftThird" xml:space="preserve">
+    <value>Are you sure you want to craft this?</value>
+  </data>
+  <data name="Crafted" xml:space="preserve">
+    <value>Crafted</value>
+  </data>
+  <data name="HowManyToOpen" xml:space="preserve">
+    <value>How many pieces do you want to open?</value>
+  </data>
+  <data name="ActionPointsShort" xml:space="preserve">
+    <value>AP</value>
+  </data>
+  <data name="ToMove" xml:space="preserve">
+    <value>to move</value>
+  </data>
+  <data name="EndTurn" xml:space="preserve">
+    <value>End turn</value>
+  </data>
+  <data name="ChooseNextAction" xml:space="preserve">
+    <value>Choose your next action</value>
+  </data>
+  <data name="Kill" xml:space="preserve">
+    <value>Kill</value>
+  </data>
+  <data name="EnemiesIn" xml:space="preserve">
+    <value>enemies in the</value>
+  </data>
+  <data name="CatacombsLocative" xml:space="preserve">
+    <value>Catacombs</value>
+  </data>
+  <data name="ForestLocative" xml:space="preserve">
+    <value>Forest</value>
+  </data>
+  <data name="ElvishRuinsLocative" xml:space="preserve">
+    <value>Elvish Ruins</value>
+  </data>
+  <data name="CoveLocative" xml:space="preserve">
+    <value>Cove</value>
+  </data>
+  <data name="DesertLocative" xml:space="preserve">
+    <value>Desert</value>
+  </data>
+  <data name="TempleLocative" xml:space="preserve">
+    <value>Temple</value>
+  </data>
+  <data name="MountainsLocative" xml:space="preserve">
+    <value>Mountains</value>
+  </data>
+  <data name="SwampLocative" xml:space="preserve">
+    <value>Swamp</value>
+  </data>
+  <data name="Descend" xml:space="preserve">
+    <value>Descend to floor</value>
+  </data>
+  <data name="In" xml:space="preserve">
+    <value>in</value>
+  </data>
+  <data name="TalkTo" xml:space="preserve">
+    <value>Talk to</value>
+  </data>
+  <data name="AcceptQuest" xml:space="preserve">
+    <value>Accept quest</value>
+  </data>
+  <data name="ReturnQuest" xml:space="preserve">
+    <value>Return quest</value>
+  </data>
+  <data name="WantAcceptQuestThird" xml:space="preserve">
+    <value>Do you want to accept this quest?</value>
+  </data>
+  <data name="WantHandInQuestThird" xml:space="preserve">
+    <value>Are you sure you want to hand in this quest?</value>
+  </data>
+  <data name="InspectQuest" xml:space="preserve">
+    <value>Inspect quest</value>
+  </data>
+  <data name="ChangeFilter" xml:space="preserve">
+    <value>Change filters</value>
+  </data>
+  <data name="Accepted" xml:space="preserve">
+    <value>In progress</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="HandedIn" xml:space="preserve">
+    <value>Handed in</value>
+  </data>
+  <data name="NoGalduritesReveal" xml:space="preserve">
+    <value>You don't seem to have any galdurites to reveal</value>
+  </data>
+  <data name="ChooseGalduriteReveal" xml:space="preserve">
+    <value>Which galdurite should I reveal?</value>
+  </data>
+  <data name="ICanReveal" xml:space="preserve">
+    <value>I can reveal this galdurite for</value>
+  </data>
+  <data name="WantReveal" xml:space="preserve">
+    <value>Are you sure you want me to reveal this?</value>
+  </data>
+  <data name="WantRevealThird" xml:space="preserve">
+    <value>Are you sure you want to reveal this galdurite?</value>
+  </data>
+  <data name="NoGalduritesApply" xml:space="preserve">
+    <value>You don't seem to have any galdurites that can be applied onto this</value>
+  </data>
+  <data name="ChooseGalduriteApply" xml:space="preserve">
+    <value>Which galdurite should I apply?</value>
+  </data>
+  <data name="ICanApply" xml:space="preserve">
+    <value>I can apply this for</value>
+  </data>
+  <data name="WantApply" xml:space="preserve">
+    <value>Are you sure you want me to apply this galdurite?</value>
+  </data>
+  <data name="WantApplyThird" xml:space="preserve">
+    <value>Are you sure you want to apply this galdurite?</value>
+  </data>
+  <data name="NoGalduriteSlotsWeapon" xml:space="preserve">
+    <value>This weapon does not have any space for a galdurite</value>
+  </data>
+  <data name="NoGalduriteSlotsArmor" xml:space="preserve">
+    <value>This armor does not have any space for a galdurite</value>
+  </data>
+  <data name="NoGalduritesInWeapon" xml:space="preserve">
+    <value>This weapon does not have any galdurites</value>
+  </data>
+  <data name="NoGalduritesInArmor" xml:space="preserve">
+    <value>This armor does not have any galdurites</value>
+  </data>
+  <data name="ChooseGalduriteRemove" xml:space="preserve">
+    <value>Which galdurite should I remove?</value>
+  </data>
+  <data name="ICanRemove" xml:space="preserve">
+    <value>I can remove this galdurite for</value>
+  </data>
+  <data name="WantRemove" xml:space="preserve">
+    <value>Are you sure you want me to remove this galdurite?</value>
+  </data>
+  <data name="WantRemoveThird" xml:space="preserve">
+    <value>Are you sure you want to remove this galdurite? (You will not get it back!)</value>
+  </data>
+  <data name="Part" xml:space="preserve">
+    <value>Part</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Unchanged" xml:space="preserve">
+    <value>unchanged</value>
+  </data>
+  <data name="Quality" xml:space="preserve">
+    <value>Quality</value>
+  </data>
+  <data name="ChangePart" xml:space="preserve">
+    <value>Change part</value>
+  </data>
+  <data name="ChangeQuality" xml:space="preserve">
+    <value>Change quality</value>
+  </data>
+  <data name="PartsNotSelected" xml:space="preserve">
+    <value>You have to select all three parts before crafting can begin!</value>
+  </data>
+  <data name="NotEnoughMaterials" xml:space="preserve">
+    <value>You don't have enough materials!</value>
+  </data>
+  <data name="ChooseWeaponName" xml:space="preserve">
+    <value>Choose a name for the weapon</value>
+  </data>
+  <data name="ChooseArmorName" xml:space="preserve">
+    <value>Choose a name for the armor</value>
+  </data>
+  <data name="Effect" xml:space="preserve">
+    <value>Effect</value>
+  </data>
+  <data name="Catalyst" xml:space="preserve">
+    <value>Catalyst</value>
+  </data>
+  <data name="PotionCapacity" xml:space="preserve">
+    <value>Charge amount</value>
+  </data>
+  <data name="EffectStrength" xml:space="preserve">
+    <value>Effect strength</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="Condensation" xml:space="preserve">
+    <value>Regen condensation</value>
+  </data>
+  <data name="ChangeEffect" xml:space="preserve">
+    <value>Change effect</value>
+  </data>
+  <data name="ChangeCatalyst" xml:space="preserve">
+    <value>Change catalyst</value>
+  </data>
+  <data name="ChoosePotionName" xml:space="preserve">
+    <value>Choose a name for the potion</value>
+  </data>
+  <data name="EffectsNotSelected" xml:space="preserve">
+    <value>Not all effects were selected!</value>
+  </data>
+  <data name="Base" xml:space="preserve">
+    <value>Base</value>
+  </data>
+  <data name="Color" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="ChangeType" xml:space="preserve">
+    <value>Change type</value>
+  </data>
+  <data name="ChangeColor" xml:space="preserve">
+    <value>Change color</value>
+  </data>
+  <data name="ChangeLevel" xml:space="preserve">
+    <value>Change level</value>
+  </data>
+  <data name="ColorNotSelected" xml:space="preserve">
+    <value>The color for the galdurite was not selected!</value>
+  </data>
+  <data name="QuestListEmpty" xml:space="preserve">
+    <value>Quest log is empty</value>
+  </data>
+  <data name="NoWares" xml:space="preserve">
+    <value>There are no wares in the  inventory</value>
+  </data>
+  <data name="GoatSkin" xml:space="preserve">
+    <value>Goat skin</value>
+  </data>
+  <data name="WildDogSkin" xml:space="preserve">
+    <value>Wild dog skin</value>
+  </data>
+  <data name="RabbitSkin" xml:space="preserve">
+    <value>Rabbit skin</value>
+  </data>
+  <data name="FoxSkin" xml:space="preserve">
+    <value>Fox skin</value>
+  </data>
+  <data name="TigerSkin" xml:space="preserve">
+    <value>Tiger skin</value>
+  </data>
+  <data name="DeerSkin" xml:space="preserve">
+    <value>Deer skin</value>
+  </data>
+  <data name="BoarSkin" xml:space="preserve">
+    <value>Boar skin</value>
+  </data>
+  <data name="LizardSkin" xml:space="preserve">
+    <value>Lizard skin</value>
+  </data>
+  <data name="BearSkin" xml:space="preserve">
+    <value>Bear skin</value>
+  </data>
+  <data name="TrollSkin" xml:space="preserve">
+    <value>Troll skin</value>
+  </data>
+  <data name="AlligatorSkin" xml:space="preserve">
+    <value>Alligator skin</value>
+  </data>
+  <data name="LeopardSkin" xml:space="preserve">
+    <value>Leopard skin</value>
+  </data>
+  <data name="WolfSkin" xml:space="preserve">
+    <value>Wolf skin</value>
+  </data>
+  <data name="BuffaloSkin" xml:space="preserve">
+    <value>Buffalo skin</value>
+  </data>
+  <data name="ScorpionSkin" xml:space="preserve">
+    <value>Scorpion skin</value>
+  </data>
+  <data name="CheetahSkin" xml:space="preserve">
+    <value>Cheetah skin</value>
+  </data>
+  <data name="HellhoundSkin" xml:space="preserve">
+    <value>Hellhound skin</value>
+  </data>
+  <data name="DragonSkin" xml:space="preserve">
+    <value>Dragon skin</value>
+  </data>
+  <data name="WyvernSkin" xml:space="preserve">
+    <value>Wyvern skin</value>
+  </data>
+  <data name="GriffinSkin" xml:space="preserve">
+    <value>Griffin skin</value>
+  </data>
+  <data name="LarchWood" xml:space="preserve">
+    <value>Larch wood</value>
+  </data>
+  <data name="LindenWood" xml:space="preserve">
+    <value>Linden wood</value>
+  </data>
+  <data name="PoplarWood" xml:space="preserve">
+    <value>Poplar wood</value>
+  </data>
+  <data name="AlderWood" xml:space="preserve">
+    <value>Alder wood</value>
+  </data>
+  <data name="HawthornWood" xml:space="preserve">
+    <value>Hawthorn wood</value>
+  </data>
+  <data name="BirchWood" xml:space="preserve">
+    <value>Birch wood</value>
+  </data>
+  <data name="CypressWood" xml:space="preserve">
+    <value>Cypress wood</value>
+  </data>
+  <data name="CedarWood" xml:space="preserve">
+    <value>Cedar wood</value>
+  </data>
+  <data name="HornbeamWood" xml:space="preserve">
+    <value>Hornbeam wood</value>
+  </data>
+  <data name="ElmWood" xml:space="preserve">
+    <value>Elm wood</value>
+  </data>
+  <data name="SpruceWood" xml:space="preserve">
+    <value>Spruce wood</value>
+  </data>
+  <data name="ElderWood" xml:space="preserve">
+    <value>Elder wood</value>
+  </data>
+  <data name="OakWood" xml:space="preserve">
+    <value>Oak wood</value>
+  </data>
+  <data name="BeechWood" xml:space="preserve">
+    <value>Beech wood</value>
+  </data>
+  <data name="SequoiaWood" xml:space="preserve">
+    <value>Sequoia wood</value>
+  </data>
+  <data name="FirWood" xml:space="preserve">
+    <value>Fir wood</value>
+  </data>
+  <data name="BlackOakWood" xml:space="preserve">
+    <value>Black oak wood</value>
+  </data>
+  <data name="PineWood" xml:space="preserve">
+    <value>Pine wood</value>
+  </data>
+  <data name="EbonyWood" xml:space="preserve">
+    <value>Ebony wood</value>
+  </data>
+  <data name="HazelWood" xml:space="preserve">
+    <value>Hazel wood</value>
+  </data>
+  <data name="CottonFiber" xml:space="preserve">
+    <value>Cotton fiber</value>
+  </data>
+  <data name="BeechmienFiber" xml:space="preserve">
+    <value>Beechmien fiber</value>
+  </data>
+  <data name="GoatWoolFiber" xml:space="preserve">
+    <value>Goat wool fiber</value>
+  </data>
+  <data name="JuteFiber" xml:space="preserve">
+    <value>Jute fiber</value>
+  </data>
+  <data name="SheepWoolFiber" xml:space="preserve">
+    <value>Sheep wool fiber</value>
+  </data>
+  <data name="PalmFiber" xml:space="preserve">
+    <value>Palm fiber</value>
+  </data>
+  <data name="LlamaWoolFiber" xml:space="preserve">
+    <value>Llama wool fiber</value>
+  </data>
+  <data name="VasimineFiber" xml:space="preserve">
+    <value>Vasimine fiber</value>
+  </data>
+  <data name="LinenFiber" xml:space="preserve">
+    <value>Linen fiber</value>
+  </data>
+  <data name="SilverclawFiber" xml:space="preserve">
+    <value>Silverclaw fiber</value>
+  </data>
+  <data name="CamelWoolFiber" xml:space="preserve">
+    <value>Camel wool fiber</value>
+  </data>
+  <data name="MelenaFiber" xml:space="preserve">
+    <value>Melena fiber</value>
+  </data>
+  <data name="HempFiber" xml:space="preserve">
+    <value>Hemp fiber</value>
+  </data>
+  <data name="YuccaFiber" xml:space="preserve">
+    <value>Yucca fiber</value>
+  </data>
+  <data name="UtumeenFiber" xml:space="preserve">
+    <value>Utumeen fiber</value>
+  </data>
+  <data name="TrireedFiber" xml:space="preserve">
+    <value>Trireed fiber</value>
+  </data>
+  <data name="SilkFiber" xml:space="preserve">
+    <value>Silk fiber</value>
+  </data>
+  <data name="TagimineFiber" xml:space="preserve">
+    <value>Tagimine fiber</value>
+  </data>
+  <data name="ViscoseFiber" xml:space="preserve">
+    <value>Viscose fiber</value>
+  </data>
+  <data name="OvariceFiber" xml:space="preserve">
+    <value>Ovarice fiber</value>
+  </data>
+  <data name="PurpleEnergyDust" xml:space="preserve">
+    <value>Purple energy dust</value>
+  </data>
+  <data name="PettySoul" xml:space="preserve">
+    <value>Petty soul</value>
+  </data>
+  <data name="WeakSoul" xml:space="preserve">
+    <value>Weak soul</value>
+  </data>
+  <data name="NormalSoul" xml:space="preserve">
+    <value>Normal soul</value>
+  </data>
+  <data name="StrongSoul" xml:space="preserve">
+    <value>Strong soul</value>
+  </data>
+  <data name="PowerfulSoul" xml:space="preserve">
+    <value>Powerful soul</value>
+  </data>
+  <data name="SkeletonBone" xml:space="preserve">
+    <value>Skeleton bone</value>
+  </data>
+  <data name="UndeadBrain" xml:space="preserve">
+    <value>Undead brain</value>
+  </data>
+  <data name="ElfEar" xml:space="preserve">
+    <value>Elf ear</value>
+  </data>
+  <data name="DemonHorn" xml:space="preserve">
+    <value>Demon horn</value>
+  </data>
+  <data name="PirateEye" xml:space="preserve">
+    <value>Pirate eye</value>
+  </data>
+  <data name="BirdFeather" xml:space="preserve">
+    <value>Bird feather</value>
+  </data>
+  <data name="CactusFruit" xml:space="preserve">
+    <value>Cactus fruit</value>
+  </data>
+  <data name="DefiledHeart" xml:space="preserve">
+    <value>Defiled heart</value>
+  </data>
+  <data name="CrushedSkull" xml:space="preserve">
+    <value>Crushed skull</value>
+  </data>
+  <data name="TrollKidney" xml:space="preserve">
+    <value>Troll kidney</value>
+  </data>
+  <data name="LivingLeaf" xml:space="preserve">
+    <value>Living leaf</value>
+  </data>
+  <data name="AlligatorTooth" xml:space="preserve">
+    <value>Alligator tooth</value>
+  </data>
+  <data name="Ectoplasm" xml:space="preserve">
+    <value>Ectoplasm</value>
+  </data>
+  <data name="GhoulClaw" xml:space="preserve">
+    <value>Ghoul claw</value>
+  </data>
+  <data name="WolfFang" xml:space="preserve">
+    <value>Wolf fang</value>
+  </data>
+  <data name="InterdimensionalTentacle" xml:space="preserve">
+    <value>Interdimensional tentacle</value>
+  </data>
+  <data name="ShiningSand" xml:space="preserve">
+    <value>Shining sand</value>
+  </data>
+  <data name="SharkFin" xml:space="preserve">
+    <value>Shark fin</value>
+  </data>
+  <data name="WindElement" xml:space="preserve">
+    <value>Wind element</value>
+  </data>
+  <data name="AncientSkin" xml:space="preserve">
+    <value>Ancient skin</value>
+  </data>
+  <data name="Histine" xml:space="preserve">
+    <value>Histine</value>
+  </data>
+  <data name="RukFeather" xml:space="preserve">
+    <value>Ruk feather</value>
+  </data>
+  <data name="MosquitoProboscis" xml:space="preserve">
+    <value>Mosquito proboscis</value>
+  </data>
+  <data name="DrownerLung" xml:space="preserve">
+    <value>Drowner lung</value>
+  </data>
+  <data name="ExecutionerBone" xml:space="preserve">
+    <value>Executioner bone</value>
+  </data>
+  <data name="RoyalEctoplasm" xml:space="preserve">
+    <value>Royal ectoplasm</value>
+  </data>
+  <data name="ForestSpirit" xml:space="preserve">
+    <value>Forest spirit</value>
+  </data>
+  <data name="RoyalDemonHorn" xml:space="preserve">
+    <value>Royal demon horn</value>
+  </data>
+  <data name="AlphaSharkFin" xml:space="preserve">
+    <value>Alpha-shark fin</value>
+  </data>
+  <data name="ProstheticTooth" xml:space="preserve">
+    <value>Prosthetic tooth</value>
+  </data>
+  <data name="EnchantedHand" xml:space="preserve">
+    <value>Enchanted hand</value>
+  </data>
+  <data name="MaladEnergy" xml:space="preserve">
+    <value>Malad's energy</value>
+  </data>
+  <data name="BerserkBlood" xml:space="preserve">
+    <value>Berserk blood</value>
+  </data>
+  <data name="WyvernScales" xml:space="preserve">
+    <value>Wyvern scales</value>
+  </data>
+  <data name="LivingBranch" xml:space="preserve">
+    <value>Living branch</value>
+  </data>
+  <data name="LivingFlower" xml:space="preserve">
+    <value>Living flower</value>
+  </data>
+  <data name="Puffball" xml:space="preserve">
+    <value>Puffball</value>
+  </data>
+  <data name="DaddyLonglegs" xml:space="preserve">
+    <value>Daddy longlegs</value>
+  </data>
+  <data name="Pinecone" xml:space="preserve">
+    <value>Pinecone</value>
+  </data>
+  <data name="StranglerGrass" xml:space="preserve">
+    <value>Strangler grass</value>
+  </data>
+  <data name="Seaweed" xml:space="preserve">
+    <value>Seaweed</value>
+  </data>
+  <data name="BloomingCherry" xml:space="preserve">
+    <value>Blooming cherry</value>
+  </data>
+  <data name="AloeMeda" xml:space="preserve">
+    <value>Aloe meda</value>
+  </data>
+  <data name="AlzifVines" xml:space="preserve">
+    <value>Alzif vines</value>
+  </data>
+  <data name="BylineFlower" xml:space="preserve">
+    <value>Byline flower</value>
+  </data>
+  <data name="TregandianDandelion" xml:space="preserve">
+    <value>Tregandian dandelion</value>
+  </data>
+  <data name="Bulrush" xml:space="preserve">
+    <value>Bulrush</value>
+  </data>
+  <data name="CommonFly" xml:space="preserve">
+    <value>Common fly</value>
+  </data>
+  <data name="DwarvenMoss" xml:space="preserve">
+    <value>Dwarven moss</value>
+  </data>
+  <data name="Swordshrub" xml:space="preserve">
+    <value>Swordshrub</value>
+  </data>
+  <data name="TulipFlower" xml:space="preserve">
+    <value>Tulip flower</value>
+  </data>
+  <data name="BurningVines" xml:space="preserve">
+    <value>Burning vines</value>
+  </data>
+  <data name="DoragafuraStamens" xml:space="preserve">
+    <value>Doragafura stamens</value>
+  </data>
+  <data name="BananaLeaf" xml:space="preserve">
+    <value>Banana leaf</value>
+  </data>
+  <data name="RissaFlower" xml:space="preserve">
+    <value>Rissa flower</value>
+  </data>
+  <data name="DesertReaper" xml:space="preserve">
+    <value>Desert reaper</value>
+  </data>
+  <data name="FrostStamens" xml:space="preserve">
+    <value>Frost stamens</value>
+  </data>
+  <data name="RoyalButterfly" xml:space="preserve">
+    <value>Royal butterfly</value>
+  </data>
+  <data name="FlatCalamus" xml:space="preserve">
+    <value>Flat calamus</value>
+  </data>
+  <data name="Viperia" xml:space="preserve">
+    <value>Viperia</value>
+  </data>
+  <data name="BlackWidow" xml:space="preserve">
+    <value>Black widow</value>
+  </data>
+  <data name="Każraniec" xml:space="preserve">
+    <value>Cavortius</value>
+  </data>
+  <data name="ElvishCasisa" xml:space="preserve">
+    <value>Elvish casisa</value>
+  </data>
+  <data name="HellishRose" xml:space="preserve">
+    <value>Hellish rose</value>
+  </data>
+  <data name="MizukiFruit" xml:space="preserve">
+    <value>Mizuki fruit</value>
+  </data>
+  <data name="Moonshroom" xml:space="preserve">
+    <value>Moonshroom</value>
+  </data>
+  <data name="JamalaFlower" xml:space="preserve">
+    <value>Jamala flower</value>
+  </data>
+  <data name="RoyalScarab" xml:space="preserve">
+    <value>Royal scarab</value>
+  </data>
+  <data name="AzureSaffron" xml:space="preserve">
+    <value>Azure saffron</value>
+  </data>
+  <data name="MountainHearth" xml:space="preserve">
+    <value>Mountain hearth</value>
+  </data>
+  <data name="GoldenClover" xml:space="preserve">
+    <value>Golden clover</value>
+  </data>
+  <data name="LionCrocus" xml:space="preserve">
+    <value>Lion crocus</value>
+  </data>
+  <data name="SkeletonAssassinSmallSoul" xml:space="preserve">
+    <value>Small Skeleton Executioner Soul</value>
+  </data>
+  <data name="WeakAlcohol" xml:space="preserve">
+    <value>Weak alcohol</value>
+  </data>
+  <data name="Alcohol" xml:space="preserve">
+    <value>Alcohol</value>
+  </data>
+  <data name="GoodAlcohol" xml:space="preserve">
+    <value>Good alcohol</value>
+  </data>
+  <data name="StrongAlcohol" xml:space="preserve">
+    <value>Strong alcohol</value>
+  </data>
+  <data name="PerfectAlcohol" xml:space="preserve">
+    <value>Perfect alcohol</value>
+  </data>
+  <data name="WeakGunpowder" xml:space="preserve">
+    <value>Weak gunpowder</value>
+  </data>
+  <data name="Gunpowder" xml:space="preserve">
+    <value>Gunpowder</value>
+  </data>
+  <data name="StrongGunpowder" xml:space="preserve">
+    <value>Strong gunpowder</value>
+  </data>
+  <data name="GoodGunpowder" xml:space="preserve">
+    <value>Good gunpowder</value>
+  </data>
+  <data name="PerfectGunpowder" xml:space="preserve">
+    <value>Perfect gunpowder</value>
+  </data>
+  <data name="Bandage" xml:space="preserve">
+    <value>Bandage</value>
+  </data>
+  <data name="Antidote" xml:space="preserve">
+    <value>Antidote</value>
+  </data>
+  <data name="WetTowel" xml:space="preserve">
+    <value>Wet towel</value>
+  </data>
+  <data name="TownPortalScroll" xml:space="preserve">
+    <value>Town portal scroll</value>
+  </data>
+  <data name="SolidLimestone" xml:space="preserve">
+    <value>Solid limestone</value>
+  </data>
+  <data name="SolidGranite" xml:space="preserve">
+    <value>Solid granite</value>
+  </data>
+  <data name="SolidMarble" xml:space="preserve">
+    <value>Solid marble</value>
+  </data>
+  <data name="Garnet" xml:space="preserve">
+    <value>Garnet</value>
+  </data>
+  <data name="Sapphire" xml:space="preserve">
+    <value>Sapphire</value>
+  </data>
+  <data name="Amethyst" xml:space="preserve">
+    <value>Amethyst</value>
+  </data>
+  <data name="Citrine" xml:space="preserve">
+    <value>Citrine</value>
+  </data>
+  <data name="Emerald" xml:space="preserve">
+    <value>Emerald</value>
+  </data>
+  <data name="Onyx" xml:space="preserve">
+    <value>Onyx</value>
+  </data>
+  <data name="Ruby" xml:space="preserve">
+    <value>Ruby</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>Diamond</value>
+  </data>
+  <data name="Topaz" xml:space="preserve">
+    <value>Topaz</value>
+  </data>
+  <data name="Amber" xml:space="preserve">
+    <value>Amber</value>
+  </data>
+  <data name="IronBar" xml:space="preserve">
+    <value>Iron bar</value>
+  </data>
+  <data name="NickelBar" xml:space="preserve">
+    <value>Nickel bar</value>
+  </data>
+  <data name="CopperBar" xml:space="preserve">
+    <value>Copper bar</value>
+  </data>
+  <data name="TinBar" xml:space="preserve">
+    <value>Tin bar</value>
+  </data>
+  <data name="SteelBar" xml:space="preserve">
+    <value>Steel bar</value>
+  </data>
+  <data name="InvarBar" xml:space="preserve">
+    <value>Invar bar</value>
+  </data>
+  <data name="MeteoricIronBar" xml:space="preserve">
+    <value>Meteoric iron bar</value>
+  </data>
+  <data name="BronzeBar" xml:space="preserve">
+    <value>Bronze bar</value>
+  </data>
+  <data name="AnnoditeBar" xml:space="preserve">
+    <value>Annodite bar</value>
+  </data>
+  <data name="SilverBar" xml:space="preserve">
+    <value>Silver bar</value>
+  </data>
+  <data name="CobaltBar" xml:space="preserve">
+    <value>Cobalt bar</value>
+  </data>
+  <data name="GoldBar" xml:space="preserve">
+    <value>Gold bar</value>
+  </data>
+  <data name="CriferiteBar" xml:space="preserve">
+    <value>Criferite bar</value>
+  </data>
+  <data name="BrassBar" xml:space="preserve">
+    <value>Brass bar</value>
+  </data>
+  <data name="SultanSteelBar" xml:space="preserve">
+    <value>Sultan steel bar</value>
+  </data>
+  <data name="TitaniumBar" xml:space="preserve">
+    <value>Titanium bar</value>
+  </data>
+  <data name="NefoliteBar" xml:space="preserve">
+    <value>Nefolite bar</value>
+  </data>
+  <data name="AdamantiteBar" xml:space="preserve">
+    <value>Adamantite bar</value>
+  </data>
+  <data name="CifilmBar" xml:space="preserve">
+    <value>Cifilm bar</value>
+  </data>
+  <data name="OrichalcumBar" xml:space="preserve">
+    <value>Orichalcum bar</value>
+  </data>
+  <data name="HugeIronBar" xml:space="preserve">
+    <value>Huge iron bar</value>
+  </data>
+  <data name="HugeNickelBar" xml:space="preserve">
+    <value>Huge nickel bar</value>
+  </data>
+  <data name="HugeCopperBar" xml:space="preserve">
+    <value>Huge copper bar</value>
+  </data>
+  <data name="HugeTinBar" xml:space="preserve">
+    <value>Huge tin bar</value>
+  </data>
+  <data name="HugeSteelBar" xml:space="preserve">
+    <value>Huge steel bar</value>
+  </data>
+  <data name="HugeInvarBar" xml:space="preserve">
+    <value>Huge invar bar</value>
+  </data>
+  <data name="HugeMeteoricIronBar" xml:space="preserve">
+    <value>Huge meteoric iron bar</value>
+  </data>
+  <data name="HugeBronzeBar" xml:space="preserve">
+    <value>Huge bronze bar</value>
+  </data>
+  <data name="HugeAnnoditeBar" xml:space="preserve">
+    <value>Huge annodite bar</value>
+  </data>
+  <data name="HugeSilverBar" xml:space="preserve">
+    <value>Huge silver bar</value>
+  </data>
+  <data name="HugeCobaltBar" xml:space="preserve">
+    <value>Huge cobalt bar</value>
+  </data>
+  <data name="HugeGoldBar" xml:space="preserve">
+    <value>Huge gold bar</value>
+  </data>
+  <data name="HugeCriferiteBar" xml:space="preserve">
+    <value>Huge criferite bar</value>
+  </data>
+  <data name="HugeBrassBar" xml:space="preserve">
+    <value>Huge brass bar</value>
+  </data>
+  <data name="HugeSultanSteelBar" xml:space="preserve">
+    <value>Huge sultan steel bar</value>
+  </data>
+  <data name="HugeTitaniumBar" xml:space="preserve">
+    <value>Huge titanium bar</value>
+  </data>
+  <data name="HugeNefoliteBar" xml:space="preserve">
+    <value>Huge nefolite bar</value>
+  </data>
+  <data name="HugeAdamantiteBar" xml:space="preserve">
+    <value>Huge adamantite bar</value>
+  </data>
+  <data name="HugeCifilmBar" xml:space="preserve">
+    <value>Huge cifilm bar</value>
+  </data>
+  <data name="HugeOrichalcumBar" xml:space="preserve">
+    <value>Huge orichalcum bar</value>
+  </data>
+  <data name="PowderedIron" xml:space="preserve">
+    <value>Powdered iron</value>
+  </data>
+  <data name="PowderedNickel" xml:space="preserve">
+    <value>Powdered nickel</value>
+  </data>
+  <data name="PowderedCopper" xml:space="preserve">
+    <value>Powdered copper</value>
+  </data>
+  <data name="PowderedTin" xml:space="preserve">
+    <value>Powdered tin</value>
+  </data>
+  <data name="PowderedSteel" xml:space="preserve">
+    <value>Powdered steel</value>
+  </data>
+  <data name="PowderedInvar" xml:space="preserve">
+    <value>Powdered invar</value>
+  </data>
+  <data name="PowderedMeteoricIron" xml:space="preserve">
+    <value>Powdered meteoric iron</value>
+  </data>
+  <data name="PowderedBronze" xml:space="preserve">
+    <value>Powdered bronze</value>
+  </data>
+  <data name="PowderedAnnodite" xml:space="preserve">
+    <value>Powdered annodite</value>
+  </data>
+  <data name="PowderedSilver" xml:space="preserve">
+    <value>Powdered silver</value>
+  </data>
+  <data name="PowderedCobalt" xml:space="preserve">
+    <value>Powdered cobalt</value>
+  </data>
+  <data name="PowderedGold" xml:space="preserve">
+    <value>Powdered gold</value>
+  </data>
+  <data name="PowderedCriferite" xml:space="preserve">
+    <value>Powdered criferite</value>
+  </data>
+  <data name="PowderedBrass" xml:space="preserve">
+    <value>Powdered brass</value>
+  </data>
+  <data name="PowderedSultanSteel" xml:space="preserve">
+    <value>Powdered sultan steel</value>
+  </data>
+  <data name="PowderedTitanium" xml:space="preserve">
+    <value>Powdered titanium</value>
+  </data>
+  <data name="PowderedNefolite" xml:space="preserve">
+    <value>Powdered nefolite</value>
+  </data>
+  <data name="PowderedAdamantite" xml:space="preserve">
+    <value>Powdered adamantite</value>
+  </data>
+  <data name="PowderedCifilm" xml:space="preserve">
+    <value>Powdered cifilm</value>
+  </data>
+  <data name="PowderedOrichalcum" xml:space="preserve">
+    <value>Powdered orichalcum</value>
+  </data>
+  <data name="IronChain" xml:space="preserve">
+    <value>Iron chain</value>
+  </data>
+  <data name="NickelChain" xml:space="preserve">
+    <value>Nickel chain</value>
+  </data>
+  <data name="CopperChain" xml:space="preserve">
+    <value>Copper chain</value>
+  </data>
+  <data name="TinChain" xml:space="preserve">
+    <value>Tin chain</value>
+  </data>
+  <data name="SteelChain" xml:space="preserve">
+    <value>Steel chain</value>
+  </data>
+  <data name="InvarChain" xml:space="preserve">
+    <value>Invar chain</value>
+  </data>
+  <data name="MeteoricChain" xml:space="preserve">
+    <value>Meteoric chain</value>
+  </data>
+  <data name="BronzeChain" xml:space="preserve">
+    <value>Bronze chain</value>
+  </data>
+  <data name="AnnoditeChain" xml:space="preserve">
+    <value>Annodite chain</value>
+  </data>
+  <data name="SilverChain" xml:space="preserve">
+    <value>Silver chain</value>
+  </data>
+  <data name="CobaltChain" xml:space="preserve">
+    <value>Cobalt chain</value>
+  </data>
+  <data name="GoldenChain" xml:space="preserve">
+    <value>Golden chain</value>
+  </data>
+  <data name="CriferiteChain" xml:space="preserve">
+    <value>Criferite chain</value>
+  </data>
+  <data name="BrassChain" xml:space="preserve">
+    <value>Brass chain</value>
+  </data>
+  <data name="ShellanianChain" xml:space="preserve">
+    <value>Shellanian chain</value>
+  </data>
+  <data name="TitaniumChain" xml:space="preserve">
+    <value>Titanium chain</value>
+  </data>
+  <data name="NefoliteChain" xml:space="preserve">
+    <value>Nefolite chain</value>
+  </data>
+  <data name="AdamantiteChain" xml:space="preserve">
+    <value>Adamantite chain</value>
+  </data>
+  <data name="CifilmChain" xml:space="preserve">
+    <value>Cifilm chain</value>
+  </data>
+  <data name="OrichalcumChain" xml:space="preserve">
+    <value>Orichalcum chain</value>
+  </data>
+  <data name="IronPlate" xml:space="preserve">
+    <value>Iron plate</value>
+  </data>
+  <data name="NickelPlate" xml:space="preserve">
+    <value>Nickel plate</value>
+  </data>
+  <data name="CopperPlate" xml:space="preserve">
+    <value>Copper plate</value>
+  </data>
+  <data name="TinPlate" xml:space="preserve">
+    <value>Tin plate</value>
+  </data>
+  <data name="SteelPlate" xml:space="preserve">
+    <value>Steel plate</value>
+  </data>
+  <data name="InvarPlate" xml:space="preserve">
+    <value>Invar plate</value>
+  </data>
+  <data name="MeteoricPlate" xml:space="preserve">
+    <value>Meteoric plate</value>
+  </data>
+  <data name="BronzePlate" xml:space="preserve">
+    <value>Bronze plate</value>
+  </data>
+  <data name="AnnoditePlate" xml:space="preserve">
+    <value>Annodite plate</value>
+  </data>
+  <data name="SilverPlate" xml:space="preserve">
+    <value>Silver plate</value>
+  </data>
+  <data name="CobaltPlate" xml:space="preserve">
+    <value>Cobalt plate</value>
+  </data>
+  <data name="GoldenPlate" xml:space="preserve">
+    <value>Golden plate</value>
+  </data>
+  <data name="CriferitePlate" xml:space="preserve">
+    <value>Criferite plate</value>
+  </data>
+  <data name="BrassPlate" xml:space="preserve">
+    <value>Brass plate</value>
+  </data>
+  <data name="ShellanianPlate" xml:space="preserve">
+    <value>Shellanian plate</value>
+  </data>
+  <data name="TitaniumPlate" xml:space="preserve">
+    <value>Titanium plate</value>
+  </data>
+  <data name="NefolitePlate" xml:space="preserve">
+    <value>Nefolite plate</value>
+  </data>
+  <data name="AdamantitePlate" xml:space="preserve">
+    <value>Adamantite plate</value>
+  </data>
+  <data name="CifilmPlate" xml:space="preserve">
+    <value>Cifilm plate</value>
+  </data>
+  <data name="OrichalcumPlate" xml:space="preserve">
+    <value>Orichalcum plate</value>
+  </data>
+  <data name="GoatHide" xml:space="preserve">
+    <value>Goat hide</value>
+  </data>
+  <data name="WildDogHide" xml:space="preserve">
+    <value>Wild dog hide</value>
+  </data>
+  <data name="RabbitHide" xml:space="preserve">
+    <value>Rabbit hide</value>
+  </data>
+  <data name="FoxHide" xml:space="preserve">
+    <value>Fox hide</value>
+  </data>
+  <data name="TigerHide" xml:space="preserve">
+    <value>Tiger hide</value>
+  </data>
+  <data name="DeerHide" xml:space="preserve">
+    <value>Deer hide</value>
+  </data>
+  <data name="BoarHide" xml:space="preserve">
+    <value>Boar hide</value>
+  </data>
+  <data name="LizardHide" xml:space="preserve">
+    <value>Lizard hide</value>
+  </data>
+  <data name="BearHide" xml:space="preserve">
+    <value>Bear hide</value>
+  </data>
+  <data name="TrollHide" xml:space="preserve">
+    <value>Troll hide</value>
+  </data>
+  <data name="AlligatorHide" xml:space="preserve">
+    <value>Alligator hide</value>
+  </data>
+  <data name="LeopardHide" xml:space="preserve">
+    <value>Leopard hide</value>
+  </data>
+  <data name="WolfHide" xml:space="preserve">
+    <value>Wolf hide</value>
+  </data>
+  <data name="BuffaloHide" xml:space="preserve">
+    <value>Buffalo hide</value>
+  </data>
+  <data name="ScorpionHide" xml:space="preserve">
+    <value>Scorpion hide</value>
+  </data>
+  <data name="CheetahHide" xml:space="preserve">
+    <value>Cheetah hide</value>
+  </data>
+  <data name="HellhoundHide" xml:space="preserve">
+    <value>Hellhound hide</value>
+  </data>
+  <data name="DragonHide" xml:space="preserve">
+    <value>Dragon hide</value>
+  </data>
+  <data name="WyvernHide" xml:space="preserve">
+    <value>Wyvern hide</value>
+  </data>
+  <data name="GriffinHide" xml:space="preserve">
+    <value>Griffin hide</value>
+  </data>
+  <data name="GoatHideStrips" xml:space="preserve">
+    <value>Goat hide strips</value>
+  </data>
+  <data name="WildDogHideStrips" xml:space="preserve">
+    <value>Wild dog hide strips</value>
+  </data>
+  <data name="RabbitHideStrips" xml:space="preserve">
+    <value>Rabbit hide strips</value>
+  </data>
+  <data name="FoxHideStrips" xml:space="preserve">
+    <value>Fox hide strips</value>
+  </data>
+  <data name="TigerHideStrips" xml:space="preserve">
+    <value>Tiger hide strips</value>
+  </data>
+  <data name="DeerHideStrips" xml:space="preserve">
+    <value>Deer hide strips</value>
+  </data>
+  <data name="BoarHideStrips" xml:space="preserve">
+    <value>Boar hide strips</value>
+  </data>
+  <data name="LizardHideStrips" xml:space="preserve">
+    <value>Lizard hide strips</value>
+  </data>
+  <data name="BearHideStrips" xml:space="preserve">
+    <value>Bear hide strips</value>
+  </data>
+  <data name="TrollHideStrips" xml:space="preserve">
+    <value>Troll hide strips</value>
+  </data>
+  <data name="AlligatorHideStrips" xml:space="preserve">
+    <value>Alligator hide strips</value>
+  </data>
+  <data name="LeopardHideStrips" xml:space="preserve">
+    <value>Leopard hide strips</value>
+  </data>
+  <data name="WolfHideStrips" xml:space="preserve">
+    <value>Wolf hide strips</value>
+  </data>
+  <data name="BuffaloHideStrips" xml:space="preserve">
+    <value>Buffalo hide strips</value>
+  </data>
+  <data name="ScorpionHideStrips" xml:space="preserve">
+    <value>Scorpion hide strips</value>
+  </data>
+  <data name="CheetahHideStrips" xml:space="preserve">
+    <value>Cheetah hide strips</value>
+  </data>
+  <data name="HellhoundHideStrips" xml:space="preserve">
+    <value>Hellhound hide strips</value>
+  </data>
+  <data name="DragonHideStrips" xml:space="preserve">
+    <value>Dragon hide strips</value>
+  </data>
+  <data name="WyvernHideStrips" xml:space="preserve">
+    <value>Wyvern hide strips</value>
+  </data>
+  <data name="GriffinHideStrips" xml:space="preserve">
+    <value>Griffin hide strips</value>
+  </data>
+  <data name="LarchPlank" xml:space="preserve">
+    <value>Larch plank</value>
+  </data>
+  <data name="LindenPlank" xml:space="preserve">
+    <value>Linden plank</value>
+  </data>
+  <data name="PoplarPlank" xml:space="preserve">
+    <value>Poplar plank</value>
+  </data>
+  <data name="AlderPlank" xml:space="preserve">
+    <value>Alder plank</value>
+  </data>
+  <data name="HawthornPlank" xml:space="preserve">
+    <value>Hawthorn plank</value>
+  </data>
+  <data name="BirchPlank" xml:space="preserve">
+    <value>Birch plank</value>
+  </data>
+  <data name="CypressPlank" xml:space="preserve">
+    <value>Cypress plank</value>
+  </data>
+  <data name="CedarPlank" xml:space="preserve">
+    <value>Cedar plank</value>
+  </data>
+  <data name="HornbeamPlank" xml:space="preserve">
+    <value>Hornbeam plank</value>
+  </data>
+  <data name="ElmPlank" xml:space="preserve">
+    <value>Elm plank</value>
+  </data>
+  <data name="SprucePlank" xml:space="preserve">
+    <value>Spruce plank</value>
+  </data>
+  <data name="ElderPlank" xml:space="preserve">
+    <value>Elder plank</value>
+  </data>
+  <data name="OakPlank" xml:space="preserve">
+    <value>Oak plank</value>
+  </data>
+  <data name="BeechPlank" xml:space="preserve">
+    <value>Beech plank</value>
+  </data>
+  <data name="SequoiaPlank" xml:space="preserve">
+    <value>Sequoia plank</value>
+  </data>
+  <data name="FirPlank" xml:space="preserve">
+    <value>Fir plank</value>
+  </data>
+  <data name="BlackOakPlank" xml:space="preserve">
+    <value>Black oak plank</value>
+  </data>
+  <data name="PinePlank" xml:space="preserve">
+    <value>Pine plank</value>
+  </data>
+  <data name="EbonyPlank" xml:space="preserve">
+    <value>Ebony plank</value>
+  </data>
+  <data name="HazelPlank" xml:space="preserve">
+    <value>Hazel plank</value>
+  </data>
+  <data name="LarchStick" xml:space="preserve">
+    <value>Larch stick</value>
+  </data>
+  <data name="LindenStick" xml:space="preserve">
+    <value>Linden stick</value>
+  </data>
+  <data name="PoplarStick" xml:space="preserve">
+    <value>Poplar stick</value>
+  </data>
+  <data name="AlderStick" xml:space="preserve">
+    <value>Alder stick</value>
+  </data>
+  <data name="HawthornStick" xml:space="preserve">
+    <value>Hawthorn stick</value>
+  </data>
+  <data name="BirchStick" xml:space="preserve">
+    <value>Birch stick</value>
+  </data>
+  <data name="CypressStick" xml:space="preserve">
+    <value>Cypress stick</value>
+  </data>
+  <data name="CedarStick" xml:space="preserve">
+    <value>Cedar stick</value>
+  </data>
+  <data name="HornbeamStick" xml:space="preserve">
+    <value>Hornbeam stick</value>
+  </data>
+  <data name="ElmStick" xml:space="preserve">
+    <value>Elm stick</value>
+  </data>
+  <data name="SpruceStick" xml:space="preserve">
+    <value>Spruce stick</value>
+  </data>
+  <data name="ElderStick" xml:space="preserve">
+    <value>Elder stick</value>
+  </data>
+  <data name="OakStick" xml:space="preserve">
+    <value>Oak stick</value>
+  </data>
+  <data name="BeechStick" xml:space="preserve">
+    <value>Beech stick</value>
+  </data>
+  <data name="SequoiaStick" xml:space="preserve">
+    <value>Sequoia stick</value>
+  </data>
+  <data name="FirStick" xml:space="preserve">
+    <value>Fir stick</value>
+  </data>
+  <data name="BlackOakStick" xml:space="preserve">
+    <value>Black oak stick</value>
+  </data>
+  <data name="PineStick" xml:space="preserve">
+    <value>Pine stick</value>
+  </data>
+  <data name="EbonyStick" xml:space="preserve">
+    <value>Ebony stick</value>
+  </data>
+  <data name="HazelStick" xml:space="preserve">
+    <value>Hazel stick</value>
+  </data>
+  <data name="WeakThreadNeedle" xml:space="preserve">
+    <value>Weak thread needle</value>
+  </data>
+  <data name="ThreadNeedle" xml:space="preserve">
+    <value>Thread needle</value>
+  </data>
+  <data name="GoodThreadNeedle" xml:space="preserve">
+    <value>Good thread needle</value>
+  </data>
+  <data name="ExcellentThreadNeedle" xml:space="preserve">
+    <value>Excellent thread needle</value>
+  </data>
+  <data name="PerfectThreadNeedle" xml:space="preserve">
+    <value>Perfect thread needle</value>
+  </data>
+  <data name="CottonThread" xml:space="preserve">
+    <value>Cotton thread</value>
+  </data>
+  <data name="BeechmienThread" xml:space="preserve">
+    <value>Beechmien thread</value>
+  </data>
+  <data name="GoatWoolThread" xml:space="preserve">
+    <value>Goat wool thread</value>
+  </data>
+  <data name="JuteThread" xml:space="preserve">
+    <value>Jute thread</value>
+  </data>
+  <data name="SheepWoolThread" xml:space="preserve">
+    <value>Sheep wool thread</value>
+  </data>
+  <data name="PalmThread" xml:space="preserve">
+    <value>Palm thread</value>
+  </data>
+  <data name="LlamaWoolThread" xml:space="preserve">
+    <value>Llama wool thread</value>
+  </data>
+  <data name="VasimineThread" xml:space="preserve">
+    <value>Vasimine thread</value>
+  </data>
+  <data name="LinenThread" xml:space="preserve">
+    <value>Linen thread</value>
+  </data>
+  <data name="SilverclawThread" xml:space="preserve">
+    <value>Silverclaw thread</value>
+  </data>
+  <data name="CamelWoolThread" xml:space="preserve">
+    <value>Camel wool thread</value>
+  </data>
+  <data name="MelenaThread" xml:space="preserve">
+    <value>Melena thread</value>
+  </data>
+  <data name="HempThread" xml:space="preserve">
+    <value>Hemp thread</value>
+  </data>
+  <data name="YuccaThread" xml:space="preserve">
+    <value>Yucca thread</value>
+  </data>
+  <data name="UtumeenThread" xml:space="preserve">
+    <value>Utumeen thread</value>
+  </data>
+  <data name="TrireedThread" xml:space="preserve">
+    <value>Trireed thread</value>
+  </data>
+  <data name="SilkThread" xml:space="preserve">
+    <value>Silk thread</value>
+  </data>
+  <data name="TagimineThread" xml:space="preserve">
+    <value>Tagimine thread</value>
+  </data>
+  <data name="ViscoseThread" xml:space="preserve">
+    <value>Viscose thread</value>
+  </data>
+  <data name="OvariceThread" xml:space="preserve">
+    <value>Ovarice thread</value>
+  </data>
+  <data name="CottonFabric" xml:space="preserve">
+    <value>Cotton fabric</value>
+  </data>
+  <data name="BeechmienFabric" xml:space="preserve">
+    <value>Beechmien fabric</value>
+  </data>
+  <data name="GoatWoolFabric" xml:space="preserve">
+    <value>Goat wool fabric</value>
+  </data>
+  <data name="JuteFabric" xml:space="preserve">
+    <value>Jute fabric</value>
+  </data>
+  <data name="SheepWoolFabric" xml:space="preserve">
+    <value>Sheep wool fabric</value>
+  </data>
+  <data name="PalmFabric" xml:space="preserve">
+    <value>Palm fabric</value>
+  </data>
+  <data name="LlamaWoolFabric" xml:space="preserve">
+    <value>Llama wool fabric</value>
+  </data>
+  <data name="VasimineFabric" xml:space="preserve">
+    <value>Vasimine fabric</value>
+  </data>
+  <data name="LinenFabric" xml:space="preserve">
+    <value>Linen fabric</value>
+  </data>
+  <data name="SilverclawFabric" xml:space="preserve">
+    <value>Silverclaw fabric</value>
+  </data>
+  <data name="CamelWoolFabric" xml:space="preserve">
+    <value>Camel wool fabric</value>
+  </data>
+  <data name="MelenaFabric" xml:space="preserve">
+    <value>Melena fabric</value>
+  </data>
+  <data name="HempFabric" xml:space="preserve">
+    <value>Hemp fabric</value>
+  </data>
+  <data name="YuccaFabric" xml:space="preserve">
+    <value>Yucca fabric</value>
+  </data>
+  <data name="UtumeenFabric" xml:space="preserve">
+    <value>Utumeen fabric</value>
+  </data>
+  <data name="TrireedFabric" xml:space="preserve">
+    <value>Trireed fabric</value>
+  </data>
+  <data name="SilkFabric" xml:space="preserve">
+    <value>Silk fabric</value>
+  </data>
+  <data name="TagimineFabric" xml:space="preserve">
+    <value>Tagimine fabric</value>
+  </data>
+  <data name="ViscoseFabric" xml:space="preserve">
+    <value>Viscose fabric</value>
+  </data>
+  <data name="OvariceFabric" xml:space="preserve">
+    <value>Ovarice fabric</value>
+  </data>
+  <data name="RedEnergyDust" xml:space="preserve">
+    <value>Red energy dust</value>
+  </data>
+  <data name="YellowEnergyDust" xml:space="preserve">
+    <value>Yellow energy dust</value>
+  </data>
+  <data name="GreenEnergyDust" xml:space="preserve">
+    <value>Green energy dust</value>
+  </data>
+  <data name="BlueEnergyDust" xml:space="preserve">
+    <value>Blue energy dust</value>
+  </data>
+  <data name="HerbalDustNormal" xml:space="preserve">
+    <value>Herbal dust: Normal</value>
+  </data>
+  <data name="HerbalDustLumpy" xml:space="preserve">
+    <value>Herbal dust: Lumpy</value>
+  </data>
+  <data name="HerbalDustTacky" xml:space="preserve">
+    <value>Herbal dust: Tacky</value>
+  </data>
+  <data name="HerbalDustLoose" xml:space="preserve">
+    <value>Herbal dust: Loose</value>
+  </data>
+  <data name="HerbalDustYellow" xml:space="preserve">
+    <value>Herbal dust: Yellow</value>
+  </data>
+  <data name="HerbalDustGreen" xml:space="preserve">
+    <value>Herbal dust: Green</value>
+  </data>
+  <data name="HerbalDustPink" xml:space="preserve">
+    <value>Herbal dust: Pink</value>
+  </data>
+  <data name="HerbalDustOrange" xml:space="preserve">
+    <value>Herbal dust: Orange</value>
+  </data>
+  <data name="HerbalDustHuman" xml:space="preserve">
+    <value>Herbal dust: Human</value>
+  </data>
+  <data name="HerbalDustElf" xml:space="preserve">
+    <value>Herbal dust: Elf</value>
+  </data>
+  <data name="HerbalDustDwarf" xml:space="preserve">
+    <value>Herbal dust: Dwarf</value>
+  </data>
+  <data name="HerbalDustLizardman" xml:space="preserve">
+    <value>Herbal dust: Lizardman</value>
+  </data>
+  <data name="HerbalDustLight" xml:space="preserve">
+    <value>Herbal dust: Light</value>
+  </data>
+  <data name="HerbalDustDivinity" xml:space="preserve">
+    <value>Herbal dust: Divnity</value>
+  </data>
+  <data name="HerbalDustDarkness" xml:space="preserve">
+    <value>Herbal dust: Darkness</value>
+  </data>
+  <data name="HerbalDustDemon" xml:space="preserve">
+    <value>Herbal dust: Demon</value>
+  </data>
+  <data name="HerbalDustFire" xml:space="preserve">
+    <value>Herbal dust: Fire</value>
+  </data>
+  <data name="HerbalDustAir" xml:space="preserve">
+    <value>Herbal dust: Air</value>
+  </data>
+  <data name="HerbalDustWater" xml:space="preserve">
+    <value>Herbal dust: Water</value>
+  </data>
+  <data name="HerbalDustEarth" xml:space="preserve">
+    <value>Herbal dust: Earth</value>
+  </data>
+  <data name="LimestoneGalduriteStone" xml:space="preserve">
+    <value>Limestone galdurite stone</value>
+  </data>
+  <data name="GraniteGalduriteStone" xml:space="preserve">
+    <value>Granite galdurite stone</value>
+  </data>
+  <data name="MarbleGalduriteStone" xml:space="preserve">
+    <value>Marble galdurite stone</value>
+  </data>
+  <data name="RedPowder" xml:space="preserve">
+    <value>Red powder</value>
+  </data>
+  <data name="CondensedRedPowder" xml:space="preserve">
+    <value>Condensed red powder</value>
+  </data>
+  <data name="MagicalRedPowder" xml:space="preserve">
+    <value>Magical red powder</value>
+  </data>
+  <data name="BluePowder" xml:space="preserve">
+    <value>Blue powder</value>
+  </data>
+  <data name="CondensedBluePowder" xml:space="preserve">
+    <value>Condensed blue powder</value>
+  </data>
+  <data name="MagicalBluePowder" xml:space="preserve">
+    <value>Magical blue powder</value>
+  </data>
+  <data name="PurplePowder" xml:space="preserve">
+    <value>Purple powder</value>
+  </data>
+  <data name="CondensedPurplePowder" xml:space="preserve">
+    <value>Condensed purple powder</value>
+  </data>
+  <data name="MagicalPurplePowder" xml:space="preserve">
+    <value>Magical purple powder</value>
+  </data>
+  <data name="YellowPowder" xml:space="preserve">
+    <value>Yellow powder</value>
+  </data>
+  <data name="CondensedYellowPowder" xml:space="preserve">
+    <value>Condensed yellow powder</value>
+  </data>
+  <data name="MagicalYellowPowder" xml:space="preserve">
+    <value>Magical yellow poder</value>
+  </data>
+  <data name="GreenPowder" xml:space="preserve">
+    <value>Green powder</value>
+  </data>
+  <data name="CondensedGreenPowder" xml:space="preserve">
+    <value>Condensed green powder</value>
+  </data>
+  <data name="MagicalGreenPowder" xml:space="preserve">
+    <value>Magical green powder</value>
+  </data>
+  <data name="BlackPowder" xml:space="preserve">
+    <value>Black powder</value>
+  </data>
+  <data name="CondensedBlackPowder" xml:space="preserve">
+    <value>Condensed black powder</value>
+  </data>
+  <data name="MagicalBlackPowder" xml:space="preserve">
+    <value>Magical black powder</value>
+  </data>
+  <data name="PinkPowder" xml:space="preserve">
+    <value>Pink powder</value>
+  </data>
+  <data name="CondensedPinkPowder" xml:space="preserve">
+    <value>Condensed pink powder</value>
+  </data>
+  <data name="MagicalPinkPowder" xml:space="preserve">
+    <value>Magical pink powder</value>
+  </data>
+  <data name="WhitePowder" xml:space="preserve">
+    <value>White powder</value>
+  </data>
+  <data name="CondensedWhitePowder" xml:space="preserve">
+    <value>Condensed white powder</value>
+  </data>
+  <data name="MagicalWhitePowder" xml:space="preserve">
+    <value>Magical white powder</value>
+  </data>
+  <data name="GoldenPowder" xml:space="preserve">
+    <value>Golden powder</value>
+  </data>
+  <data name="CondensedGoldenPowder" xml:space="preserve">
+    <value>Condensed golden pwoder</value>
+  </data>
+  <data name="MagicalGoldenPowder" xml:space="preserve">
+    <value>Magical golden powder</value>
+  </data>
+  <data name="OrangePowder" xml:space="preserve">
+    <value>Orange powder</value>
+  </data>
+  <data name="CondensedOrangePowder" xml:space="preserve">
+    <value>Condensed orange powder</value>
+  </data>
+  <data name="MagicalOrangePowder" xml:space="preserve">
+    <value>Magical orange powder</value>
+  </data>
+  <data name="IronFAdj" xml:space="preserve">
+    <value>Iron</value>
+  </data>
+  <data name="IronMAdj" xml:space="preserve">
+    <value>Iron</value>
+  </data>
+  <data name="NickelMAdj" xml:space="preserve">
+    <value>Nickel</value>
+  </data>
+  <data name="CopperMAdj" xml:space="preserve">
+    <value>Copper</value>
+  </data>
+  <data name="TinMAdj" xml:space="preserve">
+    <value>Tin</value>
+  </data>
+  <data name="SteelMAdj" xml:space="preserve">
+    <value>Steel</value>
+  </data>
+  <data name="InvarMAdj" xml:space="preserve">
+    <value>Invar</value>
+  </data>
+  <data name="MeteoricMAdj" xml:space="preserve">
+    <value>Meteoric</value>
+  </data>
+  <data name="BronzeMAdj" xml:space="preserve">
+    <value>Bronze</value>
+  </data>
+  <data name="AnnoditeMAdj" xml:space="preserve">
+    <value>Annodite</value>
+  </data>
+  <data name="SilverMAdj" xml:space="preserve">
+    <value>Silver</value>
+  </data>
+  <data name="CobaltMAdj" xml:space="preserve">
+    <value>Cobalt</value>
+  </data>
+  <data name="GoldMAdj" xml:space="preserve">
+    <value>Gold</value>
+  </data>
+  <data name="CriferiteMAdj" xml:space="preserve">
+    <value>Criferite</value>
+  </data>
+  <data name="CopperFAdj" xml:space="preserve">
+    <value>Copper</value>
+  </data>
+  <data name="InvarFAdj" xml:space="preserve">
+    <value>Invar</value>
+  </data>
+  <data name="MeteoricFAdj" xml:space="preserve">
+    <value>Meteoric</value>
+  </data>
+  <data name="BronzeFAdj" xml:space="preserve">
+    <value>Bronze</value>
+  </data>
+  <data name="AnnoditeFAdj" xml:space="preserve">
+    <value>Annodite</value>
+  </data>
+  <data name="SilverFAdj" xml:space="preserve">
+    <value>Silver</value>
+  </data>
+  <data name="CobaltFAdj" xml:space="preserve">
+    <value>Cobalt</value>
+  </data>
+  <data name="GoldFAdj" xml:space="preserve">
+    <value>Gold</value>
+  </data>
+  <data name="CriferiteFAdj" xml:space="preserve">
+    <value>Criferite</value>
+  </data>
+  <data name="BrassFAdj" xml:space="preserve">
+    <value>Brass</value>
+  </data>
+  <data name="ShellanianFAdj" xml:space="preserve">
+    <value>Shellanian</value>
+  </data>
+  <data name="TitaniumFAdj" xml:space="preserve">
+    <value>Titanium</value>
+  </data>
+  <data name="NefoliteFAdj" xml:space="preserve">
+    <value>Nefolite</value>
+  </data>
+  <data name="AdamantiteFAdj" xml:space="preserve">
+    <value>Adamantite</value>
+  </data>
+  <data name="CifilmFAdj" xml:space="preserve">
+    <value>Cifilm</value>
+  </data>
+  <data name="OrichalcumFAdj" xml:space="preserve">
+    <value>Orichalcum</value>
+  </data>
+  <data name="GoatHideFAdj" xml:space="preserve">
+    <value>Goat Hide</value>
+  </data>
+  <data name="WildDogHideFAdj" xml:space="preserve">
+    <value>Wild Dog Hide</value>
+  </data>
+  <data name="RabbitHideFAdj" xml:space="preserve">
+    <value>Rabbit Hide</value>
+  </data>
+  <data name="FoxHideFAdj" xml:space="preserve">
+    <value>Fox Hide</value>
+  </data>
+  <data name="TigerHideFAdj" xml:space="preserve">
+    <value>Tiger Hide</value>
+  </data>
+  <data name="DeerHideFAdj" xml:space="preserve">
+    <value>Deer Hide</value>
+  </data>
+  <data name="BoarHideFAdj" xml:space="preserve">
+    <value>Boar Hide</value>
+  </data>
+  <data name="LizardHideFAdj" xml:space="preserve">
+    <value>Lizard Hide</value>
+  </data>
+  <data name="BearHideFAdj" xml:space="preserve">
+    <value>Bear Hide</value>
+  </data>
+  <data name="TrollHideFAdj" xml:space="preserve">
+    <value>Troll Hide</value>
+  </data>
+  <data name="AlligatorHideFAdj" xml:space="preserve">
+    <value>Alligator Hide</value>
+  </data>
+  <data name="LeopardHideFAdj" xml:space="preserve">
+    <value>Leopard Hide</value>
+  </data>
+  <data name="WolfHideFAdj" xml:space="preserve">
+    <value>Wolf Hide</value>
+  </data>
+  <data name="BuffaloHideFAdj" xml:space="preserve">
+    <value>Buffalo Hide</value>
+  </data>
+  <data name="ScorpionHideFAdj" xml:space="preserve">
+    <value>Scorpion Hide</value>
+  </data>
+  <data name="CheetahHideFAdj" xml:space="preserve">
+    <value>Cheetah Hide</value>
+  </data>
+  <data name="HellhoundHideFAdj" xml:space="preserve">
+    <value>Hellhound Hide</value>
+  </data>
+  <data name="DragonHideFAdj" xml:space="preserve">
+    <value>Dragon Hide</value>
+  </data>
+  <data name="WyvernHideFAdj" xml:space="preserve">
+    <value>Wyvern Hide</value>
+  </data>
+  <data name="GriffinHideFAdj" xml:space="preserve">
+    <value>Griffin Hide</value>
+  </data>
+  <data name="CottonFAdj" xml:space="preserve">
+    <value>Cotton</value>
+  </data>
+  <data name="BeechmienFAdj" xml:space="preserve">
+    <value>Beechmien</value>
+  </data>
+  <data name="GoatWoolFAdj" xml:space="preserve">
+    <value>Goat Wool</value>
+  </data>
+  <data name="JuteFAdj" xml:space="preserve">
+    <value>Jute</value>
+  </data>
+  <data name="SheepWoolFAdj" xml:space="preserve">
+    <value>Sheep Wool</value>
+  </data>
+  <data name="PalmFAdj" xml:space="preserve">
+    <value>Palm</value>
+  </data>
+  <data name="LlamaWoolFAdj" xml:space="preserve">
+    <value>Llama Wool</value>
+  </data>
+  <data name="VasimineFAdj" xml:space="preserve">
+    <value>Vasimine</value>
+  </data>
+  <data name="LinenFAdj" xml:space="preserve">
+    <value>Linen</value>
+  </data>
+  <data name="SilverclawFAdj" xml:space="preserve">
+    <value>Silverclaw</value>
+  </data>
+  <data name="CamelWoolFAdj" xml:space="preserve">
+    <value>Camel Wool</value>
+  </data>
+  <data name="MelenaFAdj" xml:space="preserve">
+    <value>Melena</value>
+  </data>
+  <data name="HempFAdj" xml:space="preserve">
+    <value>Hemp</value>
+  </data>
+  <data name="YuccaFAdj" xml:space="preserve">
+    <value>Yucca</value>
+  </data>
+  <data name="UtumeenFAdj" xml:space="preserve">
+    <value>Utumeen</value>
+  </data>
+  <data name="TrireedFAdj" xml:space="preserve">
+    <value>Trireed</value>
+  </data>
+  <data name="SilkFAdj" xml:space="preserve">
+    <value>Silk</value>
+  </data>
+  <data name="TagimineFAdj" xml:space="preserve">
+    <value>Tagimine</value>
+  </data>
+  <data name="ViscoseFAdj" xml:space="preserve">
+    <value>Viscose</value>
+  </data>
+  <data name="OvariceFAdj" xml:space="preserve">
+    <value>Ovarice</value>
+  </data>
+  <data name="TinFAdj" xml:space="preserve">
+    <value>Tin</value>
+  </data>
+  <data name="NickelFAdj" xml:space="preserve">
+    <value>Nickel</value>
+  </data>
+  <data name="AdamantiteMAdj" xml:space="preserve">
+        <value>Adamantite</value>
+    </data>
+  <data name="AddNewEffectText" xml:space="preserve">
+        <value>Add New Effect</value>
+    </data>
+  <data name="ArmorBag" xml:space="preserve">
+        <value>Armor bag</value>
+    </data>
+  <data name="BonySupplyBag" xml:space="preserve">
+        <value>Bony supply bag</value>
+    </data>
+  <data name="BrassMAdj" xml:space="preserve">
+        <value>Brass</value>
+    </data>
+  <data name="DemonicSupplyBag" xml:space="preserve">
+        <value>Demonic supply bag</value>
+    </data>
+  <data name="CifilmMAdj" xml:space="preserve">
+        <value>Cifilm</value>
+    </data>
+  <data name="GalduriteBag" xml:space="preserve">
+        <value>Galdurite bag</value>
+    </data>
+  <data name="LeafySupplyBag" xml:space="preserve">
+        <value>Leafy supply bag</value>
+    </data>
+  <data name="MountainousSupplyBag" xml:space="preserve">
+        <value>Mountainous supply bag</value>
+    </data>
+  <data name="MurkySupplyBag" xml:space="preserve">
+        <value>Murky supply bag</value>
+    </data>
+  <data name="NefoliteMAdj" xml:space="preserve">
+        <value>Nefolite</value>
+    </data>
+  <data name="OrichalcumMAdj" xml:space="preserve">
+        <value>Orichalcum</value>
+    </data>
+  <data name="PirateSupplyBag" xml:space="preserve">
+        <value>Pirate supply bag</value>
+    </data>
+  <data name="SandySupplyBag" xml:space="preserve">
+        <value>Sandy supply bag</value>
+    </data>
+  <data name="RemoveEffectText" xml:space="preserve">
+        <value>Remove Effect</value>
+    </data>
+  <data name="SaveText" xml:space="preserve">
+        <value>Save</value>
+    </data>
+  <data name="ShellanianMAdj" xml:space="preserve">
+        <value>Shellanian</value>
+    </data>
+  <data name="SteelFAdj" xml:space="preserve">
+        <value>Steel</value>
+    </data>
+  <data name="TempleSupplyBag" xml:space="preserve">
+        <value>Temple supply bag</value>
+    </data>
+  <data name="TypeText" xml:space="preserve">
+        <value>Type</value>
+    </data>
+  <data name="TitaniumMAdj" xml:space="preserve">
+        <value>Titanium</value>
+    </data>
+  <data name="WeaponBag" xml:space="preserve">
+        <value>Weapon bag</value>
+    </data>
+  <data name="Goner" xml:space="preserve">
+    <value>Goner</value>
+  </data>
+  <data name="Revenant" xml:space="preserve">
+    <value>Revenant</value>
+  </data>
+  <data name="SkeletonOccultist" xml:space="preserve">
+    <value>Skeleton Occultist</value>
+  </data>
+  <data name="SkeletonArcher" xml:space="preserve">
+    <value>Skeleton Archer</value>
+  </data>
+  <data name="Ghoul" xml:space="preserve">
+    <value>Ghoul</value>
+  </data>
+  <data name="SkeletonDefender" xml:space="preserve">
+    <value>Skeleton Defender</value>
+  </data>
+  <data name="SkeletonExecutioner" xml:space="preserve">
+    <value>Skeleton Executioner</value>
+  </data>
+  <data name="DeadKingSpirit" xml:space="preserve">
+    <value>Dead King's Spirit</value>
+  </data>
+  <data name="InfectedTree" xml:space="preserve">
+    <value>Infected Tree</value>
+  </data>
+  <data name="RabidWolf" xml:space="preserve">
+    <value>Rabid Wolf</value>
+  </data>
+  <data name="BanditThug" xml:space="preserve">
+    <value>Bandit Thug</value>
+  </data>
+  <data name="BanditMarksman" xml:space="preserve">
+    <value>Bandit Marksman</value>
+  </data>
+  <data name="ElfArcher" xml:space="preserve">
+    <value>Elf Archer</value>
+  </data>
+  <data name="ElfRanger" xml:space="preserve">
+    <value>Elf Ranger</value>
+  </data>
+  <data name="ElfDruid" xml:space="preserve">
+    <value>Elf Druid</value>
+  </data>
+  <data name="InfectedEnt" xml:space="preserve">
+    <value>Infected Ent</value>
+  </data>
+  <data name="BanditLeader" xml:space="preserve">
+    <value>Bandit Leader</value>
+  </data>
+  <data name="DemonSlave" xml:space="preserve">
+    <value>Demon Slave</value>
+  </data>
+  <data name="DemonicFootman" xml:space="preserve">
+    <value>Demonic Footman</value>
+  </data>
+  <data name="DemonicSorcerer" xml:space="preserve">
+    <value>Demonic Sorcerer</value>
+  </data>
+  <data name="Imp" xml:space="preserve">
+    <value>Imp</value>
+  </data>
+  <data name="Hawia'kalb" xml:space="preserve">
+    <value>Hawia'kalb</value>
+  </data>
+  <data name="DemonicIllusionist" xml:space="preserve">
+    <value>Demonic Illusionist</value>
+  </data>
+  <data name="Eayan'masakh" xml:space="preserve">
+    <value>Eayan'masakh</value>
+  </data>
+  <data name="DemonicJarl" xml:space="preserve">
+    <value>Demonic Jarl</value>
+  </data>
+  <data name="Cerberus" xml:space="preserve">
+    <value>Cerberus</value>
+  </data>
+  <data name="PirateCombatant" xml:space="preserve">
+    <value>Pirate Combatant</value>
+  </data>
+  <data name="PirateHarpooner" xml:space="preserve">
+    <value>Pirate Harpooner</value>
+  </data>
+  <data name="SandyPhoenix" xml:space="preserve">
+    <value>Sandy Phoenix</value>
+  </data>
+  <data name="Parrot" xml:space="preserve">
+    <value>Parrot</value>
+  </data>
+  <data name="Sharkman" xml:space="preserve">
+    <value>Sharkman</value>
+  </data>
+  <data name="PirateMedic" xml:space="preserve">
+    <value>Pirate Medic</value>
+  </data>
+  <data name="PirateCannoneer" xml:space="preserve">
+    <value>Pirate Cannoneer</value>
+  </data>
+  <data name="AlphaShark" xml:space="preserve">
+    <value>Alpha-Shark</value>
+  </data>
+  <data name="PirateCaptain" xml:space="preserve">
+    <value>Pirate Captain</value>
+  </data>
+  <data name="AwazarVeteran" xml:space="preserve">
+    <value>Awazar Veteran</value>
+  </data>
+  <data name="AwazarArcher" xml:space="preserve">
+    <value>Awazar Archer</value>
+  </data>
+  <data name="AwazarMedic" xml:space="preserve">
+    <value>Awazar Medic</value>
+  </data>
+  <data name="AwazarMacer" xml:space="preserve">
+    <value>Awazar Macer</value>
+  </data>
+  <data name="PoisonousScorpion" xml:space="preserve">
+    <value>Poisonous Scorpion</value>
+  </data>
+  <data name="FieryScorpion" xml:space="preserve">
+    <value>Fiery Scorpion</value>
+  </data>
+  <data name="SandTornado" xml:space="preserve">
+    <value>Sand Tornado</value>
+  </data>
+  <data name="AwazarLeader" xml:space="preserve">
+    <value>Awazar Leader</value>
+  </data>
+  <data name="AlphaScorpionRider" xml:space="preserve">
+    <value>Alpha-Scorpion Rider</value>
+  </data>
+  <data name="PriestOfMalad" xml:space="preserve">
+    <value>Priest of Malad</value>
+  </data>
+  <data name="MaladBlackKnight" xml:space="preserve">
+    <value>Malad's Black Knight</value>
+  </data>
+  <data name="MaladDefiler" xml:space="preserve">
+    <value>Malad's Defiler</value>
+  </data>
+  <data name="TempleGuardian" xml:space="preserve">
+    <value>Temple Guardian</value>
+  </data>
+  <data name="Mummy" xml:space="preserve">
+    <value>Mummy</value>
+  </data>
+  <data name="MaladNecromancer" xml:space="preserve">
+    <value>Malad's Necromancer</value>
+  </data>
+  <data name="DefensiveStatue" xml:space="preserve">
+    <value>Defensive Statue</value>
+  </data>
+  <data name="Hierophant" xml:space="preserve">
+    <value>Hierophant</value>
+  </data>
+  <data name="Jawa" xml:space="preserve">
+    <value>Jawa</value>
+  </data>
+  <data name="MountainTroll" xml:space="preserve">
+    <value>Mountain Troll</value>
+  </data>
+  <data name="TregandianRuk" xml:space="preserve">
+    <value>Tragandian Ruk</value>
+  </data>
+  <data name="CrackedSkullSpearman" xml:space="preserve">
+    <value>Cracked Skull Spearman</value>
+  </data>
+  <data name="CrackedSkullShaman" xml:space="preserve">
+    <value>Cracked Skull Shaman</value>
+  </data>
+  <data name="HistineGolem" xml:space="preserve">
+    <value>Histine Golem</value>
+  </data>
+  <data name="MountainBandit" xml:space="preserve">
+    <value>Mountain Bandit</value>
+  </data>
+  <data name="MysteriousWanderer" xml:space="preserve">
+    <value>Mysterious Wanderer</value>
+  </data>
+  <data name="CrackedSkullBerserker" xml:space="preserve">
+    <value>Cracked Skull Berserker</value>
+  </data>
+  <data name="Wyvern" xml:space="preserve">
+    <value>Wyvern</value>
+  </data>
+  <data name="CarnivorousPlant" xml:space="preserve">
+    <value>Carnivorous Plant</value>
+  </data>
+  <data name="Alligator" xml:space="preserve">
+    <value>Alligator</value>
+  </data>
+  <data name="ParasiticPlant" xml:space="preserve">
+    <value>Parasitic Plant</value>
+  </data>
+  <data name="Drowned" xml:space="preserve">
+    <value>Drowned</value>
+  </data>
+  <data name="Deserter" xml:space="preserve">
+    <value>Deserter</value>
+  </data>
+  <data name="SwampGuardian" xml:space="preserve">
+    <value>Swamp Guardian</value>
+  </data>
+  <data name="SpittingPlant" xml:space="preserve">
+    <value>Spitting Plant</value>
+  </data>
+  <data name="SwampEnt" xml:space="preserve">
+    <value>Swamp Ent</value>
+  </data>
+  <data name="ManEatingPlant" xml:space="preserve">
+    <value>Man-eating Plant</value>
+  </data>
+  <data name="ToHit" xml:space="preserve">
+    <value>to hit</value>
+  </data>
+  <data name="CodeChallengeIntro" xml:space="preserve">
+    <value>Code challenge: Try to match the secret digit sequence</value>
+  </data>
+  <data name="CurrentCode" xml:space="preserve">
+    <value>Current code</value>
+  </data>
+  <data name="AdjustDigit" xml:space="preserve">
+    <value>Adjust single digit</value>
+  </data>
+  <data name="ChangeWholeCode" xml:space="preserve">
+    <value>Change whole code</value>
+  </data>
+  <data name="CheckAnswer" xml:space="preserve">
+    <value>Check answer</value>
+  </data>
+  <data name="TypeDigitIndex" xml:space="preserve">
+    <value>Type the digit's index</value>
+  </data>
+  <data name="TypeDigitDesiredValue" xml:space="preserve">
+    <value>Type the digit's desired value</value>
+  </data>
+  <data name="TypeCodeDesiredValue" xml:space="preserve">
+    <value>Type the code's desired value</value>
+  </data>
+  <data name="InvalidCode" xml:space="preserve">
+    <value>Invalid code</value>
+  </data>
+  <data name="IncorrectCode" xml:space="preserve">
+    <value>Incorrect code. Try again!</value>
+  </data>
+  <data name="Tips" xml:space="preserve">
+    <value>Tips</value>
+  </data>
+  <data name="DigitAtPosition" xml:space="preserve">
+    <value>The digit at position</value>
+  </data>
+  <data name="IsTooLow" xml:space="preserve">
+    <value>is too low</value>
+  </data>
+  <data name="IsTooHigh" xml:space="preserve">
+    <value>is too high</value>
+  </data>
+  <data name="IsCorrect" xml:space="preserve">
+    <value>is correct</value>
+  </data>
+  <data name="MemoryChallengeIntro" xml:space="preserve">
+    <value>Memory challenge: Remember the sequence that will show up in</value>
+  </data>
+  <data name="MemorizeThisSequence" xml:space="preserve">
+    <value>Memorize this sequence</value>
+  </data>
+  <data name="CurrentSequence" xml:space="preserve">
+    <value>Current sequence</value>
+  </data>
+  <data name="TypeNextCharacter" xml:space="preserve">
+    <value>Type the next character</value>
+  </data>
+  <data name="ReactionChallengeIntro" xml:space="preserve">
+    <value>Reaction challenge: Quickly press the buttons that will start appearing in</value>
+  </data>
+  <data name="ReactionTypeCharacter" xml:space="preserve">
+    <value>Quick! Type the character</value>
+  </data>
+  <data name="GoodAdverb" xml:space="preserve">
+    <value>Good</value>
+  </data>
+  <data name="ColorChallengeIntro" xml:space="preserve">
+    <value>Color code challenge: Try to decipher what word is hidden behind the colored blocks! (color matches to letter)</value>
+  </data>
+  <data name="WordEncoded" xml:space="preserve">
+    <value>Word (encoded)</value>
+  </data>
+  <data name="TypeDecodedWord" xml:space="preserve">
+    <value>Type in the decoded word</value>
+  </data>
+  <data name="IncorrectWordLength" xml:space="preserve">
+    <value>The word's length does not match!</value>
+  </data>
+  <data name="IncorrectWord" xml:space="preserve">
+    <value>Incorrect word! Try again.</value>
+  </data>
+  <data name="LetterAtPosition" xml:space="preserve">
+    <value>The letter at position</value>
+  </data>
+  <data name="CorrectWordAndPosition" xml:space="preserve">
+    <value>is in the word, and at the correct position.</value>
+  </data>
+  <data name="CorrectWordWrongPosition" xml:space="preserve">
+    <value>is in the word, but in another position.</value>
+  </data>
+  <data name="WrongLetter" xml:space="preserve">
+    <value>is not in the word.</value>
+  </data>
+  <data name="GambaGridChallengeIntro" xml:space="preserve">
+    <value>Gamba grid challenge: Try to guess which squares don't contain the bomb! (You must select exactly</value>
+  </data>
+  <data name="GambaGridTitle" xml:space="preserve">
+    <value>Feeling lucky? Choose a tile, any tile</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="BombTriggered" xml:space="preserve">
+    <value>Bomb was triggered on one of the chosen squares!</value>
+  </data>
+  <data name="TriesLeft" xml:space="preserve">
+    <value>Tries left</value>
+  </data>
+  <data name="BombExplodes" xml:space="preserve">
+    <value>The bomb explodes!</value>
+  </data>
+  <data name="MeagreWeaponGaldurite" xml:space="preserve">
+    <value>Meagre weapon galdurite</value>
+  </data>
+  <data name="FairWeaponGaldurite" xml:space="preserve">
+    <value>Fair weapon galdurite</value>
+  </data>
+  <data name="PotentWeaponGaldurite" xml:space="preserve">
+    <value>Potent weapon galdurite</value>
+  </data>
+  <data name="MeagreArmorGaldurite" xml:space="preserve">
+    <value>Meagre armor galdurite</value>
+  </data>
+  <data name="FairArmorGaldurite" xml:space="preserve">
+    <value>Fair armor galdurite</value>
+  </data>
+  <data name="PotentArmorGaldurite" xml:space="preserve">
+    <value>Potent armor galdurite</value>
+  </data>
+  <data name="RedMAdj" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="BlueMAdj" xml:space="preserve">
+    <value>Blue</value>
+  </data>
+  <data name="PurpleMAdj" xml:space="preserve">
+    <value>Purple</value>
+  </data>
+  <data name="YellowMAdj" xml:space="preserve">
+    <value>Yellow</value>
+  </data>
+  <data name="GreenMAdj" xml:space="preserve">
+    <value>Green</value>
+  </data>
+  <data name="BlackMAdj" xml:space="preserve">
+    <value>Black</value>
+  </data>
+  <data name="PinkMAdj" xml:space="preserve">
+    <value>Pink</value>
+  </data>
+  <data name="WhiteMAdj" xml:space="preserve">
+    <value>White</value>
+  </data>
+  <data name="AmberMAdj" xml:space="preserve">
+    <value>Amber</value>
+  </data>
+  <data name="KillDungeonCatacombs" xml:space="preserve">
+    <value>Clearing the Catacombs</value>
+  </data>
+  <data name="KillDungeonForest" xml:space="preserve">
+    <value>Clearing the Forest</value>
+  </data>
+  <data name="KillDungeonElvishRuins" xml:space="preserve">
+    <value>Clearing the Elvish Ruins</value>
+  </data>
+  <data name="KillDungeonCove" xml:space="preserve">
+    <value>Clearing the Cove</value>
+  </data>
+  <data name="KillDungeonDesert" xml:space="preserve">
+    <value>Clearing the Desert</value>
+  </data>
+  <data name="KillDungeonTemple" xml:space="preserve">
+    <value>Clearing the Temple</value>
+  </data>
+  <data name="KillDungeonMountains" xml:space="preserve">
+    <value>Clearing the Mountains</value>
+  </data>
+  <data name="KillDungeonSwamp" xml:space="preserve">
+    <value>Clearing the Swamp</value>
+  </data>
+  <data name="DescendCatacombs" xml:space="preserve">
+    <value>Exploring the Catacombs</value>
+  </data>
+  <data name="DescendForest" xml:space="preserve">
+    <value>Exploring the Forest</value>
+  </data>
+  <data name="DescendElvishRuins" xml:space="preserve">
+    <value>Exploring the Elvish Ruins</value>
+  </data>
+  <data name="DescendCove" xml:space="preserve">
+    <value>Exploring the Cove</value>
+  </data>
+  <data name="DescendDesert" xml:space="preserve">
+    <value>Exploring the Desert</value>
+  </data>
+  <data name="DescendTemple" xml:space="preserve">
+    <value>Exploring the Temple</value>
+  </data>
+  <data name="DescendMountains" xml:space="preserve">
+    <value>Exploring the Mountains</value>
+  </data>
+  <data name="DescendSwamp" xml:space="preserve">
+    <value>Exploring the Swamp</value>
+  </data>
+  <data name="UpTo" xml:space="preserve">
+    <value>Up to</value>
+  </data>
+  <data name="Chop" xml:space="preserve">
+    <value>Chop</value>
+  </data>
+  <data name="Kick" xml:space="preserve">
+    <value>Kick</value>
+  </data>
+  <data name="WarCry" xml:space="preserve">
+    <value>War Cry</value>
+  </data>
+  <data name="RightHook" xml:space="preserve">
+    <value>Right Hook</value>
+  </data>
+  <data name="FieldBandage" xml:space="preserve">
+    <value>Field Bandage</value>
+  </data>
+  <data name="DaggerThrow" xml:space="preserve">
+    <value>Dagger Throw</value>
+  </data>
+  <data name="Exchange" xml:space="preserve">
+    <value>Exchange</value>
+  </data>
+  <data name="CloudOfSmoke" xml:space="preserve">
+    <value>Cloud of Smoke</value>
+  </data>
+  <data name="Hookshot" xml:space="preserve">
+    <value>Hookshot</value>
+  </data>
+  <data name="AccurateThrow" xml:space="preserve">
+    <value>Accurate Throw</value>
+  </data>
+  <data name="EnergyOrb" xml:space="preserve">
+    <value>Energy Orb</value>
+  </data>
+  <data name="Fireball" xml:space="preserve">
+    <value>Fireball</value>
+  </data>
+  <data name="Focus" xml:space="preserve">
+    <value>Focus</value>
+  </data>
+  <data name="MagicShield" xml:space="preserve">
+    <value>Magic Shield</value>
+  </data>
+  <data name="ExhaustingSpells" xml:space="preserve">
+    <value>Exhausting Spells</value>
+  </data>
+  <data name="Judgement" xml:space="preserve">
+    <value>Judgement</value>
+  </data>
+  <data name="CrushingStrike" xml:space="preserve">
+    <value>Crushing Strike</value>
+  </data>
+  <data name="Cure" xml:space="preserve">
+    <value>Cure</value>
+  </data>
+  <data name="HolyTransfusion" xml:space="preserve">
+    <value>Holy Transfusion</value>
+  </data>
+  <data name="ShieldOfReflection" xml:space="preserve">
+    <value>Shield of Reflection</value>
+  </data>
+  <data name="BoneSword" xml:space="preserve">
+    <value>Bone Sword</value>
+  </data>
+  <data name="CrossStrike" xml:space="preserve">
+    <value>Cross Strike</value>
+  </data>
+  <data name="BoneZeal" xml:space="preserve">
+    <value>Bone Zeal</value>
+  </data>
+  <data name="ManicBite" xml:space="preserve">
+    <value>Manic Bite</value>
+  </data>
+  <data name="Vomit" xml:space="preserve">
+    <value>Vomit</value>
+  </data>
+  <data name="SmellOfBlood" xml:space="preserve">
+    <value>Smell of Blood</value>
+  </data>
+  <data name="Spook" xml:space="preserve">
+    <value>Spook</value>
+  </data>
+  <data name="AncientIncantation" xml:space="preserve">
+    <value>Ancient Incantation</value>
+  </data>
+  <data name="BoneBow" xml:space="preserve">
+    <value>Bone Bow</value>
+  </data>
+  <data name="Laceration" xml:space="preserve">
+    <value>Laceration</value>
+  </data>
+  <data name="BoneMace" xml:space="preserve">
+    <value>Bone Mace</value>
+  </data>
+  <data name="PhantomWave" xml:space="preserve">
+    <value>Phantom Wave</value>
+  </data>
+  <data name="DarkRoots" xml:space="preserve">
+    <value>Dark Roots</value>
+  </data>
+  <data name="TearingBite" xml:space="preserve">
+    <value>Tearing Bite</value>
+  </data>
+  <data name="BanditsKnife" xml:space="preserve">
+    <value>Bandit's Knife</value>
+  </data>
+  <data name="CrossbowShot" xml:space="preserve">
+    <value>Crossbow Shot</value>
+  </data>
+  <data name="ElvenArrow" xml:space="preserve">
+    <value>Elven Arrow</value>
+  </data>
+  <data name="SerratedDagger" xml:space="preserve">
+    <value>Serrated Dagger</value>
+  </data>
+  <data name="NaturesWrath" xml:space="preserve">
+    <value>Nature's Wrath</value>
+  </data>
+  <data name="BranchSwing" xml:space="preserve">
+    <value>Branch Swing</value>
+  </data>
+  <data name="BearTrap" xml:space="preserve">
+    <value>Bear Trap</value>
+  </data>
+  <data name="DefendingLords" xml:space="preserve">
+    <value>Defending Lords</value>
+  </data>
+  <data name="DemonicFlail" xml:space="preserve">
+    <value>Demonic Flail</value>
+  </data>
+  <data name="DemonicWhipping" xml:space="preserve">
+    <value>Demonic Whipping</value>
+  </data>
+  <data name="SharpClaws" xml:space="preserve">
+    <value>Sharp Claws</value>
+  </data>
+  <data name="DemonTeeth" xml:space="preserve">
+    <value>Demon Teeth</value>
+  </data>
+  <data name="Confusion" xml:space="preserve">
+    <value>Confusion</value>
+  </data>
+  <data name="EyeLaser" xml:space="preserve">
+    <value>Eye Laser</value>
+  </data>
+  <data name="DemonicFury" xml:space="preserve">
+    <value>Demonic Fury</value>
+  </data>
+  <data name="HellishFangs" xml:space="preserve">
+    <value>Hellish Fangs</value>
+  </data>
+  <data name="RustyMAdj" xml:space="preserve">
+    <value>Rusty</value>
+  </data>
+  <data name="HoleyFAdj" xml:space="preserve">
+    <value>Holey</value>
+  </data>
+  <data name="Scout" xml:space="preserve">
+    <value>Scout</value>
+  </data>
+  <data name="PirateSaber" xml:space="preserve">
+    <value>Pirate Saber</value>
+  </data>
+  <data name="HarpoonPierce" xml:space="preserve">
+    <value>Harpoon Pierce</value>
+  </data>
+  <data name="PhoenixClaws" xml:space="preserve">
+    <value>Phoenix Claws</value>
+  </data>
+  <data name="ButcheringClaws" xml:space="preserve">
+    <value>Butchering Claws</value>
+  </data>
+  <data name="Crunch" xml:space="preserve">
+    <value>Crunch</value>
+  </data>
+  <data name="ScalpelIncision" xml:space="preserve">
+    <value>Scalpel Incision</value>
+  </data>
+  <data name="CannonShot" xml:space="preserve">
+    <value>Cannon Shot</value>
+  </data>
+  <data name="JawJolt" xml:space="preserve">
+    <value>Jaw Jolt</value>
+  </data>
+  <data name="CaptainsCut" xml:space="preserve">
+    <value>Captain's Cut</value>
+  </data>
+  <data name="DesertScimitar" xml:space="preserve">
+    <value>Desert Scimitar</value>
+  </data>
+  <data name="EnviousArrow" xml:space="preserve">
+    <value>Envious Arrow</value>
+  </data>
+  <data name="CurvedKnife" xml:space="preserve">
+    <value>Curved Knife</value>
+  </data>
+  <data name="MaceSwing" xml:space="preserve">
+    <value>Mace Swing</value>
+  </data>
+  <data name="ScorpionPincers" xml:space="preserve">
+    <value>Scorpion Pincers</value>
+  </data>
+  <data name="SandPuff" xml:space="preserve">
+    <value>Sand Puff</value>
+  </data>
+  <data name="ThievishBlade" xml:space="preserve">
+    <value>Thievish Blade</value>
+  </data>
+  <data name="LanceThrust" xml:space="preserve">
+    <value>Lance Thrust</value>
+  </data>
+  <data name="InflictWounds" xml:space="preserve">
+    <value>Inflict Wounds</value>
+  </data>
+  <data name="SwordOfDeath" xml:space="preserve">
+    <value>Sword of Death</value>
+  </data>
+  <data name="DefiledMissile" xml:space="preserve">
+    <value>Defiled Missile</value>
+  </data>
+  <data name="TempleDefense" xml:space="preserve">
+    <value>Temple Defense</value>
+  </data>
+  <data name="DefiledHands" xml:space="preserve">
+    <value>Defiled Hands</value>
+  </data>
+  <data name="RayOfDeath" xml:space="preserve">
+    <value>Ray of Death</value>
+  </data>
+  <data name="AnnihilationLaser" xml:space="preserve">
+    <value>Annihilation Laser</value>
+  </data>
+  <data name="GodlyPunishment" xml:space="preserve">
+    <value>Godly Punishment</value>
+  </data>
+  <data name="SoulPunishment" xml:space="preserve">
+    <value>Soul Punishment</value>
+  </data>
+  <data name="Bash" xml:space="preserve">
+    <value>Bash</value>
+  </data>
+  <data name="Peck" xml:space="preserve">
+    <value>Peck</value>
+  </data>
+  <data name="SpearBlow" xml:space="preserve">
+    <value>Spear Blow</value>
+  </data>
+  <data name="GhostOfPerdition" xml:space="preserve">
+    <value>Ghost of Perdition</value>
+  </data>
+  <data name="CrystalStrike" xml:space="preserve">
+    <value>Crystal Strike</value>
+  </data>
+  <data name="WispOfEnergy" xml:space="preserve">
+    <value>Wisp of Energy</value>
+  </data>
+  <data name="AxeOfFury" xml:space="preserve">
+    <value>Axe of Fury</value>
+  </data>
+  <data name="LaceratingClaws" xml:space="preserve">
+    <value>Lacerating Claws</value>
+  </data>
+  <data name="Lash" xml:space="preserve">
+    <value>Lash</value>
+  </data>
+  <data name="SharpTeeth" xml:space="preserve">
+    <value>Sharp Teeth</value>
+  </data>
+  <data name="PoisonousGasCloud" xml:space="preserve">
+    <value>Poisonous Gas Cloud</value>
+  </data>
+  <data name="DrownerClaws" xml:space="preserve">
+    <value>Drowner Claws</value>
+  </data>
+  <data name="DesperateCut" xml:space="preserve">
+    <value>Desperate Cut</value>
+  </data>
+  <data name="Proboscis" xml:space="preserve">
+    <value>Proboscis</value>
+  </data>
+  <data name="AcidSpit" xml:space="preserve">
+    <value>Acid Spit</value>
+  </data>
+  <data name="ArterialGrip" xml:space="preserve">
+    <value>Arterial Grip</value>
+  </data>
+  <data name="BrokenMAdj" xml:space="preserve">
+    <value>Broken</value>
+  </data>
+  <data name="ScratchedFAdj" xml:space="preserve">
+    <value>Scratched</value>
+  </data>
+  <data name="SplinteryFAdj" xml:space="preserve">
+    <value>Splintery</value>
+  </data>
+  <data name="TornFAdj" xml:space="preserve">
+    <value>Torn</value>
+  </data>
+  <data name="MisshapenMAdj" xml:space="preserve">
+    <value>Misshapen</value>
+  </data>
+  <data name="PiercedMAdj" xml:space="preserve">
+    <value>Pierced</value>
+  </data>
+  <data name="Paladin" xml:space="preserve">
+    <value>Paladin</value>
+  </data>
+  <data name="Sorcerer" xml:space="preserve">
+    <value>Sorcerer</value>
+  </data>
+  <data name="Warrior" xml:space="preserve">
+    <value>Warrior</value>
+  </data>
+  <data name="Iron" xml:space="preserve">
+    <value>Iron</value>
+  </data>
+  <data name="Nickel" xml:space="preserve">
+    <value>Nickel</value>
+  </data>
+  <data name="Copper" xml:space="preserve">
+    <value>Copper</value>
+  </data>
+  <data name="Tin" xml:space="preserve">
+    <value>Tin</value>
+  </data>
+  <data name="Steel" xml:space="preserve">
+    <value>Steel</value>
+  </data>
+  <data name="Invar" xml:space="preserve">
+    <value>Invar</value>
+  </data>
+  <data name="MeteoricIron" xml:space="preserve">
+    <value>Meteoric Iron</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>Bronze</value>
+  </data>
+  <data name="Annodite" xml:space="preserve">
+    <value>Annodite</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>Silver</value>
+  </data>
+  <data name="Cobalt" xml:space="preserve">
+    <value>Cobalt</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>Gold</value>
+  </data>
+  <data name="Criferite" xml:space="preserve">
+    <value>Criferite</value>
+  </data>
+  <data name="Brass" xml:space="preserve">
+    <value>Brass</value>
+  </data>
+  <data name="SultanSteel" xml:space="preserve">
+    <value>Sultan Steel</value>
+  </data>
+  <data name="Titanium" xml:space="preserve">
+    <value>Titanium</value>
+  </data>
+  <data name="Nefolite" xml:space="preserve">
+    <value>Nefolite</value>
+  </data>
+  <data name="Adamantite" xml:space="preserve">
+    <value>Adamantite</value>
+  </data>
+  <data name="Cifilm" xml:space="preserve">
+    <value>Cifilm</value>
+  </data>
+  <data name="Orichalcum" xml:space="preserve">
+    <value>Orichalcum</value>
+  </data>
+  <data name="Larch" xml:space="preserve">
+    <value>Larch</value>
+  </data>
+  <data name="Linden" xml:space="preserve">
+    <value>Linden</value>
+  </data>
+  <data name="Poplar" xml:space="preserve">
+    <value>Poplar</value>
+  </data>
+  <data name="Alder" xml:space="preserve">
+    <value>Alder</value>
+  </data>
+  <data name="Hawthorn" xml:space="preserve">
+    <value>Hawthorn</value>
+  </data>
+  <data name="Birch" xml:space="preserve">
+    <value>Birch</value>
+  </data>
+  <data name="Cypress" xml:space="preserve">
+    <value>Cypress</value>
+  </data>
+  <data name="Cedar" xml:space="preserve">
+    <value>Cedar</value>
+  </data>
+  <data name="Hornbeam" xml:space="preserve">
+    <value>Hornbeam</value>
+  </data>
+  <data name="Elm" xml:space="preserve">
+    <value>Elm</value>
+  </data>
+  <data name="Spruce" xml:space="preserve">
+    <value>Spruce</value>
+  </data>
+  <data name="Elder" xml:space="preserve">
+    <value>Elder</value>
+  </data>
+  <data name="Oak" xml:space="preserve">
+    <value>Oak</value>
+  </data>
+  <data name="Beech" xml:space="preserve">
+    <value>Beech</value>
+  </data>
+  <data name="Sequoia" xml:space="preserve">
+    <value>Sequoia</value>
+  </data>
+  <data name="Fir" xml:space="preserve">
+    <value>Fir</value>
+  </data>
+  <data name="BlackOak" xml:space="preserve">
+    <value>Black Oak</value>
+  </data>
+  <data name="Pine" xml:space="preserve">
+    <value>Pine</value>
+  </data>
+  <data name="Ebony" xml:space="preserve">
+    <value>Ebony</value>
+  </data>
+  <data name="Hazel" xml:space="preserve">
+    <value>Hazel</value>
+  </data>
+  <data name="Cotton" xml:space="preserve">
+    <value>Cotton</value>
+  </data>
+  <data name="Beechmien" xml:space="preserve">
+    <value>Beechmien</value>
+  </data>
+  <data name="GoatWool" xml:space="preserve">
+    <value>Goat Wool</value>
+  </data>
+  <data name="Jute" xml:space="preserve">
+    <value>Jute</value>
+  </data>
+  <data name="SheepWool" xml:space="preserve">
+    <value>Sheep Wool</value>
+  </data>
+  <data name="Palm" xml:space="preserve">
+    <value>Palm</value>
+  </data>
+  <data name="LlamaWool" xml:space="preserve">
+    <value>Llama Wool</value>
+  </data>
+  <data name="Vasimine" xml:space="preserve">
+    <value>Vasimine</value>
+  </data>
+  <data name="Linen" xml:space="preserve">
+    <value>Linen</value>
+  </data>
+  <data name="Silverclaw" xml:space="preserve">
+    <value>Silverclaw</value>
+  </data>
+  <data name="CamelWool" xml:space="preserve">
+    <value>Camel Wool</value>
+  </data>
+  <data name="Melena" xml:space="preserve">
+    <value>Melena</value>
+  </data>
+  <data name="Hemp" xml:space="preserve">
+    <value>Hemp</value>
+  </data>
+  <data name="Yucca" xml:space="preserve">
+    <value>Yucca</value>
+  </data>
+  <data name="Utumeen" xml:space="preserve">
+    <value>Utumeen</value>
+  </data>
+  <data name="Trireed" xml:space="preserve">
+    <value>Trireed</value>
+  </data>
+  <data name="Silk" xml:space="preserve">
+    <value>Silk</value>
+  </data>
+  <data name="Tagimine" xml:space="preserve">
+    <value>Tagimine</value>
+  </data>
+  <data name="Viscose" xml:space="preserve">
+    <value>Viscose</value>
+  </data>
+  <data name="Ovarice" xml:space="preserve">
+    <value>Ovarice</value>
+  </data>
+  <data name="Turn" xml:space="preserve">
+    <value>TURN</value>
+  </data>
+  <data name="Skills" xml:space="preserve">
+    <value>Skills</value>
+  </data>
+  <data name="PassiveEffects" xml:space="preserve">
+    <value>Passive Effects</value>
+  </data>
+  <data name="ChangeAdditionalCharacterInfo" xml:space="preserve">
+    <value>Change displayed character info</value>
+  </data>
+  <data name="ScrollBattleLogUp" xml:space="preserve">
+    <value>Scroll battle log up</value>
+  </data>
+  <data name="ScrollBattleLogDown" xml:space="preserve">
+    <value>Scroll battle log down</value>
+  </data>
+  <data name="ChangeDisplayedCharacter" xml:space="preserve">
+    <value>Change displayed character</value>
+  </data>
+  <data name="Stats" xml:space="preserve">
+    <value>Stats</value>
+  </data>
+  <data name="BattleLog" xml:space="preserve">
+    <value>Battle Log</value>
+  </data>
+  <data name="Space" xml:space="preserve">
+    <value>Space</value>
+  </data>
+  <data name="Unavailable" xml:space="preserve">
+    <value>Unavailable</value>
+  </data>
+  <data name="ConfirmEndTurn" xml:space="preserve">
+    <value>Are you sure you want to end the turn? You can still use some skills</value>
+  </data>
+  <data name="Taking" xml:space="preserve">
+    <value>taking</value>
+  </data>
+  <data name="IsStunned" xml:space="preserve">
+    <value>is stunned</value>
+  </data>
+  <data name="CannotMove" xml:space="preserve">
+    <value>cannot move</value>
+  </data>
+  <data name="IsFrozen" xml:space="preserve">
+    <value>is frozen</value>
+  </data>
+  <data name="AdvancesMove" xml:space="preserve">
+    <value>advances their next move</value>
+  </data>
+  <data name="By" xml:space="preserve">
+    <value>by</value>
+  </data>
+  <data name="IsBuffed" xml:space="preserve">
+    <value>increases by</value>
+  </data>
+  <data name="MinimalAttack" xml:space="preserve">
+    <value>Minimal attack</value>
+  </data>
+  <data name="MaximalAttack" xml:space="preserve">
+    <value>Maximal attack</value>
+  </data>
+  <data name="PhysicalDefense" xml:space="preserve">
+    <value>Physical defense</value>
+  </data>
+  <data name="MagicDefense" xml:space="preserve">
+    <value>Magic defense</value>
+  </data>
+  <data name="MaximalResource" xml:space="preserve">
+    <value>Maximal resource</value>
+  </data>
+  <data name="IsDebuffed" xml:space="preserve">
+    <value>decreases by</value>
+  </data>
+  <data name="BossProgress" xml:space="preserve">
+    <value>to boss</value>
+  </data>
+  <data name="ShowOnlyCraftable" xml:space="preserve">
+    <value>Show only craftable</value>
+  </data>
+  <data name="ShowCraftableAndUncraftable" xml:space="preserve">
+    <value>Show craftable and uncraftable</value>
+  </data>
+  <data name="Of" xml:space="preserve">
+    <value>of </value>
+  </data>
+  <data name="Lesser" xml:space="preserve">
+    <value>Lesser</value>
+  </data>
+  <data name="Greater" xml:space="preserve">
+    <value>Greater</value>
+  </data>
+  <data name="PotionHealthRegainAdv" xml:space="preserve">
+    <value>Healing</value>
+  </data>
+  <data name="PotionHealthRegenAdv" xml:space="preserve">
+    <value>Regenerating</value>
+  </data>
+  <data name="PotionResourceRegainAdv" xml:space="preserve">
+    <value>Invigorating</value>
+  </data>
+  <data name="PotionResourceRegenAdv" xml:space="preserve">
+    <value>Recovering</value>
+  </data>
+  <data name="PotionMaxResourceIncreaseAdv" xml:space="preserve">
+    <value>Mental</value>
+  </data>
+  <data name="PotionDamageDealtIncreaseAdv" xml:space="preserve">
+    <value>Empowering</value>
+  </data>
+  <data name="PotionDamageTakenDecreaseAdv" xml:space="preserve">
+    <value>Fortifying</value>
+  </data>
+  <data name="PotionResistanceIncreaseAdv" xml:space="preserve">
+    <value>Tempering</value>
+  </data>
+  <data name="PotionSpeedIncreaseAdv" xml:space="preserve">
+    <value>Accelerating</value>
+  </data>
+  <data name="PotionCritChanceIncreaseAdv" xml:space="preserve">
+    <value>Precise</value>
+  </data>
+  <data name="PotionDodgeIncreaseAdv" xml:space="preserve">
+    <value>Evasive</value>
+  </data>
+  <data name="PotionAccuracyIncreaseAdv" xml:space="preserve">
+    <value>Stimulating</value>
+  </data>
+  <data name="PotionHealthRegain" xml:space="preserve">
+    <value>Health</value>
+  </data>
+  <data name="PotionHealthRegen" xml:space="preserve">
+    <value>Regeneration</value>
+  </data>
+  <data name="PotionResourceRegain" xml:space="preserve">
+    <value>Energy</value>
+  </data>
+  <data name="PotionResourceRegen" xml:space="preserve">
+    <value>Recovery</value>
+  </data>
+  <data name="PotionMaxResourceIncrease" xml:space="preserve">
+    <value>Spirit</value>
+  </data>
+  <data name="PotionDamageDealtIncrease" xml:space="preserve">
+    <value>Strength</value>
+  </data>
+  <data name="PotionDamageTakenDecrease" xml:space="preserve">
+    <value>Protection</value>
+  </data>
+  <data name="PotionResistanceIncrease" xml:space="preserve">
+    <value>Endurance</value>
+  </data>
+  <data name="PotionCritChanceIncrease" xml:space="preserve">
+    <value>Accuracy</value>
+  </data>
+  <data name="PotionSpeedIncrease" xml:space="preserve">
+    <value>Swiftness</value>
+  </data>
+  <data name="PotionDodgeIncrease" xml:space="preserve">
+    <value>Agility</value>
+  </data>
+  <data name="PotionAccuracyIncrease" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="InWord" xml:space="preserve">
+    <value>Letters in word</value>
+  </data>
+  <data name="NotInWord" xml:space="preserve">
+    <value>Letters not in the word</value>
+  </data>
+</root>

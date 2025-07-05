@@ -1,0 +1,69 @@
+﻿[
+  {
+    "Alias": "RuinScouting",
+    "RecommendedLevel": 2,
+    "Stages": [
+      {
+        "Objectives": [
+          {
+            "Type": "Descend",
+            "IsComplete": false,
+            "Target": 0,
+            "FloorToReach": 4
+          }
+        ],
+        "Alias": "RuinScouting"
+      }
+    ],
+    "QuestReward": {
+      "Gold": 200,
+      "Experience": 16,
+      "Honor": 4,
+      "Items": []
+    },
+    "QuestState": 0,
+    "Prerequisites": [],
+    "QuestGiver": "Enchanter",
+    "QuestEnder": "Enchanter",
+    "AcceptDialogue": [
+      "Do this"
+    ],
+    "HandInDialogue": [
+      "Well done"
+    ]
+  },
+  {
+    "Alias": "RuinScouting",
+    "RecommendedLevel": 4,
+    "Stages": [
+      {
+        "Objectives": [
+          {
+            "Type": "KillInDungeon",
+            "IsComplete": false,
+            "Target": 0,
+            "FloorToReach": 4
+          }
+        ],
+        "Alias": "RuinScouting"
+      }
+    ],
+    "QuestReward": {
+      "Gold": 200,
+      "Experience": 16,
+      "Honor": 4,
+      "Items": []
+    },
+    "QuestState": 0,
+    "Prerequisites": [],
+    "QuestGiver": "Enchanter",
+    "QuestEnder": "Enchanter",
+    "AcceptDialogue": [
+      "Do this"
+    ],
+    "HandInDialogue": [
+      "Well done"
+    ]
+  }
+]
+

@@ -1,0 +1,2136 @@
+﻿[
+  {
+    "PoolColor": "Red",
+    "EffectTier": "D",
+    "EffectStrength": 0.04,
+    "EffectType": "DamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Red",
+    "EffectTier": "C",
+    "EffectStrength": 0.052,
+    "EffectType": "DamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Red",
+    "EffectTier": "B",
+    "EffectStrength": 0.064,
+    "EffectType": "DamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Red",
+    "EffectTier": "A",
+    "EffectStrength": 0.076,
+    "EffectType": "DamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Red",
+    "EffectTier": "S",
+    "EffectStrength": 0.1,
+    "EffectType": "DamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  
+  {
+    "PoolColor": "Red",
+    "EffectTier": "D",
+    "EffectStrength": 0.06,
+    "EffectType": "PhysicalDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Red",
+    "EffectTier": "C",
+    "EffectStrength": 0.072,
+    "EffectType": "PhysicalDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Red",
+    "EffectTier": "B",
+    "EffectStrength": 0.084,
+    "EffectType": "PhysicalDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Red",
+    "EffectTier": "A",
+    "EffectStrength": 0.096,
+    "EffectType": "PhysicalDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Red",
+    "EffectTier": "S",
+    "EffectStrength": 0.12,
+    "EffectType": "PhysicalDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+
+  {
+    "PoolColor": "Red",
+    "EffectTier": "D",
+    "EffectStrength": 0.06,
+    "EffectType": "MagicDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Red",
+    "EffectTier": "C",
+    "EffectStrength": 0.072,
+    "EffectType": "MagicDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Red",
+    "EffectTier": "B",
+    "EffectStrength": 0.084,
+    "EffectType": "MagicDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Red",
+    "EffectTier": "A",
+    "EffectStrength": 0.096,
+    "EffectType": "MagicDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Red",
+    "EffectTier": "S",
+    "EffectStrength": 0.12,
+    "EffectType": "MagicDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+
+  {
+    "PoolColor": "Blue",
+    "EffectTier": "D",
+    "EffectStrength": 0.02,
+    "EffectType": "CritChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Blue",
+    "EffectTier": "C",
+    "EffectStrength": 0.028,
+    "EffectType": "CritChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Blue",
+    "EffectTier": "B",
+    "EffectStrength": 0.036,
+    "EffectType": "CritChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Blue",
+    "EffectTier": "A",
+    "EffectStrength": 0.044,
+    "EffectType": "CritChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Blue",
+    "EffectTier": "S",
+    "EffectStrength": 0.06,
+    "EffectType": "CritChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 1
+  },
+
+  {
+    "PoolColor": "Blue",
+    "EffectTier": "D",
+    "EffectStrength": 0.04,
+    "EffectType": "CritModMod",
+    "EquipmentType": 0,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Blue",
+    "EffectTier": "C",
+    "EffectStrength": 0.052,
+    "EffectType": "CritModMod",
+    "EquipmentType": 0,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Blue",
+    "EffectTier": "B",
+    "EffectStrength": 0.064,
+    "EffectType": "CritModMod",
+    "EquipmentType": 0,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Blue",
+    "EffectTier": "A",
+    "EffectStrength": 0.076,
+    "EffectType": "CritModMod",
+    "EquipmentType": 0,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Blue",
+    "EffectTier": "S",
+    "EffectStrength": 0.1,
+    "EffectType": "CritModMod",
+    "EquipmentType": 0,
+    "ModifierType": 1
+  },
+
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "D",
+    "EffectStrength": 0.02,
+    "EffectType": "HitChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "C",
+    "EffectStrength": 0.028,
+    "EffectType": "HitChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "B",
+    "EffectStrength": 0.036,
+    "EffectType": "HitChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "A",
+    "EffectStrength": 0.044,
+    "EffectType": "HitChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "S",
+    "EffectStrength": 0.06,
+    "EffectType": "HitChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "D",
+    "EffectStrength": 0.02,
+    "EffectType": "SuppressionChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "C",
+    "EffectStrength": 0.028,
+    "EffectType": "SuppressionChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "B",
+    "EffectStrength": 0.036,
+    "EffectType": "SuppressionChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "A",
+    "EffectStrength": 0.044,
+    "EffectType": "SuppressionChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "S",
+    "EffectStrength": 0.06,
+    "EffectType": "SuppressionChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "D",
+    "EffectStrength": 0.02,
+    "EffectType": "DebuffChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "C",
+    "EffectStrength": 0.028,
+    "EffectType": "DebuffChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "B",
+    "EffectStrength": 0.036,
+    "EffectType": "DebuffChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "A",
+    "EffectStrength": 0.044,
+    "EffectType": "DebuffChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "S",
+    "EffectStrength": 0.06,
+    "EffectType": "DebuffChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "D",
+    "EffectStrength": 0.02,
+    "EffectType": "DoTChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "C",
+    "EffectStrength": 0.028,
+    "EffectType": "DoTChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "B",
+    "EffectStrength": 0.036,
+    "EffectType": "DoTChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "A",
+    "EffectStrength": 0.044,
+    "EffectType": "DoTChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "S",
+    "EffectStrength": 0.06,
+    "EffectType": "DoTChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "D",
+    "EffectStrength": 0.015,
+    "EffectType": "BleedOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "C",
+    "EffectStrength": 0.02,
+    "EffectType": "BleedOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "B",
+    "EffectStrength": 0.025,
+    "EffectType": "BleedOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "A",
+    "EffectStrength": 0.03,
+    "EffectType": "BleedOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "S",
+    "EffectStrength": 0.04,
+    "EffectType": "BleedOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "D",
+    "EffectStrength": 0.015,
+    "EffectType": "PoisonOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "C",
+    "EffectStrength": 0.02,
+    "EffectType": "PoisonOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "B",
+    "EffectStrength": 0.025,
+    "EffectType": "PoisonOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "A",
+    "EffectStrength": 0.03,
+    "EffectType": "PoisonOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "S",
+    "EffectStrength": 0.04,
+    "EffectType": "PoisonOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "D",
+    "EffectStrength": 0.015,
+    "EffectType": "BurnOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "C",
+    "EffectStrength": 0.02,
+    "EffectType": "BurnOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "B",
+    "EffectStrength": 0.025,
+    "EffectType": "BurnOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "A",
+    "EffectStrength": 0.03,
+    "EffectType": "BurnOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "S",
+    "EffectStrength": 0.04,
+    "EffectType": "BurnOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "D",
+    "EffectStrength": 0.03,
+    "EffectType": "HealOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "C",
+    "EffectStrength": 0.04,
+    "EffectType": "HealOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "B",
+    "EffectStrength": 0.05,
+    "EffectType": "HealOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "A",
+    "EffectStrength": 0.06,
+    "EffectType": "HealOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "S",
+    "EffectStrength": 0.08,
+    "EffectType": "HealOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "D",
+    "EffectStrength": 0.03,
+    "EffectType": "ResourceOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "C",
+    "EffectStrength": 0.04,
+    "EffectType": "ResourceOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "B",
+    "EffectStrength": 0.05,
+    "EffectType": "ResourceOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "A",
+    "EffectStrength": 0.06,
+    "EffectType": "ResourceOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "S",
+    "EffectStrength": 0.08,
+    "EffectType": "ResourceOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "D",
+    "EffectStrength": 4,
+    "EffectType": "AdvanceMoveOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "C",
+    "EffectStrength": 5,
+    "EffectType": "AdvanceMoveOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "B",
+    "EffectStrength": 6,
+    "EffectType": "AdvanceMoveOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "A",
+    "EffectStrength": 7,
+    "EffectType": "AdvanceMoveOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "S",
+    "EffectStrength": 9,
+    "EffectType": "AdvanceMoveOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Black",
+    "EffectTier": "D",
+    "EffectStrength": 0.06,
+    "EffectType": "ItemChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Black",
+    "EffectTier": "C",
+    "EffectStrength": 0.072,
+    "EffectType": "ItemChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Black",
+    "EffectTier": "B",
+    "EffectStrength": 0.084,
+    "EffectType": "ItemChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Black",
+    "EffectTier": "A",
+    "EffectStrength": 0.096,
+    "EffectType": "ItemChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Black",
+    "EffectTier": "S",
+    "EffectStrength": 0.12,
+    "EffectType": "ItemChanceMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Black",
+    "EffectTier": "D",
+    "EffectStrength": 0.08,
+    "EffectType": "ResourceRegenMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Black",
+    "EffectTier": "C",
+    "EffectStrength": 0.096,
+    "EffectType": "ResourceRegenMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Black",
+    "EffectTier": "B",
+    "EffectStrength": 0.0112,
+    "EffectType": "ResourceRegenMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Black",
+    "EffectTier": "A",
+    "EffectStrength": 0.0128,
+    "EffectType": "ResourceRegenMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Black",
+    "EffectTier": "S",
+    "EffectStrength": 0.16,
+    "EffectType": "ResourceRegenMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "D",
+    "EffectStrength": 0.08,
+    "EffectType": "UndeadDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "C",
+    "EffectStrength": 0.096,
+    "EffectType": "UndeadDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "B",
+    "EffectStrength": 0.0112,
+    "EffectType": "UndeadDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "A",
+    "EffectStrength": 0.0128,
+    "EffectType": "UndeadDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "S",
+    "EffectStrength": 0.16,
+    "EffectType": "UndeadDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "D",
+    "EffectStrength": 0.08,
+    "EffectType": "HumanDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "C",
+    "EffectStrength": 0.096,
+    "EffectType": "HumanDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "B",
+    "EffectStrength": 0.112,
+    "EffectType": "HumanDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "A",
+    "EffectStrength": 0.128,
+    "EffectType": "HumanDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "S",
+    "EffectStrength": 0.16,
+    "EffectType": "HumanDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "D",
+    "EffectStrength": 0.08,
+    "EffectType": "BeastDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "C",
+    "EffectStrength": 0.096,
+    "EffectType": "BeastDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "B",
+    "EffectStrength": 0.112,
+    "EffectType": "BeastDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "A",
+    "EffectStrength": 0.128,
+    "EffectType": "BeastDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "S",
+    "EffectStrength": 0.16,
+    "EffectType": "BeastDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "D",
+    "EffectStrength": 0.08,
+    "EffectType": "DemonDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "C",
+    "EffectStrength": 0.096,
+    "EffectType": "DemonDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "B",
+    "EffectStrength": 0.112,
+    "EffectType": "DemonDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "A",
+    "EffectStrength": 0.128,
+    "EffectType": "DemonDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "S",
+    "EffectStrength": 0.16,
+    "EffectType": "DemonDamageDealtMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "White",
+    "EffectTier": "D",
+    "EffectStrength": 0.015,
+    "EffectType": "StunOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "White",
+    "EffectTier": "C",
+    "EffectStrength": 0.02,
+    "EffectType": "StunOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "White",
+    "EffectTier": "B",
+    "EffectStrength": 0.025,
+    "EffectType": "StunOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "White",
+    "EffectTier": "A",
+    "EffectStrength": 0.03,
+    "EffectType": "StunOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "White",
+    "EffectTier": "S",
+    "EffectStrength": 0.04,
+    "EffectType": "StunOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "White",
+    "EffectTier": "D",
+    "EffectStrength": 0.015,
+    "EffectType": "FreezeOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "White",
+    "EffectTier": "C",
+    "EffectStrength": 0.02,
+    "EffectType": "FreezeOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "White",
+    "EffectTier": "B",
+    "EffectStrength": 0.025,
+    "EffectType": "FreezeOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "White",
+    "EffectTier": "A",
+    "EffectStrength": 0.03,
+    "EffectType": "FreezeOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "White",
+    "EffectTier": "S",
+    "EffectStrength": 0.04,
+    "EffectType": "FreezeOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "White",
+    "EffectTier": "D",
+    "EffectStrength": 0.015,
+    "EffectType": "SlowOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "White",
+    "EffectTier": "C",
+    "EffectStrength": 0.02,
+    "EffectType": "SlowOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "White",
+    "EffectTier": "B",
+    "EffectStrength": 0.025,
+    "EffectType": "SlowOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "White",
+    "EffectTier": "A",
+    "EffectStrength": 0.03,
+    "EffectType": "SlowOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "White",
+    "EffectTier": "S",
+    "EffectStrength": 0.04,
+    "EffectType": "SlowOnHit",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Gold",
+    "EffectTier": "D",
+    "EffectStrength": 0.04,
+    "EffectType": "ExperienceGainMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Gold",
+    "EffectTier": "C",
+    "EffectStrength": 0.052,
+    "EffectType": "ExperienceGainMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Gold",
+    "EffectTier": "B",
+    "EffectStrength": 0.064,
+    "EffectType": "ExperienceGainMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Gold",
+    "EffectTier": "A",
+    "EffectStrength": 0.076,
+    "EffectType": "ExperienceGainMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Gold",
+    "EffectTier": "S",
+    "EffectStrength": 0.1,
+    "EffectType": "ExperienceGainMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Gold",
+    "EffectTier": "D",
+    "EffectStrength": 0.04,
+    "EffectType": "GoldGainMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Gold",
+    "EffectTier": "C",
+    "EffectStrength": 0.052,
+    "EffectType": "GoldGainMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Gold",
+    "EffectTier": "B",
+    "EffectStrength": 0.064,
+    "EffectType": "GoldGainMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Gold",
+    "EffectTier": "A",
+    "EffectStrength": 0.076,
+    "EffectType": "GoldGainMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Gold",
+    "EffectTier": "S",
+    "EffectStrength": 0.1,
+    "EffectType": "GoldGainMod",
+    "EquipmentType": 0,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Amber",
+    "EffectTier": "D",
+    "EffectStrength": 0.06,
+    "EffectType": "PhysicalDefensePen",
+    "EquipmentType": 0,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Amber",
+    "EffectTier": "C",
+    "EffectStrength": 0.072,
+    "EffectType": "PhysicalDefensePen",
+    "EquipmentType": 0,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Amber",
+    "EffectTier": "B",
+    "EffectStrength": 0.084,
+    "EffectType": "PhysicalDefensePen",
+    "EquipmentType": 0,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Amber",
+    "EffectTier": "A",
+    "EffectStrength": 0.096,
+    "EffectType": "PhysicalDefensePen",
+    "EquipmentType": 0,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Amber",
+    "EffectTier": "S",
+    "EffectStrength": 0.12,
+    "EffectType": "PhysicalDefensePen",
+    "EquipmentType": 0,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Amber",
+    "EffectTier": "D",
+    "EffectStrength": 0.06,
+    "EffectType": "MagicDefensePen",
+    "EquipmentType": 0,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Amber",
+    "EffectTier": "C",
+    "EffectStrength": 0.072,
+    "EffectType": "MagicDefensePen",
+    "EquipmentType": 0,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Amber",
+    "EffectTier": "B",
+    "EffectStrength": 0.084,
+    "EffectType": "MagicDefensePen",
+    "EquipmentType": 0,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Amber",
+    "EffectTier": "A",
+    "EffectStrength": 0.096,
+    "EffectType": "MagicDefensePen",
+    "EquipmentType": 0,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Amber",
+    "EffectTier": "S",
+    "EffectStrength": 0.12,
+    "EffectType": "MagicDefensePen",
+    "EquipmentType": 0,
+    "ModifierType": 1
+  },
+
+  {
+    "PoolColor": "Red",
+    "EffectTier": "D",
+    "EffectStrength": 0.04,
+    "EffectType": "MaximalHealthMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Red",
+    "EffectTier": "C",
+    "EffectStrength": 0.052,
+    "EffectType": "MaximalHealthMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Red",
+    "EffectTier": "B",
+    "EffectStrength": 0.064,
+    "EffectType": "MaximalHealthMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Red",
+    "EffectTier": "A",
+    "EffectStrength": 0.076,
+    "EffectType": "MaximalHealthMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Red",
+    "EffectTier": "S",
+    "EffectStrength": 0.1,
+    "EffectType": "MaximalHealthMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Red",
+    "EffectTier": "D",
+    "EffectStrength": 0.06,
+    "EffectType": "DodgeMod",
+    "EquipmentType": 1,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Red",
+    "EffectTier": "C",
+    "EffectStrength": 0.072,
+    "EffectType": "DodgeMod",
+    "EquipmentType": 1,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Red",
+    "EffectTier": "B",
+    "EffectStrength": 0.084,
+    "EffectType": "DodgeMod",
+    "EquipmentType": 1,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Red",
+    "EffectTier": "A",
+    "EffectStrength": 0.096,
+    "EffectType": "DodgeMod",
+    "EquipmentType": 1,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Red",
+    "EffectTier": "S",
+    "EffectStrength": 0.12,
+    "EffectType": "DodgeMod",
+    "EquipmentType": 1,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Blue",
+    "EffectTier": "D",
+    "EffectStrength": 0.06,
+    "EffectType": "PhysicalDefenseMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Blue",
+    "EffectTier": "C",
+    "EffectStrength": 0.072,
+    "EffectType": "PhysicalDefenseMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Blue",
+    "EffectTier": "B",
+    "EffectStrength": 0.084,
+    "EffectType": "PhysicalDefenseMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Blue",
+    "EffectTier": "A",
+    "EffectStrength": 0.096,
+    "EffectType": "PhysicalDefenseMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Blue",
+    "EffectTier": "S",
+    "EffectStrength": 0.12,
+    "EffectType": "PhysicalDefenseMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Blue",
+    "EffectTier": "D",
+    "EffectStrength": 0.06,
+    "EffectType": "MagicDefenseMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Blue",
+    "EffectTier": "C",
+    "EffectStrength": 0.072,
+    "EffectType": "MagicDefenseMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Blue",
+    "EffectTier": "B",
+    "EffectStrength": 0.084,
+    "EffectType": "MagicDefenseMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Blue",
+    "EffectTier": "A",
+    "EffectStrength": 0.096,
+    "EffectType": "MagicDefenseMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Blue",
+    "EffectTier": "S",
+    "EffectStrength": 0.12,
+    "EffectType": "MagicDefenseMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Blue",
+    "EffectTier": "D",
+    "EffectStrength": 0.04,
+    "EffectType": "TotalDefenseMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Blue",
+    "EffectTier": "C",
+    "EffectStrength": 0.052,
+    "EffectType": "TotalDefenseMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Blue",
+    "EffectTier": "B",
+    "EffectStrength": 0.064,
+    "EffectType": "TotalDefenseMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Blue",
+    "EffectTier": "A",
+    "EffectStrength": 0.076,
+    "EffectType": "TotalDefenseMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Blue",
+    "EffectTier": "S",
+    "EffectStrength": 0.1,
+    "EffectType": "TotalDefenseMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "D",
+    "EffectStrength": 0.04,
+    "EffectType": "SpeedMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "C",
+    "EffectStrength": 0.052,
+    "EffectType": "SpeedMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "B",
+    "EffectStrength": 0.064,
+    "EffectType": "SpeedMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "A",
+    "EffectStrength": 0.076,
+    "EffectType": "SpeedMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "S",
+    "EffectStrength": 0.1,
+    "EffectType": "SpeedMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "D",
+    "EffectStrength": 0.04,
+    "EffectType": "MaxActionPointsMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "C",
+    "EffectStrength": 0.052,
+    "EffectType": "MaxActionPointsMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "B",
+    "EffectStrength": 0.064,
+    "EffectType": "MaxActionPointsMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "A",
+    "EffectStrength": 0.076,
+    "EffectType": "MaxActionPointsMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Purple",
+    "EffectTier": "S",
+    "EffectStrength": 0.1,
+    "EffectType": "MaxActionPointsMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "D",
+    "EffectStrength": 0.03,
+    "EffectType": "DoTResistanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "C",
+    "EffectStrength": 0.04,
+    "EffectType": "DoTResistanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "B",
+    "EffectStrength": 0.05,
+    "EffectType": "DoTResistanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "A",
+    "EffectStrength": 0.06,
+    "EffectType": "DoTResistanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "S",
+    "EffectStrength": 0.08,
+    "EffectType": "DoTResistanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "D",
+    "EffectStrength": 0.03,
+    "EffectType": "SuppressionResistanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "C",
+    "EffectStrength": 0.04,
+    "EffectType": "SuppressionResistanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "B",
+    "EffectStrength": 0.05,
+    "EffectType": "SuppressionResistanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "A",
+    "EffectStrength": 0.06,
+    "EffectType": "SuppressionResistanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "S",
+    "EffectStrength": 0.08,
+    "EffectType": "SuppressionResistanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "D",
+    "EffectStrength": 0.03,
+    "EffectType": "DebuffResistanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "C",
+    "EffectStrength": 0.04,
+    "EffectType": "DebuffResistanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "B",
+    "EffectStrength": 0.05,
+    "EffectType": "DebuffResistanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "A",
+    "EffectStrength": 0.06,
+    "EffectType": "DebuffResistanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "S",
+    "EffectStrength": 0.08,
+    "EffectType": "DebuffResistanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "D",
+    "EffectStrength": 0.02,
+    "EffectType": "TotalResistanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "C",
+    "EffectStrength": 0.028,
+    "EffectType": "TotalResistanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "B",
+    "EffectStrength": 0.036,
+    "EffectType": "TotalResistanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "A",
+    "EffectStrength": 0.044,
+    "EffectType": "TotalResistanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Yellow",
+    "EffectTier": "S",
+    "EffectStrength": 0.06,
+    "EffectType": "TotalResistanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 1
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "D",
+    "EffectStrength": -0.04,
+    "EffectType": "PhysicalDamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "C",
+    "EffectStrength": -0.052,
+    "EffectType": "PhysicalDamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "B",
+    "EffectStrength": -0.064,
+    "EffectType": "PhysicalDamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "A",
+    "EffectStrength": -0.076,
+    "EffectType": "PhysicalDamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "S",
+    "EffectStrength": -0.1,
+    "EffectType": "PhysicalDamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "D",
+    "EffectStrength": -0.04,
+    "EffectType": "MagicDamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "C",
+    "EffectStrength": -0.052,
+    "EffectType": "MagicDamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "B",
+    "EffectStrength": -0.064,
+    "EffectType": "MagicDamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "A",
+    "EffectStrength": -0.076,
+    "EffectType": "MagicDamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "S",
+    "EffectStrength": -0.1,
+    "EffectType": "MagicDamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "D",
+    "EffectStrength": 0.03,
+    "EffectType": "DamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "C",
+    "EffectStrength": -0.04,
+    "EffectType": "DamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "B",
+    "EffectStrength": -0.05,
+    "EffectType": "DamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "A",
+    "EffectStrength": -0.06,
+    "EffectType": "DamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Green",
+    "EffectTier": "S",
+    "EffectStrength": -0.08,
+    "EffectType": "DamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Black",
+    "EffectTier": "D",
+    "EffectStrength": 0.06,
+    "EffectType": "ItemChanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Black",
+    "EffectTier": "C",
+    "EffectStrength": 0.072,
+    "EffectType": "ItemChanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Black",
+    "EffectTier": "B",
+    "EffectStrength": 0.084,
+    "EffectType": "ItemChanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Black",
+    "EffectTier": "A",
+    "EffectStrength": 0.096,
+    "EffectType": "ItemChanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Black",
+    "EffectTier": "S",
+    "EffectStrength": 0.12,
+    "EffectType": "ItemChanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Black",
+    "EffectTier": "D",
+    "EffectStrength": 0.06,
+    "EffectType": "MaximalResourceMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Black",
+    "EffectTier": "C",
+    "EffectStrength": 0.072,
+    "EffectType": "MaximalResourceMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Black",
+    "EffectTier": "B",
+    "EffectStrength": 0.084,
+    "EffectType": "MaximalResourceMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Black",
+    "EffectTier": "A",
+    "EffectStrength": 0.096,
+    "EffectType": "MaximalResourceMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Black",
+    "EffectTier": "S",
+    "EffectStrength": 0.12,
+    "EffectType": "MaximalResourceMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "D",
+    "EffectStrength": -0.08,
+    "EffectType": "BleedDamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "C",
+    "EffectStrength": -0.096,
+    "EffectType": "BleedDamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "B",
+    "EffectStrength": -0.112,
+    "EffectType": "BleedDamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "A",
+    "EffectStrength": -0.128,
+    "EffectType": "BleedDamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "S",
+    "EffectStrength": -0.16,
+    "EffectType": "BleedDamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "D",
+    "EffectStrength": -0.08,
+    "EffectType": "PoisonDamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "C",
+    "EffectStrength": -0.096,
+    "EffectType": "PoisonDamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "B",
+    "EffectStrength": -0.112,
+    "EffectType": "PoisonDamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "A",
+    "EffectStrength": -0.128,
+    "EffectType": "PoisonDamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "S",
+    "EffectStrength": -0.16,
+    "EffectType": "PoisonDamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "S",
+    "EffectStrength": -0.16,
+    "EffectType": "PoisonDamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "D",
+    "EffectStrength": 0.08,
+    "EffectType": "BurnDamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "C",
+    "EffectStrength": -0.096,
+    "EffectType": "BurnDamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "B",
+    "EffectStrength": -0.112,
+    "EffectType": "BurnDamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "A",
+    "EffectStrength": -0.128,
+    "EffectType": "BurnDamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Pink",
+    "EffectTier": "S",
+    "EffectStrength": -0.16,
+    "EffectType": "BurnDamageTakenMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "White",
+    "EffectTier": "D",
+    "EffectStrength": -0.04,
+    "EffectType": "ResourceCostMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "White",
+    "EffectTier": "C",
+    "EffectStrength": -0.052,
+    "EffectType": "ResourceCostMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "White",
+    "EffectTier": "B",
+    "EffectStrength": -0.064,
+    "EffectType": "ResourceCostMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "White",
+    "EffectTier": "A",
+    "EffectStrength": -0.076,
+    "EffectType": "ResourceCostMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "White",
+    "EffectTier": "S",
+    "EffectStrength": -0.1,
+    "EffectType": "ResourceCostMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "White",
+    "EffectTier": "D",
+    "EffectStrength": 0.06,
+    "EffectType": "CritSaveChanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "White",
+    "EffectTier": "C",
+    "EffectStrength": 0.072,
+    "EffectType": "CritSaveChanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "White",
+    "EffectTier": "B",
+    "EffectStrength": 0.084,
+    "EffectType": "CritSaveChanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "White",
+    "EffectTier": "A",
+    "EffectStrength": 0.096,
+    "EffectType": "CritSaveChanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "White",
+    "EffectTier": "S",
+    "EffectStrength": 0.12,
+    "EffectType": "CritSaveChanceMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Gold",
+    "EffectTier": "D",
+    "EffectStrength": 0.04,
+    "EffectType": "ExperienceGainMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Gold",
+    "EffectTier": "C",
+    "EffectStrength": 0.052,
+    "EffectType": "ExperienceGainMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Gold",
+    "EffectTier": "B",
+    "EffectStrength": 0.064,
+    "EffectType": "ExperienceGainMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Gold",
+    "EffectTier": "A",
+    "EffectStrength": 0.076,
+    "EffectType": "ExperienceGainMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Gold",
+    "EffectTier": "S",
+    "EffectStrength": 0.1,
+    "EffectType": "ExperienceGainMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Gold",
+    "EffectTier": "D",
+    "EffectStrength": 0.04,
+    "EffectType": "GoldGainMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Gold",
+    "EffectTier": "C",
+    "EffectStrength": 0.052,
+    "EffectType": "GoldGainMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Gold",
+    "EffectTier": "B",
+    "EffectStrength": 0.064,
+    "EffectType": "GoldGainMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Gold",
+    "EffectTier": "A",
+    "EffectStrength": 0.076,
+    "EffectType": "GoldGainMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Gold",
+    "EffectTier": "S",
+    "EffectStrength": 0.1,
+    "EffectType": "GoldGainMod",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Amber",
+    "EffectTier": "D",
+    "EffectStrength": 0.008,
+    "EffectType": "HealthRegenPerTurn",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Amber",
+    "EffectTier": "C",
+    "EffectStrength": 0.0104,
+    "EffectType": "HealthRegenPerTurn",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Amber",
+    "EffectTier": "B",
+    "EffectStrength": 0.0128,
+    "EffectType": "HealthRegenPerTurn",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Amber",
+    "EffectTier": "A",
+    "EffectStrength": 0.0152,
+    "EffectType": "HealthRegenPerTurn",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Amber",
+    "EffectTier": "S",
+    "EffectStrength": 0.02,
+    "EffectType": "HealthRegenPerTurn",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Amber",
+    "EffectTier": "D",
+    "EffectStrength": 0.01,
+    "EffectType": "ResourceRegenPerTurn",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Amber",
+    "EffectTier": "C",
+    "EffectStrength": 0.016,
+    "EffectType": "ResourceRegenPerTurn",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Amber",
+    "EffectTier": "B",
+    "EffectStrength": 0.022,
+    "EffectType": "ResourceRegenPerTurn",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Amber",
+    "EffectTier": "A",
+    "EffectStrength": 0.028,
+    "EffectType": "ResourceRegenPerTurn",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  },
+  {
+    "PoolColor": "Amber",
+    "EffectTier": "S",
+    "EffectStrength": 0.04,
+    "EffectType": "ResourceRegenPerTurn",
+    "EquipmentType": 1,
+    "ModifierType": 2
+  }
+]

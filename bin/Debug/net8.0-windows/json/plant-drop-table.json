@@ -1,0 +1,286 @@
+{
+  "Catacombs": {
+    "Pool": {
+      "Puffball": {
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 1,
+        "MaxLevel": 50,
+        "Weight": 1
+      },
+      "DaddyLonglegs": {
+        "Weight": 1,
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 1,
+        "MaxLevel": 50
+      },
+      "DwarvenMoss": {
+        "Weight": 1,
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 21,
+        "MaxLevel": 50
+      },
+      "Swordshrub": {
+        "Weight": 1,
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 21,
+        "MaxLevel": 50
+      },
+      "BlackWidow": {
+        "Weight": 1,
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 41,
+        "MaxLevel": 50
+      },
+      "Cavortius": {
+        "Weight": 1,
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 41,
+        "MaxLevel": 50
+      }
+    }
+  },
+  "Forest": {
+    "Pool": {
+      "Pinecone": {
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 1,
+        "MaxLevel": 50,
+        "Weight": 1
+      },
+      "TulipFlower": {
+        "Weight": 1,
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 21,
+        "MaxLevel": 50
+      },
+      "ElvishCasisa": {
+        "Weight": 1,
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 41,
+        "MaxLevel": 50
+      }
+    }
+  },
+  "ElvishRuins": {
+    "Pool": {
+      "StranglerGrass": {
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 1,
+        "MaxLevel": 50,
+        "Weight": 1
+      },
+      "BurningVines": {
+        "Weight": 1,
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 21,
+        "MaxLevel": 50
+      },
+      "HellishRose": {
+        "Weight": 1,
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 41,
+        "MaxLevel": 50
+      }
+    }
+  },
+  "Cove": {
+    "Pool": {
+      "Seaweed": {
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 1,
+        "MaxLevel": 50,
+        "Weight": 1
+      },
+      "BloomingCherry": {
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 1,
+        "MaxLevel": 50,
+        "Weight": 1
+      },
+      "DoragafuraStamens": {
+        "Weight": 1,
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 21,
+        "MaxLevel": 50
+      },
+      "BananaLeaf": {
+        "Weight": 1,
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 21,
+        "MaxLevel": 50
+      },
+      "MizukiFruit": {
+        "Weight": 1,
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 41,
+        "MaxLevel": 50
+      },
+      "Moonshroom": {
+        "Weight": 1,
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 41,
+        "MaxLevel": 50
+      }
+    }
+  },
+  "Desert": {
+    "Pool": {
+      "AloeMeda": {
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 1,
+        "MaxLevel": 50,
+        "Weight": 1
+      },
+      "RissaFlower": {
+        "Weight": 1,
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 21,
+        "MaxLevel": 50
+      },
+      "JamalaFlower": {
+        "Weight": 1,
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 41,
+        "MaxLevel": 50
+      }
+    }
+  },
+  "Temple": {
+    "Pool": {
+      "AlzifVines": {
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 1,
+        "MaxLevel": 50,
+        "Weight": 1
+      },
+      "DesertReaper": {
+        "Weight": 1,
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 21,
+        "MaxLevel": 50
+      },
+      "RoyalScarab": {
+        "Weight": 1,
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 41,
+        "MaxLevel": 50
+      }
+    }
+  },
+  "Mountains": {
+  "Pool": {
+    "BylineFlower": {
+      "Weight": 1,
+      "MinAmount": 1,
+      "MaxAmount": 1,
+      "MinLevel": 1,
+      "MaxLevel": 50
+    },
+    "TregandianDandelion": {
+      "Weight": 1,
+      "MinAmount": 1,
+      "MaxAmount": 1,
+      "MinLevel": 1,
+      "MaxLevel": 50
+    },
+    "FrostStamens": {
+      "Weight": 1,
+      "MinAmount": 1,
+      "MaxAmount": 1,
+      "MinLevel": 21,
+      "MaxLevel": 50
+    },
+    "RoyalButterfly": {
+      "Weight": 1,
+      "MinAmount": 1,
+      "MaxAmount": 1,
+      "MinLevel": 21,
+      "MaxLevel": 50
+    },
+    "AzureSaffron": {
+      "Weight": 1,
+      "MinAmount": 1,
+      "MaxAmount": 1,
+      "MinLevel": 41,
+      "MaxLevel": 50
+    },
+    "MountainHearth": {
+      "Weight": 1,
+      "MinAmount": 1,
+      "MaxAmount": 1,
+      "MinLevel": 41,
+      "MaxLevel": 50
+    }
+  }
+  },
+  "Swamp": {
+    "Pool": {
+      "Bulrush": {
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 1,
+        "MaxLevel": 50,
+        "Weight": 1
+      },
+      "CommonFly": {
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 1,
+        "MaxLevel": 50,
+        "Weight": 1
+      },
+      "FlatCalamus": {
+        "Weight": 1,
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 21,
+        "MaxLevel": 50
+      },
+      "Viperia": {
+        "Weight": 1,
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 21,
+        "MaxLevel": 50
+      },
+      "GoldenClover": {
+        "Weight": 1,
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 41,
+        "MaxLevel": 50
+      },
+      "LionCrocus": {
+        "Weight": 1,
+        "MinAmount": 1,
+        "MaxAmount": 1,
+        "MinLevel": 41,
+        "MaxLevel": 50
+      }
+    }
+  }
+}

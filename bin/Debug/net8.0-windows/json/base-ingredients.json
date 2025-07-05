@@ -1,0 +1,1962 @@
+﻿[
+  {
+    "Alias": "IronOre",
+    "ID": 0,
+    "Cost": 7,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "NickelOre",
+    "ID": 1,
+    "Cost": 8,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "CopperOre",
+    "ID": 2,
+    "Cost": 9,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "TinOre",
+    "ID": 3,
+    "Cost": 10,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "AnnoditeOre",
+    "ID": 4,
+    "Cost": 167,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "SilverOre",
+    "ID": 5,
+    "Cost": 156,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "CobaltOre",
+    "ID": 6,
+    "Cost": 173,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "GoldOre",
+    "ID": 7,
+    "Cost": 134,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "NefoliteOre",
+    "ID": 8,
+    "Cost": 1766,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "AdamantiteOre",
+    "ID": 9,
+    "Cost": 1321,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "CifilmOre",
+    "ID": 10,
+    "Cost": 1521,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "OrichalcumOre",
+    "ID": 11,
+    "Cost": 1828,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "Coal",
+    "ID": 12,
+    "Cost": 49,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "Chromium",
+    "ID": 13,
+    "Cost": 55,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "MeteoriteChunk",
+    "ID": 14,
+    "Cost": 51,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "PieceOfZinc",
+    "ID": 15,
+    "Cost": 36,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "Moondust",
+    "ID": 16,
+    "Cost": 708,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "Sphalerite",
+    "ID": 17,
+    "Cost": 1111,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "DesertGem",
+    "ID": 18,
+    "Cost": 864,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "Rutile",
+    "ID": 19,
+    "Cost": 549,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "GoatSkin",
+    "ID": 120,
+    "Cost": 50,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "WildDogSkin",
+    "ID": 121,
+    "Cost": 29,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "RabbitSkin",
+    "ID": 122,
+    "Cost": 15,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "FoxSkin",
+    "ID": 123,
+    "Cost": 23,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "TigerSkin",
+    "ID": 124,
+    "Cost": 645,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "DeerSkin",
+    "ID": 125,
+    "Cost": 680,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "BoarSkin",
+    "ID": 126,
+    "Cost": 346,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "LizardSkin",
+    "ID": 127,
+    "Cost": 228,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "BearSkin",
+    "ID": 128,
+    "Cost": 3533,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "TrollSkin",
+    "ID": 129,
+    "Cost": 1889,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "AlligatorSkin",
+    "ID": 130,
+    "Cost": 2742,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "LeopardSkin",
+    "ID": 131,
+    "Cost": 3441,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "WolfSkin",
+    "ID": 132,
+    "Cost": 3072,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "BuffaloSkin",
+    "ID": 133,
+    "Cost": 9769,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "ScorpionSkin",
+    "ID": 134,
+    "Cost": 1306,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "CheetahSkin",
+    "ID": 135,
+    "Cost": 8663,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "HellhoundSkin",
+    "ID": 136,
+    "Cost": 10445,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "DragonSkin",
+    "ID": 137,
+    "Cost": 76677,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "WyvernSkin",
+    "ID": 138,
+    "Cost": 68813,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "GriffinSkin",
+    "ID": 139,
+    "Cost": 50627,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "LarchWood",
+    "ID": 180,
+    "Cost": 74,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "LindenWood",
+    "ID": 181,
+    "Cost": 68,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "PoplarWood",
+    "ID": 182,
+    "Cost": 58,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "AlderWood",
+    "ID": 183,
+    "Cost": 73,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "HawthornWood",
+    "ID": 184,
+    "Cost": 297,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "BirchWood",
+    "ID": 185,
+    "Cost": 305,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "CypressWood",
+    "ID": 186,
+    "Cost": 292,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "CedarWood",
+    "ID": 187,
+    "Cost": 207,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "HornbeamWood",
+    "ID": 188,
+    "Cost": 492,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "ElmWood",
+    "ID": 189,
+    "Cost": 502,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "SpruceWood",
+    "ID": 190,
+    "Cost": 440,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "ElderWood",
+    "ID": 191,
+    "Cost": 553,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "OakWood",
+    "ID": 192,
+    "Cost": 1700,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "BeechWood",
+    "ID": 193,
+    "Cost": 2212,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "SequoiaWood",
+    "ID": 194,
+    "Cost": 2171,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "FirWood",
+    "ID": 195,
+    "Cost": 2437,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "BlackOakWood",
+    "ID": 196,
+    "Cost": 6554,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "PineWood",
+    "ID": 197,
+    "Cost": 7782,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "EbonyWood",
+    "ID": 198,
+    "Cost": 8765,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "HazelWood",
+    "ID": 199,
+    "Cost": 9585,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "CottonFiber",
+    "ID": 245,
+    "Cost": 13,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "BeechmienFiber",
+    "ID": 246,
+    "Cost": 12,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "GoatWoolFiber",
+    "ID": 247,
+    "Cost": 14,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "JuteFiber",
+    "ID": 248,
+    "Cost": 11,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "SheepWoolFiber",
+    "ID": 249,
+    "Cost": 43,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "PalmFiber",
+    "ID": 250,
+    "Cost": 40,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "LlamaWoolFiber",
+    "ID": 251,
+    "Cost": 49,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "VasimineFiber",
+    "ID": 252,
+    "Cost": 48,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "LinenFiber",
+    "ID": 253,
+    "Cost": 175,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "SilverclawFiber",
+    "ID": 254,
+    "Cost": 169,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "CamelWoolFiber",
+    "ID": 255,
+    "Cost": 165,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "MelenaFiber",
+    "ID": 256,
+    "Cost": 159,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "HempFiber",
+    "ID": 257,
+    "Cost": 753,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "YuccaFiber",
+    "ID": 258,
+    "Cost": 691,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "UtumeenFiber",
+    "ID": 259,
+    "Cost": 815,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "TrireedFiber",
+    "ID": 260,
+    "Cost": 707,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "SilkFiber",
+    "ID": 261,
+    "Cost": 3164,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "TagimineFiber",
+    "ID": 262,
+    "Cost": 2580,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "ViscoseFiber",
+    "ID": 263,
+    "Cost": 3441,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "OvariceFiber",
+    "ID": 264,
+    "Cost": 2888,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "PurpleEnergyDust",
+    "ID": 309,
+    "Cost": 3768,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "PettySoul",
+    "ID": 310,
+    "Cost": 5,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "WeakSoul",
+    "ID": 311,
+    "Cost": 22,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "NormalSoul",
+    "ID": 312,
+    "Cost": 100,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "StrongSoul",
+    "ID": 313,
+    "Cost": 389,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "PowerfulSoul",
+    "ID": 314,
+    "Cost": 1720,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2
+  },
+  {
+    "Alias": "SkeletonBone",
+    "ID": 315,
+    "Cost": 21,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "UndeadBrain",
+    "ID": 316,
+    "Cost": 17,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "ElfEar",
+    "ID": 317,
+    "Cost": 17,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "DemonHorn",
+    "ID": 318,
+    "Cost": 21,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "PirateEye",
+    "ID": 319,
+    "Cost": 17,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "BirdFeather",
+    "ID": 320,
+    "Cost": 20,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "CactusFruit",
+    "ID": 321,
+    "Cost": 18,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "DefiledHeart",
+    "ID": 322,
+    "Cost": 17,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "CrushedSkull",
+    "ID": 323,
+    "Cost": 16,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "TrollKidney",
+    "ID": 324,
+    "Cost": 19,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "LivingLeaf",
+    "ID": 325,
+    "Cost": 15,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "AlligatorTooth",
+    "ID": 326,
+    "Cost": 16,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "Ectoplasm",
+    "ID": 327,
+    "Cost": 331,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "GhoulClaw",
+    "ID": 328,
+    "Cost": 237,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "WolfFang",
+    "ID": 329,
+    "Cost": 273,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "InterdimensionalTentacle",
+    "ID": 330,
+    "Cost": 344,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "ShiningSand",
+    "ID": 331,
+    "Cost": 301,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "SharkFin",
+    "ID": 332,
+    "Cost": 323,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "WindElement",
+    "ID": 333,
+    "Cost": 232,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "AncientSkin",
+    "ID": 334,
+    "Cost": 293,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "Histine",
+    "ID": 335,
+    "Cost": 230,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "RukFeather",
+    "ID": 336,
+    "Cost": 320,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "MosquitoProboscis",
+    "ID": 337,
+    "Cost": 300,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "DrownerLung",
+    "ID": 338,
+    "Cost": 307,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "ExecutionerBone",
+    "ID": 339,
+    "Cost": 1185,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "RoyalEctoplasm",
+    "ID": 340,
+    "Cost": 984,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "ForestSpirit",
+    "ID": 341,
+    "Cost": 1282,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "RoyalDemonHorn",
+    "ID": 342,
+    "Cost": 1271,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "AlphaSharkFin",
+    "ID": 343,
+    "Cost": 952,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "ProstheticTooth",
+    "ID": 344,
+    "Cost": 1010,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "EnchantedHand",
+    "ID": 345,
+    "Cost": 1230,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "MaladEnergy",
+    "ID": 346,
+    "Cost": 1241,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "BerserkBlood",
+    "ID": 347,
+    "Cost": 1308,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "WyvernScales",
+    "ID": 348,
+    "Cost": 991,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "LivingBranch",
+    "ID": 349,
+    "Cost": 1071,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "LivingFlower",
+    "ID": 350,
+    "Cost": 1265,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "Puffball",
+    "ID": 351,
+    "Cost": 19,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "DaddyLonglegs",
+    "ID": 352,
+    "Cost": 18,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "Pinecone",
+    "ID": 353,
+    "Cost": 18,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "StranglerGrass",
+    "ID": 354,
+    "Cost": 15,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "Seaweed",
+    "ID": 355,
+    "Cost": 14,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "BloomingCherry",
+    "ID": 356,
+    "Cost": 16,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "AloeMeda",
+    "ID": 357,
+    "Cost": 14,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "AlzifVines",
+    "ID": 358,
+    "Cost": 16,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "BylineFlower",
+    "ID": 359,
+    "Cost": 13,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "TregandianDandelion",
+    "ID": 360,
+    "Cost": 14,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "Bulrush",
+    "ID": 361,
+    "Cost": 17,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "CommonFly",
+    "ID": 362,
+    "Cost": 15,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "DwarvenMoss",
+    "ID": 363,
+    "Cost": 215,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "Swordshrub",
+    "ID": 364,
+    "Cost": 250,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "TulipFlower",
+    "ID": 365,
+    "Cost": 234,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "BurningVines",
+    "ID": 366,
+    "Cost": 254,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "DoragafuraStamens",
+    "ID": 367,
+    "Cost": 287,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "BananaLeaf",
+    "ID": 368,
+    "Cost": 243,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "RissaFlower",
+    "ID": 369,
+    "Cost": 219,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "DesertReaper",
+    "ID": 370,
+    "Cost": 281,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "FrostStamens",
+    "ID": 371,
+    "Cost": 269,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "RoyalButterfly",
+    "ID": 372,
+    "Cost": 233,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "FlatCalamus",
+    "ID": 373,
+    "Cost": 208,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "Viperia",
+    "ID": 374,
+    "Cost": 289,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "BlackWidow",
+    "ID": 375,
+    "Cost": 3834,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "Cavortius",
+    "ID": 376,
+    "Cost": 4104,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "ElvishCasisa",
+    "ID": 377,
+    "Cost": 3444,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "HellishRose",
+    "ID": 378,
+    "Cost": 3461,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "MizukiFruit",
+    "ID": 379,
+    "Cost": 3521,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "Moonshroom",
+    "ID": 380,
+    "Cost": 4808,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "JamalaFlower",
+    "ID": 381,
+    "Cost": 4608,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "RoyalScarab",
+    "ID": 382,
+    "Cost": 4116,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "AzureSaffron",
+    "ID": 383,
+    "Cost": 3322,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "MountainHearth",
+    "ID": 384,
+    "Cost": 3902,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "GoldenClover",
+    "ID": 385,
+    "Cost": 3469,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "LionCrocus",
+    "ID": 386,
+    "Cost": 4040,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "SkeletonAssassinSmallSoul",
+    "ID": 407,
+    "Cost": 980,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "SkeletonAssassinNormalSoul",
+    "ID": 408,
+    "Cost": 4276,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "SkeletonAssassinStrongSoul",
+    "ID": 409,
+    "Cost": 15636,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "SkeletonAssassinPowerfulSoul",
+    "ID": 410,
+    "Cost": 61555,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "DeadKingGhostSmallSoul",
+    "ID": 411,
+    "Cost": 980,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "DeadKingGhostNormalSoul",
+    "ID": 412,
+    "Cost": 4276,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "DeadKingGhostStrongSoul",
+    "ID": 413,
+    "Cost": 15636,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "DeadKingGhostPowerfulSoul",
+    "ID": 414,
+    "Cost": 61555,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "InfectedEntSmallSoul",
+    "ID": 415,
+    "Cost": 980,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "InfectedEntNormalSoul",
+    "ID": 416,
+    "Cost": 4276,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "InfectedEntStrongSoul",
+    "ID": 417,
+    "Cost": 15636,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "InfectedEntPowerfulSoul",
+    "ID": 418,
+    "Cost": 61555,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "BanditLeaderSmallSoul",
+    "ID": 419,
+    "Cost": 980,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "BanditLeaderNormalSoul",
+    "ID": 420,
+    "Cost": 4276,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "BanditLeaderStrongSoul",
+    "ID": 421,
+    "Cost": 15636,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "BanditLeaderPowerfulSoul",
+    "ID": 422,
+    "Cost": 61555,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "DemonicJarlSmallSoul",
+    "ID": 423,
+    "Cost": 980,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "DemonicJarlNormalSoul",
+    "ID": 424,
+    "Cost": 4276,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "DemonicJarlStrongSoul",
+    "ID": 425,
+    "Cost": 15636,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "DemonicJarlPowerfulSoul",
+    "ID": 426,
+    "Cost": 61555,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "CerberusSmallSoul",
+    "ID": 427,
+    "Cost": 980,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "CerberusNormalSoul",
+    "ID": 428,
+    "Cost": 4276,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "CerberusStrongSoul",
+    "ID": 429,
+    "Cost": 15636,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "CerberusPowerfulSoul",
+    "ID": 430,
+    "Cost": 61555,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "AlfaSharkSmallSoul",
+    "ID": 431,
+    "Cost": 980,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "AlfaSharkNormalSoul",
+    "ID": 432,
+    "Cost": 4276,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "AlfaSharkStrongSoul",
+    "ID": 433,
+    "Cost": 15636,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "AlfaSharkPowerfulSoul",
+    "ID": 434,
+    "Cost": 61555,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "PirateCaptainSmallSoul",
+    "ID": 435,
+    "Cost": 980,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "PirateCaptainNormalSoul",
+    "ID": 436,
+    "Cost": 4276,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "PirateCaptainStrongSoul",
+    "ID": 437,
+    "Cost": 15636,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "PirateCaptainPowerfulSoul",
+    "ID": 438,
+    "Cost": 61555,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "AvazarLeaderSmallSoul",
+    "ID": 439,
+    "Cost": 980,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "AvazarLeaderNormalSoul",
+    "ID": 440,
+    "Cost": 4276,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "AvazarLeaderStrongSoul",
+    "ID": 441,
+    "Cost": 15636,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "AvazarLeaderPowerfulSoul",
+    "ID": 442,
+    "Cost": 61555,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "AlfaScorpionRiderSmallSoul",
+    "ID": 443,
+    "Cost": 980,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "AlfaScorpionRiderNormalSoul",
+    "ID": 444,
+    "Cost": 4276,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "AlfaScorpionRiderStrongSoul",
+    "ID": 445,
+    "Cost": 15636,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "AlfaScorpionRiderPowerfulSoul",
+    "ID": 446,
+    "Cost": 61555,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "HierophantSmallSoul",
+    "ID": 447,
+    "Cost": 980,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "HierophantNormalSoul",
+    "ID": 448,
+    "Cost": 4276,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "HierophantStrongSoul",
+    "ID": 449,
+    "Cost": 15636,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "HierophantPowerfulSoul",
+    "ID": 450,
+    "Cost": 61555,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "JavaSmallSoul",
+    "ID": 451,
+    "Cost": 980,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "JavaNormalSoul",
+    "ID": 452,
+    "Cost": 4276,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "JavaStrongSoul",
+    "ID": 453,
+    "Cost": 15636,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "JavaPowerfulSoul",
+    "ID": 454,
+    "Cost": 61555,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "CrushedSkullBerserkerSmallSoul",
+    "ID": 455,
+    "Cost": 980,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "CrushedSkullBerserkerNormalSoul",
+    "ID": 456,
+    "Cost": 4276,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "CrushedSkullBerserkerStrongSoul",
+    "ID": 457,
+    "Cost": 15636,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "CrushedSkullBerserkerPowerfulSoul",
+    "ID": 458,
+    "Cost": 61555,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "WyvernSmallSoul",
+    "ID": 459,
+    "Cost": 980,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "WyvernNormalSoul",
+    "ID": 460,
+    "Cost": 4276,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "WyvernStrongSoul",
+    "ID": 461,
+    "Cost": 15636,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "WyvernPowerfulSoul",
+    "ID": 462,
+    "Cost": 61555,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "SwampEntSmallSoul",
+    "ID": 463,
+    "Cost": 980,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "SwampEntNormalSoul",
+    "ID": 464,
+    "Cost": 4276,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "SwampEntStrongSoul",
+    "ID": 465,
+    "Cost": 15636,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "SwampEntPowerfulSoul",
+    "ID": 466,
+    "Cost": 61555,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "ManeaterPlantSmallSoul",
+    "ID": 467,
+    "Cost": 980,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "ManeaterPlantNormalSoul",
+    "ID": 468,
+    "Cost": 4276,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "ManeaterPlantStrongSoul",
+    "ID": 469,
+    "Cost": 15636,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "ManeaterPlantPowerfulSoul",
+    "ID": 470,
+    "Cost": 61555,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+  "Alias": "WeakAlcohol",
+  "ID": 471,
+  "Cost": 46,
+  "Rarity": 3,
+  "Description": "",
+  "ItemType": 3
+  },
+  {
+    "Alias": "Alcohol",
+    "ID": 472,
+    "Cost": 158,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "GoodAlcohol",
+    "ID": 473,
+    "Cost": 707,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "StrongAlcohol",
+    "ID": 474,
+    "Cost": 2738,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "PerfectAlcohol",
+    "ID": 475,
+    "Cost": 13660,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "WeakGunpowder",
+    "ID": 476,
+    "Cost": 62,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "Gunpowder",
+    "ID": 477,
+    "Cost": 212,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "GoodGunpowder",
+    "ID": 478,
+    "Cost": 843,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "StrongGunpowder",
+    "ID": 479,
+    "Cost": 3120,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "PerfectGunpowder",
+    "ID": 480,
+    "Cost": 14783,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3
+  },
+  {
+    "Alias": "SolidLimestone",
+    "ID": 485,
+    "Cost": 271,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 5
+  },
+  {
+    "Alias": "SolidGranite",
+    "ID": 486,
+    "Cost": 840,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 5
+  },
+  {
+    "Alias": "SolidMarble",
+    "ID": 487,
+    "Cost": 16056,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 5
+  },
+  {
+    "Alias": "Garnet",
+    "ID": 491,
+    "Cost": 577,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 5
+  },
+  {
+    "Alias": "Sapphire",
+    "ID": 492,
+    "Cost": 572,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 5
+  },
+  {
+    "Alias": "Amethyst",
+    "ID": 493,
+    "Cost": 635,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 5
+  },
+  {
+    "Alias": "Citrine",
+    "ID": 494,
+    "Cost": 704,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 5
+  },
+  {
+    "Alias": "Emerald",
+    "ID": 495,
+    "Cost": 766,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 5
+  },
+  {
+    "Alias": "Onyx",
+    "ID": 496,
+    "Cost": 833,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 5
+  },
+  {
+    "Alias": "Ruby",
+    "ID": 497,
+    "Cost": 960,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 5
+  },
+  {
+    "Alias": "Diamond",
+    "ID": 498,
+    "Cost": 1050,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 5
+  },
+  {
+    "Alias": "Topaz",
+    "ID": 499,
+    "Cost": 1151,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 5
+  },
+  {
+    "Alias": "Amber",
+    "ID": 500,
+    "Cost": 1284,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 5
+  }
+]

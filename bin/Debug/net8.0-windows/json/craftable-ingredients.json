@@ -1,0 +1,2565 @@
+﻿[
+  {
+    "Alias": "IronBar",
+    "ID": 20,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "IronOre" : 2 }
+  },
+  {
+    "Alias": "NickelBar",
+    "ID": 21,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "NickelOre" : 2 }
+  },
+  {
+    "Alias": "CopperBar",
+    "ID": 22,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "CopperOre" : 2 }
+  },
+  {
+    "Alias": "TinBar",
+    "ID": 23,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "TinOre" : 2 }
+  },
+  {
+    "Alias": "SteelBar",
+    "ID": 24,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "IronOre" : 2, "Coal": 1 }
+  },
+  {
+    "Alias": "InvarBar",
+    "ID": 25,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "IronOre" : 1, "NickelOre": 1, "Chromium": 1 }
+  },
+  {
+    "Alias": "MeteoricIronBar",
+    "ID": 26,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "IronOre" : 2, "MeteoriteChunk": 1 }
+  },
+  {
+    "Alias": "BronzeBar",
+    "ID": 27,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "CopperOre" : 2, "TinOre": 1, "PieceOfZinc": 1 }
+  },
+  {
+    "Alias": "AnnoditeBar",
+    "ID": 28,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "AnnoditeOre" : 2 }
+  },
+  {
+    "Alias": "SilverBar",
+    "ID": 29,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "SilverOre" : 2 }
+  },
+  {
+    "Alias": "CobaltBar",
+    "ID": 30,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "CobaltOre" : 2 }
+  },
+  {
+    "Alias": "GoldBar",
+    "ID": 31,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "GoldOre" : 2 }
+  },
+  {
+    "Alias": "CriferiteBar",
+    "ID": 32,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "AnnoditeOre" : 2, "Moondust": 1 }
+  },
+  {
+    "Alias": "BrassBar",
+    "ID": 33,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "CopperOre" : 2, "Sphalerite": 1 }
+  },
+  {
+    "Alias": "SultanSteelBar",
+    "ID": 34,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "CobaltOre" : 1, "GoldOre" : 1, "DesertGem": 1 }
+  },
+  {
+    "Alias": "TitaniumBar",
+    "ID": 35,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "SilverOre" : 1, "Rutile": 2 }
+  },
+  {
+    "Alias": "NefoliteBar",
+    "ID": 36,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "NefoliteOre" : 2 }
+  },
+  {
+    "Alias": "AdamantiteBar",
+    "ID": 37,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "AdamantiteOre" : 2 }
+  },
+  {
+    "Alias": "CifilmBar",
+    "ID": 38,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "CifilmOre" : 2 }
+  },
+  {
+    "Alias": "OrichalcumBar",
+    "ID": 39,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "OrichalcumOre" : 2 }
+  },
+
+  {
+    "Alias": "HugeIronBar",
+    "ID": 40,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "IronOre" : 6 }
+  },
+  {
+    "Alias": "HugeNickelBar",
+    "ID": 41,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "NickelOre" : 6 }
+  },
+  {
+    "Alias": "HugeCopperBar",
+    "ID": 42,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "CopperOre" : 6 }
+  },
+  {
+    "Alias": "HugeTinBar",
+    "ID": 43,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "TinOre" : 6 }
+  },
+  {
+    "Alias": "HugeSteelBar",
+    "ID": 44,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "IronOre" : 6, "Coal": 3 }
+  },
+  {
+    "Alias": "HugeInvarBar",
+    "ID": 45,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "IronOre" : 3, "NickelOre": 3, "Chromium": 3 }
+  },
+  {
+    "Alias": "HugeMeteoricIronBar",
+    "ID": 46,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "IronOre" : 6, "MeteoriteChunk": 3 }
+  },
+  {
+    "Alias": "HugeBronzeBar",
+    "ID": 47,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "CopperOre" : 6, "TinOre": 3, "PieceOfZinc": 3 }
+  },
+  {
+    "Alias": "HugeAnnoditeBar",
+    "ID": 48,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "AnnoditeOre" : 6 }
+  },
+  {
+    "Alias": "HugeSilverBar",
+    "ID": 49,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "SilverOre" : 6 }
+  },
+  {
+    "Alias": "HugeCobaltBar",
+    "ID": 50,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "CobaltOre" : 6 }
+  },
+  {
+    "Alias": "HugeGoldBar",
+    "ID": 51,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "GoldOre" : 6 }
+  },
+  {
+    "Alias": "HugeCriferiteBar",
+    "ID": 52,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "AnnoditeOre" : 6, "Moondust": 3 }
+  },
+  {
+    "Alias": "HugeBrassBar",
+    "ID": 53,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "CopperOre" : 6, "Sphalerite": 3 }
+  },
+  {
+    "Alias": "HugeSultanSteelBar",
+    "ID": 54,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "CobaltOre" : 3, "GoldOre" : 3, "DesertGem": 3 }
+  },
+  {
+    "Alias": "HugeTitaniumBar",
+    "ID": 55,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "SilverOre" : 3, "Rutile": 6 }
+  },
+  {
+    "Alias": "HugeNefoliteBar",
+    "ID": 56,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "NefoliteOre" : 6 }
+  },
+  {
+    "Alias": "HugeAdamantiteBar",
+    "ID": 57,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "AdamantiteOre" : 6 }
+  },
+  {
+    "Alias": "HugeCifilmBar",
+    "ID": 58,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "CifilmOre" : 6 }
+  },
+  {
+    "Alias": "HugeOrichalcumBar",
+    "ID": 59,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "OrichalcumOre" : 6 }
+  },
+
+  {
+    "Alias": "PowderedIron",
+    "ID": 60,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "IronBar" : 1 }
+  },
+  {
+    "Alias": "PowderedNickel",
+    "ID": 61,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "NickelBar" : 1 }
+  },
+  {
+    "Alias": "PowderedCopper",
+    "ID": 62,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "CopperBar" : 1 }
+  },
+  {
+    "Alias": "PowderedTin",
+    "ID": 63,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "TinBar" : 1 }
+  },
+  {
+    "Alias": "PowderedSteel",
+    "ID": 64,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "SteelBar" : 1 }
+  },
+  {
+    "Alias": "PowderedInvar",
+    "ID": 65,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "InvarBar" : 1 }
+  },
+  {
+    "Alias": "PowderedMeteoricIron",
+    "ID": 66,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "MeteoricIronBar" : 1 }
+  },
+  {
+    "Alias": "PowderedBronze",
+    "ID": 67,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "BronzeBar" : 1 }
+  },
+  {
+    "Alias": "PowderedAnnodite",
+    "ID": 68,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "AnnoditeBar" : 1 }
+  },
+  {
+    "Alias": "PowderedSilver",
+    "ID": 69,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "SilverBar" : 1 }
+  },
+  {
+    "Alias": "PowderedCobalt",
+    "ID": 70,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "CobaltBar" : 1 }
+  },
+  {
+    "Alias": "PowderedGold",
+    "ID": 71,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "GoldBar" : 1 }
+  },
+  {
+    "Alias": "PowderedCriferite",
+    "ID": 72,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "CriferiteBar" : 1 }
+  },
+  {
+    "Alias": "PowderedBrass",
+    "ID": 73,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "BrassBar" : 1 }
+  },
+  {
+    "Alias": "PowderedSultanSteel",
+    "ID": 74,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "SultanSteelBar" : 1 }
+  },
+  {
+    "Alias": "PowderedTitanium",
+    "ID": 75,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "TitaniumBar" : 1 }
+  },
+  {
+    "Alias": "PowderedNefolite",
+    "ID": 76,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "NefoliteBar" : 1 }
+  },
+  {
+    "Alias": "PowderedAdamantite",
+    "ID": 77,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "AdamantiteBar" : 1 }
+  },
+  {
+    "Alias": "PowderedCifilm",
+    "ID": 78,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "CifilmBar" : 1 }
+  },
+  {
+    "Alias": "PowderedOrichalcum",
+    "ID": 79,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "OrichalcumBar" : 1 }
+  },
+
+  {
+    "Alias": "IronChain",
+    "ID": 80,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "IronBar" : 1 }
+  },
+  {
+    "Alias": "NickelChain",
+    "ID": 81,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "NickelBar" : 1 }
+  },
+  {
+    "Alias": "CopperChain",
+    "ID": 82,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "CopperBar" : 1 }
+  },
+  {
+    "Alias": "TinChain",
+    "ID": 83,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "TinBar" : 1 }
+  },
+  {
+    "Alias": "SteelChain",
+    "ID": 84,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "SteelBar" : 1 }
+  },
+  {
+    "Alias": "InvarChain",
+    "ID": 85,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "InvarBar" : 1 }
+  },
+  {
+    "Alias": "MeteoricChain",
+    "ID": 86,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "MeteoricIronBar" : 1 }
+  },
+  {
+    "Alias": "BronzeChain",
+    "ID": 87,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "BronzeBar" : 1 }
+  },
+  {
+    "Alias": "AnnoditeChain",
+    "ID": 88,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "AnnoditeBar" : 1 }
+  },
+  {
+    "Alias": "SilverChain",
+    "ID": 89,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "SilverBar" : 1 }
+  },
+  {
+    "Alias": "CobaltChain",
+    "ID": 90,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "CobaltBar" : 1 }
+  },
+  {
+    "Alias": "GoldenChain",
+    "ID": 91,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "GoldBar" : 1 }
+  },
+  {
+    "Alias": "CriferiteChain",
+    "ID": 92,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "CriferiteBar" : 1 }
+  },
+  {
+    "Alias": "BrassChain",
+    "ID": 93,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "BrassBar" : 1 }
+  },
+  {
+    "Alias": "ShellanianChain",
+    "ID": 94,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "SultanSteelBar" : 1 }
+  },
+  {
+    "Alias": "TitaniumChain",
+    "ID": 95,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "TitaniumBar" : 1 }
+  },
+  {
+    "Alias": "NefoliteChain",
+    "ID": 96,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "NefoliteBar" : 1 }
+  },
+  {
+    "Alias": "AdamantiteChain",
+    "ID": 97,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "AdamantiteBar" : 1 }
+  },
+  {
+    "Alias": "CifilmChain",
+    "ID": 98,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "CifilmBar" : 1 }
+  },
+  {
+    "Alias": "OrichalcumChain",
+    "ID": 99,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "OrichalcumBar" : 1 }
+  },
+  
+  {
+    "Alias": "IronPlate",
+    "ID": 100,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "IronBar" : 2 }
+  },
+  {
+    "Alias": "NickelPlate",
+    "ID": 101,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "NickelBar" : 2 }
+  },
+  {
+    "Alias": "CopperPlate",
+    "ID": 102,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "CopperBar" : 2 }
+  },
+  {
+    "Alias": "TinPlate",
+    "ID": 103,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "TinBar" : 2 }
+  },
+  {
+    "Alias": "SteelPlate",
+    "ID": 104,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "SteelBar" : 2 }
+  },
+  {
+    "Alias": "InvarPlate",
+    "ID": 105,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "InvarBar" : 2 }
+  },
+  {
+    "Alias": "MeteoricPlate",
+    "ID": 106,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "MeteoricIronBar" : 2 }
+  },
+  {
+    "Alias": "BronzePlate",
+    "ID": 107,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "BronzeBar" : 2 }
+  },
+  {
+    "Alias": "AnnoditePlate",
+    "ID": 108,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "AnnoditeBar" : 2 }
+  },
+  {
+    "Alias": "SilverPlate",
+    "ID": 109,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "SilverBar" : 2 }
+  },
+  {
+    "Alias": "CobaltPlate",
+    "ID": 110,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "CobaltBar" : 2 }
+  },
+  {
+    "Alias": "GoldenPlate",
+    "ID": 111,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "GoldBar" : 2 }
+  },
+  {
+    "Alias": "CriferitePlate",
+    "ID": 112,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "CriferiteBar" : 2 }
+  },
+  {
+    "Alias": "BrassPlate",
+    "ID": 113,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "BrassBar" : 2 }
+  },
+  {
+    "Alias": "ShellanianPlate",
+    "ID": 114,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "SultanSteelBar" : 2 }
+  },
+  {
+    "Alias": "TitaniumPlate",
+    "ID": 115,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "TitaniumBar" : 2 }
+  },
+  {
+    "Alias": "NefolitePlate",
+    "ID": 116,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "NefoliteBar" : 2 }
+  },
+  {
+    "Alias": "AdamantitePlate",
+    "ID": 117,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "AdamantiteBar" : 2 }
+  },
+  {
+    "Alias": "CifilmPlate",
+    "ID": 118,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "CifilmBar" : 2 }
+  },
+  {
+    "Alias": "OrichalcumPlate",
+    "ID": 119,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "OrichalcumBar" : 2 }
+  },
+  
+  {
+    "Alias": "GoatHide",
+    "ID": 140,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "GoatSkin" : 1 }
+  },
+  {
+    "Alias": "WildDogHide",
+    "ID": 141,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "WildDogSkin" : 2 }
+  },
+  {
+    "Alias": "RabbitHide",
+    "ID": 142,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "RabbitSkin" : 3 }
+  },
+  {
+    "Alias": "FoxHide",
+    "ID": 143,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "FoxSkin" : 2 }
+  },
+  {
+    "Alias": "TigerHide",
+    "ID": 144,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "TigerSkin" : 1 }
+  },
+  {
+    "Alias": "DeerHide",
+    "ID": 145,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "DeerSkin" : 1 }
+  },
+  {
+    "Alias": "BoarHide",
+    "ID": 146,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "BoarSkin" : 1 }
+  },
+  {
+    "Alias": "LizardHide",
+    "ID": 147,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "LizardSkin" : 1 }
+  },
+  {
+    "Alias": "BearHide",
+    "ID": 148,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 4,
+    "CraftingRecipe": { "BearSkin" : 1 }
+  },
+  {
+    "Alias": "TrollHide",
+    "ID": 149,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "TrollSkin" : 1 }
+  },
+  {
+    "Alias": "AlligatorHide",
+    "ID": 150,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "AlligatorSkin" : 1 }
+  },
+  {
+    "Alias": "LeopardHide",
+    "ID": 151,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 4,
+    "CraftingRecipe": { "LeopardSkin" : 1 }
+  },
+  {
+    "Alias": "WolfHide",
+    "ID": 152,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "WolfSkin" : 1 }
+  },
+  {
+    "Alias": "BuffaloHide",
+    "ID": 153,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "BuffaloSkin" : 1 }
+  },
+  {
+    "Alias": "ScorpionHide",
+    "ID": 154,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "ScorpionSkin" : 2 }
+  },
+  {
+    "Alias": "CheetahHide",
+    "ID": 155,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "CheetahSkin" : 1 }
+  },
+  {
+    "Alias": "HellhoundHide",
+    "ID": 156,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "HellhoundSkin" : 1 }
+  },
+  {
+    "Alias": "DragonHide",
+    "ID": 157,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 6,
+    "CraftingRecipe": { "DragonSkin" : 1 }
+  },
+  {
+    "Alias": "WyvernHide",
+    "ID": 158,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 5,
+    "CraftingRecipe": { "WyvernSkin" : 1 }
+  },
+  {
+    "Alias": "GriffinHide",
+    "ID": 159,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 4,
+    "CraftingRecipe": { "GriffinSkin" : 1 }
+  },
+
+  {
+    "Alias": "GoatHideStrips",
+    "ID": 160,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "GoatHide" : 1 }
+  },
+  {
+    "Alias": "WildDogHideStrips",
+    "ID": 161,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "WildDogHide" : 1 }
+  },
+  {
+    "Alias": "RabbitHideStrips",
+    "ID": 162,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "RabbitHide" : 1 }
+  },
+  {
+    "Alias": "FoxHideStrips",
+    "ID": 163,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "FoxHide" : 1 }
+  },
+  {
+    "Alias": "TigerHideStrips",
+    "ID": 164,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "TigerHide" : 1 }
+  },
+  {
+    "Alias": "DeerHideStrips",
+    "ID": 165,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "DeerHide" : 1 }
+  },
+  {
+    "Alias": "BoarHideStrips",
+    "ID": 166,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "BoarHide" : 1 }
+  },
+  {
+    "Alias": "LizardHideStrips",
+    "ID": 167,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "LizardHide" : 1 }
+  },
+  {
+    "Alias": "BearHideStrips",
+    "ID": 168,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "BearHide" : 1 }
+  },
+  {
+    "Alias": "TrollHideStrips",
+    "ID": 169,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "TrollHide" : 1 }
+  },
+  {
+    "Alias": "AlligatorHideStrips",
+    "ID": 170,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "AlligatorHide" : 1 }
+  },
+  {
+    "Alias": "LeopardHideStrips",
+    "ID": 171,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "LeopardHide" : 1 }
+  },
+  {
+    "Alias": "WolfHideStrips",
+    "ID": 172,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "WolfHide" : 1 }
+  },
+  {
+    "Alias": "BuffaloHideStrips",
+    "ID": 173,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "BuffaloHide" : 1 }
+  },
+  {
+    "Alias": "ScorpionHideStrips",
+    "ID": 174,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "ScorpionHide" : 1 }
+  },
+  {
+    "Alias": "CheetahHideStrips",
+    "ID": 175,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "CheetahHide" : 1 }
+  },
+  {
+    "Alias": "HellhoundHideStrips",
+    "ID": 176,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "HellhoundHide" : 1 }
+  },
+  {
+    "Alias": "DragonHideStrips",
+    "ID": 177,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "DragonHide" : 1 }
+  },
+  {
+    "Alias": "WyvernHideStrips",
+    "ID": 178,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "WyvernHide" : 1 }
+  },
+  {
+    "Alias": "GriffinHideStrips",
+    "ID": 179,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "GriffinHide" : 1 }
+  },
+
+  {
+    "Alias": "LarchPlank",
+    "ID": 200,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "LarchWood" : 1 }
+  },
+  {
+    "Alias": "LindenPlank",
+    "ID": 201,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "LindenWood" : 1 }
+  },
+  {
+    "Alias": "PoplarPlank",
+    "ID": 202,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "PoplarWood" : 1 }
+  },
+  {
+    "Alias": "AlderPlank",
+    "ID": 203,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "AlderWood" : 1 }
+  },
+  {
+    "Alias": "HawthornPlank",
+    "ID": 204,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "HawthornWood" : 1 }
+  },
+  {
+    "Alias": "BirchPlank",
+    "ID": 205,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "BirchWood" : 1 }
+  },
+  {
+    "Alias": "CypressPlank",
+    "ID": 206,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "CypressWood" : 1 }
+  },
+  {
+    "Alias": "CedarPlank",
+    "ID": 207,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "CedarWood" : 1 }
+  },
+  {
+    "Alias": "HornbeamPlank",
+    "ID": 208,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "HornbeamWood" : 1 }
+  },
+  {
+    "Alias": "ElmPlank",
+    "ID": 209,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "ElmWood" : 1 }
+  },
+  {
+    "Alias": "SprucePlank",
+    "ID": 210,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "SpruceWood" : 1 }
+  },
+  {
+    "Alias": "ElderPlank",
+    "ID": 211,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "ElderWood" : 1 }
+  },
+  {
+    "Alias": "OakPlank",
+    "ID": 212,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "OakWood" : 1 }
+  },
+  {
+    "Alias": "BeechPlank",
+    "ID": 213,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "BeechWood" : 1 }
+  },
+  {
+    "Alias": "SequoiaPlank",
+    "ID": 214,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "SequoiaWood" : 1 }
+  },
+  {
+    "Alias": "FirPlank",
+    "ID": 215,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "FirWood" : 1 }
+  },
+  {
+    "Alias": "BlackOakPlank",
+    "ID": 216,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "BlackOakWood" : 1 }
+  },
+  {
+    "Alias": "PinePlank",
+    "ID": 217,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "PineWood" : 1 }
+  },
+  {
+    "Alias": "EbonyPlank",
+    "ID": 218,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "EbonyWood" : 1 }
+  },
+  {
+    "Alias": "HazelPlank",
+    "ID": 219,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "HazelWood" : 1 }
+  },
+
+  {
+    "Alias": "LarchStick",
+    "ID": 220,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 8,
+    "CraftingRecipe": { "LarchPlank" : 3 }
+  },
+  {
+    "Alias": "LindenStick",
+    "ID": 221,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 8,
+    "CraftingRecipe": { "LindenPlank" : 3 }
+  },
+  {
+    "Alias": "PoplarStick",
+    "ID": 222,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 8,
+    "CraftingRecipe": { "PoplarPlank" : 3 }
+  },
+  {
+    "Alias": "AlderStick",
+    "ID": 223,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 8,
+    "CraftingRecipe": { "AlderPlank" : 3 }
+  },
+  {
+    "Alias": "HawthornStick",
+    "ID": 224,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 8,
+    "CraftingRecipe": { "HawthornPlank" : 3 }
+  },
+  {
+    "Alias": "BirchStick",
+    "ID": 225,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 8,
+    "CraftingRecipe": { "BirchPlank" : 3 }
+  },
+  {
+    "Alias": "CypressStick",
+    "ID": 226,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 8,
+    "CraftingRecipe": { "CypressPlank" : 3 }
+  },
+  {
+    "Alias": "CedarStick",
+    "ID": 227,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 8,
+    "CraftingRecipe": { "CedarPlank" : 3 }
+  },
+  {
+    "Alias": "HornbeamStick",
+    "ID": 228,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 8,
+    "CraftingRecipe": { "HornbeamPlank" : 3 }
+  },
+  {
+    "Alias": "ElmStick",
+    "ID": 229,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 8,
+    "CraftingRecipe": { "ElmPlank" : 3 }
+  },
+  {
+    "Alias": "SpruceStick",
+    "ID": 230,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 8,
+    "CraftingRecipe": { "SprucePlank" : 3 }
+  },
+  {
+    "Alias": "ElderStick",
+    "ID": 231,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 8,
+    "CraftingRecipe": { "ElderPlank" : 3 }
+  },
+  {
+    "Alias": "OakStick",
+    "ID": 232,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 8,
+    "CraftingRecipe": { "OakPlank" : 3 }
+  },
+  {
+    "Alias": "BeechStick",
+    "ID": 233,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 8,
+    "CraftingRecipe": { "BeechPlank" : 3 }
+  },
+  {
+    "Alias": "SequoiaStick",
+    "ID": 234,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 8,
+    "CraftingRecipe": { "SequoiaPlank" : 3 }
+  },
+  {
+    "Alias": "FirStick",
+    "ID": 235,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 8,
+    "CraftingRecipe": { "FirPlank" : 3 }
+  },
+  {
+    "Alias": "BlackOakStick",
+    "ID": 236,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 8,
+    "CraftingRecipe": { "BlackOakPlank" : 3 }
+  },
+  {
+    "Alias": "PineStick",
+    "ID": 237,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 8,
+    "CraftingRecipe": { "PinePlank" : 3 }
+  },
+  {
+    "Alias": "EbonyStick",
+    "ID": 238,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 8,
+    "CraftingRecipe": { "EbonyPlank" : 3 }
+  },
+  {
+    "Alias": "HazelStick",
+    "ID": 239,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 8,
+    "CraftingRecipe": { "HazelPlank" : 3 }
+  },
+
+  {
+    "Alias": "WeakThreadNeedle",
+    "ID": 240,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "IronBar" : 1 }
+  },
+  {
+    "Alias": "ThreadNeedle",
+    "ID": 241,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "SteelBar" : 1 }
+  },
+  {
+    "Alias": "GoodThreadNeedle",
+    "ID": 242,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "AnnoditeBar" : 1 }
+  },
+  {
+    "Alias": "ExcellentThreadNeedle",
+    "ID": 243,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "CriferiteBar" : 1 }
+  },
+  {
+    "Alias": "PerfectThreadNeedle",
+    "ID": 244,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "NefoliteBar" : 1 }
+  },
+
+  {
+    "Alias": "CottonThread",
+    "ID": 265,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "CottonFiber" : 1 }
+  },
+  {
+    "Alias": "BeechmienThread",
+    "ID": 266,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "BeechmienFiber" : 1 }
+  },
+  {
+    "Alias": "GoatWoolThread",
+    "ID": 267,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "GoatWoolFiber" : 1 }
+  },
+  {
+    "Alias": "JuteThread",
+    "ID": 268,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "JuteFiber" : 1 }
+  },
+  {
+    "Alias": "SheepWoolThread",
+    "ID": 269,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "SheepWoolFiber" : 1 }
+  },
+  {
+    "Alias": "PalmThread",
+    "ID": 270,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "PalmFiber" : 1 }
+  },
+  {
+    "Alias": "LlamaWoolThread",
+    "ID": 271,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "LlamaWoolFiber" : 1 }
+  },
+  {
+    "Alias": "VasimineThread",
+    "ID": 272,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "VasimineFiber" : 1 }
+  },
+  {
+    "Alias": "LinenThread",
+    "ID": 273,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "LinenFiber" : 1 }
+  },
+  {
+    "Alias": "SilverclawThread",
+    "ID": 274,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "SilverclawFiber" : 1 }
+  },
+  {
+    "Alias": "CamelWoolThread",
+    "ID": 275,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "CamelWoolFiber" : 1 }
+  },
+  {
+    "Alias": "MelenaThread",
+    "ID": 276,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "MelenaFiber" : 1 }
+  },
+  {
+    "Alias": "HempThread",
+    "ID": 277,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "HempFiber" : 1 }
+  },
+  {
+    "Alias": "YuccaThread",
+    "ID": 278,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "YuccaFiber" : 1 }
+  },
+  {
+    "Alias": "UtumeenThread",
+    "ID": 279,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "UtumeenFiber" : 1 }
+  },
+  {
+    "Alias": "TrireedThread",
+    "ID": 280,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "TrireedFiber" : 1 }
+  },
+  {
+    "Alias": "SilkThread",
+    "ID": 281,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "SilkFiber" : 1 }
+  },
+  {
+    "Alias": "TagimineThread",
+    "ID": 282,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "TagimineFiber" : 1 }
+  },
+  {
+    "Alias": "ViscoseThread",
+    "ID": 283,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "ViscoseFiber" : 1 }
+  },
+  {
+    "Alias": "OvariceThread",
+    "ID": 284,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "OvariceFiber" : 1 }
+  },
+  
+  {
+    "Alias": "CottonFabric",
+    "ID": 285,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "CottonThread" : 8, "WeakThreadNeedle": 1 }
+  },
+  {
+    "Alias": "BeechmienFabric",
+    "ID": 286,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "BeechmienThread" : 8, "WeakThreadNeedle": 1 }
+  },
+  {
+    "Alias": "GoatWoolFabric",
+    "ID": 287,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "GoatWoolThread" : 8, "WeakThreadNeedle": 1 }
+  },
+  {
+    "Alias": "JuteFabric",
+    "ID": 288,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "JuteThread" : 8, "WeakThreadNeedle": 1 }
+  },
+  {
+    "Alias": "SheepWoolFabric",
+    "ID": 289,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "SheepWoolThread" : 8, "ThreadNeedle": 1 }
+  },
+  {
+    "Alias": "PalmFabric",
+    "ID": 290,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "PalmThread" : 8, "ThreadNeedle": 1 }
+  },
+  {
+    "Alias": "LlamaWoolFabric",
+    "ID": 291,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "LlamaWoolThread" : 8, "ThreadNeedle": 1 }
+  },
+  {
+    "Alias": "VasimineFabric",
+    "ID": 292,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "VasimineThread" : 8, "ThreadNeedle": 1 }
+  },
+  {
+    "Alias": "LinenFabric",
+    "ID": 293,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "LinenThread" : 8, "GoodThreadNeedle": 1 }
+  },
+  {
+    "Alias": "SilverclawFabric",
+    "ID": 294,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "SilverclawThread" : 8, "GoodThreadNeedle": 1 }
+  },
+  {
+    "Alias": "CamelWoolFabric",
+    "ID": 295,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "CamelWoolThread" : 8, "GoodThreadNeedle": 1 }
+  },
+  {
+    "Alias": "MelenaFabric",
+    "ID": 296,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "MelenaThread" : 8, "GoodThreadNeedle": 1 }
+  },
+  {
+    "Alias": "HempFabric",
+    "ID": 297,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "HempThread" : 8, "ExcellentThreadNeedle": 1 }
+  },
+  {
+    "Alias": "YuccaFabric",
+    "ID": 298,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "YuccaThread" : 8, "ExcellentThreadNeedle": 1 }
+  },
+  {
+    "Alias": "UtumeenFabric",
+    "ID": 299,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "UtumeenThread" : 8, "ExcellentThreadNeedle": 1 }
+  },
+  {
+    "Alias": "TrireedFabric",
+    "ID": 300,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "TrireedThread" : 8, "ExcellentThreadNeedle": 1 }
+  },
+  {
+    "Alias": "SilkFabric",
+    "ID": 301,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "SilkThread" : 8, "PerfectThreadNeedle": 1 }
+  },
+  {
+    "Alias": "TagimineFabric",
+    "ID": 302,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "TagimineThread" : 8, "PerfectThreadNeedle": 1 }
+  },
+  {
+    "Alias": "ViscoseFabric",
+    "ID": 303,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "ViscoseThread" : 8, "PerfectThreadNeedle": 1 }
+  },
+  {
+    "Alias": "OvariceFabric",
+    "ID": 304,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 3,
+    "CraftingRecipe": { "OvariceThread" : 8, "PerfectThreadNeedle": 1 }
+  },
+
+  {
+    "Alias": "RedEnergyDust",
+    "ID": 305,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 4,
+    "CraftingRecipe": { "YellowEnergyDust" : 1 }
+  },
+  {
+    "Alias": "YellowEnergyDust",
+    "ID": 306,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 4,
+    "CraftingRecipe": { "GreenEnergyDust" : 1 }
+  },
+  {
+    "Alias": "GreenEnergyDust",
+    "ID": 307,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 4,
+    "CraftingRecipe": { "BlueEnergyDust" : 1 }
+  },
+  {
+    "Alias": "BlueEnergyDust",
+    "ID": 308,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 2,
+    "CraftedAmount": 4,
+    "CraftingRecipe": { "PurpleEnergyDust" : 1 }
+  },
+
+
+  {
+    "Alias": "HerbalDustNormal",
+    "ID": 387,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "WeakAlcohol" : 1, "DaddyLonglegs": 1, "BloomingCherry": 1, "BylineFlower": 1 }
+  },
+  {
+    "Alias": "HerbalDustLumpy",
+    "ID": 388,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "WeakAlcohol" : 1, "Puffball": 1, "Pinecone": 1, "Bulrush": 1 }
+  },
+  {
+    "Alias": "HerbalDustTacky",
+    "ID": 389,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "WeakAlcohol" : 1, "AloeMeda": 1, "CommonFly": 1, "Seaweed": 1 }
+  },
+  {
+    "Alias": "HerbalDustLoose",
+    "ID": 390,
+    "Rarity": 3,
+    "Description": "",
+    "ItemType": 3,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "WeakAlcohol" : 1, "AlzifVines": 1, "TregandianDandelion": 1, "StranglerGrass": 1 }
+  },
+  {
+    "Alias": "HerbalDustYellow",
+    "ID": 391,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "Alcohol" : 2, "DaddyLonglegs": 1, "CommonFly": 1, "TregandianDandelion": 1 }
+  },
+  {
+    "Alias": "HerbalDustGreen",
+    "ID": 392,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "Alcohol" : 2, "Seaweed": 1, "AloeMeda": 1, "StranglerGrass": 1 }
+  },
+  {
+    "Alias": "HerbalDustPink",
+    "ID": 393,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "Alcohol" : 2, "BloomingCherry": 1, "AlzifVines": 1, "BylineFlower": 1 }
+  },
+  {
+    "Alias": "HerbalDustOrange",
+    "ID": 394,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 3,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "Alcohol" : 2, "Bulrush": 1, "Pinecone": 1, "Puffball": 1 }
+  },
+  {
+    "Alias": "HerbalDustHuman",
+    "ID": 395,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "GoodAlcohol" : 1, "BananaLeaf": 1, "RissaFlower": 1, "RoyalButterfly": 1 }
+  },
+  {
+    "Alias": "HerbalDustElf",
+    "ID": 396,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "GoodAlcohol" : 1, "TulipFlower": 1, "BurningVines": 1, "Viperia": 1 }
+  },
+  {
+    "Alias": "HerbalDustDwarf",
+    "ID": 397,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "GoodAlcohol" : 1, "DwarvenMoss": 1, "FrostStamens": 1, "DesertReaper": 1 }
+  },
+  {
+    "Alias": "HerbalDustLizardman",
+    "ID": 398,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 3,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "GoodAlcohol" : 1, "DoragafuraStamens": 1, "FlatCalamus": 1, "Swordshrub": 1 }
+  },
+  {
+    "Alias": "HerbalDustLight",
+    "ID": 399,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "StrongAlcohol" : 2, "Swordshrub": 1, "FlatCalamus": 1, "BananaLeaf": 1 }
+  },
+  {
+    "Alias": "HerbalDustDivinity",
+    "ID": 400,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "StrongAlcohol" : 2, "RoyalButterfly": 1, "DoragafuraStamens": 1, "TulipFlower": 1 }
+  },
+  {
+    "Alias": "HerbalDustDarkness",
+    "ID": 401,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "StrongAlcohol" : 2, "DwarvenMoss": 1, "Viperia": 1, "FrostStamens": 1 }
+  },
+  {
+    "Alias": "HerbalDustDemon",
+    "ID": 402,
+    "Rarity": 6,
+    "Description": "",
+    "ItemType": 3,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "StrongAlcohol" : 2, "BurningVines": 1, "DesertReaper": 1, "RissaFlower": 1 }
+  },
+  {
+    "Alias": "HerbalDustFire",
+    "ID": 403,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "PerfectAlcohol" : 1, "HellishRose": 1, "LionCrocus": 1, "BlackWidow": 1 }
+  },
+  {
+    "Alias": "HerbalDustAir",
+    "ID": 404,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "PerfectAlcohol" : 1, "Moonshroom": 1, "ElvishCasisa": 1, "GoldenClover": 1 }
+  },
+  {
+    "Alias": "HerbalDustWater",
+    "ID": 405,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "PerfectAlcohol" : 1, "AzureSaffron": 1, "MizukiFruit": 1, "JamalaFlower": 1 }
+  },
+  {
+    "Alias": "HerbalDustEarth",
+    "ID": 406,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 3,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "PerfectAlcohol" : 1, "MountainHearth": 1, "Cavortius": 1, "RoyalScarab": 1 }
+  },
+
+  {
+    "Alias": "LimestoneGalduriteStone",
+    "ID": 488,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "SolidLimestone" : 1 }
+  },
+  {
+    "Alias": "GraniteGalduriteStone",
+    "ID": 489,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "SolidGranite" : 1 }
+  },
+  {
+    "Alias": "MarbleGalduriteStone",
+    "ID": 490,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "SolidMarble" : 1 }
+  },
+
+  {
+    "Alias": "RedPowder",
+    "ID": 501,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "Garnet" : 1 }
+  },
+  {
+    "Alias": "CondensedRedPowder",
+    "ID": 502,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "RedPowder" : 1, "PowderedAnnodite": 1 }
+  },
+  {
+    "Alias": "MagicalRedPowder",
+    "ID": 503,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 4,
+    "CraftingRecipe": { "RedPowder" : 1, "PowderedNefolite": 1 }
+  },
+
+  {
+    "Alias": "BluePowder",
+    "ID": 504,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "Sapphire" : 1 }
+  },
+  {
+    "Alias": "CondensedBluePowder",
+    "ID": 505,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "BluePowder" : 1, "PowderedAnnodite": 1 }
+  },
+  {
+    "Alias": "MagicalBluePowder",
+    "ID": 506,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 4,
+    "CraftingRecipe": { "BluePowder" : 1, "PowderedNefolite": 1 }
+  },
+
+  {
+    "Alias": "PurplePowder",
+    "ID": 507,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "Amethyst" : 1 }
+  },
+  {
+    "Alias": "CondensedPurplePowder",
+    "ID": 508,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "PurplePowder" : 1, "PowderedAnnodite": 1 }
+  },
+  {
+    "Alias": "MagicalPurplePowder",
+    "ID": 509,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 4,
+    "CraftingRecipe": { "PurplePowder" : 1, "PowderedNefolite": 1 }
+  },
+
+  {
+    "Alias": "YellowPowder",
+    "ID": 510,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "Citrine" : 1 }
+  },
+  {
+    "Alias": "CondensedYellowPowder",
+    "ID": 511,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "YellowPowder" : 1, "PowderedAnnodite": 1 }
+  },
+  {
+    "Alias": "MagicalYellowPowder",
+    "ID": 512,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 4,
+    "CraftingRecipe": { "YellowPowder" : 1, "PowderedNefolite": 1 }
+  },
+
+  {
+    "Alias": "GreenPowder",
+    "ID": 513,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "Emerald" : 1 }
+  },
+  {
+    "Alias": "CondensedGreenPowder",
+    "ID": 514,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "GreenPowder" : 1, "PowderedAnnodite": 1 }
+  },
+  {
+    "Alias": "MagicalGreenPowder",
+    "ID": 515,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 4,
+    "CraftingRecipe": { "GreenPowder" : 1, "PowderedNefolite": 1 }
+  },
+
+  {
+    "Alias": "BlackPowder",
+    "ID": 516,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "Onyx" : 1 }
+  },
+  {
+    "Alias": "CondensedBlackPowder",
+    "ID": 517,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "BlackPowder" : 1, "PowderedAnnodite": 1 }
+  },
+  {
+    "Alias": "MagicalBlackPowder",
+    "ID": 518,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 4,
+    "CraftingRecipe": { "BlackPowder" : 1, "PowderedNefolite": 1 }
+  },
+
+  {
+    "Alias": "PinkPowder",
+    "ID": 519,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "Ruby" : 1 }
+  },
+  {
+    "Alias": "CondensedPinkPowder",
+    "ID": 520,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "PinkPowder" : 1, "PowderedAnnodite": 1 }
+  },
+  {
+    "Alias": "MagicalPinkPowder",
+    "ID": 521,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 4,
+    "CraftingRecipe": { "PinkPowder" : 1, "PowderedNefolite": 1 }
+  },
+
+  {
+    "Alias": "WhitePowder",
+    "ID": 522,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "Diamond" : 1 }
+  },
+  {
+    "Alias": "CondensedWhitePowder",
+    "ID": 523,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "WhitePowder" : 1, "PowderedAnnodite": 1 }
+  },
+  {
+    "Alias": "MagicalWhitePowder",
+    "ID": 524,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 4,
+    "CraftingRecipe": { "WhitePowder" : 1, "PowderedNefolite": 1 }
+  },
+
+  {
+    "Alias": "GoldenPowder",
+    "ID": 525,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "Topaz" : 1 }
+  },
+  {
+    "Alias": "CondensedGoldenPowder",
+    "ID": 526,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "GoldenPowder" : 1, "PowderedAnnodite": 1 }
+  },
+  {
+    "Alias": "MagicalGoldenPowder",
+    "ID": 527,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 4,
+    "CraftingRecipe": { "GoldenPowder" : 1, "PowderedNefolite": 1 }
+  },
+
+  {
+    "Alias": "OrangePowder",
+    "ID": 528,
+    "Rarity": 4,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 2,
+    "CraftingRecipe": { "Amber" : 1 }
+  },
+  {
+    "Alias": "CondensedOrangePowder",
+    "ID": 529,
+    "Rarity": 5,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 1,
+    "CraftingRecipe": { "OrangePowder" : 1, "PowderedAnnodite": 1 }
+  },
+  {
+    "Alias": "MagicalOrangePowder",
+    "ID": 530,
+    "Rarity": 7,
+    "Description": "",
+    "ItemType": 4,
+    "CraftedAmount": 4,
+    "CraftingRecipe": { "OrangePowder" : 1, "PowderedNefolite": 1 }
+  }
+]

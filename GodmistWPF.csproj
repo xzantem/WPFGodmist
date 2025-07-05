@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+        <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
+        <PackageReference Include="MaterialDesignColors" Version="2.1.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Update="locale.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>locale.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Update="locale.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>locale.resx</DependentUpon>
+        </Compile>
+        <Compile Remove="Text\ActiveSkillTextService.cs" />
+        <Compile Remove="Text\ItemTextService.cs" />
+        <Compile Remove="Text\NPCMenuHandler.cs" />
+        <Compile Remove="Quests\SideQuestManager.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Resource Include="Resources\**\*" />
+    </ItemGroup>
+
+</Project> 

@@ -1,0 +1,434 @@
+﻿[
+  {
+    "Effect": 0,
+    "StrengthTier": 1,
+    "EffectStrength": 0.15,
+    "Material": "Puffball"
+  },
+  {
+    "Effect": 0,
+    "StrengthTier": 3,
+    "EffectStrength": 0.2,
+    "Material": "DwarvenMoss"
+  },
+  {
+    "Effect": 0,
+    "StrengthTier": 5,
+    "EffectStrength": 0.35,
+    "Material": "BlackWidow"
+  },
+  {
+    "Effect": 0,
+    "StrengthTier": 1,
+    "EffectStrength": 0.15,
+    "Material": "SkeletonBone"
+  },
+  {
+    "Effect": 0,
+    "StrengthTier": 3,
+    "EffectStrength": 0.2,
+    "Material": "Ectoplasm"
+  },
+  {
+    "Effect": 0,
+    "StrengthTier": 5,
+    "EffectStrength": 0.35,
+    "Material": "ExecutionerBone"
+  },
+  {
+    "Effect": 1,
+    "StrengthTier": 1,
+    "EffectStrength": 0.25,
+    "Material": "DaddyLonglegs"
+  },
+  {
+    "Effect": 1,
+    "StrengthTier": 3,
+    "EffectStrength": 0.35,
+    "Material": "SwordShrub"
+  },
+  {
+    "Effect": 1,
+    "StrengthTier": 5,
+    "EffectStrength": 0.6,
+    "Material": "Cavortius"
+  },
+  {
+    "Effect": 1,
+    "StrengthTier": 1,
+    "EffectStrength": 0.25,
+    "Material": "UndeadBrain"
+  },
+  {
+    "Effect": 1,
+    "StrengthTier": 3,
+    "EffectStrength": 0.35,
+    "Material": "GhoulClaw"
+  },
+  {
+    "Effect": 1,
+    "StrengthTier": 5,
+    "EffectStrength": 0.6,
+    "Material": "RoyalEctoplasm"
+  },
+  {
+    "Effect": 2,
+    "StrengthTier": 1,
+    "EffectStrength": 0.2,
+    "Material": "Pinecone"
+  },
+  {
+    "Effect": 2,
+    "StrengthTier": 3,
+    "EffectStrength": 0.3,
+    "Material": "TulipFlower"
+  },
+  {
+    "Effect": 2,
+    "StrengthTier": 5,
+    "EffectStrength": 0.5,
+    "Material": "ElvishCasisa"
+  },
+  {
+    "Effect": 2,
+    "StrengthTier": 1,
+    "EffectStrength": 0.2,
+    "Material": "ElfEar"
+  },
+  {
+    "Effect": 2,
+    "StrengthTier": 3,
+    "EffectStrength": 0.3,
+    "Material": "WolfFang"
+  },
+  {
+    "Effect": 2,
+    "StrengthTier": 5,
+    "EffectStrength": 0.5,
+    "Material": "ForestSpirit"
+  },
+  {
+    "Effect": 3,
+    "StrengthTier": 1,
+    "EffectStrength": 0.3,
+    "Material": "StranglerGrass"
+  },
+  {
+    "Effect": 3,
+    "StrengthTier": 3,
+    "EffectStrength": 0.5,
+    "Material": "BurningVines"
+  },
+  {
+    "Effect": 3,
+    "StrengthTier": 5,
+    "EffectStrength": 0.8,
+    "Material": "HellishRose"
+  },
+  {
+    "Effect": 3,
+    "StrengthTier": 1,
+    "EffectStrength": 0.3,
+    "Material": "DemonHorn"
+  },
+  {
+    "Effect": 3,
+    "StrengthTier": 3,
+    "EffectStrength": 0.5,
+    "Material": "InterdimensionalTentacle"
+  },
+  {
+    "Effect": 3,
+    "StrengthTier": 5,
+    "EffectStrength": 0.8,
+    "Material": "RoyalDemonHorn"
+  },
+  {
+    "Effect": 4,
+    "StrengthTier": 1,
+    "EffectStrength": 0.1,
+    "Material": "Seaweed"
+  },
+  {
+    "Effect": 4,
+    "StrengthTier": 3,
+    "EffectStrength": 0.15,
+    "Material": "DoragafuraStamens"
+  },
+  {
+    "Effect": 4,
+    "StrengthTier": 5,
+    "EffectStrength": 0.25,
+    "Material": "MizukiFruit"
+  },
+  {
+    "Effect": 4,
+    "StrengthTier": 1,
+    "EffectStrength": 0.1,
+    "Material": "PirateEye"
+  },
+  {
+    "Effect": 4,
+    "StrengthTier": 3,
+    "EffectStrength": 0.15,
+    "Material": "ShiningSand"
+  },
+  {
+    "Effect": 4,
+    "StrengthTier": 5,
+    "EffectStrength": 0.25,
+    "Material": "AlphaSharkFin"
+  },
+  {
+    "Effect": 5,
+    "StrengthTier": 1,
+    "EffectStrength": 0.05,
+    "Material": "BloomingCherry"
+  },
+  {
+    "Effect": 5,
+    "StrengthTier": 3,
+    "EffectStrength": 0.07,
+    "Material": "BananaLeaf"
+  },
+  {
+    "Effect": 5,
+    "StrengthTier": 5,
+    "EffectStrength": 0.1,
+    "Material": "Moonshroom"
+  },
+  {
+    "Effect": 5,
+    "StrengthTier": 1,
+    "EffectStrength": 0.05,
+    "Material": "BirdFeather"
+  },
+  {
+    "Effect": 5,
+    "StrengthTier": 3,
+    "EffectStrength": 0.07,
+    "Material": "SharkFin"
+  },
+  {
+    "Effect": 5,
+    "StrengthTier": 5,
+    "EffectStrength": 0.1,
+    "Material": "ProstheticTooth"
+  },
+  {
+    "Effect": 6,
+    "StrengthTier": 1,
+    "EffectStrength": 0.1,
+    "Material": "AloeMeda"
+  },
+  {
+    "Effect": 6,
+    "StrengthTier": 3,
+    "EffectStrength": 0.15,
+    "Material": "RissaFlower"
+  },
+  {
+    "Effect": 6,
+    "StrengthTier": 5,
+    "EffectStrength": 0.25,
+    "Material": "JamalaFlower"
+  },
+  {
+    "Effect": 6,
+    "StrengthTier": 1,
+    "EffectStrength": 0.1,
+    "Material": "CactusFruit"
+  },
+  {
+    "Effect": 6,
+    "StrengthTier": 3,
+    "EffectStrength": 0.15,
+    "Material": "WindElement"
+  },
+  {
+    "Effect": 6,
+    "StrengthTier": 5,
+    "EffectStrength": 0.25,
+    "Material": "EnchantedHand"
+  },
+  {
+    "Effect": 7,
+    "StrengthTier": 1,
+    "EffectStrength": 0.1,
+    "Material": "AlzifVines"
+  },
+  {
+    "Effect": 7,
+    "StrengthTier": 3,
+    "EffectStrength": 0.15,
+    "Material": "DesertReaper"
+  },
+  {
+    "Effect": 7,
+    "StrengthTier": 5,
+    "EffectStrength": 0.25,
+    "Material": "RoyalScarab"
+  },
+  {
+    "Effect": 7,
+    "StrengthTier": 1,
+    "EffectStrength": 0.1,
+    "Material": "DefiledHeart"
+  },
+  {
+    "Effect": 7,
+    "StrengthTier": 3,
+    "EffectStrength": 0.15,
+    "Material": "AncientSkin"
+  },
+  {
+    "Effect": 7,
+    "StrengthTier": 5,
+    "EffectStrength": 0.25,
+    "Material": "MaladEnergy"
+  },
+  {
+    "Effect": 8,
+    "StrengthTier": 1,
+    "EffectStrength": 0.15,
+    "Material": "BylineFlower"
+  },
+  {
+    "Effect": 8,
+    "StrengthTier": 3,
+    "EffectStrength": 0.25,
+    "Material": "FrostStamens"
+  },
+  {
+    "Effect": 8,
+    "StrengthTier": 5,
+    "EffectStrength": 0.4,
+    "Material": "AzureSaffron"
+  },
+  {
+    "Effect": 8,
+    "StrengthTier": 1,
+    "EffectStrength": 0.15,
+    "Material": "CrushedSkull"
+  },
+  {
+    "Effect": 8,
+    "StrengthTier": 3,
+    "EffectStrength": 0.25,
+    "Material": "Histine"
+  },
+  {
+    "Effect": 8,
+    "StrengthTier": 5,
+    "EffectStrength": 0.4,
+    "Material": "BerserkBlood"
+  },
+  {
+    "Effect": 9,
+    "StrengthTier": 1,
+    "EffectStrength": 0.05,
+    "Material": "TregandianDandelion"
+  },
+  {
+    "Effect": 9,
+    "StrengthTier": 3,
+    "EffectStrength": 0.07,
+    "Material": "RoyalButterfly"
+  },
+  {
+    "Effect": 9,
+    "StrengthTier": 5,
+    "EffectStrength": 0.1,
+    "Material": "MountainHearth"
+  },
+  {
+    "Effect": 9,
+    "StrengthTier": 1,
+    "EffectStrength": 0.05,
+    "Material": "TrollKidney"
+  },
+  {
+    "Effect": 9,
+    "StrengthTier": 3,
+    "EffectStrength": 0.07,
+    "Material": "RukFeather"
+  },
+  {
+    "Effect": 9,
+    "StrengthTier": 5,
+    "EffectStrength": 0.1,
+    "Material": "WyvernScales"
+  },
+  {
+    "Effect": 10,
+    "StrengthTier": 1,
+    "EffectStrength": 10,
+    "Material": "Bulrush"
+  },
+  {
+    "Effect": 10,
+    "StrengthTier": 3,
+    "EffectStrength": 15,
+    "Material": "FlatCalamus"
+  },
+  {
+    "Effect": 10,
+    "StrengthTier": 5,
+    "EffectStrength": 25,
+    "Material": "GoldenClover"
+  },
+  {
+    "Effect": 10,
+    "StrengthTier": 1,
+    "EffectStrength": 10,
+    "Material": "LivingLeaf"
+  },
+  {
+    "Effect": 10,
+    "StrengthTier": 3,
+    "EffectStrength": 15,
+    "Material": "MosquitoProboscis"
+  },
+  {
+    "Effect": 10,
+    "StrengthTier": 5,
+    "EffectStrength": 25,
+    "Material": "LivingBranch"
+  },
+  {
+    "Effect": 11,
+    "StrengthTier": 1,
+    "EffectStrength": 0.1,
+    "Material": "CommonFly"
+  },
+  {
+    "Effect": 11,
+    "StrengthTier": 3,
+    "EffectStrength": 0.15,
+    "Material": "Viperia"
+  },
+  {
+    "Effect": 11,
+    "StrengthTier": 5,
+    "EffectStrength": 0.25,
+    "Material": "LionCrocus"
+  },
+  {
+    "Effect": 11,
+    "StrengthTier": 1,
+    "EffectStrength": 0.1,
+    "Material": "AlligatorTooth"
+  },
+  {
+    "Effect": 11,
+    "StrengthTier": 3,
+    "EffectStrength": 0.15,
+    "Material": "DrownerLung"
+  },
+  {
+    "Effect": 11,
+    "StrengthTier": 5,
+    "EffectStrength": 0.25,
+    "Material": "LivingFlower"
+  }
+]
