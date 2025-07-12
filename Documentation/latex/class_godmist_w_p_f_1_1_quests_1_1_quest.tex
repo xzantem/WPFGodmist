@@ -1,0 +1,157 @@
+\doxysection{Godmist\+WPF.\+Quests.\+Quest Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest}{}\label{class_godmist_w_p_f_1_1_quests_1_1_quest}\index{GodmistWPF.Quests.Quest@{GodmistWPF.Quests.Quest}}
+
+
+Reprezentuje zadanie w grze, które gracz może wykonać. Zarządza stanem zadania, jego etapami, nagrodami i interakcjami z NPC.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_adfe6b5165966ba132b86171a9c8b651c}\label{class_godmist_w_p_f_1_1_quests_1_1_quest_adfe6b5165966ba132b86171a9c8b651c} 
+{\bfseries Quest} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_quests_1_1_quest}{Quest}. Używany przez serializator JSON. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_quest_a1ff7e78152e3ad94ee80f6f523a2e382}{Quest}} (string alias, int level, List$<$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_quest_stage}{Quest\+Stage}} $>$ stages, \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_quest_reward}{Quest\+Reward}} quest\+Reward, string quest\+Giver, string accept\+Dialogue, string hand\+In\+Dialogue, bool is\+Side\+Quest=false)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_quests_1_1_quest}{Quest} z określonymi parametrami. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_quest_af9773b4f4325bf6914db50c64ceecc02}{Try\+Progress}} (\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context}{Quest\+Objective\+Context}} context)
+\begin{DoxyCompactList}\small\item\em Próbuje wykonać postęp w zadaniu na podstawie dostarczonego kontekstu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_quest_stage}{Quest\+Stage}} \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_quest_a055ba8357250a6f181b14e6b32d28afd}{Get\+Current\+Stage}} ()
+\begin{DoxyCompactList}\small\item\em Pobiera aktualny etap zadania (pierwszy, który ma nieukończone cele). \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_a7e64dca45e872c69922065807a04fd53}\label{class_godmist_w_p_f_1_1_quests_1_1_quest_a7e64dca45e872c69922065807a04fd53} 
+void {\bfseries Accept\+Quest} ()
+\begin{DoxyCompactList}\small\item\em Oznacza zadanie jako zaakceptowane przez gracza. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_a69b98dfb3c7b47518f7c54555d9afd92}\label{class_godmist_w_p_f_1_1_quests_1_1_quest_a69b98dfb3c7b47518f7c54555d9afd92} 
+void {\bfseries Try\+Complete\+Quest} ()
+\begin{DoxyCompactList}\small\item\em Próbuje oznaczyć zadanie jako ukończone, jeśli wszystkie cele zostały wykonane. Wywołuje zdarzenie ukończenia zadania, jeśli stan się zmienił. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_quest_reward}{Quest\+Reward}} \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_quest_a9938d534820d121437a8719b19ed67f4}{Hand\+In\+Quest}} ()
+\begin{DoxyCompactList}\small\item\em Realizuje nagrodę za zadanie i oznacza je jako oddane. W przypadku zadań pobocznych aktualizuje postęp w zabijaniu bossów. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_ac9d40df4e92f329b3df3a7b5977acf7d}\label{class_godmist_w_p_f_1_1_quests_1_1_quest_ac9d40df4e92f329b3df3a7b5977acf7d} 
+string {\bfseries Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera nazwę zadania na podstawie aliasu. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_a8a730f9288148fab5af3aebeb5270f6c}\label{class_godmist_w_p_f_1_1_quests_1_1_quest_a8a730f9288148fab5af3aebeb5270f6c} 
+string {\bfseries Description}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera opis zadania. Dla zadań pobocznych zwraca opis pierwszego celu, a dla głównych pobiera opis na podstawie aliasu. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_ac0b77a9844fe911949e41e0386ea290e}\label{class_godmist_w_p_f_1_1_quests_1_1_quest_ac0b77a9844fe911949e41e0386ea290e} 
+string {\bfseries Alias}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Unikalny identyfikator zadania. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_a399d72f121a21e32b8d815068327ebee}\label{class_godmist_w_p_f_1_1_quests_1_1_quest_a399d72f121a21e32b8d815068327ebee} 
+bool {\bfseries Is\+Side\+Quest}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Określa, czy zadanie jest zadaniem pobocznym. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_a4de0255b1a2175828db4e8bce01d6471}\label{class_godmist_w_p_f_1_1_quests_1_1_quest_a4de0255b1a2175828db4e8bce01d6471} 
+int {\bfseries Recommended\+Level}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Zalecany poziom postaci do podjęcia zadania. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_a7b67142a23d1206975264beb2de5f561}\label{class_godmist_w_p_f_1_1_quests_1_1_quest_a7b67142a23d1206975264beb2de5f561} 
+List$<$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_quest_stage}{Quest\+Stage}} $>$ {\bfseries Stages}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Lista etapów zadania. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_a90a0c4c115154f399e133ce387b6ccd1}\label{class_godmist_w_p_f_1_1_quests_1_1_quest_a90a0c4c115154f399e133ce387b6ccd1} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_quest_reward}{Quest\+Reward}} {\bfseries Quest\+Reward}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Nagroda za ukończenie zadania. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_ad3cb79e5a33c550987634b6b7ff41dda}\label{class_godmist_w_p_f_1_1_quests_1_1_quest_ad3cb79e5a33c550987634b6b7ff41dda} 
+\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_a3489e1f4cd29723e37bed1eab7648f6e}{Quest\+State}} {\bfseries Quest\+State}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Aktualny stan zadania. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_a32fe95f2c19ef559fa92953aab2d4450}\label{class_godmist_w_p_f_1_1_quests_1_1_quest_a32fe95f2c19ef559fa92953aab2d4450} 
+List$<$ string $>$ {\bfseries Prerequisites}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Lista wymagań, które muszą być spełnione, aby podjąć zadanie. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_a3cd868dcfe2257f7764a78c2965d2398}\label{class_godmist_w_p_f_1_1_quests_1_1_quest_a3cd868dcfe2257f7764a78c2965d2398} 
+string {\bfseries Quest\+Giver}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Identyfikator NPC, który wydaje zadanie. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_a8a23423bcb63ef1c422eb6355ff61652}\label{class_godmist_w_p_f_1_1_quests_1_1_quest_a8a23423bcb63ef1c422eb6355ff61652} 
+string {\bfseries Quest\+Ender}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Identyfikator NPC, u którego można zakończyć zadanie. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_a6bd2d776974d5c546158e28974520fb6}\label{class_godmist_w_p_f_1_1_quests_1_1_quest_a6bd2d776974d5c546158e28974520fb6} 
+List$<$ string $>$ {\bfseries Accept\+Dialogue}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Lista linii dialogowych wyświetlanych przy podejmowaniu zadania. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_afa3931c096bef63030cd2a9b89a64b56}\label{class_godmist_w_p_f_1_1_quests_1_1_quest_afa3931c096bef63030cd2a9b89a64b56} 
+List$<$ string $>$ {\bfseries Hand\+In\+Dialogue}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Lista linii dialogowych wyświetlanych przy oddawaniu zadania. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Reprezentuje zadanie w grze, które gracz może wykonać. Zarządza stanem zadania, jego etapami, nagrodami i interakcjami z NPC. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_a1ff7e78152e3ad94ee80f6f523a2e382}\index{GodmistWPF.Quests.Quest@{GodmistWPF.Quests.Quest}!Quest@{Quest}}
+\index{Quest@{Quest}!GodmistWPF.Quests.Quest@{GodmistWPF.Quests.Quest}}
+\doxysubsubsection{\texorpdfstring{Quest()}{Quest()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_quest_a1ff7e78152e3ad94ee80f6f523a2e382} 
+Godmist\+WPF.\+Quests.\+Quest.\+Quest (\begin{DoxyParamCaption}\item[{string}]{alias}{, }\item[{int}]{level}{, }\item[{List$<$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_quest_stage}{Quest\+Stage}} $>$}]{stages}{, }\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_quest_reward}{Quest\+Reward}}}]{quest\+Reward}{, }\item[{string}]{quest\+Giver}{, }\item[{string}]{accept\+Dialogue}{, }\item[{string}]{hand\+In\+Dialogue}{, }\item[{bool}]{is\+Side\+Quest}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_quests_1_1_quest}{Quest} z określonymi parametrami. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & Unikalny identyfikator zadania.\\
+\hline
+{\em level} & Zalecany poziom postaci do podjęcia zadania.\\
+\hline
+{\em stages} & Lista etapów zadania.\\
+\hline
+{\em quest\+Reward} & Nagroda za ukończenie zadania.\\
+\hline
+{\em quest\+Giver} & Identyfikator NPC wydającego zadanie.\\
+\hline
+{\em accept\+Dialogue} & Dialog wyświetlany przy podejmowaniu zadania.\\
+\hline
+{\em hand\+In\+Dialogue} & Dialog wyświetlany przy oddawaniu zadania.\\
+\hline
+{\em is\+Side\+Quest} & Określa, czy zadanie jest zadaniem pobocznym.\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_a055ba8357250a6f181b14e6b32d28afd}\index{GodmistWPF.Quests.Quest@{GodmistWPF.Quests.Quest}!GetCurrentStage@{GetCurrentStage}}
+\index{GetCurrentStage@{GetCurrentStage}!GodmistWPF.Quests.Quest@{GodmistWPF.Quests.Quest}}
+\doxysubsubsection{\texorpdfstring{GetCurrentStage()}{GetCurrentStage()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_quest_a055ba8357250a6f181b14e6b32d28afd} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_quest_stage}{Quest\+Stage}} Godmist\+WPF.\+Quests.\+Quest.\+Get\+Current\+Stage (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pobiera aktualny etap zadania (pierwszy, który ma nieukończone cele). 
+
+\begin{DoxyReturn}{Returns}
+Bieżący etap zadania lub null, jeśli wszystkie etapy są ukończone.
+\end{DoxyReturn}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_a9938d534820d121437a8719b19ed67f4}\index{GodmistWPF.Quests.Quest@{GodmistWPF.Quests.Quest}!HandInQuest@{HandInQuest}}
+\index{HandInQuest@{HandInQuest}!GodmistWPF.Quests.Quest@{GodmistWPF.Quests.Quest}}
+\doxysubsubsection{\texorpdfstring{HandInQuest()}{HandInQuest()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_quest_a9938d534820d121437a8719b19ed67f4} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_quest_reward}{Quest\+Reward}} Godmist\+WPF.\+Quests.\+Quest.\+Hand\+In\+Quest (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Realizuje nagrodę za zadanie i oznacza je jako oddane. W przypadku zadań pobocznych aktualizuje postęp w zabijaniu bossów. 
+
+\begin{DoxyReturn}{Returns}
+Nagroda za ukończenie zadania.
+\end{DoxyReturn}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_af9773b4f4325bf6914db50c64ceecc02}\index{GodmistWPF.Quests.Quest@{GodmistWPF.Quests.Quest}!TryProgress@{TryProgress}}
+\index{TryProgress@{TryProgress}!GodmistWPF.Quests.Quest@{GodmistWPF.Quests.Quest}}
+\doxysubsubsection{\texorpdfstring{TryProgress()}{TryProgress()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_quest_af9773b4f4325bf6914db50c64ceecc02} 
+void Godmist\+WPF.\+Quests.\+Quest.\+Try\+Progress (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context}{Quest\+Objective\+Context}}}]{context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Próbuje wykonać postęp w zadaniu na podstawie dostarczonego kontekstu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & Kontekst zawierający informacje o wykonanej akcji.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Quests/Quest.\+cs\end{DoxyCompactItemize}

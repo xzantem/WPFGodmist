@@ -1,65 +1,53 @@
-﻿using GodmistWPF.Combat.Battles;
+using GodmistWPF.Combat.Battles;
 
-public class BattleInterface(BattleUser displayedUser)
+/// <summary>
+/// Klasa odpowiedzialna za zarządzanie interfejsem użytkownika podczas walki.
+/// </summary>
+/// <remarks>
+/// Zapewnia funkcjonalność wyświetlania i aktualizacji interfejsu walki,
+/// w tym kolejki turek i stanu wejścia gracza.
+/// </remarks>
+public class BattleInterface
 {
-    public string InfoDisplayMode { get; private set; } = "Resistances";
-    public BattleUser DisplayedUser { get; private set; } = displayedUser;
-    public List<string> BattleLog { get; private set; } = [];
-    private int _battleLogCurrentIndex;
+    /// <summary>
+    /// Pobiera informację, czy wejście gracza jest aktywne.
+    /// </summary>
+    /// <value>
+    /// <c>true</c> jeśli gracz może wykonywać akcje; w przeciwnym razie, <c>false</c>.
+    /// </value>
+    public bool IsPlayerInputEnabled { get; private set; }
 
-    private const int SHOWN_BATTLE_LOG_LINES = 10;
+    /// <summary>
+    /// Maksymalna liczba jednostek wyświetlanych w kolejce turek.
+    /// </summary>
+    private const int TURN_ORDER_COUNT = 10;
 
-    public void ChangeDisplayMode()
+    /// <summary>
+    /// Inicjalizuje nową instancję klasy <see cref="BattleInterface"/>
+    /// </summary>
+    /// <remarks>
+    /// Domyślnie wyłącza wejście gracza.
+    /// </remarks>
+    public BattleInterface()
     {
-        // WPF handles display mode cycling
-        InfoDisplayMode = InfoDisplayMode switch
-        { 
-            "Resistances" => "Skills", 
-            "Skills" => "PassiveEffects", 
-            _ => "Resistances" 
-        };
+        IsPlayerInputEnabled = false;
     }
 
-    public void AddBattleLogLines(params string[] lines)
-    {
-        BattleLog.AddRange(lines);
-        _battleLogCurrentIndex = Math.Max(0, BattleLog.Count - SHOWN_BATTLE_LOG_LINES);
-    }
-
-    public void ScrollBattleLog(bool up)
-    {
-        _battleLogCurrentIndex = up ? Math.Max(0, _battleLogCurrentIndex - SHOWN_BATTLE_LOG_LINES) : 
-            Math.Max(0, Math.Min(_battleLogCurrentIndex + SHOWN_BATTLE_LOG_LINES, BattleLog.Count - SHOWN_BATTLE_LOG_LINES));
-    }
-
-    public bool CanScroll(bool up)
-    {
-        if (up)
-            return _battleLogCurrentIndex > Math.Max(0, _battleLogCurrentIndex - SHOWN_BATTLE_LOG_LINES);
-        return 
-            _battleLogCurrentIndex < Math.Max(0, Math.Min(_battleLogCurrentIndex + SHOWN_BATTLE_LOG_LINES, 
-                BattleLog.Count - SHOWN_BATTLE_LOG_LINES));
-    }
-
-    public void ChangeDisplayedUser(List<BattleUser> users)
-    {
-        // WPF handles user selection
-        var currentIndex = users.IndexOf(DisplayedUser);
-        var nextIndex = (currentIndex + 1) % users.Count;
-        DisplayedUser = users[nextIndex];
-    }
-
-    public void DisplayInterface(BattleUser movingUser, List<BattleUser> users, bool clear = true)
-    {
-        // WPF handles battle interface display
-    }
-
-    private List<(BattleUser, int)> GetTurnOrder(List<BattleUser> unorganized)
+    /// <summary>
+    /// Generuje uporządkowaną kolejkę turek dla uczestników walki.
+    /// </summary>
+    /// <param name="unorganized">Nieuporządkowana lista uczestników walki.</param>
+    /// <returns>Lista krotek zawierających uczestnika i jego pozycję w kolejce.</returns>
+    /// <remarks>
+    /// Algorytm symuluje upływ czasu, aby określić kolejność ruchów
+    /// na podstawie prędkości uczestników.
+    /// </remarks>
+    public List<(BattleUser, int)> GetTurnOrder(List<BattleUser> unorganized)
     {
         var copy = unorganized.Select(user => new BattleUser(user)).ToList();
         var organized = new List<(BattleUser, int)>();
         var index = 0;
-        while (organized.Count < SHOWN_BATTLE_LOG_LINES)
+        while (organized.Count < TURN_ORDER_COUNT)
         {
             index++;
             foreach (var user in copy.Where(user => user.TryMove()))
@@ -70,10 +58,15 @@ public class BattleInterface(BattleUser displayedUser)
         }
         return organized.ToList();
     }
-
-    private object GetUserTable(BattleUser user)
+    
+    /// <summary>
+    /// Włącza lub wyłącza możliwość wprowadzania poleceń przez gracza.
+    /// </summary>
+    /// <param name="enable">
+    /// <c>true</c> aby włączyć wejście gracza; w przeciwnym razie, <c>false</c>.
+    /// </param>
+    public void EnablePlayerInput(bool enable)
     {
-        // WPF handles user table display
-        return new object();
+        IsPlayerInputEnabled = enable;
     }
 }

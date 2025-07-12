@@ -1,0 +1,214 @@
+<Window x:Class="GodmistWPF.Dialogs.CharacterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Character" 
+        Height="650" 
+        Width="900"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        Background="{DynamicResource MaterialDesignPaper}"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}">
+    
+    <Window.Resources>
+        <Style x:Key="StatLabel" TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Margin" Value="0,5,10,5"/>
+            <Setter Property="Foreground" Value="{DynamicResource MaterialDesignBody}"/>
+            <Setter Property="Width" Value="120"/>
+        </Style>
+        
+        <Style x:Key="StatValue" TargetType="TextBlock">
+            <Setter Property="Margin" Value="0,5,20,5"/>
+            <Setter Property="Foreground" Value="{DynamicResource MaterialDesignBody}"/>
+        </Style>
+        
+        <Style x:Key="SectionHeader" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Margin" Value="0,15,0,10"/>
+            <Setter Property="Foreground" Value="{DynamicResource SecondaryHueMidBrush}"/>
+        </Style>
+        
+        <Style x:Key="EquipmentItemStyle" TargetType="TextBlock">
+            <Setter Property="Margin" Value="0,2,0,2"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="Foreground" Value="{DynamicResource MaterialDesignBody}"/>
+        </Style>
+        
+        <Style x:Key="EquipmentHeaderStyle" TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Margin" Value="0,5,0,2"/>
+            <Setter Property="Foreground" Value="{DynamicResource PrimaryHueMidBrush}"/>
+        </Style>
+    
+    </Window.Resources>
+    
+    <materialDesign:Card Margin="10" UniformCornerRadius="6">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            
+            <!-- Header -->
+            <materialDesign:ColorZone Grid.Row="0" Mode="PrimaryMid" Padding="15" CornerRadius="4,4,0,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Name="CharacterNameText" 
+                               Text="Character Name" 
+                               Style="{StaticResource MaterialDesignHeadline5TextBlock}" 
+                               Foreground="White"
+                               VerticalAlignment="Center"/>
+                    <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                        <materialDesign:PackIcon Kind="Coins" Foreground="Gold" Width="24" Height="24" Margin="0,0,5,0"/>
+                        <TextBlock x:Name="GoldText" 
+                                   Text="0" 
+                                   Style="{StaticResource MaterialDesignHeadline6TextBlock}" 
+                                   Foreground="White"
+                                   VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Grid>
+            </materialDesign:ColorZone>
+            
+            <!-- Main Content -->
+            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Padding="15">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="10"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <!-- Left Column - Character Info -->
+                    <StackPanel Grid.Column="0">
+                        <!-- Basic Info -->
+                        <TextBlock Text="Basic Information" Style="{StaticResource SectionHeader}" Margin="10,10,0,10"/>
+                        <materialDesign:Card Background="{DynamicResource MaterialDesignPaper}" 
+                                         Padding="10" 
+                                         Margin="0,0,0,0">
+                            <StackPanel>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    
+                                    <TextBlock Text="Level:" Grid.Row="0" Grid.Column="0" Style="{StaticResource StatLabel}"/>
+                                    <TextBlock x:Name="LevelText" Grid.Row="0" Grid.Column="1" Style="{StaticResource StatValue}"/>
+                                    
+                                    <TextBlock Text="Experience:" Grid.Row="1" Grid.Column="0" Style="{StaticResource StatLabel}"/>
+                                    <TextBlock x:Name="ExperienceText" Grid.Row="1" Grid.Column="1" Style="{StaticResource StatValue}"/>
+                                    
+                                    <TextBlock Text="Class:" Grid.Row="2" Grid.Column="0" Style="{StaticResource StatLabel}"/>
+                                    <TextBlock x:Name="ClassText" Grid.Row="2" Grid.Column="1" Style="{StaticResource StatValue}"/>
+                                    
+                                    <TextBlock Text="Honor:" Grid.Row="4" Grid.Column="0" Style="{StaticResource StatLabel}"/>
+                                    <TextBlock x:Name="HonorText" Grid.Row="4" Grid.Column="1" Style="{StaticResource StatValue}"/>
+                                </Grid>
+                            </StackPanel>
+                        </materialDesign:Card>
+                        
+                        <!-- Combat Stats -->
+                        <TextBlock Text="Combat Stats" Style="{StaticResource SectionHeader}" Margin="10,10,0,10"/>
+                        <materialDesign:Card Background="{DynamicResource MaterialDesignPaper}" 
+                                         Padding="10"
+                                         Margin="0,0,0,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                
+                                <TextBlock Text="Health:" Grid.Row="0" Grid.Column="0" Style="{StaticResource StatLabel}"/>
+                                <TextBlock x:Name="HealthText" Grid.Row="0" Grid.Column="1" Style="{StaticResource StatValue}" TextWrapping="Wrap"/>
+                                
+                                <TextBlock Text="Resource:" Grid.Row="1" Grid.Column="0" Style="{StaticResource StatLabel}"/>
+                                <TextBlock x:Name="ResourceText" Grid.Row="1" Grid.Column="1" Style="{StaticResource StatValue}" TextWrapping="Wrap"/>
+                                
+                                <TextBlock Text="Attack:" Grid.Row="2" Grid.Column="0" Style="{StaticResource StatLabel}"/>
+                                <TextBlock x:Name="PhysicalAttackText" Grid.Row="2" Grid.Column="1" Style="{StaticResource StatValue}" TextWrapping="Wrap"/>
+                                
+                                <TextBlock Text="Defense:" Grid.Row="3" Grid.Column="0" Style="{StaticResource StatLabel}"/>
+                                <TextBlock x:Name="DefenseText" Grid.Row="3" Grid.Column="1" Style="{StaticResource StatValue}" TextWrapping="Wrap"/>
+                                
+                                <TextBlock Text="Dodge:" Grid.Row="4" Grid.Column="0" Style="{StaticResource StatLabel}"/>
+                                <TextBlock x:Name="DodgeText" Grid.Row="4" Grid.Column="1" Style="{StaticResource StatValue}" TextWrapping="Wrap"/>
+                                
+                                <TextBlock Text="Critical:" Grid.Row="5" Grid.Column="0" Style="{StaticResource StatLabel}"/>
+                                <TextBlock x:Name="CritText" Grid.Row="5" Grid.Column="1" Style="{StaticResource StatValue}" TextWrapping="Wrap"/>
+                                
+                                <TextBlock Text="Speed:" Grid.Row="7" Grid.Column="0" Style="{StaticResource StatLabel}"/>
+                                <TextBlock x:Name="SpeedText" Grid.Row="7" Grid.Column="1" Style="{StaticResource StatValue}" TextWrapping="Wrap"/>
+                            </Grid>
+                        </materialDesign:Card>
+                    </StackPanel>
+                    
+                    <!-- Right Column - Equipment -->
+                    <StackPanel Grid.Column="2">
+                        <TextBlock Text="Equipment" Style="{StaticResource SectionHeader}"/>
+                        
+                        <!-- Weapon -->
+                        <materialDesign:Card Background="{DynamicResource MaterialDesignPaper}" 
+                                         Padding="10" 
+                                         Margin="0,0,0,10">
+                            <StackPanel>
+                                <TextBlock Text="Weapon" Style="{StaticResource EquipmentHeaderStyle}"/>
+                                <TextBlock x:Name="WeaponNameText" Style="{StaticResource EquipmentItemStyle}" FontWeight="Bold"/>
+                                <TextBlock x:Name="WeaponStatsText" Style="{StaticResource EquipmentItemStyle}" Margin="0,5,0,0"/>
+                                <TextBlock x:Name="WeaponSpecialText" Style="{StaticResource EquipmentItemStyle}" Foreground="{DynamicResource SecondaryHueMidBrush}" FontStyle="Italic"/>
+                            </StackPanel>
+                        </materialDesign:Card>
+                        
+                        <!-- Armor -->
+                        <materialDesign:Card Background="{DynamicResource MaterialDesignPaper}" 
+                                         Padding="10" 
+                                         Margin="0,0,0,10">
+                            <StackPanel>
+                                <TextBlock Text="Armor" Style="{StaticResource EquipmentHeaderStyle}"/>
+                                <TextBlock x:Name="ArmorNameText" Style="{StaticResource EquipmentItemStyle}" FontWeight="Bold"/>
+                                <TextBlock x:Name="ArmorStatsText" Style="{StaticResource EquipmentItemStyle}" Margin="0,5,0,0"/>
+                                <TextBlock x:Name="ArmorSpecialText" Style="{StaticResource EquipmentItemStyle}" Foreground="{DynamicResource SecondaryHueMidBrush}" FontStyle="Italic"/>
+                            </StackPanel>
+                        </materialDesign:Card>
+                    </StackPanel>
+                </Grid>
+            </ScrollViewer>
+            
+            <!-- Footer -->
+            <Border Grid.Row="2" 
+                    Background="{DynamicResource MaterialDesignToolBarBackground}" 
+                    Padding="10" 
+                    CornerRadius="0,0,4,4">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Content="Close" 
+                            Style="{StaticResource MaterialDesignOutlinedButton}"
+                            Width="120"
+                            Margin="0,0,10,0"
+                            Click="CloseButton_Click"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </materialDesign:Card>
+</Window>

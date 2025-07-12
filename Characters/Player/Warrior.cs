@@ -10,9 +10,21 @@ using Newtonsoft.Json;
 
 namespace GodmistWPF.Characters.Player
 {
+    /// <summary>
+    /// Klasa reprezentująca postać Wojownika w grze.
+    /// </summary>
+    /// <remarks>
+    /// Wojownik to klasa używająca Furii jako głównego zasobu, specjalizująca się w wytrzymałości i obrażeniach fizycznych.
+    /// Posiada wysokie punkty życia i obronę, ale mniejszą celność w miarę gromadzenia Furii.
+    /// </remarks>
     [JsonConverter(typeof(PlayerJsonConverter))]
     public class Warrior : PlayerCharacter {
+        /// <summary>
+        /// Pobiera lub ustawia imię postaci.
+        /// </summary>
+        /// <value>Imię postaci Wojownika.</value>
         public override string Name { get; set; }
+        
         // Fury
         // Maximal is capped at 50 by default
         // Using Chop (Base Attack) grants 5 Fury
@@ -21,6 +33,19 @@ namespace GodmistWPF.Characters.Player
         // If a skill requires more than your maximum of Fury, you can cast it at maximum Fury, 
         // but you do not gain Fury until the deficit is compensated for (effectively in negative or debt)
         // Gain 1% damage for every 5 Fury (also lose if negative)
+        /// <summary>
+        /// Inicjalizuje nową instancję klasy <see cref="Warrior"/> o podanym imieniu.
+        /// </summary>
+        /// <param name="name">Imię Wojownika.</param>
+        /// <remarks>
+        /// <para>Zasób specjalny: Furia (maks. 50)</para>
+        /// <list type="bullet">
+        /// <item>Użycie umiejętności "Cięcie" daje 5 punktów Furii</item>
+        /// <item>Każdy punkt Furii zmniejsza celność o 1/3%</item>
+        /// <item>+1% do obrażeń za każde 5 punktów Furii (również w dół przy ujemnej wartości)</item>
+        /// <item>Można użyć umiejętności kosztującej więcej niż maksymalna Furia, ale nowa Furia będzie uzupełniać deficyt</item>
+        /// </list>
+        /// </remarks>
         public Warrior(string name) : base(name, new Stat(375, 12.5),
             new Stat(24, 0.7), new Stat(32, 0.95),
             new Stat(0.08, 0), new Stat(10, 0.05),
@@ -62,6 +87,10 @@ namespace GodmistWPF.Characters.Player
                 [new HealTarget(SkillTarget.Self, 0.08, DamageBase.CasterMissingHealth),
                 new ClearStatusEffect(SkillTarget.Self, StatusEffectType.Bleed)]);
         }
+        /// <summary>
+        /// Inicjalizuje nową instancję klasy <see cref="Warrior"/> bez parametrów.
+        /// Wymagane do deserializacji.
+        /// </summary>
         public Warrior() {}
     }
 }

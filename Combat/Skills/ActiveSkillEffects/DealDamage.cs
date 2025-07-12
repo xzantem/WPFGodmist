@@ -1,6 +1,5 @@
-﻿using ConsoleGodmist;
+﻿
 using GodmistWPF.Utilities;
-using BattleManager = GodmistWPF.Combat.Battles.BattleManager;
 using Character = GodmistWPF.Characters.Character;
 using DamageBase = GodmistWPF.Enums.DamageBase;
 using DamageType = GodmistWPF.Enums.DamageType;
@@ -11,19 +10,66 @@ using StatModifier = GodmistWPF.Combat.Modifiers.StatModifier;
 
 namespace GodmistWPF.Combat.Skills.ActiveSkillEffects;
 
+/// <summary>
+/// Efekt umiejętności zadający obrażenia celowi.
+/// </summary>
+/// <remarks>
+/// Obsługuje różne typy obrażeń, krytyki, kradzież życia i penetrację pancerza.
+/// Uwzględnia modyfikatory obrażeń w zależności od typu celu i innych czynników.
+/// </remarks>
 public class DealDamage : IActiveSkillEffect
 {
+    /// <summary>
+    /// Pobiera lub ustawia cel efektu (domyślnie przeciwnik).
+    /// </summary>
     public SkillTarget Target { get; set; }
+    /// <summary>
+    /// Pobiera lub ustawia typ zadawanych obrażeń (fizyczne, magiczne itp.).
+    /// </summary>
     public DamageType DamageType { get; set; }
+    /// <summary>
+    /// Pobiera lub ustawia bazę obrażeń (minimalne, losowe, maksymalne).
+    /// </summary>
     public DamageBase DamageBase { get; set; }
+    /// <summary>
+    /// Pobiera lub ustawia mnożnik obrażeń.
+    /// </summary>
     public double DamageMultiplier { get; set; }
+    /// <summary>
+    /// Pobiera lub ustawia wartość określającą, czy umiejętność może krytykować.
+    /// </summary>
     public bool CanCrit { get; set; }
+    /// <summary>
+    /// Pobiera lub ustawia wartość określającą, czy umiejętność zawsze krytykuje.
+    /// </summary>
     public bool AlwaysCrits { get; set; }
+    /// <summary>
+    /// Pobiera lub ustawia współczynnik kradzieży życia (jako ułamek zadanych obrażeń).
+    /// </summary>
     public double LifeSteal { get; set; }
+    /// <summary>
+    /// Pobiera lub ustawia wartość penetracji pancerza.
+    /// </summary>
     public double ArmorPen { get; set; }
     
+    /// <summary>
+    /// Inicjalizuje nową instancję klasy <see cref="DealDamage"/>.
+    /// </summary>
+    /// <remarks>
+    /// Konstruktor używany przez mechanizm deserializacji.
+    /// </remarks>
     public DealDamage() {}
 
+    /// <summary>
+    /// Inicjalizuje nową instancję klasy <see cref="DealDamage"/> z określonymi parametrami.
+    /// </summary>
+    /// <param name="damageType">Typ zadawanych obrażeń.</param>
+    /// <param name="damageBase">Baza obrażeń (minimalne/losowe/maksymalne).</param>
+    /// <param name="damageMultiplier">Mnożnik obrażeń.</param>
+    /// <param name="canCrit">Czy umiejętność może krytykować.</param>
+    /// <param name="alwaysCrits">Czy umiejętność zawsze krytykuje.</param>
+    /// <param name="lifeSteal">Współczynnik kradzieży życia (jako ułamek).</param>
+    /// <param name="armorPen">Wartość penetracji pancerza.</param>
     public DealDamage(DamageType damageType, DamageBase damageBase, double damageMultiplier, bool canCrit,
         bool alwaysCrits, double lifeSteal, double armorPen)
     {
@@ -37,6 +83,12 @@ public class DealDamage : IActiveSkillEffect
         ArmorPen = armorPen;
     }
 
+    /// <summary>
+    /// Oblicza wartość obrażeń przed uwzględnieniem obrony celu.
+    /// </summary>
+    /// <param name="caster">Postać zadająca obrażenia.</param>
+    /// <param name="target">Cel ataku.</param>
+    /// <returns>Obliczona wartość obrażeń.</returns>
     private double CalculateDamage(Character caster, Character target)
     {
         var damage = DamageBase switch
@@ -51,11 +103,20 @@ public class DealDamage : IActiveSkillEffect
         if (Random.Shared.NextDouble() <
             UtilityMethods.CalculateModValue(0, target.PassiveEffects.GetModifiers("CritSaveChance"))) return damage;
         damage *= caster.CritMod;
-        
-        BattleManager.CurrentBattle!.Interface.AddBattleLogLines($"{caster.Name} {locale.StrikesCritically}! ");
+
         return damage;
     }
 
+    /// <summary>
+    /// Wykonuje efekt zadawania obrażeń.
+    /// </summary>
+    /// <param name="caster">Postać rzucająca umiejętność.</param>
+    /// <param name="enemy">Przeciwnik, względem którego określany jest cel.</param>
+    /// <param name="source">Źródło efektu (nazwa umiejętności).</param>
+    /// <remarks>
+    /// Oblicza i zadaje obrażenia celowi, uwzględniając wszystkie modyfikatory,
+    /// szansę na trafienie krytyczne oraz kradzież życia.
+    /// </remarks>
     public void Execute(Character caster, Character enemy, string source)
     {
         var damage = Target switch
@@ -82,6 +143,16 @@ public class DealDamage : IActiveSkillEffect
         }
     }
 
+    /// <summary>
+    /// Pobiera listę modyfikatorów obrażeń dla atakującego i celu.
+    /// </summary>
+    /// <param name="caster">Postać zadająca obrażenia.</param>
+    /// <param name="target">Cel ataku.</param>
+    /// <returns>Lista modyfikatorów obrażeń.</returns>
+    /// <remarks>
+    /// Uwzględnia ogólne modyfikatory obrażeń, modyfikatory dla konkretnych typów obrażeń
+    /// oraz modyfikatory przeciwko określonym typom przeciwników.
+    /// </remarks>
     private List<StatModifier> GetDamageModifiers(Character caster, Character target)
     {
 

@@ -1,4 +1,4 @@
-﻿using ConsoleGodmist;
+
 using GodmistWPF.Characters.Player;
 using GodmistWPF.Enums;
 using GodmistWPF.Enums.Items;
@@ -7,29 +7,90 @@ using GodmistWPF.Utilities;
 
 namespace GodmistWPF.Items.Equippable.Armors;
 
+/// <summary>
+/// Reprezentuje kompletny przedmiot zbroi, który może zostać wyposażony przez postać.
+/// Składa się z trzech komponentów: płyty, oprawy i podstawy.
+/// </summary>
 public class Armor : BaseItem, IEquippable, IUsable
 {
-    //BaseItem implementations
+    /// <summary>
+    /// Nazwa zbroi.
+    /// </summary>
     public override string Name { get; set; }
+    /// <summary>
+    /// Waga zbroi.
+    /// </summary>
     public override int Weight => 5;
+    /// <summary>
+    /// Unikalny identyfikator typu przedmiotu.
+    /// </summary>
     public override int ID => 560;
+    /// <summary>
+    /// Bazowy koszt zbroi przed uwzględnieniem rzadkości.
+    /// </summary>
     public int BaseCost { get; set; }
+    /// <summary>
+    /// Koszt zbroi uwzględniający jej rzadkość.
+    /// </summary>
     public override int Cost => (int)(BaseCost * EquippableItemService.RarityPriceModifier(Rarity));
+    /// <summary>
+    /// Określa, czy przedmiot może być układany w stosy.
+    /// </summary>
     public override bool Stackable => false;
+    /// <summary>
+    /// Typ przedmiotu - zbroja.
+    /// </summary>
     public override ItemType ItemType => ItemType.Armor;
     
-    //Base IEquippable implementations
+    /// <summary>
+    /// Wymagany poziom postaci do założenia zbroi.
+    /// </summary>
     public int RequiredLevel { get; set; }
+    
+    /// <summary>
+    /// Klasa postaci, która może założyć tę zbroję.
+    /// </summary>
     public CharacterClass RequiredClass { get; }
+    
+    /// <summary>
+    /// Jakość wykonania zbroi.
+    /// </summary>
     public Quality Quality { get; set; }
+    
+    /// <summary>
+    /// Modyfikator ulepszenia zbroi.
+    /// </summary>
     public double UpgradeModifier { get; set; }
+    
+    /// <summary>
+    /// Lista galdurytów wpiętych w zbroję.
+    /// </summary>
     public List<Galdurite> Galdurites { get; set; }
+    
+    /// <summary>
+    /// Liczba dostępnych gniazd na galduryty.
+    /// </summary>
     public int GalduriteSlots => (int)Math.Floor(UpgradeModifier * 5 - 5);
     
-    //Armor implementations
+    /// <summary>
+    /// Płyta zbroi, określająca jej podstawowe parametry obronne.
+    /// </summary>
     public ArmorPlate Plate { get; set; }
+    
+    /// <summary>
+    /// Oprawa zbroi, modyfikująca jej właściwości.
+    /// </summary>
     public ArmorBinder Binder { get; set; }
+    
+    /// <summary>
+    /// Podstawa zbroi, określająca dodatkowe właściwości.
+    /// </summary>
     public ArmorBase Base { get; set; }
+    
+    /// <summary>
+    /// Maksymalne zdrowie dodawane przez zbroję.
+    /// Zależy od klasy postaci, jakości zbroi i jej poziomu.
+    /// </summary>
     public int MaximalHealth
     {
         get
@@ -55,6 +116,11 @@ public class Armor : BaseItem, IEquippable, IUsable
             return (int)value;
         }
     }
+    
+    /// <summary>
+    /// Wartość uników dodawana przez zbroję.
+    /// Zależy od jakości zbroi i jej poziomu.
+    /// </summary>
     public int Dodge
     {
         get
@@ -74,6 +140,11 @@ public class Armor : BaseItem, IEquippable, IUsable
             return (int)value;
         }
     }
+    
+    /// <summary>
+    /// Wartość obrony fizycznej zapewnianej przez zbroję.
+    /// Zależy od klasy postaci, jakości zbroi i jej poziomu.
+    /// </summary>
     public int PhysicalDefense
     {
         get
@@ -99,6 +170,11 @@ public class Armor : BaseItem, IEquippable, IUsable
             return (int)value;
         }
     }
+    
+    /// <summary>
+    /// Wartość obrony magicznej zapewnianej przez zbroję.
+    /// Zależy od klasy postaci, jakości zbroi i jej poziomu.
+    /// </summary>
     public int MagicDefense
     {
         get
@@ -125,6 +201,15 @@ public class Armor : BaseItem, IEquippable, IUsable
         }
     }
     
+    /// <summary>
+    /// Inicjalizuje nową instancję klasy <see cref="Armor"/> z określonymi komponentami i parametrami.
+    /// </summary>
+    /// <param name="plate">Płyta zbroi.</param>
+    /// <param name="binder">Oprawa zbroi.</param>
+    /// <param name="armBase">Podstawa zbroi.</param>
+    /// <param name="requiredClass">Wymagana klasa postaci.</param>
+    /// <param name="quality">Jakość wykonania zbroi.</param>
+    /// <param name="alias">Opcjonalny alias zbroi. Jeśli nie podany, zostanie wygenerowany automatycznie.</param>
     public Armor(ArmorPlate plate, ArmorBinder binder, ArmorBase armBase, CharacterClass requiredClass, Quality quality, string alias = "")
     {
         Plate = plate;
@@ -175,10 +260,10 @@ public class Armor : BaseItem, IEquippable, IUsable
     }
     
     /// <summary>
-    /// Gets Starter weapon for the specified class
+    /// Inicjalizuje nową instancję zbroi startowej dla określonej klasy postaci.
     /// </summary>
-    /// <param name="requiredClass"></param>
-    /// <exception cref="ArgumentOutOfRangeException"></exception>
+    /// <param name="requiredClass">Klasa postaci, dla której ma zostać stworzona zbroja startowa.</param>
+    /// <exception cref="ArgumentOutOfRangeException">Wyrzucany, gdy podano nieprawidłową klasę postaci.</exception>
     public Armor(CharacterClass requiredClass)
     {
         switch (requiredClass)
@@ -219,29 +304,29 @@ public class Armor : BaseItem, IEquippable, IUsable
         UpgradeModifier = 1;
         Galdurites = new List<Galdurite>();
     }
+    /// <summary>
+    /// Inicjalizuje nową, pustą instancję klasy <see cref="Armor"/>.
+    /// Używane głównie do deserializacji.
+    /// </summary>
     public Armor() {}
 
+    /// <summary>
+    /// Próbuje założyć zbroję na aktualnie wybranej postaci.
+    /// </summary>
+    /// <returns>Prawda, jeśli udało się założyć zbroję; w przeciwnym razie fałsz.</returns>
     public bool Use()
     {
         if (RequiredClass != PlayerHandler.player.CharacterClass)
-        {
-            // WPF handles wrong class error display through UI
             return false;
-        }
         if (RequiredLevel > PlayerHandler.player.Level)
-        {
-            // WPF handles level too low error display through UI
             return false;
-        }
         PlayerHandler.player.SwitchArmor(this);
         return true;
     }
-    
-    public override void Inspect(int amount = 1)
-    {
-        base.Inspect(amount);
-        // WPF handles armor inspection display through UI
-    }
+    /// <summary>
+    /// Aktualizuje efekty pasywne wynikające z galdurytów wpiętych w zbroję.
+    /// </summary>
+    /// <param name="player">Postać gracza, której dotyczą efekty.</param>
     public virtual void UpdatePassives(PlayerCharacter player)
     {
         player.PassiveEffects.InnateEffects.RemoveAll(x => x.Source == "ArmorGaldurites");
@@ -250,6 +335,10 @@ public class Armor : BaseItem, IEquippable, IUsable
         foreach (var effect in EquippableItemService.GetInnatePassiveEffects(false, player, GetEffectSums()))
             player.PassiveEffects.Add(effect);
     }
+    /// <summary>
+    /// Dodaje galduryt do zbroi, jeśli jest to możliwe.
+    /// </summary>
+    /// <param name="galdurite">Galduryt do dodania.</param>
     public void AddGaldurite(Galdurite galdurite)
     {
         if (Galdurites.Count >= GalduriteSlots || galdurite.ItemType != ItemType.ArmorGaldurite) return;
@@ -257,12 +346,20 @@ public class Armor : BaseItem, IEquippable, IUsable
         UpdatePassives(PlayerHandler.player);
         galdurite.Reveal();
     }
+    /// <summary>
+    /// Usuwa galduryt z zbroi.
+    /// </summary>
+    /// <param name="galdurite">Galduryt do usunięcia.</param>
     public void RemoveGaldurite(Galdurite galdurite)
     {
         Galdurites.Remove(galdurite);
         UpdatePassives(PlayerHandler.player);
     }
     
+    /// <summary>
+    /// Zwraca sumaryczne efekty wszystkich galdurytów wpiętych w zbroję.
+    /// </summary>
+    /// <returns>Zbiór komponentów galdurytów z sumowanymi wartościami efektów.</returns>
     private HashSet<GalduriteComponent> GetEffectSums()
     {
         var result = new HashSet<GalduriteComponent>();

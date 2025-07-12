@@ -1,0 +1,252 @@
+\doxysection{Godmist\+WPF.\+Items.\+Misc\+Items.\+Wet\+Towel Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel}{}\label{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel}\index{GodmistWPF.Items.MiscItems.WetTowel@{GodmistWPF.Items.MiscItems.WetTowel}}
+
+
+Klasa reprezentująca przedmiot Mokry Ręcznik, który leczy krwawienie. Implementuje interfejsy \doxylink{interface_godmist_w_p_f_1_1_items_1_1_i_craftable}{ICraftable} (możliwość wytworzenia) i \doxylink{interface_godmist_w_p_f_1_1_items_1_1_i_usable}{IUsable} (możliwość użycia).  
+
+
+Inheritance diagram for Godmist\+WPF.\+Items.\+Misc\+Items.\+Wet\+Towel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.333333cm]{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_a84a9b6ba9de8e3ccab39f48a234ef0d2}{Use}} ()
+\begin{DoxyCompactList}\small\item\em Używa mokrego ręcznika, usuwając wszystkie efekty krwawienia z postaci gracza. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item}{Godmist\+WPF.\+Items.\+Base\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_acc6c4b47f0eada380e37090582522645}{Inspect}} (int amount=1)
+\begin{DoxyCompactList}\small\item\em Wyświetla szczegółowe informacje o przedmiocie. Implementacja w WPF obsługuje interfejs użytkownika. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a62a7b60026ec2e63d60e5bde7513c7c3}{Write\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla nazwę przedmiotu z uwzględnieniem jego rzadkości. Implementacja w WPF obsługuje interfejs użytkownika. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_ab80277caef8f091f3245e4c3680a2265}{Write\+Item\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla typ przedmiotu. Implementacja w WPF obsługuje interfejs użytkownika. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_ab8aecf04d7121322a9515bcaccb024b5}{Write\+Rarity}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla rzadkość przedmiotu. Implementacja w WPF obsługuje interfejs użytkownika. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a3ca6652033431e54f246307f7b3e9d0d}{Rarity\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca zlokalizowaną nazwę rzadkości przedmiotu. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a6c6ca0c4731c9106cef36a4cd606c000}{Item\+Type\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca zlokalizowaną nazwę typu przedmiotu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+override string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_ae0ec0fb13b5efb6b0af7ecc5be0b1ffb}{Alias}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera nazwę przedmiotu (zawsze "{}\+Wet\+Towel"{}). \end{DoxyCompactList}\item 
+override int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_ac850ccb731c88d6b84ac0a0ad8f89315}{Weight}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera wagę przedmiotu (zawsze 0, ponieważ jest to lekki przedmiot). \end{DoxyCompactList}\item 
+override int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_a83112dd2ffcd35338917fe8ee9320121}{ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera unikalny identyfikator przedmiotu (592). \end{DoxyCompactList}\item 
+override int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_a6d97ed09542b5f80fbeb8d3fa7b7bc48}{Cost}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Oblicza koszt przedmiotu na podstawie składników potrzebnych do wytworzenia. W tym przypadku koszt jest równy kosztowi materiałów, ponieważ Crafted\+Amount = 1. \end{DoxyCompactList}\item 
+override \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_a02934ee73a54ec124f0455457945ab1a}{Item\+Rarity}} \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_ab200b532f684c3359094e0cd8a6b0584}{Rarity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera rzadkość przedmiotu (zawsze Common). \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_ad2366cffda61d6b5e674061262dd25cf}{Stackable}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Określa, czy przedmioty mogą być składowane w stosie (zawsze true). \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_ab1c88720c98f4f20e404af798c27dcd1}{Description}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera opis przedmiotu (pusty, ponieważ nie jest używany). \end{DoxyCompactList}\item 
+override \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_ac3d61a48fbf15693811c3ce1d463dfe0}{Item\+Type}} \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_a6851003d3c4e20b9fdb802728fe00cff}{Item\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera typ przedmiotu (zawsze Alchemy). \end{DoxyCompactList}\item 
+Dictionary$<$ string, int $>$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_afe6db1e469a09627a5121a121ad197be}{Crafting\+Recipe}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera przepis rzemieślniczy potrzebny do wytworzenia przedmiotu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_a6a1a96c2f1d162dd02d434076e4b019f}{Crafted\+Amount}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera ilość wytwarzanych przedmiotów w jednej partii (zawsze 1). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item}{Godmist\+WPF.\+Items.\+Base\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a53f72ba0d1cf21654655cb745eab7ba3}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia nazwę przedmiotu. Przy pobieraniu wykorzystuje Name\+Alias\+Helper do tłumaczenia aliasu na pełną nazwę. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_ac94e206df1ac952048d7aa9c4d047add}{Alias}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia alias (skróconą nazwę) przedmiotu. Używany do wewnętrznej identyfikacji i tłumaczeń. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a171769b2a12d37acc3f45a1adfe614b6}{Weight}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia wagę przedmiotu. Wpływa na obciążenie ekwipunku postaci. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_acdb022869d8836b038d36e27e46c1e89}{ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia unikalny identyfikator przedmiotu. Używany do zapisu/odczytu stanu gry. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_adb7ff1df8be6b0e46d36a69f663f989a}{Cost}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia wartość przedmiotu w walucie gry. Używane przy sprzedaży i zakupie przedmiotów. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_a02934ee73a54ec124f0455457945ab1a}{Item\+Rarity}} \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_ab8d911e0148244bb7b11241cddf824a6}{Rarity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia rzadkość przedmiotu. Wpływa na kolor nazwy i wartość przedmiotu. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_afc676c9421e9ad3df5d549ef44c3ae89}{Stackable}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Określa, czy przedmioty tego samego typu mogą być składane w jednym slocie ekwipunku. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a763204eb630704caf524369c8de6ebe6}{Description}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia opis przedmiotu. Wyświetlany w oknie inspekcji przedmiotu. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_ac3d61a48fbf15693811c3ce1d463dfe0}{Item\+Type}} \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a0774084b82083124b6e19ee3de21ee54}{Item\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia typ przedmiotu. Określa kategorię i podstawowe przeznaczenie przedmiotu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentująca przedmiot Mokry Ręcznik, który leczy krwawienie. Implementuje interfejsy \doxylink{interface_godmist_w_p_f_1_1_items_1_1_i_craftable}{ICraftable} (możliwość wytworzenia) i \doxylink{interface_godmist_w_p_f_1_1_items_1_1_i_usable}{IUsable} (możliwość użycia). 
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_a84a9b6ba9de8e3ccab39f48a234ef0d2}\index{GodmistWPF.Items.MiscItems.WetTowel@{GodmistWPF.Items.MiscItems.WetTowel}!Use@{Use}}
+\index{Use@{Use}!GodmistWPF.Items.MiscItems.WetTowel@{GodmistWPF.Items.MiscItems.WetTowel}}
+\doxysubsubsection{\texorpdfstring{Use()}{Use()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_a84a9b6ba9de8e3ccab39f48a234ef0d2} 
+bool Godmist\+WPF.\+Items.\+Misc\+Items.\+Wet\+Towel.\+Use (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Używa mokrego ręcznika, usuwając wszystkie efekty krwawienia z postaci gracza. 
+
+\begin{DoxyReturn}{Returns}
+Zawsze zwraca true, co oznacza, że przedmiot został zużyty.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_usable_add99d111ade8703560fb54361cdeffc2}{Godmist\+WPF.\+Items.\+IUsable}}.
+
+
+
+\label{doc-property-members}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_ae0ec0fb13b5efb6b0af7ecc5be0b1ffb}\index{GodmistWPF.Items.MiscItems.WetTowel@{GodmistWPF.Items.MiscItems.WetTowel}!Alias@{Alias}}
+\index{Alias@{Alias}!GodmistWPF.Items.MiscItems.WetTowel@{GodmistWPF.Items.MiscItems.WetTowel}}
+\doxysubsubsection{\texorpdfstring{Alias}{Alias}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_ae0ec0fb13b5efb6b0af7ecc5be0b1ffb} 
+override string Godmist\+WPF.\+Items.\+Misc\+Items.\+Wet\+Towel.\+Alias\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera nazwę przedmiotu (zawsze "{}\+Wet\+Towel"{}). 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a4918a6743daf1c3d488a727094980148}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_a6d97ed09542b5f80fbeb8d3fa7b7bc48}\index{GodmistWPF.Items.MiscItems.WetTowel@{GodmistWPF.Items.MiscItems.WetTowel}!Cost@{Cost}}
+\index{Cost@{Cost}!GodmistWPF.Items.MiscItems.WetTowel@{GodmistWPF.Items.MiscItems.WetTowel}}
+\doxysubsubsection{\texorpdfstring{Cost}{Cost}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_a6d97ed09542b5f80fbeb8d3fa7b7bc48} 
+override int Godmist\+WPF.\+Items.\+Misc\+Items.\+Wet\+Towel.\+Cost\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Oblicza koszt przedmiotu na podstawie składników potrzebnych do wytworzenia. W tym przypadku koszt jest równy kosztowi materiałów, ponieważ Crafted\+Amount = 1. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a0f412b6f7655244181eb1d372ac41ddb}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_a6a1a96c2f1d162dd02d434076e4b019f}\index{GodmistWPF.Items.MiscItems.WetTowel@{GodmistWPF.Items.MiscItems.WetTowel}!CraftedAmount@{CraftedAmount}}
+\index{CraftedAmount@{CraftedAmount}!GodmistWPF.Items.MiscItems.WetTowel@{GodmistWPF.Items.MiscItems.WetTowel}}
+\doxysubsubsection{\texorpdfstring{CraftedAmount}{CraftedAmount}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_a6a1a96c2f1d162dd02d434076e4b019f} 
+int Godmist\+WPF.\+Items.\+Misc\+Items.\+Wet\+Towel.\+Crafted\+Amount\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera ilość wytwarzanych przedmiotów w jednej partii (zawsze 1). 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_craftable_aa7d722b646069ef72b4ed6c9d5d389e2}{Godmist\+WPF.\+Items.\+ICraftable}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_afe6db1e469a09627a5121a121ad197be}\index{GodmistWPF.Items.MiscItems.WetTowel@{GodmistWPF.Items.MiscItems.WetTowel}!CraftingRecipe@{CraftingRecipe}}
+\index{CraftingRecipe@{CraftingRecipe}!GodmistWPF.Items.MiscItems.WetTowel@{GodmistWPF.Items.MiscItems.WetTowel}}
+\doxysubsubsection{\texorpdfstring{CraftingRecipe}{CraftingRecipe}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_afe6db1e469a09627a5121a121ad197be} 
+Dictionary$<$string, int$>$ Godmist\+WPF.\+Items.\+Misc\+Items.\+Wet\+Towel.\+Crafting\+Recipe\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera przepis rzemieślniczy potrzebny do wytworzenia przedmiotu. 
+
+Wymagany składnik\+: 2x Bawełniana Tkanina. 
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_craftable_a5c1dd3b105eb6e82775022e969ad3430}{Godmist\+WPF.\+Items.\+ICraftable}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_ab1c88720c98f4f20e404af798c27dcd1}\index{GodmistWPF.Items.MiscItems.WetTowel@{GodmistWPF.Items.MiscItems.WetTowel}!Description@{Description}}
+\index{Description@{Description}!GodmistWPF.Items.MiscItems.WetTowel@{GodmistWPF.Items.MiscItems.WetTowel}}
+\doxysubsubsection{\texorpdfstring{Description}{Description}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_ab1c88720c98f4f20e404af798c27dcd1} 
+override string Godmist\+WPF.\+Items.\+Misc\+Items.\+Wet\+Towel.\+Description\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera opis przedmiotu (pusty, ponieważ nie jest używany). 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a3fe652d290d9677b4503e786578780b9}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_a83112dd2ffcd35338917fe8ee9320121}\index{GodmistWPF.Items.MiscItems.WetTowel@{GodmistWPF.Items.MiscItems.WetTowel}!ID@{ID}}
+\index{ID@{ID}!GodmistWPF.Items.MiscItems.WetTowel@{GodmistWPF.Items.MiscItems.WetTowel}}
+\doxysubsubsection{\texorpdfstring{ID}{ID}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_a83112dd2ffcd35338917fe8ee9320121} 
+override int Godmist\+WPF.\+Items.\+Misc\+Items.\+Wet\+Towel.\+ID\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera unikalny identyfikator przedmiotu (592). 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_afd07fe16d41cf6234ce995cfc57634c8}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_a6851003d3c4e20b9fdb802728fe00cff}\index{GodmistWPF.Items.MiscItems.WetTowel@{GodmistWPF.Items.MiscItems.WetTowel}!ItemType@{ItemType}}
+\index{ItemType@{ItemType}!GodmistWPF.Items.MiscItems.WetTowel@{GodmistWPF.Items.MiscItems.WetTowel}}
+\doxysubsubsection{\texorpdfstring{ItemType}{ItemType}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_a6851003d3c4e20b9fdb802728fe00cff} 
+override \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_ac3d61a48fbf15693811c3ce1d463dfe0}{Item\+Type}} Godmist\+WPF.\+Items.\+Misc\+Items.\+Wet\+Towel.\+Item\+Type\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera typ przedmiotu (zawsze Alchemy). 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a23f5dbd47328d6cbef2ff30a7fe15938}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_ab200b532f684c3359094e0cd8a6b0584}\index{GodmistWPF.Items.MiscItems.WetTowel@{GodmistWPF.Items.MiscItems.WetTowel}!Rarity@{Rarity}}
+\index{Rarity@{Rarity}!GodmistWPF.Items.MiscItems.WetTowel@{GodmistWPF.Items.MiscItems.WetTowel}}
+\doxysubsubsection{\texorpdfstring{Rarity}{Rarity}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_ab200b532f684c3359094e0cd8a6b0584} 
+override \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_a02934ee73a54ec124f0455457945ab1a}{Item\+Rarity}} Godmist\+WPF.\+Items.\+Misc\+Items.\+Wet\+Towel.\+Rarity\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera rzadkość przedmiotu (zawsze Common). 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_affbd29bebf9b3a0e17da29f7b65963a4}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_ad2366cffda61d6b5e674061262dd25cf}\index{GodmistWPF.Items.MiscItems.WetTowel@{GodmistWPF.Items.MiscItems.WetTowel}!Stackable@{Stackable}}
+\index{Stackable@{Stackable}!GodmistWPF.Items.MiscItems.WetTowel@{GodmistWPF.Items.MiscItems.WetTowel}}
+\doxysubsubsection{\texorpdfstring{Stackable}{Stackable}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_ad2366cffda61d6b5e674061262dd25cf} 
+override bool Godmist\+WPF.\+Items.\+Misc\+Items.\+Wet\+Towel.\+Stackable\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Określa, czy przedmioty mogą być składowane w stosie (zawsze true). 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_af423d9fec16280fec5ccbecaf7d43fbe}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_ac850ccb731c88d6b84ac0a0ad8f89315}\index{GodmistWPF.Items.MiscItems.WetTowel@{GodmistWPF.Items.MiscItems.WetTowel}!Weight@{Weight}}
+\index{Weight@{Weight}!GodmistWPF.Items.MiscItems.WetTowel@{GodmistWPF.Items.MiscItems.WetTowel}}
+\doxysubsubsection{\texorpdfstring{Weight}{Weight}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_ac850ccb731c88d6b84ac0a0ad8f89315} 
+override int Godmist\+WPF.\+Items.\+Misc\+Items.\+Wet\+Towel.\+Weight\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera wagę przedmiotu (zawsze 0, ponieważ jest to lekki przedmiot). 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_ada5ec9f15576cff4b7d046a12ef79ab4}{Godmist\+WPF.\+Items.\+IItem}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Items/\+Misc\+Items/Wet\+Towel.\+cs\end{DoxyCompactItemize}

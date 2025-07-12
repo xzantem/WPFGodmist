@@ -1,17 +1,35 @@
-﻿using System.Reflection;
+using System.Reflection;
 using GodmistWPF.Characters.Player;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 namespace GodmistWPF.Utilities.JsonConverters;
 
+/// <summary>
+/// Konwerter JSON do serializacji i deserializacji obiektów klasy PlayerCharacter i jej pochodnych.
+/// Obsługuje różne klasy postaci gracza i zapisuje ich typ w pliku JSON.
+/// </summary>
 public class PlayerJsonConverter : JsonConverter
 {
-        public override bool CanConvert(Type objectType)
-        {
-            return typeof(PlayerCharacter).IsAssignableFrom(objectType);
-        }
+    /// <summary>
+    /// Określa, czy konwerter może obsłużyć określony typ.
+    /// </summary>
+    /// <param name="objectType">Typ obiektu do sprawdzenia.</param>
+    /// <returns>True, jeśli konwerter może obsłużyć dany typ; w przeciwnym razie false.</returns>
+    public override bool CanConvert(Type objectType)
+    {
+        return typeof(PlayerCharacter).IsAssignableFrom(objectType);
+    }
 
+        /// <summary>
+        /// Deserializuje obiekt JSON do odpowiedniej klasy postaci gracza.
+        /// </summary>
+        /// <param name="reader">Czytnik JSON.</param>
+        /// <param name="objectType">Typ obiektu do przekonwertowania.</param>
+        /// <param name="existingValue">Istniejąca wartość obiektu.</param>
+        /// <param name="serializer">Wystąpienie serializatora JSON.</param>
+        /// <returns>Zdeserializowany obiekt postaci gracza.</returns>
+        /// <exception cref="NotSupportedException">Wyrzucany, gdy klasa postaci nie jest obsługiwana.</exception>
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
         {
             var jsonObject = JObject.Load(reader);
@@ -35,6 +53,13 @@ public class PlayerJsonConverter : JsonConverter
             return result;
         }
 
+        /// <summary>
+        /// Serializuje obiekt postaci gracza do formatu JSON.
+        /// Zapisuje wszystkie pola publiczne i niepubliczne oraz właściwości, które nie są oznaczone atrybutem JsonIgnore.
+        /// </summary>
+        /// <param name="writer">Pisarz JSON.</param>
+        /// <param name="value">Wartość do zserializowania.</param>
+        /// <param name="serializer">Wystąpienie serializatora JSON.</param>
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
             var jsonObject = new JObject

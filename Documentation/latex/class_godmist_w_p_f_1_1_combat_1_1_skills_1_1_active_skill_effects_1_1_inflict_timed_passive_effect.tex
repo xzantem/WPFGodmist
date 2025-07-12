@@ -1,0 +1,149 @@
+\doxysection{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Timed\+Passive\+Effect Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect}{}\label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictTimedPassiveEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictTimedPassiveEffect}}
+
+
+Efekt umiejętności, który nakłada czasowy efekt pasywny na cel.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Timed\+Passive\+Effect\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect_a64af96891bd79eb1b3e723e93425df19}{Inflict\+Timed\+Passive\+Effect}} (Skill\+Target target, string type, int duration, dynamic\mbox{[}$\,$\mbox{]}? effects=null)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect}{Inflict\+Timed\+Passive\+Effect}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect_a36f0f60fa1aa7ba7e3b75727255c6a63}{Inflict\+Timed\+Passive\+Effect}} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect}{Inflict\+Timed\+Passive\+Effect}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect_a960f61ed8503e8621e67f5a43a0ecb74}{Execute}} (Character caster, Character enemy, string source)
+\begin{DoxyCompactList}\small\item\em Wykonuje efekt nałożenia czasowego efektu pasywnego. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Skill\+Target \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect_a06ce7231967d0738791610b2cb5f4430}{Target}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia cel efektu (własna postać lub przeciwnik). \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect_a6fa9ea1e9df6826475420d0ceed66d10}{Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia typ efektu pasywnego do nałożenia. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect_a95178171ad84366587fb65c4e1ba6b89}\label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect_a95178171ad84366587fb65c4e1ba6b89} 
+int {\bfseries Duration}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia czas trwania efektu w turach. \end{DoxyCompactList}\item 
+dynamic?\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect_a84f57009552c90a14072a2703834b664}{Effects}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia dodatkowe parametry efektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Efekt umiejętności, który nakłada czasowy efekt pasywny na cel. 
+
+Umożliwia nałożenie efektu pasywnego, który wygaśnie po określonym czasie. Efekt może być zastosowany zarówno do siebie, jak i do przeciwnika. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect_a64af96891bd79eb1b3e723e93425df19}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictTimedPassiveEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictTimedPassiveEffect}!InflictTimedPassiveEffect@{InflictTimedPassiveEffect}}
+\index{InflictTimedPassiveEffect@{InflictTimedPassiveEffect}!GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictTimedPassiveEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictTimedPassiveEffect}}
+\doxysubsubsection{\texorpdfstring{InflictTimedPassiveEffect()}{InflictTimedPassiveEffect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect_a64af96891bd79eb1b3e723e93425df19} 
+Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Timed\+Passive\+Effect.\+Inflict\+Timed\+Passive\+Effect (\begin{DoxyParamCaption}\item[{Skill\+Target}]{target}{, }\item[{string}]{type}{, }\item[{int}]{duration}{, }\item[{dynamic?\mbox{[}$\,$\mbox{]}}]{effects}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect}{Inflict\+Timed\+Passive\+Effect}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Cel efektu.\\
+\hline
+{\em type} & Typ efektu pasywnego do nałożenia.\\
+\hline
+{\em duration} & Czas trwania efektu w turach.\\
+\hline
+{\em effects} & Opcjonalne parametry efektu.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect_a36f0f60fa1aa7ba7e3b75727255c6a63}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictTimedPassiveEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictTimedPassiveEffect}!InflictTimedPassiveEffect@{InflictTimedPassiveEffect}}
+\index{InflictTimedPassiveEffect@{InflictTimedPassiveEffect}!GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictTimedPassiveEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictTimedPassiveEffect}}
+\doxysubsubsection{\texorpdfstring{InflictTimedPassiveEffect()}{InflictTimedPassiveEffect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect_a36f0f60fa1aa7ba7e3b75727255c6a63} 
+Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Timed\+Passive\+Effect.\+Inflict\+Timed\+Passive\+Effect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect}{Inflict\+Timed\+Passive\+Effect}. 
+
+Konstruktor używany przez mechanizm deserializacji. 
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect_a960f61ed8503e8621e67f5a43a0ecb74}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictTimedPassiveEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictTimedPassiveEffect}!Execute@{Execute}}
+\index{Execute@{Execute}!GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictTimedPassiveEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictTimedPassiveEffect}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect_a960f61ed8503e8621e67f5a43a0ecb74} 
+void Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Timed\+Passive\+Effect.\+Execute (\begin{DoxyParamCaption}\item[{Character}]{caster}{, }\item[{Character}]{enemy}{, }\item[{string}]{source}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wykonuje efekt nałożenia czasowego efektu pasywnego. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caster} & Postać rzucająca umiejętność.\\
+\hline
+{\em enemy} & Przeciwnik, względem którego określany jest cel.\\
+\hline
+{\em source} & Źródło efektu (nazwa umiejętności).\\
+\hline
+\end{DoxyParams}
+
+
+Nakłada czasowy efekt pasywny na wybrany cel. Efekt zostanie automatycznie usunięty po upływie określonej liczby tur. 
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_combat_1_1_skills_1_1_i_active_skill_effect_af280a7f57f091d04800b2e9f3be69059}{Godmist\+WPF.\+Combat.\+Skills.\+IActive\+Skill\+Effect}}.
+
+
+
+\label{doc-property-members}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect_a84f57009552c90a14072a2703834b664}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictTimedPassiveEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictTimedPassiveEffect}!Effects@{Effects}}
+\index{Effects@{Effects}!GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictTimedPassiveEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictTimedPassiveEffect}}
+\doxysubsubsection{\texorpdfstring{Effects}{Effects}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect_a84f57009552c90a14072a2703834b664} 
+dynamic? \mbox{[}$\,$\mbox{]} Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Timed\+Passive\+Effect.\+Effects\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia dodatkowe parametry efektu. 
+
+Tablica dynamicznych obiektów zawierających parametry specyficzne dla danego typu efektu. \Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect_a06ce7231967d0738791610b2cb5f4430}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictTimedPassiveEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictTimedPassiveEffect}!Target@{Target}}
+\index{Target@{Target}!GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictTimedPassiveEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictTimedPassiveEffect}}
+\doxysubsubsection{\texorpdfstring{Target}{Target}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect_a06ce7231967d0738791610b2cb5f4430} 
+Skill\+Target Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Timed\+Passive\+Effect.\+Target\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia cel efektu (własna postać lub przeciwnik). 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_combat_1_1_skills_1_1_i_active_skill_effect_a6e2adc6221f059bf5b9259f5ecacb969}{Godmist\+WPF.\+Combat.\+Skills.\+IActive\+Skill\+Effect}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect_a6fa9ea1e9df6826475420d0ceed66d10}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictTimedPassiveEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictTimedPassiveEffect}!Type@{Type}}
+\index{Type@{Type}!GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictTimedPassiveEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictTimedPassiveEffect}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect_a6fa9ea1e9df6826475420d0ceed66d10} 
+string Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Timed\+Passive\+Effect.\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia typ efektu pasywnego do nałożenia. 
+
+Identyfikator typu efektu, który ma zostać nałożony. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Combat/\+Skills/\+Active\+Skill\+Effects/Inflict\+Timed\+Passive\+Effect.\+cs\end{DoxyCompactItemize}

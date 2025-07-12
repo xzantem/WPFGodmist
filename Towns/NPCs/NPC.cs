@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using CraftingManager = GodmistWPF.Items.CraftingManager;
 using ICraftable = GodmistWPF.Items.ICraftable;
 using IItem = GodmistWPF.Items.IItem;
@@ -8,21 +8,56 @@ using PlayerHandler = GodmistWPF.Characters.Player.PlayerHandler;
 
 namespace GodmistWPF.Towns.NPCs;
 
+/// <summary>
+/// Klasa bazowa dla wszystkich NPC (niezależnych postaci) w grze.
+/// </summary>
+/// <remarks>
+/// Klasa NPC reprezentuje niezależną postać w grze, która może mieć swój ekwipunek, poziom lojalności i możliwość tworzenia przedmiotów.
+/// </remarks>
 public abstract class NPC
 {
+    /// <summary>
+    /// Pobiera lub ustawia unikalny identyfikator NPC.
+    /// </summary>
+    /// <value>Unikalny identyfikator NPC.</value>
     [JsonIgnore]
     public string Alias { get; set; }
 
+    /// <summary>
+    /// Pobiera przyjazną nazwę NPC na podstawie jego aliasu.
+    /// </summary>
+    /// <value>Przyjazna nazwa NPC.</value>
     public string Name => NameAliasHelper.GetName(Alias);
     
+    /// <summary>
+    /// Pobiera lub ustawia ekwipunek NPC.
+    /// </summary>
+    /// <value>Ekwipunek NPC.</value>
     public NPCInventory Inventory { get; set; }
+    /// <summary>
+    /// Pobiera lub ustawia listę przedmiotów, które można wytworzyć u danego NPC.
+    /// </summary>
+    /// <value>Lista przedmiotów, które można wytworzyć u danego NPC.</value>
     [JsonIgnore]
     public List<ICraftable?> CraftableItems { get; set; }
      
+    /// <summary>
+    /// Pobiera lub ustawia poziom lojalności gracza u danego NPC.
+    /// </summary>
+    /// <value>Poziom lojalności gracza u danego NPC.</value>
     public int LoyaltyLevel { get; set; }
+    /// <summary>
+    /// Pobiera lub ustawia ilość złota wydaną u danego NPC.
+    /// </summary>
     public int GoldSpent { get; set; }
+    /// <summary>
+    /// Pobiera wymaganą ilość złota do wydania, aby osiągnąć następny poziom lojalności.
+    /// </summary>
     public int RequiredGoldSpent => CalculateGoldRequired(LoyaltyLevel);
 
+    /// <summary>
+    /// Pobiera modyfikator kosztu usług w zależności od poziomu lojalności.
+    /// </summary>
     public double ServiceCostMod => LoyaltyLevel switch
     {
         < 2 => 1.0,
@@ -43,6 +78,10 @@ public abstract class NPC
         return value;
     }
     
+    /// <summary>
+    /// Wydaje określoną ilość złota u danego NPC, zwiększając jego lojalność.
+    /// </summary>
+    /// <param name="gold">Ilość złota do wydania.</param>
     public void SpendGold(int gold)
     {
         GoldSpent += gold;
@@ -57,38 +96,27 @@ public abstract class NPC
         }
         PlayerHandler.player.LoseGold(gold);
     }
-
-    public void DisplayShop()
-    {
-        // This method is now handled by WPF dialogs
-        // For console compatibility, do nothing
-    }
+    
+    /// <summary>
+    /// Aktualizuje asortyment towarów dostępnych u NPC.
+    /// </summary>
     public void AddWares()
     {
         Inventory.UpdateWares(LoyaltyLevel);
     }
-
-    public void InspectItem(int index)
-    {
-        // This method is now handled by WPF dialogs
-        // For console compatibility, do nothing
-    }
-    public void BuyItem(int index)
-    {
-        // This method is now handled by WPF dialogs
-        // For console compatibility, do nothing
-    }
-    public void SellItem(int index)
-    {
-        // This method is now handled by WPF dialogs
-        // For console compatibility, do nothing
-    }
+    
+    /// <summary>
+    /// Otwiera interfejs tworzenia przedmiotów u danego NPC.
+    /// </summary>
     public void CraftItem()
     {
         CraftingManager.OpenCraftingMenu(CraftableItems);
     }
-
-    // WPF-compatible shop methods that handle business logic
+    
+    /// <summary>
+    /// Pobiera listę przedmiotów dostępnych w sklepie NPC.
+    /// </summary>
+    /// <returns>Lista informacji o przedmiotach w sklepie.</returns>
     public List<ShopItemInfo> GetShopItems()
     {
         var items = new List<ShopItemInfo>();
@@ -108,6 +136,12 @@ public abstract class NPC
         return items;
     }
 
+    /// <summary>
+    /// Sprawdza, czy gracz może kupić określoną ilość przedmiotu.
+    /// </summary>
+    /// <param name="item">Przedmiot do kupienia.</param>
+    /// <param name="quantity">Ilość przedmiotu (domyślnie 1).</param>
+    /// <returns>True, jeśli gracz może kupić przedmiot; w przeciwnym razie false.</returns>
     public bool CanBuyItem(IItem item, int quantity = 1)
     {
         var player = PlayerHandler.player;
@@ -117,6 +151,12 @@ public abstract class NPC
         return player.Gold >= totalCost;
     }
 
+    /// <summary>
+    /// Kupuje określoną ilość przedmiotu od NPC.
+    /// </summary>
+    /// <param name="item">Przedmiot do kupienia.</param>
+    /// <param name="quantity">Ilość przedmiotu (domyślnie 1).</param>
+    /// <exception cref="InvalidOperationException">Wyrzucany, gdy gracz nie ma wystarczająco złota.</exception>
     public void BuyItem(IItem item, int quantity = 1)
     {
         if (!CanBuyItem(item, quantity))
@@ -134,9 +174,15 @@ public abstract class NPC
         player.Inventory.AddItem(item, quantity);
         
         // Remove item from shop inventory
-        Inventory.RemoveAt(Inventory.RotatingShop.Concat(Inventory.BoughtFromPlayer).ToList().IndexOf(new KeyValuePair<IItem, int>(item, quantity)), quantity);
+        Inventory.RemoveAt(Inventory.RotatingShop.Concat(Inventory.BoughtFromPlayer).ToList().FindIndex(i => i.Key == item), quantity);
     }
 
+    /// <summary>
+    /// Sprawdza, czy gracz może sprzedać określoną ilość przedmiotu.
+    /// </summary>
+    /// <param name="item">Przedmiot do sprzedania.</param>
+    /// <param name="quantity">Ilość przedmiotu (domyślnie 1).</param>
+    /// <returns>True, jeśli gracz może sprzedać przedmiot; w przeciwnym razie false.</returns>
     public bool CanSellItem(IItem item, int quantity = 1)
     {
         var player = PlayerHandler.player;
@@ -145,6 +191,12 @@ public abstract class NPC
         return player.Inventory.GetCount(item.Alias) >= quantity;
     }
 
+    /// <summary>
+    /// Sprzedaje określoną ilość przedmiotu NPC.
+    /// </summary>
+    /// <param name="item">Przedmiot do sprzedania.</param>
+    /// <param name="quantity">Ilość przedmiotu (domyślnie 1).</param>
+    /// <exception cref="InvalidOperationException">Wyrzucany, gdy gracz nie ma wystarczającej ilości przedmiotów.</exception>
     public void SellItem(IItem item, int quantity = 1)
     {
         if (!CanSellItem(item, quantity))
@@ -166,13 +218,34 @@ public abstract class NPC
     }
 }
 
+/// <summary>
+/// Klasa przechowująca informacje o przedmiocie w sklepie.
+/// </summary>
 public class ShopItemInfo
 {
+    /// <summary>
+    /// Pobiera lub ustawia przedmiot.
+    /// </summary>
     public IItem Item { get; set; }
+    /// <summary>
+    /// Pobiera lub ustawia ilość przedmiotu.
+    /// </summary>
     public int Quantity { get; set; }
+    /// <summary>
+    /// Pobiera lub ustawia koszt pojedynczego przedmiotu.
+    /// </summary>
     public int Cost { get; set; }
+    /// <summary>
+    /// Pobiera lub ustawia wartość wskazującą, czy przedmiot jest składany.
+    /// </summary>
     public bool IsStackable { get; set; }
     
+    /// <summary>
+    /// Pobiera nazwę wyświetlaną przedmiotu (z ilością, jeśli przedmiot jest składany).
+    /// </summary>
     public string DisplayName => IsStackable ? $"{Item.Name} (x{Quantity})" : Item.Name;
+    /// <summary>
+    /// Pobiera sformatowany koszt przedmiotu (z kosztem całkowitym, jeśli przedmiot jest składany).
+    /// </summary>
     public string DisplayCost => IsStackable ? $"{Cost} Gold (Total: {Cost * Quantity})" : $"{Cost} Gold";
 }

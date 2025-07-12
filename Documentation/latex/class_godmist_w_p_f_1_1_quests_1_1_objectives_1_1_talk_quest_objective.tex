@@ -1,0 +1,99 @@
+\doxysection{Godmist\+WPF.\+Quests.\+Objectives.\+Talk\+Quest\+Objective Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_talk_quest_objective}{}\label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_talk_quest_objective}\index{GodmistWPF.Quests.Objectives.TalkQuestObjective@{GodmistWPF.Quests.Objectives.TalkQuestObjective}}
+
+
+Cel zadania polegający na rozmowie z określonym \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Quests.\+Objectives.\+Talk\+Quest\+Objective\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_talk_quest_objective}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_talk_quest_objective_a2133b7893540599de5181174096c8a4b}{Progress}} (\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context}{Quest\+Objective\+Context}} context)
+\begin{DoxyCompactList}\small\item\em Aktualizuje postęp zadania na podstawie dostarczonego kontekstu. Oznacza cel jako ukończony, jeśli kontekst dotyczy rozmowy z odpowiednim \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_talk_quest_objective_a5a96f6e74d5b5e4fa42dc900fc48240d}\label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_talk_quest_objective_a5a96f6e74d5b5e4fa42dc900fc48240d} 
+{\bfseries Talk\+Quest\+Objective} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_talk_quest_objective}{Talk\+Quest\+Objective}. Używany przez serializator JSON. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_talk_quest_objective_a6b89dc9fdeeb44fed5c31e9f05ba4d8d}{Is\+Complete}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Określa, czy cel został ukończony. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_talk_quest_objective_aa5b88faf970f192ab95507bc47040665}\label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_talk_quest_objective_aa5b88faf970f192ab95507bc47040665} 
+List$<$ string $>$ {\bfseries Dialogue}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Lista linii dialogowych wyświetlanych podczas rozmowy z \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_talk_quest_objective_a309e3dab58942e41b2de56ccae950ae1}\label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_talk_quest_objective_a309e3dab58942e41b2de56ccae950ae1} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}} {\bfseries NPCTo\+Talk\+To}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}, z którym gracz musi porozmawiać, aby ukończyć cel. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_talk_quest_objective_a6bb949e606994f5067125bd2ce0e5892}{Description}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera opis celu w formacie "{}\+Porozmawiaj z \mbox{[}nazwa NPC\mbox{]}"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Cel zadania polegający na rozmowie z określonym \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. 
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_talk_quest_objective_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_talk_quest_objective_a2133b7893540599de5181174096c8a4b}\index{GodmistWPF.Quests.Objectives.TalkQuestObjective@{GodmistWPF.Quests.Objectives.TalkQuestObjective}!Progress@{Progress}}
+\index{Progress@{Progress}!GodmistWPF.Quests.Objectives.TalkQuestObjective@{GodmistWPF.Quests.Objectives.TalkQuestObjective}}
+\doxysubsubsection{\texorpdfstring{Progress()}{Progress()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_talk_quest_objective_a2133b7893540599de5181174096c8a4b} 
+void Godmist\+WPF.\+Quests.\+Objectives.\+Talk\+Quest\+Objective.\+Progress (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context}{Quest\+Objective\+Context}}}]{context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Aktualizuje postęp zadania na podstawie dostarczonego kontekstu. Oznacza cel jako ukończony, jeśli kontekst dotyczy rozmowy z odpowiednim \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & Kontekst zawierający informacje o rozmowie z \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective_a7f70ddfcacf8816f08f605a9f6e7c145}{Godmist\+WPF.\+Quests.\+Objectives.\+IQuest\+Objective}}.
+
+
+
+\label{doc-property-members}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_talk_quest_objective_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_talk_quest_objective_a6bb949e606994f5067125bd2ce0e5892}\index{GodmistWPF.Quests.Objectives.TalkQuestObjective@{GodmistWPF.Quests.Objectives.TalkQuestObjective}!Description@{Description}}
+\index{Description@{Description}!GodmistWPF.Quests.Objectives.TalkQuestObjective@{GodmistWPF.Quests.Objectives.TalkQuestObjective}}
+\doxysubsubsection{\texorpdfstring{Description}{Description}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_talk_quest_objective_a6bb949e606994f5067125bd2ce0e5892} 
+string Godmist\+WPF.\+Quests.\+Objectives.\+Talk\+Quest\+Objective.\+Description\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera opis celu w formacie "{}\+Porozmawiaj z \mbox{[}nazwa NPC\mbox{]}"{}. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective_ad6d9942cd93635eb47c9661482f17979}{Godmist\+WPF.\+Quests.\+Objectives.\+IQuest\+Objective}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_talk_quest_objective_a6b89dc9fdeeb44fed5c31e9f05ba4d8d}\index{GodmistWPF.Quests.Objectives.TalkQuestObjective@{GodmistWPF.Quests.Objectives.TalkQuestObjective}!IsComplete@{IsComplete}}
+\index{IsComplete@{IsComplete}!GodmistWPF.Quests.Objectives.TalkQuestObjective@{GodmistWPF.Quests.Objectives.TalkQuestObjective}}
+\doxysubsubsection{\texorpdfstring{IsComplete}{IsComplete}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_talk_quest_objective_a6b89dc9fdeeb44fed5c31e9f05ba4d8d} 
+bool Godmist\+WPF.\+Quests.\+Objectives.\+Talk\+Quest\+Objective.\+Is\+Complete\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Określa, czy cel został ukończony. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective_aa71bf68a394092b39ad09798a738218c}{Godmist\+WPF.\+Quests.\+Objectives.\+IQuest\+Objective}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Quests/\+Objectives/Talk\+Quest\+Objective.\+cs\end{DoxyCompactItemize}

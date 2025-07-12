@@ -1,0 +1,292 @@
+\doxysection{Godmist\+WPF.\+Items.\+Base\+Item Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_items_1_1_base_item}{}\label{class_godmist_w_p_f_1_1_items_1_1_base_item}\index{GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}}
+
+
+Abstrakcyjna klasa bazowa dla wszystkich przedmiotów w grze. Implementuje podstawową funkcjonalność zdefiniowaną w interfejsie \doxylink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Items.\+Base\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_godmist_w_p_f_1_1_items_1_1_base_item}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_acc6c4b47f0eada380e37090582522645}{Inspect}} (int amount=1)
+\begin{DoxyCompactList}\small\item\em Wyświetla szczegółowe informacje o przedmiocie. Implementacja w WPF obsługuje interfejs użytkownika. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a62a7b60026ec2e63d60e5bde7513c7c3}{Write\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla nazwę przedmiotu z uwzględnieniem jego rzadkości. Implementacja w WPF obsługuje interfejs użytkownika. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_ab80277caef8f091f3245e4c3680a2265}{Write\+Item\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla typ przedmiotu. Implementacja w WPF obsługuje interfejs użytkownika. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_ab8aecf04d7121322a9515bcaccb024b5}{Write\+Rarity}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla rzadkość przedmiotu. Implementacja w WPF obsługuje interfejs użytkownika. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a3ca6652033431e54f246307f7b3e9d0d}{Rarity\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca zlokalizowaną nazwę rzadkości przedmiotu. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a6c6ca0c4731c9106cef36a4cd606c000}{Item\+Type\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca zlokalizowaną nazwę typu przedmiotu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+virtual string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a53f72ba0d1cf21654655cb745eab7ba3}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia nazwę przedmiotu. Przy pobieraniu wykorzystuje Name\+Alias\+Helper do tłumaczenia aliasu na pełną nazwę. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_ac94e206df1ac952048d7aa9c4d047add}{Alias}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia alias (skróconą nazwę) przedmiotu. Używany do wewnętrznej identyfikacji i tłumaczeń. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a171769b2a12d37acc3f45a1adfe614b6}{Weight}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia wagę przedmiotu. Wpływa na obciążenie ekwipunku postaci. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_acdb022869d8836b038d36e27e46c1e89}{ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia unikalny identyfikator przedmiotu. Używany do zapisu/odczytu stanu gry. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_adb7ff1df8be6b0e46d36a69f663f989a}{Cost}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia wartość przedmiotu w walucie gry. Używane przy sprzedaży i zakupie przedmiotów. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_a02934ee73a54ec124f0455457945ab1a}{Item\+Rarity}} \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_ab8d911e0148244bb7b11241cddf824a6}{Rarity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia rzadkość przedmiotu. Wpływa na kolor nazwy i wartość przedmiotu. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_afc676c9421e9ad3df5d549ef44c3ae89}{Stackable}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Określa, czy przedmioty tego samego typu mogą być składane w jednym slocie ekwipunku. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a763204eb630704caf524369c8de6ebe6}{Description}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia opis przedmiotu. Wyświetlany w oknie inspekcji przedmiotu. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_ac3d61a48fbf15693811c3ce1d463dfe0}{Item\+Type}} \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a0774084b82083124b6e19ee3de21ee54}{Item\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia typ przedmiotu. Określa kategorię i podstawowe przeznaczenie przedmiotu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstrakcyjna klasa bazowa dla wszystkich przedmiotów w grze. Implementuje podstawową funkcjonalność zdefiniowaną w interfejsie \doxylink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}. 
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_base_item_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_base_item_acc6c4b47f0eada380e37090582522645}\index{GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}!Inspect@{Inspect}}
+\index{Inspect@{Inspect}!GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}}
+\doxysubsubsection{\texorpdfstring{Inspect()}{Inspect()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_base_item_acc6c4b47f0eada380e37090582522645} 
+virtual void Godmist\+WPF.\+Items.\+Base\+Item.\+Inspect (\begin{DoxyParamCaption}\item[{int}]{amount}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Wyświetla szczegółowe informacje o przedmiocie. Implementacja w WPF obsługuje interfejs użytkownika. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & Ilość przedmiotów do wyświetlenia (dla przedmiotów składalnych).\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_adaa4ad0bc058f85edbe768b7b46befc2}{Godmist\+WPF.\+Items.\+IItem}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_a0562b997cae67fbbaed47c811d2dd142}{Godmist\+WPF.\+Items.\+Galdurites.\+Galdurite}}, and \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_potions_1_1_potion_a5e386d28e481b7538aebc6dce299e2af}{Godmist\+WPF.\+Items.\+Potions.\+Potion}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_base_item_a6c6ca0c4731c9106cef36a4cd606c000}\index{GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}!ItemTypeName@{ItemTypeName}}
+\index{ItemTypeName@{ItemTypeName}!GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}}
+\doxysubsubsection{\texorpdfstring{ItemTypeName()}{ItemTypeName()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_base_item_a6c6ca0c4731c9106cef36a4cd606c000} 
+string Godmist\+WPF.\+Items.\+Base\+Item.\+Item\+Type\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zwraca zlokalizowaną nazwę typu przedmiotu. 
+
+\begin{DoxyReturn}{Returns}
+Zlokalizowana nazwa typu przedmiotu.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_aa6364dd4d5e93386c9887a5b65068e8a}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_base_item_a3ca6652033431e54f246307f7b3e9d0d}\index{GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}!RarityName@{RarityName}}
+\index{RarityName@{RarityName}!GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}}
+\doxysubsubsection{\texorpdfstring{RarityName()}{RarityName()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_base_item_a3ca6652033431e54f246307f7b3e9d0d} 
+string Godmist\+WPF.\+Items.\+Base\+Item.\+Rarity\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zwraca zlokalizowaną nazwę rzadkości przedmiotu. 
+
+\begin{DoxyReturn}{Returns}
+Zlokalizowana nazwa rzadkości.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a7d7114b8736cb248af2f1f611e574a66}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_base_item_ab80277caef8f091f3245e4c3680a2265}\index{GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}!WriteItemType@{WriteItemType}}
+\index{WriteItemType@{WriteItemType}!GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}}
+\doxysubsubsection{\texorpdfstring{WriteItemType()}{WriteItemType()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_base_item_ab80277caef8f091f3245e4c3680a2265} 
+void Godmist\+WPF.\+Items.\+Base\+Item.\+Write\+Item\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wyświetla typ przedmiotu. Implementacja w WPF obsługuje interfejs użytkownika. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a910a5244e608b0eee8a2d4e2150a2c1f}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_base_item_a62a7b60026ec2e63d60e5bde7513c7c3}\index{GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}!WriteName@{WriteName}}
+\index{WriteName@{WriteName}!GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}}
+\doxysubsubsection{\texorpdfstring{WriteName()}{WriteName()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_base_item_a62a7b60026ec2e63d60e5bde7513c7c3} 
+void Godmist\+WPF.\+Items.\+Base\+Item.\+Write\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wyświetla nazwę przedmiotu z uwzględnieniem jego rzadkości. Implementacja w WPF obsługuje interfejs użytkownika. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_aaa795cd0c16e347636733f8c3dda0abd}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_base_item_ab8aecf04d7121322a9515bcaccb024b5}\index{GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}!WriteRarity@{WriteRarity}}
+\index{WriteRarity@{WriteRarity}!GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}}
+\doxysubsubsection{\texorpdfstring{WriteRarity()}{WriteRarity()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_base_item_ab8aecf04d7121322a9515bcaccb024b5} 
+void Godmist\+WPF.\+Items.\+Base\+Item.\+Write\+Rarity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wyświetla rzadkość przedmiotu. Implementacja w WPF obsługuje interfejs użytkownika. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a7864db399c3e253324934677eb57feaf}{Godmist\+WPF.\+Items.\+IItem}}.
+
+
+
+\label{doc-property-members}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_base_item_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_base_item_ac94e206df1ac952048d7aa9c4d047add}\index{GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}!Alias@{Alias}}
+\index{Alias@{Alias}!GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}}
+\doxysubsubsection{\texorpdfstring{Alias}{Alias}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_base_item_ac94e206df1ac952048d7aa9c4d047add} 
+virtual string Godmist\+WPF.\+Items.\+Base\+Item.\+Alias\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia alias (skróconą nazwę) przedmiotu. Używany do wewnętrznej identyfikacji i tłumaczeń. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a4918a6743daf1c3d488a727094980148}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_base_item_adb7ff1df8be6b0e46d36a69f663f989a}\index{GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}!Cost@{Cost}}
+\index{Cost@{Cost}!GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}}
+\doxysubsubsection{\texorpdfstring{Cost}{Cost}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_base_item_adb7ff1df8be6b0e46d36a69f663f989a} 
+virtual int Godmist\+WPF.\+Items.\+Base\+Item.\+Cost\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia wartość przedmiotu w walucie gry. Używane przy sprzedaży i zakupie przedmiotów. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a0f412b6f7655244181eb1d372ac41ddb}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_base_item_a763204eb630704caf524369c8de6ebe6}\index{GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}!Description@{Description}}
+\index{Description@{Description}!GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}}
+\doxysubsubsection{\texorpdfstring{Description}{Description}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_base_item_a763204eb630704caf524369c8de6ebe6} 
+virtual string Godmist\+WPF.\+Items.\+Base\+Item.\+Description\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia opis przedmiotu. Wyświetlany w oknie inspekcji przedmiotu. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a3fe652d290d9677b4503e786578780b9}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_base_item_acdb022869d8836b038d36e27e46c1e89}\index{GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}!ID@{ID}}
+\index{ID@{ID}!GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}}
+\doxysubsubsection{\texorpdfstring{ID}{ID}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_base_item_acdb022869d8836b038d36e27e46c1e89} 
+virtual int Godmist\+WPF.\+Items.\+Base\+Item.\+ID\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia unikalny identyfikator przedmiotu. Używany do zapisu/odczytu stanu gry. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_afd07fe16d41cf6234ce995cfc57634c8}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_base_item_a0774084b82083124b6e19ee3de21ee54}\index{GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}!ItemType@{ItemType}}
+\index{ItemType@{ItemType}!GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}}
+\doxysubsubsection{\texorpdfstring{ItemType}{ItemType}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_base_item_a0774084b82083124b6e19ee3de21ee54} 
+virtual \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_ac3d61a48fbf15693811c3ce1d463dfe0}{Item\+Type}} Godmist\+WPF.\+Items.\+Base\+Item.\+Item\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia typ przedmiotu. Określa kategorię i podstawowe przeznaczenie przedmiotu. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a23f5dbd47328d6cbef2ff30a7fe15938}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_base_item_a53f72ba0d1cf21654655cb745eab7ba3}\index{GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}!Name@{Name}}
+\index{Name@{Name}!GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_base_item_a53f72ba0d1cf21654655cb745eab7ba3} 
+virtual string Godmist\+WPF.\+Items.\+Base\+Item.\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia nazwę przedmiotu. Przy pobieraniu wykorzystuje Name\+Alias\+Helper do tłumaczenia aliasu na pełną nazwę. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_aa7c0739500303333ba79d83a60d46b08}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_base_item_ab8d911e0148244bb7b11241cddf824a6}\index{GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}!Rarity@{Rarity}}
+\index{Rarity@{Rarity}!GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}}
+\doxysubsubsection{\texorpdfstring{Rarity}{Rarity}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_base_item_ab8d911e0148244bb7b11241cddf824a6} 
+virtual \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_a02934ee73a54ec124f0455457945ab1a}{Item\+Rarity}} Godmist\+WPF.\+Items.\+Base\+Item.\+Rarity\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia rzadkość przedmiotu. Wpływa na kolor nazwy i wartość przedmiotu. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_affbd29bebf9b3a0e17da29f7b65963a4}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_base_item_afc676c9421e9ad3df5d549ef44c3ae89}\index{GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}!Stackable@{Stackable}}
+\index{Stackable@{Stackable}!GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}}
+\doxysubsubsection{\texorpdfstring{Stackable}{Stackable}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_base_item_afc676c9421e9ad3df5d549ef44c3ae89} 
+virtual bool Godmist\+WPF.\+Items.\+Base\+Item.\+Stackable\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Określa, czy przedmioty tego samego typu mogą być składane w jednym slocie ekwipunku. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_af423d9fec16280fec5ccbecaf7d43fbe}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_base_item_a171769b2a12d37acc3f45a1adfe614b6}\index{GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}!Weight@{Weight}}
+\index{Weight@{Weight}!GodmistWPF.Items.BaseItem@{GodmistWPF.Items.BaseItem}}
+\doxysubsubsection{\texorpdfstring{Weight}{Weight}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_base_item_a171769b2a12d37acc3f45a1adfe614b6} 
+virtual int Godmist\+WPF.\+Items.\+Base\+Item.\+Weight\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia wagę przedmiotu. Wpływa na obciążenie ekwipunku postaci. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_ada5ec9f15576cff4b7d046a12ef79ab4}{Godmist\+WPF.\+Items.\+IItem}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Items/Base\+Item.\+cs\end{DoxyCompactItemize}

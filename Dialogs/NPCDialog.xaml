@@ -1,0 +1,528 @@
+<Window x:Class="GodmistWPF.Dialogs.NPCDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="NPC Interaction" Height="700" Width="900"
+        WindowStartupLocation="CenterOwner"
+        Background="{DynamicResource MaterialDesignPaper}"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}">
+    
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <!-- NPC Header -->
+        <materialDesign:ColorZone Grid.Row="0" Mode="PrimaryMid" Padding="15" CornerRadius="4,4,0,0" Margin="0,0,0,10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <StackPanel Grid.Column="0">
+                    <TextBlock x:Name="NPCNameText" 
+                               Style="{StaticResource MaterialDesignHeadline5TextBlock}"
+                               Foreground="White"/>
+                    <TextBlock x:Name="NPCDescriptionText" 
+                               Style="{StaticResource MaterialDesignBody1TextBlock}"
+                               Foreground="White"
+                               TextWrapping="Wrap"/>
+                </StackPanel>
+                
+                <StackPanel Grid.Column="1" Orientation="Horizontal" 
+                            VerticalAlignment="Center" HorizontalAlignment="Right">
+                    <TextBlock Text="Loyalty" 
+                               Style="{StaticResource MaterialDesignBody1TextBlock}"
+                               Foreground="White"
+                               VerticalAlignment="Center"/>
+                    <TextBlock x:Name="LoyaltyText" 
+                               Style="{StaticResource MaterialDesignBody1TextBlock}"
+                               Foreground="White"
+                               VerticalAlignment="Center"
+                               FontWeight="Bold"/>
+                    <TextBlock Text=" | " 
+                               Style="{StaticResource MaterialDesignBody1TextBlock}"
+                               Foreground="White"
+                               VerticalAlignment="Center"/>
+                    <materialDesign:PackIcon Kind="Coins" Foreground="Gold" Width="24" Height="24" Margin="0,0,5,0"/>
+                    <TextBlock x:Name="PlayerGoldText" 
+                               Style="{StaticResource MaterialDesignHeadline6TextBlock}" 
+                               Foreground="White"
+                               VerticalAlignment="Center"
+                               FontWeight="Bold"/>
+                </StackPanel>
+            </Grid>
+        </materialDesign:ColorZone>
+        
+        <!-- Tab Control -->
+        <TabControl x:Name="NPCTabControl" Grid.Row="1">
+            <!-- Quests Tab -->
+            <TabItem x:Name="QuestsTab" Header="Quests">
+                <Grid Margin="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="250"/>
+                        <ColumnDefinition Width="5"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <!-- Quests List -->
+                    <TabControl Grid.Column="0" BorderThickness="0" Background="Transparent">
+                        <TabItem Header="Available" Style="{StaticResource MaterialDesignTabItem}">
+                            <ListBox x:Name="AvailableQuestsListBox"
+                                    Style="{StaticResource MaterialDesignListBox}"
+                                    DisplayMemberPath="Name"
+                                    SelectionMode="Single"
+                                    SelectionChanged="OnQuestSelected"/>
+                        </TabItem>
+                        <TabItem Header="Completed" Style="{StaticResource MaterialDesignTabItem}">
+                            <ListBox x:Name="CompletedQuestsListBox"
+                                    Style="{StaticResource MaterialDesignListBox}"
+                                    DisplayMemberPath="Name"
+                                    SelectionMode="Single"
+                                    SelectionChanged="OnCompletedQuestSelected"/>
+                        </TabItem>
+                    </TabControl>
+                    
+                    <GridSplitter Grid.Column="1" Width="5" HorizontalAlignment="Stretch" Background="Transparent"/>
+                    
+                    <!-- Quest Details -->
+                    <materialDesign:Card Grid.Column="2" Margin="5,0,0,0">
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <Grid>
+                                <StackPanel x:Name="QuestDetailsPanel" Margin="15" Visibility="Collapsed">
+                                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                                        <TextBlock x:Name="QuestTitleText" 
+                                                  Style="{DynamicResource MaterialDesignHeadline5TextBlock}"
+                                                  TextWrapping="Wrap"/>
+                                        <TextBlock x:Name="QuestLevelText"
+                                                  Style="{StaticResource MaterialDesignBody1TextBlock}"
+                                                  VerticalAlignment="Bottom"
+                                                  Margin="10,0,0,0"/>
+                                    </StackPanel>
+                                    <TextBlock x:Name="QuestDescriptionText"
+                                              Style="{DynamicResource MaterialDesignBody1TextBlock}"
+                                              TextWrapping="Wrap"
+                                              Margin="0,0,0,10"/>
+                                    <TextBlock x:Name="QuestObjectivesText"
+                                              Style="{DynamicResource MaterialDesignBody1TextBlock}"
+                                              TextWrapping="Wrap"
+                                              Margin="0,0,0,10"/>
+                                    <TextBlock x:Name="QuestRewardsText"
+                                              Style="{DynamicResource MaterialDesignBody1TextBlock}"
+                                              TextWrapping="Wrap"
+                                              Margin="0,0,0,10"/>
+                                    <TextBlock x:Name="QuestEnderText"
+                                              Style="{StaticResource MaterialDesignBody2TextBlock}"
+                                              FontStyle="Italic"
+                                              Foreground="#4CAF50"
+                                              Margin="0,0,0,5"
+                                              TextWrapping="Wrap"
+                                              Visibility="Collapsed"/>
+                                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                                        <Button x:Name="AcceptQuestButton"
+                                                Content="Accept Quest"
+                                                Style="{StaticResource MaterialDesignRaisedButton}"
+                                                HorizontalAlignment="Left"
+                                                Click="OnAcceptQuestClick"
+                                                IsEnabled="False"/>
+                                        <Button x:Name="HandInQuestButton"
+                                                Content="Hand In Quest"
+                                                Style="{StaticResource MaterialDesignRaisedButton}"
+                                                HorizontalAlignment="Left"
+                                                Margin="10,0,0,0"
+                                                Click="OnHandInQuestClick"
+                                                IsEnabled="False"
+                                                Visibility="Collapsed"/>
+                                    </StackPanel>
+                                </StackPanel>
+                                <StackPanel x:Name="NoQuestSelectedPanel" Margin="15" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <TextBlock Text="Select a quest to view details"
+                                              Style="{DynamicResource MaterialDesignHeadline6TextBlock}"
+                                              HorizontalAlignment="Center"/>
+                                    <TextBlock Text="No quest selected"
+                                              Style="{DynamicResource MaterialDesignBody1TextBlock}"
+                                              HorizontalAlignment="Center"
+                                              Foreground="{DynamicResource MaterialDesignBodyLight}"/>
+                                </StackPanel>
+                            </Grid>
+                        </ScrollViewer>
+                    </materialDesign:Card>
+                </Grid>
+            </TabItem>
+            
+            <!-- Shop Tab -->
+            <TabItem x:Name="ShopTab" Header="Shop">
+                <Grid Margin="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="3"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="250"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <!-- Shop Items -->
+                    <materialDesign:Card Grid.Column="0" Grid.Row="0" Margin="0,0,10,5">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            
+                            <TextBlock Text="Available Items" 
+                                       Style="{DynamicResource MaterialDesignHeadline6TextBlock}"
+                                       Margin="10"/>
+                            
+                            <ListBox x:Name="ItemsListBox" Grid.Row="1"
+                                     Style="{StaticResource MaterialDesignListBox}"
+                                     DisplayMemberPath="DisplayName"
+                                     SelectionMode="Single"
+                                     SelectionChanged="OnItemSelected"/>
+                        </Grid>
+                    </materialDesign:Card>
+                    
+                    <!-- Player Inventory -->
+                    <materialDesign:Card Grid.Column="0" Grid.Row="2" Margin="0,5,10,0">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            
+                            <TextBlock Text="Your Inventory" 
+                                       Style="{DynamicResource MaterialDesignHeadline6TextBlock}"
+                                       Margin="10"/>
+                            
+                            <ListBox x:Name="PlayerInventoryListBox" Grid.Row="1"
+                                     Style="{StaticResource MaterialDesignListBox}"
+                                     DisplayMemberPath="DisplayName"
+                                     SelectionMode="Single"
+                                     SelectionChanged="OnItemSelected"/>
+                        </Grid>
+                    </materialDesign:Card>
+                    
+                    <!-- Action Buttons and Quantity -->
+                    <StackPanel Grid.Column="1" Grid.RowSpan="3" VerticalAlignment="Center" Width="200">
+                        <TextBlock x:Name="ActionTitle" 
+                                   Text="Select an Item" 
+                                   Style="{StaticResource MaterialDesignHeadline6TextBlock}"
+                                   HorizontalAlignment="Center"
+                                   Margin="0,0,0,10"/>
+                        
+                        <!-- Quantity Controls -->
+                        <TextBlock x:Name="QuantityLabel" 
+                                   Text="Quantity:" 
+                                   Style="{StaticResource MaterialDesignBody2TextBlock}"
+                                   Margin="0,0,0,5"/>
+                        <Slider x:Name="QuantitySlider" 
+                                Minimum="1" 
+                                Maximum="1" 
+                                Value="1"
+                                Margin="0,0,0,5"
+                                IsSnapToTickEnabled="True"
+                                TickFrequency="1"
+                                IsMoveToPointEnabled="True"
+                                ValueChanged="Quantity_ValueChanged">
+                            <Slider.Resources>
+                                <Style TargetType="Thumb">
+                                    <Setter Property="Width" Value="16"/>
+                                    <Setter Property="Height" Value="16"/>
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="Thumb">
+                                                <Ellipse Fill="{DynamicResource PrimaryHueMidBrush}" 
+                                                         Width="{TemplateBinding Width}" 
+                                                         Height="{TemplateBinding Height}" 
+                                                         Cursor="Hand"/>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </Slider.Resources>
+                        </Slider>
+                        <TextBlock x:Name="QuantityText" 
+                                   Text="1"
+                                   HorizontalAlignment="Center"
+                                   Style="{StaticResource MaterialDesignBody2TextBlock}"
+                                   Margin="0,0,0,10"/>
+                        
+                        <!-- Action Buttons -->
+                        <Button x:Name="ActionButton" 
+                                Content="Action" 
+                                Style="{StaticResource MaterialDesignRaisedButton}"
+                                Margin="0,5"
+                                Click="ActionButton_Click"/>
+                        
+                        <Button x:Name="DeselectButton" 
+                                Content="Deselect" 
+                                Style="{StaticResource MaterialDesignOutlinedButton}"
+                                Margin="0,5"
+                                Click="DeselectButton_Click"/>
+                    </StackPanel>
+                    
+                    <!-- Item Details -->
+                    <materialDesign:Card Grid.Column="2" Grid.RowSpan="3">
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <StackPanel Margin="15">
+                                <TextBlock x:Name="SelectedItemName" 
+                                           Style="{DynamicResource MaterialDesignHeadline5TextBlock}"
+                                           Text="No item selected"
+                                           TextWrapping="Wrap"/>
+                                
+                                <TextBlock x:Name="SelectedItemType" 
+                                           Style="{DynamicResource MaterialDesignSubtitle1TextBlock}"
+                                           Margin="0,5,0,0"
+                                           Foreground="Gray"/>
+                                
+                                <TextBlock x:Name="SelectedItemPrice"
+                                           Style="{DynamicResource MaterialDesignHeadline6TextBlock}"
+                                           Margin="0,10,0,0"/>
+                                
+                                <TextBlock x:Name="SelectedItemStats" 
+                                           Style="{DynamicResource MaterialDesignBody1TextBlock}"
+                                           TextWrapping="Wrap"
+                                           Margin="0,10,0,0"/>
+                                
+                                <TextBlock x:Name="SelectedItemDescription" 
+                                           Style="{DynamicResource MaterialDesignBody2TextBlock}"
+                                           TextWrapping="Wrap"
+                                           Margin="0,10,0,0"
+                                           FontStyle="Italic"
+                                           Foreground="#AAAAAA"/>
+                                <TextBlock x:Name="SelectedItemTotalPrice"
+                                           Style="{DynamicResource MaterialDesignSubtitle1TextBlock}"
+                                           Margin="0,5,0,0"
+                                           FontWeight="Bold"/>
+                            </StackPanel>
+                        </ScrollViewer>
+                    </materialDesign:Card>
+                </Grid>
+            </TabItem>
+            
+            <!-- Crafting Tab -->
+            <TabItem x:Name="CraftingTab" Header="Crafting">
+                <Grid Margin="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="250"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <!-- Craftable Items -->
+                    <materialDesign:Card Grid.Column="0" Margin="0,0,10,0">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            
+                            <TextBlock Text="Craftable Items" 
+                                       Style="{DynamicResource MaterialDesignHeadline6TextBlock}"
+                                       Margin="10"/>
+                            
+                            <ListBox x:Name="CraftingListBox" Grid.Row="1"
+                                     Style="{StaticResource MaterialDesignListBox}"
+                                     DisplayMemberPath="Name"
+                                     SelectionChanged="CraftingListBox_SelectionChanged"/>
+                        </Grid>
+                    </materialDesign:Card>
+                    
+                    <!-- Crafting Details -->
+                    <materialDesign:Card Grid.Column="1">
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <StackPanel Margin="10">
+                                <TextBlock x:Name="CraftingItemName" 
+                                           Style="{DynamicResource MaterialDesignHeadline6TextBlock}"
+                                           Text="No item selected"/>
+                                
+                                <TextBlock x:Name="CraftingItemDetails" 
+                                           Style="{DynamicResource MaterialDesignBody2TextBlock}"
+                                           TextWrapping="Wrap"
+                                           Margin="0,10,0,0"/>
+                                
+                                <TextBlock Text="Required Materials:" 
+                                           Style="{DynamicResource MaterialDesignSubtitle2TextBlock}"
+                                           Margin="0,10,0,5"/>
+                                
+                                <ItemsControl x:Name="RequiredMaterialsList" 
+                                              Margin="10,0,0,0">
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding}" 
+                                                       Style="{StaticResource MaterialDesignBody2TextBlock}"/>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                                
+                                <Button x:Name="CraftButton" 
+                                        Content="Craft" 
+                                        Style="{StaticResource MaterialDesignRaisedButton}"
+                                        Margin="0,20,0,0"
+                                        Click="CraftButton_Click"/>
+                            </StackPanel>
+                        </ScrollViewer>
+                    </materialDesign:Card>
+                </Grid>
+            </TabItem>
+            
+            <!-- Services Tab -->
+            <TabItem x:Name="ServicesTab" Header="Services">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel x:Name="ServicesPanel" Margin="10">
+                        <!-- Dynamic content based on NPC type -->
+                        
+                        <!-- Potion Crafting Section -->
+                        <materialDesign:Card Margin="0,0,0,20" Padding="10">
+                            <StackPanel>
+                                <TextBlock Text="Potion Crafting" 
+                                           Style="{StaticResource MaterialDesignHeadline6TextBlock}"
+                                           Margin="0,0,0,10"/>
+                                
+                                <!-- Selected Components -->
+                                <TextBlock x:Name="SelectedComponentsText"
+                                           Text="Selected Components (0/3):" 
+                                           Style="{StaticResource MaterialDesignSubtitle2TextBlock}"
+                                           Margin="0,5"/>
+                                
+                                <ListBox x:Name="SelectedComponentsList" 
+                                         Style="{StaticResource MaterialDesignListBox}"
+                                         MinHeight="100" 
+                                         MaxHeight="150"
+                                         Margin="0,5"
+                                         SelectionMode="Single">
+                                    <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding EffectDescription}" TextWrapping="Wrap"/>
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                                </ListBox>
+                                
+                                <Button x:Name="RemoveComponentButton" 
+                                        Content="Remove Selected Component" 
+                                        Style="{StaticResource MaterialDesignOutlinedButton}"
+                                        Margin="0,5"
+                                        Click="RemoveComponentButton_Click"
+                                        IsEnabled="False"/>
+                                
+                                <!-- Available Components -->
+                                <TextBlock Text="Available Components:" 
+                                           Style="{StaticResource MaterialDesignSubtitle2TextBlock}"
+                                           Margin="0,10,0,5"/>
+                                
+                                <ComboBox x:Name="AvailableComponentsComboBox" 
+                                          Style="{StaticResource MaterialDesignFloatingHintComboBox}"
+                                          DisplayMemberPath="EffectDescription"
+                                          Margin="0,5"
+                                          SelectionChanged="AvailableComponentsComboBox_SelectionChanged">
+                                    <ComboBox.ItemContainerStyle>
+                                        <Style TargetType="ComboBoxItem">
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding HasRequiredMaterials}" Value="False">
+                                                    <Setter Property="IsEnabled" Value="False"/>
+                                                    <Setter Property="Opacity" Value="0.6"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </ComboBox.ItemContainerStyle>
+                                </ComboBox>
+                                
+                                <!-- Catalyst Selection -->
+                                <TextBlock Text="Catalyst (Optional):" 
+                                           Style="{StaticResource MaterialDesignSubtitle2TextBlock}"
+                                           Margin="0,10,0,5"/>
+                                
+                                <ComboBox x:Name="CatalystComboBox" 
+                                          Style="{StaticResource MaterialDesignFloatingHintComboBox}"
+                                          DisplayMemberPath="DescriptionText"
+                                          Margin="0,5"
+                                          SelectedIndex="0"
+                                          SelectionChanged="CatalystComboBox_SelectionChanged">
+                                    <ComboBox.ItemContainerStyle>
+                                        <Style TargetType="ComboBoxItem">
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding HasRequiredMaterial}" Value="False">
+                                                    <Setter Property="IsEnabled" Value="False"/>
+                                                    <Setter Property="Opacity" Value="0.6"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </ComboBox.ItemContainerStyle>
+                                </ComboBox>
+                                
+                                <!-- Potion Name -->
+                                <TextBlock Text="Potion Name:" 
+                                           Style="{StaticResource MaterialDesignSubtitle2TextBlock}"
+                                           Margin="0,10,0,5"/>
+                                
+                                <TextBox x:Name="PotionNameTextBox" 
+                                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                                         materialDesign:HintAssist.Hint="Enter a name for your potion"
+                                         Margin="0,5"/>
+                                
+                                <!-- Craft Button -->
+                                <Button x:Name="CraftPotionButton" 
+                                        Content="Craft Potion" 
+                                        Style="{StaticResource MaterialDesignRaisedButton}"
+                                        Margin="0,20,0,0"
+                                        Click="CraftPotionButton_Click"
+                                        IsEnabled="False"/>
+                                
+                                <TextBlock x:Name="PotionCraftingStatus" 
+                                           Style="{StaticResource MaterialDesignBody2TextBlock}"
+                                           Foreground="Red"
+                                           Margin="0,5,0,0"
+                                           TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </materialDesign:Card>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+        </TabControl>
+        
+        <!-- Status Bar -->
+        <StatusBar Grid.Row="2" Margin="0,10,0,0">
+            <StatusBarItem>
+                <TextBlock x:Name="StatusText" Text="Ready"/>
+            </StatusBarItem>
+        </StatusBar>
+        
+        <!-- Rewards Panel -->
+        <Border x:Name="RewardsPanel" 
+                Grid.Row="0" Grid.RowSpan="3"
+                Panel.ZIndex="1000"
+                Background="#80000000" 
+                Visibility="Collapsed">
+            <Border Width="400" 
+                    Height="300" 
+                    Background="#2C3E50" 
+                    CornerRadius="8"
+                    Padding="20"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+                <StackPanel>
+                    <TextBlock Text="QUEST REWARDS" 
+                               Style="{StaticResource MaterialDesignHeadline6TextBlock}" 
+                               Foreground="#4CAF50"
+                               HorizontalAlignment="Center"
+                               Margin="0,0,0,20"/>
+                    
+                    <StackPanel x:Name="RewardsList" Margin="0,0,0,20">
+                        <!-- Rewards will be added here programmatically -->
+                    </StackPanel>
+                    
+                    <Button x:Name="CloseRewardsButton"
+                            Content="CONTINUE"
+                            Style="{StaticResource GameButtonStyle}"
+                            HorizontalAlignment="Center"
+                            Click="CloseRewardsButton_Click"/>
+                </StackPanel>
+            </Border>
+        </Border>
+    </Grid>
+    
+</Window>

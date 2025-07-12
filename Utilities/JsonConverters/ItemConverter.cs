@@ -1,12 +1,22 @@
-﻿using GodmistWPF.Items;
+using GodmistWPF.Items;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 
 namespace GodmistWPF.Utilities.JsonConverters;
 
+/// <summary>
+/// Konwerter JSON do serializacji i deserializacji słownika przedmiotów i ich ilości.
+/// Obsługuje różne typy przedmiotów implementujących interfejs IItem.
+/// </summary>
 public class ItemConverter : JsonConverter<Dictionary<IItem, int>>
 {
+    /// <summary>
+    /// Serializuje słownik przedmiotów i ich ilości do formatu JSON.
+    /// </summary>
+    /// <param name="writer">Pisarz JSON.</param>
+    /// <param name="value">Słownik zawierający pary przedmiot-ilość do zserializowania.</param>
+    /// <param name="serializer">Wystąpienie serializatora JSON.</param>
     public override void WriteJson(JsonWriter writer, Dictionary<IItem, int> value, JsonSerializer serializer)
     {
         writer.WriteStartObject();
@@ -34,6 +44,15 @@ public class ItemConverter : JsonConverter<Dictionary<IItem, int>>
         writer.WriteEndObject();
     }
 
+    /// <summary>
+    /// Deserializuje obiekt JSON do słownika przedmiotów i ich ilości.
+    /// </summary>
+    /// <param name="reader">Czytnik JSON.</param>
+    /// <param name="objectType">Typ obiektu do przekonwertowania.</param>
+    /// <param name="existingValue">Istniejąca wartość obiektu.</param>
+    /// <param name="hasExistingValue">Czy istnieje wartość dla obiektu docelowego.</param>
+    /// <param name="serializer">Wystąpienie serializatora JSON.</param>
+    /// <returns>Zdeserializowany słownik przedmiotów i ich ilości.</returns>
     public override Dictionary<IItem, int> ReadJson(JsonReader reader, Type objectType, Dictionary<IItem, int> existingValue, bool hasExistingValue, JsonSerializer serializer)
     {
         var items = new Dictionary<IItem, int>();

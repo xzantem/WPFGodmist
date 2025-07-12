@@ -1,4 +1,3 @@
-﻿using ConsoleGodmist;
 using GodmistWPF.Characters.Player;
 using GodmistWPF.Enums.Items;
 using GodmistWPF.Text;
@@ -6,13 +5,39 @@ using GodmistWPF.Utilities;
 
 namespace GodmistWPF.Items.Potions;
 
+/// <summary>
+/// Klasa reprezentująca pojedynczy komponent mikstury, który definiuje jej efekt i właściwości.
+/// Każdy komponent odpowiada za konkretny efekt, który jest aktywowany po użyciu mikstury.
+/// </summary>
 public class PotionComponent
 {
+    /// <summary>
+    /// Pobiera lub ustawia typ efektu, który jest aplikowany przez ten komponent.
+    /// </summary>
     public PotionEffect Effect { get; set; }
+    
+    /// <summary>
+    /// Pobiera lub ustawia poziom mocy efektu, który wpływa na jego siłę.
+    /// </summary>
     public int StrengthTier { get; set; }
+    
+    /// <summary>
+    /// Pobiera lub ustawia siłę efektu, która jest skalowana przez katalizator i czas trwania.
+    /// </summary>
     public double EffectStrength { get; set; }
+    
+    /// <summary>
+    /// Pobiera lub ustawia identyfikator materiału użytego do stworzenia tego komponentu.
+    /// </summary>
     public string Material { get; set; }
 
+    /// <summary>
+    /// Generuje opis efektu komponentu, uwzględniając modyfikacje z katalizatora.
+    /// </summary>
+    /// <param name="catalyst">Katalizator mikstury, który może modyfikować efekt (opcjonalny).</param>
+    /// <param name="showMaterial">Czy wyświetlać informacje o materiale i jego ilości w ekwipunku.</param>
+    /// <param name="amount">Wymagana ilość materiału do stworzenia (domyślnie 1).</param>
+    /// <returns>Sformatowany opis efektu komponentu.</returns>
     public string EffectDescription(PotionCatalyst? catalyst, bool showMaterial, int amount = 1)
     {
         var duration = 10 + (catalyst == null ? 0 : (int)(catalyst.Effect == PotionCatalystEffect.Duration ? catalyst.Strength : 0));
@@ -21,59 +46,59 @@ public class PotionComponent
         return Effect switch
         {
             PotionEffect.HealthRegain => showMaterial 
-                ? $"- {locale.HealthC} Regain: {strength:P0} {locale.HealthC} instantly " + 
+                ? $"- {strength:P0} {locale.HealthC} instantly " + 
                     $"({NameAliasHelper.GetName(Material)} ({PlayerHandler.player.Inventory.GetCount(Material)}/{amount}))\n" 
-                : $"- {locale.HealthC} Regain: {strength:P0} {locale.HealthC} instantly\n",
+                : $"- {strength:P0} {locale.HealthC} instantly\n",
             PotionEffect.HealthRegen => showMaterial 
-                ? $"- {locale.HealthC} Regen: {strength:P0} {locale.HealthC} over {condensedDuration} turns " + 
+                ? $"- {strength:P0} {locale.HealthC} over {condensedDuration} turns " + 
                     $"({NameAliasHelper.GetName(Material)} ({PlayerHandler.player.Inventory.GetCount(Material)}/{amount}))\n" 
-                : $"- {locale.HealthC} Regen: {strength:P0} {locale.HealthC} over {condensedDuration} turns\n",
+                : $"- {strength:P0} {locale.HealthC} over {condensedDuration} turns\n",
             PotionEffect.ResourceRegain => showMaterial 
-                ? $"- {BattleTextService.ResourceShortText(PlayerHandler.player)} Regain: {strength:P0} " +
+                ? $"- {strength:P0} " +
                     $"{BattleTextService.ResourceShortText(PlayerHandler.player)} instantly " + 
                     $"({NameAliasHelper.GetName(Material)} ({PlayerHandler.player.Inventory.GetCount(Material)}/{amount}))\n" 
-                : $"- {BattleTextService.ResourceShortText(PlayerHandler.player)} Regain: {strength:P0} " +
+                : $"- {strength:P0} " +
                     $"{BattleTextService.ResourceShortText(PlayerHandler.player)} instantly\n",
             PotionEffect.ResourceRegen => showMaterial 
-                ? $"- {BattleTextService.ResourceShortText(PlayerHandler.player)} Regen: {strength:P0} " +
+                ? $"- {strength:P0} " +
                     $"{BattleTextService.ResourceShortText(PlayerHandler.player)} over {condensedDuration} turns " + 
                     $"({NameAliasHelper.GetName(Material)} ({PlayerHandler.player.Inventory.GetCount(Material)}/{amount}))\n" 
-                : $"- {BattleTextService.ResourceShortText(PlayerHandler.player)} Regen: {strength:P0} " +
+                : $"- {strength:P0} " +
                     $"{BattleTextService.ResourceShortText(PlayerHandler.player)} over {condensedDuration} turns\n",
             PotionEffect.MaxResourceIncrease => showMaterial 
-                ? $"- Max {BattleTextService.ResourceShortText(PlayerHandler.player)} Increase: +{strength:P0} " +
+                ? $"- +{strength:P0} " +
                     $"{BattleTextService.ResourceShortText(PlayerHandler.player)} for {duration} turns " + 
                     $"({NameAliasHelper.GetName(Material)} ({PlayerHandler.player.Inventory.GetCount(Material)}/{amount}))\n" 
-                : $"- Max {BattleTextService.ResourceShortText(PlayerHandler.player)} Increase: +{strength:P0} " +
+                : $"- +{strength:P0} " +
                     $"{BattleTextService.ResourceShortText(PlayerHandler.player)} for {duration} turns\n",
             PotionEffect.DamageDealtIncrease => showMaterial 
-                ? $"- {locale.DamageDealt}: +{strength:P0} {locale.DamageGenitive} for {duration} turns " + 
+                ? $"- +{strength:P0} {locale.DamageGenitive} for {duration} turns " + 
                     $"({NameAliasHelper.GetName(Material)} ({PlayerHandler.player.Inventory.GetCount(Material)}/{amount}))\n" 
-                : $"- {locale.DamageDealt}: +{strength:P0} {locale.DamageGenitive} for {duration} turns\n",
+                : $"- +{strength:P0} {locale.DamageGenitive} for {duration} turns\n",
             PotionEffect.DamageTakenDecrease => showMaterial 
-                ? $"- {locale.DamageTaken}: -{strength:P0} {locale.DamageGenitive} for {duration} turns " + 
+                ? $"- -{strength:P0} {locale.DamageGenitive} for {duration} turns " + 
                     $"({NameAliasHelper.GetName(Material)} ({PlayerHandler.player.Inventory.GetCount(Material)}/{amount}))\n" 
-                : $"- {locale.DamageTaken}: -{strength:P0} {locale.DamageGenitive} for {duration} turns\n",
+                : $"- -{strength:P0} {locale.DamageGenitive} for {duration} turns\n",
             PotionEffect.ResistanceIncrease => showMaterial 
-                ? $"- {locale.Resistances}: +{strength:P0} {locale.Resistances} for {duration} turns " + 
+                ? $"- +{strength:P0} {locale.Resistances} for {duration} turns " + 
                     $"({NameAliasHelper.GetName(Material)} ({PlayerHandler.player.Inventory.GetCount(Material)}/{amount}))\n" 
-                : $"- {locale.Resistances}: +{strength:P0} {locale.Resistances} for {duration} turns\n",
+                : $"- +{strength:P0} {locale.Resistances} for {duration} turns\n",
             PotionEffect.SpeedIncrease => showMaterial 
-                ? $"- {locale.Speed}: +{strength:P0} {locale.Speed} for {duration} turns " + 
+                ? $"- +{strength:P0} {locale.Speed} for {duration} turns " + 
                     $"({NameAliasHelper.GetName(Material)} ({PlayerHandler.player.Inventory.GetCount(Material)}/{amount}))\n" 
-                : $"- {locale.Speed}: +{strength:P0} {locale.Speed} for {duration} turns\n",
+                : $"- +{strength:P0} {locale.Speed} for {duration} turns\n",
             PotionEffect.CritChanceIncrese => showMaterial 
-                ? $"- {locale.CritChance}: +{strength:P0} {locale.CritChance} for {duration} turns " + 
+                ? $"- +{strength:P0} {locale.CritChance} for {duration} turns " + 
                     $"({NameAliasHelper.GetName(Material)} ({PlayerHandler.player.Inventory.GetCount(Material)}/{amount}))\n" 
-                : $"- {locale.CritChance}: +{strength:P0} {locale.CritChance} for {duration} turns\n",
+                : $"- +{strength:P0} {locale.CritChance} for {duration} turns\n",
             PotionEffect.DodgeIncrease => showMaterial 
-                ? $"- {locale.Dodge}: +{strength:F0} {locale.Dodge} for {duration} turns " + 
+                ? $"- +{strength:F0} {locale.Dodge} for {duration} turns " + 
                     $"({NameAliasHelper.GetName(Material)} ({PlayerHandler.player.Inventory.GetCount(Material)}/{amount}))\n" 
-                : $"- {locale.Dodge}: +{strength:F0} {locale.Dodge} for {duration} turns\n",
+                : $"- +{strength:F0} {locale.Dodge} for {duration} turns\n",
             PotionEffect.AccuracyIncrease => showMaterial 
-                ? $"- {locale.Accuracy}: +{strength:P0} {locale.Accuracy} for {duration} turns " + 
+                ? $"- +{strength:P0} {locale.Accuracy} for {duration} turns " + 
                     $"({NameAliasHelper.GetName(Material)} ({PlayerHandler.player.Inventory.GetCount(Material)}/{amount}))\n" 
-                : $"- {locale.Accuracy}: +{strength:P0} {locale.Accuracy} for {duration} turns\n",
+                : $"- +{strength:P0} {locale.Accuracy} for {duration} turns\n",
             _ => throw new ArgumentOutOfRangeException()
         };
     }

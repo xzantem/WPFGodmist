@@ -1,17 +1,36 @@
-﻿using GodmistWPF.Items.Equippable;
+using GodmistWPF.Items.Equippable;
 using GodmistWPF.Items.Galdurites;
 using GodmistWPF.Utilities;
 
-
 namespace GodmistWPF.Items.Drops;
 
+/// <summary>
+/// Klasa reprezentująca pulę przedmiotów, z których może coś wypaść.
+/// Zawiera słownik przedmiotów i ich parametrów oraz tablicę szans na wypadnięcie.
+/// </summary>
 public class DropPool
 {
+    /// <summary>
+    /// Słownik zawierający przedmioty w puli, gdzie kluczem jest alias przedmiotu,
+    /// a wartością obiekt ItemDrop określający parametry wypadnięcia.
+    /// </summary>
     public Dictionary<string, ItemDrop> Pool { get; set; }
+    
+    /// <summary>
+    /// Tablica szans na wypadnięcie przedmiotu z puli.
+    /// Każdy element tablicy określa szansę na dodatkowy przedmiot z puli.
+    /// </summary>
     public double[] Chances { get; set; }
 
-    public DropPool() { } // For JSON deserialization
+    /// <summary>
+    /// Konstruktor domyślny wymagany do deserializacji JSON.
+    /// </summary>
+    public DropPool() { }
 
+    /// <summary>
+    /// Konstruktor kopiujący tworzący głęboką kopię obiektu DropPool.
+    /// </summary>
+    /// <param name="other">Obiekt do skopiowania.</param>
     public DropPool(DropPool other)
     {
         Pool = other.Pool.ToDictionary(x => x.Key, x => 
@@ -19,6 +38,11 @@ public class DropPool
         Chances = (double[])other.Chances.Clone();
     }
 
+    /// <summary>
+    /// Wybiera losowy przedmiot z puli, uwzględniając poziom postaci.
+    /// </summary>
+    /// <param name="level">Poziom postaci, dla którego wybierany jest przedmiot.</param>
+    /// <returns>Para zawierająca przedmiot i jego parametry.</returns>
     public KeyValuePair<IItem, ItemDrop> Choice(int level)
     {
         var choice = UtilityMethods.RandomChoice(Pool
@@ -43,6 +67,11 @@ public class DropPool
         return item;
     }
 
+    /// <summary>
+    /// Pobiera losowy przedmiot z puli z losową ilością.
+    /// </summary>
+    /// <param name="level">Poziom postaci, dla którego wybierany jest przedmiot.</param>
+    /// <returns>Para zawierająca przedmiot i losową ilość z zakresu zdefiniowanego w ItemDrop.</returns>
     public KeyValuePair<IItem, int> GetDrop(int level)
     {
         var drop = Choice(level);

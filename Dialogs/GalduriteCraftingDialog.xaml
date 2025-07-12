@@ -1,0 +1,121 @@
+<Window x:Class="GodmistWPF.Dialogs.GalduriteCraftingDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GodmistWPF.Dialogs"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Craft Galdurite" 
+        Height="600" 
+        Width="600"
+        WindowStartupLocation="CenterScreen"
+        Style="{StaticResource MaterialDesignWindow}"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Header -->
+        <TextBlock Grid.Row="0" 
+                   Text="Galdurite Crafting" 
+                   Style="{StaticResource MaterialDesignHeadline6TextBlock}" 
+                   Margin="0,0,0,10"/>
+        
+        <!-- Galdurite Options -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,0,0,15">
+            <ComboBox x:Name="GalduriteTypeCombo" 
+                      Width="150" 
+                      Margin="0,0,10,0"
+                      materialDesign:HintAssist.Hint="Type"
+                      Style="{StaticResource MaterialDesignFloatingHintComboBox}"/>
+            
+            <ComboBox x:Name="GalduriteTierCombo" 
+                      Width="80" 
+                      Margin="0,0,10,0"
+                      materialDesign:HintAssist.Hint="Tier"
+                      Style="{StaticResource MaterialDesignFloatingHintComboBox}"/>
+            
+            <ComboBox x:Name="GalduriteColorCombo" 
+                      Width="120"
+                      materialDesign:HintAssist.Hint="Color"
+                      Style="{StaticResource MaterialDesignFloatingHintComboBox}"/>
+        </StackPanel>
+        
+        <!-- Preview Components -->
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <Border BorderBrush="{DynamicResource MaterialDesignDivider}" 
+                    BorderThickness="1" 
+                    CornerRadius="4"
+                    Grid.RowSpan="2"/>
+            
+            <TextBlock Text="Possible Effects" 
+                       Style="{StaticResource MaterialDesignSubtitle1TextBlock}"
+                       Margin="10,5,5,5"/>
+            
+            <ScrollViewer Grid.Row="1" 
+                          VerticalScrollBarVisibility="Auto"
+                          HorizontalScrollBarVisibility="Disabled"
+                          Margin="5">
+                <ItemsControl x:Name="SelectedComponentsList" 
+                              ItemsSource="{Binding}"
+                              IsHitTestVisible="False">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border Margin="0,0,0,5" Padding="5">
+                                <TextBlock Text="{Binding EffectText}" 
+                                           Foreground="{DynamicResource MaterialDesignBodyLight}"
+                                           TextWrapping="Wrap"/>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+        </Grid>
+        
+        <!-- Material Cost -->
+        <Border Grid.Row="3" 
+                BorderBrush="{DynamicResource MaterialDesignDivider}" 
+                BorderThickness="0,1,0,0"
+                Margin="0,10,0,10"
+                Padding="0,5,0,5">
+            <StackPanel>
+                <TextBlock x:Name="MaterialCostText" 
+                           Style="{StaticResource MaterialDesignBody1TextBlock}"/>
+                <TextBlock x:Name="StatusText" 
+                           Style="{StaticResource MaterialDesignBody2TextBlock}"
+                           Margin="0,5,0,0"/>
+            </StackPanel>
+        </Border>
+        
+        <!-- Buttons -->
+        <StackPanel Grid.Row="4" 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Right">
+            <Button x:Name="CancelButton" 
+                    Content="Cancel" 
+                    Margin="0,0,10,0"
+                    Click="CancelButton_Click"/>
+            <Button x:Name="CraftButton" 
+                    Content="Craft Galdurite" 
+                    Style="{StaticResource MaterialDesignRaisedButton}"
+                    Click="CraftButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

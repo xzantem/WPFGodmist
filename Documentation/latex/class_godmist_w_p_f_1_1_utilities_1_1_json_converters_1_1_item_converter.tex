@@ -1,0 +1,78 @@
+\doxysection{Godmist\+WPF.\+Utilities.\+Json\+Converters.\+Item\+Converter Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_item_converter}{}\label{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_item_converter}\index{GodmistWPF.Utilities.JsonConverters.ItemConverter@{GodmistWPF.Utilities.JsonConverters.ItemConverter}}
+
+
+Konwerter JSON do serializacji i deserializacji słownika przedmiotów i ich ilości. Obsługuje różne typy przedmiotów implementujących interfejs \doxylink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Utilities.\+Json\+Converters.\+Item\+Converter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_item_converter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_item_converter_aa90d8a894f0f692f55d98a985bf8baa4}{Write\+Json}} (Json\+Writer writer, Dictionary$<$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}, int $>$ value, Json\+Serializer serializer)
+\begin{DoxyCompactList}\small\item\em Serializuje słownik przedmiotów i ich ilości do formatu JSON. \end{DoxyCompactList}\item 
+override Dictionary$<$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}, int $>$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_item_converter_a680748f651ff9254859db1a07f3631d2}{Read\+Json}} (Json\+Reader reader, Type object\+Type, Dictionary$<$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}, int $>$ existing\+Value, bool has\+Existing\+Value, Json\+Serializer serializer)
+\begin{DoxyCompactList}\small\item\em Deserializuje obiekt JSON do słownika przedmiotów i ich ilości. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Konwerter JSON do serializacji i deserializacji słownika przedmiotów i ich ilości. Obsługuje różne typy przedmiotów implementujących interfejs \doxylink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}. 
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_item_converter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_item_converter_a680748f651ff9254859db1a07f3631d2}\index{GodmistWPF.Utilities.JsonConverters.ItemConverter@{GodmistWPF.Utilities.JsonConverters.ItemConverter}!ReadJson@{ReadJson}}
+\index{ReadJson@{ReadJson}!GodmistWPF.Utilities.JsonConverters.ItemConverter@{GodmistWPF.Utilities.JsonConverters.ItemConverter}}
+\doxysubsubsection{\texorpdfstring{ReadJson()}{ReadJson()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_item_converter_a680748f651ff9254859db1a07f3631d2} 
+override Dictionary$<$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}, int $>$ Godmist\+WPF.\+Utilities.\+Json\+Converters.\+Item\+Converter.\+Read\+Json (\begin{DoxyParamCaption}\item[{Json\+Reader}]{reader}{, }\item[{Type}]{object\+Type}{, }\item[{Dictionary$<$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}, int $>$}]{existing\+Value}{, }\item[{bool}]{has\+Existing\+Value}{, }\item[{Json\+Serializer}]{serializer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Deserializuje obiekt JSON do słownika przedmiotów i ich ilości. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & Czytnik JSON.\\
+\hline
+{\em object\+Type} & Typ obiektu do przekonwertowania.\\
+\hline
+{\em existing\+Value} & Istniejąca wartość obiektu.\\
+\hline
+{\em has\+Existing\+Value} & Czy istnieje wartość dla obiektu docelowego.\\
+\hline
+{\em serializer} & Wystąpienie serializatora JSON.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Zdeserializowany słownik przedmiotów i ich ilości.
+\end{DoxyReturn}
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_item_converter_aa90d8a894f0f692f55d98a985bf8baa4}\index{GodmistWPF.Utilities.JsonConverters.ItemConverter@{GodmistWPF.Utilities.JsonConverters.ItemConverter}!WriteJson@{WriteJson}}
+\index{WriteJson@{WriteJson}!GodmistWPF.Utilities.JsonConverters.ItemConverter@{GodmistWPF.Utilities.JsonConverters.ItemConverter}}
+\doxysubsubsection{\texorpdfstring{WriteJson()}{WriteJson()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_item_converter_aa90d8a894f0f692f55d98a985bf8baa4} 
+override void Godmist\+WPF.\+Utilities.\+Json\+Converters.\+Item\+Converter.\+Write\+Json (\begin{DoxyParamCaption}\item[{Json\+Writer}]{writer}{, }\item[{Dictionary$<$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}, int $>$}]{value}{, }\item[{Json\+Serializer}]{serializer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Serializuje słownik przedmiotów i ich ilości do formatu JSON. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em writer} & Pisarz JSON.\\
+\hline
+{\em value} & Słownik zawierający pary przedmiot-\/ilość do zserializowania.\\
+\hline
+{\em serializer} & Wystąpienie serializatora JSON.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Utilities/\+Json\+Converters/Item\+Converter.\+cs\end{DoxyCompactItemize}

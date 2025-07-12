@@ -1,0 +1,90 @@
+\doxysection{Godmist\+WPF.\+Quests.\+Objectives.\+IQuest\+Objective Interface Reference}
+\hypertarget{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective}{}\label{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective}\index{GodmistWPF.Quests.Objectives.IQuestObjective@{GodmistWPF.Quests.Objectives.IQuestObjective}}
+
+
+Interfejs definiujący zachowanie celu zadania. Każdy cel zadania musi implementować metody do śledzenia postępu i sprawdzania ukończenia.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Quests.\+Objectives.\+IQuest\+Objective\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.435967cm]{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective_a7f70ddfcacf8816f08f605a9f6e7c145}{Progress}} (\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context}{Quest\+Objective\+Context}} context)
+\begin{DoxyCompactList}\small\item\em Aktualizuje postęp celu na podstawie dostarczonego kontekstu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective_aa71bf68a394092b39ad09798a738218c}{Is\+Complete}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Określa, czy cel został ukończony. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective_ad6d9942cd93635eb47c9661482f17979}{Description}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera opis celu zadania, który jest wyświetlany graczowi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interfejs definiujący zachowanie celu zadania. Każdy cel zadania musi implementować metody do śledzenia postępu i sprawdzania ukończenia. 
+
+\label{doc-func-members}
+\Hypertarget{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective_a7f70ddfcacf8816f08f605a9f6e7c145}\index{GodmistWPF.Quests.Objectives.IQuestObjective@{GodmistWPF.Quests.Objectives.IQuestObjective}!Progress@{Progress}}
+\index{Progress@{Progress}!GodmistWPF.Quests.Objectives.IQuestObjective@{GodmistWPF.Quests.Objectives.IQuestObjective}}
+\doxysubsubsection{\texorpdfstring{Progress()}{Progress()}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective_a7f70ddfcacf8816f08f605a9f6e7c145} 
+void Godmist\+WPF.\+Quests.\+Objectives.\+IQuest\+Objective.\+Progress (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context}{Quest\+Objective\+Context}}}]{context}{}\end{DoxyParamCaption})}
+
+
+
+Aktualizuje postęp celu na podstawie dostarczonego kontekstu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & Kontekst zawierający informacje o wykonanej akcji.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_activate_quest_objective_acf04ee2aa9d0af95ef6b9c6a23c49f87}{Godmist\+WPF.\+Quests.\+Objectives.\+Activate\+Quest\+Objective}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_collect_quest_objective_a589e6c7b7b1657de9bf54ef6d6c9ee7b}{Godmist\+WPF.\+Quests.\+Objectives.\+Collect\+Quest\+Objective}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective_adf42a994f79c6ba92ad0fe83fbad91c4}{Godmist\+WPF.\+Quests.\+Objectives.\+Descend\+Quest\+Objective}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_give_item_quest_objective_ac0ff1e9af5e6551cc91b8170a10b9d99}{Godmist\+WPF.\+Quests.\+Objectives.\+Give\+Item\+Quest\+Objective}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective_a53348bd7590a04fb7db5c79e88fcdebc}{Godmist\+WPF.\+Quests.\+Objectives.\+Kill\+In\+Dungeon\+Quest\+Objective}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective_aea14b5cf33cb27e9ab9ecfe6cd4949c3}{Godmist\+WPF.\+Quests.\+Objectives.\+Kill\+Quest\+Objective}}, and \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_talk_quest_objective_a2133b7893540599de5181174096c8a4b}{Godmist\+WPF.\+Quests.\+Objectives.\+Talk\+Quest\+Objective}}.
+
+
+
+\label{doc-property-members}
+\Hypertarget{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective_ad6d9942cd93635eb47c9661482f17979}\index{GodmistWPF.Quests.Objectives.IQuestObjective@{GodmistWPF.Quests.Objectives.IQuestObjective}!Description@{Description}}
+\index{Description@{Description}!GodmistWPF.Quests.Objectives.IQuestObjective@{GodmistWPF.Quests.Objectives.IQuestObjective}}
+\doxysubsubsection{\texorpdfstring{Description}{Description}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective_ad6d9942cd93635eb47c9661482f17979} 
+string Godmist\+WPF.\+Quests.\+Objectives.\+IQuest\+Objective.\+Description\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera opis celu zadania, który jest wyświetlany graczowi. 
+
+
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_activate_quest_objective_ac2e1caa95aaecabb047b646c2efec17e}{Godmist\+WPF.\+Quests.\+Objectives.\+Activate\+Quest\+Objective}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_collect_quest_objective_af53f5860366dd4812a7669083ddc921a}{Godmist\+WPF.\+Quests.\+Objectives.\+Collect\+Quest\+Objective}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective_a84796b591499e61270e82c6297188e81}{Godmist\+WPF.\+Quests.\+Objectives.\+Descend\+Quest\+Objective}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_give_item_quest_objective_a0014b7f9472ed2c561bf3f8dd9f9879d}{Godmist\+WPF.\+Quests.\+Objectives.\+Give\+Item\+Quest\+Objective}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective_a5ecc006ffb16c7ac772418a3f9a890fd}{Godmist\+WPF.\+Quests.\+Objectives.\+Kill\+In\+Dungeon\+Quest\+Objective}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective_ac18c6d7dabc3c815f8f895cf113fa8ee}{Godmist\+WPF.\+Quests.\+Objectives.\+Kill\+Quest\+Objective}}, and \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_talk_quest_objective_a6bb949e606994f5067125bd2ce0e5892}{Godmist\+WPF.\+Quests.\+Objectives.\+Talk\+Quest\+Objective}}.
+
+\Hypertarget{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective_aa71bf68a394092b39ad09798a738218c}\index{GodmistWPF.Quests.Objectives.IQuestObjective@{GodmistWPF.Quests.Objectives.IQuestObjective}!IsComplete@{IsComplete}}
+\index{IsComplete@{IsComplete}!GodmistWPF.Quests.Objectives.IQuestObjective@{GodmistWPF.Quests.Objectives.IQuestObjective}}
+\doxysubsubsection{\texorpdfstring{IsComplete}{IsComplete}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective_aa71bf68a394092b39ad09798a738218c} 
+bool Godmist\+WPF.\+Quests.\+Objectives.\+IQuest\+Objective.\+Is\+Complete\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Określa, czy cel został ukończony. 
+
+
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_activate_quest_objective_aef858ab76d09c988b1c150c524deee39}{Godmist\+WPF.\+Quests.\+Objectives.\+Activate\+Quest\+Objective}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_collect_quest_objective_a42609bb9d4273fd2440d3cc6f5ca5bc0}{Godmist\+WPF.\+Quests.\+Objectives.\+Collect\+Quest\+Objective}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective_aa65286fbcbc40d2f6b5ff576b1583d76}{Godmist\+WPF.\+Quests.\+Objectives.\+Descend\+Quest\+Objective}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_give_item_quest_objective_a1b405a3a31cd32528f449d19b8a4a5ea}{Godmist\+WPF.\+Quests.\+Objectives.\+Give\+Item\+Quest\+Objective}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective_a7d7ab0983071127e5c38d93b6efa7595}{Godmist\+WPF.\+Quests.\+Objectives.\+Kill\+In\+Dungeon\+Quest\+Objective}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective_ad8fa93028ee39fc2569fd89a7505919d}{Godmist\+WPF.\+Quests.\+Objectives.\+Kill\+Quest\+Objective}}, and \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_talk_quest_objective_a6b89dc9fdeeb44fed5c31e9f05ba4d8d}{Godmist\+WPF.\+Quests.\+Objectives.\+Talk\+Quest\+Objective}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Quests/\+Objectives/IQuest\+Objective.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,114 @@
+\doxysection{Godmist\+WPF.\+Controls.\+Quest\+Completed\+Overlay Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_controls_1_1_quest_completed_overlay}{}\label{class_godmist_w_p_f_1_1_controls_1_1_quest_completed_overlay}\index{GodmistWPF.Controls.QuestCompletedOverlay@{GodmistWPF.Controls.QuestCompletedOverlay}}
+
+
+Kontrolka wyświetlająca powiadomienie o ukończeniu zadania.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Controls.\+Quest\+Completed\+Overlay\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_godmist_w_p_f_1_1_controls_1_1_quest_completed_overlay}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_controls_1_1_quest_completed_overlay_ae9029f731bd06fe6b092106b58327b79}\label{class_godmist_w_p_f_1_1_controls_1_1_quest_completed_overlay_ae9029f731bd06fe6b092106b58327b79} 
+{\bfseries Quest\+Completed\+Overlay} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_controls_1_1_quest_completed_overlay}{Quest\+Completed\+Overlay}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_controls_1_1_quest_completed_overlay_a3753789b165bdfc3dc9e7e44a771fe1c}{Show\+Completed\+Quests}} (IEnumerable$<$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_quest}{Quest}} $>$ quests)
+\begin{DoxyCompactList}\small\item\em Wyświetla kolekcję ukończonych zadań. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly Dependency\+Property \mbox{\hyperlink{class_godmist_w_p_f_1_1_controls_1_1_quest_completed_overlay_a9056d3c34115b42e081399a9d58cfd5b}{Quest\+Name\+Property}}
+\begin{DoxyCompactList}\small\item\em Identyfikuje właściwość zależności Quest\+Name. \end{DoxyCompactList}\item 
+static readonly Dependency\+Property \mbox{\hyperlink{class_godmist_w_p_f_1_1_controls_1_1_quest_completed_overlay_a1090cf0046094bcdb322818059d72dce}{Quest\+Ender\+Text\+Property}}
+\begin{DoxyCompactList}\small\item\em Identyfikuje właściwość zależności Quest\+Ender\+Text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_controls_1_1_quest_completed_overlay_a01dad9474d5b9bf19ad9dc65b4a8d497}\label{class_godmist_w_p_f_1_1_controls_1_1_quest_completed_overlay_a01dad9474d5b9bf19ad9dc65b4a8d497} 
+string {\bfseries Quest\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia nazwę ukończonego zadania. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_controls_1_1_quest_completed_overlay_a338cb10a224e66392157d66d09700ac6}\label{class_godmist_w_p_f_1_1_controls_1_1_quest_completed_overlay_a338cb10a224e66392157d66d09700ac6} 
+string {\bfseries Quest\+Ender}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia tekst informujący o osobie, do której należy się zgłosić po nagrodę. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_controls_1_1_quest_completed_overlay_a5210710394eae21d404742bf47bd87fe}\label{class_godmist_w_p_f_1_1_controls_1_1_quest_completed_overlay_a5210710394eae21d404742bf47bd87fe} 
+Event\+Handler {\bfseries All\+Quests\+Shown}
+\begin{DoxyCompactList}\small\item\em Występuje, gdy wszystkie zadania z kolejki zostały wyświetlone. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Kontrolka wyświetlająca powiadomienie o ukończeniu zadania. 
+
+Wyświetla animowane powiadomienie o ukończeniu zadania z przyciskiem kontynuacji. Obsługuje kolejkę zadań, wyświetlając je jedno po drugim. 
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_controls_1_1_quest_completed_overlay_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_controls_1_1_quest_completed_overlay_a3753789b165bdfc3dc9e7e44a771fe1c}\index{GodmistWPF.Controls.QuestCompletedOverlay@{GodmistWPF.Controls.QuestCompletedOverlay}!ShowCompletedQuests@{ShowCompletedQuests}}
+\index{ShowCompletedQuests@{ShowCompletedQuests}!GodmistWPF.Controls.QuestCompletedOverlay@{GodmistWPF.Controls.QuestCompletedOverlay}}
+\doxysubsubsection{\texorpdfstring{ShowCompletedQuests()}{ShowCompletedQuests()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_controls_1_1_quest_completed_overlay_a3753789b165bdfc3dc9e7e44a771fe1c} 
+void Godmist\+WPF.\+Controls.\+Quest\+Completed\+Overlay.\+Show\+Completed\+Quests (\begin{DoxyParamCaption}\item[{IEnumerable$<$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_quest}{Quest}} $>$}]{quests}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wyświetla kolekcję ukończonych zadań. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quests} & Kolekcja ukończonych zadań do wyświetlenia.\\
+\hline
+\end{DoxyParams}
+
+
+Jeśli kolekcja jest pusta lub równa null, od razu wywołuje zdarzenie All\+Quests\+Shown. 
+
+\label{doc-variable-members}
+\Hypertarget{class_godmist_w_p_f_1_1_controls_1_1_quest_completed_overlay_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_controls_1_1_quest_completed_overlay_a1090cf0046094bcdb322818059d72dce}\index{GodmistWPF.Controls.QuestCompletedOverlay@{GodmistWPF.Controls.QuestCompletedOverlay}!QuestEnderTextProperty@{QuestEnderTextProperty}}
+\index{QuestEnderTextProperty@{QuestEnderTextProperty}!GodmistWPF.Controls.QuestCompletedOverlay@{GodmistWPF.Controls.QuestCompletedOverlay}}
+\doxysubsubsection{\texorpdfstring{QuestEnderTextProperty}{QuestEnderTextProperty}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_controls_1_1_quest_completed_overlay_a1090cf0046094bcdb322818059d72dce} 
+readonly Dependency\+Property Godmist\+WPF.\+Controls.\+Quest\+Completed\+Overlay.\+Quest\+Ender\+Text\+Property\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ DependencyProperty.Register(nameof(\mbox{\hyperlink{class_godmist_w_p_f_1_1_controls_1_1_quest_completed_overlay_a338cb10a224e66392157d66d09700ac6}{QuestEnder}}),\ typeof(\textcolor{keywordtype}{string}),\ typeof(\mbox{\hyperlink{class_godmist_w_p_f_1_1_controls_1_1_quest_completed_overlay_ae9029f731bd06fe6b092106b58327b79}{QuestCompletedOverlay}}),\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ PropertyMetadata(\textcolor{keywordtype}{string}.Empty))}
+
+\end{DoxyCode}
+
+
+Identyfikuje właściwość zależności Quest\+Ender\+Text. 
+
+\Hypertarget{class_godmist_w_p_f_1_1_controls_1_1_quest_completed_overlay_a9056d3c34115b42e081399a9d58cfd5b}\index{GodmistWPF.Controls.QuestCompletedOverlay@{GodmistWPF.Controls.QuestCompletedOverlay}!QuestNameProperty@{QuestNameProperty}}
+\index{QuestNameProperty@{QuestNameProperty}!GodmistWPF.Controls.QuestCompletedOverlay@{GodmistWPF.Controls.QuestCompletedOverlay}}
+\doxysubsubsection{\texorpdfstring{QuestNameProperty}{QuestNameProperty}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_controls_1_1_quest_completed_overlay_a9056d3c34115b42e081399a9d58cfd5b} 
+readonly Dependency\+Property Godmist\+WPF.\+Controls.\+Quest\+Completed\+Overlay.\+Quest\+Name\+Property\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ DependencyProperty.Register(\textcolor{stringliteral}{"{}QuestName"{}},\ typeof(\textcolor{keywordtype}{string}),\ typeof(\mbox{\hyperlink{class_godmist_w_p_f_1_1_controls_1_1_quest_completed_overlay_ae9029f731bd06fe6b092106b58327b79}{QuestCompletedOverlay}}),\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ PropertyMetadata(\textcolor{keywordtype}{string}.Empty))}
+
+\end{DoxyCode}
+
+
+Identyfikuje właściwość zależności Quest\+Name. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Controls/Quest\+Completed\+Overlay.\+xaml.\+cs\end{DoxyCompactItemize}

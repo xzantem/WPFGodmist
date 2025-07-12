@@ -1,0 +1,126 @@
+\doxysection{Godmist\+WPF.\+Quests.\+Objectives.\+Kill\+In\+Dungeon\+Quest\+Objective Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective}{}\label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective}\index{GodmistWPF.Quests.Objectives.KillInDungeonQuestObjective@{GodmistWPF.Quests.Objectives.KillInDungeonQuestObjective}}
+
+
+Cel zadania polegający na pokonaniu określonej liczby przeciwników w konkretnym lochu.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Quests.\+Objectives.\+Kill\+In\+Dungeon\+Quest\+Objective\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective_a153152f3f2b89c7e8dc50945a9f2152d}\label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective_a153152f3f2b89c7e8dc50945a9f2152d} 
+{\bfseries Kill\+In\+Dungeon\+Quest\+Objective} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective}{Kill\+In\+Dungeon\+Quest\+Objective}. Używany przez serializator JSON. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective_a93637f163665c1694ec76689c5359b13}{Kill\+In\+Dungeon\+Quest\+Objective}} (\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_dungeons_a15f971492ab6ad201d47cdfc14c3defe}{Dungeon\+Type}} dungeon, int amount\+To\+Kill)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective}{Kill\+In\+Dungeon\+Quest\+Objective} z określonym lochem i liczbą przeciwników. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective_a53348bd7590a04fb7db5c79e88fcdebc}{Progress}} (\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context}{Quest\+Objective\+Context}} context)
+\begin{DoxyCompactList}\small\item\em Aktualizuje postęp zadania na podstawie dostarczonego kontekstu. Zwiększa licznik pokonanych przeciwników, jeśli kontekst dotyczy odpowiedniego lochu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective_a7d7ab0983071127e5c38d93b6efa7595}{Is\+Complete}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Określa, czy cel został ukończony. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective_a5ecc006ffb16c7ac772418a3f9a890fd}{Description}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera opis celu w formacie "{}\+Pokonaj \mbox{[}liczba\mbox{]} przeciwników w \mbox{[}nazwa lochu w miejscowniku\mbox{]} (aktualnie/do pokonania)"{}. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective_a92b764f0126ebfc250769f4501a61feb}\label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective_a92b764f0126ebfc250769f4501a61feb} 
+\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_dungeons_a15f971492ab6ad201d47cdfc14c3defe}{Dungeon\+Type}} {\bfseries Target}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Typ lochu, w którym należy pokonać przeciwników. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective_a6db8ad485eb6d70a8de373dd8040004d}\label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective_a6db8ad485eb6d70a8de373dd8040004d} 
+int {\bfseries Amount\+To\+Kill}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Wymagana liczba przeciwników do pokonania. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective_a64af0d483b012520fd21c2f285327fa1}\label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective_a64af0d483b012520fd21c2f285327fa1} 
+int {\bfseries Quest\+Progress}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Aktualna liczba pokonanych przeciwników. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Cel zadania polegający na pokonaniu określonej liczby przeciwników w konkretnym lochu. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective_a93637f163665c1694ec76689c5359b13}\index{GodmistWPF.Quests.Objectives.KillInDungeonQuestObjective@{GodmistWPF.Quests.Objectives.KillInDungeonQuestObjective}!KillInDungeonQuestObjective@{KillInDungeonQuestObjective}}
+\index{KillInDungeonQuestObjective@{KillInDungeonQuestObjective}!GodmistWPF.Quests.Objectives.KillInDungeonQuestObjective@{GodmistWPF.Quests.Objectives.KillInDungeonQuestObjective}}
+\doxysubsubsection{\texorpdfstring{KillInDungeonQuestObjective()}{KillInDungeonQuestObjective()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective_a93637f163665c1694ec76689c5359b13} 
+Godmist\+WPF.\+Quests.\+Objectives.\+Kill\+In\+Dungeon\+Quest\+Objective.\+Kill\+In\+Dungeon\+Quest\+Objective (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_dungeons_a15f971492ab6ad201d47cdfc14c3defe}{Dungeon\+Type}}}]{dungeon}{, }\item[{int}]{amount\+To\+Kill}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective}{Kill\+In\+Dungeon\+Quest\+Objective} z określonym lochem i liczbą przeciwników. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dungeon} & Typ lochu, w którym należy pokonać przeciwników.\\
+\hline
+{\em amount\+To\+Kill} & Wymagana liczba przeciwników do pokonania.\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective_a53348bd7590a04fb7db5c79e88fcdebc}\index{GodmistWPF.Quests.Objectives.KillInDungeonQuestObjective@{GodmistWPF.Quests.Objectives.KillInDungeonQuestObjective}!Progress@{Progress}}
+\index{Progress@{Progress}!GodmistWPF.Quests.Objectives.KillInDungeonQuestObjective@{GodmistWPF.Quests.Objectives.KillInDungeonQuestObjective}}
+\doxysubsubsection{\texorpdfstring{Progress()}{Progress()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective_a53348bd7590a04fb7db5c79e88fcdebc} 
+void Godmist\+WPF.\+Quests.\+Objectives.\+Kill\+In\+Dungeon\+Quest\+Objective.\+Progress (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context}{Quest\+Objective\+Context}}}]{context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Aktualizuje postęp zadania na podstawie dostarczonego kontekstu. Zwiększa licznik pokonanych przeciwników, jeśli kontekst dotyczy odpowiedniego lochu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & Kontekst zawierający informacje o zabitym przeciwniku i lokacji.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective_a7f70ddfcacf8816f08f605a9f6e7c145}{Godmist\+WPF.\+Quests.\+Objectives.\+IQuest\+Objective}}.
+
+
+
+\label{doc-property-members}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective_a5ecc006ffb16c7ac772418a3f9a890fd}\index{GodmistWPF.Quests.Objectives.KillInDungeonQuestObjective@{GodmistWPF.Quests.Objectives.KillInDungeonQuestObjective}!Description@{Description}}
+\index{Description@{Description}!GodmistWPF.Quests.Objectives.KillInDungeonQuestObjective@{GodmistWPF.Quests.Objectives.KillInDungeonQuestObjective}}
+\doxysubsubsection{\texorpdfstring{Description}{Description}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective_a5ecc006ffb16c7ac772418a3f9a890fd} 
+string Godmist\+WPF.\+Quests.\+Objectives.\+Kill\+In\+Dungeon\+Quest\+Objective.\+Description\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera opis celu w formacie "{}\+Pokonaj \mbox{[}liczba\mbox{]} przeciwników w \mbox{[}nazwa lochu w miejscowniku\mbox{]} (aktualnie/do pokonania)"{}. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective_ad6d9942cd93635eb47c9661482f17979}{Godmist\+WPF.\+Quests.\+Objectives.\+IQuest\+Objective}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective_a7d7ab0983071127e5c38d93b6efa7595}\index{GodmistWPF.Quests.Objectives.KillInDungeonQuestObjective@{GodmistWPF.Quests.Objectives.KillInDungeonQuestObjective}!IsComplete@{IsComplete}}
+\index{IsComplete@{IsComplete}!GodmistWPF.Quests.Objectives.KillInDungeonQuestObjective@{GodmistWPF.Quests.Objectives.KillInDungeonQuestObjective}}
+\doxysubsubsection{\texorpdfstring{IsComplete}{IsComplete}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_in_dungeon_quest_objective_a7d7ab0983071127e5c38d93b6efa7595} 
+bool Godmist\+WPF.\+Quests.\+Objectives.\+Kill\+In\+Dungeon\+Quest\+Objective.\+Is\+Complete\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Określa, czy cel został ukończony. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective_aa71bf68a394092b39ad09798a738218c}{Godmist\+WPF.\+Quests.\+Objectives.\+IQuest\+Objective}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Quests/\+Objectives/Kill\+In\+Dungeon\+Quest\+Objective.\+cs\end{DoxyCompactItemize}

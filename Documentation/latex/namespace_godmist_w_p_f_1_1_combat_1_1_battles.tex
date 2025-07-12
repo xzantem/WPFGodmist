@@ -1,0 +1,112 @@
+\doxysection{Godmist\+WPF.\+Combat.\+Battles Namespace Reference}
+\hypertarget{namespace_godmist_w_p_f_1_1_combat_1_1_battles}{}\label{namespace_godmist_w_p_f_1_1_combat_1_1_battles}\index{GodmistWPF.Combat.Battles@{GodmistWPF.Combat.Battles}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Battle\+Manager}
+\begin{DoxyCompactList}\small\item\em Statyczna klasa zarządzająca przebiegiem walk w grze. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user}{Battle\+User}}
+\begin{DoxyCompactList}\small\item\em Klasa reprezentująca uczestnika walki, łącząca postać z jej stanem w trakcie bitwy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_battles_a53e65c7e48596cabd7c6ceefef1a9a64}{Battle}} (Dictionary$<$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user}{Battle\+User}}, int $>$ users\+Teams, Dungeon\+Field location, bool can\+Escape=true)
+\begin{DoxyCompactList}\small\item\em Główna klasa zarządzająca przebiegiem walki w grze. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespace_godmist_w_p_f_1_1_combat_1_1_battles_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_godmist_w_p_f_1_1_combat_1_1_battles_a53e65c7e48596cabd7c6ceefef1a9a64}\index{GodmistWPF.Combat.Battles@{GodmistWPF.Combat.Battles}!Battle@{Battle}}
+\index{Battle@{Battle}!GodmistWPF.Combat.Battles@{GodmistWPF.Combat.Battles}}
+\doxysubsubsection{\texorpdfstring{Battle()}{Battle()}}
+{\footnotesize\ttfamily \label{namespace_godmist_w_p_f_1_1_combat_1_1_battles_a53e65c7e48596cabd7c6ceefef1a9a64} 
+class Godmist\+WPF.\+Combat.\+Battles.\+Battle (\begin{DoxyParamCaption}\item[{Dictionary$<$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user}{Battle\+User}}, int $>$}]{users\+Teams}{, }\item[{Dungeon\+Field}]{location}{, }\item[{bool}]{can\+Escape}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+
+Główna klasa zarządzająca przebiegiem walki w grze. 
+
+Odpowiada za kolejność turek, przetwarzanie akcji gracza i AI, oraz zarządzanie stanem walki. Słownik zawierający uczestników walki wraz z ich przynależnością do drużyn.
+
+Klucz to uczestnik walki, wartość to identyfikator drużyny. 
+
+Pobiera numer aktualnej tury walki.
+
+Licznik tur, zaczynający się od 1. 
+
+Pobiera lub ustawia informację, czy gracz uciekł z walki.
+
+{\ttfamily true} jeśli gracz uciekł; w przeciwnym razie {\ttfamily false}. 
+
+Pobiera informację, czy ucieczka z walki jest możliwa.
+
+{\ttfamily true} jeśli ucieczka jest możliwa; w przeciwnym razie {\ttfamily false}. 
+
+Pobiera lub ustawia liczbę prób ucieczki.
+
+Pobiera lokalizację, w której odbywa się walka.
+
+Pobiera interfejs użytkownika dla tej walki.
+
+Źródło zadania używane do oczekiwania na zakończenie tury gracza.
+
+Rozpoczyna nową turę walki.
+
+\begin{DoxyReturn}{Returns}
+Zadanie reprezentujące asynchroniczną operację.
+\end{DoxyReturn}
+
+
+Metoda zarządza całą logiką tury, w tym\+:
+\begin{DoxyItemize}
+\item Aktualizacją interfejsu użytkownika
+\item Obsługą efektów początku tury
+\item Kolejnością ruchów postaci
+\item Obsługą akcji gracza i AI
+\item Sprawdzaniem warunków zakończenia walki 
+\end{DoxyItemize}
+
+Obsługuje efekty i modyfikatory dla określonego użytkownika.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & Użytkownik, dla którego mają zostać obsłużone efekty.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Zadanie reprezentujące asynchroniczną operację.
+\end{DoxyReturn}
+
+
+Obsługuje ruch gracza w trakcie tury.
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Gracz wykonujący ruch.\\
+\hline
+{\em target} & Domyślny cel ataku.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} jeśli ruch został ukończony pomyślnie; w przeciwnym razie {\ttfamily false}. 
+\end{DoxyReturn}
+
+
+Metoda aktywuje interfejs użytkownika i czeka na decyzję gracza. 
+
+Obsługuje ruch przeciwnika sterowanego przez AI.
+
+
+\begin{DoxyParams}{Parameters}
+{\em enemy} & Przeciwnik wykonujący ruch.\\
+\hline
+{\em target} & Cel ataku.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Zadanie reprezentujące asynchroniczną operację.
+\end{DoxyReturn}
+
+
+AI wybiera losowo umiejętność z dostępnych, które może użyć, biorąc pod uwagę koszt many i punktów akcji. 

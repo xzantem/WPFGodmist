@@ -1,74 +1,82 @@
-﻿
+
 
 using GodmistWPF.Combat.Modifiers;
 using GodmistWPF.Enums.Modifiers;
 
 namespace GodmistWPF.Utilities
 {
+    /// <summary>
+    /// Klasa zawierająca użyteczne metody pomocnicze używane w całej aplikacji.
+    /// Zawiera metody do operacji matematycznych, losowania i formatowania tekstu.
+    /// </summary>
     internal static class UtilityMethods
     {
         private static readonly Random Random = new();
+        
+        /// <summary>
+        /// Generuje losową liczbę zmiennoprzecinkową z podanego zakresu.
+        /// </summary>
+        /// <param name="minValue">Minimalna wartość (włącznie).</param>
+        /// <param name="maxValue">Maksymalna wartość (wyłącznie).</param>
+        /// <returns>Losowa liczba z zakresu [minValue, maxValue).</returns>
         public static double RandomDouble(double minValue, double maxValue)
         {
             var number = Random.NextDouble();
             return number * (maxValue - minValue) + minValue;
         }
+        /// <summary>
+        /// Generuje losową liczbę zmiennoprzecinkową z podanego zakresu i zaokrągla ją do określonej liczby miejsc po przecinku.
+        /// </summary>
+        /// <param name="minValue">Minimalna wartość (włącznie).</param>
+        /// <param name="maxValue">Maksymalna wartość (wyłącznie).</param>
+        /// <param name="round">Liczba miejsc po przecinku, do której ma zostać zaokrąglony wynik.</param>
+        /// <returns>Zaokrąglona losowa liczba z zakresu [minValue, maxValue).</returns>
         public static float RandomFloat(float minValue, float maxValue, int round)
         {
             float number = (float)Random.NextDouble();
             return (float)Math.Round(number * (maxValue - minValue) + minValue, round);
         }
+        /// <summary>
+        /// Oblicza szansę na efekt uwzględniając odporność i bazową szansę.
+        /// </summary>
+        /// <param name="resistance">Wartość odporności (0-1, gdzie 1 to pełna odporność).</param>
+        /// <param name="baseChance">Bazowa szansa na efekt (0-1).</param>
+        /// <returns>Rzeczywista szansa na efekt po uwzględnieniu odporności.</returns>
         public static double EffectChance(double resistance, double baseChance)
         {
             baseChance = Clamp(baseChance, 0, 1);
             return Math.Max(0, 1 - 2 * resistance) * (1 - baseChance) / (3 - baseChance) + baseChance * Math.Min(1, 2 * (1 - resistance));
         }
+        /// <summary>
+        /// Ogranicza wartość do podanego zakresu.
+        /// </summary>
+        /// <param name="number">Wartość do ograniczenia.</param>
+        /// <param name="min">Minimalna wartość.</param>
+        /// <param name="max">Maksymalna wartość.</param>
+        /// <returns>Wartość z zakresu [min, max].</returns>
         public static double Clamp(double number, double min, double max)
         {
             return Math.Max(Math.Min(number, max), min); 
         }
+        /// <summary>
+        /// Ogranicza wartość całkowitą do podanego zakresu.
+        /// </summary>
+        /// <param name="number">Wartość do ograniczenia.</param>
+        /// <param name="min">Minimalna wartość.</param>
+        /// <param name="max">Maksymalna wartość.</param>
+        /// <returns>Wartość całkowita z zakresu [min, max].</returns>
+        /// <seealso cref="Clamp(int, int, int)"/>
         public static int Clamp(int number, int min, int max)
         {
             return Math.Max(Math.Min(number, max), min);
         }
-        public static void WriteLineSlowly(string text)
-        {
-            // This method is now handled by WPF dialogs
-            // For console compatibility, do nothing
-        }
-        public static void WriteLineSlowly(string text, object style)
-        {
-            // This method is now handled by WPF dialogs
-            // For console compatibility, do nothing
-        }
-        public static void WriteSlowly(string text)
-        {
-            // This method is now handled by WPF dialogs
-            // For console compatibility, do nothing
-        }
-        public static void WriteSlowly(string text, object style)
-        {
-            // This method is now handled by WPF dialogs
-            // For console compatibility, do nothing
-        }
-        static int PauseLength(char c)
-        {
-            switch (c)
-            {
-                case '.':
-                case ';':
-                case '?':
-                case '!':
-                case ':':
-                    return 100;
-                case ',':
-                    return Random.Next(35, 50);
-                case ' ':
-                    return Random.Next(15, 25);
-                default:
-                    return char.IsLetterOrDigit(c) ? Random.Next(25, 35) : 0;
-            }
-        }
+        /// <summary>
+        /// Oblicza skalowaną wartość statystyki na podstawie poziomu postaci.
+        /// </summary>
+        /// <param name="baseStat">Bazowa wartość statystyki.</param>
+        /// <param name="scaleFactor">Współczynnik skalowania.</param>
+        /// <param name="level">Poziom postaci.</param>
+        /// <returns>Przeskalowana wartość statystyki.</returns>
         public static double ScaledStat(double baseStat, double scaleFactor, int level) {
             for (var i = 1; i < Math.Min(10, level); i++)
                 baseStat += scaleFactor;
@@ -83,6 +91,13 @@ namespace GodmistWPF.Utilities
             return baseStat;
         }
 
+        /// <summary>
+        /// Wybiera losowy element na podstawie wag prawdopodobieństwa.
+        /// </summary>
+        /// <typeparam name="T">Typ elementów do wyboru.</typeparam>
+        /// <param name="choices">Słownik zawierający elementy i ich wagi prawdopodobieństwa (suma wag powinna wynosić 1).</param>
+        /// <returns>Wybrany losowo element.</returns>
+        /// <exception cref="ArgumentOutOfRangeException">Wyrzucany, gdy wagi nie sumują się do 1.</exception>
         public static T RandomChoice<T>(Dictionary<T, double> choices)
         {
             var result = Random.NextDouble();
@@ -100,6 +115,12 @@ namespace GodmistWPF.Utilities
 
             throw new NullReferenceException();
         }
+        /// <summary>
+        /// Wybiera losowy element na podstawie liczbowych wag.
+        /// </summary>
+        /// <typeparam name="T">Typ elementów do wyboru.</typeparam>
+        /// <param name="choices">Słownik zawierający elementy i ich wagi.</param>
+        /// <returns>Wybrany losowo element lub domyślna wartość typu T, jeśli słownik jest pusty.</returns>
         public static T RandomChoice<T>(Dictionary<T, int> choices)
         {
             var result = Random.Next(1, choices.Values.Sum() + 1);
@@ -113,40 +134,30 @@ namespace GodmistWPF.Utilities
 
             return default;
         }
+        /// <summary>
+        /// Wybiera losowy element z listy z równym prawdopodobieństwem.
+        /// </summary>
+        /// <typeparam name="T">Typ elementów na liście.</typeparam>
+        /// <param name="choices">Lista elementów do wyboru.</param>
+        /// <returns>Losowy element z listy.</returns>
         public static T RandomChoice<T>(List<T> choices)
         {
             var result = Random.Next(0, choices.Count);
             return choices[result];
         }
+        
 
-        public static bool Confirmation(string message, bool defaultValue = false)
-        {
-            // This method is now handled by WPF dialogs
-            // For console compatibility, return default value
-            return defaultValue;
-        }
-
-        public static void ClearConsole(int lines = 1)
-        {
-            for (var i = 0; i < lines; i++)
-            {
-                Console.SetCursorPosition(0, Console.CursorTop - 1);
-                Console.Write(new string(' ', Console.WindowWidth));
-                Console.SetCursorPosition(0, Console.CursorTop);
-            }
-        }
-
-        public static void ClearWithLog(List<object> logs)
-        {
-            // This method is now handled by WPF dialogs
-            // For console compatibility, do nothing
-        }
-        public static void ClearWithLog(object log)
-        {
-            // This method is now handled by WPF dialogs
-            // For console compatibility, do nothing
-        }
-
+        /// <summary>
+        /// Oblicza końcową wartość statystyki po zastosowaniu modyfikatorów.
+        /// Kolejność stosowania modyfikatorów:
+        /// 1. Mnożenie przez wszystkie modyfikatory względne (Relative)
+        /// 2. Dodawanie modyfikatorów addytywnych (Additive)
+        /// 3. Mnożenie przez wszystkie modyfikatory multiplikatywne (Multiplicative)
+        /// 4. Dodawanie modyfikatorów absolutnych (Absolute)
+        /// </summary>
+        /// <param name="initial">Początkowa wartość statystyki.</param>
+        /// <param name="modifiers">Lista modyfikatorów do zastosowania.</param>
+        /// <returns>Końcowa wartość statystyki po zastosowaniu modyfikatorów.</returns>
         public static double CalculateModValue(double initial, List<StatModifier> modifiers)
         {
             // Order of modifiers:

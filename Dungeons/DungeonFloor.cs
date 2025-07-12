@@ -1,4 +1,4 @@
-﻿using GodmistWPF.Characters;
+using GodmistWPF.Characters;
 using GodmistWPF.Characters.Player;
 using GodmistWPF.Combat.Battles;
 using GodmistWPF.Dungeons.Interactables;
@@ -7,20 +7,45 @@ using GodmistWPF.Utilities;
 
 namespace GodmistWPF.Dungeons;
 
+/// <summary>
+/// Klasa reprezentująca pojedyncze piętro lochu, zawierające pokoje i korytarze.
+/// </summary>
 public class DungeonFloor
 {
+    /// <summary>
+    /// Pobiera pokój startowy na piętrze.
+    /// </summary>
     public DungeonRoom StarterRoom { get; private set; }
+    /// <summary>
+    /// Pobiera pokój końcowy na piętrze.
+    /// </summary>
     public DungeonRoom EndRoom { get; private set; }
+    /// <summary>
+    /// Pobiera listę korytarzy na piętrze.
+    /// </summary>
+    /// <summary>
+    /// Generuje korytarze łączące pokoje na piętrze.
+    /// </summary>
     public List<DungeonCorridor> Corridor { get; private set; }
     
+    /// <summary>
+    /// Pobiera numer piętra w lochu.
+    /// </summary>
+    public int FloorNumber { get; private set; }
     public List<Trap> Traps { get; private set; }
     public List<Battle> Battles { get; private set; }
+    /// <summary>
+    /// Inicjalizuje nową instancję klasy <see cref="DungeonFloor"/> o określonych parametrach.
+    /// </summary>
+    /// <param name="length">Długość piętra (ilość pokoi).</param>
+    /// <param name="difficulty">Poziom trudności piętra.</param>
+    /// <param name="dungeonType">Typ lochu.</param>
+    /// <param name="level">Poziom lochu.</param>
     public DungeonFloor(int length, int difficulty, DungeonType dungeonType, int level)
     {
         Traps = [];
         Battles = [];
-        var starterRoomField = UtilityMethods.RandomChoice(new
-            Dictionary<DungeonFieldType, int> { { DungeonFieldType.Empty, 15 }, { DungeonFieldType.Battle, 9 + 3 * difficulty } });
+        var starterRoomField = UtilityMethods.RandomChoice(new Dictionary<DungeonFieldType, int> { { DungeonFieldType.Empty, 15 }, { DungeonFieldType.Battle, 9 + 3 * difficulty } });
         StarterRoom = new DungeonRoom(starterRoomField);
         if (starterRoomField == DungeonFieldType.Battle)
             Battles.Add(new Battle(new Dictionary<BattleUser, int>

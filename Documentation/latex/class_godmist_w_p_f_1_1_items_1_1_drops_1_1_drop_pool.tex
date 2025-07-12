@@ -1,0 +1,97 @@
+\doxysection{Godmist\+WPF.\+Items.\+Drops.\+Drop\+Pool Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_pool}{}\label{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_pool}\index{GodmistWPF.Items.Drops.DropPool@{GodmistWPF.Items.Drops.DropPool}}
+
+
+Klasa reprezentująca pulę przedmiotów, z których może coś wypaść. Zawiera słownik przedmiotów i ich parametrów oraz tablicę szans na wypadnięcie.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_pool_a3409be846a8f75ec12c413ae22d6684e}\label{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_pool_a3409be846a8f75ec12c413ae22d6684e} 
+{\bfseries Drop\+Pool} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyślny wymagany do deserializacji JSON. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_pool_a786879cf3e99009eac9114524f99c351}{Drop\+Pool}} (\mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_pool}{Drop\+Pool}} other)
+\begin{DoxyCompactList}\small\item\em Konstruktor kopiujący tworzący głęboką kopię obiektu \doxylink{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_pool}{Drop\+Pool}. \end{DoxyCompactList}\item 
+Key\+Value\+Pair$<$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_item_drop}{Item\+Drop}} $>$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_pool_a59c5500b7d0b2f80bd80bfe1737be02f}{Choice}} (int level)
+\begin{DoxyCompactList}\small\item\em Wybiera losowy przedmiot z puli, uwzględniając poziom postaci. \end{DoxyCompactList}\item 
+Key\+Value\+Pair$<$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}, int $>$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_pool_a2f40a1322fe9bd3aa9c8bbf859777e4e}{Get\+Drop}} (int level)
+\begin{DoxyCompactList}\small\item\em Pobiera losowy przedmiot z puli z losową ilością. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_pool_a1457d6734ec0680ef1d2e47babb11fdf}\label{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_pool_a1457d6734ec0680ef1d2e47babb11fdf} 
+Dictionary$<$ string, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_item_drop}{Item\+Drop}} $>$ {\bfseries Pool}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Słownik zawierający przedmioty w puli, gdzie kluczem jest alias przedmiotu, a wartością obiekt \doxylink{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_item_drop}{Item\+Drop} określający parametry wypadnięcia. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_pool_a3bfca6d74167ea083f008e297f2a824f}\label{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_pool_a3bfca6d74167ea083f008e297f2a824f} 
+double\mbox{[}$\,$\mbox{]} {\bfseries Chances}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Tablica szans na wypadnięcie przedmiotu z puli. Każdy element tablicy określa szansę na dodatkowy przedmiot z puli. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentująca pulę przedmiotów, z których może coś wypaść. Zawiera słownik przedmiotów i ich parametrów oraz tablicę szans na wypadnięcie. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_pool_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_pool_a786879cf3e99009eac9114524f99c351}\index{GodmistWPF.Items.Drops.DropPool@{GodmistWPF.Items.Drops.DropPool}!DropPool@{DropPool}}
+\index{DropPool@{DropPool}!GodmistWPF.Items.Drops.DropPool@{GodmistWPF.Items.Drops.DropPool}}
+\doxysubsubsection{\texorpdfstring{DropPool()}{DropPool()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_pool_a786879cf3e99009eac9114524f99c351} 
+Godmist\+WPF.\+Items.\+Drops.\+Drop\+Pool.\+Drop\+Pool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_pool}{Drop\+Pool}}}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor kopiujący tworzący głęboką kopię obiektu \doxylink{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_pool}{Drop\+Pool}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Obiekt do skopiowania.\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_pool_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_pool_a59c5500b7d0b2f80bd80bfe1737be02f}\index{GodmistWPF.Items.Drops.DropPool@{GodmistWPF.Items.Drops.DropPool}!Choice@{Choice}}
+\index{Choice@{Choice}!GodmistWPF.Items.Drops.DropPool@{GodmistWPF.Items.Drops.DropPool}}
+\doxysubsubsection{\texorpdfstring{Choice()}{Choice()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_pool_a59c5500b7d0b2f80bd80bfe1737be02f} 
+Key\+Value\+Pair$<$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_item_drop}{Item\+Drop}} $>$ Godmist\+WPF.\+Items.\+Drops.\+Drop\+Pool.\+Choice (\begin{DoxyParamCaption}\item[{int}]{level}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wybiera losowy przedmiot z puli, uwzględniając poziom postaci. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Poziom postaci, dla którego wybierany jest przedmiot.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Para zawierająca przedmiot i jego parametry.
+\end{DoxyReturn}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_pool_a2f40a1322fe9bd3aa9c8bbf859777e4e}\index{GodmistWPF.Items.Drops.DropPool@{GodmistWPF.Items.Drops.DropPool}!GetDrop@{GetDrop}}
+\index{GetDrop@{GetDrop}!GodmistWPF.Items.Drops.DropPool@{GodmistWPF.Items.Drops.DropPool}}
+\doxysubsubsection{\texorpdfstring{GetDrop()}{GetDrop()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_pool_a2f40a1322fe9bd3aa9c8bbf859777e4e} 
+Key\+Value\+Pair$<$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}, int $>$ Godmist\+WPF.\+Items.\+Drops.\+Drop\+Pool.\+Get\+Drop (\begin{DoxyParamCaption}\item[{int}]{level}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pobiera losowy przedmiot z puli z losową ilością. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Poziom postaci, dla którego wybierany jest przedmiot.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Para zawierająca przedmiot i losową ilość z zakresu zdefiniowanego w \doxylink{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_item_drop}{Item\+Drop}.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Items/\+Drops/Drop\+Pool.\+cs\end{DoxyCompactItemize}

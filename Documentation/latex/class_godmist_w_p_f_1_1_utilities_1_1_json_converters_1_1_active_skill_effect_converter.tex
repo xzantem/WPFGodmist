@@ -1,0 +1,101 @@
+\doxysection{Godmist\+WPF.\+Utilities.\+Json\+Converters.\+Active\+Skill\+Effect\+Converter Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_active_skill_effect_converter}{}\label{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_active_skill_effect_converter}\index{GodmistWPF.Utilities.JsonConverters.ActiveSkillEffectConverter@{GodmistWPF.Utilities.JsonConverters.ActiveSkillEffectConverter}}
+
+
+Konwerter JSON do serializacji i deserializacji obiektów implementujących interfejs \doxylink{interface_godmist_w_p_f_1_1_combat_1_1_skills_1_1_i_active_skill_effect}{IActive\+Skill\+Effect}. Obsługuje różne typy efektów umiejętności aktywnych i zapisuje ich typ w pliku JSON.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Utilities.\+Json\+Converters.\+Active\+Skill\+Effect\+Converter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_active_skill_effect_converter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override bool \mbox{\hyperlink{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_active_skill_effect_converter_a3d3769e86bfa58203320f70295053dd7}{Can\+Convert}} (Type object\+Type)
+\begin{DoxyCompactList}\small\item\em Określa, czy konwerter może obsłużyć określony typ. \end{DoxyCompactList}\item 
+override object \mbox{\hyperlink{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_active_skill_effect_converter_adc12d4f13db649b83138e7be4c2e342f}{Read\+Json}} (Json\+Reader reader, Type object\+Type, object existing\+Value, Json\+Serializer serializer)
+\begin{DoxyCompactList}\small\item\em Deserializuje obiekt JSON do odpowiedniego typu efektu umiejętności. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_active_skill_effect_converter_a53b4e3f412e520f6cf1f43562adc0b37}{Write\+Json}} (Json\+Writer writer, object value, Json\+Serializer serializer)
+\begin{DoxyCompactList}\small\item\em Serializuje obiekt efektu umiejętności do formatu JSON. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Konwerter JSON do serializacji i deserializacji obiektów implementujących interfejs \doxylink{interface_godmist_w_p_f_1_1_combat_1_1_skills_1_1_i_active_skill_effect}{IActive\+Skill\+Effect}. Obsługuje różne typy efektów umiejętności aktywnych i zapisuje ich typ w pliku JSON. 
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_active_skill_effect_converter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_active_skill_effect_converter_a3d3769e86bfa58203320f70295053dd7}\index{GodmistWPF.Utilities.JsonConverters.ActiveSkillEffectConverter@{GodmistWPF.Utilities.JsonConverters.ActiveSkillEffectConverter}!CanConvert@{CanConvert}}
+\index{CanConvert@{CanConvert}!GodmistWPF.Utilities.JsonConverters.ActiveSkillEffectConverter@{GodmistWPF.Utilities.JsonConverters.ActiveSkillEffectConverter}}
+\doxysubsubsection{\texorpdfstring{CanConvert()}{CanConvert()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_active_skill_effect_converter_a3d3769e86bfa58203320f70295053dd7} 
+override bool Godmist\+WPF.\+Utilities.\+Json\+Converters.\+Active\+Skill\+Effect\+Converter.\+Can\+Convert (\begin{DoxyParamCaption}\item[{Type}]{object\+Type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Określa, czy konwerter może obsłużyć określony typ. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Type} & Typ obiektu do sprawdzenia.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, jeśli konwerter może obsłużyć dany typ; w przeciwnym razie false.
+\end{DoxyReturn}
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_active_skill_effect_converter_adc12d4f13db649b83138e7be4c2e342f}\index{GodmistWPF.Utilities.JsonConverters.ActiveSkillEffectConverter@{GodmistWPF.Utilities.JsonConverters.ActiveSkillEffectConverter}!ReadJson@{ReadJson}}
+\index{ReadJson@{ReadJson}!GodmistWPF.Utilities.JsonConverters.ActiveSkillEffectConverter@{GodmistWPF.Utilities.JsonConverters.ActiveSkillEffectConverter}}
+\doxysubsubsection{\texorpdfstring{ReadJson()}{ReadJson()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_active_skill_effect_converter_adc12d4f13db649b83138e7be4c2e342f} 
+override object Godmist\+WPF.\+Utilities.\+Json\+Converters.\+Active\+Skill\+Effect\+Converter.\+Read\+Json (\begin{DoxyParamCaption}\item[{Json\+Reader}]{reader}{, }\item[{Type}]{object\+Type}{, }\item[{object}]{existing\+Value}{, }\item[{Json\+Serializer}]{serializer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Deserializuje obiekt JSON do odpowiedniego typu efektu umiejętności. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & Czytnik JSON.\\
+\hline
+{\em object\+Type} & Typ obiektu do przekonwertowania.\\
+\hline
+{\em existing\+Value} & Istniejąca wartość obiektu.\\
+\hline
+{\em serializer} & Wystąpienie serializatora JSON.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Zdeserializowany obiekt efektu umiejętności.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Supported\+Exception} & Wyrzucany, gdy typ efektu nie jest obsługiwany.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_active_skill_effect_converter_a53b4e3f412e520f6cf1f43562adc0b37}\index{GodmistWPF.Utilities.JsonConverters.ActiveSkillEffectConverter@{GodmistWPF.Utilities.JsonConverters.ActiveSkillEffectConverter}!WriteJson@{WriteJson}}
+\index{WriteJson@{WriteJson}!GodmistWPF.Utilities.JsonConverters.ActiveSkillEffectConverter@{GodmistWPF.Utilities.JsonConverters.ActiveSkillEffectConverter}}
+\doxysubsubsection{\texorpdfstring{WriteJson()}{WriteJson()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_active_skill_effect_converter_a53b4e3f412e520f6cf1f43562adc0b37} 
+override void Godmist\+WPF.\+Utilities.\+Json\+Converters.\+Active\+Skill\+Effect\+Converter.\+Write\+Json (\begin{DoxyParamCaption}\item[{Json\+Writer}]{writer}{, }\item[{object}]{value}{, }\item[{Json\+Serializer}]{serializer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Serializuje obiekt efektu umiejętności do formatu JSON. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em writer} & Pisarz JSON.\\
+\hline
+{\em value} & Wartość do zserializowania.\\
+\hline
+{\em serializer} & Wystąpienie serializatora JSON.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Utilities/\+Json\+Converters/Active\+Skill\+Effect\+Converter.\+cs\end{DoxyCompactItemize}

@@ -9,9 +9,24 @@ using Newtonsoft.Json;
 
 namespace GodmistWPF.Characters.Player
 {
+    /// <summary>
+    /// Klasa reprezentująca postać Maga w grze.
+    /// </summary>
+    /// <remarks>
+    /// Mag to klasa używająca Many jako głównego zasobu, specjalizująca się w potężnych zaklęciach ofensywnych i defensywnych.
+    /// Posiada wysokie obrażenia magiczne, ale mniejszą wytrzymałość fizyczną.
+    /// </remarks>
     public class Sorcerer : PlayerCharacter {
+        /// <summary>
+        /// Pobiera lub ustawia imię postaci.
+        /// </summary>
+        /// <value>Imię postaci Maga.</value>
         public override string Name { get; set; }
         
+        /// <summary>
+        /// Pobiera maksymalną ilość zasobu (Many) postaci.
+        /// </summary>
+        /// <value>Maksymalna ilość Many, zwiększana przez statystyki broni.</value>
         [JsonIgnore]
         public override double MaximalResource
         {
@@ -19,6 +34,13 @@ namespace GodmistWPF.Characters.Player
             protected set => _maximalResource.BaseValue = value;
         }
         [JsonIgnore]
+        /// <summary>
+        /// Pobiera lub ustawia regenerację zasobu (Many) na turę.
+        /// </summary>
+        /// <remarks>
+        /// Dla Many: wartość bazowa + premia z krytycznego trafienia z broni.
+        /// Dla Momentum: zależy od prędkości postaci.
+        /// </remarks>
         public override double ResourceRegen
         {
             get
@@ -28,11 +50,19 @@ namespace GodmistWPF.Characters.Player
             }
             set => _resourceRegen.BaseValue = value;
         }
+        /// <summary>
+        /// Pobiera lub ustawia szansę na trafienie krytyczne.
+        /// </summary>
+        /// <value>Szansa na trafienie krytyczne w procentach.</value>
         public override double CritChance
         {
             get => _critChance.Value(this, "CritChance");
             protected set => _critChance.BaseValue = value;
         }
+        /// <summary>
+        /// Pobiera lub ustawia celność postaci.
+        /// </summary>
+        /// <value>Wartość celności wpływająca na szansę trafienia.</value>
         public override double Accuracy
         {
             get => _accuracy.Value(this, "Accuracy");
@@ -42,6 +72,18 @@ namespace GodmistWPF.Characters.Player
         // Mana
         // Capped at 120, increased through various means, such as weapons or galdurites or potions
         // Start battle with full Mana, regenerates passively each turn by 15 (also can be increased)
+        /// <summary>
+        /// Inicjalizuje nową instancję klasy <see cref="Sorcerer"/> o podanym imieniu.
+        /// </summary>
+        /// <param name="name">Imię Maga.</param>
+        /// <remarks>
+        /// <para>Zasób specjalny: Mana (maks. 120)</para>
+        /// <list type="bullet">
+        /// <item>Rozpoczyna walkę z pełną maną</item>
+        /// <item>Pasywna regeneracja: 15 Many na turę (możliwa do zwiększenia)</li>
+        /// <item>Maksymalna ilość Many może być zwiększana przez przedmioty i ulepszenia</li>
+        /// </list>
+        /// </remarks>
         public Sorcerer(string name) : base(name, new Stat(250, 7.5),
             new Stat(27, 1), new Stat(36, 1.3),
             new Stat(0, 0), new Stat(6, 0.04),
@@ -82,6 +124,10 @@ namespace GodmistWPF.Characters.Player
             [new ToggleInnatePassiveEffect(SkillTarget.Self, "NoResourceRegen"), 
                 new ToggleListenerPassiveEffect(SkillTarget.Self, "SlowOnHit", [ModifierType.Additive, 12, 0.7, 3])]);
         }
+        /// <summary>
+        /// Inicjalizuje nową instancję klasy <see cref="Sorcerer"/> bez parametrów.
+        /// Wymagane do deserializacji.
+        /// </summary>
         public Sorcerer() {}
     }
 }

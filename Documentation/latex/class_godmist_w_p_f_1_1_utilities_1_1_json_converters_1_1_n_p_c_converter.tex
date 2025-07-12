@@ -1,0 +1,101 @@
+\doxysection{Godmist\+WPF.\+Utilities.\+Json\+Converters.\+NPCConverter Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_n_p_c_converter}{}\label{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_n_p_c_converter}\index{GodmistWPF.Utilities.JsonConverters.NPCConverter@{GodmistWPF.Utilities.JsonConverters.NPCConverter}}
+
+
+Konwerter JSON do serializacji i deserializacji obiektów klasy \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC} i jej pochodnych. Obsługuje różne typy \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC} i zapisuje ich typ w pliku JSON.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Utilities.\+Json\+Converters.\+NPCConverter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_n_p_c_converter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override bool \mbox{\hyperlink{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_n_p_c_converter_ab60b1fdc891ea8c5b682d453a202e286}{Can\+Convert}} (Type object\+Type)
+\begin{DoxyCompactList}\small\item\em Określa, czy konwerter może obsłużyć określony typ. \end{DoxyCompactList}\item 
+override object \mbox{\hyperlink{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_n_p_c_converter_ae962269cc690d35255522bc032f84aee}{Read\+Json}} (Json\+Reader reader, Type object\+Type, object existing\+Value, Json\+Serializer serializer)
+\begin{DoxyCompactList}\small\item\em Deserializuje obiekt JSON do odpowiedniego typu \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_n_p_c_converter_a1ba43d0bdc8ab5afd4428c3c52a38956}{Write\+Json}} (Json\+Writer writer, object value, Json\+Serializer serializer)
+\begin{DoxyCompactList}\small\item\em Serializuje obiekt \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC} do formatu JSON. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Konwerter JSON do serializacji i deserializacji obiektów klasy \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC} i jej pochodnych. Obsługuje różne typy \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC} i zapisuje ich typ w pliku JSON. 
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_n_p_c_converter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_n_p_c_converter_ab60b1fdc891ea8c5b682d453a202e286}\index{GodmistWPF.Utilities.JsonConverters.NPCConverter@{GodmistWPF.Utilities.JsonConverters.NPCConverter}!CanConvert@{CanConvert}}
+\index{CanConvert@{CanConvert}!GodmistWPF.Utilities.JsonConverters.NPCConverter@{GodmistWPF.Utilities.JsonConverters.NPCConverter}}
+\doxysubsubsection{\texorpdfstring{CanConvert()}{CanConvert()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_n_p_c_converter_ab60b1fdc891ea8c5b682d453a202e286} 
+override bool Godmist\+WPF.\+Utilities.\+Json\+Converters.\+NPCConverter.\+Can\+Convert (\begin{DoxyParamCaption}\item[{Type}]{object\+Type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Określa, czy konwerter może obsłużyć określony typ. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Type} & Typ obiektu do sprawdzenia.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, jeśli konwerter może obsłużyć dany typ; w przeciwnym razie false.
+\end{DoxyReturn}
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_n_p_c_converter_ae962269cc690d35255522bc032f84aee}\index{GodmistWPF.Utilities.JsonConverters.NPCConverter@{GodmistWPF.Utilities.JsonConverters.NPCConverter}!ReadJson@{ReadJson}}
+\index{ReadJson@{ReadJson}!GodmistWPF.Utilities.JsonConverters.NPCConverter@{GodmistWPF.Utilities.JsonConverters.NPCConverter}}
+\doxysubsubsection{\texorpdfstring{ReadJson()}{ReadJson()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_n_p_c_converter_ae962269cc690d35255522bc032f84aee} 
+override object Godmist\+WPF.\+Utilities.\+Json\+Converters.\+NPCConverter.\+Read\+Json (\begin{DoxyParamCaption}\item[{Json\+Reader}]{reader}{, }\item[{Type}]{object\+Type}{, }\item[{object}]{existing\+Value}{, }\item[{Json\+Serializer}]{serializer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Deserializuje obiekt JSON do odpowiedniego typu \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & Czytnik JSON.\\
+\hline
+{\em object\+Type} & Typ obiektu do przekonwertowania.\\
+\hline
+{\em existing\+Value} & Istniejąca wartość obiektu.\\
+\hline
+{\em serializer} & Wystąpienie serializatora JSON.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Zdeserializowany obiekt \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Supported\+Exception} & Wyrzucany, gdy typ \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC} nie jest obsługiwany.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_n_p_c_converter_a1ba43d0bdc8ab5afd4428c3c52a38956}\index{GodmistWPF.Utilities.JsonConverters.NPCConverter@{GodmistWPF.Utilities.JsonConverters.NPCConverter}!WriteJson@{WriteJson}}
+\index{WriteJson@{WriteJson}!GodmistWPF.Utilities.JsonConverters.NPCConverter@{GodmistWPF.Utilities.JsonConverters.NPCConverter}}
+\doxysubsubsection{\texorpdfstring{WriteJson()}{WriteJson()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_n_p_c_converter_a1ba43d0bdc8ab5afd4428c3c52a38956} 
+override void Godmist\+WPF.\+Utilities.\+Json\+Converters.\+NPCConverter.\+Write\+Json (\begin{DoxyParamCaption}\item[{Json\+Writer}]{writer}{, }\item[{object}]{value}{, }\item[{Json\+Serializer}]{serializer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Serializuje obiekt \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC} do formatu JSON. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em writer} & Pisarz JSON.\\
+\hline
+{\em value} & Wartość do zserializowania.\\
+\hline
+{\em serializer} & Wystąpienie serializatora JSON.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Utilities/\+Json\+Converters/NPCConverter.\+cs\end{DoxyCompactItemize}

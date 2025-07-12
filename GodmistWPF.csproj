@@ -32,9 +32,35 @@
         <Compile Remove="Text\NPCMenuHandler.cs" />
         <Compile Remove="Quests\SideQuestManager.cs" />
     </ItemGroup>
+    
+    <ItemGroup>
+        <Page Update="Dialogs\LanguageSelectionDialog.xaml">
+            <Generator>MSBuild:Compile</Generator>
+            <SubType>Designer</SubType>
+        </Page>
+        <Compile Update="Dialogs\LanguageSelectionDialog.xaml.cs">
+            <DependentUpon>LanguageSelectionDialog.xaml</DependentUpon>
+            <SubType>Code</SubType>
+        </Compile>
+    </ItemGroup>
 
     <ItemGroup>
         <Resource Include="Resources\**\*" />
     </ItemGroup>
 
-</Project> 
+    <ItemGroup>
+        <None Update="Properties\Settings.settings">
+            <Generator>SettingsSingleFileGenerator</Generator>
+            <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Update="Properties\Settings.Designer.cs">
+            <DesignTimeSharedInput>True</DesignTimeSharedInput>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Settings.settings</DependentUpon>
+        </Compile>
+    </ItemGroup>
+
+</Project>

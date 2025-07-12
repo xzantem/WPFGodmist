@@ -1,0 +1,64 @@
+\doxysection{Turn\+Order\+Indicator Class Reference}
+\hypertarget{class_turn_order_indicator}{}\label{class_turn_order_indicator}\index{TurnOrderIndicator@{TurnOrderIndicator}}
+
+
+Reprezentuje wskaźnik kolejki tury w interfejsie użytkownika walki. Implementuje interfejs INotify\+Property\+Changed do powiadamiania o zmianach właściwości.  
+
+
+Inheritance diagram for Turn\+Order\+Indicator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_turn_order_indicator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_turn_order_indicator_af4a9cad24bee0d1893990dd22e367534}{On\+Property\+Changed}} (\mbox{[}Caller\+Member\+Name\mbox{]} string property\+Name=null)
+\begin{DoxyCompactList}\small\item\em Wywołuje zdarzenie Property\+Changed, powiadamiając o zmianie właściwości. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_turn_order_indicator_aff2a1c374ae6677b2aa327db709d2cf9}\label{class_turn_order_indicator_aff2a1c374ae6677b2aa327db709d2cf9} 
+string {\bfseries Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia nazwę uczestnika walki. \end{DoxyCompactList}\item 
+\Hypertarget{class_turn_order_indicator_a9cb9ab17057a300de7f79650be7c5734}\label{class_turn_order_indicator_a9cb9ab17057a300de7f79650be7c5734} 
+bool {\bfseries Is\+Player}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Określa, czy uczestnik jest graczem. \end{DoxyCompactList}\item 
+\Hypertarget{class_turn_order_indicator_a73bb73bc907511606cfc97698f2d3ba1}\label{class_turn_order_indicator_a73bb73bc907511606cfc97698f2d3ba1} 
+bool {\bfseries Is\+Current}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Określa, czy to jest aktualny uczestnik, który wykonuje ruch. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_turn_order_indicator_ae5a9b4a81d9c1b3ce94484e15e86e1b0}\label{class_turn_order_indicator_ae5a9b4a81d9c1b3ce94484e15e86e1b0} 
+Property\+Changed\+Event\+Handler {\bfseries Property\+Changed}
+\begin{DoxyCompactList}\small\item\em Zdarzenie wywoływane, gdy wartość właściwości ulegnie zmianie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Reprezentuje wskaźnik kolejki tury w interfejsie użytkownika walki. Implementuje interfejs INotify\+Property\+Changed do powiadamiania o zmianach właściwości. 
+
+\label{doc-func-members}
+\Hypertarget{class_turn_order_indicator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_turn_order_indicator_af4a9cad24bee0d1893990dd22e367534}\index{TurnOrderIndicator@{TurnOrderIndicator}!OnPropertyChanged@{OnPropertyChanged}}
+\index{OnPropertyChanged@{OnPropertyChanged}!TurnOrderIndicator@{TurnOrderIndicator}}
+\doxysubsubsection{\texorpdfstring{OnPropertyChanged()}{OnPropertyChanged()}}
+{\footnotesize\ttfamily \label{class_turn_order_indicator_af4a9cad24bee0d1893990dd22e367534} 
+virtual void Turn\+Order\+Indicator.\+On\+Property\+Changed (\begin{DoxyParamCaption}\item[{\mbox{[}\+Caller\+Member\+Name\mbox{]} string}]{property\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Wywołuje zdarzenie Property\+Changed, powiadamiając o zmianie właściwości. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em property\+Name} & Nazwa zmienionej właściwości. Jeśli nie podano, zostanie użyta nazwa wywołującej właściwości.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dialogs/Battle\+Dialog.\+xaml.\+cs\end{DoxyCompactItemize}

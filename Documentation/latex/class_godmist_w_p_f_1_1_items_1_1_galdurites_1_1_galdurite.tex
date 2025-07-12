@@ -1,0 +1,241 @@
+\doxysection{Godmist\+WPF.\+Items.\+Galdurites.\+Galdurite Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite}{}\label{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite}\index{GodmistWPF.Items.Galdurites.Galdurite@{GodmistWPF.Items.Galdurites.Galdurite}}
+
+
+Klasa reprezentująca kamień galdurytowy, który może zostać osadzony w przedmiotach. Zawiera komponenty z efektami, które są aktywowane po osadzeniu w przedmiocie.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Items.\+Galdurites.\+Galdurite\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_ac253f8fcb1c8afda611380ee009e81ad}\label{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_ac253f8fcb1c8afda611380ee009e81ad} 
+{\bfseries Galdurite} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyślny wymagany do serializacji. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_a10973c7561879c0cfa85a82ef88db9cd}{Galdurite}} (bool equipment\+Type, int tier, int bias, string color="{}Random"{})
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite}{Galdurite} z losowymi właściwościami. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_af3a80c23320441c71720c91685cca77e}\label{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_af3a80c23320441c71720c91685cca77e} 
+void {\bfseries Reveal} ()
+\begin{DoxyCompactList}\small\item\em Ujawnia efekty galduritu, jeśli nie były wcześniej ujawnione. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_a0562b997cae67fbbaed47c811d2dd142}{Inspect}} (int amount=1)
+\begin{DoxyCompactList}\small\item\em Wyświetla szczegółowe informacje o galduricie, w tym jego efekty. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_ae884be80009ba35bb378159c9dac252a}{Show\+Effects}} ()
+\begin{DoxyCompactList}\small\item\em Generuje tekst z opisem wszystkich efektów galduritu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item}{Godmist\+WPF.\+Items.\+Base\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a62a7b60026ec2e63d60e5bde7513c7c3}{Write\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla nazwę przedmiotu z uwzględnieniem jego rzadkości. Implementacja w WPF obsługuje interfejs użytkownika. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_ab80277caef8f091f3245e4c3680a2265}{Write\+Item\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla typ przedmiotu. Implementacja w WPF obsługuje interfejs użytkownika. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_ab8aecf04d7121322a9515bcaccb024b5}{Write\+Rarity}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla rzadkość przedmiotu. Implementacja w WPF obsługuje interfejs użytkownika. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a3ca6652033431e54f246307f7b3e9d0d}{Rarity\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca zlokalizowaną nazwę rzadkości przedmiotu. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a6c6ca0c4731c9106cef36a4cd606c000}{Item\+Type\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca zlokalizowaną nazwę typu przedmiotu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+new string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_a043f2b7c51da6e2d546c96b2d6f7798f}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera nazwę galduritu z systemu lokalizacji. \end{DoxyCompactList}\item 
+override int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_af742d88741ae83d139165bbca78c603a}{Weight}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera wagę galduritu (zawsze 1). \end{DoxyCompactList}\item 
+override int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_a0824fbda2a97a76000072e3b2b38394b}{ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera unikalny identyfikator galduritu. \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_a16a7e803350254fce0d89bb31506cea7}{Stackable}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Określa, czy galdurity mogą być składowane w stosie (zawsze false). \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_a23079d2489aa4c9f43085cd8d39f3480}\label{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_a23079d2489aa4c9f43085cd8d39f3480} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_component}{Galdurite\+Component}}\mbox{[}$\,$\mbox{]} {\bfseries Components}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Tablica komponentów galduritu, z których każdy zawiera efekt i jego parametry. \end{DoxyCompactList}\item 
+override int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_ae8678682051f626d8c65f52e3442f73b}{Cost}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera koszt galduritu, uwzględniający rzadkość, poziom ujawnienia i jakość efektów. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_acee85ea0393969056d34cebd17d85cfd}\label{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_acee85ea0393969056d34cebd17d85cfd} 
+int {\bfseries Base\+Cost}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia bazowy koszt galduritu bez modyfikatorów. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_aa8515f955064060b5451a2221975b0df}\label{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_aa8515f955064060b5451a2221975b0df} 
+int {\bfseries Tier}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia poziom (tier) galduritu (1-\/3). \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_a1c32288dc1ad778269d34bbcd8e1cff0}\label{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_a1c32288dc1ad778269d34bbcd8e1cff0} 
+int {\bfseries Required\+Level}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera wymagany poziom postaci do użycia galduritu. Tier 1\+: 11 poziom, Tier 2\+: 21 poziom, Tier 3\+: 41 poziom. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_a340e64ce984569002db45951332f58b3}\label{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_a340e64ce984569002db45951332f58b3} 
+bool {\bfseries Revealed}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Określa, czy efekty galduritu zostały ujawnione. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item}{Godmist\+WPF.\+Items.\+Base\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a53f72ba0d1cf21654655cb745eab7ba3}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia nazwę przedmiotu. Przy pobieraniu wykorzystuje Name\+Alias\+Helper do tłumaczenia aliasu na pełną nazwę. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_ac94e206df1ac952048d7aa9c4d047add}{Alias}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia alias (skróconą nazwę) przedmiotu. Używany do wewnętrznej identyfikacji i tłumaczeń. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a171769b2a12d37acc3f45a1adfe614b6}{Weight}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia wagę przedmiotu. Wpływa na obciążenie ekwipunku postaci. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_acdb022869d8836b038d36e27e46c1e89}{ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia unikalny identyfikator przedmiotu. Używany do zapisu/odczytu stanu gry. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_adb7ff1df8be6b0e46d36a69f663f989a}{Cost}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia wartość przedmiotu w walucie gry. Używane przy sprzedaży i zakupie przedmiotów. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_a02934ee73a54ec124f0455457945ab1a}{Item\+Rarity}} \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_ab8d911e0148244bb7b11241cddf824a6}{Rarity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia rzadkość przedmiotu. Wpływa na kolor nazwy i wartość przedmiotu. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_afc676c9421e9ad3df5d549ef44c3ae89}{Stackable}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Określa, czy przedmioty tego samego typu mogą być składane w jednym slocie ekwipunku. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a763204eb630704caf524369c8de6ebe6}{Description}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia opis przedmiotu. Wyświetlany w oknie inspekcji przedmiotu. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_ac3d61a48fbf15693811c3ce1d463dfe0}{Item\+Type}} \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a0774084b82083124b6e19ee3de21ee54}{Item\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia typ przedmiotu. Określa kategorię i podstawowe przeznaczenie przedmiotu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentująca kamień galdurytowy, który może zostać osadzony w przedmiotach. Zawiera komponenty z efektami, które są aktywowane po osadzeniu w przedmiocie. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_a10973c7561879c0cfa85a82ef88db9cd}\index{GodmistWPF.Items.Galdurites.Galdurite@{GodmistWPF.Items.Galdurites.Galdurite}!Galdurite@{Galdurite}}
+\index{Galdurite@{Galdurite}!GodmistWPF.Items.Galdurites.Galdurite@{GodmistWPF.Items.Galdurites.Galdurite}}
+\doxysubsubsection{\texorpdfstring{Galdurite()}{Galdurite()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_a10973c7561879c0cfa85a82ef88db9cd} 
+Godmist\+WPF.\+Items.\+Galdurites.\+Galdurite.\+Galdurite (\begin{DoxyParamCaption}\item[{bool}]{equipment\+Type}{, }\item[{int}]{tier}{, }\item[{int}]{bias}{, }\item[{string}]{color}{ = {\ttfamily "{}Random"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite}{Galdurite} z losowymi właściwościami. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em equipment\+Type} & Typ przedmiotu, do którego pasuje galdurit (true = zbroja, false = broń).\\
+\hline
+{\em tier} & Poziom (tier) galduritu (1-\/3).\\
+\hline
+{\em bias} & Modyfikator szansy na lepszą rzadkość galduritu.\\
+\hline
+{\em color} & Kolor galduritu (domyślnie losowy).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Out\+Of\+Range\+Exception} & Występuje, gdy podano nieprawidłowy tier.\\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_a0562b997cae67fbbaed47c811d2dd142}\index{GodmistWPF.Items.Galdurites.Galdurite@{GodmistWPF.Items.Galdurites.Galdurite}!Inspect@{Inspect}}
+\index{Inspect@{Inspect}!GodmistWPF.Items.Galdurites.Galdurite@{GodmistWPF.Items.Galdurites.Galdurite}}
+\doxysubsubsection{\texorpdfstring{Inspect()}{Inspect()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_a0562b997cae67fbbaed47c811d2dd142} 
+override void Godmist\+WPF.\+Items.\+Galdurites.\+Galdurite.\+Inspect (\begin{DoxyParamCaption}\item[{int}]{amount}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Wyświetla szczegółowe informacje o galduricie, w tym jego efekty. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & Ilość przedmiotów (nieużywane).\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_acc6c4b47f0eada380e37090582522645}{Godmist\+WPF.\+Items.\+Base\+Item}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_ae884be80009ba35bb378159c9dac252a}\index{GodmistWPF.Items.Galdurites.Galdurite@{GodmistWPF.Items.Galdurites.Galdurite}!ShowEffects@{ShowEffects}}
+\index{ShowEffects@{ShowEffects}!GodmistWPF.Items.Galdurites.Galdurite@{GodmistWPF.Items.Galdurites.Galdurite}}
+\doxysubsubsection{\texorpdfstring{ShowEffects()}{ShowEffects()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_ae884be80009ba35bb378159c9dac252a} 
+string Godmist\+WPF.\+Items.\+Galdurites.\+Galdurite.\+Show\+Effects (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generuje tekst z opisem wszystkich efektów galduritu. 
+
+\begin{DoxyReturn}{Returns}
+Tekst zawierający opisy wszystkich efektów, oddzielone znakami nowej linii.
+\end{DoxyReturn}
+
+
+\label{doc-property-members}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_ae8678682051f626d8c65f52e3442f73b}\index{GodmistWPF.Items.Galdurites.Galdurite@{GodmistWPF.Items.Galdurites.Galdurite}!Cost@{Cost}}
+\index{Cost@{Cost}!GodmistWPF.Items.Galdurites.Galdurite@{GodmistWPF.Items.Galdurites.Galdurite}}
+\doxysubsubsection{\texorpdfstring{Cost}{Cost}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_ae8678682051f626d8c65f52e3442f73b} 
+override int Godmist\+WPF.\+Items.\+Galdurites.\+Galdurite.\+Cost\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera koszt galduritu, uwzględniający rzadkość, poziom ujawnienia i jakość efektów. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a0f412b6f7655244181eb1d372ac41ddb}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_a0824fbda2a97a76000072e3b2b38394b}\index{GodmistWPF.Items.Galdurites.Galdurite@{GodmistWPF.Items.Galdurites.Galdurite}!ID@{ID}}
+\index{ID@{ID}!GodmistWPF.Items.Galdurites.Galdurite@{GodmistWPF.Items.Galdurites.Galdurite}}
+\doxysubsubsection{\texorpdfstring{ID}{ID}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_a0824fbda2a97a76000072e3b2b38394b} 
+override int Godmist\+WPF.\+Items.\+Galdurites.\+Galdurite.\+ID\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera unikalny identyfikator galduritu. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_afd07fe16d41cf6234ce995cfc57634c8}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_a043f2b7c51da6e2d546c96b2d6f7798f}\index{GodmistWPF.Items.Galdurites.Galdurite@{GodmistWPF.Items.Galdurites.Galdurite}!Name@{Name}}
+\index{Name@{Name}!GodmistWPF.Items.Galdurites.Galdurite@{GodmistWPF.Items.Galdurites.Galdurite}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_a043f2b7c51da6e2d546c96b2d6f7798f} 
+new string Godmist\+WPF.\+Items.\+Galdurites.\+Galdurite.\+Name\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera nazwę galduritu z systemu lokalizacji. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_aa7c0739500303333ba79d83a60d46b08}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_a16a7e803350254fce0d89bb31506cea7}\index{GodmistWPF.Items.Galdurites.Galdurite@{GodmistWPF.Items.Galdurites.Galdurite}!Stackable@{Stackable}}
+\index{Stackable@{Stackable}!GodmistWPF.Items.Galdurites.Galdurite@{GodmistWPF.Items.Galdurites.Galdurite}}
+\doxysubsubsection{\texorpdfstring{Stackable}{Stackable}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_a16a7e803350254fce0d89bb31506cea7} 
+override bool Godmist\+WPF.\+Items.\+Galdurites.\+Galdurite.\+Stackable\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Określa, czy galdurity mogą być składowane w stosie (zawsze false). 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_af423d9fec16280fec5ccbecaf7d43fbe}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_af742d88741ae83d139165bbca78c603a}\index{GodmistWPF.Items.Galdurites.Galdurite@{GodmistWPF.Items.Galdurites.Galdurite}!Weight@{Weight}}
+\index{Weight@{Weight}!GodmistWPF.Items.Galdurites.Galdurite@{GodmistWPF.Items.Galdurites.Galdurite}}
+\doxysubsubsection{\texorpdfstring{Weight}{Weight}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_af742d88741ae83d139165bbca78c603a} 
+override int Godmist\+WPF.\+Items.\+Galdurites.\+Galdurite.\+Weight\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera wagę galduritu (zawsze 1). 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_ada5ec9f15576cff4b7d046a12ef79ab4}{Godmist\+WPF.\+Items.\+IItem}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Items/\+Galdurites/Galdurite.\+cs\end{DoxyCompactItemize}

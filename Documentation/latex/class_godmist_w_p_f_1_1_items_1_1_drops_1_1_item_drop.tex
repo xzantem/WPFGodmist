@@ -1,0 +1,69 @@
+\doxysection{Godmist\+WPF.\+Items.\+Drops.\+Item\+Drop Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_item_drop}{}\label{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_item_drop}\index{GodmistWPF.Items.Drops.ItemDrop@{GodmistWPF.Items.Drops.ItemDrop}}
+
+
+Klasa reprezentująca pojedynczy przedmiot, który może wypaść z przeciwnika lub skrzynki. Określa parametry przedmiotu, takie jak ilość i poziomy, na których może się pojawić.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_item_drop_a459e997413a471278f96b33c560fff33}\label{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_item_drop_a459e997413a471278f96b33c560fff33} 
+{\bfseries Item\+Drop} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyślny wymagany do deserializacji JSON. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_item_drop_a184884ad0041cdf801ff4e610024994a}{Item\+Drop}} (int min\+Level, int max\+Level, int weight, int min\+Amount=1, int max\+Amount=1)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_item_drop}{Item\+Drop} z określonymi parametrami. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_item_drop_a881059db163fccffdce5077549e50014}\label{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_item_drop_a881059db163fccffdce5077549e50014} 
+int {\bfseries Min\+Amount}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Minimalna ilość przedmiotów, która może wypaść. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_item_drop_ae54f7b27eb3cbc87d2aeaceaddd5c448}\label{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_item_drop_ae54f7b27eb3cbc87d2aeaceaddd5c448} 
+int {\bfseries Max\+Amount}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Maksymalna ilość przedmiotów, która może wypaść. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_item_drop_a0441ec1a513eb5e60fb23b4e97ba6712}\label{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_item_drop_a0441ec1a513eb5e60fb23b4e97ba6712} 
+int {\bfseries Min\+Level}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Minimalny poziom, od którego przedmiot może się pojawić. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_item_drop_a3af3addc7e7b9812ad6794980055172a}\label{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_item_drop_a3af3addc7e7b9812ad6794980055172a} 
+int {\bfseries Max\+Level}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Maksymalny poziom, do którego przedmiot może się pojawić. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_item_drop_ace83a7339884d159819187a7dc9d1e05}\label{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_item_drop_ace83a7339884d159819187a7dc9d1e05} 
+int {\bfseries Weight}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Waga określająca szansę na wypadnięcie przedmiotu w porównaniu do innych przedmiotów w puli. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentująca pojedynczy przedmiot, który może wypaść z przeciwnika lub skrzynki. Określa parametry przedmiotu, takie jak ilość i poziomy, na których może się pojawić. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_item_drop_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_item_drop_a184884ad0041cdf801ff4e610024994a}\index{GodmistWPF.Items.Drops.ItemDrop@{GodmistWPF.Items.Drops.ItemDrop}!ItemDrop@{ItemDrop}}
+\index{ItemDrop@{ItemDrop}!GodmistWPF.Items.Drops.ItemDrop@{GodmistWPF.Items.Drops.ItemDrop}}
+\doxysubsubsection{\texorpdfstring{ItemDrop()}{ItemDrop()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_item_drop_a184884ad0041cdf801ff4e610024994a} 
+Godmist\+WPF.\+Items.\+Drops.\+Item\+Drop.\+Item\+Drop (\begin{DoxyParamCaption}\item[{int}]{min\+Level}{, }\item[{int}]{max\+Level}{, }\item[{int}]{weight}{, }\item[{int}]{min\+Amount}{ = {\ttfamily 1}, }\item[{int}]{max\+Amount}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_item_drop}{Item\+Drop} z określonymi parametrami. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\+Level} & Minimalny poziom, od którego przedmiot może się pojawić.\\
+\hline
+{\em max\+Level} & Maksymalny poziom, do którego przedmiot może się pojawić.\\
+\hline
+{\em weight} & Waga określająca szansę na wypadnięcie przedmiotu.\\
+\hline
+{\em min\+Amount} & Minimalna ilość przedmiotów (domyślnie 1).\\
+\hline
+{\em max\+Amount} & Maksymalna ilość przedmiotów (domyślnie 1).\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Items/\+Drops/Item\+Drop.\+cs\end{DoxyCompactItemize}

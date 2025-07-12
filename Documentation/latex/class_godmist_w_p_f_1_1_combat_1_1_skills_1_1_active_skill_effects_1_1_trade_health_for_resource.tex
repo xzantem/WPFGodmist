@@ -1,0 +1,135 @@
+\doxysection{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Trade\+Health\+For\+Resource Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource}{}\label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.TradeHealthForResource@{GodmistWPF.Combat.Skills.ActiveSkillEffects.TradeHealthForResource}}
+
+
+Efekt umiejętności, który zamienia punkty zdrowia na punkty zasobów.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Trade\+Health\+For\+Resource\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource_a10eeef8f2426884e5cc6fb20f93cf485}{Execute}} (Character caster, Character enemy, string source)
+\begin{DoxyCompactList}\small\item\em Wykonuje efekt wymiany zdrowia na zasoby. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource_ad302ff183d098a7fcad7f4c62c5580d1}{Trade\+Health\+For\+Resource}} (Skill\+Target target, double health\+Sacrificed, double exchange\+Ratio)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource}{Trade\+Health\+For\+Resource}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource_a4f1fbfa01f46733c2474b0946c165c24}{Trade\+Health\+For\+Resource}} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource}{Trade\+Health\+For\+Resource}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Skill\+Target \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource_a4e8737aedf7a074e51e397a90abbca24}{Target}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia cel efektu (własna postać lub przeciwnik). \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource_a92cb6e535d9131a336e3291032c8c59c}\label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource_a92cb6e535d9131a336e3291032c8c59c} 
+double {\bfseries Health\+Sacrificed}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia procent maksymalnego zdrowia do poświęcenia (wartość z przedziału 0.\+0-\/1.\+0). \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource_a103c9994266e4f5e595745cde95cea6c}{Exchange\+Ratio}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia współczynnik wymiany zdrowia na zasoby. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Efekt umiejętności, który zamienia punkty zdrowia na punkty zasobów. 
+
+Umożliwia poświęcenie procentowej ilości zdrowia w zamian za przywrócenie zasobów. Efekt może być zastosowany zarówno do siebie, jak i do przeciwnika. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource_ad302ff183d098a7fcad7f4c62c5580d1}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.TradeHealthForResource@{GodmistWPF.Combat.Skills.ActiveSkillEffects.TradeHealthForResource}!TradeHealthForResource@{TradeHealthForResource}}
+\index{TradeHealthForResource@{TradeHealthForResource}!GodmistWPF.Combat.Skills.ActiveSkillEffects.TradeHealthForResource@{GodmistWPF.Combat.Skills.ActiveSkillEffects.TradeHealthForResource}}
+\doxysubsubsection{\texorpdfstring{TradeHealthForResource()}{TradeHealthForResource()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource_ad302ff183d098a7fcad7f4c62c5580d1} 
+Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Trade\+Health\+For\+Resource.\+Trade\+Health\+For\+Resource (\begin{DoxyParamCaption}\item[{Skill\+Target}]{target}{, }\item[{double}]{health\+Sacrificed}{, }\item[{double}]{exchange\+Ratio}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource}{Trade\+Health\+For\+Resource}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Cel efektu.\\
+\hline
+{\em health\+Sacrificed} & Procent maksymalnego zdrowia do poświęcenia (0.\+0-\/1.\+0).\\
+\hline
+{\em exchange\+Ratio} & Współczynnik wymiany zdrowia na zasoby.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource_a4f1fbfa01f46733c2474b0946c165c24}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.TradeHealthForResource@{GodmistWPF.Combat.Skills.ActiveSkillEffects.TradeHealthForResource}!TradeHealthForResource@{TradeHealthForResource}}
+\index{TradeHealthForResource@{TradeHealthForResource}!GodmistWPF.Combat.Skills.ActiveSkillEffects.TradeHealthForResource@{GodmistWPF.Combat.Skills.ActiveSkillEffects.TradeHealthForResource}}
+\doxysubsubsection{\texorpdfstring{TradeHealthForResource()}{TradeHealthForResource()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource_a4f1fbfa01f46733c2474b0946c165c24} 
+Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Trade\+Health\+For\+Resource.\+Trade\+Health\+For\+Resource (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource}{Trade\+Health\+For\+Resource}. 
+
+Konstruktor używany przez mechanizm deserializacji. 
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource_a10eeef8f2426884e5cc6fb20f93cf485}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.TradeHealthForResource@{GodmistWPF.Combat.Skills.ActiveSkillEffects.TradeHealthForResource}!Execute@{Execute}}
+\index{Execute@{Execute}!GodmistWPF.Combat.Skills.ActiveSkillEffects.TradeHealthForResource@{GodmistWPF.Combat.Skills.ActiveSkillEffects.TradeHealthForResource}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource_a10eeef8f2426884e5cc6fb20f93cf485} 
+void Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Trade\+Health\+For\+Resource.\+Execute (\begin{DoxyParamCaption}\item[{Character}]{caster}{, }\item[{Character}]{enemy}{, }\item[{string}]{source}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wykonuje efekt wymiany zdrowia na zasoby. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caster} & Postać rzucająca umiejętność.\\
+\hline
+{\em enemy} & Przeciwnik, względem którego określany jest cel.\\
+\hline
+{\em source} & Źródło efektu (nazwa umiejętności).\\
+\hline
+\end{DoxyParams}
+
+
+Odejmuje procent maksymalnego zdrowia od celu i przywraca odpowiednią ilość zasobów, zgodnie z ustawionym współczynnikiem wymiany. 
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_combat_1_1_skills_1_1_i_active_skill_effect_af280a7f57f091d04800b2e9f3be69059}{Godmist\+WPF.\+Combat.\+Skills.\+IActive\+Skill\+Effect}}.
+
+
+
+\label{doc-property-members}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource_a103c9994266e4f5e595745cde95cea6c}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.TradeHealthForResource@{GodmistWPF.Combat.Skills.ActiveSkillEffects.TradeHealthForResource}!ExchangeRatio@{ExchangeRatio}}
+\index{ExchangeRatio@{ExchangeRatio}!GodmistWPF.Combat.Skills.ActiveSkillEffects.TradeHealthForResource@{GodmistWPF.Combat.Skills.ActiveSkillEffects.TradeHealthForResource}}
+\doxysubsubsection{\texorpdfstring{ExchangeRatio}{ExchangeRatio}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource_a103c9994266e4f5e595745cde95cea6c} 
+double Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Trade\+Health\+For\+Resource.\+Exchange\+Ratio\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia współczynnik wymiany zdrowia na zasoby. 
+
+Określa, jak dużo zasobów zostanie przywróconych za każdy punkt utraconego zdrowia. Na przykład wartość 2.\+0 oznacza, że za każdy punkt zdrowia postać otrzyma 2 punkty zasobów. \Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource_a4e8737aedf7a074e51e397a90abbca24}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.TradeHealthForResource@{GodmistWPF.Combat.Skills.ActiveSkillEffects.TradeHealthForResource}!Target@{Target}}
+\index{Target@{Target}!GodmistWPF.Combat.Skills.ActiveSkillEffects.TradeHealthForResource@{GodmistWPF.Combat.Skills.ActiveSkillEffects.TradeHealthForResource}}
+\doxysubsubsection{\texorpdfstring{Target}{Target}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource_a4e8737aedf7a074e51e397a90abbca24} 
+Skill\+Target Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Trade\+Health\+For\+Resource.\+Target\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia cel efektu (własna postać lub przeciwnik). 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_combat_1_1_skills_1_1_i_active_skill_effect_a6e2adc6221f059bf5b9259f5ecacb969}{Godmist\+WPF.\+Combat.\+Skills.\+IActive\+Skill\+Effect}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Combat/\+Skills/\+Active\+Skill\+Effects/Trade\+Health\+For\+Resource.\+cs\end{DoxyCompactItemize}

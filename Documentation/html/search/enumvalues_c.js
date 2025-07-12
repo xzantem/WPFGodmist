@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['magic_0',['Magic',['../namespace_godmist_w_p_f_1_1_enums.html#a7a7998807b5b708ea8f1be1eda55c4cea02700e454d679f31f27c6f0768986dd1',1,'GodmistWPF::Enums']]],
+  ['magicdefense_1',['MagicDefense',['../namespace_godmist_w_p_f_1_1_enums_1_1_modifiers.html#a53588f6f3bf0238f2e48f367c4bf2b91adbe848a41887169eca4a8b6a02b68acb',1,'GodmistWPF::Enums::Modifiers']]],
+  ['mana_2',['Mana',['../namespace_godmist_w_p_f_1_1_enums.html#ad74c01eb6fb046f7abe1ab77b3ee5c26a02fcc64668dd1b6a85e60ac9797f2dc7',1,'GodmistWPF::Enums']]],
+  ['masterpiece_3',['Masterpiece',['../namespace_godmist_w_p_f_1_1_enums_1_1_items.html#a6d85f5e9c2037deaba73a7eb017cd9eda37be9589187c7e279e8cf81d936f2f9f',1,'GodmistWPF::Enums::Items']]],
+  ['maximal_4',['Maximal',['../namespace_godmist_w_p_f_1_1_enums.html#ab1504159dfa75b5214898abd47d7c9a1ac2f493254b06a46832e043f236296ad3',1,'GodmistWPF::Enums']]],
+  ['maximalattack_5',['MaximalAttack',['../namespace_godmist_w_p_f_1_1_enums_1_1_modifiers.html#a53588f6f3bf0238f2e48f367c4bf2b91a459a39b9fcbe77dc28f16f335659ad7d',1,'GodmistWPF::Enums::Modifiers']]],
+  ['maximalhealth_6',['MaximalHealth',['../namespace_godmist_w_p_f_1_1_enums_1_1_modifiers.html#a53588f6f3bf0238f2e48f367c4bf2b91a26e328904b19052b59e237e67efca5e7',1,'GodmistWPF::Enums::Modifiers']]],
+  ['maximalresource_7',['MaximalResource',['../namespace_godmist_w_p_f_1_1_enums_1_1_modifiers.html#a53588f6f3bf0238f2e48f367c4bf2b91a2cbdd5746e1b52813dbf1a6c6245c40d',1,'GodmistWPF::Enums::Modifiers']]],
+  ['maxresourceincrease_8',['MaxResourceIncrease',['../namespace_godmist_w_p_f_1_1_enums_1_1_items.html#a86c421139a299906c24cfb9abda99b65a7484dca12f210ef5f513a476bf7e39c3',1,'GodmistWPF::Enums::Items']]],
+  ['mercenary_9',['Mercenary',['../namespace_godmist_w_p_f_1_1_enums.html#a5610866b3882004c9157f36ac3a4fb4eac31a034a992485076246638bccd0c3d7',1,'GodmistWPF::Enums']]],
+  ['minimal_10',['Minimal',['../namespace_godmist_w_p_f_1_1_enums.html#ab1504159dfa75b5214898abd47d7c9a1a30fc6bbba82125243ecf4ddb27fee645',1,'GodmistWPF::Enums']]],
+  ['minimalattack_11',['MinimalAttack',['../namespace_godmist_w_p_f_1_1_enums_1_1_modifiers.html#a53588f6f3bf0238f2e48f367c4bf2b91ac10cc317962d0de14c12b3465b85ff6e',1,'GodmistWPF::Enums::Modifiers']]],
+  ['momentum_12',['Momentum',['../namespace_godmist_w_p_f_1_1_enums.html#ad74c01eb6fb046f7abe1ab77b3ee5c26a37323780191d51a33d295ac10fb98f06',1,'GodmistWPF::Enums']]],
+  ['mountains_13',['Mountains',['../namespace_godmist_w_p_f_1_1_enums_1_1_dungeons.html#a15f971492ab6ad201d47cdfc14c3defea8e8c2adc91106422362ffd9b8b44e9a2',1,'GodmistWPF::Enums::Dungeons']]],
+  ['multiplicative_14',['Multiplicative',['../namespace_godmist_w_p_f_1_1_enums_1_1_modifiers.html#a248e2acb6131b347a5fb032f0469ce2ba0d73bf5decac382ed6a8adc3838fd7e2',1,'GodmistWPF::Enums::Modifiers']]],
+  ['mythical_15',['Mythical',['../namespace_godmist_w_p_f_1_1_enums_1_1_items.html#a02934ee73a54ec124f0455457945ab1aa9cce556535c54f0a868908310f75a92e',1,'GodmistWPF::Enums::Items']]]
+];

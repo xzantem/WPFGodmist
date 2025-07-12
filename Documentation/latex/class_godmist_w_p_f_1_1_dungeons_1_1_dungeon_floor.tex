@@ -1,0 +1,81 @@
+\doxysection{Godmist\+WPF.\+Dungeons.\+Dungeon\+Floor Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_floor}{}\label{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_floor}\index{GodmistWPF.Dungeons.DungeonFloor@{GodmistWPF.Dungeons.DungeonFloor}}
+
+
+Klasa reprezentująca pojedyncze piętro lochu, zawierające pokoje i korytarze.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_floor_a898d86b1f260874f7abedc725f47c34e}{Dungeon\+Floor}} (int length, int difficulty, \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_dungeons_a15f971492ab6ad201d47cdfc14c3defe}{Dungeon\+Type}} dungeon\+Type, int level)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_floor}{Dungeon\+Floor} o określonych parametrach. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_floor_aa308793bff5e1aa8aeedad9f65026bd4}\label{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_floor_aa308793bff5e1aa8aeedad9f65026bd4} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_room}{Dungeon\+Room}} {\bfseries Starter\+Room}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera pokój startowy na piętrze. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_floor_a4ca3335d95ffe80242ad68dbb4771774}\label{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_floor_a4ca3335d95ffe80242ad68dbb4771774} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_room}{Dungeon\+Room}} {\bfseries End\+Room}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera pokój końcowy na piętrze. \end{DoxyCompactList}\item 
+List$<$ Dungeon\+Corridor $>$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_floor_a03416de23ee7dc4951db1f6745a56c1a}{Corridor}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera listę korytarzy na piętrze. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_floor_a6f1b0291a51e1a78fc64fed4af4d604a}\label{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_floor_a6f1b0291a51e1a78fc64fed4af4d604a} 
+int {\bfseries Floor\+Number}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera numer piętra w lochu. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_floor_a2a7da6491d62d654073d888d8f99db0a}\label{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_floor_a2a7da6491d62d654073d888d8f99db0a} 
+List$<$ Trap $>$ {\bfseries Traps}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_floor_ab095e28be026738593308164c567e1d4}\label{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_floor_ab095e28be026738593308164c567e1d4} 
+List$<$ Battle $>$ {\bfseries Battles}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentująca pojedyncze piętro lochu, zawierające pokoje i korytarze. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_floor_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_floor_a898d86b1f260874f7abedc725f47c34e}\index{GodmistWPF.Dungeons.DungeonFloor@{GodmistWPF.Dungeons.DungeonFloor}!DungeonFloor@{DungeonFloor}}
+\index{DungeonFloor@{DungeonFloor}!GodmistWPF.Dungeons.DungeonFloor@{GodmistWPF.Dungeons.DungeonFloor}}
+\doxysubsubsection{\texorpdfstring{DungeonFloor()}{DungeonFloor()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_floor_a898d86b1f260874f7abedc725f47c34e} 
+Godmist\+WPF.\+Dungeons.\+Dungeon\+Floor.\+Dungeon\+Floor (\begin{DoxyParamCaption}\item[{int}]{length}{, }\item[{int}]{difficulty}{, }\item[{\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_dungeons_a15f971492ab6ad201d47cdfc14c3defe}{Dungeon\+Type}}}]{dungeon\+Type}{, }\item[{int}]{level}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_floor}{Dungeon\+Floor} o określonych parametrach. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em length} & Długość piętra (ilość pokoi).\\
+\hline
+{\em difficulty} & Poziom trudności piętra.\\
+\hline
+{\em dungeon\+Type} & Typ lochu.\\
+\hline
+{\em level} & Poziom lochu.\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-property-members}
+\Hypertarget{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_floor_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_floor_a03416de23ee7dc4951db1f6745a56c1a}\index{GodmistWPF.Dungeons.DungeonFloor@{GodmistWPF.Dungeons.DungeonFloor}!Corridor@{Corridor}}
+\index{Corridor@{Corridor}!GodmistWPF.Dungeons.DungeonFloor@{GodmistWPF.Dungeons.DungeonFloor}}
+\doxysubsubsection{\texorpdfstring{Corridor}{Corridor}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_floor_a03416de23ee7dc4951db1f6745a56c1a} 
+List$<$Dungeon\+Corridor$>$ Godmist\+WPF.\+Dungeons.\+Dungeon\+Floor.\+Corridor\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera listę korytarzy na piętrze. 
+
+Generuje korytarze łączące pokoje na piętrze. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dungeons/Dungeon\+Floor.\+cs\end{DoxyCompactItemize}

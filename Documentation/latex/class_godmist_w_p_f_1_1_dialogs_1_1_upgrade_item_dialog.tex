@@ -1,0 +1,143 @@
+\doxysection{Godmist\+WPF.\+Dialogs.\+Upgrade\+Item\+Dialog Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog}{}\label{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog}\index{GodmistWPF.Dialogs.UpgradeItemDialog@{GodmistWPF.Dialogs.UpgradeItemDialog}}
+
+
+Okno dialogowe umożliwiające ulepszanie przedmiotów w grze. Pozwala na wybór poziomu ulepszenia, szansy na sukces i wyświetla koszt operacji.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Dialogs.\+Upgrade\+Item\+Dialog\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_a5f00cc9e74fa8af68e0f7a4f679f7029}{Upgrade\+Item\+Dialog}} (\mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable}{IEquippable}} item, double initial\+Modifier, double initial\+Chance, double initial\+Cost, double player\+Gold)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję okna dialogowego ulepszania przedmiotu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_a5f76769120748883f9cde86d088ea4e8}{On\+Property\+Changed}} (\mbox{[}Caller\+Member\+Name\mbox{]} string? property\+Name=null)
+\begin{DoxyCompactList}\small\item\em Wywołuje zdarzenie Property\+Changed dla określonej właściwości. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_adcf847f484dbc9496c56a7326d14a5cc}{Set\+Field$<$ T $>$}} (ref T field, T value, \mbox{[}Caller\+Member\+Name\mbox{]} string? property\+Name=null)
+\begin{DoxyCompactList}\small\item\em Ustawia wartość pola i wywołuje powiadomienie o zmianie właściwości. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_a27e39e94372664bfda6f89e3d9fe8882}\label{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_a27e39e94372664bfda6f89e3d9fe8882} 
+string {\bfseries Item\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera nazwę przedmiotu podlegającego ulepszeniu. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_aed915a0cc5b3b7de4f383e6e01f0b64b}\label{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_aed915a0cc5b3b7de4f383e6e01f0b64b} 
+double {\bfseries Current\+Modifier}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera aktualną wartość modyfikatora ulepszenia przedmiotu. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_a65ac935a60c58e8ab743ef503e48699b}\label{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_a65ac935a60c58e8ab743ef503e48699b} 
+double {\bfseries New\+Modifier}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia nową wartość modyfikatora ulepszenia. Automatycznie aktualizuje koszt ulepszenia przy zmianie wartości. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_a73d17fac0f2f16c62ba69d05e4f11674}\label{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_a73d17fac0f2f16c62ba69d05e4f11674} 
+double {\bfseries Success\+Chance}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia szansę na udane ulepszenie (wartość od 0 do 1). Automatycznie aktualizuje koszt ulepszenia przy zmianie wartości. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_a3be270ac5d9e3d28a592a183910108a6}\label{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_a3be270ac5d9e3d28a592a183910108a6} 
+double {\bfseries Upgrade\+Cost}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera koszt ulepszenia wyrażony w złocie. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_a87891cb362092c14c55a608dea5f972b}\label{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_a87891cb362092c14c55a608dea5f972b} 
+bool {\bfseries Can\+Afford\+Upgrade}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera informację, czy gracz może sobie pozwolić na ulepszenie. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_afbacc504b99c120e398def0a119cea19}\label{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_afbacc504b99c120e398def0a119cea19} 
+string {\bfseries Status\+Message}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera komunikat statusu dotyczący operacji ulepszania. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_a3246e9394b98baacda4fce7f2ff85c5a}\label{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_a3246e9394b98baacda4fce7f2ff85c5a} 
+Property\+Changed\+Event\+Handler? {\bfseries Property\+Changed}
+\begin{DoxyCompactList}\small\item\em Występuje, gdy zmienia się wartość właściwości. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Okno dialogowe umożliwiające ulepszanie przedmiotów w grze. Pozwala na wybór poziomu ulepszenia, szansy na sukces i wyświetla koszt operacji. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_a5f00cc9e74fa8af68e0f7a4f679f7029}\index{GodmistWPF.Dialogs.UpgradeItemDialog@{GodmistWPF.Dialogs.UpgradeItemDialog}!UpgradeItemDialog@{UpgradeItemDialog}}
+\index{UpgradeItemDialog@{UpgradeItemDialog}!GodmistWPF.Dialogs.UpgradeItemDialog@{GodmistWPF.Dialogs.UpgradeItemDialog}}
+\doxysubsubsection{\texorpdfstring{UpgradeItemDialog()}{UpgradeItemDialog()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_a5f00cc9e74fa8af68e0f7a4f679f7029} 
+Godmist\+WPF.\+Dialogs.\+Upgrade\+Item\+Dialog.\+Upgrade\+Item\+Dialog (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable}{IEquippable}}}]{item}{, }\item[{double}]{initial\+Modifier}{, }\item[{double}]{initial\+Chance}{, }\item[{double}]{initial\+Cost}{, }\item[{double}]{player\+Gold}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję okna dialogowego ulepszania przedmiotu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & Przedmiot do ulepszenia.\\
+\hline
+{\em initial\+Modifier} & Początkowa wartość modyfikatora ulepszenia.\\
+\hline
+{\em initial\+Chance} & Początkowa szansa na udane ulepszenie (0-\/1).\\
+\hline
+{\em initial\+Cost} & Początkowy koszt ulepszenia.\\
+\hline
+{\em player\+Gold} & Ilość złota, którą posiada gracz.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Null\+Exception} & Gdy parametr item jest null.\\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_a5f76769120748883f9cde86d088ea4e8}\index{GodmistWPF.Dialogs.UpgradeItemDialog@{GodmistWPF.Dialogs.UpgradeItemDialog}!OnPropertyChanged@{OnPropertyChanged}}
+\index{OnPropertyChanged@{OnPropertyChanged}!GodmistWPF.Dialogs.UpgradeItemDialog@{GodmistWPF.Dialogs.UpgradeItemDialog}}
+\doxysubsubsection{\texorpdfstring{OnPropertyChanged()}{OnPropertyChanged()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_a5f76769120748883f9cde86d088ea4e8} 
+virtual void Godmist\+WPF.\+Dialogs.\+Upgrade\+Item\+Dialog.\+On\+Property\+Changed (\begin{DoxyParamCaption}\item[{\mbox{[}\+Caller\+Member\+Name\mbox{]} string?}]{property\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Wywołuje zdarzenie Property\+Changed dla określonej właściwości. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em property\+Name} & Nazwa właściwości, która uległa zmianie.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_adcf847f484dbc9496c56a7326d14a5cc}\index{GodmistWPF.Dialogs.UpgradeItemDialog@{GodmistWPF.Dialogs.UpgradeItemDialog}!SetField$<$ T $>$@{SetField$<$ T $>$}}
+\index{SetField$<$ T $>$@{SetField$<$ T $>$}!GodmistWPF.Dialogs.UpgradeItemDialog@{GodmistWPF.Dialogs.UpgradeItemDialog}}
+\doxysubsubsection{\texorpdfstring{SetField$<$ T $>$()}{SetField< T >()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog_adcf847f484dbc9496c56a7326d14a5cc} 
+bool Godmist\+WPF.\+Dialogs.\+Upgrade\+Item\+Dialog.\+Set\+Field$<$ T $>$ (\begin{DoxyParamCaption}\item[{ref T}]{field}{, }\item[{T}]{value}{, }\item[{\mbox{[}\+Caller\+Member\+Name\mbox{]} string?}]{property\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Ustawia wartość pola i wywołuje powiadomienie o zmianie właściwości. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Typ wartości do ustawienia.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em field} & Referencja do pola.\\
+\hline
+{\em value} & Nowa wartość.\\
+\hline
+{\em property\+Name} & Nazwa właściwości (ustawiana automatycznie).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, jeśli wartość została zmieniona; w przeciwnym razie false.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dialogs/Upgrade\+Item\+Dialog.\+xaml.\+cs\end{DoxyCompactItemize}

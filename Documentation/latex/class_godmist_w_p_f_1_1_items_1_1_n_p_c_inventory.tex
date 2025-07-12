@@ -1,0 +1,135 @@
+\doxysection{Godmist\+WPF.\+Items.\+NPCInventory Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory}{}\label{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory}\index{GodmistWPF.Items.NPCInventory@{GodmistWPF.Items.NPCInventory}}
+
+
+Klasa reprezentująca ekwipunek NPC, w tym sklep i przedmioty kupione od gracza. Zarządza asortymentem sklepowym, który zmienia się w zależności od poziomu lojalności.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory_aeec512a67e06c400b0e77b9f48dd7454}{NPCInventory}} (List$<$ \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_ac3d61a48fbf15693811c3ce1d463dfe0}{Item\+Type}} $>$ item\+Types\+In\+Shop)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory}{NPCInventory} z określonymi typami przedmiotów. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory_a1ec2946a7064517c0020dad52a514ba9}\label{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory_a1ec2946a7064517c0020dad52a514ba9} 
+{\bfseries NPCInventory} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory}{NPCInventory}. Konstruktor używany do deserializacji JSON. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory_a7a77912a3f83e26f3fd03c433ee85a5f}{Update\+Wares}} (int loyalty\+Level)
+\begin{DoxyCompactList}\small\item\em Aktualizuje asortyment sklepu na podstawie poziomu lojalności gracza. Wyższy poziom lojalności odblokowuje lepsze przedmioty. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory_aa20478fe0ee0566566c87347b87850b4}{Add\+Item}} (\mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}} item, int quantity=1)
+\begin{DoxyCompactList}\small\item\em Dodaje przedmiot do listy przedmiotów kupionych od gracza. Jeśli przedmiot jest składalny, zwiększa jego ilość. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory_aa8a6a1566e50d5276bb4fbdf2cd3a7f6}{Remove\+At}} (int index, int amount=1)
+\begin{DoxyCompactList}\small\item\em Usuwa określoną ilość przedmiotów z ekwipunku NPC na podanym indeksie. Jeśli ilość spadnie do zera, przedmiot jest całkowicie usuwany. \end{DoxyCompactList}\item 
+Key\+Value\+Pair$<$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}, int $>$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory_ab064d8359c468271e2ca8f0219ee5e86}{Element\+At}} (int index)
+\begin{DoxyCompactList}\small\item\em Zwraca przedmiot i jego ilość na podanym indeksie. Indeksacja obejmuje zarówno przedmioty w sklepie, jak i kupione od gracza. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory_af0adf5c1add07c14445c01c735f9cbf6}\label{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory_af0adf5c1add07c14445c01c735f9cbf6} 
+Dictionary$<$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}, int $>$ {\bfseries Rotating\+Shop}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Słownik przedmiotów dostępnych w sklepie i ich ilości. Kluczem jest przedmiot, a wartością ilość sztuk w sklepie. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory_ad6229cac6339eb58cedfca587f5f1f2f}\label{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory_ad6229cac6339eb58cedfca587f5f1f2f} 
+Dictionary$<$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}, int $>$ {\bfseries Bought\+From\+Player}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Słownik przedmiotów kupionych od gracza i ich ilości. Kluczem jest przedmiot, a wartością ilość sztuk. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory_abe702315927e855d2425442e043d4937}\label{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory_abe702315927e855d2425442e043d4937} 
+List$<$ \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_ac3d61a48fbf15693811c3ce1d463dfe0}{Item\+Type}} $>$ {\bfseries Possible\+Wares}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Lista typów przedmiotów, które mogą pojawić się w sklepie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentująca ekwipunek NPC, w tym sklep i przedmioty kupione od gracza. Zarządza asortymentem sklepowym, który zmienia się w zależności od poziomu lojalności. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory_aeec512a67e06c400b0e77b9f48dd7454}\index{GodmistWPF.Items.NPCInventory@{GodmistWPF.Items.NPCInventory}!NPCInventory@{NPCInventory}}
+\index{NPCInventory@{NPCInventory}!GodmistWPF.Items.NPCInventory@{GodmistWPF.Items.NPCInventory}}
+\doxysubsubsection{\texorpdfstring{NPCInventory()}{NPCInventory()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory_aeec512a67e06c400b0e77b9f48dd7454} 
+Godmist\+WPF.\+Items.\+NPCInventory.\+NPCInventory (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_ac3d61a48fbf15693811c3ce1d463dfe0}{Item\+Type}} $>$}]{item\+Types\+In\+Shop}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory}{NPCInventory} z określonymi typami przedmiotów. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Types\+In\+Shop} & Lista typów przedmiotów, które mogą pojawić się w sklepie.\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory_aa20478fe0ee0566566c87347b87850b4}\index{GodmistWPF.Items.NPCInventory@{GodmistWPF.Items.NPCInventory}!AddItem@{AddItem}}
+\index{AddItem@{AddItem}!GodmistWPF.Items.NPCInventory@{GodmistWPF.Items.NPCInventory}}
+\doxysubsubsection{\texorpdfstring{AddItem()}{AddItem()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory_aa20478fe0ee0566566c87347b87850b4} 
+void Godmist\+WPF.\+Items.\+NPCInventory.\+Add\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}}]{item}{, }\item[{int}]{quantity}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dodaje przedmiot do listy przedmiotów kupionych od gracza. Jeśli przedmiot jest składalny, zwiększa jego ilość. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & Przedmiot do dodania.\\
+\hline
+{\em quantity} & Ilość przedmiotów do dodania (domyślnie 1).\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory_ab064d8359c468271e2ca8f0219ee5e86}\index{GodmistWPF.Items.NPCInventory@{GodmistWPF.Items.NPCInventory}!ElementAt@{ElementAt}}
+\index{ElementAt@{ElementAt}!GodmistWPF.Items.NPCInventory@{GodmistWPF.Items.NPCInventory}}
+\doxysubsubsection{\texorpdfstring{ElementAt()}{ElementAt()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory_ab064d8359c468271e2ca8f0219ee5e86} 
+Key\+Value\+Pair$<$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}, int $>$ Godmist\+WPF.\+Items.\+NPCInventory.\+Element\+At (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zwraca przedmiot i jego ilość na podanym indeksie. Indeksacja obejmuje zarówno przedmioty w sklepie, jak i kupione od gracza. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Indeks przedmiotu.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Para klucz-\/wartość zawierająca przedmiot i jego ilość.
+\end{DoxyReturn}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory_aa8a6a1566e50d5276bb4fbdf2cd3a7f6}\index{GodmistWPF.Items.NPCInventory@{GodmistWPF.Items.NPCInventory}!RemoveAt@{RemoveAt}}
+\index{RemoveAt@{RemoveAt}!GodmistWPF.Items.NPCInventory@{GodmistWPF.Items.NPCInventory}}
+\doxysubsubsection{\texorpdfstring{RemoveAt()}{RemoveAt()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory_aa8a6a1566e50d5276bb4fbdf2cd3a7f6} 
+void Godmist\+WPF.\+Items.\+NPCInventory.\+Remove\+At (\begin{DoxyParamCaption}\item[{int}]{index}{, }\item[{int}]{amount}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Usuwa określoną ilość przedmiotów z ekwipunku NPC na podanym indeksie. Jeśli ilość spadnie do zera, przedmiot jest całkowicie usuwany. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Indeks przedmiotu do usunięcia.\\
+\hline
+{\em amount} & Ilość do usunięcia (domyślnie 1).\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory_a7a77912a3f83e26f3fd03c433ee85a5f}\index{GodmistWPF.Items.NPCInventory@{GodmistWPF.Items.NPCInventory}!UpdateWares@{UpdateWares}}
+\index{UpdateWares@{UpdateWares}!GodmistWPF.Items.NPCInventory@{GodmistWPF.Items.NPCInventory}}
+\doxysubsubsection{\texorpdfstring{UpdateWares()}{UpdateWares()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory_a7a77912a3f83e26f3fd03c433ee85a5f} 
+void Godmist\+WPF.\+Items.\+NPCInventory.\+Update\+Wares (\begin{DoxyParamCaption}\item[{int}]{loyalty\+Level}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Aktualizuje asortyment sklepu na podstawie poziomu lojalności gracza. Wyższy poziom lojalności odblokowuje lepsze przedmioty. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em loyalty\+Level} & Poziom lojalności gracza z danym NPC.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Items/NPCInventory.\+cs\end{DoxyCompactItemize}

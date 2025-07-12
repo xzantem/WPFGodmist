@@ -202,11 +202,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Patryczku\\source\\repos\\WPFGodmist\\ConsoleGodmist\\GodmistWPF\\GodmistWPF.csproj",
+      "projectUniqueName": "C:\\Users\\Patryczku\\source\\repos\\WPFGodmist\\ConsoleGodmist\\GodmistWPF\\WPFGodmist\\GodmistWPF.csproj",
       "projectName": "GodmistWPF",
-      "projectPath": "C:\\Users\\Patryczku\\source\\repos\\WPFGodmist\\ConsoleGodmist\\GodmistWPF\\GodmistWPF.csproj",
+      "projectPath": "C:\\Users\\Patryczku\\source\\repos\\WPFGodmist\\ConsoleGodmist\\GodmistWPF\\WPFGodmist\\GodmistWPF.csproj",
       "packagesPath": "C:\\Users\\Patryczku\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Patryczku\\source\\repos\\WPFGodmist\\ConsoleGodmist\\GodmistWPF\\obj\\",
+      "outputPath": "C:\\Users\\Patryczku\\source\\repos\\WPFGodmist\\ConsoleGodmist\\GodmistWPF\\WPFGodmist\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

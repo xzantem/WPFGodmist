@@ -1,0 +1,123 @@
+\doxysection{Godmist\+WPF.\+Quests.\+Objectives.\+Descend\+Quest\+Objective Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective}{}\label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective}\index{GodmistWPF.Quests.Objectives.DescendQuestObjective@{GodmistWPF.Quests.Objectives.DescendQuestObjective}}
+
+
+Cel zadania polegający na zejściu na określone piętro w danym lochu.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Quests.\+Objectives.\+Descend\+Quest\+Objective\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective_a3ddcd092bccc54d2e8dac7207e0dcc6e}\label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective_a3ddcd092bccc54d2e8dac7207e0dcc6e} 
+{\bfseries Descend\+Quest\+Objective} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective}{Descend\+Quest\+Objective}. Używany przez serializator JSON. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective_a7d4d2e6a40f62671f8850785376b2648}{Descend\+Quest\+Objective}} (\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_dungeons_a15f971492ab6ad201d47cdfc14c3defe}{Dungeon\+Type}} dungeon, int floor\+To\+Reach)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective}{Descend\+Quest\+Objective} z określonym lochem i piętrem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective_adf42a994f79c6ba92ad0fe83fbad91c4}{Progress}} (\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context}{Quest\+Objective\+Context}} context)
+\begin{DoxyCompactList}\small\item\em Aktualizuje postęp zadania na podstawie dostarczonego kontekstu. Oznacza cel jako ukończony, jeśli kontekst dotyczy zejścia na odpowiednie piętro we właściwym lochu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective_aa65286fbcbc40d2f6b5ff576b1583d76}{Is\+Complete}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Określa, czy cel został ukończony. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective_ac837e7de7e0a8dc542e6655737dae909}\label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective_ac837e7de7e0a8dc542e6655737dae909} 
+\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_dungeons_a15f971492ab6ad201d47cdfc14c3defe}{Dungeon\+Type}} {\bfseries Target}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Typ lochu, do którego należy zejść. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective_a3e52fea9f4471227eae6795be0599704}\label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective_a3e52fea9f4471227eae6795be0599704} 
+int {\bfseries Floor\+To\+Reach}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Numer piętra, na które należy zejść, aby ukończyć cel. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective_a84796b591499e61270e82c6297188e81}{Description}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera opis celu w formacie "{}\+Zejdź na \mbox{[}piętro\mbox{]} w \mbox{[}nazwa lochu w miejscowniku\mbox{]}"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Cel zadania polegający na zejściu na określone piętro w danym lochu. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective_a7d4d2e6a40f62671f8850785376b2648}\index{GodmistWPF.Quests.Objectives.DescendQuestObjective@{GodmistWPF.Quests.Objectives.DescendQuestObjective}!DescendQuestObjective@{DescendQuestObjective}}
+\index{DescendQuestObjective@{DescendQuestObjective}!GodmistWPF.Quests.Objectives.DescendQuestObjective@{GodmistWPF.Quests.Objectives.DescendQuestObjective}}
+\doxysubsubsection{\texorpdfstring{DescendQuestObjective()}{DescendQuestObjective()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective_a7d4d2e6a40f62671f8850785376b2648} 
+Godmist\+WPF.\+Quests.\+Objectives.\+Descend\+Quest\+Objective.\+Descend\+Quest\+Objective (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_dungeons_a15f971492ab6ad201d47cdfc14c3defe}{Dungeon\+Type}}}]{dungeon}{, }\item[{int}]{floor\+To\+Reach}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective}{Descend\+Quest\+Objective} z określonym lochem i piętrem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dungeon} & Typ lochu, do którego należy zejść.\\
+\hline
+{\em floor\+To\+Reach} & Numer piętra, na które należy zejść.\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective_adf42a994f79c6ba92ad0fe83fbad91c4}\index{GodmistWPF.Quests.Objectives.DescendQuestObjective@{GodmistWPF.Quests.Objectives.DescendQuestObjective}!Progress@{Progress}}
+\index{Progress@{Progress}!GodmistWPF.Quests.Objectives.DescendQuestObjective@{GodmistWPF.Quests.Objectives.DescendQuestObjective}}
+\doxysubsubsection{\texorpdfstring{Progress()}{Progress()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective_adf42a994f79c6ba92ad0fe83fbad91c4} 
+void Godmist\+WPF.\+Quests.\+Objectives.\+Descend\+Quest\+Objective.\+Progress (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context}{Quest\+Objective\+Context}}}]{context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Aktualizuje postęp zadania na podstawie dostarczonego kontekstu. Oznacza cel jako ukończony, jeśli kontekst dotyczy zejścia na odpowiednie piętro we właściwym lochu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & Kontekst zawierający informacje o zejściu do lochu.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective_a7f70ddfcacf8816f08f605a9f6e7c145}{Godmist\+WPF.\+Quests.\+Objectives.\+IQuest\+Objective}}.
+
+
+
+\label{doc-property-members}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective_a84796b591499e61270e82c6297188e81}\index{GodmistWPF.Quests.Objectives.DescendQuestObjective@{GodmistWPF.Quests.Objectives.DescendQuestObjective}!Description@{Description}}
+\index{Description@{Description}!GodmistWPF.Quests.Objectives.DescendQuestObjective@{GodmistWPF.Quests.Objectives.DescendQuestObjective}}
+\doxysubsubsection{\texorpdfstring{Description}{Description}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective_a84796b591499e61270e82c6297188e81} 
+string Godmist\+WPF.\+Quests.\+Objectives.\+Descend\+Quest\+Objective.\+Description\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera opis celu w formacie "{}\+Zejdź na \mbox{[}piętro\mbox{]} w \mbox{[}nazwa lochu w miejscowniku\mbox{]}"{}. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective_ad6d9942cd93635eb47c9661482f17979}{Godmist\+WPF.\+Quests.\+Objectives.\+IQuest\+Objective}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective_aa65286fbcbc40d2f6b5ff576b1583d76}\index{GodmistWPF.Quests.Objectives.DescendQuestObjective@{GodmistWPF.Quests.Objectives.DescendQuestObjective}!IsComplete@{IsComplete}}
+\index{IsComplete@{IsComplete}!GodmistWPF.Quests.Objectives.DescendQuestObjective@{GodmistWPF.Quests.Objectives.DescendQuestObjective}}
+\doxysubsubsection{\texorpdfstring{IsComplete}{IsComplete}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_descend_quest_objective_aa65286fbcbc40d2f6b5ff576b1583d76} 
+bool Godmist\+WPF.\+Quests.\+Objectives.\+Descend\+Quest\+Objective.\+Is\+Complete\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Określa, czy cel został ukończony. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective_aa71bf68a394092b39ad09798a738218c}{Godmist\+WPF.\+Quests.\+Objectives.\+IQuest\+Objective}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Quests/\+Objectives/Descend\+Quest\+Objective.\+cs\end{DoxyCompactItemize}

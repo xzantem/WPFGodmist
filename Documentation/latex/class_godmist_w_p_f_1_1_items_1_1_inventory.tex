@@ -1,0 +1,133 @@
+\doxysection{Godmist\+WPF.\+Items.\+Inventory Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_items_1_1_inventory}{}\label{class_godmist_w_p_f_1_1_items_1_1_inventory}\index{GodmistWPF.Items.Inventory@{GodmistWPF.Items.Inventory}}
+
+
+Klasa reprezentująca ekwipunek gracza. Zawiera metody do zarządzania przedmiotami, takie jak dodawanie, usuwanie i sortowanie.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_inventory_af5558f9716ab4e9d2932723bf0dac717}{Add\+Item}} (\mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}} item, int quantity=1)
+\begin{DoxyCompactList}\small\item\em Dodaje określoną ilość przedmiotu do ekwipunku. Jeśli przedmiot jest składalny, zwiększa jego ilość. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_inventory_a7c58a7c2a45dd8d8a629abaccc0391c8}{Try\+Remove\+Item}} (\mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}} item, int amount=1)
+\begin{DoxyCompactList}\small\item\em Próbuje usunąć określoną ilość przedmiotu z ekwipunku. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_inventory_a88f3b0e5e279cef481099bb569f1b6f7}\label{class_godmist_w_p_f_1_1_items_1_1_inventory_a88f3b0e5e279cef481099bb569f1b6f7} 
+void {\bfseries Remove\+Junk} ()
+\begin{DoxyCompactList}\small\item\em Usuwa z ekwipunku przedmioty, które są niepotrzebne dla klasy postaci gracza. Usuwa broń i zbroje, które nie są przeznaczone dla aktualnej klasy postaci. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_inventory_a827da9af9a271897a5ed78aae4c3dc26}{Sort\+Inventory}} (\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_abd43d3ecc8d0b3e2ececa27d72ca88ad}{Sort\+Type}} sort\+Type)
+\begin{DoxyCompactList}\small\item\em Sortuje przedmioty w ekwipunku według określonego kryterium. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_inventory_a6a4aa35faeb520970b58f6738446f41a}{Use\+Item}} (\mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}} item)
+\begin{DoxyCompactList}\small\item\em Próbuje użyć przedmiotu z ekwipunku. Jeśli przedmiot implementuje interfejs \doxylink{interface_godmist_w_p_f_1_1_items_1_1_i_usable}{IUsable}, wywołuje jego metodę Use(). W przypadku powodzenia usuwa jedną sztukę przedmiotu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_inventory_a6fa2f8a94b6d7fa7c2c3867915adb7f0}{Get\+Count}} (string item\+Alias)
+\begin{DoxyCompactList}\small\item\em Zwraca ilość przedmiotów o podanym aliasie w ekwipunku. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_inventory_aa45ed1cf474c14f458a3f6d2d067904a}\label{class_godmist_w_p_f_1_1_items_1_1_inventory_aa45ed1cf474c14f458a3f6d2d067904a} 
+Dictionary$<$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}, int $>$ {\bfseries Items} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Słownik przechowujący przedmioty w ekwipunku i ich ilości. Kluczem jest przedmiot, a wartością ilość sztuk. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_inventory_a06d667681b47f07ff8ee8b8f31e8717a}\label{class_godmist_w_p_f_1_1_items_1_1_inventory_a06d667681b47f07ff8ee8b8f31e8717a} 
+int {\bfseries Pack\+Weight}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Oblicza całkowitą wagę przedmiotów w ekwipunku. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_inventory_a3868dbf62ae664b81baaa3234aad79f3}\label{class_godmist_w_p_f_1_1_items_1_1_inventory_a3868dbf62ae664b81baaa3234aad79f3} 
+int {\bfseries Max\+Pack\+Weight} = 60\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia maksymalną wagę, jaką może unieść postać. Domyślna wartość to 60 jednostek. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentująca ekwipunek gracza. Zawiera metody do zarządzania przedmiotami, takie jak dodawanie, usuwanie i sortowanie. 
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_inventory_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_inventory_af5558f9716ab4e9d2932723bf0dac717}\index{GodmistWPF.Items.Inventory@{GodmistWPF.Items.Inventory}!AddItem@{AddItem}}
+\index{AddItem@{AddItem}!GodmistWPF.Items.Inventory@{GodmistWPF.Items.Inventory}}
+\doxysubsubsection{\texorpdfstring{AddItem()}{AddItem()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_inventory_af5558f9716ab4e9d2932723bf0dac717} 
+void Godmist\+WPF.\+Items.\+Inventory.\+Add\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}}]{item}{, }\item[{int}]{quantity}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dodaje określoną ilość przedmiotu do ekwipunku. Jeśli przedmiot jest składalny, zwiększa jego ilość. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & Przedmiot do dodania.\\
+\hline
+{\em quantity} & Ilość przedmiotów do dodania (domyślnie 1).\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_inventory_a6fa2f8a94b6d7fa7c2c3867915adb7f0}\index{GodmistWPF.Items.Inventory@{GodmistWPF.Items.Inventory}!GetCount@{GetCount}}
+\index{GetCount@{GetCount}!GodmistWPF.Items.Inventory@{GodmistWPF.Items.Inventory}}
+\doxysubsubsection{\texorpdfstring{GetCount()}{GetCount()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_inventory_a6fa2f8a94b6d7fa7c2c3867915adb7f0} 
+int Godmist\+WPF.\+Items.\+Inventory.\+Get\+Count (\begin{DoxyParamCaption}\item[{string}]{item\+Alias}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zwraca ilość przedmiotów o podanym aliasie w ekwipunku. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Alias} & Alias szukanego przedmiotu.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ilość przedmiotów o podanym aliasie lub 0, jeśli przedmiot nie występuje w ekwipunku.
+\end{DoxyReturn}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_inventory_a827da9af9a271897a5ed78aae4c3dc26}\index{GodmistWPF.Items.Inventory@{GodmistWPF.Items.Inventory}!SortInventory@{SortInventory}}
+\index{SortInventory@{SortInventory}!GodmistWPF.Items.Inventory@{GodmistWPF.Items.Inventory}}
+\doxysubsubsection{\texorpdfstring{SortInventory()}{SortInventory()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_inventory_a827da9af9a271897a5ed78aae4c3dc26} 
+void Godmist\+WPF.\+Items.\+Inventory.\+Sort\+Inventory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_abd43d3ecc8d0b3e2ececa27d72ca88ad}{Sort\+Type}}}]{sort\+Type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sortuje przedmioty w ekwipunku według określonego kryterium. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sort\+Type} & Kryterium sortowania.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_inventory_a7c58a7c2a45dd8d8a629abaccc0391c8}\index{GodmistWPF.Items.Inventory@{GodmistWPF.Items.Inventory}!TryRemoveItem@{TryRemoveItem}}
+\index{TryRemoveItem@{TryRemoveItem}!GodmistWPF.Items.Inventory@{GodmistWPF.Items.Inventory}}
+\doxysubsubsection{\texorpdfstring{TryRemoveItem()}{TryRemoveItem()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_inventory_a7c58a7c2a45dd8d8a629abaccc0391c8} 
+bool Godmist\+WPF.\+Items.\+Inventory.\+Try\+Remove\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}}]{item}{, }\item[{int}]{amount}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Próbuje usunąć określoną ilość przedmiotu z ekwipunku. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & Przedmiot do usunięcia.\\
+\hline
+{\em amount} & Ilość przedmiotów do usunięcia (domyślnie 1).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, jeśli udało się usunąć przedmiot, w przeciwnym razie false.
+\end{DoxyReturn}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_inventory_a6a4aa35faeb520970b58f6738446f41a}\index{GodmistWPF.Items.Inventory@{GodmistWPF.Items.Inventory}!UseItem@{UseItem}}
+\index{UseItem@{UseItem}!GodmistWPF.Items.Inventory@{GodmistWPF.Items.Inventory}}
+\doxysubsubsection{\texorpdfstring{UseItem()}{UseItem()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_inventory_a6a4aa35faeb520970b58f6738446f41a} 
+void Godmist\+WPF.\+Items.\+Inventory.\+Use\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}}]{item}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Próbuje użyć przedmiotu z ekwipunku. Jeśli przedmiot implementuje interfejs \doxylink{interface_godmist_w_p_f_1_1_items_1_1_i_usable}{IUsable}, wywołuje jego metodę Use(). W przypadku powodzenia usuwa jedną sztukę przedmiotu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & Przedmiot do użycia.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Items/Inventory.\+cs\end{DoxyCompactItemize}

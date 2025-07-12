@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZlEt8ue3vhA=",
+  "dgSpecHash": "fHKBR2bdl9Y=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Patryczku\\source\\repos\\WPFGodmist\\ConsoleGodmist\\GodmistWPF\\GodmistWPF.csproj",
+  "projectFilePath": "C:\\Users\\Patryczku\\source\\repos\\WPFGodmist\\ConsoleGodmist\\GodmistWPF\\WPFGodmist\\GodmistWPF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Patryczku\\.nuget\\packages\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
     "C:\\Users\\Patryczku\\.nuget\\packages\\materialdesignthemes\\4.9.0\\materialdesignthemes.4.9.0.nupkg.sha512",

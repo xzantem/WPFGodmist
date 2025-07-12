@@ -8,11 +8,39 @@ using GodmistWPF.Items.Equippable.Weapons;
 
 namespace GodmistWPF.Characters.Player
 {
+    /// <summary>
+    /// Klasa reprezentująca postać Paladyna - klasy wojownika z dodatkowymi umiejętnościami leczniczymi i obronnymi.
+    /// </summary>
+    /// <remarks>
+    /// <para>Paladyn to klasa postaci łącząca cechy wojownika i uzdrowiciela. Charakteryzuje się wysoką wytrzymałością, 
+    /// odpornością na efekty statusowe oraz umiejętnościami wspierającymi sojuszników.</para>
+    /// <para>Specjalizuje się w walce wręcz, wykorzystując ciężkie zbroje i tarcze.</para>
+    /// </remarks>
     public class Paladin : PlayerCharacter {
+        /// <summary>
+        /// Pobiera lub ustawia imię postaci.
+        /// </summary>
+        /// <value>Ciąg znaków reprezentujący imię Paladyna.</value>
         public override string Name { get; set; }
+        
         // Mana
         // Capped at 120, cannot be increased
         // Start battle with full Mana, regenerates passively each turn by 20
+        /// <summary>
+        /// Inicjalizuje nową instancję klasy <see cref="Paladin"/> o podanym imieniu.
+        /// </summary>
+        /// <param name="name">Imię postaci.</param>
+        /// <remarks>
+        /// <para>Konstruktor ustawia podstawowe statystyki Paladyna, w tym:</para>
+        /// <list type="bullet">
+        /// <item>Punkty zdrowia: 450 (ze wzrostem 20 na poziom)</item>
+        /// <item>Punkty many: 120 (stała wartość)</item>
+        /// <item>Regeneracja many: 20 na turę</item>
+        /// <item>Odporności na efekty statusowe</item>
+        /// <item>Początkowe umiejętności</item>
+        /// <item>Podstawowy ekwipunek</item>
+        /// </list>
+        /// </remarks>
         public Paladin(string name) : base(name, new Stat(450, 20),
             new Stat(21, 0.6), new Stat(30, 0.95),
             new Stat(0.08, 0), new Stat(8, 0.04),
@@ -36,23 +64,32 @@ namespace GodmistWPF.Characters.Player
             SwitchWeapon(new Weapon(CharacterClass.Paladin));
             SwitchArmor(new Armor(CharacterClass.Paladin));
             
-            // Add some starting items to inventory
             Inventory.AddItem(new GodmistWPF.Items.MiscItems.Bandage(), 3);
             Inventory.AddItem(new GodmistWPF.Items.MiscItems.Antidote(), 2);
             
-            ActiveSkills[0] = new ActiveSkill("Judgement", 0,0.6, false, 83,
+            ActiveSkills[0] = new ActiveSkill("Judgement", 0, 0.6, false, 83,
             [new DealDamage(DamageType.Physical, DamageBase.Random, 1, true, false, 0, 0)]);
-            ActiveSkills[1] = new ActiveSkill("CrushingStrike", 30,0.7, false, 75,
+            
+            ActiveSkills[1] = new ActiveSkill("CrushingStrike", 30, 0.7, false, 75,
                 [new DealDamage(DamageType.Physical, DamageBase.Minimal, 1, true, false, 0, 0),
                     new DebuffResistance(SkillTarget.Enemy, StatusEffectType.Stun, ModifierType.Additive, 0.3, 0.9, 3),
                     new InflictGenericStatusEffect("Stun", 3, 0.5, "CrushingStrike")]);
+                    
             ActiveSkills[2] = new ActiveSkill("Cure", 50, 0.4, true, 100,
             [new HealTarget(SkillTarget.Self, 1.5, DamageBase.Random)]);
+            
             ActiveSkills[3] = new ActiveSkill("HolyTransfusion", 60, 0.65, true, 100,
             [new DealDamage(DamageType.Magic, DamageBase.Random, 1, false, false, 1, 0)]);
-            ActiveSkills[4] = new ActiveSkill("ShieldOfReflection", 40, 0.4,true, 100,
+            
+            ActiveSkills[4] = new ActiveSkill("ShieldOfReflection", 40, 0.4, true, 100,
             [new BuffStat(SkillTarget.Self, StatType.Dodge, ModifierType.Multiplicative, 0.4, 1, 5)]);
         }
+        /// <summary>
+        /// Inicjalizuje nową instancję klasy <see cref="Paladin"/> bez parametrów.
+        /// </summary>
+        /// <remarks>
+        /// Konstruktor używany głównie do deserializacji. Należy ustawić wszystkie wymagane właściwości ręcznie.
+        /// </remarks>
         public Paladin() {}
     }
 }

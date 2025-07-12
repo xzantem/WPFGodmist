@@ -1,0 +1,238 @@
+\doxysection{Godmist\+WPF.\+Towns.\+NPCs.\+NPC Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{}\label{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}\index{GodmistWPF.Towns.NPCs.NPC@{GodmistWPF.Towns.NPCs.NPC}}
+
+
+Klasa bazowa dla wszystkich \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC} (niezależnych postaci) w grze.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Towns.\+NPCs.\+NPC\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.623188cm]{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a44eee5f951676ccdd4861c72032fa1ac}{Spend\+Gold}} (int gold)
+\begin{DoxyCompactList}\small\item\em Wydaje określoną ilość złota u danego \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}, zwiększając jego lojalność. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_aaa62933951b2b367dd1cdb2adc1ed310}\label{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_aaa62933951b2b367dd1cdb2adc1ed310} 
+void {\bfseries Add\+Wares} ()
+\begin{DoxyCompactList}\small\item\em Aktualizuje asortyment towarów dostępnych u \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a22e9a1f80e4a81136fe440a26ea03557}\label{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a22e9a1f80e4a81136fe440a26ea03557} 
+void {\bfseries Craft\+Item} ()
+\begin{DoxyCompactList}\small\item\em Otwiera interfejs tworzenia przedmiotów u danego \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_shop_item_info}{Shop\+Item\+Info}} $>$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_ab9f9c5810572ee3678cc5d78dc832a83}{Get\+Shop\+Items}} ()
+\begin{DoxyCompactList}\small\item\em Pobiera listę przedmiotów dostępnych w sklepie \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_ac8225a8a684a79597d3d54e274a7f7dd}{Can\+Buy\+Item}} (IItem item, int quantity=1)
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy gracz może kupić określoną ilość przedmiotu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a92b7814bf8b2e85d32ce719fc890096f}{Buy\+Item}} (IItem item, int quantity=1)
+\begin{DoxyCompactList}\small\item\em Kupuje określoną ilość przedmiotu od \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a0042388ce5ab84006926167408bf612c}{Can\+Sell\+Item}} (IItem item, int quantity=1)
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy gracz może sprzedać określoną ilość przedmiotu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a097a67223f63196a2d14fc8ef7554503}{Sell\+Item}} (IItem item, int quantity=1)
+\begin{DoxyCompactList}\small\item\em Sprzedaje określoną ilość przedmiotu \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a9965d73e0a65d9c14b52181bdd5e8043}{Alias}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia unikalny identyfikator \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a639a80e3f4bffbdaca6b827924ccc8cf}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera przyjazną nazwę \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC} na podstawie jego aliasu. \end{DoxyCompactList}\item 
+NPCInventory \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a493e0a6e01d19f97c014052d154fc29c}{Inventory}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia ekwipunek \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. \end{DoxyCompactList}\item 
+List$<$ ICraftable?$>$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_ab9005b43f66a74be13a58540b22a36cb}{Craftable\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia listę przedmiotów, które można wytworzyć u danego \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a3fe328d85414497151fef3da13f639d6}{Loyalty\+Level}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia poziom lojalności gracza u danego \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a9ab0ae7a857555073f661a555d4ad9cd}\label{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a9ab0ae7a857555073f661a555d4ad9cd} 
+int {\bfseries Gold\+Spent}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia ilość złota wydaną u danego \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_ad9c5e9eafb4806bfd4bc68a8911455da}\label{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_ad9c5e9eafb4806bfd4bc68a8911455da} 
+int {\bfseries Required\+Gold\+Spent}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera wymaganą ilość złota do wydania, aby osiągnąć następny poziom lojalności. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_ab91b0646ca8e7432f695a9fa69c87dfd}\label{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_ab91b0646ca8e7432f695a9fa69c87dfd} 
+double {\bfseries Service\+Cost\+Mod}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera modyfikator kosztu usług w zależności od poziomu lojalności. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa bazowa dla wszystkich \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC} (niezależnych postaci) w grze. 
+
+Klasa \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC} reprezentuje niezależną postać w grze, która może mieć swój ekwipunek, poziom lojalności i możliwość tworzenia przedmiotów. 
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a92b7814bf8b2e85d32ce719fc890096f}\index{GodmistWPF.Towns.NPCs.NPC@{GodmistWPF.Towns.NPCs.NPC}!BuyItem@{BuyItem}}
+\index{BuyItem@{BuyItem}!GodmistWPF.Towns.NPCs.NPC@{GodmistWPF.Towns.NPCs.NPC}}
+\doxysubsubsection{\texorpdfstring{BuyItem()}{BuyItem()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a92b7814bf8b2e85d32ce719fc890096f} 
+void Godmist\+WPF.\+Towns.\+NPCs.\+NPC.\+Buy\+Item (\begin{DoxyParamCaption}\item[{IItem}]{item}{, }\item[{int}]{quantity}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Kupuje określoną ilość przedmiotu od \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & Przedmiot do kupienia.\\
+\hline
+{\em quantity} & Ilość przedmiotu (domyślnie 1).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Operation\+Exception} & Wyrzucany, gdy gracz nie ma wystarczająco złota.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_ac8225a8a684a79597d3d54e274a7f7dd}\index{GodmistWPF.Towns.NPCs.NPC@{GodmistWPF.Towns.NPCs.NPC}!CanBuyItem@{CanBuyItem}}
+\index{CanBuyItem@{CanBuyItem}!GodmistWPF.Towns.NPCs.NPC@{GodmistWPF.Towns.NPCs.NPC}}
+\doxysubsubsection{\texorpdfstring{CanBuyItem()}{CanBuyItem()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_ac8225a8a684a79597d3d54e274a7f7dd} 
+bool Godmist\+WPF.\+Towns.\+NPCs.\+NPC.\+Can\+Buy\+Item (\begin{DoxyParamCaption}\item[{IItem}]{item}{, }\item[{int}]{quantity}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sprawdza, czy gracz może kupić określoną ilość przedmiotu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & Przedmiot do kupienia.\\
+\hline
+{\em quantity} & Ilość przedmiotu (domyślnie 1).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, jeśli gracz może kupić przedmiot; w przeciwnym razie false.
+\end{DoxyReturn}
+\Hypertarget{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a0042388ce5ab84006926167408bf612c}\index{GodmistWPF.Towns.NPCs.NPC@{GodmistWPF.Towns.NPCs.NPC}!CanSellItem@{CanSellItem}}
+\index{CanSellItem@{CanSellItem}!GodmistWPF.Towns.NPCs.NPC@{GodmistWPF.Towns.NPCs.NPC}}
+\doxysubsubsection{\texorpdfstring{CanSellItem()}{CanSellItem()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a0042388ce5ab84006926167408bf612c} 
+bool Godmist\+WPF.\+Towns.\+NPCs.\+NPC.\+Can\+Sell\+Item (\begin{DoxyParamCaption}\item[{IItem}]{item}{, }\item[{int}]{quantity}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sprawdza, czy gracz może sprzedać określoną ilość przedmiotu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & Przedmiot do sprzedania.\\
+\hline
+{\em quantity} & Ilość przedmiotu (domyślnie 1).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, jeśli gracz może sprzedać przedmiot; w przeciwnym razie false.
+\end{DoxyReturn}
+\Hypertarget{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_ab9f9c5810572ee3678cc5d78dc832a83}\index{GodmistWPF.Towns.NPCs.NPC@{GodmistWPF.Towns.NPCs.NPC}!GetShopItems@{GetShopItems}}
+\index{GetShopItems@{GetShopItems}!GodmistWPF.Towns.NPCs.NPC@{GodmistWPF.Towns.NPCs.NPC}}
+\doxysubsubsection{\texorpdfstring{GetShopItems()}{GetShopItems()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_ab9f9c5810572ee3678cc5d78dc832a83} 
+List$<$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_shop_item_info}{Shop\+Item\+Info}} $>$ Godmist\+WPF.\+Towns.\+NPCs.\+NPC.\+Get\+Shop\+Items (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pobiera listę przedmiotów dostępnych w sklepie \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. 
+
+\begin{DoxyReturn}{Returns}
+Lista informacji o przedmiotach w sklepie.
+\end{DoxyReturn}
+\Hypertarget{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a097a67223f63196a2d14fc8ef7554503}\index{GodmistWPF.Towns.NPCs.NPC@{GodmistWPF.Towns.NPCs.NPC}!SellItem@{SellItem}}
+\index{SellItem@{SellItem}!GodmistWPF.Towns.NPCs.NPC@{GodmistWPF.Towns.NPCs.NPC}}
+\doxysubsubsection{\texorpdfstring{SellItem()}{SellItem()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a097a67223f63196a2d14fc8ef7554503} 
+void Godmist\+WPF.\+Towns.\+NPCs.\+NPC.\+Sell\+Item (\begin{DoxyParamCaption}\item[{IItem}]{item}{, }\item[{int}]{quantity}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sprzedaje określoną ilość przedmiotu \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & Przedmiot do sprzedania.\\
+\hline
+{\em quantity} & Ilość przedmiotu (domyślnie 1).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Operation\+Exception} & Wyrzucany, gdy gracz nie ma wystarczającej ilości przedmiotów.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a44eee5f951676ccdd4861c72032fa1ac}\index{GodmistWPF.Towns.NPCs.NPC@{GodmistWPF.Towns.NPCs.NPC}!SpendGold@{SpendGold}}
+\index{SpendGold@{SpendGold}!GodmistWPF.Towns.NPCs.NPC@{GodmistWPF.Towns.NPCs.NPC}}
+\doxysubsubsection{\texorpdfstring{SpendGold()}{SpendGold()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a44eee5f951676ccdd4861c72032fa1ac} 
+void Godmist\+WPF.\+Towns.\+NPCs.\+NPC.\+Spend\+Gold (\begin{DoxyParamCaption}\item[{int}]{gold}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wydaje określoną ilość złota u danego \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}, zwiększając jego lojalność. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gold} & Ilość złota do wydania.\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-property-members}
+\Hypertarget{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a9965d73e0a65d9c14b52181bdd5e8043}\index{GodmistWPF.Towns.NPCs.NPC@{GodmistWPF.Towns.NPCs.NPC}!Alias@{Alias}}
+\index{Alias@{Alias}!GodmistWPF.Towns.NPCs.NPC@{GodmistWPF.Towns.NPCs.NPC}}
+\doxysubsubsection{\texorpdfstring{Alias}{Alias}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a9965d73e0a65d9c14b52181bdd5e8043} 
+string Godmist\+WPF.\+Towns.\+NPCs.\+NPC.\+Alias\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia unikalny identyfikator \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. 
+
+Unikalny identyfikator \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}.\Hypertarget{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_ab9005b43f66a74be13a58540b22a36cb}\index{GodmistWPF.Towns.NPCs.NPC@{GodmistWPF.Towns.NPCs.NPC}!CraftableItems@{CraftableItems}}
+\index{CraftableItems@{CraftableItems}!GodmistWPF.Towns.NPCs.NPC@{GodmistWPF.Towns.NPCs.NPC}}
+\doxysubsubsection{\texorpdfstring{CraftableItems}{CraftableItems}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_ab9005b43f66a74be13a58540b22a36cb} 
+List$<$ICraftable?$>$ Godmist\+WPF.\+Towns.\+NPCs.\+NPC.\+Craftable\+Items\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia listę przedmiotów, które można wytworzyć u danego \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. 
+
+Lista przedmiotów, które można wytworzyć u danego \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}.\Hypertarget{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a493e0a6e01d19f97c014052d154fc29c}\index{GodmistWPF.Towns.NPCs.NPC@{GodmistWPF.Towns.NPCs.NPC}!Inventory@{Inventory}}
+\index{Inventory@{Inventory}!GodmistWPF.Towns.NPCs.NPC@{GodmistWPF.Towns.NPCs.NPC}}
+\doxysubsubsection{\texorpdfstring{Inventory}{Inventory}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a493e0a6e01d19f97c014052d154fc29c} 
+NPCInventory Godmist\+WPF.\+Towns.\+NPCs.\+NPC.\+Inventory\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia ekwipunek \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. 
+
+Ekwipunek \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}.\Hypertarget{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a3fe328d85414497151fef3da13f639d6}\index{GodmistWPF.Towns.NPCs.NPC@{GodmistWPF.Towns.NPCs.NPC}!LoyaltyLevel@{LoyaltyLevel}}
+\index{LoyaltyLevel@{LoyaltyLevel}!GodmistWPF.Towns.NPCs.NPC@{GodmistWPF.Towns.NPCs.NPC}}
+\doxysubsubsection{\texorpdfstring{LoyaltyLevel}{LoyaltyLevel}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a3fe328d85414497151fef3da13f639d6} 
+int Godmist\+WPF.\+Towns.\+NPCs.\+NPC.\+Loyalty\+Level\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia poziom lojalności gracza u danego \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. 
+
+Poziom lojalności gracza u danego \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}.\Hypertarget{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a639a80e3f4bffbdaca6b827924ccc8cf}\index{GodmistWPF.Towns.NPCs.NPC@{GodmistWPF.Towns.NPCs.NPC}!Name@{Name}}
+\index{Name@{Name}!GodmistWPF.Towns.NPCs.NPC@{GodmistWPF.Towns.NPCs.NPC}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a639a80e3f4bffbdaca6b827924ccc8cf} 
+string Godmist\+WPF.\+Towns.\+NPCs.\+NPC.\+Name\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera przyjazną nazwę \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC} na podstawie jego aliasu. 
+
+Przyjazna nazwa \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Towns/\+NPCs/NPC.\+cs\end{DoxyCompactItemize}

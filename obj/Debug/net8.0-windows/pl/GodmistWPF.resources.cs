@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GodmistWPF")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute(" ")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd8e10a9c1cae48509351feb1a7fda76d5079d5c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ba18b44484584bf7662ce6ef768eeb157f18cb1")]
 [assembly: System.Reflection.AssemblyProductAttribute("GodmistWPF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GodmistWPF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

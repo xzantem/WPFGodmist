@@ -1,191 +1,266 @@
-﻿
-using ConsoleGodmist;
-using ConsoleGodmist.TextService;
+
+using System.Diagnostics;
+using System.Windows;
+using System.Windows.Media;
 using GodmistWPF.Characters;
 using GodmistWPF.Characters.Player;
 using GodmistWPF.Combat.Modifiers.PassiveEffects;
+using GodmistWPF.Dialogs;
 using GodmistWPF.Dungeons;
 using GodmistWPF.Text;
 using GodmistWPF.Utilities;
 
 namespace GodmistWPF.Combat.Battles;
 
+/// <summary>
+/// Główna klasa zarządzająca przebiegiem walki w grze.
+/// </summary>
+/// <remarks>
+/// Odpowiada za kolejność turek, przetwarzanie akcji gracza i AI,
+/// oraz zarządzanie stanem walki.
+/// </remarks>
 public class Battle(Dictionary<BattleUser, int> usersTeams, DungeonField location, bool canEscape = true)
 {
+    /// <summary>
+    /// Słownik zawierający uczestników walki wraz z ich przynależnością do drużyn.
+    /// </summary>
+    /// <value>
+    /// Klucz to uczestnik walki, wartość to identyfikator drużyny.
+    /// </value>
     public Dictionary<BattleUser, int> Users { get; } = usersTeams;
+    /// <summary>
+    /// Pobiera numer aktualnej tury walki.
+    /// </summary>
+    /// <value>
+    /// Licznik tur, zaczynający się od 1.
+    /// </value>
     public int TurnCount { get; private set; } = 1;
+    /// <summary>
+    /// Pobiera lub ustawia informację, czy gracz uciekł z walki.
+    /// </summary>
+    /// <value>
+    /// <c>true</c> jeśli gracz uciekł; w przeciwnym razie <c>false</c>.
+    /// </value>
     public bool Escaped { get; set; }
+    /// <summary>
+    /// Pobiera informację, czy ucieczka z walki jest możliwa.
+    /// </summary>
+    /// <value>
+    /// <c>true</c> jeśli ucieczka jest możliwa; w przeciwnym razie <c>false</c>.
+    /// </value>
     public bool CanEscape { get; } = canEscape;
+    /// <summary>
+    /// Pobiera lub ustawia liczbę prób ucieczki.
+    /// </summary>
     private int EscapeAttempts { get; set; }
+    /// <summary>
+    /// Pobiera lokalizację, w której odbywa się walka.
+    /// </summary>
     public DungeonField Location { get; private set; } = location;
 
-    public BattleInterface Interface { get; } = new(usersTeams.Last().Key);
+    /// <summary>
+    /// Pobiera interfejs użytkownika dla tej walki.
+    /// </summary>
+    public BattleInterface Interface { get; } = new();
+    /// <summary>
+    /// Źródło zadania używane do oczekiwania na zakończenie tury gracza.
+    /// </summary>
+    private TaskCompletionSource<bool> _playerMoveCompletionSource;
 
-    public void NewTurn()
+    /// <summary>
+    /// Rozpoczyna nową turę walki.
+    /// </summary>
+    /// <returns>Zadanie reprezentujące asynchroniczną operację.</returns>
+    /// <remarks>
+    /// Metoda zarządza całą logiką tury, w tym:
+    /// - Aktualizacją interfejsu użytkownika
+    /// - Obsługą efektów początku tury
+    /// - Kolejnością ruchów postaci
+    /// - Obsługą akcji gracza i AI
+    /// - Sprawdzaniem warunków zakończenia walki
+    /// </remarks>
+    public async Task NewTurnAsync()
     {
-        Interface.AddBattleLogLines($"- {locale.Turn} {TurnCount} -");
-        Interface.DisplayInterface(Users.ElementAt(0).Key, Users.Keys.ToList());
-        foreach (var user in Users.Keys)
+        try
         {
-            user.StartNewTurn();
-        }
-        while (Users.Keys.Any(x => !x.MovedThisTurn) && !Escaped)
-        {
-            foreach (var user in Users.Keys.Where(user => user.TryMove()))
+            // Update turn display
+            await Application.Current.Dispatcher.InvokeAsync(() =>
             {
-                if (CheckForResult() != -1)
-                    return;
-                Interface.AddBattleLogLines($"{locale.Moving}: {user.User.Name}");
-                Interface.DisplayInterface(Users.ElementAt(0).Key, Users.Keys.ToList());
-                Thread.Sleep(1000);
-                if (!user.User.PassiveEffects.CanMove())
+                if (Application.Current.Windows.OfType<BattleDialog>().FirstOrDefault() is { } battleDialog)
                 {
-                    Interface.AddBattleLogLines($"{user.User.Name} {locale.CannotMoveThisTurn}\n");
-                    Thread.Sleep(1000);
-                    HandleEffects(user);
-                    Interface.DisplayInterface(Users.ElementAt(0).Key, Users.Keys.ToList());
+                    battleDialog.AddToBattleLog($"=== Turn {TurnCount} ===", Brushes.White);
+                }
+            });
+
+            // Start new turn for all users
+            foreach (var user in Users.Keys)
+            {
+                user.StartNewTurn();
+            }
+
+            // Process each user's turn
+            while (Users.Keys.Any(x => !x.MovedThisTurn) && !Escaped)
+            {
+                foreach (var user in Users.Keys.ToList()) // Create a copy to avoid collection modification
+                {
+                    if (!user.TryMove()) continue;
                     if (CheckForResult() != -1)
                         return;
-                    continue;
-                }
-                HandleEffects(user);
-                if (CheckForResult() != -1)
-                    return;
-                switch (Users[user])
-                {
-                    case 0:
-                        var hasMoved = false;
-                        while (!hasMoved)
+
+                    // Update UI to show whose turn it is
+                    await Application.Current.Dispatcher.InvokeAsync(() =>
+                    {
+                        if (Application.Current.Windows.OfType<BattleDialog>().FirstOrDefault() is { } dialog)
                         {
-                            CheckForDead();
-                            Interface.DisplayInterface(Users.ElementAt(0).Key, Users.Keys.ToList());
-                            if (CheckForResult() != -1)
-                                return;
-                            hasMoved = PlayerMove(user, Users
-                                .FirstOrDefault(x => x.Key != user).Key);
-                            Interface.DisplayInterface(Users.ElementAt(0).Key, Users.Keys.ToList());
+                            dialog.AddToBattleLog($"{user.User.Name}'s turn", Brushes.LightBlue);
+                            dialog.UpdateBattleDisplay();
                         }
-                        break;
-                    case 1:
-                        Thread.Sleep(1000);
-                        AIMove(user, UtilityMethods
-                            .RandomChoice(Users
-                                .Where(x => x.Key != user)
-                                .ToDictionary(x => x.Key, x => 1)));
+                    });
+
+                    // Small delay for UI updates
+                    await Task.Delay(500);
+
+                    // Check if user can move (considering status effects, etc.)
+                    if (!user.User.PassiveEffects.CanMove())
+                    {
+                        await Application.Current.Dispatcher.InvokeAsync(() =>
+                        {
+                            if (Application.Current.Windows.OfType<BattleDialog>().FirstOrDefault() is { } dialog)
+                            {
+                                dialog.AddToBattleLog($"{user.User.Name} is unable to move!", Brushes.Yellow);
+                            }
+                        });
+
+                        await Task.Delay(1000);
+                        await HandleEffectsAsync(user);
+
                         if (CheckForResult() != -1)
                             return;
-                        break;
+
+                        continue;
+                    }
+
+                    // Handle any start-of-turn effects
+                    await HandleEffectsAsync(user);
+                    if (CheckForResult() != -1)
+                        return;
+
+                    // Process the actual move based on user type (player or AI)
+                    switch (Users[user])
+                    {
+                        case 0: // Player
+                            // Enable player input and wait for their move
+                            await PlayerMoveAsync(user, Users
+                                .FirstOrDefault(x => x.Key != user).Key);
+                            break;
+
+                        case 1: // AI
+                            await Task.Delay(500); // Small delay for better feel
+                            await AIMoveAsync(user, UtilityMethods
+                                .RandomChoice(Users
+                                    .Where(x => x.Key != user)
+                                    .ToDictionary(x => x.Key, x => 1)));
+                            break;
+                    }
+
+                    // Update UI after the move
+                    await Application.Current.Dispatcher.InvokeAsync(() =>
+                    {
+                        if (Application.Current.Windows.OfType<BattleDialog>().FirstOrDefault() is { } dialog)
+                        {
+                            dialog.UpdateBattleDisplay();
+                        }
+                    });
+
+                    // Small delay between turns for better feel
+                    await Task.Delay(300);
+
+                    if (CheckForResult() != -1)
+                        return;
                 }
             }
         }
+        catch (Exception ex)
+        {
+            Debug.WriteLine($"Error in NewTurnAsync: {ex.Message}");
+        }
+
         TurnCount++;
     }
-    public void HandleEffects(BattleUser user)
+    /// <summary>
+    /// Obsługuje efekty i modyfikatory dla określonego użytkownika.
+    /// </summary>
+    /// <param name="user">Użytkownik, dla którego mają zostać obsłużone efekty.</param>
+    /// <returns>Zadanie reprezentujące asynchroniczną operację.</returns>
+    public async Task HandleEffectsAsync(BattleUser user)
     {
         user.User.HandleModifiers();
         user.User.RegenResource((int)user.User.ResourceRegen);
         user.User.PassiveEffects.HandleBattleEvent(new BattleEventData("PerTurn", user));
         user.User.PassiveEffects.TickEffects();
-        CheckForDead();
+        await CheckForDeadAsync();
     }
-
-    public void ChooseSkill(BattleUser player, BattleUser target)
+    /// <summary>
+    /// Obsługuje ruch gracza w trakcie tury.
+    /// </summary>
+    /// <param name="player">Gracz wykonujący ruch.</param>
+    /// <param name="target">Domyślny cel ataku.</param>
+    /// <returns>
+    /// <c>true</c> jeśli ruch został ukończony pomyślnie; w przeciwnym razie <c>false</c>.
+    /// </returns>
+    /// <remarks>
+    /// Metoda aktywuje interfejs użytkownika i czeka na decyzję gracza.
+    /// </remarks>
+    public async Task<bool> PlayerMoveAsync(BattleUser player, BattleUser target)
     {
-        var activeSkills = (player.User as PlayerCharacter)?.ActiveSkills;  
-        var possibleSkills = activeSkills
-            .Where(x => (x.ResourceCost <= player.User.CurrentResource ||
-                         Math.Abs(player.User.MaximalResource - player.User.CurrentResource) < 0.01)
-                        && x.ActionCost * player.MaxActionPoints.Value(player.User, "MaxActionPoints") <= player.CurrentActionPoints)
-            .ToArray();
-        var possibleSkillsNames = possibleSkills
-            .Select(x => x.Name + $" ({(int)UtilityMethods.CalculateModValue(x.ResourceCost, player.User.PassiveEffects.GetModifiers("ResourceCost"))} {BattleTextService.ResourceShortText(player.User as PlayerCharacter)}, " +
-                         $"{(int)(x.ActionCost * player.MaxActionPoints.BaseValue)} {locale.ActionPointsShort})").ToArray();
-        var unselectableSkillsNames = activeSkills.Where(x => !possibleSkills.Contains(x))
-            .Select(x => BattleTextService.UnselectableSkillMarkup(x, player)).ToArray();
-        var choices = possibleSkillsNames.Append(locale.Return).ToArray();
-        // WPF handles skill selection UI
-        var choice = choices[0]; // Default to first choice
-        if (choice == locale.Return) return;
-        if (!(possibleSkills[Array.IndexOf(choices, choice)]
-                .ActionCost * player.MaxActionPoints.BaseValue > player.CurrentActionPoints))
-            possibleSkills[Array.IndexOf(choices, choice)].Use(player, target);
-    }
-    public bool PlayerMove(BattleUser player, BattleUser target)
-    {
-        var choices = new Dictionary<string, int>
+        try
         {
-            {locale.EndTurn, 0},
-            {locale.UseSkill, 1},
-            {locale.UseItem, 2}
-        };
-        if (CanEscape)
-            choices.Add(locale.Escape, 7);
-        var displayChoices = new Dictionary<string, int>
-        {
-            {locale.ChangeAdditionalCharacterInfo, 3},
-            {locale.ChangeDisplayedCharacter, 4},
-        };
-        if (Interface.CanScroll(true))
-            displayChoices.Add(locale.ScrollBattleLogUp, 5);
-        if (Interface.CanScroll(false))
-            displayChoices.Add(locale.ScrollBattleLogDown, 6);
-
-        // WPF handles player move selection UI
-        var choice = choices.Keys.First(); // Default to first choice
-        switch (choices.Concat(displayChoices).ToDictionary()[choice])
-        {
-            case 0:
-                var activeSkills = (player.User as PlayerCharacter)?.ActiveSkills;
-                var canUseSkill = activeSkills
-                    .Any(x => (x.ResourceCost <= player.User.CurrentResource ||
-                               Math.Abs(player.User.MaximalResource - player.User.CurrentResource) < 0.01)
-                              && x.ActionCost * player.MaxActionPoints.Value(player.User, "MaxActionPoints") <=
-                              player.CurrentActionPoints && x is not { ResourceCost: 0, ActionCost: 0 });
-                var ended = !canUseSkill || UtilityMethods.Confirmation(locale.ConfirmEndTurn);
-                if (canUseSkill) 
-                    UtilityMethods.ClearConsole();
-                return ended;
-            case 1:
-                ChooseSkill(player, target);
-                CheckForDead();
-                return false;
-            case 2:
-                //(player.User as PlayerCharacter).Inventory.UseItem(InventoryMenuHandler.Choose;
-                return false;
-            case 3:
-                Interface.ChangeDisplayMode();
-                return false;
-            case 4:
-                Interface.ChangeDisplayedUser(Users.Keys.ToList());
-                return false;
-            case 5:
-                Interface.ScrollBattleLog(true);
-                return false;
-            case 6:
-                Interface.ScrollBattleLog(false);
-                return false;
-            case 7:
-                Interface.AddBattleLogLines($"{locale.TryEscape}...");
-                Interface.DisplayInterface(player, Users.Keys.ToList());
-                Thread.Sleep(2000);
-                if (!(Random.Shared.NextDouble() < 0.5 + EscapeAttempts * 0.1))
+            // Create a new completion source for this move
+            _playerMoveCompletionSource = new TaskCompletionSource<bool>();
+            
+            // Enable UI for player input
+            await Application.Current.Dispatcher.InvokeAsync(() => 
+            {
+                Interface.EnablePlayerInput(true);
+                if (Application.Current.Windows.OfType<BattleDialog>().FirstOrDefault() is { } dialog)
                 {
-                    Interface.AddBattleLogLines($"{locale.EscapeFail}!");
-                    Interface.DisplayInterface(player, Users.Keys.ToList());
-                    EscapeAttempts++;
-                    return true;
+                    dialog.UpdateBattleDisplay();
                 }
-                Interface.AddBattleLogLines($"{locale.EscapeSuccess}!");
-                Interface.DisplayInterface(player, Users.Keys.ToList());
-                (player.User as PlayerCharacter).LoseHonor((int)Users.Where(x => x.Value == 1)
-                    .Average(x => x.Key.User.Level) / 3 + 4);
-                EscapeAttempts = 0;
-                Escaped = true;
-                return true;
+                // Update UI to show it's the player's turn
+            });
+            
+            // Wait for the player to make a move (either by using a skill/item or ending their turn)
+            bool moveCompleted = await _playerMoveCompletionSource.Task;
+            
+            // Disable UI after move is complete
+            await Application.Current.Dispatcher.InvokeAsync(() => 
+            {
+                Interface.EnablePlayerInput(false);
+            });
+            
+            return moveCompleted;
         }
-        return false;
+        catch (Exception ex)
+        {
+            Debug.WriteLine($"Error in PlayerMoveAsync: {ex.Message}");
+            return true; // End the turn if there's an error
+        }
+        finally
+        {
+            _playerMoveCompletionSource = null;
+        }
     }
-    public void AIMove(BattleUser enemy, BattleUser target)
+    /// <summary>
+    /// Obsługuje ruch przeciwnika sterowanego przez AI.
+    /// </summary>
+    /// <param name="enemy">Przeciwnik wykonujący ruch.</param>
+    /// <param name="target">Cel ataku.</param>
+    /// <returns>Zadanie reprezentujące asynchroniczną operację.</returns>
+    /// <remarks>
+    /// AI wybiera losowo umiejętność z dostępnych, które może użyć,
+    /// biorąc pod uwagę koszt many i punktów akcji.
+    /// </remarks>
+    public async Task AIMoveAsync(BattleUser enemy, BattleUser target)
     {
         // WPF handles AI move display
         while (CheckForResult() == -1)
@@ -202,8 +277,19 @@ public class Battle(Dictionary<BattleUser, int> usersTeams, DungeonField locatio
             if (possibleSkills.Length == 0) break;
             var skill = UtilityMethods.RandomChoice(possibleSkills.ToList());
             skill.Use(enemy, target);
-            CheckForDead();
+            await Application.Current.Dispatcher.InvokeAsync(() => 
+            {
+                if (Application.Current.Windows.OfType<BattleDialog>().FirstOrDefault() is { } dialog)
+                {
+                    dialog.UpdateBattleDisplay();
+                }
+            });
+            
+            await CheckForDeadAsync();
             if (CheckForResult() != -1) break;
+            
+            // Small delay for better feel
+            await Task.Delay(500);
         }
     }
 
@@ -216,12 +302,42 @@ public class Battle(Dictionary<BattleUser, int> usersTeams, DungeonField locatio
         return -1; // Battle continues
     }
 
-    public void CheckForDead()
+    public async Task CheckForDeadAsync()
     {
-        foreach (var user in Users.Keys.Where(x => x.User.CurrentHealth <= 0))
+        var deadUsers = Users.Keys.Where(x => x.User.CurrentHealth <= 0).ToList();
+        if (!deadUsers.Any()) return;
+        
+        await Application.Current.Dispatcher.InvokeAsync(() => 
         {
-            Interface.AddBattleLogLines($"{user.User.Name} {locale.Dies}!");
-            Interface.DisplayInterface(Users.ElementAt(0).Key, Users.Keys.ToList());
+            foreach (var user in deadUsers)
+            {
+            }
+        });
+    }
+
+    public bool TryEscape(PlayerCharacter player)
+    {
+        if (!(Random.Shared.NextDouble() < 0.5 + EscapeAttempts * 0.1))
+        {
+            EscapeAttempts++;
+            return false;
         }
+        player.LoseHonor((int)Users.Where(x => x.Value == 1)
+            .Average(x => x.Key.User.Level) / 3 + 4);
+        EscapeAttempts = 0;
+        Escaped = true;
+        return true;
+    }
+    
+    public void CompletePlayerMove(bool moveCompleted)
+    {
+        _playerMoveCompletionSource?.TrySetResult(moveCompleted);
+    }
+    
+    public void Cleanup()
+    {
+        // Clean up any pending player move
+        _playerMoveCompletionSource?.TrySetResult(true);
+        _playerMoveCompletionSource = null;
     }
 }

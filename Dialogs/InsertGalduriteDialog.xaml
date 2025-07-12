@@ -1,0 +1,202 @@
+<Window x:Class="GodmistWPF.Dialogs.InsertGalduriteDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:GodmistWPF.Dialogs"
+        xmlns:enums="clr-namespace:GodmistWPF.Enums.Items"
+        mc:Ignorable="d"
+        Title="Insert Galdurite" 
+        Height="600" 
+        Width="500"
+        WindowStartupLocation="CenterOwner"
+        Style="{StaticResource MaterialDesignWindow}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+    
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary>
+                    <ResourceDictionary.MergedDictionaries>
+                        <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Dark.xaml" />
+                        <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                        <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+                        <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+                    </ResourceDictionary.MergedDictionaries>
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+            
+            <!-- Button Styles -->
+            <Style TargetType="Button" BasedOn="{StaticResource MaterialDesignFlatButton}">
+                <Setter Property="Margin" Value="8,4"/>
+                <Setter Property="Padding" Value="16,8"/>
+                <Setter Property="Background" Value="{DynamicResource PrimaryHueMidBrush}"/>
+                <Setter Property="Foreground" Value="{DynamicResource PrimaryHueMidForegroundBrush}"/>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background" Value="{DynamicResource PrimaryHueLightBrush}"/>
+                        <Setter Property="Foreground" Value="{DynamicResource PrimaryHueLightForegroundBrush}"/>
+                    </Trigger>
+                    <Trigger Property="IsEnabled" Value="False">
+                        <Setter Property="Opacity" Value="0.6"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            
+            <Style TargetType="Button" x:Key="OutlinedButton" BasedOn="{StaticResource MaterialDesignOutlinedButton}">
+                <Setter Property="Margin" Value="8,4"/>
+                <Setter Property="Padding" Value="16,8"/>
+                <Setter Property="BorderBrush" Value="{DynamicResource PrimaryHueMidBrush}"/>
+                <Setter Property="Foreground" Value="{DynamicResource PrimaryHueMidBrush}"/>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background" Value="{DynamicResource PrimaryHueLightBrush}" />
+                        <Setter Property="Foreground" Value="{DynamicResource PrimaryHueLightForegroundBrush}" />
+                    </Trigger>
+                    <Trigger Property="IsEnabled" Value="False">
+                        <Setter Property="Opacity" Value="0.6"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            
+            <!-- Custom styles for dark theme -->
+            <Style TargetType="ListBox" BasedOn="{StaticResource MaterialDesignListBox}">
+                <Setter Property="Background" Value="{DynamicResource MaterialDesignBackground}"/>
+                <Setter Property="BorderBrush" Value="{DynamicResource MaterialDesignDivider}"/>
+                <Setter Property="BorderThickness" Value="1"/>
+                <Setter Property="Padding" Value="4"/>
+            </Style>
+        </ResourceDictionary>
+    </Window.Resources>
+    
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Header -->
+        <TextBlock Grid.Row="0" 
+                   Text="Insert Galdurite" 
+                   Style="{StaticResource MaterialDesignHeadline5TextBlock}"
+                   Margin="0,0,0,16"/>
+        
+        <!-- Target Item -->
+        <Border Grid.Row="1"
+                Background="{DynamicResource MaterialDesignCardBackground}"
+                CornerRadius="4"
+                Padding="16"
+                Margin="0,0,0,16">
+            <StackPanel>
+                <TextBlock Text="TARGET ITEM" 
+                           Style="{StaticResource MaterialDesignCaptionTextBlock}"
+                           Opacity="0.7"
+                           Margin="0,0,0,8"/>
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBlock Text="{Binding TargetItemName}" 
+                               Style="{StaticResource MaterialDesignSubtitle1TextBlock}"
+                               FontWeight="SemiBold"/>
+                    <TextBlock Text="{Binding TargetItemSlots}"
+                               Style="{StaticResource MaterialDesignBody1TextBlock}"
+                               Opacity="0.8"
+                               Margin="16,0,0,0"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+        
+        <!-- Available Galdurites -->
+        <TextBlock Grid.Row="1"
+                   Text="AVAILABLE GALDURITES"
+                   Style="{StaticResource MaterialDesignCaptionTextBlock}"
+                   Opacity="0.7"
+                   Margin="10,100,10,8"/>
+        
+        <ListBox x:Name="GalduriteList" 
+                 Grid.Row="1"
+                 Margin="0,120,0,0"
+                 Style="{StaticResource MaterialDesignListBox}"
+                 SelectionChanged="GalduriteList_SelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border Background="{Binding Rarity, Converter={StaticResource RarityToBrushConverter}, ConverterParameter=0.2}"
+                            CornerRadius="4"
+                            Padding="12,8"
+                            Margin="0,0,0,8">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel>
+                                <TextBlock Text="{Binding Name}" 
+                                           Style="{StaticResource MaterialDesignSubtitle1TextBlock}"
+                                           FontWeight="SemiBold"/>
+                                <TextBlock Text="{Binding Rarity}"
+                                           Style="{StaticResource MaterialDesignBody2TextBlock}"
+                                           Foreground="{Binding Rarity, Converter={StaticResource RarityToBrushConverter}}"
+                                           Margin="0,2,0,0"/>
+                                <TextBlock Text="{Binding RequiredLevel, StringFormat='Required Level: {0}'}"
+                                           Style="{StaticResource MaterialDesignBody2TextBlock}"
+                                           Opacity="0.8"
+                                           Margin="0,2,0,0"/>
+                                <TextBlock Text="{Binding EffectDescription}"
+                                           Style="{StaticResource MaterialDesignBody1TextBlock}"
+                                           TextWrapping="Wrap"
+                                           Margin="0,8,0,0"/>
+                            </StackPanel>
+                            <TextBlock Grid.Column="1"
+                                       Text="{Binding Cost, StringFormat='{}{0:N0} Gold'}"
+                                       Style="{StaticResource MaterialDesignBody1TextBlock}"
+                                       Foreground="Gold"
+                                       VerticalAlignment="Top"
+                                       HorizontalAlignment="Right"/>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        
+        <!-- Status Bar -->
+        <Border Grid.Row="1"
+                Grid.RowSpan="2"
+                VerticalAlignment="Bottom"
+                Background="{DynamicResource MaterialDesignToolBarBackground}"
+                Height="60"
+                Panel.ZIndex="1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <StackPanel Orientation="Horizontal" 
+                            VerticalAlignment="Center" 
+                            Margin="16,0">
+                </StackPanel>
+                
+                <StackPanel Grid.Column="1" 
+                            Orientation="Horizontal" 
+                            HorizontalAlignment="Right"
+                            Margin="0,0,16,0">
+                    <Button x:Name="CancelButton" 
+                            Content="CANCEL" 
+                            Style="{StaticResource OutlinedButton}"
+                            Click="CancelButton_Click"/>
+                    <Button x:Name="InsertButton" 
+                            Content="INSERT" 
+                            Style="{StaticResource MaterialDesignRaisedButton}"
+                            IsEnabled="False"
+                            Click="InsertButton_Click"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

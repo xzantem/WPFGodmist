@@ -1,4 +1,4 @@
-﻿using GodmistWPF.Characters.Player;
+using GodmistWPF.Characters.Player;
 using GodmistWPF.Combat.Modifiers.PassiveEffects;
 using GodmistWPF.Combat.Skills.ActiveSkillEffects;
 using GodmistWPF.Enums;
@@ -11,8 +11,29 @@ using GodmistWPF.Utilities;
 
 namespace GodmistWPF.Items.Equippable;
 
+/// <summary>
+/// Statyczna klasa serwisu odpowiedzialnego za tworzenie i zarządzanie przedmiotami wyposażenia.
+/// Zawiera metody do generowania losowych przedmiotów, określania ich właściwości i efektów.
+/// </summary>
 public static class EquippableItemService
 {
+    /// <summary>
+    /// Oblicza modyfikator ceny na podstawie rzadkości przedmiotu.
+    /// </summary>
+    /// <param name="rarity">Rzadkość przedmiotu.</param>
+    /// <returns>Modyfikator ceny jako wartość zmiennoprzecinkowa.</returns>
+    /// <remarks>
+    /// Wartości modyfikatorów:
+    /// - Zniszczony: 0.7
+    /// - Uszkodzony: 0.85
+    /// - Niezwykły: 1.15
+    /// - Rzadki: 1.25
+    /// - Starożytny: 1.5
+    /// - Legendarny: 1.75
+    /// - Mityczny: 2.0
+    /// - Boski: 2.5
+    /// - Domyślnie: 1.0
+    /// </remarks>
     public static double RarityPriceModifier(ItemRarity rarity)
     {
         return rarity switch
@@ -28,6 +49,23 @@ public static class EquippableItemService
             _ => 1
         };
     }
+    /// <summary>
+    /// Oblicza modyfikator statystyk na podstawie rzadkości przedmiotu.
+    /// </summary>
+    /// <param name="rarity">Rzadkość przedmiotu.</param>
+    /// <returns>Modyfikator statystyk jako wartość zmiennoprzecinkowa.</returns>
+    /// <remarks>
+    /// Wartości modyfikatorów:
+    /// - Zniszczony: 0.6
+    /// - Uszkodzony: 0.7
+    /// - Niezwykły: 1.025
+    /// - Rzadki: 1.05
+    /// - Starożytny: 1.125
+    /// - Legendarny: 1.225
+    /// - Mityczny: 1.35
+    /// - Boski: 1.5
+    /// - Domyślnie: 1.0
+    /// </remarks>
     public static double RarityStatModifier(ItemRarity rarity)
     {
         return rarity switch
@@ -44,6 +82,24 @@ public static class EquippableItemService
         };
     }
 
+    /// <summary>
+    /// Losuje rzadkość przedmiotu z uwzględnieniem przesunięcia.
+    /// </summary>
+    /// <param name="bias">Przesunięcie wpływające na szanse wylosowania wyższych rzadkości.</param>
+    /// <returns>Wylosowana rzadkość przedmiotu.</returns>
+    /// <remarks>
+    /// Im wyższe przesunięcie, tym większa szansa na rzadsze przedmioty.
+    /// Domyślne szanse (przy bias=0):
+    /// - Zniszczony: 40%
+    /// - Uszkodzony: 60%
+    /// - Zwykły: 200%
+    /// - Niezwykły: 40%
+    /// - Rzadki: 20%
+    /// - Starożytny: 10%
+    /// - Legendarny: 5%
+    /// - Mityczny: 2%
+    /// - Boski: 1%
+    /// </remarks>
     public static ItemRarity GetRandomRarity(int bias = 0)
     {
         var rarities = new Dictionary<ItemRarity, int>
@@ -60,6 +116,22 @@ public static class EquippableItemService
         };
         return UtilityMethods.RandomChoice(rarities);
     }
+    /// <summary>
+    /// Losuje rzadkość galadurytu z uwzględnieniem przesunięcia.
+    /// </summary>
+    /// <param name="bias">Przesunięcie wpływające na szanse wylosowania wyższych rzadkości.</param>
+    /// <returns>Wylosowana rzadkość galadurytu.</returns>
+    /// <remarks>
+    /// Specjalna wersja dla galadurytów, która nie uwzględnia zniszczonych i uszkodzonych przedmiotów.
+    /// Domyślne szanse (przy bias=0):
+    /// - Zwykły: 50%
+    /// - Niezwykły: 35%
+    /// - Rzadki: 25%
+    /// - Starożytny: 20%
+    /// - Legendarny: 15%
+    /// - Mityczny: 10%
+    /// - Boski: 5%
+    /// </remarks>
     public static ItemRarity GetRandomGalduriteRarity(int bias = 0)
     {
         var rarities = new Dictionary<ItemRarity, int>
@@ -75,6 +147,15 @@ public static class EquippableItemService
         return UtilityMethods.RandomChoice(rarities);
     }
 
+    /// <summary>
+    /// Tworzy losową broń określonego poziomu i klasy postaci.
+    /// </summary>
+    /// <param name="tier">Poziom broni.</param>
+    /// <param name="requiredClass">Wymagana klasa postaci.</param>
+    /// <returns>Nowa instancja losowej broni.</returns>
+    /// <remarks>
+    /// Jakość broni jest losowana z wyłączeniem jakości "Arcydzieło".
+    /// </remarks>
     public static Weapon GetRandomWeapon(int tier, CharacterClass requiredClass)
     {
         return new Weapon(EquipmentPartManager.GetRandomPart<WeaponHead>(tier, requiredClass),
@@ -84,6 +165,15 @@ public static class EquippableItemService
             UtilityMethods.RandomChoice(Enum.GetValues<Quality>()
                 .Where(x => x != Quality.Masterpiece).ToList()));
     }
+    /// <summary>
+    /// Tworzy losową broń określonego poziomu i losowej klasy postaci.
+    /// </summary>
+    /// <param name="tier">Poziom broni.</param>
+    /// <returns>Nowa instancja losowej broni.</returns>
+    /// <remarks>
+    /// Klasa postaci jest losowana spośród wszystkich dostępnych klas.
+    /// Jakość broni jest losowana z wyłączeniem jakości "Arcydzieło".
+    /// </remarks>
     public static Weapon GetRandomWeapon(int tier)
     {
         var requiredClass = UtilityMethods.RandomChoice(Enum.GetValues<CharacterClass>().ToList());
@@ -94,6 +184,16 @@ public static class EquippableItemService
             UtilityMethods.RandomChoice(Enum.GetValues<Quality>()
                 .Where(x => x != Quality.Masterpiece).ToList()));
     }
+    /// <summary>
+    /// Tworzy specjalny przedmiot upuszczany przez bossa.
+    /// </summary>
+    /// <param name="tier">Poziom przedmiotu.</param>
+    /// <param name="bossAlias">Alias bossa, który upuszcza przedmiot.</param>
+    /// <returns>Specjalny przedmiot arcydzieło powiązany z danym bossem.</returns>
+    /// <remarks>
+    /// Dla każdego bossa zdefiniowane są 2 możliwe przedmioty arcydzieła.
+    /// Przedmioty mają specjalne unikalne właściwości i są zawsze najwyższej jakości.
+    /// </remarks>
     public static IEquippable GetBossDrop(int tier, string bossAlias)
     {
         var random = Random.Shared.Next(1, 3);
@@ -136,6 +236,15 @@ public static class EquippableItemService
                 new InnatePassiveEffect(PlayerHandler.player , "", "", []), "LeafyTunic"),
         };
     }
+    /// <summary>
+    /// Tworzy losową zbroję określonego poziomu i klasy postaci.
+    /// </summary>
+    /// <param name="tier">Poziom zbroi.</param>
+    /// <param name="requiredClass">Wymagana klasa postaci.</param>
+    /// <returns>Nowa instancja losowej zbroi.</returns>
+    /// <remarks>
+    /// Jakość zbroi jest losowana z wyłączeniem jakości "Arcydzieło".
+    /// </remarks>
     public static Armor GetRandomArmor(int tier, CharacterClass requiredClass)
     {
         return new Armor(EquipmentPartManager.GetRandomPart<ArmorPlate>(tier, requiredClass),
@@ -146,6 +255,15 @@ public static class EquippableItemService
                 .Where(x => x != Quality.Masterpiece).ToList()));
     }
 
+    /// <summary>
+    /// Tworzy losową zbroję określonego poziomu i losowej klasy postaci.
+    /// </summary>
+    /// <param name="tier">Poziom zbroi.</param>
+    /// <returns>Nowa instancja losowej zbroi.</returns>
+    /// <remarks>
+    /// Klasa postaci jest losowana spośród wszystkich dostępnych klas.
+    /// Jakość zbroi jest losowana z wyłączeniem jakości "Arcydzieło".
+    /// </remarks>
     public static Armor GetRandomArmor(int tier)
     {
         var requiredClass = UtilityMethods.RandomChoice(Enum.GetValues<CharacterClass>().ToList());
@@ -157,6 +275,19 @@ public static class EquippableItemService
                 .Where(x => x != Quality.Masterpiece).ToList()));
     }
 
+    /// <summary>
+    /// Tworzy listę efektów pasywnych na podstawie komponentów galadurytów.
+    /// </summary>
+    /// <param name="equipmentType">Typ ekwipunku (true dla zbroi, false dla broni).</param>
+    /// <param name="player">Postać gracza, do której będą przypisane efekty.</param>
+    /// <param name="components">Zbiór komponentów galadurytów.</param>
+    /// <returns>Lista efektów pasywnych.</returns>
+    /// <remarks>
+    /// Obsługiwane typy efektów:
+    /// - Modyfikatory obrażeń, szansy na trafienie, krytyki, itp.
+    /// - Modyfikatory obrony, uników, zdrowia, itp.
+    /// - Modyfikatory odporności na różne typy obrażeń i efektów.
+    /// </remarks>
     public static List<InnatePassiveEffect> GetInnatePassiveEffects(bool equipmentType, PlayerCharacter player,
         HashSet<GalduriteComponent> components)
     {
@@ -177,6 +308,20 @@ public static class EquippableItemService
                 component.EffectType, [component.EffectStrength, ModifierType.Multiplicative])).ToList();
     }
 
+    /// <summary>
+    /// Tworzy listę efektów nasłuchujących na podstawie komponentów galadurytów.
+    /// </summary>
+    /// <param name="equipmentType">Typ ekwipunku (true dla zbroi, false dla broni).</param>
+    /// <param name="player">Postać gracza, do której będą przypisane efekty.</param>
+    /// <param name="components">Zbiór komponentów galadurytów.</param>
+    /// <returns>Lista efektów nasłuchujących.</returns>
+    /// <remarks>
+    /// Obsługiwane typy efektów:
+    /// - Efekty aktywowane przy trafieniu (np. krwawienie, trucizna, ogień)
+    /// - Leczenie przy trafieniu
+    /// - Regeneracja zdrowia i zasobów
+    /// - Efekty kontroli tłumu (ogłuszenie, spowolnienie, zamrożenie)
+    /// </remarks>
     public static List<ListenerPassiveEffect?> GetListenerPassiveEffects(bool equipmentType, PlayerCharacter player,
         HashSet<GalduriteComponent> components)
     {

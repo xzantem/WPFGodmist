@@ -1,0 +1,114 @@
+\doxysection{Godmist\+WPF.\+Dialogs.\+NPCDialog Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_n_p_c_dialog}{}\label{class_godmist_w_p_f_1_1_dialogs_1_1_n_p_c_dialog}\index{GodmistWPF.Dialogs.NPCDialog@{GodmistWPF.Dialogs.NPCDialog}}
+
+
+Okno dialogowe interakcji z \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC} w grze. Umożliwia handel, craftowanie przedmiotów, akceptowanie zadań i inne interakcje z postaciami niezależnymi.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Dialogs.\+NPCDialog\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_godmist_w_p_f_1_1_dialogs_1_1_n_p_c_dialog}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_godmist_w_p_f_1_1_dialogs_1_1_n_p_c_dialog_1_1_crafting_recipe_view_model}{Crafting\+Recipe\+View\+Model}}
+\item 
+class \mbox{\hyperlink{class_godmist_w_p_f_1_1_dialogs_1_1_n_p_c_dialog_1_1_shop_item_view_model}{Shop\+Item\+View\+Model}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_dialogs_1_1_n_p_c_dialog_a5151dbabb5234dbd2a17c6856042fda5}{NPCDialog}} (\mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}} npc)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_dialogs_1_1_n_p_c_dialog}{NPCDialog} dla określonego \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_dialogs_1_1_n_p_c_dialog_a9c3b914a7eb808821d8b36af3241727b}{Show\+Rewards}} (int gold, int exp, int honor, List$<$ Key\+Value\+Pair$<$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}, int $>$ $>$ items)
+\begin{DoxyCompactList}\small\item\em Wyświetla panel z nagrodami otrzymanymi za wykonanie zadania. Tworzy wizualną reprezentację każdej nagrody (złoto, doświadczenie, honor, przedmioty). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_godmist_w_p_f_1_1_dialogs_1_1_n_p_c_dialog_a0fdc3b79712ba1fd03b935aad9e43ed4}{On\+Property\+Changed}} (\mbox{[}Caller\+Member\+Name\mbox{]} string property\+Name=null)
+\begin{DoxyCompactList}\small\item\em Wywołuje zdarzenie Property\+Changed dla określonej właściwości. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_n_p_c_dialog_af59a3c597caa3cb19ceb43aee01c345c}\label{class_godmist_w_p_f_1_1_dialogs_1_1_n_p_c_dialog_af59a3c597caa3cb19ceb43aee01c345c} 
+Property\+Changed\+Event\+Handler {\bfseries Property\+Changed}
+\begin{DoxyCompactList}\small\item\em Występuje, gdy zmienia się wartość właściwości powiązanej z interfejsem użytkownika. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Okno dialogowe interakcji z \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC} w grze. Umożliwia handel, craftowanie przedmiotów, akceptowanie zadań i inne interakcje z postaciami niezależnymi. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_n_p_c_dialog_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_n_p_c_dialog_a5151dbabb5234dbd2a17c6856042fda5}\index{GodmistWPF.Dialogs.NPCDialog@{GodmistWPF.Dialogs.NPCDialog}!NPCDialog@{NPCDialog}}
+\index{NPCDialog@{NPCDialog}!GodmistWPF.Dialogs.NPCDialog@{GodmistWPF.Dialogs.NPCDialog}}
+\doxysubsubsection{\texorpdfstring{NPCDialog()}{NPCDialog()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_dialogs_1_1_n_p_c_dialog_a5151dbabb5234dbd2a17c6856042fda5} 
+Godmist\+WPF.\+Dialogs.\+NPCDialog.\+NPCDialog (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}}}]{npc}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_dialogs_1_1_n_p_c_dialog}{NPCDialog} dla określonego \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em npc} & Postać niezależna, z którą prowadzona jest interakcja.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Null\+Exception} & Gdy parametr npc jest null.\\
+\hline
+{\em Invalid\+Operation\+Exception} & Gdy gracz nie został poprawnie zainicjalizowany.\\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_n_p_c_dialog_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_n_p_c_dialog_a0fdc3b79712ba1fd03b935aad9e43ed4}\index{GodmistWPF.Dialogs.NPCDialog@{GodmistWPF.Dialogs.NPCDialog}!OnPropertyChanged@{OnPropertyChanged}}
+\index{OnPropertyChanged@{OnPropertyChanged}!GodmistWPF.Dialogs.NPCDialog@{GodmistWPF.Dialogs.NPCDialog}}
+\doxysubsubsection{\texorpdfstring{OnPropertyChanged()}{OnPropertyChanged()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_dialogs_1_1_n_p_c_dialog_a0fdc3b79712ba1fd03b935aad9e43ed4} 
+virtual void Godmist\+WPF.\+Dialogs.\+NPCDialog.\+On\+Property\+Changed (\begin{DoxyParamCaption}\item[{\mbox{[}\+Caller\+Member\+Name\mbox{]} string}]{property\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Wywołuje zdarzenie Property\+Changed dla określonej właściwości. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em property\+Name} & Nazwa właściwości, która uległa zmianie.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_n_p_c_dialog_a9c3b914a7eb808821d8b36af3241727b}\index{GodmistWPF.Dialogs.NPCDialog@{GodmistWPF.Dialogs.NPCDialog}!ShowRewards@{ShowRewards}}
+\index{ShowRewards@{ShowRewards}!GodmistWPF.Dialogs.NPCDialog@{GodmistWPF.Dialogs.NPCDialog}}
+\doxysubsubsection{\texorpdfstring{ShowRewards()}{ShowRewards()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_dialogs_1_1_n_p_c_dialog_a9c3b914a7eb808821d8b36af3241727b} 
+void Godmist\+WPF.\+Dialogs.\+NPCDialog.\+Show\+Rewards (\begin{DoxyParamCaption}\item[{int}]{gold}{, }\item[{int}]{exp}{, }\item[{int}]{honor}{, }\item[{List$<$ Key\+Value\+Pair$<$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}, int $>$ $>$}]{items}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wyświetla panel z nagrodami otrzymanymi za wykonanie zadania. Tworzy wizualną reprezentację każdej nagrody (złoto, doświadczenie, honor, przedmioty). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gold} & Ilość otrzymanego złota.\\
+\hline
+{\em exp} & Ilość otrzymanego doświadczenia.\\
+\hline
+{\em honor} & Ilość otrzymanego honoru.\\
+\hline
+{\em items} & Lista par przedmiot-\/ilość otrzymanych przedmiotów.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dialogs/NPCDialog.\+xaml.\+cs\end{DoxyCompactItemize}

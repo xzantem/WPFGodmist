@@ -1,0 +1,66 @@
+\doxysection{Godmist\+WPF.\+Dungeons.\+Dungeon Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon}{}\label{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon}\index{GodmistWPF.Dungeons.Dungeon@{GodmistWPF.Dungeons.Dungeon}}
+
+
+Klasa reprezentująca cały loch, zawierająca siatkę pól i informacje o jego stanie.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_a20a107df10f8e1b623e44205dcf98e89}{Dungeon}} (int level, \mbox{\hyperlink{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_aa49c2fea1cb3b60c589109ba1aa07772}{Dungeon\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon}{Dungeon} o określonych parametrach. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_a3173a6dca599edbfc8078dd27795229a}\label{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_a3173a6dca599edbfc8078dd27795229a} 
+void {\bfseries Ascend} ()
+\begin{DoxyCompactList}\small\item\em Przechodzi do poprzedniego piętra lochu. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_a4c8feeb6832417b0c3c1bf96126e7cb2}\label{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_a4c8feeb6832417b0c3c1bf96126e7cb2} 
+void {\bfseries Descend} ()
+\begin{DoxyCompactList}\small\item\em Przechodzi do następnego piętra lochu. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_a9a71cbe704e57ed987c08511bfea5a6c}\label{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_a9a71cbe704e57ed987c08511bfea5a6c} 
+void {\bfseries Scout\+Floor} (\mbox{\hyperlink{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_floor}{Dungeon\+Floor}} floor)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_aa49c2fea1cb3b60c589109ba1aa07772}\label{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_aa49c2fea1cb3b60c589109ba1aa07772} 
+Dungeon\+Type {\bfseries Dungeon\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera typ lochu. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_a38be9e07f5bfa37ae0dfd8fdd92f181a}\label{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_a38be9e07f5bfa37ae0dfd8fdd92f181a} 
+int {\bfseries Dungeon\+Level}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera poziom lochu. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_a8e9476292291c089082f302c4a87841f}\label{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_a8e9476292291c089082f302c4a87841f} 
+List$<$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_floor}{Dungeon\+Floor}} $>$ {\bfseries Floors}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera listę pięter lochu. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_aeb05de09a71086751f981ed4da5cb7a5}\label{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_aeb05de09a71086751f981ed4da5cb7a5} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_floor}{Dungeon\+Floor}} {\bfseries Current\+Floor}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera aktualne piętro lochu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentująca cały loch, zawierająca siatkę pól i informacje o jego stanie. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_a20a107df10f8e1b623e44205dcf98e89}\index{GodmistWPF.Dungeons.Dungeon@{GodmistWPF.Dungeons.Dungeon}!Dungeon@{Dungeon}}
+\index{Dungeon@{Dungeon}!GodmistWPF.Dungeons.Dungeon@{GodmistWPF.Dungeons.Dungeon}}
+\doxysubsubsection{\texorpdfstring{Dungeon()}{Dungeon()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_a20a107df10f8e1b623e44205dcf98e89} 
+Godmist\+WPF.\+Dungeons.\+Dungeon.\+Dungeon (\begin{DoxyParamCaption}\item[{int}]{level}{, }\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon_aa49c2fea1cb3b60c589109ba1aa07772}{Dungeon\+Type}}}]{type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_dungeons_1_1_dungeon}{Dungeon} o określonych parametrach. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Poziom lochu.\\
+\hline
+{\em type} & Typ lochu.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dungeons/Dungeon.\+cs\end{DoxyCompactItemize}

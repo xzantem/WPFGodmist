@@ -1,0 +1,202 @@
+\doxysection{Godmist\+WPF.\+Items.\+Equippable.\+IEquippable Interface Reference}
+\hypertarget{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable}{}\label{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable}\index{GodmistWPF.Items.Equippable.IEquippable@{GodmistWPF.Items.Equippable.IEquippable}}
+
+
+Interfejs reprezentujący przedmiot, który może być założony przez postać. Rozszerza interfejs \doxylink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem} o właściwości specyficzne dla ekwipunku.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Items.\+Equippable.\+IEquippable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.847458cm]{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_a16023404ae773bb50a5f081e65f5ec7d}{Required\+Level}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera wymagany poziom postaci do założenia przedmiotu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_aedd53344fda097f8a316b89f033e3ac2}{Character\+Class}} \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_aafd18b1468c0bbe46a57b73a108987d1}{Required\+Class}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera wymaganą klasę postaci do założenia przedmiotu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_a6d85f5e9c2037deaba73a7eb017cd9ed}{Quality}} \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_a731c2f5fa3751ee6f3a78e4a877fb874}{Quality}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera jakość przedmiotu, która wpływa na jego statystyki. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_a4e9b8986c3079ea1f0adc26cd8e738aa}{Upgrade\+Modifier}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia modyfikator ulepszenia przedmiotu. Wpływa na liczbę gniazd na galaduryty i ogólną moc przedmiotu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_a69a1c45bd2088980c51a627cb59d0c1f}{Base\+Cost}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera bazowy koszt przedmiotu, przed zastosowaniem modyfikatorów. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite}{Galdurite}} $>$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_a30e92503d30bf538967899ece5059da4}{Galdurites}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia listę galadurytów osadzonych w przedmiocie. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_afdf1b61c30e7e16caa04c256ec1dbb34}{Rarity\+Modifier}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera modyfikator rzadkości przedmiotu, który wpływa na jego statystyki. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_acadba7542b951f7da4694c6e21580398}{Galdurite\+Slots}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Oblicza liczbę dostępnych gniazd na galaduryty na podstawie modyfikatora ulepszenia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{Godmist\+WPF.\+Items.\+IItem}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_aa7c0739500303333ba79d83a60d46b08}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera nazwę przedmiotu. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a4918a6743daf1c3d488a727094980148}{Alias}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia alias (skróconą nazwę) przedmiotu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_ada5ec9f15576cff4b7d046a12ef79ab4}{Weight}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia wagę przedmiotu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_afd07fe16d41cf6234ce995cfc57634c8}{ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia unikalny identyfikator przedmiotu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a0f412b6f7655244181eb1d372ac41ddb}{Cost}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia wartość przedmiotu w walucie gry. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_a02934ee73a54ec124f0455457945ab1a}{Item\+Rarity}} \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_affbd29bebf9b3a0e17da29f7b65963a4}{Rarity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia rzadkość przedmiotu. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_af423d9fec16280fec5ccbecaf7d43fbe}{Stackable}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Określa, czy przedmioty tego samego typu mogą być składane w jednym slocie ekwipunku. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a3fe652d290d9677b4503e786578780b9}{Description}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia opis przedmiotu wyświetlany przy inspekcji. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_ac3d61a48fbf15693811c3ce1d463dfe0}{Item\+Type}} \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a23f5dbd47328d6cbef2ff30a7fe15938}{Item\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia typ przedmiotu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{Godmist\+WPF.\+Items.\+IItem}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_adaa4ad0bc058f85edbe768b7b46befc2}{Inspect}} (int amount=1)
+\begin{DoxyCompactList}\small\item\em Wyświetla szczegółowe informacje o przedmiocie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_aaa795cd0c16e347636733f8c3dda0abd}{Write\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla nazwę przedmiotu z uwzględnieniem jego rzadkości. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a910a5244e608b0eee8a2d4e2150a2c1f}{Write\+Item\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla typ przedmiotu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a7864db399c3e253324934677eb57feaf}{Write\+Rarity}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla rzadkość przedmiotu. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a7d7114b8736cb248af2f1f611e574a66}{Rarity\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca nazwę rzadkości przedmiotu jako łańcuch znaków. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_aa6364dd4d5e93386c9887a5b65068e8a}{Item\+Type\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca nazwę typu przedmiotu jako łańcuch znaków. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interfejs reprezentujący przedmiot, który może być założony przez postać. Rozszerza interfejs \doxylink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem} o właściwości specyficzne dla ekwipunku. 
+
+\label{doc-property-members}
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_a69a1c45bd2088980c51a627cb59d0c1f}\index{GodmistWPF.Items.Equippable.IEquippable@{GodmistWPF.Items.Equippable.IEquippable}!BaseCost@{BaseCost}}
+\index{BaseCost@{BaseCost}!GodmistWPF.Items.Equippable.IEquippable@{GodmistWPF.Items.Equippable.IEquippable}}
+\doxysubsubsection{\texorpdfstring{BaseCost}{BaseCost}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_a69a1c45bd2088980c51a627cb59d0c1f} 
+int Godmist\+WPF.\+Items.\+Equippable.\+IEquippable.\+Base\+Cost\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera bazowy koszt przedmiotu, przed zastosowaniem modyfikatorów. 
+
+
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_armors_1_1_armor_a66cfc97691c1b6bb8ae2ce6ac30d7d9e}{Godmist\+WPF.\+Items.\+Equippable.\+Armors.\+Armor}}, and \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a720db1c84416c50b7b2d54350dc731f0}{Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon}}.
+
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_a30e92503d30bf538967899ece5059da4}\index{GodmistWPF.Items.Equippable.IEquippable@{GodmistWPF.Items.Equippable.IEquippable}!Galdurites@{Galdurites}}
+\index{Galdurites@{Galdurites}!GodmistWPF.Items.Equippable.IEquippable@{GodmistWPF.Items.Equippable.IEquippable}}
+\doxysubsubsection{\texorpdfstring{Galdurites}{Galdurites}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_a30e92503d30bf538967899ece5059da4} 
+List$<$\mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite}{Galdurite}}$>$ Godmist\+WPF.\+Items.\+Equippable.\+IEquippable.\+Galdurites\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia listę galadurytów osadzonych w przedmiocie. 
+
+
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_armors_1_1_armor_a70d227a07de6d37289dd281ef421772f}{Godmist\+WPF.\+Items.\+Equippable.\+Armors.\+Armor}}, and \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_ab38e99a3345a960aae19c2fd626b43ef}{Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon}}.
+
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_acadba7542b951f7da4694c6e21580398}\index{GodmistWPF.Items.Equippable.IEquippable@{GodmistWPF.Items.Equippable.IEquippable}!GalduriteSlots@{GalduriteSlots}}
+\index{GalduriteSlots@{GalduriteSlots}!GodmistWPF.Items.Equippable.IEquippable@{GodmistWPF.Items.Equippable.IEquippable}}
+\doxysubsubsection{\texorpdfstring{GalduriteSlots}{GalduriteSlots}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_acadba7542b951f7da4694c6e21580398} 
+int Godmist\+WPF.\+Items.\+Equippable.\+IEquippable.\+Galdurite\+Slots\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Oblicza liczbę dostępnych gniazd na galaduryty na podstawie modyfikatora ulepszenia. 
+
+Każde 0.\+2 modyfikatora ulepszenia daje jedno dodatkowe gniazdo. Minimalna wartość modyfikatora to 1.\+0 (0 gniazd). 
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_armors_1_1_armor_abdf7df265af1cb6ff922043bcce7588a}{Godmist\+WPF.\+Items.\+Equippable.\+Armors.\+Armor}}, and \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a15d41eb049b7543d4ff7d5c8ced33a00}{Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon}}.
+
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_a731c2f5fa3751ee6f3a78e4a877fb874}\index{GodmistWPF.Items.Equippable.IEquippable@{GodmistWPF.Items.Equippable.IEquippable}!Quality@{Quality}}
+\index{Quality@{Quality}!GodmistWPF.Items.Equippable.IEquippable@{GodmistWPF.Items.Equippable.IEquippable}}
+\doxysubsubsection{\texorpdfstring{Quality}{Quality}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_a731c2f5fa3751ee6f3a78e4a877fb874} 
+\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_a6d85f5e9c2037deaba73a7eb017cd9ed}{Quality}} Godmist\+WPF.\+Items.\+Equippable.\+IEquippable.\+Quality\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera jakość przedmiotu, która wpływa na jego statystyki. 
+
+
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_armors_1_1_armor_afe850a6ef6856a8c1a1e2652c1634f66}{Godmist\+WPF.\+Items.\+Equippable.\+Armors.\+Armor}}, and \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_afc6c37b997f50654cc5d2eaa6aefe86f}{Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon}}.
+
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_afdf1b61c30e7e16caa04c256ec1dbb34}\index{GodmistWPF.Items.Equippable.IEquippable@{GodmistWPF.Items.Equippable.IEquippable}!RarityModifier@{RarityModifier}}
+\index{RarityModifier@{RarityModifier}!GodmistWPF.Items.Equippable.IEquippable@{GodmistWPF.Items.Equippable.IEquippable}}
+\doxysubsubsection{\texorpdfstring{RarityModifier}{RarityModifier}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_afdf1b61c30e7e16caa04c256ec1dbb34} 
+double Godmist\+WPF.\+Items.\+Equippable.\+IEquippable.\+Rarity\+Modifier\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera modyfikator rzadkości przedmiotu, który wpływa na jego statystyki. 
+
+Wartość modyfikatora zależna od rzadkości przedmiotu\+:
+\begin{DoxyItemize}
+\item Zniszczony\+: 0.\+7
+\item Uszkodzony\+: 0.\+85
+\item Złom\+: 1.\+05
+\item Zwykły\+: 1.\+0
+\item Niezwykły\+: 1.\+05
+\item Rzadki\+: 1.\+1
+\item Starożytny\+: 1.\+2
+\item Legendarny\+: 1.\+3
+\item Mityczny\+: 1.\+5
+\item Boski\+: 1.\+75 
+\end{DoxyItemize}\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_aafd18b1468c0bbe46a57b73a108987d1}\index{GodmistWPF.Items.Equippable.IEquippable@{GodmistWPF.Items.Equippable.IEquippable}!RequiredClass@{RequiredClass}}
+\index{RequiredClass@{RequiredClass}!GodmistWPF.Items.Equippable.IEquippable@{GodmistWPF.Items.Equippable.IEquippable}}
+\doxysubsubsection{\texorpdfstring{RequiredClass}{RequiredClass}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_aafd18b1468c0bbe46a57b73a108987d1} 
+\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_aedd53344fda097f8a316b89f033e3ac2}{Character\+Class}} Godmist\+WPF.\+Items.\+Equippable.\+IEquippable.\+Required\+Class\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera wymaganą klasę postaci do założenia przedmiotu. 
+
+
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_armors_1_1_armor_ab032088357d35e5d2849bcd40c9e9d87}{Godmist\+WPF.\+Items.\+Equippable.\+Armors.\+Armor}}, and \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a639975dcc760ce5ef2085838f90a7357}{Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon}}.
+
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_a16023404ae773bb50a5f081e65f5ec7d}\index{GodmistWPF.Items.Equippable.IEquippable@{GodmistWPF.Items.Equippable.IEquippable}!RequiredLevel@{RequiredLevel}}
+\index{RequiredLevel@{RequiredLevel}!GodmistWPF.Items.Equippable.IEquippable@{GodmistWPF.Items.Equippable.IEquippable}}
+\doxysubsubsection{\texorpdfstring{RequiredLevel}{RequiredLevel}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_a16023404ae773bb50a5f081e65f5ec7d} 
+int Godmist\+WPF.\+Items.\+Equippable.\+IEquippable.\+Required\+Level\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera wymagany poziom postaci do założenia przedmiotu. 
+
+
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_armors_1_1_armor_acae4c7265c3172351b4e3ab9becbd475}{Godmist\+WPF.\+Items.\+Equippable.\+Armors.\+Armor}}, and \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_acd5466b10725c281c80d11d8f7475766}{Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon}}.
+
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_a4e9b8986c3079ea1f0adc26cd8e738aa}\index{GodmistWPF.Items.Equippable.IEquippable@{GodmistWPF.Items.Equippable.IEquippable}!UpgradeModifier@{UpgradeModifier}}
+\index{UpgradeModifier@{UpgradeModifier}!GodmistWPF.Items.Equippable.IEquippable@{GodmistWPF.Items.Equippable.IEquippable}}
+\doxysubsubsection{\texorpdfstring{UpgradeModifier}{UpgradeModifier}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_a4e9b8986c3079ea1f0adc26cd8e738aa} 
+double Godmist\+WPF.\+Items.\+Equippable.\+IEquippable.\+Upgrade\+Modifier\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia modyfikator ulepszenia przedmiotu. Wpływa na liczbę gniazd na galaduryty i ogólną moc przedmiotu. 
+
+
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_armors_1_1_armor_a37244a1388f7974c2c1bcec9292e6e9d}{Godmist\+WPF.\+Items.\+Equippable.\+Armors.\+Armor}}, and \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_ab0adc17c5c5a374dacbaafeba13858c0}{Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Items/\+Equippable/IEquippable.\+cs\end{DoxyCompactItemize}

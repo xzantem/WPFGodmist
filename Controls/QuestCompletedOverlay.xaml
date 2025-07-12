@@ -1,0 +1,78 @@
+<!-- 
+    Kontrolka wyświetlająca powiadomienie o ukończeniu zadania.
+    Zawiera animowane powiadomienie z ikoną potwierdzenia, nazwą zadania
+    i informacją o osobie, do której należy się zgłosić po odbiór nagrody.
+-->
+<UserControl x:Class="GodmistWPF.Controls.QuestCompletedOverlay"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             x:Name="QuestOverlay"
+             Panel.ZIndex="1000">
+    
+    <!-- Główny kontener układu -->
+    <Grid>
+        <!-- Półprzezroczyste tło -->
+        <Border Background="#CC000000" Panel.ZIndex="1000" />
+        
+        <!-- Główna zawartość - karta z informacją o ukończonym zadaniu -->
+        <Border Background="{DynamicResource MaterialDesignPaper}" 
+                Width="400" 
+                Height="300" 
+                CornerRadius="4"
+                Effect="{StaticResource MaterialDesignElevationShadow4}"
+                Panel.ZIndex="1001">
+            <!-- Kontener z zawartością wyśrodkowaną w pionie i poziomie -->
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" TextElement.Foreground="{DynamicResource MaterialDesignBody}">
+                <!-- Ikona potwierdzenia ukończenia zadania -->
+                <materialDesign:PackIcon Kind="CheckCircle" 
+                                      Width="64" 
+                                      Height="64" 
+                                      Foreground="#4CAF50"
+                                      HorizontalAlignment="Center"
+                                      Margin="0,0,0,16"/>
+                
+                <!-- Nagłówek informujący o ukończeniu zadania -->
+                <TextBlock Text="QUEST COMPLETED!" 
+                         FontSize="24" 
+                         FontWeight="Bold" 
+                         HorizontalAlignment="Center"
+                         Margin="0,0,0,8"/>
+                
+                <!-- Nazwa ukończonego zadania -->
+                <TextBlock x:Name="QuestNameText" 
+                         Text="{Binding QuestName}"
+                         FontSize="18"
+                         FontWeight="Bold"
+                         HorizontalAlignment="Center"
+                         TextWrapping="Wrap"
+                         TextAlignment="Center"
+                         Margin="16,0,16,8"/>
+                         
+                <!-- Informacja o osobie, do której należy się zgłosić po nagrodę -->
+                <TextBlock x:Name="QuestEnderText"
+                         Text="{Binding QuestEnderText}"
+                         FontSize="14"
+                         FontStyle="Italic"
+                         Foreground="#888888"
+                         HorizontalAlignment="Center"
+                         TextWrapping="Wrap"
+                         TextAlignment="Center"
+                         Margin="16,0,16,24"/>
+                
+                <!-- Przycisk kontynuacji -->
+                <Button x:Name="ContinueButton"
+                        Content="CONTINUE"
+                        Style="{StaticResource MaterialDesignOutlinedButton}"
+                        Width="150"
+                        HorizontalAlignment="Center"
+                        Click="ContinueButton_Click"
+                        Margin="0,16,0,0"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

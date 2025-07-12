@@ -1,0 +1,70 @@
+\doxysection{Godmist\+WPF.\+Dungeons.\+Interactables Namespace Reference}
+\hypertarget{namespace_godmist_w_p_f_1_1_dungeons_1_1_interactables}{}\label{namespace_godmist_w_p_f_1_1_dungeons_1_1_interactables}\index{GodmistWPF.Dungeons.Interactables@{GodmistWPF.Dungeons.Interactables}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Plant\+Drop\+Manager}
+\begin{DoxyCompactList}\small\item\em Klasa zarządzająca bazą danych przedmiotów wypadających z roślin w lochach. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_dungeons_1_1_interactables_a186f2d767eff2f670e4d43517fea1bbf}{Stash}} (int dungeon\+Level, Dungeon\+Type dungeon\+Type)
+\begin{DoxyCompactList}\small\item\em Klasa reprezentująca skrytkę w lochu, która może zawierać różne przedmioty. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_dungeons_1_1_interactables_aeb31ea6bab17f4d43fc4f17c512d9952}{Trap}} (Difficulty difficulty, \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_dungeons_a6ab05c4e32d004a3cb86e4b7412979f6}{Dungeon\+Field}} location, int trap\+Type, Dungeon\+Type dungeon\+Type)
+\begin{DoxyCompactList}\small\item\em Klasa reprezentująca pułapkę w lochu, która może zadać obrażenia lub nałożyć efekty na gracza. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespace_godmist_w_p_f_1_1_dungeons_1_1_interactables_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_godmist_w_p_f_1_1_dungeons_1_1_interactables_a186f2d767eff2f670e4d43517fea1bbf}\index{GodmistWPF.Dungeons.Interactables@{GodmistWPF.Dungeons.Interactables}!Stash@{Stash}}
+\index{Stash@{Stash}!GodmistWPF.Dungeons.Interactables@{GodmistWPF.Dungeons.Interactables}}
+\doxysubsubsection{\texorpdfstring{Stash()}{Stash()}}
+{\footnotesize\ttfamily \label{namespace_godmist_w_p_f_1_1_dungeons_1_1_interactables_a186f2d767eff2f670e4d43517fea1bbf} 
+class Godmist\+WPF.\+Dungeons.\+Interactables.\+Stash (\begin{DoxyParamCaption}\item[{int}]{dungeon\+Level}{, }\item[{Dungeon\+Type}]{dungeon\+Type}{}\end{DoxyParamCaption})}
+
+
+
+Klasa reprezentująca skrytkę w lochu, która może zawierać różne przedmioty. 
+
+Pobiera poziom lochu, na którym znajduje się skrytka.
+
+Pobiera typ lochu, w którym znajduje się skrytka.
+
+Generuje przedmioty, które wypadają ze skrytki.
+
+\begin{DoxyReturn}{Returns}
+Słownik zawierający przedmioty i ich ilości.
+\end{DoxyReturn}
+\Hypertarget{namespace_godmist_w_p_f_1_1_dungeons_1_1_interactables_aeb31ea6bab17f4d43fc4f17c512d9952}\index{GodmistWPF.Dungeons.Interactables@{GodmistWPF.Dungeons.Interactables}!Trap@{Trap}}
+\index{Trap@{Trap}!GodmistWPF.Dungeons.Interactables@{GodmistWPF.Dungeons.Interactables}}
+\doxysubsubsection{\texorpdfstring{Trap()}{Trap()}}
+{\footnotesize\ttfamily \label{namespace_godmist_w_p_f_1_1_dungeons_1_1_interactables_aeb31ea6bab17f4d43fc4f17c512d9952} 
+class Godmist\+WPF.\+Dungeons.\+Interactables.\+Trap (\begin{DoxyParamCaption}\item[{Difficulty}]{difficulty}{, }\item[{\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_dungeons_a6ab05c4e32d004a3cb86e4b7412979f6}{Dungeon\+Field}}}]{location}{, }\item[{int}]{trap\+Type}{, }\item[{Dungeon\+Type}]{dungeon\+Type}{}\end{DoxyParamCaption})}
+
+
+
+Klasa reprezentująca pułapkę w lochu, która może zadać obrażenia lub nałożyć efekty na gracza. 
+
+Pobiera poziom trudności pułapki.
+
+Pobiera typ pułapki.
+
+Pobiera lokalizację pułapki w lochu.
+
+Pobiera typ lochu, w którym znajduje się pułapka.
+
+Inicjalizuje nową instancję klasy \doxylink{namespace_godmist_w_p_f_1_1_dungeons_1_1_interactables_aeb31ea6bab17f4d43fc4f17c512d9952}{Trap} z losowym typem pułapki.
+
+
+\begin{DoxyParams}{Parameters}
+{\em difficulty} & Poziom trudności pułapki.\\
+\hline
+{\em location} & Lokalizacja pułapki w lochu.\\
+\hline
+{\em dungeon\+Type} & Typ lochu, w którym znajduje się pułapka.\\
+\hline
+\end{DoxyParams}
+
+
+Aktywuje pułapkę, zadając obrażenia i/lub nakładając efekty na gracza w zależności od typu lochu.

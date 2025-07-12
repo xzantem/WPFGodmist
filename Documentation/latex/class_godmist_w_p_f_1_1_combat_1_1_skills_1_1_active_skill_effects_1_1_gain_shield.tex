@@ -1,0 +1,183 @@
+\doxysection{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Gain\+Shield Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield}{}\label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield@{GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield}}
+
+
+Efekt umiejętności, który przyznaje tarczę ochronną celowi.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Gain\+Shield\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_afc5e4026ca3182ed13f98ee54f04551b}{Gain\+Shield}} (Skill\+Target target, Damage\+Base shield\+Base, double shield\+Strength, double shield\+Chance, int shield\+Duration)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield}{Gain\+Shield}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_a0b4d9ca751b4cbb65c38d822ccfd98bf}{Gain\+Shield}} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield}{Gain\+Shield}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_a73aecf9f823fb86f341806414f63777c}{Execute}} (Character caster, Character enemy, string source)
+\begin{DoxyCompactList}\small\item\em Wykonuje efekt przyznania tarczy. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_a0182c265aa2f488971cc92a09a8aaacc}{Calculate\+Shield}} (Character caster, Character enemy)
+\begin{DoxyCompactList}\small\item\em Oblicza wartość tarczy na podstawie wybranej bazy i mnożnika. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Skill\+Target \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_ae310583c4ed9aca2c8471997cf8fa7fc}{Target}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia cel efektu (własna postać lub przeciwnik). \end{DoxyCompactList}\item 
+Damage\+Base \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_ae70daace28d668d77069fa76f132ae28}{Shield\+Base}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia bazę obliczania wartości tarczy. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_ad94e3d14f489e659aefae97ba57ab93c}{Shield\+Strength}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia mnożnik siły tarczy. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_a2dd30a0d1bb85254f6e8e83612628d87}\label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_a2dd30a0d1bb85254f6e8e83612628d87} 
+double {\bfseries Shield\+Chance}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia szansę na założenie tarczy (0.\+0-\/1.\+0). \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_a766a34240a1f645e7177b2690231df6d}\label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_a766a34240a1f645e7177b2690231df6d} 
+int {\bfseries Shield\+Duration}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia czas trwania tarczy w turach. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Efekt umiejętności, który przyznaje tarczę ochronną celowi. 
+
+Tarcza pochłania obrażenia, zanim zostaną one odjęte od punktów zdrowia. Może być stosowana zarówno na sojuszników, jak i przeciwników. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_afc5e4026ca3182ed13f98ee54f04551b}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield@{GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield}!GainShield@{GainShield}}
+\index{GainShield@{GainShield}!GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield@{GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield}}
+\doxysubsubsection{\texorpdfstring{GainShield()}{GainShield()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_afc5e4026ca3182ed13f98ee54f04551b} 
+Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Gain\+Shield.\+Gain\+Shield (\begin{DoxyParamCaption}\item[{Skill\+Target}]{target}{, }\item[{Damage\+Base}]{shield\+Base}{, }\item[{double}]{shield\+Strength}{, }\item[{double}]{shield\+Chance}{, }\item[{int}]{shield\+Duration}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield}{Gain\+Shield}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Cel efektu.\\
+\hline
+{\em shield\+Base} & Baza obliczania wartości tarczy.\\
+\hline
+{\em shield\+Strength} & Mnożnik siły tarczy.\\
+\hline
+{\em shield\+Chance} & Szansa na założenie tarczy (0.\+0-\/1.\+0).\\
+\hline
+{\em shield\+Duration} & Czas trwania tarczy w turach.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_a0b4d9ca751b4cbb65c38d822ccfd98bf}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield@{GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield}!GainShield@{GainShield}}
+\index{GainShield@{GainShield}!GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield@{GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield}}
+\doxysubsubsection{\texorpdfstring{GainShield()}{GainShield()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_a0b4d9ca751b4cbb65c38d822ccfd98bf} 
+Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Gain\+Shield.\+Gain\+Shield (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield}{Gain\+Shield}. 
+
+Konstruktor używany przez mechanizm deserializacji. 
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_a0182c265aa2f488971cc92a09a8aaacc}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield@{GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield}!CalculateShield@{CalculateShield}}
+\index{CalculateShield@{CalculateShield}!GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield@{GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield}}
+\doxysubsubsection{\texorpdfstring{CalculateShield()}{CalculateShield()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_a0182c265aa2f488971cc92a09a8aaacc} 
+double Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Gain\+Shield.\+Calculate\+Shield (\begin{DoxyParamCaption}\item[{Character}]{caster}{, }\item[{Character}]{enemy}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Oblicza wartość tarczy na podstawie wybranej bazy i mnożnika. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caster} & Postać rzucająca umiejętność.\\
+\hline
+{\em enemy} & Przeciwnik, względem którego określany jest cel.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Obliczona wartość tarczy.
+\end{DoxyReturn}
+
+
+Wartość tarczy może być zależna od różnych parametrów, takich jak\+:
+\begin{DoxyItemize}
+\item Wartość stała (Flat)
+\item Atak postaci (Minimal, Random, Maximal)
+\item Zdrowie postaci (Caster/\+Target Max/\+Current/\+Missing Health) 
+\end{DoxyItemize}\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_a73aecf9f823fb86f341806414f63777c}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield@{GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield}!Execute@{Execute}}
+\index{Execute@{Execute}!GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield@{GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_a73aecf9f823fb86f341806414f63777c} 
+void Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Gain\+Shield.\+Execute (\begin{DoxyParamCaption}\item[{Character}]{caster}{, }\item[{Character}]{enemy}{, }\item[{string}]{source}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wykonuje efekt przyznania tarczy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caster} & Postać rzucająca umiejętność.\\
+\hline
+{\em enemy} & Przeciwnik, względem którego określany jest cel.\\
+\hline
+{\em source} & Źródło efektu (nazwa umiejętności).\\
+\hline
+\end{DoxyParams}
+
+
+Oblicza wartość tarczy i próbuje ją założyć na cel, uwzględniając szansę powodzenia. 
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_combat_1_1_skills_1_1_i_active_skill_effect_af280a7f57f091d04800b2e9f3be69059}{Godmist\+WPF.\+Combat.\+Skills.\+IActive\+Skill\+Effect}}.
+
+
+
+\label{doc-property-members}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_ae70daace28d668d77069fa76f132ae28}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield@{GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield}!ShieldBase@{ShieldBase}}
+\index{ShieldBase@{ShieldBase}!GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield@{GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield}}
+\doxysubsubsection{\texorpdfstring{ShieldBase}{ShieldBase}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_ae70daace28d668d77069fa76f132ae28} 
+Damage\+Base Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Gain\+Shield.\+Shield\+Base\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia bazę obliczania wartości tarczy. 
+
+Określa, na podstawie jakiej wartości (np. ataku, zdrowia) ma być obliczana siła tarczy. \Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_ad94e3d14f489e659aefae97ba57ab93c}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield@{GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield}!ShieldStrength@{ShieldStrength}}
+\index{ShieldStrength@{ShieldStrength}!GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield@{GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield}}
+\doxysubsubsection{\texorpdfstring{ShieldStrength}{ShieldStrength}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_ad94e3d14f489e659aefae97ba57ab93c} 
+double Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Gain\+Shield.\+Shield\+Strength\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia mnożnik siły tarczy. 
+
+Mnożnik jest stosowany do wartości bazowej określonej przez \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_ae70daace28d668d77069fa76f132ae28}{Shield\+Base}. \Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_ae310583c4ed9aca2c8471997cf8fa7fc}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield@{GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield}!Target@{Target}}
+\index{Target@{Target}!GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield@{GodmistWPF.Combat.Skills.ActiveSkillEffects.GainShield}}
+\doxysubsubsection{\texorpdfstring{Target}{Target}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_ae310583c4ed9aca2c8471997cf8fa7fc} 
+Skill\+Target Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Gain\+Shield.\+Target\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia cel efektu (własna postać lub przeciwnik). 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_combat_1_1_skills_1_1_i_active_skill_effect_a6e2adc6221f059bf5b9259f5ecacb969}{Godmist\+WPF.\+Combat.\+Skills.\+IActive\+Skill\+Effect}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Combat/\+Skills/\+Active\+Skill\+Effects/Gain\+Shield.\+cs\end{DoxyCompactItemize}

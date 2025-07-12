@@ -14,12 +14,24 @@ using SaveData = GodmistWPF.Utilities.DataPersistance.SaveData;
 
 namespace GodmistWPF.Dialogs
 {
+    /// <summary>
+    /// Okno dialogowe zarządzania zapisami gry.
+    /// Umożliwia wczytywanie, usuwanie i tworzenie nowych zapisów gry.
+    /// </summary>
     public partial class SaveManagerDialog : Window
     {
+        /// <summary>Ścieżka do katalogu z zapisami gry.</summary>
         private string saveDirectory;
+        
+        /// <summary>Lista dostępnych plików zapisu.</summary>
         private List<SaveFileInfo> saveFiles;
+        
+        /// <summary>Aktualnie wybrany plik zapisu.</summary>
         private SaveFileInfo? selectedSaveFile;
 
+        /// <summary>
+        /// Inicjalizuje nową instancję klasy <see cref="SaveManagerDialog">.
+        /// </summary>
         public SaveManagerDialog()
         {
             InitializeComponent();
@@ -27,6 +39,10 @@ namespace GodmistWPF.Dialogs
             LoadSaveFiles();
         }
 
+        /// <summary>
+        /// Inicjalizuje katalog zapisu gry, tworząc go jeśli nie istnieje.
+        /// Domyślna lokalizacja to %AppData%\Godmist\saves
+        /// </summary>
         private void InitializeSaveDirectory()
         {
             saveDirectory = Path.Combine(
@@ -38,6 +54,10 @@ namespace GodmistWPF.Dialogs
             }
         }
 
+        /// <summary>
+        /// Wczytuje listę dostępnych zapisów gry i aktualizuje interfejs użytkownika.
+        /// Wyświetla komunikat o błędzie w przypadku niepowodzenia.
+        /// </summary>
         private void LoadSaveFiles()
         {
             try
@@ -52,6 +72,11 @@ namespace GodmistWPF.Dialogs
             }
         }
 
+        /// <summary>
+        /// Aktualizuje panel informacji o wybranym zapisie gry.
+        /// Wyświetla nazwę, datę utworzenia, datę modyfikacji i rozmiar pliku.
+        /// Jeśli żaden plik nie jest wybrany, wyświetla odpowiedni komunikat.
+        /// </summary>
         private void UpdateSaveFileInfo()
         {
             if (selectedSaveFile != null)
@@ -67,6 +92,12 @@ namespace GodmistWPF.Dialogs
             }
         }
 
+        /// <summary>
+        /// Obsługuje zmianę wyboru pliku zapisu na liście.
+        /// Aktualizuje informacje o wybranym pliku i stan przycisków interfejsu użytkownika.
+        /// </summary>
+        /// <param name="sender">Źródło zdarzenia (ListBox z listą zapisów).</param>
+        /// <param name="e">Dane zdarzenia zmiany wyboru.</param>
         private void SaveFilesListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             selectedSaveFile = SaveFilesListBox.SelectedItem as SaveFileInfo;
@@ -75,6 +106,13 @@ namespace GodmistWPF.Dialogs
             DeleteSaveButton.IsEnabled = selectedSaveFile != null;
         }
 
+        /// <summary>
+        /// Obsługuje kliknięcie przycisku wczytania zapisu.
+        /// Wyświetla potwierdzenie, wczytuje wybrany zapis i zamyka okno.
+        /// W przypadku błędu wyświetla odpowiedni komunikat.
+        /// </summary>
+        /// <param name="sender">Źródło zdarzenia (przycisk Wczytaj).</param>
+        /// <param name="e">Dane zdarzenia kliknięcia.</param>
         private void LoadSaveButton_Click(object sender, RoutedEventArgs e)
         {
             if (selectedSaveFile == null) return;
@@ -101,6 +139,13 @@ namespace GodmistWPF.Dialogs
             }
         }
 
+        /// <summary>
+        /// Obsługuje kliknięcie przycisku usuwania zapisu.
+        /// Wyświetla potwierdzenie, usuwa wybrany plik zapisu i odświeża listę.
+        /// W przypadku błędu wyświetla odpowiedni komunikat.
+        /// </summary>
+        /// <param name="sender">Źródło zdarzenia (przycisk Usuń).</param>
+        /// <param name="e">Dane zdarzenia kliknięcia.</param>
         private void DeleteSaveButton_Click(object sender, RoutedEventArgs e)
         {
             if (selectedSaveFile == null) return;
@@ -128,6 +173,13 @@ namespace GodmistWPF.Dialogs
             }
         }
 
+        /// <summary>
+        /// Obsługuje kliknięcie przycisku tworzenia nowego zapisu.
+        /// Sprawdza dostępność aktywnej gry, tworzy nowy zapis i odświeża listę.
+        /// W przypadku błędu wyświetla odpowiedni komunikat.
+        /// </summary>
+        /// <param name="sender">Źródło zdarzenia (przycisk Nowy zapis).</param>
+        /// <param name="e">Dane zdarzenia kliknięcia.</param>
         private void CreateSaveButton_Click(object sender, RoutedEventArgs e)
         {
             if (PlayerHandler.player == null)

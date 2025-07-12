@@ -1,0 +1,96 @@
+\doxysection{Godmist\+WPF.\+Items.\+Base\+Ingredient Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_items_1_1_base_ingredient}{}\label{class_godmist_w_p_f_1_1_items_1_1_base_ingredient}\index{GodmistWPF.Items.BaseIngredient@{GodmistWPF.Items.BaseIngredient}}
+
+
+Klasa bazowa reprezentująca podstawowy składnik używany w procesie tworzenia przedmiotów. Rozszerza klasę \doxylink{class_godmist_w_p_f_1_1_items_1_1_base_item}{Base\+Item}, dodając domyślne ustawienia dla składników.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Items.\+Base\+Ingredient\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_godmist_w_p_f_1_1_items_1_1_base_ingredient}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_base_ingredient_a13aeafe6a2c33174f8acb990ecbb4a15}\label{class_godmist_w_p_f_1_1_items_1_1_base_ingredient_a13aeafe6a2c33174f8acb990ecbb4a15} 
+{\bfseries Base\+Ingredient} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_items_1_1_base_ingredient}{Base\+Ingredient}. Konstruktor używany do deserializacji JSON. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_ingredient_a8bed93f16634d750884fd44c3845e946}{Base\+Ingredient}} (string alias, int id, int cost, \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_a02934ee73a54ec124f0455457945ab1a}{Item\+Rarity}} rarity, string desc, \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_ac3d61a48fbf15693811c3ce1d463dfe0}{Item\+Type}} item\+Type)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_items_1_1_base_ingredient}{Base\+Ingredient} z określonymi parametrami. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item}{Godmist\+WPF.\+Items.\+Base\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_acc6c4b47f0eada380e37090582522645}{Inspect}} (int amount=1)
+\begin{DoxyCompactList}\small\item\em Wyświetla szczegółowe informacje o przedmiocie. Implementacja w WPF obsługuje interfejs użytkownika. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a62a7b60026ec2e63d60e5bde7513c7c3}{Write\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla nazwę przedmiotu z uwzględnieniem jego rzadkości. Implementacja w WPF obsługuje interfejs użytkownika. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_ab80277caef8f091f3245e4c3680a2265}{Write\+Item\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla typ przedmiotu. Implementacja w WPF obsługuje interfejs użytkownika. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_ab8aecf04d7121322a9515bcaccb024b5}{Write\+Rarity}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla rzadkość przedmiotu. Implementacja w WPF obsługuje interfejs użytkownika. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a3ca6652033431e54f246307f7b3e9d0d}{Rarity\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca zlokalizowaną nazwę rzadkości przedmiotu. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a6c6ca0c4731c9106cef36a4cd606c000}{Item\+Type\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca zlokalizowaną nazwę typu przedmiotu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item}{Godmist\+WPF.\+Items.\+Base\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a53f72ba0d1cf21654655cb745eab7ba3}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia nazwę przedmiotu. Przy pobieraniu wykorzystuje Name\+Alias\+Helper do tłumaczenia aliasu na pełną nazwę. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_ac94e206df1ac952048d7aa9c4d047add}{Alias}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia alias (skróconą nazwę) przedmiotu. Używany do wewnętrznej identyfikacji i tłumaczeń. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a171769b2a12d37acc3f45a1adfe614b6}{Weight}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia wagę przedmiotu. Wpływa na obciążenie ekwipunku postaci. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_acdb022869d8836b038d36e27e46c1e89}{ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia unikalny identyfikator przedmiotu. Używany do zapisu/odczytu stanu gry. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_adb7ff1df8be6b0e46d36a69f663f989a}{Cost}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia wartość przedmiotu w walucie gry. Używane przy sprzedaży i zakupie przedmiotów. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_a02934ee73a54ec124f0455457945ab1a}{Item\+Rarity}} \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_ab8d911e0148244bb7b11241cddf824a6}{Rarity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia rzadkość przedmiotu. Wpływa na kolor nazwy i wartość przedmiotu. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_afc676c9421e9ad3df5d549ef44c3ae89}{Stackable}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Określa, czy przedmioty tego samego typu mogą być składane w jednym slocie ekwipunku. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a763204eb630704caf524369c8de6ebe6}{Description}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia opis przedmiotu. Wyświetlany w oknie inspekcji przedmiotu. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_ac3d61a48fbf15693811c3ce1d463dfe0}{Item\+Type}} \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a0774084b82083124b6e19ee3de21ee54}{Item\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia typ przedmiotu. Określa kategorię i podstawowe przeznaczenie przedmiotu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa bazowa reprezentująca podstawowy składnik używany w procesie tworzenia przedmiotów. Rozszerza klasę \doxylink{class_godmist_w_p_f_1_1_items_1_1_base_item}{Base\+Item}, dodając domyślne ustawienia dla składników. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_base_ingredient_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_base_ingredient_a8bed93f16634d750884fd44c3845e946}\index{GodmistWPF.Items.BaseIngredient@{GodmistWPF.Items.BaseIngredient}!BaseIngredient@{BaseIngredient}}
+\index{BaseIngredient@{BaseIngredient}!GodmistWPF.Items.BaseIngredient@{GodmistWPF.Items.BaseIngredient}}
+\doxysubsubsection{\texorpdfstring{BaseIngredient()}{BaseIngredient()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_base_ingredient_a8bed93f16634d750884fd44c3845e946} 
+Godmist\+WPF.\+Items.\+Base\+Ingredient.\+Base\+Ingredient (\begin{DoxyParamCaption}\item[{string}]{alias}{, }\item[{int}]{id}{, }\item[{int}]{cost}{, }\item[{\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_a02934ee73a54ec124f0455457945ab1a}{Item\+Rarity}}}]{rarity}{, }\item[{string}]{desc}{, }\item[{\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_ac3d61a48fbf15693811c3ce1d463dfe0}{Item\+Type}}}]{item\+Type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_items_1_1_base_ingredient}{Base\+Ingredient} z określonymi parametrami. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & Alias (skrócona nazwa) składnika.\\
+\hline
+{\em id} & Unikalny identyfikator składnika.\\
+\hline
+{\em cost} & Koszt składnika.\\
+\hline
+{\em rarity} & Rzadkość składnika.\\
+\hline
+{\em desc} & Opis składnika.\\
+\hline
+{\em item\+Type} & Typ przedmiotu.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Items/Base\+Ingredient.\+cs\end{DoxyCompactItemize}

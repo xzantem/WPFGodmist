@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 using GodmistWPF.Enums;
 using GodmistWPF.Enums.Dungeons;
 using GodmistWPF.Quests.Objectives;
@@ -7,12 +7,32 @@ using GodmistWPF.Utilities;
 
 namespace GodmistWPF.Quests;
 
+/// <summary>
+/// Klasa zarządzająca zadaniami w grze. Odpowiada za przechowywanie, aktualizację i generowanie zadań.
+/// </summary>
 public static class QuestManager
 {
+    /// <summary>
+    /// Zdarzenie wywoływane po ukończeniu zadania.
+    /// </summary>
+    public static event EventHandler<Quest> QuestCompleted;
+    
+    /// <summary>
+    /// Lista głównych zadań w grze.
+    /// </summary>
     public static List<Quest>? MainQuests { get; set; }
+    /// <summary>
+    /// Lista losowych zadań pobocznych.
+    /// </summary>
     public static List<Quest>? RandomizedSideQuests { get; set; }
+    /// <summary>
+    /// Lista zadań pobocznych związanych z bossami.
+    /// </summary>
     public static List<Quest>? BossSideQuests { get; set; }
 
+    /// <summary>
+    /// Pobiera połączoną listę wszystkich zadań (głównych, losowych i związanych z bossami).
+    /// </summary>
     public static List<Quest> Quests
     {
         get
@@ -24,11 +44,24 @@ public static class QuestManager
             return quests;
         }
     }
+    /// <summary>
+    /// Słownik śledzący postęp w pokonywaniu bossów w poszczególnych lochach.
+    /// </summary>
     public static Dictionary<DungeonType, int>? BossProgress { get; set; }
     
+    /// <summary>
+    /// Maksymalna liczba aktywnych zadań pobocznych.
+    /// </summary>
     public const int QuestCount = 4;
+    /// <summary>
+    /// Docelowa liczba ukończeń wymagana do odblokowania zadania z bossem.
+    /// </summary>
     public const int ProgressTarget = 1;
 
+    /// <summary>
+    /// Inicjalizuje główne zadania, wczytując je z pliku JSON.
+    /// </summary>
+    /// <exception cref="FileNotFoundException">Wyrzucany, gdy nie znaleziono pliku z zadaniami.</exception>
     public static void InitMainQuests()
     {
         var path = "json/quests.json";
@@ -42,6 +75,9 @@ public static class QuestManager
             throw new FileNotFoundException($"JSON file not found in {path}");
     }
     
+    /// <summary>
+    /// Generuje nowe losowe zadania poboczne, jeśli liczba aktywnych zadań jest mniejsza niż QuestCount.
+    /// </summary>
     public static void RerollSideQuests()
     {
         var randomSideQuestLevel = RandomizedSideQuests.Count == 0 ? 2 : 2 + RandomizedSideQuests
@@ -73,16 +109,35 @@ public static class QuestManager
     }
     
 
+    /// <summary>
+    /// Sprawdza i aktualizuje postęp we wszystkich aktywnych zadaniach na podstawie dostarczonego kontekstu.
+    /// </summary>
+    /// <param name="context">Kontekst zawierający informacje o wykonanej akcji.</param>
     public static void CheckForProgress(QuestObjectiveContext context)
     {
         foreach (var quest in Quests.Where(q => q.QuestState == QuestState.Accepted))
         {
+            var previousState = quest.QuestState;
             quest.TryProgress(context);
-            if (quest.QuestState != QuestState.Completed) continue;
+            if (quest.QuestState != QuestState.Completed || quest.QuestState == previousState) continue;
+            OnQuestCompleted(quest);
             InitSideQuests();
         }
     }
+    
+    /// <summary>
+    /// Wywołuje zdarzenie ukończenia zadania.
+    /// </summary>
+    /// <param name="quest">Zadanie, które zostało ukończone.</param>
+    public static void OnQuestCompleted(Quest quest)
+    {
+        QuestCompleted?.Invoke(null, quest);
+    }
 
+    /// <summary>
+    /// Inicjalizuje zadania poboczne, opcjonalnie czyszcząc istniejące.
+    /// </summary>
+    /// <param name="clear">Określa, czy wyczyścić istniejące zadania przed inicjalizacją.</param>
     public static void InitSideQuests(bool clear = false)
     {
         RandomizedSideQuests = RandomizedSideQuests == null || clear ? [] : RandomizedSideQuests;
@@ -94,6 +149,10 @@ public static class QuestManager
         RerollSideQuests();
     }
 
+    /// <summary>
+    /// Aktualizuje dostępne zadania związane z bossami na podstawie postępu gracza.
+    /// Generuje nowe zadania, jeśli spełnione są odpowiednie warunki.
+    /// </summary>
     public static void UpdateBossQuests()
     {
         foreach (var progress in BossProgress)
@@ -126,6 +185,12 @@ public static class QuestManager
         }
     }
     
+    /// <summary>
+    /// Pobiera identyfikator celu zadania związanego z bossem na podstawie typu lochu i etapu.
+    /// </summary>
+    /// <param name="dungeon">Typ lochu, w którym znajduje się boss.</param>
+    /// <param name="stage">Etap walki z bossem (1 - pierwszy boss, 2 - drugi boss).</param>
+    /// <returns>Identyfikator celu zadania.</returns>
     public static string GetBossQuestTarget(DungeonType dungeon, int stage)
     {
         return (dungeon, stage) switch

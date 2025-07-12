@@ -1,19 +1,77 @@
-﻿namespace GodmistWPF.Enums.Modifiers;
+namespace GodmistWPF.Enums.Modifiers;
 
+/// <summary>
+/// Określa typ efektu statusowego, który może być nałożony na postać.
+/// </summary>
 public enum StatusEffectType
 {
-    Buff, // Gives positive effect to user
-    Debuff, // Gives negative effect to user
-    Bleed, // Causes user to take DoT (Damage over Time)
-    Poison, // Causes user to take DoT (Damage over Time)
-    Burn, // Causes user to take DoT (Damage over Time)
-    Stun, // User is unable to take turns
-    Freeze, // User is unable to take turns, and is slowed once the effect ends
-    Frostbite, // Speed is reduced to 10
-    Sleep, // User is stunned but regenerates health over time
-    Invisible, // User cannot be targeted by skills
-    Paralysis, // User is unable to act, and cannot be targeted by skills
-    Provocation, // User's skill target must be the person who caused the provocation
-    Shield, // Blocks a certain amount of damage in place of health
-    Regeneration, // Regens a certain amount of health/resource per turn
+    /// <summary>
+    /// Pozytywny efekt zwiększający statystyki postaci.
+    /// </summary>
+    Buff,
+    
+    /// <summary>
+    /// Negatywny efekt zmniejszający statystyki postaci.
+    /// </summary>
+    Debuff,
+    
+    /// <summary>
+    /// Krwawienie - zadaje obrażenia przez określony czas.
+    /// </summary>
+    Bleed,
+    
+    /// <summary>
+    /// Trucizna - zadaje obrażenia przez określony czas, silniejsze niż krwawienie.
+    /// </summary>
+    Poison,
+    
+    /// <summary>
+    /// Podpalenie - zadaje obrażenia przez określony czas, może się rozprzestrzeniać.
+    /// </summary>
+    Burn,
+    
+    /// <summary>
+    /// Ogłuszenie - uniemożliwia wykonywanie akcji przez określony czas.
+    /// </summary>
+    Stun,
+    
+    /// <summary>
+    /// Zamrożenie - uniemożliwia wykonywanie akcji i spowalnia po zakończeniu efektu.
+    /// </summary>
+    Freeze,
+    
+    /// <summary>
+    /// Odmrożenie - znacząco zmniejsza szybkość postaci.
+    /// </summary>
+    Frostbite,
+    
+    /// <summary>
+    /// Sen - unieruchamia postać, ale regeneruje jej zdrowie.
+    /// </summary>
+    Sleep,
+    
+    /// <summary>
+    /// Niewidzialność - postać nie może być celem umiejętności.
+    /// </summary>
+    Invisible,
+    
+    /// <summary>
+    /// Paraliż - całkowicie unieruchamia postać i czyni ją nietykalną.
+    /// </summary>
+    Paralysis,
+    
+    /// <summary>
+    /// Prowokacja - zmusza postać do atakowania prowokującego.
+    /// </summary>
+    Provocation,
+    
+    /// <summary>
+    /// Tarcza - pochłania określoną ilość obrażeń.
+    /// </summary>
+    Shield,
+    
+    /// <summary>
+    /// Regeneracja - przywraca punkty zdrowia lub zasobów co turę.
+    /// </summary>
+    Regeneration
 }

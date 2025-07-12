@@ -1,0 +1,125 @@
+\doxysection{Godmist\+WPF.\+Quests.\+Objectives.\+Quest\+Objective\+Context Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context}{}\label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context}\index{GodmistWPF.Quests.Objectives.QuestObjectiveContext@{GodmistWPF.Quests.Objectives.QuestObjectiveContext}}
+
+
+Klasa przechowująca kontekst akcji, która może wpłynąć na postęp celu zadania. Zawiera informacje o wykonanej akcji, takie jak zabity przeciwnik, rozmówca lub odwiedzony loch.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_a7af559493e16c57cbefdd13cc0633f82}{Quest\+Objective\+Context}} (string kill\+Target, int context\+Level)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context}{Quest\+Objective\+Context} dla zabicia przeciwnika. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_a9650276648a873055c1bc7b7a5e4876f}{Quest\+Objective\+Context}} (\mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}} talk\+Target)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context}{Quest\+Objective\+Context} dla rozmowy z \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_ac14b17e19be75362172d866b1084cca1}{Quest\+Objective\+Context}} (\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_dungeons_a15f971492ab6ad201d47cdfc14c3defe}{Dungeon\+Type}} descend\+Target, int descend\+Floor, int context\+Level)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context}{Quest\+Objective\+Context} dla zejścia do lochu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_a67f5a173a316aac4627e60ce50b6a3de}{Quest\+Objective\+Context}} (\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_dungeons_a15f971492ab6ad201d47cdfc14c3defe}{Dungeon\+Type}} kill\+In\+Dungeon\+Target, \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_dungeons_a15f971492ab6ad201d47cdfc14c3defe}{Dungeon\+Type}} activate\+In\+Dungeon\+Target, int context\+Level)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context}{Quest\+Objective\+Context} dla akcji w lochu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_a5efc498c1e87096e396f579b6959a5d3}\label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_a5efc498c1e87096e396f579b6959a5d3} 
+string {\bfseries Kill\+Target}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Identyfikator zabitego przeciwnika, jeśli dotyczy. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_aba9a9388f16d27c0f3e18eabfb535f3f}\label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_aba9a9388f16d27c0f3e18eabfb535f3f} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}}? {\bfseries Talk\+Target}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Cel rozmowy, jeśli dotyczy. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_aa3f1fee3df5b166c80bcdc0b5f2bcdeb}\label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_aa3f1fee3df5b166c80bcdc0b5f2bcdeb} 
+\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_dungeons_a15f971492ab6ad201d47cdfc14c3defe}{Dungeon\+Type}}? {\bfseries Descend\+Target}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Typ lochu, do którego się zeszło, jeśli dotyczy. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_a27c44db63ac9f4ac33a2d88b57ec8a35}\label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_a27c44db63ac9f4ac33a2d88b57ec8a35} 
+\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_dungeons_a15f971492ab6ad201d47cdfc14c3defe}{Dungeon\+Type}}? {\bfseries Kill\+In\+Dungeon\+Target}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Typ lochu, w którym należy pokonać przeciwników, jeśli dotyczy. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_ac872125265dea0708d482ee1a7bd2166}\label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_ac872125265dea0708d482ee1a7bd2166} 
+\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_dungeons_a15f971492ab6ad201d47cdfc14c3defe}{Dungeon\+Type}}? {\bfseries Activate\+In\+Dungeon\+Target}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Typ lochu, w którym należy aktywować obiekt, jeśli dotyczy. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_a21c70d9dd8ba640f5a74b4c23e61cc8d}\label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_a21c70d9dd8ba640f5a74b4c23e61cc8d} 
+int {\bfseries Descend\+Floor}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Poziom, na który się zeszło w lochu, jeśli dotyczy. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_aa7f29075433efc582dbe022407724f5c}\label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_aa7f29075433efc582dbe022407724f5c} 
+int {\bfseries Context\+Level}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Poziom kontekstu, używany do określenia ważności lub skali akcji. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa przechowująca kontekst akcji, która może wpłynąć na postęp celu zadania. Zawiera informacje o wykonanej akcji, takie jak zabity przeciwnik, rozmówca lub odwiedzony loch. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_a7af559493e16c57cbefdd13cc0633f82}\index{GodmistWPF.Quests.Objectives.QuestObjectiveContext@{GodmistWPF.Quests.Objectives.QuestObjectiveContext}!QuestObjectiveContext@{QuestObjectiveContext}}
+\index{QuestObjectiveContext@{QuestObjectiveContext}!GodmistWPF.Quests.Objectives.QuestObjectiveContext@{GodmistWPF.Quests.Objectives.QuestObjectiveContext}}
+\doxysubsubsection{\texorpdfstring{QuestObjectiveContext()}{QuestObjectiveContext()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_a7af559493e16c57cbefdd13cc0633f82} 
+Godmist\+WPF.\+Quests.\+Objectives.\+Quest\+Objective\+Context.\+Quest\+Objective\+Context (\begin{DoxyParamCaption}\item[{string}]{kill\+Target}{, }\item[{int}]{context\+Level}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context}{Quest\+Objective\+Context} dla zabicia przeciwnika. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kill\+Target} & Identyfikator zabitego przeciwnika.\\
+\hline
+{\em context\+Level} & Poziom kontekstu.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_a9650276648a873055c1bc7b7a5e4876f}\index{GodmistWPF.Quests.Objectives.QuestObjectiveContext@{GodmistWPF.Quests.Objectives.QuestObjectiveContext}!QuestObjectiveContext@{QuestObjectiveContext}}
+\index{QuestObjectiveContext@{QuestObjectiveContext}!GodmistWPF.Quests.Objectives.QuestObjectiveContext@{GodmistWPF.Quests.Objectives.QuestObjectiveContext}}
+\doxysubsubsection{\texorpdfstring{QuestObjectiveContext()}{QuestObjectiveContext()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_a9650276648a873055c1bc7b7a5e4876f} 
+Godmist\+WPF.\+Quests.\+Objectives.\+Quest\+Objective\+Context.\+Quest\+Objective\+Context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}}}]{talk\+Target}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context}{Quest\+Objective\+Context} dla rozmowy z \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em talk\+Target} & \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}, z którym przeprowadzono rozmowę.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_ac14b17e19be75362172d866b1084cca1}\index{GodmistWPF.Quests.Objectives.QuestObjectiveContext@{GodmistWPF.Quests.Objectives.QuestObjectiveContext}!QuestObjectiveContext@{QuestObjectiveContext}}
+\index{QuestObjectiveContext@{QuestObjectiveContext}!GodmistWPF.Quests.Objectives.QuestObjectiveContext@{GodmistWPF.Quests.Objectives.QuestObjectiveContext}}
+\doxysubsubsection{\texorpdfstring{QuestObjectiveContext()}{QuestObjectiveContext()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_ac14b17e19be75362172d866b1084cca1} 
+Godmist\+WPF.\+Quests.\+Objectives.\+Quest\+Objective\+Context.\+Quest\+Objective\+Context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_dungeons_a15f971492ab6ad201d47cdfc14c3defe}{Dungeon\+Type}}}]{descend\+Target}{, }\item[{int}]{descend\+Floor}{, }\item[{int}]{context\+Level}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context}{Quest\+Objective\+Context} dla zejścia do lochu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em descend\+Target} & Typ lochu, do którego się zeszło.\\
+\hline
+{\em descend\+Floor} & Poziom, na który się zeszło.\\
+\hline
+{\em context\+Level} & Poziom kontekstu.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_a67f5a173a316aac4627e60ce50b6a3de}\index{GodmistWPF.Quests.Objectives.QuestObjectiveContext@{GodmistWPF.Quests.Objectives.QuestObjectiveContext}!QuestObjectiveContext@{QuestObjectiveContext}}
+\index{QuestObjectiveContext@{QuestObjectiveContext}!GodmistWPF.Quests.Objectives.QuestObjectiveContext@{GodmistWPF.Quests.Objectives.QuestObjectiveContext}}
+\doxysubsubsection{\texorpdfstring{QuestObjectiveContext()}{QuestObjectiveContext()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context_a67f5a173a316aac4627e60ce50b6a3de} 
+Godmist\+WPF.\+Quests.\+Objectives.\+Quest\+Objective\+Context.\+Quest\+Objective\+Context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_dungeons_a15f971492ab6ad201d47cdfc14c3defe}{Dungeon\+Type}}}]{kill\+In\+Dungeon\+Target}{, }\item[{\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_dungeons_a15f971492ab6ad201d47cdfc14c3defe}{Dungeon\+Type}}}]{activate\+In\+Dungeon\+Target}{, }\item[{int}]{context\+Level}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context}{Quest\+Objective\+Context} dla akcji w lochu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kill\+In\+Dungeon\+Target} & Typ lochu, w którym należy pokonać przeciwników.\\
+\hline
+{\em activate\+In\+Dungeon\+Target} & Typ lochu, w którym należy aktywować obiekt.\\
+\hline
+{\em context\+Level} & Poziom kontekstu.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Quests/\+Objectives/Quest\+Objective\+Context.\+cs\end{DoxyCompactItemize}

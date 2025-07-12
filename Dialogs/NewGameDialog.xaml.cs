@@ -5,32 +5,63 @@ using Difficulty = GodmistWPF.Enums.Difficulty;
 
 namespace GodmistWPF.Dialogs
 {
+    /// <summary>
+    /// Okno dialogowe tworzenia nowej postaci w grze.
+    /// Umożliwia wybór nazwy postaci, klasy i poziomu trudności.
+    /// </summary>
     public partial class NewGameDialog : Window
     {
+        /// <summary>
+        /// Pobiera nazwę postaci wprowadzoną przez użytkownika.
+        /// </summary>
         public string CharacterName { get; private set; } = "";
+
+        /// <summary>
+        /// Pobiera wybraną klasę postaci.
+        /// Domyślnie ustawiona na Wojownika (Warrior).
+        /// </summary>
         public CharacterClass SelectedCharacterClass { get; private set; } = CharacterClass.Warrior;
+
+        /// <summary>
+        /// Pobiera wybrany poziom trudności.
+        /// Domyślnie ustawiony na Normalny (Normal).
+        /// </summary>
         public Difficulty SelectedDifficulty { get; private set; } = Difficulty.Normal;
 
+        /// <summary>
+        /// Inicjalizuje nową instancję klasy <see cref="NewGameDialog">.
+        /// Konfiguruje domyślne ustawienia i inicjalizuje komponenty interfejsu użytkownika.
+        /// </summary>
         public NewGameDialog()
         {
             InitializeComponent();
             
-            // Set default selections
-            ClassComboBox.SelectedIndex = 0;
-            DifficultyComboBox.SelectedIndex = 1; // Normal
+            // Ustaw domyślne wybory
+            ClassComboBox.SelectedIndex = 0; // Pierwsza dostępna klasa
+            DifficultyComboBox.SelectedIndex = 1; // Normalny poziom trudności
             
-            // Set up event handlers
+            // Podłącz obsługę zdarzeń
             ClassComboBox.SelectionChanged += ClassComboBox_SelectionChanged;
             
-            // Show initial class description
+            // Wyświetl początkowy opis klasy
             UpdateClassDescription();
         }
 
+        /// <summary>
+        /// Obsługuje zmianę wybranej klasy postaci na liście rozwijanej.
+        /// Wywołuje aktualizację opisu klasy po zmianie wyboru.
+        /// </summary>
+        /// <param name="sender">Źródło zdarzenia (ComboBox klas).</param>
+        /// <param name="e">Dane zdarzenia zmiany wyboru.</param>
         private void ClassComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             UpdateClassDescription();
         }
 
+        /// <summary>
+        /// Aktualizuje opis wybranej klasy postaci w interfejsie użytkownika.
+        /// Wyświetla odpowiedni opis w zależności od wybranej klasy.
+        /// </summary>
         private void UpdateClassDescription()
         {
             if (ClassComboBox.SelectedItem is ComboBoxItem selectedItem)
@@ -47,8 +78,15 @@ namespace GodmistWPF.Dialogs
             }
         }
 
+        /// <summary>
+        /// Obsługuje kliknięcie przycisku tworzenia nowej postaci.
+        /// Sprawdza poprawność danych, ustawia wybrane wartości i zamyka okno z wynikiem DialogResult = true.
+        /// </summary>
+        /// <param name="sender">Źródło zdarzenia (przycisk).</param>
+        /// <param name="e">Dane zdarzenia.</param>
         private void CreateButton_Click(object sender, RoutedEventArgs e)
         {
+            // Sprawdź, czy podano nazwę postaci
             if (string.IsNullOrWhiteSpace(NameTextBox.Text))
             {
                 MessageBox.Show("Please enter a character name.", "Validation Error", 
@@ -56,6 +94,7 @@ namespace GodmistWPF.Dialogs
                 return;
             }
 
+            // Sprawdź maksymalną długość nazwy
             if (NameTextBox.Text.Length > 32)
             {
                 MessageBox.Show("Character name must be 32 characters or less.", "Validation Error", 
@@ -63,9 +102,10 @@ namespace GodmistWPF.Dialogs
                 return;
             }
 
-            // Get selected values
+            // Zapisz wybrane wartości
             CharacterName = NameTextBox.Text.Trim();
             
+            // Ustaw wybraną klasę postaci
             if (ClassComboBox.SelectedItem is ComboBoxItem classItem)
             {
                 SelectedCharacterClass = classItem.Tag.ToString() switch
@@ -78,6 +118,7 @@ namespace GodmistWPF.Dialogs
                 };
             }
             
+            // Ustaw wybrany poziom trudności
             if (DifficultyComboBox.SelectedItem is ComboBoxItem difficultyItem)
             {
                 SelectedDifficulty = difficultyItem.Tag.ToString() switch
@@ -90,10 +131,17 @@ namespace GodmistWPF.Dialogs
                 };
             }
 
+            // Zamknij okno z wynikiem powodzenia
             DialogResult = true;
             Close();
         }
 
+        /// <summary>
+        /// Obsługuje kliknięcie przycisku anulowania.
+        /// Zamyka okno z wynikiem DialogResult = false.
+        /// </summary>
+        /// <param name="sender">Źródło zdarzenia (przycisk).</param>
+        /// <param name="e">Dane zdarzenia.</param>
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
             DialogResult = false;

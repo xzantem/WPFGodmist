@@ -1,32 +1,83 @@
-﻿using GodmistWPF.Enums.Items;
+using GodmistWPF.Enums.Items;
 using GodmistWPF.Items.Equippable;
 using GodmistWPF.Utilities;
 
 namespace GodmistWPF.Items.Galdurites;
 
+/// <summary>
+/// Klasa reprezentująca kamień galdurytowy, który może zostać osadzony w przedmiotach.
+/// Zawiera komponenty z efektami, które są aktywowane po osadzeniu w przedmiocie.
+/// </summary>
 public class Galdurite : BaseItem
 {
+    /// <summary>
+    /// Pobiera nazwę galduritu z systemu lokalizacji.
+    /// </summary>
     public new string Name => NameAliasHelper.GetName(Alias);
+    
+    /// <summary>
+    /// Pobiera wagę galduritu (zawsze 1).
+    /// </summary>
     public override int Weight => 1;
+    
+    /// <summary>
+    /// Pobiera unikalny identyfikator galduritu.
+    /// </summary>
     public override int ID => 562;
+    
+    /// <summary>
+    /// Określa, czy galdurity mogą być składowane w stosie (zawsze false).
+    /// </summary>
     public override bool Stackable => false;
+    
+    /// <summary>
+    /// Tablica komponentów galduritu, z których każdy zawiera efekt i jego parametry.
+    /// </summary>
     public GalduriteComponent[] Components { get; set; }
     
+    /// <summary>
+    /// Pobiera koszt galduritu, uwzględniający rzadkość, poziom ujawnienia i jakość efektów.
+    /// </summary>
     public override int Cost => (int)(BaseCost * EquippableItemService.RarityPriceModifier(Rarity) * (Revealed ? 
                                       Components.Aggregate(1.0, (x, y) => 
                                           x * ("DCBAS".IndexOf(y.EffectTier) + 18) / 20) : 1));
     
+    /// <summary>
+    /// Pobiera lub ustawia bazowy koszt galduritu bez modyfikatorów.
+    /// </summary>
     public int BaseCost { get; set; }
+    
+    /// <summary>
+    /// Pobiera lub ustawia poziom (tier) galduritu (1-3).
+    /// </summary>
     public int Tier { get; set; }
-    public int RequiredLevel => Tier == 3 ? 41 : Tier * 10 + 1; // Tier 1 is Level 11, Tier 2 is Level 21, Tier 3 is Level 41
+    
+    /// <summary>
+    /// Pobiera wymagany poziom postaci do użycia galduritu.
+    /// Tier 1: 11 poziom, Tier 2: 21 poziom, Tier 3: 41 poziom.
+    /// </summary>
+    public int RequiredLevel => Tier == 3 ? 41 : Tier * 10 + 1;
+    
+    /// <summary>
+    /// Określa, czy efekty galduritu zostały ujawnione.
+    /// </summary>
     public bool Revealed { get; set; }
     
-    
-    public void Reveal()
+    /// <summary>
+    /// Konstruktor domyślny wymagany do serializacji.
+    /// </summary>
+    public Galdurite()
     {
-        Revealed = true;
     }
 
+    /// <summary>
+    /// Inicjalizuje nową instancję klasy Galdurite z losowymi właściwościami.
+    /// </summary>
+    /// <param name="equipmentType">Typ przedmiotu, do którego pasuje galdurit (true = zbroja, false = broń).</param>
+    /// <param name="tier">Poziom (tier) galduritu (1-3).</param>
+    /// <param name="bias">Modyfikator szansy na lepszą rzadkość galduritu.</param>
+    /// <param name="color">Kolor galduritu (domyślnie losowy).</param>
+    /// <exception cref="ArgumentOutOfRangeException">Występuje, gdy podano nieprawidłowy tier.</exception>
     public Galdurite(bool equipmentType, int tier, int bias, string color = "Random")
     {
         ItemType = equipmentType ? ItemType.ArmorGaldurite : ItemType.WeaponGaldurite;
@@ -81,17 +132,31 @@ public class Galdurite : BaseItem
             excludedColors.Add(Components[i].PoolColor);
         }
     }
-    
-    public Galdurite() {}
 
+    /// <summary>
+    /// Ujawnia efekty galduritu, jeśli nie były wcześniej ujawnione.
+    /// </summary>
+    public void Reveal()
+    {
+        Revealed = true;
+    }
+
+    /// <summary>
+    /// Wyświetla szczegółowe informacje o galduricie, w tym jego efekty.
+    /// </summary>
+    /// <param name="amount">Ilość przedmiotów (nieużywane).</param>
     public override void Inspect(int amount = 1)
     {
         base.Inspect(amount);
         ShowEffects();
     }
 
-    public void ShowEffects()
+    /// <summary>
+    /// Generuje tekst z opisem wszystkich efektów galduritu.
+    /// </summary>
+    /// <returns>Tekst zawierający opisy wszystkich efektów, oddzielone znakami nowej linii.</returns>
+    public string ShowEffects()
     {
-        // WPF handles galdurite effects display through UI
+        return Components.Aggregate(string.Empty, (current, component) => current + (component.EffectText + "\n"));
     }
 }

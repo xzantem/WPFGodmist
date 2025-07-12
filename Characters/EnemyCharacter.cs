@@ -1,5 +1,4 @@
-﻿using ConsoleGodmist;
-using GodmistWPF.Combat.Modifiers;
+﻿using GodmistWPF.Combat.Modifiers;
 using GodmistWPF.Combat.Modifiers.PassiveEffects;
 using GodmistWPF.Combat.Skills;
 using GodmistWPF.Enums;
@@ -9,25 +8,82 @@ using GodmistWPF.Utilities;
 
 namespace GodmistWPF.Characters;
 
+/// <summary>
+/// Reprezentuje przeciwnika w grze, dziedziczącego po klasie bazowej Character.
+/// </summary>
+/// <remarks>
+/// Klasa ta rozszerza podstawową funkcjonalność postaci o specyficzne cechy przeciwników,
+/// takie jak typy wrogów, domyślna lokalizacja i tabela przedmiotów.
+/// </remarks>
 public class EnemyCharacter : Character
 {
+    /// <summary>
+    /// Pobiera lub ustawia listę typów, do których należy przeciwnik.
+    /// </summary>
+    /// <value>Lista typów przeciwnika.</value>
+    /// <remarks>
+    /// Przeciwnik może należeć do wielu typów jednocześnie, co może wpływać na jego zachowanie
+    /// i interakcje z umiejętnościami oraz efektami.
+    /// </remarks>
     public List<EnemyType> EnemyType { get; set; }
+    
+    /// <summary>
+    /// Pobiera lub ustawia alias używany do lokalizacji nazwy przeciwnika.
+    /// </summary>
+    /// <value>Alias używany do wyszukiwania zlokalizowanej nazwy.</value>
     public string Alias { get; set; }
+    
+    /// <summary>
+    /// Pobiera zlokalizowaną nazwę przeciwnika na podstawie aliasu.
+    /// Jeśli tłumaczenie nie jest dostępne, zwracany jest sam alias.
+    /// </summary>
+    /// <value>Zlokalizowana nazwa przeciwnika lub alias, jeśli tłumaczenie nie istnieje.</value>
     public override string Name
     {
-        get => locale.ResourceManager.GetString(Alias) == null ? Alias : locale.ResourceManager.GetString(Alias);
+        get => locale.ResourceManager.GetString(Alias) ?? Alias;
         set {}
     }
 
+    /// <summary>
+    /// Pobiera lub ustawia domyślną lokalizację, w której występuje przeciwnik.
+    /// </summary>
+    /// <value>Typ lokacji, w której przeciwnik występuje domyślnie.</value>
     public DungeonType DefaultLocation { get; set; }
     
+    /// <summary>
+    /// Pobiera lub ustawia tabelę przedmiotów, które mogą zostać upuszczone przez przeciwnika.
+    /// </summary>
+    /// <value>Tabela przedmiotów zawierająca listę możliwych łupów.</value>
     public DropTable DropTable { get; set; }
 
+    /// <summary>
+    /// Inicjalizuje nową instancję klasy <see cref="EnemyCharacter"/>. Konstruktor bezparametrowy używany do deserializacji JSON.
+    /// </summary>
+    /// <remarks>
+    /// Ten konstruktor jest wymagany przez mechanizm serializacji/deserializacji JSON.
+    /// Nie należy go używać bezpośrednio do tworzenia nowych instancji przeciwników.
+    /// </remarks>
     public EnemyCharacter()
     {
-    } // For JSON Serialization
+    }
 
-    public EnemyCharacter(EnemyCharacter other, int level) // Deep Copy for initializing new monsters
+    /// <summary>
+    /// Inicjalizuje nową instancję klasy <see cref="EnemyCharacter"/> jako kopię innego przeciwnika z dostosowaniem poziomu.
+    /// </summary>
+    /// <param name="other">Przeciwnik, na podstawie którego tworzona jest kopia.</param>
+    /// <param name="level">Poziom, na który mają być przeskalowane statystyki przeciwnika.</param>
+    /// <remarks>
+    /// <para>Konstruktor tworzy głęboką kopię przeciwnika, uwzględniając:</para>
+    /// <list type="bullet">
+    /// <item>Podstawowe właściwości (alias, typy, lokalizacja)</item>
+    /// <item>Tabelę przedmiotów (głęboka kopia)</item>
+    /// <item>Wszystkie statystyki z uwzględnieniem poziomu trudności gry</item>
+    /// <item>Odporności na efekty statusowe</item>
+    /// <item>Aktywne umiejętności (płytka kopia tablicy)</item>
+    /// </list>
+    /// <para>Statystyki są skalowane w zależności od wybranego poziomu trudności gry.</para>
+    /// </remarks>
+    public EnemyCharacter(EnemyCharacter other, int level)
     {
         PassiveEffects = new PassiveEffectList();
         Level = level;

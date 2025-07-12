@@ -1,0 +1,80 @@
+\doxysection{Godmist\+WPF.\+Combat.\+Skills.\+IActive\+Skill\+Effect Interface Reference}
+\hypertarget{interface_godmist_w_p_f_1_1_combat_1_1_skills_1_1_i_active_skill_effect}{}\label{interface_godmist_w_p_f_1_1_combat_1_1_skills_1_1_i_active_skill_effect}\index{GodmistWPF.Combat.Skills.IActiveSkillEffect@{GodmistWPF.Combat.Skills.IActiveSkillEffect}}
+
+
+Interfejs definiujący efekt umiejętności aktywnej w systemie walki.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Combat.\+Skills.\+IActive\+Skill\+Effect\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.917431cm]{interface_godmist_w_p_f_1_1_combat_1_1_skills_1_1_i_active_skill_effect}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_godmist_w_p_f_1_1_combat_1_1_skills_1_1_i_active_skill_effect_af280a7f57f091d04800b2e9f3be69059}{Execute}} (Character caster, Character enemy, string source)
+\begin{DoxyCompactList}\small\item\em Wykonuje efekt umiejętności na określonych postaciach. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Skill\+Target \mbox{\hyperlink{interface_godmist_w_p_f_1_1_combat_1_1_skills_1_1_i_active_skill_effect_a6e2adc6221f059bf5b9259f5ecacb969}{Target}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia cel, na który działa efekt umiejętności. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interfejs definiujący efekt umiejętności aktywnej w systemie walki. 
+
+Każdy efekt umiejętności musi implementować tę klasę, aby mógł być używany w systemie walki. Efekty są serializowane przy użyciu konwertera Active\+Skill\+Effect\+Converter. 
+
+\label{doc-func-members}
+\Hypertarget{interface_godmist_w_p_f_1_1_combat_1_1_skills_1_1_i_active_skill_effect_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_godmist_w_p_f_1_1_combat_1_1_skills_1_1_i_active_skill_effect_af280a7f57f091d04800b2e9f3be69059}\index{GodmistWPF.Combat.Skills.IActiveSkillEffect@{GodmistWPF.Combat.Skills.IActiveSkillEffect}!Execute@{Execute}}
+\index{Execute@{Execute}!GodmistWPF.Combat.Skills.IActiveSkillEffect@{GodmistWPF.Combat.Skills.IActiveSkillEffect}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_combat_1_1_skills_1_1_i_active_skill_effect_af280a7f57f091d04800b2e9f3be69059} 
+void Godmist\+WPF.\+Combat.\+Skills.\+IActive\+Skill\+Effect.\+Execute (\begin{DoxyParamCaption}\item[{Character}]{caster}{, }\item[{Character}]{enemy}{, }\item[{string}]{source}{}\end{DoxyParamCaption})}
+
+
+
+Wykonuje efekt umiejętności na określonych postaciach. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caster} & Postać rzucająca umiejętność.\\
+\hline
+{\em enemy} & Przeciwnik, na którym wykonywana jest umiejętność.\\
+\hline
+{\em source} & Źródło efektu (nazwa umiejętności lub przedmiotu).\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_advance_move_a216a18dc27c640bd6816b7f8f387a563}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Advance\+Move}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_buff_stat_a00a36db3128f1cdfd849dd7f53afd98d}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Buff\+Stat}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_clear_status_effect_afa39d219fcef9efd98dee3e23c699c57}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Clear\+Status\+Effect}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_deal_damage_a91e7d8802b51814a256d176e682e06f8}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Deal\+Damage}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_debuff_resistance_a8ca1d89d80b050a8020dd05bb30922b5}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Debuff\+Resistance}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_debuff_stat_ac8a7d5e9c6fe5dfe9a9ea70629fb56a6}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Debuff\+Stat}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_extend_do_t_a037f52bfa1c48408b95856fc74169464}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Extend\+DoT}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_a73aecf9f823fb86f341806414f63777c}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Gain\+Shield}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_heal_target_a5377d2c5d9ba888b96783bc8ba272b87}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Heal\+Target}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_a707f58f5ed1b10fb6acfd9fc160ff0b8}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Do\+TStatus\+Effect}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_ae8e975dc758ce11059822ec1202afd02}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Generic\+Status\+Effect}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect_a960f61ed8503e8621e67f5a43a0ecb74}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Timed\+Passive\+Effect}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_ae771a4222f8191bf4cf508c4c612a4e1}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Regen\+Resource}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_toggle_innate_passive_effect_a0ac4e625bfa40d10c4bd36e873cebb34}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Toggle\+Innate\+Passive\+Effect}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_toggle_listener_passive_effect_a980b39c1f67ea58e815554eb7dfacdee}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Toggle\+Listener\+Passive\+Effect}}, and \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource_a10eeef8f2426884e5cc6fb20f93cf485}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Trade\+Health\+For\+Resource}}.
+
+
+
+\label{doc-property-members}
+\Hypertarget{interface_godmist_w_p_f_1_1_combat_1_1_skills_1_1_i_active_skill_effect_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{interface_godmist_w_p_f_1_1_combat_1_1_skills_1_1_i_active_skill_effect_a6e2adc6221f059bf5b9259f5ecacb969}\index{GodmistWPF.Combat.Skills.IActiveSkillEffect@{GodmistWPF.Combat.Skills.IActiveSkillEffect}!Target@{Target}}
+\index{Target@{Target}!GodmistWPF.Combat.Skills.IActiveSkillEffect@{GodmistWPF.Combat.Skills.IActiveSkillEffect}}
+\doxysubsubsection{\texorpdfstring{Target}{Target}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_combat_1_1_skills_1_1_i_active_skill_effect_a6e2adc6221f059bf5b9259f5ecacb969} 
+Skill\+Target Godmist\+WPF.\+Combat.\+Skills.\+IActive\+Skill\+Effect.\+Target\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia cel, na który działa efekt umiejętności. 
+
+Wartość wyliczeniowa określająca, czy efekt działa na gracza, przeciwnika, czy inny cel. 
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_advance_move_a92d9611d6361f6482c18136f5bc3a41a}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Advance\+Move}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_buff_stat_a36c05654b00d57b0379689c64d1a70d9}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Buff\+Stat}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_clear_status_effect_ad6aae2d06dacc53cdbd9074e998c6838}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Clear\+Status\+Effect}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_deal_damage_a7745c133556b4850cbcb01f37cababf8}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Deal\+Damage}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_debuff_resistance_a3891b23361dce301dd8492fca60a1c35}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Debuff\+Resistance}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_debuff_stat_aebc35017fa25a5081b8591b7e9e1ca77}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Debuff\+Stat}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_extend_do_t_ac9a671ebc775d18bf93588e50bda48a0}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Extend\+DoT}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield_ae310583c4ed9aca2c8471997cf8fa7fc}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Gain\+Shield}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_heal_target_acfcd83596e5ab812694d0507df5df8fe}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Heal\+Target}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_a5d5c3f9dbe408e9796e0fbc256b2b327}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Do\+TStatus\+Effect}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_a1065d32b280d2f3cc495bf4c4a464e3e}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Generic\+Status\+Effect}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect_a06ce7231967d0738791610b2cb5f4430}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Timed\+Passive\+Effect}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_aa6f673bbae79c602bae2b3039d35b4d5}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Regen\+Resource}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_toggle_innate_passive_effect_a80c30abd93285dad85ff600440d42b84}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Toggle\+Innate\+Passive\+Effect}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_toggle_listener_passive_effect_a264692b765b989c5315dd347c4f5218c}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Toggle\+Listener\+Passive\+Effect}}, and \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource_a4e8737aedf7a074e51e397a90abbca24}{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Trade\+Health\+For\+Resource}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Combat/\+Skills/IActive\+Skill\+Effect.\+cs\end{DoxyCompactItemize}

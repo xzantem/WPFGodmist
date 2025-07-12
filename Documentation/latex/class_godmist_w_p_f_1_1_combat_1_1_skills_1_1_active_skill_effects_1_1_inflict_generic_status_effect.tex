@@ -1,0 +1,163 @@
+\doxysection{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Generic\+Status\+Effect Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect}{}\label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect}}
+
+
+Efekt umiejętności, który nakłada na cel ogólny efekt statusowy, taki jak ogłuszenie czy zamrożenie.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Generic\+Status\+Effect\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_a53ac437db6e93b0e36f91243f0302d05}{Inflict\+Generic\+Status\+Effect}} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect}{Inflict\+Generic\+Status\+Effect}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_a9cbcdb1ed2d5c0f37832924320757126}{Inflict\+Generic\+Status\+Effect}} (string effect\+Type, int duration, double chance, string effect, Skill\+Target target=Skill\+Target.\+Enemy)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect}{Inflict\+Generic\+Status\+Effect}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_ae8e975dc758ce11059822ec1202afd02}{Execute}} (Character caster, Character enemy, string source)
+\begin{DoxyCompactList}\small\item\em Wykonuje efekt nałożenia ogólnego efektu statusowego. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Skill\+Target \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_a1065d32b280d2f3cc495bf4c4a464e3e}{Target}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia cel efektu (własna postać lub przeciwnik). \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_abd1ae08bdc7f762309317e295eede9b4}\label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_abd1ae08bdc7f762309317e295eede9b4} 
+int {\bfseries Duration}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia czas trwania efektu w turach. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_a33dc692706794b3ef745546f6a92fbfb}{Effect}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia dodatkowe parametry efektu. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_a263ef4fdf468e670ec3ebfa9f2e61e27}{Effect\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia typ efektu do nałożenia. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_a20b793e50e97c13df22102b0b2fa295e}{Chance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia szansę na nałożenie efektu (0.\+0-\/1.\+0). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Efekt umiejętności, który nakłada na cel ogólny efekt statusowy, taki jak ogłuszenie czy zamrożenie. 
+
+Umożliwia nałożenie różnych efektów, które mogą wpływać na możliwości akcji celu. Efekty te zazwyczaj blokują określone akcje na określony czas. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_a53ac437db6e93b0e36f91243f0302d05}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect}!InflictGenericStatusEffect@{InflictGenericStatusEffect}}
+\index{InflictGenericStatusEffect@{InflictGenericStatusEffect}!GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect}}
+\doxysubsubsection{\texorpdfstring{InflictGenericStatusEffect()}{InflictGenericStatusEffect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_a53ac437db6e93b0e36f91243f0302d05} 
+Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Generic\+Status\+Effect.\+Inflict\+Generic\+Status\+Effect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect}{Inflict\+Generic\+Status\+Effect}. 
+
+Konstruktor używany przez mechanizm deserializacji. \Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_a9cbcdb1ed2d5c0f37832924320757126}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect}!InflictGenericStatusEffect@{InflictGenericStatusEffect}}
+\index{InflictGenericStatusEffect@{InflictGenericStatusEffect}!GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect}}
+\doxysubsubsection{\texorpdfstring{InflictGenericStatusEffect()}{InflictGenericStatusEffect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_a9cbcdb1ed2d5c0f37832924320757126} 
+Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Generic\+Status\+Effect.\+Inflict\+Generic\+Status\+Effect (\begin{DoxyParamCaption}\item[{string}]{effect\+Type}{, }\item[{int}]{duration}{, }\item[{double}]{chance}{, }\item[{string}]{effect}{, }\item[{Skill\+Target}]{target}{ = {\ttfamily SkillTarget\+:\+:Enemy}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect}{Inflict\+Generic\+Status\+Effect}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em effect\+Type} & Typ efektu do nałożenia (np. "{}\+Stun"{}, "{}\+Freeze"{}).\\
+\hline
+{\em duration} & Czas trwania efektu w turach.\\
+\hline
+{\em chance} & Szansa na nałożenie efektu (0.\+0-\/1.\+0).\\
+\hline
+{\em effect} & Dodatkowe parametry efektu.\\
+\hline
+{\em target} & Cel efektu (domyślnie przeciwnik).\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_ae8e975dc758ce11059822ec1202afd02}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect}!Execute@{Execute}}
+\index{Execute@{Execute}!GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_ae8e975dc758ce11059822ec1202afd02} 
+void Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Generic\+Status\+Effect.\+Execute (\begin{DoxyParamCaption}\item[{Character}]{caster}{, }\item[{Character}]{enemy}{, }\item[{string}]{source}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wykonuje efekt nałożenia ogólnego efektu statusowego. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caster} & Postać rzucająca umiejętność.\\
+\hline
+{\em enemy} & Przeciwnik, względem którego określany jest cel.\\
+\hline
+{\em source} & Źródło efektu (nazwa umiejętności).\\
+\hline
+\end{DoxyParams}
+
+
+Tworzy odpowiedni efekt w zależności od typu i próbuje go nałożyć na cel. Wyświetla odpowiedni komunikat w przypadku powodzenia. 
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_combat_1_1_skills_1_1_i_active_skill_effect_af280a7f57f091d04800b2e9f3be69059}{Godmist\+WPF.\+Combat.\+Skills.\+IActive\+Skill\+Effect}}.
+
+
+
+\label{doc-property-members}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_a20b793e50e97c13df22102b0b2fa295e}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect}!Chance@{Chance}}
+\index{Chance@{Chance}!GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect}}
+\doxysubsubsection{\texorpdfstring{Chance}{Chance}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_a20b793e50e97c13df22102b0b2fa295e} 
+double Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Generic\+Status\+Effect.\+Chance\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia szansę na nałożenie efektu (0.\+0-\/1.\+0). 
+
+W przypadku używania na przeciwniku, szansa jest modyfikowana przez jego odporności. \Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_a33dc692706794b3ef745546f6a92fbfb}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect}!Effect@{Effect}}
+\index{Effect@{Effect}!GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect}}
+\doxysubsubsection{\texorpdfstring{Effect}{Effect}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_a33dc692706794b3ef745546f6a92fbfb} 
+string Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Generic\+Status\+Effect.\+Effect\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia dodatkowe parametry efektu. 
+
+Używane do przekazania dodatkowych informacji specyficznych dla danego typu efektu. \Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_a263ef4fdf468e670ec3ebfa9f2e61e27}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect}!EffectType@{EffectType}}
+\index{EffectType@{EffectType}!GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect}}
+\doxysubsubsection{\texorpdfstring{EffectType}{EffectType}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_a263ef4fdf468e670ec3ebfa9f2e61e27} 
+string Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Generic\+Status\+Effect.\+Effect\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia typ efektu do nałożenia. 
+
+Dopuszczalne wartości\+: "{}\+Stun"{}, "{}\+Freeze"{} (wielkość liter ma znaczenie).\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_a1065d32b280d2f3cc495bf4c4a464e3e}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect}!Target@{Target}}
+\index{Target@{Target}!GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictGenericStatusEffect}}
+\doxysubsubsection{\texorpdfstring{Target}{Target}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect_a1065d32b280d2f3cc495bf4c4a464e3e} 
+Skill\+Target Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Generic\+Status\+Effect.\+Target\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia cel efektu (własna postać lub przeciwnik). 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_combat_1_1_skills_1_1_i_active_skill_effect_a6e2adc6221f059bf5b9259f5ecacb969}{Godmist\+WPF.\+Combat.\+Skills.\+IActive\+Skill\+Effect}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Combat/\+Skills/\+Active\+Skill\+Effects/Inflict\+Generic\+Status\+Effect.\+cs\end{DoxyCompactItemize}

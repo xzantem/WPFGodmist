@@ -1,0 +1,76 @@
+\doxysection{Godmist\+WPF.\+Converters.\+Bool\+To\+Opacity\+Converter Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_converters_1_1_bool_to_opacity_converter}{}\label{class_godmist_w_p_f_1_1_converters_1_1_bool_to_opacity_converter}\index{GodmistWPF.Converters.BoolToOpacityConverter@{GodmistWPF.Converters.BoolToOpacityConverter}}
+
+
+Konwerter, który zamienia wartość logiczną na wartość przezroczystości (opacity).  
+
+
+Inheritance diagram for Godmist\+WPF.\+Converters.\+Bool\+To\+Opacity\+Converter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_godmist_w_p_f_1_1_converters_1_1_bool_to_opacity_converter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+object \mbox{\hyperlink{class_godmist_w_p_f_1_1_converters_1_1_bool_to_opacity_converter_a50aed068c40cea05d205756c698f19de}{Convert}} (object value, Type target\+Type, object parameter, Culture\+Info culture)
+\begin{DoxyCompactList}\small\item\em Konwertuje wartość logiczną na wartość przezroczystości. \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{class_godmist_w_p_f_1_1_converters_1_1_bool_to_opacity_converter_a5dbc6b9570dfc109f7495c7f49d92f30}{Convert\+Back}} (object value, Type target\+Type, object parameter, Culture\+Info culture)
+\begin{DoxyCompactList}\small\item\em Konwersja zwrotna nie jest obsługiwana. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Konwerter, który zamienia wartość logiczną na wartość przezroczystości (opacity). 
+
+Umożliwia ustawienie różnych wartości przezroczystości dla wartości true i false. Format parametru\+: "{}wartość\+\_\+dla\+\_\+true\+:wartość\+\_\+dla\+\_\+false"{} (np. "{}1.\+0\+:0.\+5"{}). 
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_converters_1_1_bool_to_opacity_converter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_converters_1_1_bool_to_opacity_converter_a50aed068c40cea05d205756c698f19de}\index{GodmistWPF.Converters.BoolToOpacityConverter@{GodmistWPF.Converters.BoolToOpacityConverter}!Convert@{Convert}}
+\index{Convert@{Convert}!GodmistWPF.Converters.BoolToOpacityConverter@{GodmistWPF.Converters.BoolToOpacityConverter}}
+\doxysubsubsection{\texorpdfstring{Convert()}{Convert()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_converters_1_1_bool_to_opacity_converter_a50aed068c40cea05d205756c698f19de} 
+object Godmist\+WPF.\+Converters.\+Bool\+To\+Opacity\+Converter.\+Convert (\begin{DoxyParamCaption}\item[{object}]{value}{, }\item[{Type}]{target\+Type}{, }\item[{object}]{parameter}{, }\item[{Culture\+Info}]{culture}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konwertuje wartość logiczną na wartość przezroczystości. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Wartość do przekonwertowania (bool).\\
+\hline
+{\em target\+Type} & Typ docelowy (ignorowany).\\
+\hline
+{\em parameter} & Parametr w formacie "{}wartość\+\_\+dla\+\_\+true\+:wartość\+\_\+dla\+\_\+false"{}.\\
+\hline
+{\em culture} & Kultura używana do konwersji (ignorowana).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wartość przezroczystości jako double (domyślnie 1.\+0).
+\end{DoxyReturn}
+
+
+Jeśli parametr nie jest w odpowiednim formacie, zwraca domyślną wartość 1.\+0. \Hypertarget{class_godmist_w_p_f_1_1_converters_1_1_bool_to_opacity_converter_a5dbc6b9570dfc109f7495c7f49d92f30}\index{GodmistWPF.Converters.BoolToOpacityConverter@{GodmistWPF.Converters.BoolToOpacityConverter}!ConvertBack@{ConvertBack}}
+\index{ConvertBack@{ConvertBack}!GodmistWPF.Converters.BoolToOpacityConverter@{GodmistWPF.Converters.BoolToOpacityConverter}}
+\doxysubsubsection{\texorpdfstring{ConvertBack()}{ConvertBack()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_converters_1_1_bool_to_opacity_converter_a5dbc6b9570dfc109f7495c7f49d92f30} 
+object Godmist\+WPF.\+Converters.\+Bool\+To\+Opacity\+Converter.\+Convert\+Back (\begin{DoxyParamCaption}\item[{object}]{value}{, }\item[{Type}]{target\+Type}{, }\item[{object}]{parameter}{, }\item[{Culture\+Info}]{culture}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konwersja zwrotna nie jest obsługiwana. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Implemented\+Exception} & Zawsze zgłaszany, ponieważ konwersja zwrotna nie jest obsługiwana.\\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Converters/Bool\+To\+Opacity\+Converter.\+cs\end{DoxyCompactItemize}

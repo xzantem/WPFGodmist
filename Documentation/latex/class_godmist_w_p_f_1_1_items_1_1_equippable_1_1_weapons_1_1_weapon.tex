@@ -1,0 +1,447 @@
+\doxysection{Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon}{}\label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon}\index{GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}}
+
+
+Reprezentuje broń, którą może wyposażyć postać. Składa się z trzech komponentów\+: głowicy, oprawy i rękojeści. Implementuje interfejsy \doxylink{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable}{IEquippable} i \doxylink{interface_godmist_w_p_f_1_1_items_1_1_i_usable}{IUsable}.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.898305cm]{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a4e4be0e0e2b9bf4257733e744d9d13eb}{Weapon}} (\mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_head}{Weapon\+Head}} head, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_binder}{Weapon\+Binder}} binder, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_handle}{Weapon\+Handle}} handle, \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_aedd53344fda097f8a316b89f033e3ac2}{Character\+Class}} required\+Class, \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_a6d85f5e9c2037deaba73a7eb017cd9ed}{Quality}} quality, string alias="{}"{})
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon}{Weapon} z podanymi komponentami i parametrami. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a1122769c0cd99215bcd0e25cf3e6cfaa}{Weapon}} (\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_aedd53344fda097f8a316b89f033e3ac2}{Character\+Class}} required\+Class)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon}{Weapon} jako broń startową dla określonej klasy postaci. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_aaa977b9ea497b4db66417a3c65d7cfc0}\label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_aaa977b9ea497b4db66417a3c65d7cfc0} 
+{\bfseries Weapon} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową, pustą instancję klasy \doxylink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon}{Weapon}. Konstruktor używany przez mechanizm deserializacji JSON. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a5ae6efede19fa0e112384c6d3e5d2c15}{Use}} ()
+\begin{DoxyCompactList}\small\item\em Próbuje wyposażyć broń na aktualnie wybranej postaci. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a7d72e26263e41c375669fafc103ba83d}{Update\+Passives}} (\mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_player_1_1_player_character}{Player\+Character}} player)
+\begin{DoxyCompactList}\small\item\em Aktualizuje efekty pasywne wynikające z galdurytów wpiętych w broń. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_acc724e546e6871d22f11b3281d558436}{Add\+Galdurite}} (\mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite}{Galdurite}} galdurite)
+\begin{DoxyCompactList}\small\item\em Dodaje galduryt do broni, jeśli jest to możliwe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_abbb3876124277eed21165055daea19fb}{Remove\+Galdurite}} (\mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite}{Galdurite}} galdurite)
+\begin{DoxyCompactList}\small\item\em Usuwa galduryt z broni. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item}{Godmist\+WPF.\+Items.\+Base\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_acc6c4b47f0eada380e37090582522645}{Inspect}} (int amount=1)
+\begin{DoxyCompactList}\small\item\em Wyświetla szczegółowe informacje o przedmiocie. Implementacja w WPF obsługuje interfejs użytkownika. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a62a7b60026ec2e63d60e5bde7513c7c3}{Write\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla nazwę przedmiotu z uwzględnieniem jego rzadkości. Implementacja w WPF obsługuje interfejs użytkownika. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_ab80277caef8f091f3245e4c3680a2265}{Write\+Item\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla typ przedmiotu. Implementacja w WPF obsługuje interfejs użytkownika. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_ab8aecf04d7121322a9515bcaccb024b5}{Write\+Rarity}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla rzadkość przedmiotu. Implementacja w WPF obsługuje interfejs użytkownika. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a3ca6652033431e54f246307f7b3e9d0d}{Rarity\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca zlokalizowaną nazwę rzadkości przedmiotu. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a6c6ca0c4731c9106cef36a4cd606c000}{Item\+Type\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca zlokalizowaną nazwę typu przedmiotu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+override string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_aa2fae0a860c0def2082a730e3fc4c99e}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Nazwa broni. \end{DoxyCompactList}\item 
+override int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a2ab1c96e6648f93f6602cd0f9b78a8ba}{Weight}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Waga broni. \end{DoxyCompactList}\item 
+override int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a3a83b1b72049559504ada12b01a52786}{ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Unikalny identyfikator broni. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a720db1c84416c50b7b2d54350dc731f0}{Base\+Cost}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Bazowy koszt broni przed uwzględnieniem modyfikatorów jakości i rzadkości. \end{DoxyCompactList}\item 
+override int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_acfd1804fe260b28f1768f03a772b04de}{Cost}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Koszt broni uwzględniający modyfikator rzadkości. \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a20a5ed93acad8ce3b8ca1889823f3e2d}{Stackable}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Określa, czy przedmiot może być składowany w stosie. Dla broni zawsze zwraca false. \end{DoxyCompactList}\item 
+override \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_ac3d61a48fbf15693811c3ce1d463dfe0}{Item\+Type}} \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a3149827bd84c1058ff5aaeda0f4bce3e}{Item\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Typ przedmiotu -\/ zawsze zwraca Item\+Type.\+Weapon. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_acd5466b10725c281c80d11d8f7475766}{Required\+Level}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Wymagany poziom postaci do założenia broni. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_aedd53344fda097f8a316b89f033e3ac2}{Character\+Class}} \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a639975dcc760ce5ef2085838f90a7357}{Required\+Class}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Klasa postaci, która może używać tej broni. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_a6d85f5e9c2037deaba73a7eb017cd9ed}{Quality}} \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_afc6c37b997f50654cc5d2eaa6aefe86f}{Quality}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Jakość wykonania broni, wpływająca na jej statystyki. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_ab0adc17c5c5a374dacbaafeba13858c0}{Upgrade\+Modifier}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Modyfikator ulepszenia broni, wpływający na jej statystyki. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite}{Galdurite}} $>$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_ab38e99a3345a960aae19c2fd626b43ef}{Galdurites}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Lista galdurytów wpiętych w broń. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a15d41eb049b7543d4ff7d5c8ced33a00}{Galdurite\+Slots}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Liczba dostępnych gniazd na galduryty, zależna od poziomu ulepszenia. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a89c44e8b68fd1b08d200e58a71aa3fbd}\label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a89c44e8b68fd1b08d200e58a71aa3fbd} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_head}{Weapon\+Head}} {\bfseries Head}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Głowica broni, określająca podstawowe obrażenia i modyfikatory krytyczne. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a670d73525d07790c63dc105c68db3a34}\label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a670d73525d07790c63dc105c68db3a34} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_binder}{Weapon\+Binder}} {\bfseries Binder}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Oprawa broni, wpływająca na dodatkowe modyfikatory obrażeń. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a8968b8091f3a93ae92a58f41ba6c8a84}\label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a8968b8091f3a93ae92a58f41ba6c8a84} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_handle}{Weapon\+Handle}} {\bfseries Handle}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Rękojeść broni, wpływająca na celność i dodatkowe modyfikatory. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a438ecb67ad0ca4b9733baa7f68c1b918}\label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a438ecb67ad0ca4b9733baa7f68c1b918} 
+int {\bfseries Minimal\+Attack}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Minimalna wartość obrażeń zadawanych przez broń. Obliczana na podstawie głowicy, klasy postaci i jakości broni. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_aa0199beea8e1cf26f7f9183d11121a21}\label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_aa0199beea8e1cf26f7f9183d11121a21} 
+int {\bfseries Maximal\+Attack}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Maksymalna wartość obrażeń zadawanych przez broń. Obliczana na podstawie głowicy, klasy postaci i jakości broni. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a5390e3b9386d975265b6e6a58e8b4cad}\label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a5390e3b9386d975265b6e6a58e8b4cad} 
+double {\bfseries Crit\+Chance}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Szansa na trafienie krytyczne (dla klasy Maga zwraca regenerację many). \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a45d3661436bedab78026431c87c9501c}\label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a45d3661436bedab78026431c87c9501c} 
+double {\bfseries Crit\+Mod}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Modyfikator obrażeń krytycznych. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a5d87c1fac887d38bda53f557e6cfd291}\label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a5d87c1fac887d38bda53f557e6cfd291} 
+int {\bfseries Accuracy}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Celność broni (dla klasy Maga zwraca maksymalną ilość many). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item}{Godmist\+WPF.\+Items.\+Base\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a53f72ba0d1cf21654655cb745eab7ba3}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia nazwę przedmiotu. Przy pobieraniu wykorzystuje Name\+Alias\+Helper do tłumaczenia aliasu na pełną nazwę. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_ac94e206df1ac952048d7aa9c4d047add}{Alias}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia alias (skróconą nazwę) przedmiotu. Używany do wewnętrznej identyfikacji i tłumaczeń. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a171769b2a12d37acc3f45a1adfe614b6}{Weight}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia wagę przedmiotu. Wpływa na obciążenie ekwipunku postaci. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_acdb022869d8836b038d36e27e46c1e89}{ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia unikalny identyfikator przedmiotu. Używany do zapisu/odczytu stanu gry. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_adb7ff1df8be6b0e46d36a69f663f989a}{Cost}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia wartość przedmiotu w walucie gry. Używane przy sprzedaży i zakupie przedmiotów. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_a02934ee73a54ec124f0455457945ab1a}{Item\+Rarity}} \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_ab8d911e0148244bb7b11241cddf824a6}{Rarity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia rzadkość przedmiotu. Wpływa na kolor nazwy i wartość przedmiotu. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_afc676c9421e9ad3df5d549ef44c3ae89}{Stackable}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Określa, czy przedmioty tego samego typu mogą być składane w jednym slocie ekwipunku. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a763204eb630704caf524369c8de6ebe6}{Description}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia opis przedmiotu. Wyświetlany w oknie inspekcji przedmiotu. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_ac3d61a48fbf15693811c3ce1d463dfe0}{Item\+Type}} \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a0774084b82083124b6e19ee3de21ee54}{Item\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia typ przedmiotu. Określa kategorię i podstawowe przeznaczenie przedmiotu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable}{Godmist\+WPF.\+Items.\+Equippable.\+IEquippable}}}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_afdf1b61c30e7e16caa04c256ec1dbb34}{Rarity\+Modifier}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera modyfikator rzadkości przedmiotu, który wpływa na jego statystyki. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Reprezentuje broń, którą może wyposażyć postać. Składa się z trzech komponentów\+: głowicy, oprawy i rękojeści. Implementuje interfejsy \doxylink{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable}{IEquippable} i \doxylink{interface_godmist_w_p_f_1_1_items_1_1_i_usable}{IUsable}. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a4e4be0e0e2b9bf4257733e744d9d13eb}\index{GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}!Weapon@{Weapon}}
+\index{Weapon@{Weapon}!GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}}
+\doxysubsubsection{\texorpdfstring{Weapon()}{Weapon()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a4e4be0e0e2b9bf4257733e744d9d13eb} 
+Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon.\+Weapon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_head}{Weapon\+Head}}}]{head}{, }\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_binder}{Weapon\+Binder}}}]{binder}{, }\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_handle}{Weapon\+Handle}}}]{handle}{, }\item[{\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_aedd53344fda097f8a316b89f033e3ac2}{Character\+Class}}}]{required\+Class}{, }\item[{\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_a6d85f5e9c2037deaba73a7eb017cd9ed}{Quality}}}]{quality}{, }\item[{string}]{alias}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon}{Weapon} z podanymi komponentami i parametrami. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em head} & Głowica broni.\\
+\hline
+{\em binder} & Oprawa broni.\\
+\hline
+{\em handle} & Rękojeść broni.\\
+\hline
+{\em required\+Class} & Klasa postaci wymagana do używania broni.\\
+\hline
+{\em quality} & Jakość wykonania broni.\\
+\hline
+{\em alias} & Opcjonalny alias dla niestandardowej nazwy broni.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a1122769c0cd99215bcd0e25cf3e6cfaa}\index{GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}!Weapon@{Weapon}}
+\index{Weapon@{Weapon}!GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}}
+\doxysubsubsection{\texorpdfstring{Weapon()}{Weapon()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a1122769c0cd99215bcd0e25cf3e6cfaa} 
+Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon.\+Weapon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_aedd53344fda097f8a316b89f033e3ac2}{Character\+Class}}}]{required\+Class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon}{Weapon} jako broń startową dla określonej klasy postaci. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em required\+Class} & Klasa postaci, dla której ma zostać utworzona broń startowa.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Out\+Of\+Range\+Exception} & Wyrzucany, gdy podano nieobsługiwaną klasę postaci.\\
+\hline
+\end{DoxyExceptions}
+
+
+Dla każdej klasy postaci generowana jest inna broń startowa o odpowiednich właściwościach. 
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_acc724e546e6871d22f11b3281d558436}\index{GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}!AddGaldurite@{AddGaldurite}}
+\index{AddGaldurite@{AddGaldurite}!GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}}
+\doxysubsubsection{\texorpdfstring{AddGaldurite()}{AddGaldurite()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_acc724e546e6871d22f11b3281d558436} 
+void Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon.\+Add\+Galdurite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite}{Galdurite}}}]{galdurite}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dodaje galduryt do broni, jeśli jest to możliwe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em galdurite} & Galduryt do dodania.\\
+\hline
+\end{DoxyParams}
+
+
+Sprawdza, czy są wolne gniazda i czy typ galdurytu pasuje do broni. Po dodaniu aktualizuje efekty pasywne i ujawnia właściwości galdurytu. \Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_abbb3876124277eed21165055daea19fb}\index{GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}!RemoveGaldurite@{RemoveGaldurite}}
+\index{RemoveGaldurite@{RemoveGaldurite}!GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}}
+\doxysubsubsection{\texorpdfstring{RemoveGaldurite()}{RemoveGaldurite()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_abbb3876124277eed21165055daea19fb} 
+void Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon.\+Remove\+Galdurite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite}{Galdurite}}}]{galdurite}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Usuwa galduryt z broni. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em galdurite} & Galduryt do usunięcia.\\
+\hline
+\end{DoxyParams}
+
+
+Po usunięciu aktualizuje efekty pasywne postaci. \Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a7d72e26263e41c375669fafc103ba83d}\index{GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}!UpdatePassives@{UpdatePassives}}
+\index{UpdatePassives@{UpdatePassives}!GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}}
+\doxysubsubsection{\texorpdfstring{UpdatePassives()}{UpdatePassives()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a7d72e26263e41c375669fafc103ba83d} 
+virtual void Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon.\+Update\+Passives (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_player_1_1_player_character}{Player\+Character}}}]{player}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Aktualizuje efekty pasywne wynikające z galdurytów wpiętych w broń. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Postać, której mają zostać zaktualizowane efekty.\\
+\hline
+\end{DoxyParams}
+
+
+Usuwa stare efekty i dodaje nowe na podstawie aktualnie wpiętych galdurytów. \Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a5ae6efede19fa0e112384c6d3e5d2c15}\index{GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}!Use@{Use}}
+\index{Use@{Use}!GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}}
+\doxysubsubsection{\texorpdfstring{Use()}{Use()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a5ae6efede19fa0e112384c6d3e5d2c15} 
+bool Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon.\+Use (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Próbuje wyposażyć broń na aktualnie wybranej postaci. 
+
+\begin{DoxyReturn}{Returns}
+True, jeśli udało się wyposażyć broń; w przeciwnym razie false. 
+\end{DoxyReturn}
+
+
+Sprawdza, czy postać może używać tej broni (odpowiednia klasa i poziom). 
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_usable_add99d111ade8703560fb54361cdeffc2}{Godmist\+WPF.\+Items.\+IUsable}}.
+
+
+
+\label{doc-property-members}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a720db1c84416c50b7b2d54350dc731f0}\index{GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}!BaseCost@{BaseCost}}
+\index{BaseCost@{BaseCost}!GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}}
+\doxysubsubsection{\texorpdfstring{BaseCost}{BaseCost}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a720db1c84416c50b7b2d54350dc731f0} 
+int Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon.\+Base\+Cost\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Bazowy koszt broni przed uwzględnieniem modyfikatorów jakości i rzadkości. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_a69a1c45bd2088980c51a627cb59d0c1f}{Godmist\+WPF.\+Items.\+Equippable.\+IEquippable}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_acfd1804fe260b28f1768f03a772b04de}\index{GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}!Cost@{Cost}}
+\index{Cost@{Cost}!GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}}
+\doxysubsubsection{\texorpdfstring{Cost}{Cost}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_acfd1804fe260b28f1768f03a772b04de} 
+override int Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon.\+Cost\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Koszt broni uwzględniający modyfikator rzadkości. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a0f412b6f7655244181eb1d372ac41ddb}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_ab38e99a3345a960aae19c2fd626b43ef}\index{GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}!Galdurites@{Galdurites}}
+\index{Galdurites@{Galdurites}!GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}}
+\doxysubsubsection{\texorpdfstring{Galdurites}{Galdurites}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_ab38e99a3345a960aae19c2fd626b43ef} 
+List$<$\mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite}{Galdurite}}$>$ Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon.\+Galdurites\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Lista galdurytów wpiętych w broń. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_a30e92503d30bf538967899ece5059da4}{Godmist\+WPF.\+Items.\+Equippable.\+IEquippable}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a15d41eb049b7543d4ff7d5c8ced33a00}\index{GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}!GalduriteSlots@{GalduriteSlots}}
+\index{GalduriteSlots@{GalduriteSlots}!GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}}
+\doxysubsubsection{\texorpdfstring{GalduriteSlots}{GalduriteSlots}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a15d41eb049b7543d4ff7d5c8ced33a00} 
+int Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon.\+Galdurite\+Slots\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Liczba dostępnych gniazd na galduryty, zależna od poziomu ulepszenia. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_acadba7542b951f7da4694c6e21580398}{Godmist\+WPF.\+Items.\+Equippable.\+IEquippable}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a3a83b1b72049559504ada12b01a52786}\index{GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}!ID@{ID}}
+\index{ID@{ID}!GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}}
+\doxysubsubsection{\texorpdfstring{ID}{ID}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a3a83b1b72049559504ada12b01a52786} 
+override int Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon.\+ID\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Unikalny identyfikator broni. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_afd07fe16d41cf6234ce995cfc57634c8}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a3149827bd84c1058ff5aaeda0f4bce3e}\index{GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}!ItemType@{ItemType}}
+\index{ItemType@{ItemType}!GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}}
+\doxysubsubsection{\texorpdfstring{ItemType}{ItemType}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a3149827bd84c1058ff5aaeda0f4bce3e} 
+override \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_ac3d61a48fbf15693811c3ce1d463dfe0}{Item\+Type}} Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon.\+Item\+Type\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Typ przedmiotu -\/ zawsze zwraca Item\+Type.\+Weapon. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a23f5dbd47328d6cbef2ff30a7fe15938}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_aa2fae0a860c0def2082a730e3fc4c99e}\index{GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}!Name@{Name}}
+\index{Name@{Name}!GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_aa2fae0a860c0def2082a730e3fc4c99e} 
+override string Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon.\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Nazwa broni. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_aa7c0739500303333ba79d83a60d46b08}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_afc6c37b997f50654cc5d2eaa6aefe86f}\index{GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}!Quality@{Quality}}
+\index{Quality@{Quality}!GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}}
+\doxysubsubsection{\texorpdfstring{Quality}{Quality}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_afc6c37b997f50654cc5d2eaa6aefe86f} 
+\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_a6d85f5e9c2037deaba73a7eb017cd9ed}{Quality}} Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon.\+Quality\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Jakość wykonania broni, wpływająca na jej statystyki. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_a731c2f5fa3751ee6f3a78e4a877fb874}{Godmist\+WPF.\+Items.\+Equippable.\+IEquippable}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a639975dcc760ce5ef2085838f90a7357}\index{GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}!RequiredClass@{RequiredClass}}
+\index{RequiredClass@{RequiredClass}!GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}}
+\doxysubsubsection{\texorpdfstring{RequiredClass}{RequiredClass}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a639975dcc760ce5ef2085838f90a7357} 
+\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_aedd53344fda097f8a316b89f033e3ac2}{Character\+Class}} Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon.\+Required\+Class\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Klasa postaci, która może używać tej broni. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_aafd18b1468c0bbe46a57b73a108987d1}{Godmist\+WPF.\+Items.\+Equippable.\+IEquippable}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_acd5466b10725c281c80d11d8f7475766}\index{GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}!RequiredLevel@{RequiredLevel}}
+\index{RequiredLevel@{RequiredLevel}!GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}}
+\doxysubsubsection{\texorpdfstring{RequiredLevel}{RequiredLevel}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_acd5466b10725c281c80d11d8f7475766} 
+int Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon.\+Required\+Level\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Wymagany poziom postaci do założenia broni. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_a16023404ae773bb50a5f081e65f5ec7d}{Godmist\+WPF.\+Items.\+Equippable.\+IEquippable}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a20a5ed93acad8ce3b8ca1889823f3e2d}\index{GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}!Stackable@{Stackable}}
+\index{Stackable@{Stackable}!GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}}
+\doxysubsubsection{\texorpdfstring{Stackable}{Stackable}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a20a5ed93acad8ce3b8ca1889823f3e2d} 
+override bool Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon.\+Stackable\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Określa, czy przedmiot może być składowany w stosie. Dla broni zawsze zwraca false. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_af423d9fec16280fec5ccbecaf7d43fbe}{Godmist\+WPF.\+Items.\+IItem}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_ab0adc17c5c5a374dacbaafeba13858c0}\index{GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}!UpgradeModifier@{UpgradeModifier}}
+\index{UpgradeModifier@{UpgradeModifier}!GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}}
+\doxysubsubsection{\texorpdfstring{UpgradeModifier}{UpgradeModifier}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_ab0adc17c5c5a374dacbaafeba13858c0} 
+double Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon.\+Upgrade\+Modifier\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Modyfikator ulepszenia broni, wpływający na jej statystyki. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable_a4e9b8986c3079ea1f0adc26cd8e738aa}{Godmist\+WPF.\+Items.\+Equippable.\+IEquippable}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a2ab1c96e6648f93f6602cd0f9b78a8ba}\index{GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}!Weight@{Weight}}
+\index{Weight@{Weight}!GodmistWPF.Items.Equippable.Weapons.Weapon@{GodmistWPF.Items.Equippable.Weapons.Weapon}}
+\doxysubsubsection{\texorpdfstring{Weight}{Weight}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a2ab1c96e6648f93f6602cd0f9b78a8ba} 
+override int Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon.\+Weight\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Waga broni. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_ada5ec9f15576cff4b7d046a12ef79ab4}{Godmist\+WPF.\+Items.\+IItem}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Items/\+Equippable/\+Weapons/Weapon.\+cs\end{DoxyCompactItemize}

@@ -1,4 +1,4 @@
-using ConsoleGodmist;
+
 using DungeonType = GodmistWPF.Enums.Dungeons.DungeonType;
 using QuestManager = GodmistWPF.Quests.QuestManager;
 using QuestObjectiveContext = GodmistWPF.Quests.Objectives.QuestObjectiveContext;
@@ -26,13 +26,34 @@ namespace GodmistWPF.Dungeons
     // Temple - traps exist more commonly, rooms are mostly square
     // Mountains - corridors are very long and rooms small (up to 8 x 8)
     // Swamp - same as forest, player speed is reduced by 30% while in the dungeon
-    public class Dungeon {
+    /// <summary>
+    /// Klasa reprezentująca cały loch, zawierająca siatkę pól i informacje o jego stanie.
+    /// </summary>
+    public class Dungeon
+    {
+        /// <summary>
+        /// Pobiera typ lochu.
+        /// </summary>
         public DungeonType DungeonType { get; private set; }
+        /// <summary>
+        /// Pobiera poziom lochu.
+        /// </summary>
         public int DungeonLevel { get; private set; }
+        /// <summary>
+        /// Pobiera listę pięter lochu.
+        /// </summary>
         public List<DungeonFloor> Floors { get; private set; }
         
+        /// <summary>
+        /// Pobiera aktualne piętro lochu.
+        /// </summary>
         public DungeonFloor CurrentFloor { get; private set;}
 
+        /// <summary>
+        /// Inicjalizuje nową instancję klasy <see cref="Dungeon"/> o określonych parametrach.
+        /// </summary>
+        /// <param name="level">Poziom lochu.</param>
+        /// <param name="type">Typ lochu.</param>
         public Dungeon(int level, DungeonType type)
         {
             DungeonLevel = level;
@@ -42,6 +63,9 @@ namespace GodmistWPF.Dungeons
             CurrentFloor = Floors[0];
         }
 
+        /// <summary>
+        /// Dodaje nowe piętro do lochu.
+        /// </summary>
         private void AddNewFloor()
         {
             var length = Random.Shared.Next(4, 9) * (1 + (Floors.Count - 1) * 0.1);
@@ -61,11 +85,17 @@ namespace GodmistWPF.Dungeons
             Floors.Add(new DungeonFloor((int)length, Floors.Count, DungeonType, DungeonLevel));
             QuestManager.CheckForProgress(new QuestObjectiveContext(DungeonType, Floors.Count - 1, DungeonLevel));
         }
+        /// <summary>
+        /// Przechodzi do poprzedniego piętra lochu.
+        /// </summary>
         public void Ascend()
         {
             if (Floors.IndexOf(CurrentFloor) > 0)
                 CurrentFloor = Floors[Floors.IndexOf(CurrentFloor) - 1];
         }
+        /// <summary>
+        /// Przechodzi do następnego piętra lochu.
+        /// </summary>
         public void Descend()
         {
             if (Floors.IndexOf(CurrentFloor) == Floors.Count - 1)

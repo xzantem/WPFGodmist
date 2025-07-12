@@ -21,8 +21,16 @@ using WeaponHead = GodmistWPF.Items.Equippable.Weapons.WeaponHead;
 
 namespace GodmistWPF.Dialogs
 {
+    /// <summary>
+    /// Główne okno dialogowe do tworzenia przedmiotów w grze.
+    /// Umożliwia tworzenie różnych typów przedmiotów, w tym broni, zbroi, mikstur i galduritów.
+    /// </summary>
     public partial class CraftingDialog : Window
     {
+        /// <summary>
+        /// Inicjalizuje nową instancję klasy <see cref="CraftingDialog"/>.
+        /// Ładuje inwentarz i wyświetla ogólny panel tworzenia przedmiotów.
+        /// </summary>
         public CraftingDialog()
         {
             InitializeComponent();
@@ -30,6 +38,10 @@ namespace GodmistWPF.Dialogs
             ShowGeneralCrafting();
         }
 
+        /// <summary>
+        /// Ładuje zawartość inwentarza gracza i aktualizuje wyświetlaną listę przedmiotów.
+        /// Wyświetla również aktualną ilość złota gracza.
+        /// </summary>
         private void LoadInventory()
         {
             var player = PlayerHandler.player;
@@ -37,6 +49,12 @@ namespace GodmistWPF.Dialogs
             PlayerGold.Text = $"Gold: {player.Gold}";
         }
 
+        /// <summary>
+        /// Obsługuje zdarzenie kliknięcia przycisku tworzenia broni.
+        /// Wyświetla panel do tworzenia broni i ładuje dostępne komponenty.
+        /// </summary>
+        /// <param name="sender">Źródło zdarzenia.</param>
+        /// <param name="e">Dane zdarzenia.</param>
         private void WeaponCraftingButton_Click(object sender, RoutedEventArgs e)
         {
             HideAllCraftingGrids();
@@ -47,6 +65,12 @@ namespace GodmistWPF.Dialogs
             WeaponHandleCombo.ItemsSource = EquipmentPartManager.WeaponHandles;
         }
 
+        /// <summary>
+        /// Obsługuje zdarzenie kliknięcia przycisku tworzenia zbroi.
+        /// Wyświetla panel do tworzenia zbroi i ładuje dostępne komponenty.
+        /// </summary>
+        /// <param name="sender">Źródło zdarzenia.</param>
+        /// <param name="e">Dane zdarzenia.</param>
         private void ArmorCraftingButton_Click(object sender, RoutedEventArgs e)
         {
             HideAllCraftingGrids();
@@ -57,6 +81,12 @@ namespace GodmistWPF.Dialogs
             ArmorBaseCombo.ItemsSource = EquipmentPartManager.ArmorBases;
         }
 
+        /// <summary>
+        /// Obsługuje zdarzenie kliknięcia przycisku tworzenia mikstur.
+        /// Wyświetla panel do tworzenia mikstur i ładuje dostępne komponenty.
+        /// </summary>
+        /// <param name="sender">Źródło zdarzenia.</param>
+        /// <param name="e">Dane zdarzenia.</param>
         private void PotionCraftingButton_Click(object sender, RoutedEventArgs e)
         {
             HideAllCraftingGrids();
@@ -66,6 +96,12 @@ namespace GodmistWPF.Dialogs
             PotionCatalystCombo.ItemsSource = Enum.GetValues(typeof(PotionCatalystEffect));
         }
 
+        /// <summary>
+        /// Obsługuje zdarzenie kliknięcia przycisku tworzenia galduritów.
+        /// Wyświetla panel do tworzenia galduritów i ładuje dostępne komponenty.
+        /// </summary>
+        /// <param name="sender">Źródło zdarzenia.</param>
+        /// <param name="e">Dane zdarzenia.</param>
         private void GalduriteCraftingButton_Click(object sender, RoutedEventArgs e)
         {
             HideAllCraftingGrids();
@@ -74,11 +110,21 @@ namespace GodmistWPF.Dialogs
             GalduriteComponentsList.ItemsSource = GalduriteManager.GalduriteComponents;
         }
 
+        /// <summary>
+        /// Obsługuje zdarzenie kliknięcia przycisku ogólnego tworzenia przedmiotów.
+        /// Wyświetla panel ogólnego tworzenia przedmiotów.
+        /// </summary>
+        /// <param name="sender">Źródło zdarzenia.</param>
+        /// <param name="e">Dane zdarzenia.</param>
         private void GeneralCraftingButton_Click(object sender, RoutedEventArgs e)
         {
             ShowGeneralCrafting();
         }
 
+        /// <summary>
+        /// Wyświetla panel ogólnego tworzenia przedmiotów.
+        /// Ładuje listę przedmiotów, które mogą być stworzone przez gracza.
+        /// </summary>
         private void ShowGeneralCrafting()
         {
             HideAllCraftingGrids();
@@ -92,6 +138,10 @@ namespace GodmistWPF.Dialogs
                 .ToList();
         }
 
+        /// <summary>
+        /// Ukrywa wszystkie panele tworzenia przedmiotów.
+        /// Używane przed wyświetleniem konkretnego panelu tworzenia.
+        /// </summary>
         private void HideAllCraftingGrids()
         {
             WeaponCraftingGrid.Visibility = Visibility.Collapsed;
@@ -101,6 +151,12 @@ namespace GodmistWPF.Dialogs
             GeneralCraftingGrid.Visibility = Visibility.Collapsed;
         }
 
+        /// <summary>
+        /// Obsługuje zdarzenie dodawania składnika do mikstury.
+        /// Dodaje wybrany składnik do listy używanych składników.
+        /// </summary>
+        /// <param name="sender">Źródło zdarzenia.</param>
+        /// <param name="e">Dane zdarzenia.</param>
         private void AddComponentButton_Click(object sender, RoutedEventArgs e)
         {
             var selectedComponent = PotionComponentsList.SelectedItem as PotionComponent;
@@ -112,6 +168,12 @@ namespace GodmistWPF.Dialogs
             }
         }
 
+        /// <summary>
+        /// Obsługuje zdarzenie dodawania składnika do galduritu.
+        /// Dodaje wybrany składnik do listy używanych składników.
+        /// </summary>
+        /// <param name="sender">Źródło zdarzenia.</param>
+        /// <param name="e">Dane zdarzenia.</param>
         private void AddGalduriteComponentButton_Click(object sender, RoutedEventArgs e)
         {
             var selectedComponent = GalduriteComponentsList.SelectedItem as GalduriteComponent;
@@ -123,6 +185,12 @@ namespace GodmistWPF.Dialogs
             }
         }
 
+        /// <summary>
+        /// Obsługuje zdarzenie tworzenia przedmiotu z listy ogólnej.
+        /// Sprawdza dostępność składników i tworzy wybrany przedmiot.
+        /// </summary>
+        /// <param name="sender">Źródło zdarzenia.</param>
+        /// <param name="e">Dane zdarzenia.</param>
         private void CraftItemButton_Click(object sender, RoutedEventArgs e)
         {
             var item = CraftableItemsList.SelectedItem as ICraftable;
@@ -136,6 +204,12 @@ namespace GodmistWPF.Dialogs
             LoadInventory();
         }
 
+        /// <summary>
+        /// Główna metoda obsługująca tworzenie przedmiotów.
+        /// W zależności od aktywnego panelu, tworzy odpowiedni typ przedmiotu.
+        /// </summary>
+        /// <param name="sender">Źródło zdarzenia.</param>
+        /// <param name="e">Dane zdarzenia.</param>
         private void CraftButton_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -251,6 +325,12 @@ namespace GodmistWPF.Dialogs
             }
         }
 
+        /// <summary>
+        /// Obsługuje zdarzenie kliknięcia przycisku anulowania.
+        /// Zamyka okno dialogowe bez zapisywania zmian.
+        /// </summary>
+        /// <param name="sender">Źródło zdarzenia.</param>
+        /// <param name="e">Dane zdarzenia.</param>
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
             Close();

@@ -1,20 +1,42 @@
-﻿using GodmistWPF.Enums.Items;
+using GodmistWPF.Enums.Items;
 using GodmistWPF.Items.Equippable;
 using GodmistWPF.Items.Galdurites;
 using GodmistWPF.Items.Potions;
 using GodmistWPF.Utilities;
 using GodmistWPF.Utilities.JsonConverters;
 using Newtonsoft.Json;
+
 namespace GodmistWPF.Items;
 
+/// <summary>
+/// Klasa reprezentująca ekwipunek NPC, w tym sklep i przedmioty kupione od gracza.
+/// Zarządza asortymentem sklepowym, który zmienia się w zależności od poziomu lojalności.
+/// </summary>
 public class NPCInventory
 {
+    /// <summary>
+    /// Słownik przedmiotów dostępnych w sklepie i ich ilości.
+    /// Kluczem jest przedmiot, a wartością ilość sztuk w sklepie.
+    /// </summary>
     [JsonConverter(typeof(ItemConverter))]
     public Dictionary<IItem, int> RotatingShop { get; set; }
+    
+    /// <summary>
+    /// Słownik przedmiotów kupionych od gracza i ich ilości.
+    /// Kluczem jest przedmiot, a wartością ilość sztuk.
+    /// </summary>
     [JsonConverter(typeof(ItemConverter))]
     public Dictionary<IItem, int> BoughtFromPlayer { get; set; }
+    
+    /// <summary>
+    /// Lista typów przedmiotów, które mogą pojawić się w sklepie.
+    /// </summary>
     public List<ItemType> PossibleWares { get; set; }
 
+    /// <summary>
+    /// Inicjalizuje nową instancję klasy NPCInventory z określonymi typami przedmiotów.
+    /// </summary>
+    /// <param name="itemTypesInShop">Lista typów przedmiotów, które mogą pojawić się w sklepie.</param>
     public NPCInventory(List<ItemType> itemTypesInShop)
     {
         RotatingShop = new Dictionary<IItem, int>();
@@ -22,8 +44,17 @@ public class NPCInventory
         PossibleWares = itemTypesInShop;
         UpdateWares(1);
     }
+    /// <summary>
+    /// Inicjalizuje nową instancję klasy NPCInventory.
+    /// Konstruktor używany do deserializacji JSON.
+    /// </summary>
     public NPCInventory() {}
 
+    /// <summary>
+    /// Aktualizuje asortyment sklepu na podstawie poziomu lojalności gracza.
+    /// Wyższy poziom lojalności odblokowuje lepsze przedmioty.
+    /// </summary>
+    /// <param name="loyaltyLevel">Poziom lojalności gracza z danym NPC.</param>
     public void UpdateWares(int loyaltyLevel)
     {
         RotatingShop.Clear();
@@ -87,6 +118,12 @@ public class NPCInventory
         }
     }
 
+    /// <summary>
+    /// Dodaje przedmiot do listy przedmiotów kupionych od gracza.
+    /// Jeśli przedmiot jest składalny, zwiększa jego ilość.
+    /// </summary>
+    /// <param name="item">Przedmiot do dodania.</param>
+    /// <param name="quantity">Ilość przedmiotów do dodania (domyślnie 1).</param>
     public void AddItem(IItem item, int quantity = 1)
     {
         if (item.Stackable && BoughtFromPlayer.ContainsKey(item))
@@ -98,6 +135,12 @@ public class NPCInventory
             BoughtFromPlayer.Add(item, quantity);
         }
     }
+    /// <summary>
+    /// Usuwa określoną ilość przedmiotów z ekwipunku NPC na podanym indeksie.
+    /// Jeśli ilość spadnie do zera, przedmiot jest całkowicie usuwany.
+    /// </summary>
+    /// <param name="index">Indeks przedmiotu do usunięcia.</param>
+    /// <param name="amount">Ilość do usunięcia (domyślnie 1).</param>
     public void RemoveAt(int index, int amount = 1)
     {
         var items = RotatingShop.Concat(BoughtFromPlayer).ToList();
@@ -115,6 +158,12 @@ public class NPCInventory
         }
     }
 
+    /// <summary>
+    /// Zwraca przedmiot i jego ilość na podanym indeksie.
+    /// Indeksacja obejmuje zarówno przedmioty w sklepie, jak i kupione od gracza.
+    /// </summary>
+    /// <param name="index">Indeks przedmiotu.</param>
+    /// <returns>Para klucz-wartość zawierająca przedmiot i jego ilość.</returns>
     public KeyValuePair<IItem, int> ElementAt(int index)
     {
         var items = RotatingShop.Concat(BoughtFromPlayer).ToList();

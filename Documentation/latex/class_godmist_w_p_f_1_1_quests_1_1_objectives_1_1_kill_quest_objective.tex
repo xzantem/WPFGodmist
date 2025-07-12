@@ -1,0 +1,126 @@
+\doxysection{Godmist\+WPF.\+Quests.\+Objectives.\+Kill\+Quest\+Objective Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective}{}\label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective}\index{GodmistWPF.Quests.Objectives.KillQuestObjective@{GodmistWPF.Quests.Objectives.KillQuestObjective}}
+
+
+Cel zadania polegający na pokonaniu określonej liczby przeciwników danego typu.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Quests.\+Objectives.\+Kill\+Quest\+Objective\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective_abafd912d595e0c77034d8d5a1c3f69cf}\label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective_abafd912d595e0c77034d8d5a1c3f69cf} 
+{\bfseries Kill\+Quest\+Objective} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective}{Kill\+Quest\+Objective}. Używany przez serializator JSON. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective_a7a7ec67fe83156b3b9cbcd8a54dc56d5}{Kill\+Quest\+Objective}} (string target, int amount\+To\+Kill)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective}{Kill\+Quest\+Objective} z określonym celem i liczbą do pokonania. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective_aea14b5cf33cb27e9ab9ecfe6cd4949c3}{Progress}} (\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context}{Quest\+Objective\+Context}} context)
+\begin{DoxyCompactList}\small\item\em Aktualizuje postęp zadania na podstawie dostarczonego kontekstu. Zwiększa licznik pokonanych przeciwników, jeśli kontekst dotyczy odpowiedniego celu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective_ad8fa93028ee39fc2569fd89a7505919d}{Is\+Complete}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Określa, czy cel został ukończony. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective_a3ce5ac11c96d3008252f2bcdeac45250}\label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective_a3ce5ac11c96d3008252f2bcdeac45250} 
+string {\bfseries Target}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Identyfikator typu przeciwnika, którego należy pokonać. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective_afbc9e37d077df4fa2775a1bb019ee0b4}\label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective_afbc9e37d077df4fa2775a1bb019ee0b4} 
+int {\bfseries Amount\+To\+Kill}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Wymagana liczba pokonanych przeciwników. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective_a4331b383e7d7d319627d668eb3d94ca6}\label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective_a4331b383e7d7d319627d668eb3d94ca6} 
+int {\bfseries Quest\+Progress}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Aktualna liczba pokonanych przeciwników. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective_ac18c6d7dabc3c815f8f895cf113fa8ee}{Description}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera opis celu w formacie "{}\+Pokonaj \mbox{[}nazwa przeciwnika\mbox{]} (aktualnie/do pokonania)"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Cel zadania polegający na pokonaniu określonej liczby przeciwników danego typu. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective_a7a7ec67fe83156b3b9cbcd8a54dc56d5}\index{GodmistWPF.Quests.Objectives.KillQuestObjective@{GodmistWPF.Quests.Objectives.KillQuestObjective}!KillQuestObjective@{KillQuestObjective}}
+\index{KillQuestObjective@{KillQuestObjective}!GodmistWPF.Quests.Objectives.KillQuestObjective@{GodmistWPF.Quests.Objectives.KillQuestObjective}}
+\doxysubsubsection{\texorpdfstring{KillQuestObjective()}{KillQuestObjective()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective_a7a7ec67fe83156b3b9cbcd8a54dc56d5} 
+Godmist\+WPF.\+Quests.\+Objectives.\+Kill\+Quest\+Objective.\+Kill\+Quest\+Objective (\begin{DoxyParamCaption}\item[{string}]{target}{, }\item[{int}]{amount\+To\+Kill}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective}{Kill\+Quest\+Objective} z określonym celem i liczbą do pokonania. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Identyfikator typu przeciwnika.\\
+\hline
+{\em amount\+To\+Kill} & Wymagana liczba pokonanych przeciwników.\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective_aea14b5cf33cb27e9ab9ecfe6cd4949c3}\index{GodmistWPF.Quests.Objectives.KillQuestObjective@{GodmistWPF.Quests.Objectives.KillQuestObjective}!Progress@{Progress}}
+\index{Progress@{Progress}!GodmistWPF.Quests.Objectives.KillQuestObjective@{GodmistWPF.Quests.Objectives.KillQuestObjective}}
+\doxysubsubsection{\texorpdfstring{Progress()}{Progress()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective_aea14b5cf33cb27e9ab9ecfe6cd4949c3} 
+void Godmist\+WPF.\+Quests.\+Objectives.\+Kill\+Quest\+Objective.\+Progress (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_quest_objective_context}{Quest\+Objective\+Context}}}]{context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Aktualizuje postęp zadania na podstawie dostarczonego kontekstu. Zwiększa licznik pokonanych przeciwników, jeśli kontekst dotyczy odpowiedniego celu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & Kontekst zawierający informacje o zabitym przeciwniku.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective_a7f70ddfcacf8816f08f605a9f6e7c145}{Godmist\+WPF.\+Quests.\+Objectives.\+IQuest\+Objective}}.
+
+
+
+\label{doc-property-members}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective_ac18c6d7dabc3c815f8f895cf113fa8ee}\index{GodmistWPF.Quests.Objectives.KillQuestObjective@{GodmistWPF.Quests.Objectives.KillQuestObjective}!Description@{Description}}
+\index{Description@{Description}!GodmistWPF.Quests.Objectives.KillQuestObjective@{GodmistWPF.Quests.Objectives.KillQuestObjective}}
+\doxysubsubsection{\texorpdfstring{Description}{Description}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective_ac18c6d7dabc3c815f8f895cf113fa8ee} 
+string Godmist\+WPF.\+Quests.\+Objectives.\+Kill\+Quest\+Objective.\+Description\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera opis celu w formacie "{}\+Pokonaj \mbox{[}nazwa przeciwnika\mbox{]} (aktualnie/do pokonania)"{}. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective_ad6d9942cd93635eb47c9661482f17979}{Godmist\+WPF.\+Quests.\+Objectives.\+IQuest\+Objective}}.
+
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective_ad8fa93028ee39fc2569fd89a7505919d}\index{GodmistWPF.Quests.Objectives.KillQuestObjective@{GodmistWPF.Quests.Objectives.KillQuestObjective}!IsComplete@{IsComplete}}
+\index{IsComplete@{IsComplete}!GodmistWPF.Quests.Objectives.KillQuestObjective@{GodmistWPF.Quests.Objectives.KillQuestObjective}}
+\doxysubsubsection{\texorpdfstring{IsComplete}{IsComplete}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_kill_quest_objective_ad8fa93028ee39fc2569fd89a7505919d} 
+bool Godmist\+WPF.\+Quests.\+Objectives.\+Kill\+Quest\+Objective.\+Is\+Complete\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Określa, czy cel został ukończony. 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective_aa71bf68a394092b39ad09798a738218c}{Godmist\+WPF.\+Quests.\+Objectives.\+IQuest\+Objective}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Quests/\+Objectives/Kill\+Quest\+Objective.\+cs\end{DoxyCompactItemize}

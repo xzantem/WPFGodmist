@@ -1,0 +1,13 @@
+var searchData=
+[
+  ['backgroundcolor_0',['BackgroundColor',['../class_godmist_w_p_f_1_1_view_models_1_1_room_view_model.html#a3efe5a844e586bd890db106c73b0ea88',1,'GodmistWPF::ViewModels::RoomViewModel']]],
+  ['base_1',['Base',['../class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_armors_1_1_armor.html#a941a5abcab7e6c5bc68753299ba232ed',1,'GodmistWPF::Items::Equippable::Armors::Armor']]],
+  ['basecost_2',['BaseCost',['../class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_armors_1_1_armor.html#a66cfc97691c1b6bb8ae2ce6ac30d7d9e',1,'GodmistWPF.Items.Equippable.Armors.Armor.BaseCost'],['../interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable.html#a69a1c45bd2088980c51a627cb59d0c1f',1,'GodmistWPF.Items.Equippable.IEquippable.BaseCost'],['../class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon.html#a720db1c84416c50b7b2d54350dc731f0',1,'GodmistWPF.Items.Equippable.Weapons.Weapon.BaseCost'],['../class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite.html#acee85ea0393969056d34cebd17d85cfd',1,'GodmistWPF.Items.Galdurites.Galdurite.BaseCost']]],
+  ['basevalue_3',['BaseValue',['../class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat.html#a559fc111b9f76f4a5adcd7278fe947c4',1,'GodmistWPF::Combat::Modifiers::Stat']]],
+  ['binder_4',['Binder',['../class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_armors_1_1_armor.html#a391170d9ef9aff9f3bc208beb4f57f5b',1,'GodmistWPF.Items.Equippable.Armors.Armor.Binder'],['../class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon.html#a670d73525d07790c63dc105c68db3a34',1,'GodmistWPF.Items.Equippable.Weapons.Weapon.Binder']]],
+  ['bossquestprogress_5',['BossQuestProgress',['../class_godmist_w_p_f_1_1_utilities_1_1_data_persistance_1_1_save_data.html#aee9d5e3cd3509162e283513fc9ca742c',1,'GodmistWPF::Utilities::DataPersistance::SaveData']]],
+  ['boughtfromplayer_6',['BoughtFromPlayer',['../class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory.html#ad6229cac6339eb58cedfca587f5f1f2f',1,'GodmistWPF::Items::NPCInventory']]],
+  ['buffchance_7',['BuffChance',['../class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_buff_stat.html#a1bb9c6a215d1febf8f83f9dcd6ee3648',1,'GodmistWPF::Combat::Skills::ActiveSkillEffects::BuffStat']]],
+  ['buffduration_8',['BuffDuration',['../class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_buff_stat.html#a3a9c07f1c2264db74b75849a27338ad4',1,'GodmistWPF::Combat::Skills::ActiveSkillEffects::BuffStat']]],
+  ['buffstrength_9',['BuffStrength',['../class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_buff_stat.html#a7aa430739f685c4669e73baa8d829cfa',1,'GodmistWPF::Combat::Skills::ActiveSkillEffects::BuffStat']]]
+];

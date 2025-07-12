@@ -1,0 +1,98 @@
+\doxysection{Godmist\+WPF.\+Items.\+ICraftable Interface Reference}
+\hypertarget{interface_godmist_w_p_f_1_1_items_1_1_i_craftable}{}\label{interface_godmist_w_p_f_1_1_items_1_1_i_craftable}\index{GodmistWPF.Items.ICraftable@{GodmistWPF.Items.ICraftable}}
+
+
+Interfejs określający zachowanie przedmiotów, które mogą być wytwarzane przez gracza. Rozszerza interfejs \doxylink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem} o właściwości związane z rzemiosłem.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Items.\+ICraftable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.191489cm]{interface_godmist_w_p_f_1_1_items_1_1_i_craftable}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, int $>$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_craftable_a5c1dd3b105eb6e82775022e969ad3430}{Crafting\+Recipe}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia przepis potrzebny do wytworzenia przedmiotu. Kluczem jest nazwa składnika, a wartością wymagana ilość. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_craftable_aa7d722b646069ef72b4ed6c9d5d389e2}{Crafted\+Amount}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia ilość przedmiotów wytwarzanych w jednej partii. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{Godmist\+WPF.\+Items.\+IItem}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_aa7c0739500303333ba79d83a60d46b08}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera nazwę przedmiotu. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a4918a6743daf1c3d488a727094980148}{Alias}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia alias (skróconą nazwę) przedmiotu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_ada5ec9f15576cff4b7d046a12ef79ab4}{Weight}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia wagę przedmiotu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_afd07fe16d41cf6234ce995cfc57634c8}{ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia unikalny identyfikator przedmiotu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a0f412b6f7655244181eb1d372ac41ddb}{Cost}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia wartość przedmiotu w walucie gry. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_a02934ee73a54ec124f0455457945ab1a}{Item\+Rarity}} \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_affbd29bebf9b3a0e17da29f7b65963a4}{Rarity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia rzadkość przedmiotu. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_af423d9fec16280fec5ccbecaf7d43fbe}{Stackable}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Określa, czy przedmioty tego samego typu mogą być składane w jednym slocie ekwipunku. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a3fe652d290d9677b4503e786578780b9}{Description}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia opis przedmiotu wyświetlany przy inspekcji. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_ac3d61a48fbf15693811c3ce1d463dfe0}{Item\+Type}} \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a23f5dbd47328d6cbef2ff30a7fe15938}{Item\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia typ przedmiotu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{Godmist\+WPF.\+Items.\+IItem}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_adaa4ad0bc058f85edbe768b7b46befc2}{Inspect}} (int amount=1)
+\begin{DoxyCompactList}\small\item\em Wyświetla szczegółowe informacje o przedmiocie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_aaa795cd0c16e347636733f8c3dda0abd}{Write\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla nazwę przedmiotu z uwzględnieniem jego rzadkości. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a910a5244e608b0eee8a2d4e2150a2c1f}{Write\+Item\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla typ przedmiotu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a7864db399c3e253324934677eb57feaf}{Write\+Rarity}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla rzadkość przedmiotu. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a7d7114b8736cb248af2f1f611e574a66}{Rarity\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca nazwę rzadkości przedmiotu jako łańcuch znaków. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_aa6364dd4d5e93386c9887a5b65068e8a}{Item\+Type\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca nazwę typu przedmiotu jako łańcuch znaków. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interfejs określający zachowanie przedmiotów, które mogą być wytwarzane przez gracza. Rozszerza interfejs \doxylink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem} o właściwości związane z rzemiosłem. 
+
+\label{doc-property-members}
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_i_craftable_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_i_craftable_aa7d722b646069ef72b4ed6c9d5d389e2}\index{GodmistWPF.Items.ICraftable@{GodmistWPF.Items.ICraftable}!CraftedAmount@{CraftedAmount}}
+\index{CraftedAmount@{CraftedAmount}!GodmistWPF.Items.ICraftable@{GodmistWPF.Items.ICraftable}}
+\doxysubsubsection{\texorpdfstring{CraftedAmount}{CraftedAmount}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_items_1_1_i_craftable_aa7d722b646069ef72b4ed6c9d5d389e2} 
+int Godmist\+WPF.\+Items.\+ICraftable.\+Crafted\+Amount\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia ilość przedmiotów wytwarzanych w jednej partii. 
+
+
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_craftable_ingredient_a15a1270ac44ff472206fcee0fed7584a}{Godmist\+WPF.\+Items.\+Craftable\+Ingredient}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_antidote_aa664af935603891b79da4cc68410ba88}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Antidote}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_bandage_a2dd61e669172eb3c21e365ef8b7fbe24}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Bandage}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_town_portal_scroll_a333ecc707a24fcce350cf32aae7b6f7e}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Town\+Portal\+Scroll}}, and \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_a6a1a96c2f1d162dd02d434076e4b019f}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Wet\+Towel}}.
+
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_i_craftable_a5c1dd3b105eb6e82775022e969ad3430}\index{GodmistWPF.Items.ICraftable@{GodmistWPF.Items.ICraftable}!CraftingRecipe@{CraftingRecipe}}
+\index{CraftingRecipe@{CraftingRecipe}!GodmistWPF.Items.ICraftable@{GodmistWPF.Items.ICraftable}}
+\doxysubsubsection{\texorpdfstring{CraftingRecipe}{CraftingRecipe}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_items_1_1_i_craftable_a5c1dd3b105eb6e82775022e969ad3430} 
+Dictionary$<$string, int$>$ Godmist\+WPF.\+Items.\+ICraftable.\+Crafting\+Recipe\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia przepis potrzebny do wytworzenia przedmiotu. Kluczem jest nazwa składnika, a wartością wymagana ilość. 
+
+
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_craftable_ingredient_ae2a07470feaa5d9250c457e57918be85}{Godmist\+WPF.\+Items.\+Craftable\+Ingredient}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_antidote_aa9a9e2fec8772e3240a8118d547b712b}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Antidote}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_bandage_af7fc7ceed9521f8db8fbed25c6f9762f}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Bandage}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_town_portal_scroll_a63d86290652ebff3b4f193ba421fb89d}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Town\+Portal\+Scroll}}, and \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_afe6db1e469a09627a5121a121ad197be}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Wet\+Towel}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Items/ICraftable.\+cs\end{DoxyCompactItemize}

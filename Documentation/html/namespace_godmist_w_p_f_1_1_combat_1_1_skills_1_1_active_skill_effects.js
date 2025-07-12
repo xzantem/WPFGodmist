@@ -1,0 +1,19 @@
+var namespace_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects =
+[
+    [ "AdvanceMove", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_advance_move.html", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_advance_move" ],
+    [ "BuffStat", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_buff_stat.html", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_buff_stat" ],
+    [ "ClearStatusEffect", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_clear_status_effect.html", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_clear_status_effect" ],
+    [ "DealDamage", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_deal_damage.html", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_deal_damage" ],
+    [ "DebuffResistance", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_debuff_resistance.html", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_debuff_resistance" ],
+    [ "DebuffStat", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_debuff_stat.html", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_debuff_stat" ],
+    [ "ExtendDoT", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_extend_do_t.html", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_extend_do_t" ],
+    [ "GainShield", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield.html", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_gain_shield" ],
+    [ "HealTarget", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_heal_target.html", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_heal_target" ],
+    [ "InflictDoTStatusEffect", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect.html", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect" ],
+    [ "InflictGenericStatusEffect", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect.html", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_generic_status_effect" ],
+    [ "InflictTimedPassiveEffect", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect.html", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_timed_passive_effect" ],
+    [ "RegenResource", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource.html", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource" ],
+    [ "ToggleInnatePassiveEffect", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_toggle_innate_passive_effect.html", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_toggle_innate_passive_effect" ],
+    [ "ToggleListenerPassiveEffect", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_toggle_listener_passive_effect.html", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_toggle_listener_passive_effect" ],
+    [ "TradeHealthForResource", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource.html", "class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_trade_health_for_resource" ]
+];

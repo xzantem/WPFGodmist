@@ -1,0 +1,76 @@
+\doxysection{Godmist\+WPF.\+Converters.\+Boolean\+To\+Brush\+Converter Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_converters_1_1_boolean_to_brush_converter}{}\label{class_godmist_w_p_f_1_1_converters_1_1_boolean_to_brush_converter}\index{GodmistWPF.Converters.BooleanToBrushConverter@{GodmistWPF.Converters.BooleanToBrushConverter}}
+
+
+Konwerter, który zamienia wartość logiczną na pędzel (Brush) z odpowiednim kolorem.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Converters.\+Boolean\+To\+Brush\+Converter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_godmist_w_p_f_1_1_converters_1_1_boolean_to_brush_converter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+object \mbox{\hyperlink{class_godmist_w_p_f_1_1_converters_1_1_boolean_to_brush_converter_a9bf7384aea112a2e450712a8f823fcd8}{Convert}} (object value, Type target\+Type, object parameter, Culture\+Info culture)
+\begin{DoxyCompactList}\small\item\em Konwertuje wartość logiczną na pędzel z odpowiednim kolorem. \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{class_godmist_w_p_f_1_1_converters_1_1_boolean_to_brush_converter_a062422d5ad0902310be1a14be38e735d}{Convert\+Back}} (object value, Type target\+Type, object parameter, Culture\+Info culture)
+\begin{DoxyCompactList}\small\item\em Konwersja zwrotna nie jest obsługiwana. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Konwerter, który zamienia wartość logiczną na pędzel (Brush) z odpowiednim kolorem. 
+
+Domyślnie zwraca zielony pędzel dla wartości true i czerwony dla false. Można dostosować kolory poprzez parametr w formacie "{}kolor\+\_\+true\texorpdfstring{$\vert$}{|}kolor\+\_\+false"{}. Kolory muszą być w formacie szesnastkowym (np. "{}\#4\+CAF50\texorpdfstring{$\vert$}{|}\#\+F44336"{}). 
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_converters_1_1_boolean_to_brush_converter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_converters_1_1_boolean_to_brush_converter_a9bf7384aea112a2e450712a8f823fcd8}\index{GodmistWPF.Converters.BooleanToBrushConverter@{GodmistWPF.Converters.BooleanToBrushConverter}!Convert@{Convert}}
+\index{Convert@{Convert}!GodmistWPF.Converters.BooleanToBrushConverter@{GodmistWPF.Converters.BooleanToBrushConverter}}
+\doxysubsubsection{\texorpdfstring{Convert()}{Convert()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_converters_1_1_boolean_to_brush_converter_a9bf7384aea112a2e450712a8f823fcd8} 
+object Godmist\+WPF.\+Converters.\+Boolean\+To\+Brush\+Converter.\+Convert (\begin{DoxyParamCaption}\item[{object}]{value}{, }\item[{Type}]{target\+Type}{, }\item[{object}]{parameter}{, }\item[{Culture\+Info}]{culture}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konwertuje wartość logiczną na pędzel z odpowiednim kolorem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Wartość do przekonwertowania (bool).\\
+\hline
+{\em target\+Type} & Typ docelowy (ignorowany).\\
+\hline
+{\em parameter} & Opcjonalny parametr w formacie "{}kolor\+\_\+true\texorpdfstring{$\vert$}{|}kolor\+\_\+false"{}.\\
+\hline
+{\em culture} & Kultura używana do konwersji (ignorowana).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pędzel z odpowiednim kolorem (domyślnie zielony dla true, czerwony dla false, szary w przypadku błędu).
+\end{DoxyReturn}
+
+
+Jeśli parametr nie jest w odpowiednim formacie, używane są domyślne kolory. \Hypertarget{class_godmist_w_p_f_1_1_converters_1_1_boolean_to_brush_converter_a062422d5ad0902310be1a14be38e735d}\index{GodmistWPF.Converters.BooleanToBrushConverter@{GodmistWPF.Converters.BooleanToBrushConverter}!ConvertBack@{ConvertBack}}
+\index{ConvertBack@{ConvertBack}!GodmistWPF.Converters.BooleanToBrushConverter@{GodmistWPF.Converters.BooleanToBrushConverter}}
+\doxysubsubsection{\texorpdfstring{ConvertBack()}{ConvertBack()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_converters_1_1_boolean_to_brush_converter_a062422d5ad0902310be1a14be38e735d} 
+object Godmist\+WPF.\+Converters.\+Boolean\+To\+Brush\+Converter.\+Convert\+Back (\begin{DoxyParamCaption}\item[{object}]{value}{, }\item[{Type}]{target\+Type}{, }\item[{object}]{parameter}{, }\item[{Culture\+Info}]{culture}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konwersja zwrotna nie jest obsługiwana. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Implemented\+Exception} & Zawsze zgłaszany, ponieważ konwersja zwrotna nie jest obsługiwana.\\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Converters/Boolean\+To\+Brush\+Converter.\+cs\end{DoxyCompactItemize}

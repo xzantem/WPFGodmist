@@ -1,0 +1,97 @@
+\doxysection{Godmist\+WPF.\+Towns.\+NPCs.\+Blacksmith Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_blacksmith}{}\label{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_blacksmith}\index{GodmistWPF.Towns.NPCs.Blacksmith@{GodmistWPF.Towns.NPCs.Blacksmith}}
+
+
+Reprezentuje kowala -\/ \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC} odpowiedzialnego za usługi związane z naprawą i ulepszaniem ekwipunku.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Towns.\+NPCs.\+Blacksmith\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_blacksmith}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_blacksmith_a8d3df9762b3f28de2eb59c7ea2791355}{Blacksmith}} (string alias)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_blacksmith}{Blacksmith} z określonym aliasem. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_blacksmith_a3207e962dec5b7fb23c25bc3ea3c24c0}{Blacksmith}} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_blacksmith}{Blacksmith} bez parametrów. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{Godmist\+WPF.\+Towns.\+NPCs.\+NPC}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a44eee5f951676ccdd4861c72032fa1ac}{Spend\+Gold}} (int gold)
+\begin{DoxyCompactList}\small\item\em Wydaje określoną ilość złota u danego \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}, zwiększając jego lojalność. \end{DoxyCompactList}\item 
+void {\bfseries Add\+Wares} ()
+\begin{DoxyCompactList}\small\item\em Aktualizuje asortyment towarów dostępnych u \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. \end{DoxyCompactList}\item 
+void {\bfseries Craft\+Item} ()
+\begin{DoxyCompactList}\small\item\em Otwiera interfejs tworzenia przedmiotów u danego \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_shop_item_info}{Shop\+Item\+Info}} $>$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_ab9f9c5810572ee3678cc5d78dc832a83}{Get\+Shop\+Items}} ()
+\begin{DoxyCompactList}\small\item\em Pobiera listę przedmiotów dostępnych w sklepie \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_ac8225a8a684a79597d3d54e274a7f7dd}{Can\+Buy\+Item}} (IItem item, int quantity=1)
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy gracz może kupić określoną ilość przedmiotu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a92b7814bf8b2e85d32ce719fc890096f}{Buy\+Item}} (IItem item, int quantity=1)
+\begin{DoxyCompactList}\small\item\em Kupuje określoną ilość przedmiotu od \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a0042388ce5ab84006926167408bf612c}{Can\+Sell\+Item}} (IItem item, int quantity=1)
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy gracz może sprzedać określoną ilość przedmiotu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a097a67223f63196a2d14fc8ef7554503}{Sell\+Item}} (IItem item, int quantity=1)
+\begin{DoxyCompactList}\small\item\em Sprzedaje określoną ilość przedmiotu \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{Godmist\+WPF.\+Towns.\+NPCs.\+NPC}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a9965d73e0a65d9c14b52181bdd5e8043}{Alias}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia unikalny identyfikator \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a639a80e3f4bffbdaca6b827924ccc8cf}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera przyjazną nazwę \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC} na podstawie jego aliasu. \end{DoxyCompactList}\item 
+NPCInventory \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a493e0a6e01d19f97c014052d154fc29c}{Inventory}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia ekwipunek \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. \end{DoxyCompactList}\item 
+List$<$ ICraftable?$>$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_ab9005b43f66a74be13a58540b22a36cb}{Craftable\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia listę przedmiotów, które można wytworzyć u danego \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c_a3fe328d85414497151fef3da13f639d6}{Loyalty\+Level}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia poziom lojalności gracza u danego \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. \end{DoxyCompactList}\item 
+int {\bfseries Gold\+Spent}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia ilość złota wydaną u danego \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC}. \end{DoxyCompactList}\item 
+int {\bfseries Required\+Gold\+Spent}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera wymaganą ilość złota do wydania, aby osiągnąć następny poziom lojalności. \end{DoxyCompactList}\item 
+double {\bfseries Service\+Cost\+Mod}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera modyfikator kosztu usług w zależności od poziomu lojalności. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Reprezentuje kowala -\/ \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_n_p_c}{NPC} odpowiedzialnego za usługi związane z naprawą i ulepszaniem ekwipunku. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_blacksmith_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_blacksmith_a8d3df9762b3f28de2eb59c7ea2791355}\index{GodmistWPF.Towns.NPCs.Blacksmith@{GodmistWPF.Towns.NPCs.Blacksmith}!Blacksmith@{Blacksmith}}
+\index{Blacksmith@{Blacksmith}!GodmistWPF.Towns.NPCs.Blacksmith@{GodmistWPF.Towns.NPCs.Blacksmith}}
+\doxysubsubsection{\texorpdfstring{Blacksmith()}{Blacksmith()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_blacksmith_a8d3df9762b3f28de2eb59c7ea2791355} 
+Godmist\+WPF.\+Towns.\+NPCs.\+Blacksmith.\+Blacksmith (\begin{DoxyParamCaption}\item[{string}]{alias}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_blacksmith}{Blacksmith} z określonym aliasem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & Alias kowala.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_blacksmith_a3207e962dec5b7fb23c25bc3ea3c24c0}\index{GodmistWPF.Towns.NPCs.Blacksmith@{GodmistWPF.Towns.NPCs.Blacksmith}!Blacksmith@{Blacksmith}}
+\index{Blacksmith@{Blacksmith}!GodmistWPF.Towns.NPCs.Blacksmith@{GodmistWPF.Towns.NPCs.Blacksmith}}
+\doxysubsubsection{\texorpdfstring{Blacksmith()}{Blacksmith()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_blacksmith_a3207e962dec5b7fb23c25bc3ea3c24c0} 
+Godmist\+WPF.\+Towns.\+NPCs.\+Blacksmith.\+Blacksmith (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_towns_1_1_n_p_cs_1_1_blacksmith}{Blacksmith} bez parametrów. 
+
+Konstruktor używany przez mechanizmy deserializacji. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Towns/\+NPCs/Blacksmith.\+cs\end{DoxyCompactItemize}

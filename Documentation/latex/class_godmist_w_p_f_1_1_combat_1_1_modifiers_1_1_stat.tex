@@ -1,0 +1,138 @@
+\doxysection{Godmist\+WPF.\+Combat.\+Modifiers.\+Stat Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{}\label{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}\index{GodmistWPF.Combat.Modifiers.Stat@{GodmistWPF.Combat.Modifiers.Stat}}
+
+
+Klasa reprezentująca statystykę postaci, która może być modyfikowana przez różne efekty.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat_a8cf1ed5f961550a0651716145544445a}\label{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat_a8cf1ed5f961550a0651716145544445a} 
+{\bfseries Stat} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat} z domyślnymi wartościami. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat_a52cb8ac28c8f503dd015a5019e448c96}{Stat}} (double base\+Value, double scaling\+Factor)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat} z określonymi wartościami. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat_a56408f3510df4d73c4ca228d4151b70b}{Stat}} (double base\+Value, double scaling\+Factor, List$<$ \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_a1ce9eed8240f2aaa37dc3b7221a146c6}{Stat\+Modifier}} $>$ modifiers)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat} z określonymi wartościami i modyfikatorami. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat_a4e698d5434fc4b305eda786fb462d7ef}{Value}} (\mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character}{Character}} owner, string stat\+Name)
+\begin{DoxyCompactList}\small\item\em Oblicza końcową wartość statystyki, uwzględniając modyfikatory i skalowanie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat_ae71be0eb7ba9d930f6e2776c39600b4b}{Tick}} ()
+\begin{DoxyCompactList}\small\item\em Aktualizuje czas trwania wszystkich modyfikatorów statystyki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat_ae1397d42a68de45c3d79700c7c645a34}{Add\+Modifier}} (\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_a1ce9eed8240f2aaa37dc3b7221a146c6}{Stat\+Modifier}} modifier)
+\begin{DoxyCompactList}\small\item\em Dodaje nowy modyfikator do statystyki. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat_a559fc111b9f76f4a5adcd7278fe947c4}\label{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat_a559fc111b9f76f4a5adcd7278fe947c4} 
+double {\bfseries Base\+Value}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia bazową wartość statystyki. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat_ac83f2b6afaf3637a4e81c2853a04ab96}\label{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat_ac83f2b6afaf3637a4e81c2853a04ab96} 
+double {\bfseries Scaling\+Factor}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia współczynnik skalowania statystyki w zależności od poziomu. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat_a4913dbd8e0e4882215fe0458e8473103}\label{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat_a4913dbd8e0e4882215fe0458e8473103} 
+List$<$ \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_a1ce9eed8240f2aaa37dc3b7221a146c6}{Stat\+Modifier}} $>$ {\bfseries Modifiers} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera listę modyfikatorów wpływających na tę statystykę. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentująca statystykę postaci, która może być modyfikowana przez różne efekty. 
+
+Zawiera wartość bazową, współczynnik skalowania i listę modyfikatorów. Wartość końcowa jest obliczana na podstawie poziomu postaci i aktywnych modyfikatorów. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat_a52cb8ac28c8f503dd015a5019e448c96}\index{GodmistWPF.Combat.Modifiers.Stat@{GodmistWPF.Combat.Modifiers.Stat}!Stat@{Stat}}
+\index{Stat@{Stat}!GodmistWPF.Combat.Modifiers.Stat@{GodmistWPF.Combat.Modifiers.Stat}}
+\doxysubsubsection{\texorpdfstring{Stat()}{Stat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat_a52cb8ac28c8f503dd015a5019e448c96} 
+Godmist\+WPF.\+Combat.\+Modifiers.\+Stat.\+Stat (\begin{DoxyParamCaption}\item[{double}]{base\+Value}{, }\item[{double}]{scaling\+Factor}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat} z określonymi wartościami. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Value} & Wartość bazowa statystyki.\\
+\hline
+{\em scaling\+Factor} & Współczynnik skalowania w zależności od poziomu.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat_a56408f3510df4d73c4ca228d4151b70b}\index{GodmistWPF.Combat.Modifiers.Stat@{GodmistWPF.Combat.Modifiers.Stat}!Stat@{Stat}}
+\index{Stat@{Stat}!GodmistWPF.Combat.Modifiers.Stat@{GodmistWPF.Combat.Modifiers.Stat}}
+\doxysubsubsection{\texorpdfstring{Stat()}{Stat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat_a56408f3510df4d73c4ca228d4151b70b} 
+Godmist\+WPF.\+Combat.\+Modifiers.\+Stat.\+Stat (\begin{DoxyParamCaption}\item[{double}]{base\+Value}{, }\item[{double}]{scaling\+Factor}{, }\item[{List$<$ \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_a1ce9eed8240f2aaa37dc3b7221a146c6}{Stat\+Modifier}} $>$}]{modifiers}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat} z określonymi wartościami i modyfikatorami. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Value} & Wartość bazowa statystyki.\\
+\hline
+{\em scaling\+Factor} & Współczynnik skalowania w zależności od poziomu.\\
+\hline
+{\em modifiers} & Lista modyfikatorów do zastosowania.\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat_ae1397d42a68de45c3d79700c7c645a34}\index{GodmistWPF.Combat.Modifiers.Stat@{GodmistWPF.Combat.Modifiers.Stat}!AddModifier@{AddModifier}}
+\index{AddModifier@{AddModifier}!GodmistWPF.Combat.Modifiers.Stat@{GodmistWPF.Combat.Modifiers.Stat}}
+\doxysubsubsection{\texorpdfstring{AddModifier()}{AddModifier()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat_ae1397d42a68de45c3d79700c7c645a34} 
+void Godmist\+WPF.\+Combat.\+Modifiers.\+Stat.\+Add\+Modifier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_a1ce9eed8240f2aaa37dc3b7221a146c6}{Stat\+Modifier}}}]{modifier}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dodaje nowy modyfikator do statystyki. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em modifier} & Modyfikator do dodania.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat_ae71be0eb7ba9d930f6e2776c39600b4b}\index{GodmistWPF.Combat.Modifiers.Stat@{GodmistWPF.Combat.Modifiers.Stat}!Tick@{Tick}}
+\index{Tick@{Tick}!GodmistWPF.Combat.Modifiers.Stat@{GodmistWPF.Combat.Modifiers.Stat}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat_ae71be0eb7ba9d930f6e2776c39600b4b} 
+void Godmist\+WPF.\+Combat.\+Modifiers.\+Stat.\+Tick (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Aktualizuje czas trwania wszystkich modyfikatorów statystyki. 
+
+Usuwa modyfikatory, których czas trwania wygasł. \Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat_a4e698d5434fc4b305eda786fb462d7ef}\index{GodmistWPF.Combat.Modifiers.Stat@{GodmistWPF.Combat.Modifiers.Stat}!Value@{Value}}
+\index{Value@{Value}!GodmistWPF.Combat.Modifiers.Stat@{GodmistWPF.Combat.Modifiers.Stat}}
+\doxysubsubsection{\texorpdfstring{Value()}{Value()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat_a4e698d5434fc4b305eda786fb462d7ef} 
+double Godmist\+WPF.\+Combat.\+Modifiers.\+Stat.\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character}{Character}}}]{owner}{, }\item[{string}]{stat\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Oblicza końcową wartość statystyki, uwzględniając modyfikatory i skalowanie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em owner} & Właściciel statystyki (postać).\\
+\hline
+{\em stat\+Name} & Nazwa statystyki używana do wyszukiwania odpowiednich modyfikatorów.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Końcowa wartość statystyki po zastosowaniu wszystkich modyfikatorów.
+\end{DoxyReturn}
+
+
+Uwzględnia specjalne przypadki dla obrony i odporności. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Combat/\+Modifiers/Stat.\+cs\end{DoxyCompactItemize}

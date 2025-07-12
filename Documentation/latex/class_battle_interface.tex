@@ -1,0 +1,101 @@
+\doxysection{Battle\+Interface Class Reference}
+\hypertarget{class_battle_interface}{}\label{class_battle_interface}\index{BattleInterface@{BattleInterface}}
+
+
+Klasa odpowiedzialna za zarządzanie interfejsem użytkownika podczas walki.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_battle_interface_ad80f5f751aa6d649134c99fd1e75d369}{Battle\+Interface}} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_battle_interface}{Battle\+Interface} \end{DoxyCompactList}\item 
+List$<$(\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user}{Battle\+User}}, int)$>$ \mbox{\hyperlink{class_battle_interface_ad43d9c8d17489a635f744b8ee3ff1d04}{Get\+Turn\+Order}} (List$<$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user}{Battle\+User}} $>$ unorganized)
+\begin{DoxyCompactList}\small\item\em Generuje uporządkowaną kolejkę turek dla uczestników walki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_battle_interface_a0add5a94c9dc3c47ad8a7ef5263600d5}{Enable\+Player\+Input}} (bool enable)
+\begin{DoxyCompactList}\small\item\em Włącza lub wyłącza możliwość wprowadzania poleceń przez gracza. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_battle_interface_a2082b703c965d3690f5b73dbe293d9b4}{Is\+Player\+Input\+Enabled}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera informację, czy wejście gracza jest aktywne. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiedzialna za zarządzanie interfejsem użytkownika podczas walki. 
+
+Zapewnia funkcjonalność wyświetlania i aktualizacji interfejsu walki, w tym kolejki turek i stanu wejścia gracza. 
+
+\label{doc-constructors}
+\Hypertarget{class_battle_interface_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_battle_interface_ad80f5f751aa6d649134c99fd1e75d369}\index{BattleInterface@{BattleInterface}!BattleInterface@{BattleInterface}}
+\index{BattleInterface@{BattleInterface}!BattleInterface@{BattleInterface}}
+\doxysubsubsection{\texorpdfstring{BattleInterface()}{BattleInterface()}}
+{\footnotesize\ttfamily \label{class_battle_interface_ad80f5f751aa6d649134c99fd1e75d369} 
+Battle\+Interface.\+Battle\+Interface (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_battle_interface}{Battle\+Interface} 
+
+Domyślnie wyłącza wejście gracza. 
+
+\label{doc-func-members}
+\Hypertarget{class_battle_interface_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_battle_interface_a0add5a94c9dc3c47ad8a7ef5263600d5}\index{BattleInterface@{BattleInterface}!EnablePlayerInput@{EnablePlayerInput}}
+\index{EnablePlayerInput@{EnablePlayerInput}!BattleInterface@{BattleInterface}}
+\doxysubsubsection{\texorpdfstring{EnablePlayerInput()}{EnablePlayerInput()}}
+{\footnotesize\ttfamily \label{class_battle_interface_a0add5a94c9dc3c47ad8a7ef5263600d5} 
+void Battle\+Interface.\+Enable\+Player\+Input (\begin{DoxyParamCaption}\item[{bool}]{enable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Włącza lub wyłącza możliwość wprowadzania poleceń przez gracza. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & {\ttfamily true} aby włączyć wejście gracza; w przeciwnym razie, {\ttfamily false}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_battle_interface_ad43d9c8d17489a635f744b8ee3ff1d04}\index{BattleInterface@{BattleInterface}!GetTurnOrder@{GetTurnOrder}}
+\index{GetTurnOrder@{GetTurnOrder}!BattleInterface@{BattleInterface}}
+\doxysubsubsection{\texorpdfstring{GetTurnOrder()}{GetTurnOrder()}}
+{\footnotesize\ttfamily \label{class_battle_interface_ad43d9c8d17489a635f744b8ee3ff1d04} 
+List$<$(\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user}{Battle\+User}}, int)$>$ Battle\+Interface.\+Get\+Turn\+Order (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user}{Battle\+User}} $>$}]{unorganized}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generuje uporządkowaną kolejkę turek dla uczestników walki. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unorganized} & Nieuporządkowana lista uczestników walki.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista krotek zawierających uczestnika i jego pozycję w kolejce.
+\end{DoxyReturn}
+
+
+Algorytm symuluje upływ czasu, aby określić kolejność ruchów na podstawie prędkości uczestników. 
+
+\label{doc-property-members}
+\Hypertarget{class_battle_interface_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_battle_interface_a2082b703c965d3690f5b73dbe293d9b4}\index{BattleInterface@{BattleInterface}!IsPlayerInputEnabled@{IsPlayerInputEnabled}}
+\index{IsPlayerInputEnabled@{IsPlayerInputEnabled}!BattleInterface@{BattleInterface}}
+\doxysubsubsection{\texorpdfstring{IsPlayerInputEnabled}{IsPlayerInputEnabled}}
+{\footnotesize\ttfamily \label{class_battle_interface_a2082b703c965d3690f5b73dbe293d9b4} 
+bool Battle\+Interface.\+Is\+Player\+Input\+Enabled\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera informację, czy wejście gracza jest aktywne. 
+
+{\ttfamily true} jeśli gracz może wykonywać akcje; w przeciwnym razie, {\ttfamily false}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Combat/\+Battles/Battle\+Interface.\+cs\end{DoxyCompactItemize}

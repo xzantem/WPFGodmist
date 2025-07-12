@@ -1,0 +1,27 @@
+var namespace_godmist_w_p_f_1_1_dialogs =
+[
+    [ "BattleDialog", "class_godmist_w_p_f_1_1_dialogs_1_1_battle_dialog.html", "class_godmist_w_p_f_1_1_dialogs_1_1_battle_dialog" ],
+    [ "BlacksmithCraftingDialog", "class_godmist_w_p_f_1_1_dialogs_1_1_blacksmith_crafting_dialog.html", "class_godmist_w_p_f_1_1_dialogs_1_1_blacksmith_crafting_dialog" ],
+    [ "CharacterWindow", "class_godmist_w_p_f_1_1_dialogs_1_1_character_window.html", "class_godmist_w_p_f_1_1_dialogs_1_1_character_window" ],
+    [ "CraftingDialog", "class_godmist_w_p_f_1_1_dialogs_1_1_crafting_dialog.html", "class_godmist_w_p_f_1_1_dialogs_1_1_crafting_dialog" ],
+    [ "DungeonDialog", "class_godmist_w_p_f_1_1_dialogs_1_1_dungeon_dialog.html", "class_godmist_w_p_f_1_1_dialogs_1_1_dungeon_dialog" ],
+    [ "DungeonSelectionDialog", "class_godmist_w_p_f_1_1_dialogs_1_1_dungeon_selection_dialog.html", "class_godmist_w_p_f_1_1_dialogs_1_1_dungeon_selection_dialog" ],
+    [ "GalduriteCraftingDialog", "class_godmist_w_p_f_1_1_dialogs_1_1_galdurite_crafting_dialog.html", "class_godmist_w_p_f_1_1_dialogs_1_1_galdurite_crafting_dialog" ],
+    [ "InsertGalduriteDialog", "class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog.html", "class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog" ],
+    [ "InventoryDialog", "class_godmist_w_p_f_1_1_dialogs_1_1_inventory_dialog.html", "class_godmist_w_p_f_1_1_dialogs_1_1_inventory_dialog" ],
+    [ "InventoryItemViewModel", "class_godmist_w_p_f_1_1_dialogs_1_1_inventory_item_view_model.html", "class_godmist_w_p_f_1_1_dialogs_1_1_inventory_item_view_model" ],
+    [ "LanguageSelectionDialog", "class_godmist_w_p_f_1_1_dialogs_1_1_language_selection_dialog.html", "class_godmist_w_p_f_1_1_dialogs_1_1_language_selection_dialog" ],
+    [ "NewGameDialog", "class_godmist_w_p_f_1_1_dialogs_1_1_new_game_dialog.html", "class_godmist_w_p_f_1_1_dialogs_1_1_new_game_dialog" ],
+    [ "NPCDialog", "class_godmist_w_p_f_1_1_dialogs_1_1_n_p_c_dialog.html", "class_godmist_w_p_f_1_1_dialogs_1_1_n_p_c_dialog" ],
+    [ "PotionCatalystViewModel", "class_godmist_w_p_f_1_1_dialogs_1_1_potion_catalyst_view_model.html", null ],
+    [ "PotionComponentViewModel", "class_godmist_w_p_f_1_1_dialogs_1_1_potion_component_view_model.html", "class_godmist_w_p_f_1_1_dialogs_1_1_potion_component_view_model" ],
+    [ "PotionCraftingDialog", "class_godmist_w_p_f_1_1_dialogs_1_1_potion_crafting_dialog.html", "class_godmist_w_p_f_1_1_dialogs_1_1_potion_crafting_dialog" ],
+    [ "QuestsDialog", "class_godmist_w_p_f_1_1_dialogs_1_1_quests_dialog.html", "class_godmist_w_p_f_1_1_dialogs_1_1_quests_dialog" ],
+    [ "QuestViewModel", "class_godmist_w_p_f_1_1_dialogs_1_1_quest_view_model.html", "class_godmist_w_p_f_1_1_dialogs_1_1_quest_view_model" ],
+    [ "RevealGalduriteDialog", "class_godmist_w_p_f_1_1_dialogs_1_1_reveal_galdurite_dialog.html", "class_godmist_w_p_f_1_1_dialogs_1_1_reveal_galdurite_dialog" ],
+    [ "SaveManagerDialog", "class_godmist_w_p_f_1_1_dialogs_1_1_save_manager_dialog.html", "class_godmist_w_p_f_1_1_dialogs_1_1_save_manager_dialog" ],
+    [ "ShopDialog", "class_godmist_w_p_f_1_1_dialogs_1_1_shop_dialog.html", "class_godmist_w_p_f_1_1_dialogs_1_1_shop_dialog" ],
+    [ "ShopItemViewModel", "class_godmist_w_p_f_1_1_dialogs_1_1_shop_item_view_model.html", "class_godmist_w_p_f_1_1_dialogs_1_1_shop_item_view_model" ],
+    [ "TrapMinigameDialog", "class_godmist_w_p_f_1_1_dialogs_1_1_trap_minigame_dialog.html", "class_godmist_w_p_f_1_1_dialogs_1_1_trap_minigame_dialog" ],
+    [ "UpgradeItemDialog", "class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog.html", "class_godmist_w_p_f_1_1_dialogs_1_1_upgrade_item_dialog" ]
+];

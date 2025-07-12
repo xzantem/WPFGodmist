@@ -1,0 +1,171 @@
+\doxysection{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Regen\+Resource Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource}{}\label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource@{GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource}}
+
+
+Efekt umiejętności, który przywraca punkty zasobów (np. many) celowi.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Regen\+Resource\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_ae771a4222f8191bf4cf508c4c612a4e1}{Execute}} (Character caster, Character enemy, string source)
+\begin{DoxyCompactList}\small\item\em Wykonuje efekt regeneracji zasobów na wybranym celu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_a91053e06f6a275eacd5efb3491251daa}{Regen\+Resource}} (Skill\+Target target, double regen\+Amount, Damage\+Base regen\+Base)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource}{Regen\+Resource}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_a629b61c254b9d5efa7e00551807536bf}{Regen\+Resource}} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource}{Regen\+Resource}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_aa6c78f99806b981531338d358e6434d1}{Calculate\+Regen}} (Character caster, Character enemy)
+\begin{DoxyCompactList}\small\item\em Oblicza wartość regeneracji na podstawie wybranej bazy i mnożnika. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Skill\+Target \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_aa6f673bbae79c602bae2b3039d35b4d5}{Target}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia cel efektu (własna postać lub przeciwnik). \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_a787ae593026ed3ec1094e8fae6627244}{Regen\+Amount}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia podstawową wartość regeneracji. \end{DoxyCompactList}\item 
+Damage\+Base \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_a389abe8cccc10cdff3ccad2bde3d1e71}{Regen\+Base}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia bazę obliczania wartości regeneracji. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Efekt umiejętności, który przywraca punkty zasobów (np. many) celowi. 
+
+Może być używany do regeneracji zasobów zarówno sojusznikom, jak i przeciwnikom. Wartość regeneracji może być obliczana na podstawie różnych parametrów. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_a91053e06f6a275eacd5efb3491251daa}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource@{GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource}!RegenResource@{RegenResource}}
+\index{RegenResource@{RegenResource}!GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource@{GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource}}
+\doxysubsubsection{\texorpdfstring{RegenResource()}{RegenResource()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_a91053e06f6a275eacd5efb3491251daa} 
+Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Regen\+Resource.\+Regen\+Resource (\begin{DoxyParamCaption}\item[{Skill\+Target}]{target}{, }\item[{double}]{regen\+Amount}{, }\item[{Damage\+Base}]{regen\+Base}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource}{Regen\+Resource}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Cel efektu.\\
+\hline
+{\em regen\+Amount} & Podstawowa wartość regeneracji (mnożnik).\\
+\hline
+{\em regen\+Base} & Baza obliczania wartości regeneracji.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_a629b61c254b9d5efa7e00551807536bf}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource@{GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource}!RegenResource@{RegenResource}}
+\index{RegenResource@{RegenResource}!GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource@{GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource}}
+\doxysubsubsection{\texorpdfstring{RegenResource()}{RegenResource()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_a629b61c254b9d5efa7e00551807536bf} 
+Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Regen\+Resource.\+Regen\+Resource (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource}{Regen\+Resource}. 
+
+Konstruktor używany przez mechanizm deserializacji. 
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_aa6c78f99806b981531338d358e6434d1}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource@{GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource}!CalculateRegen@{CalculateRegen}}
+\index{CalculateRegen@{CalculateRegen}!GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource@{GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource}}
+\doxysubsubsection{\texorpdfstring{CalculateRegen()}{CalculateRegen()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_aa6c78f99806b981531338d358e6434d1} 
+double Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Regen\+Resource.\+Calculate\+Regen (\begin{DoxyParamCaption}\item[{Character}]{caster}{, }\item[{Character}]{enemy}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Oblicza wartość regeneracji na podstawie wybranej bazy i mnożnika. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caster} & Postać rzucająca umiejętność.\\
+\hline
+{\em enemy} & Przeciwnik, względem którego określany jest cel.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Obliczona wartość regeneracji.
+\end{DoxyReturn}
+
+
+Wartość regeneracji może być zależna od różnych parametrów, takich jak\+:
+\begin{DoxyItemize}
+\item Wartość stała (Flat)
+\item Atak postaci (Minimal, Random, Maximal)
+\item Zasoby postaci (Caster/\+Target Max/\+Current/\+Missing Resource) 
+\end{DoxyItemize}\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_ae771a4222f8191bf4cf508c4c612a4e1}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource@{GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource}!Execute@{Execute}}
+\index{Execute@{Execute}!GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource@{GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_ae771a4222f8191bf4cf508c4c612a4e1} 
+void Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Regen\+Resource.\+Execute (\begin{DoxyParamCaption}\item[{Character}]{caster}{, }\item[{Character}]{enemy}{, }\item[{string}]{source}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wykonuje efekt regeneracji zasobów na wybranym celu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caster} & Postać rzucająca umiejętność.\\
+\hline
+{\em enemy} & Przeciwnik, względem którego określany jest cel.\\
+\hline
+{\em source} & Źródło efektu (nazwa umiejętności).\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_combat_1_1_skills_1_1_i_active_skill_effect_af280a7f57f091d04800b2e9f3be69059}{Godmist\+WPF.\+Combat.\+Skills.\+IActive\+Skill\+Effect}}.
+
+
+
+\label{doc-property-members}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_a787ae593026ed3ec1094e8fae6627244}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource@{GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource}!RegenAmount@{RegenAmount}}
+\index{RegenAmount@{RegenAmount}!GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource@{GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource}}
+\doxysubsubsection{\texorpdfstring{RegenAmount}{RegenAmount}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_a787ae593026ed3ec1094e8fae6627244} 
+double Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Regen\+Resource.\+Regen\+Amount\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia podstawową wartość regeneracji. 
+
+Mnożnik stosowany do wartości bazowej określonej przez \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_a389abe8cccc10cdff3ccad2bde3d1e71}{Regen\+Base}. \Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_a389abe8cccc10cdff3ccad2bde3d1e71}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource@{GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource}!RegenBase@{RegenBase}}
+\index{RegenBase@{RegenBase}!GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource@{GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource}}
+\doxysubsubsection{\texorpdfstring{RegenBase}{RegenBase}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_a389abe8cccc10cdff3ccad2bde3d1e71} 
+Damage\+Base Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Regen\+Resource.\+Regen\+Base\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia bazę obliczania wartości regeneracji. 
+
+Określa, na podstawie jakiej wartości (np. ataku, zasobów) ma być obliczana wartość regeneracji. \Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_aa6f673bbae79c602bae2b3039d35b4d5}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource@{GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource}!Target@{Target}}
+\index{Target@{Target}!GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource@{GodmistWPF.Combat.Skills.ActiveSkillEffects.RegenResource}}
+\doxysubsubsection{\texorpdfstring{Target}{Target}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_regen_resource_aa6f673bbae79c602bae2b3039d35b4d5} 
+Skill\+Target Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Regen\+Resource.\+Target\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia cel efektu (własna postać lub przeciwnik). 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_combat_1_1_skills_1_1_i_active_skill_effect_a6e2adc6221f059bf5b9259f5ecacb969}{Godmist\+WPF.\+Combat.\+Skills.\+IActive\+Skill\+Effect}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Combat/\+Skills/\+Active\+Skill\+Effects/Regen\+Resource.\+cs\end{DoxyCompactItemize}

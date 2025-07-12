@@ -1,0 +1,102 @@
+\doxysection{Godmist\+WPF.\+Dialogs.\+Insert\+Galdurite\+Dialog Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog}{}\label{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog}\index{GodmistWPF.Dialogs.InsertGalduriteDialog@{GodmistWPF.Dialogs.InsertGalduriteDialog}}
+
+
+Okno dialogowe umożliwiające wstawianie galduritów do przedmiotów wyposażenia. Zawiera listę dostępnych galduritów i oblicza koszt wstawienia.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Dialogs.\+Insert\+Galdurite\+Dialog\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog_a8375fb82d21d16635dacd5eb1d9b0a0a}{Insert\+Galdurite\+Dialog}} (\mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable}{IEquippable}} target\+Item, List$<$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite}{Galdurite}} $>$ available\+Galdurites, double service\+Cost\+Mod)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog}{Insert\+Galdurite\+Dialog}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog_a9c237a588f39afeddeab9fa0ee7a2b49}{On\+Property\+Changed}} (\mbox{[}Caller\+Member\+Name\mbox{]} string property\+Name=null)
+\begin{DoxyCompactList}\small\item\em Wywołuje zdarzenie zmiany właściwości. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog_a42eb508bbb79f7a3b71a0b80786a1a8e}\label{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog_a42eb508bbb79f7a3b71a0b80786a1a8e} 
+string {\bfseries Target\+Item\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera nazwę przedmiotu docelowego. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog_a8ebe530033ffe0e62cf08fef8ec8bc15}\label{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog_a8ebe530033ffe0e62cf08fef8ec8bc15} 
+string {\bfseries Target\+Item\+Slots}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera informację o zajętych i dostępnych slotach galduritów w przedmiocie. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog_aad39eeb8f9b34d9c59c8cf3c6d36664e}\label{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog_aad39eeb8f9b34d9c59c8cf3c6d36664e} 
+Observable\+Collection$<$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite}{Galdurite}} $>$ {\bfseries Available\+Galdurites} = new Observable\+Collection$<$\mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite}{Galdurite}}$>$()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Kolekcja dostępnych do wstawienia galduritów. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog_af27f6d60ecba4b38bb1968fb04ee813b}\label{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog_af27f6d60ecba4b38bb1968fb04ee813b} 
+string {\bfseries Status\+Text}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia tekst statusu wyświetlany w interfejsie. Automatycznie powiadamia o zmianie właściwości. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog_a59be5f46aa722aedfa6fbf4df8a49950}\label{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog_a59be5f46aa722aedfa6fbf4df8a49950} 
+int {\bfseries Insert\+Cost}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia koszt wstawienia galduritu. Automatycznie aktualizuje wyświetlany koszt. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog_ab1420a6bb5d173fb45e72c6f502e6f12}\label{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog_ab1420a6bb5d173fb45e72c6f502e6f12} 
+string {\bfseries Insert\+Cost\+Text}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera sformatowany tekst z kosztem wstawienia galduritu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog_a567688ff187693ba823b2199ecb4ef1c}\label{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog_a567688ff187693ba823b2199ecb4ef1c} 
+Property\+Changed\+Event\+Handler {\bfseries Property\+Changed}
+\begin{DoxyCompactList}\small\item\em Zdarzenie wywoływane przy zmianie wartości właściwości. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Okno dialogowe umożliwiające wstawianie galduritów do przedmiotów wyposażenia. Zawiera listę dostępnych galduritów i oblicza koszt wstawienia. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog_a8375fb82d21d16635dacd5eb1d9b0a0a}\index{GodmistWPF.Dialogs.InsertGalduriteDialog@{GodmistWPF.Dialogs.InsertGalduriteDialog}!InsertGalduriteDialog@{InsertGalduriteDialog}}
+\index{InsertGalduriteDialog@{InsertGalduriteDialog}!GodmistWPF.Dialogs.InsertGalduriteDialog@{GodmistWPF.Dialogs.InsertGalduriteDialog}}
+\doxysubsubsection{\texorpdfstring{InsertGalduriteDialog()}{InsertGalduriteDialog()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog_a8375fb82d21d16635dacd5eb1d9b0a0a} 
+Godmist\+WPF.\+Dialogs.\+Insert\+Galdurite\+Dialog.\+Insert\+Galdurite\+Dialog (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equippable}{IEquippable}}}]{target\+Item}{, }\item[{List$<$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite}{Galdurite}} $>$}]{available\+Galdurites}{, }\item[{double}]{service\+Cost\+Mod}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog}{Insert\+Galdurite\+Dialog}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+Item} & Przedmiot, do którego ma zostać wstawiony galdurit.\\
+\hline
+{\em available\+Galdurites} & Lista dostępnych galduritów.\\
+\hline
+{\em service\+Cost\+Mod} & Modyfikator kosztu usługi.\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog_a9c237a588f39afeddeab9fa0ee7a2b49}\index{GodmistWPF.Dialogs.InsertGalduriteDialog@{GodmistWPF.Dialogs.InsertGalduriteDialog}!OnPropertyChanged@{OnPropertyChanged}}
+\index{OnPropertyChanged@{OnPropertyChanged}!GodmistWPF.Dialogs.InsertGalduriteDialog@{GodmistWPF.Dialogs.InsertGalduriteDialog}}
+\doxysubsubsection{\texorpdfstring{OnPropertyChanged()}{OnPropertyChanged()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_dialogs_1_1_insert_galdurite_dialog_a9c237a588f39afeddeab9fa0ee7a2b49} 
+virtual void Godmist\+WPF.\+Dialogs.\+Insert\+Galdurite\+Dialog.\+On\+Property\+Changed (\begin{DoxyParamCaption}\item[{\mbox{[}\+Caller\+Member\+Name\mbox{]} string}]{property\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Wywołuje zdarzenie zmiany właściwości. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em property\+Name} & Nazwa zmienionej właściwości (automatycznie wypełniana przez kompilator).\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dialogs/Insert\+Galdurite\+Dialog.\+xaml.\+cs\end{DoxyCompactItemize}

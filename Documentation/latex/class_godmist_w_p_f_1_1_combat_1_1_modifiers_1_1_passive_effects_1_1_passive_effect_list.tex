@@ -1,0 +1,212 @@
+\doxysection{Godmist\+WPF.\+Combat.\+Modifiers.\+Passive\+Effects.\+Passive\+Effect\+List Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list}{}\label{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list}\index{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList@{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList}}
+
+
+Klasa zarządzająca listą efektów pasywnych przypisanych do postaci.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a731a81fd03489e5e002228e9d04665ba}{Add}} (\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_a46e4d309ed29ff5132bb567cc65e27c8}{Passive\+Effect}} effect)
+\begin{DoxyCompactList}\small\item\em Dodaje nowy efekt pasywny do odpowiedniej listy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a1eec99e3395efd61e819bd1017afdee7}{Remove}} (\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_a46e4d309ed29ff5132bb567cc65e27c8}{Passive\+Effect}} effect)
+\begin{DoxyCompactList}\small\item\em Usuwa efekt pasywny z odpowiedniej listy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a7978fa0e62ae78529a9637b3812a5853}{Handle\+Battle\+Event}} (\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_a6b169aaa2e243e77e9218b46ed8dccba}{Battle\+Event\+Data}} event\+Data)
+\begin{DoxyCompactList}\small\item\em Przetwarza zdarzenie walki, aktywując odpowiednie efekty nasłuchujące. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a0db40ff84e464d56413622208a546ba9}{Tick\+Effects}} ()
+\begin{DoxyCompactList}\small\item\em Aktualizuje stan wszystkich efektów czasowych. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a893616d27d681a8c37720cd169b47479}{Can\+Move}} ()
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy postać może się poruszyć. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a14e51a988790f153470e204bcc0f1a2e}{Extend\+Effects}} (int turns)
+\begin{DoxyCompactList}\small\item\em Wydłuża czas trwania wszystkich efektów czasowych. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_a1ce9eed8240f2aaa37dc3b7221a146c6}{Stat\+Modifier}} $>$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a3506ea16a7469b3d899b6e4308694e0e}{Get\+Modifiers}} (string of\+Type)
+\begin{DoxyCompactList}\small\item\em Pobiera modyfikatory statystyk określonego typu. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_a1ce9eed8240f2aaa37dc3b7221a146c6}{Stat\+Modifier}} $>$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_aff3d2c44a7f2f59435448b968ecfe9d8}{Get\+Stat\+Scale\+Modifiers}} (string of\+Type, \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character}{Character}} owner)
+\begin{DoxyCompactList}\small\item\em Pobiera modyfikatory skalowania statystyk. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_ab887b7e7f901d93863b761db3f34468b}{Innate\+Passive\+Effect}} $>$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a8034f91f29139eba4c752d09b7e84b78}{Innate\+Effects}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia listę wrodzonych efektów pasywnych. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_affcb5abfc21565bf943e705aadb3abcf}{Listener\+Passive\+Effect}} $>$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_ac8f23ea1d115d761d540abd170cba2e8}{Listener\+Effects}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia listę efektów nasłuchujących zdarzenia. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_a49aec7d242cfcbcfac5a88defedef869}{Timed\+Passive\+Effect}} $>$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a58977c17a12d9e13321ffd731db69634}{Timed\+Effects}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia listę efektów czasowych. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa zarządzająca listą efektów pasywnych przypisanych do postaci. 
+
+Przechowuje i zarządza różnymi typami efektów\+: wrodzonymi, nasłuchującymi i czasowymi. Zapewnia metody do obsługi zdarzeń, aktualizacji stanu i modyfikacji efektów. 
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a731a81fd03489e5e002228e9d04665ba}\index{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList@{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList}!Add@{Add}}
+\index{Add@{Add}!GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList@{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a731a81fd03489e5e002228e9d04665ba} 
+void Godmist\+WPF.\+Combat.\+Modifiers.\+Passive\+Effects.\+Passive\+Effect\+List.\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_a46e4d309ed29ff5132bb567cc65e27c8}{Passive\+Effect}}}]{effect}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dodaje nowy efekt pasywny do odpowiedniej listy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em effect} & Efekt do dodania.\\
+\hline
+\end{DoxyParams}
+
+
+Automatycznie rozpoznaje typ efektu i dodaje go do odpowiedniej kolekcji. \Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a893616d27d681a8c37720cd169b47479}\index{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList@{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList}!CanMove@{CanMove}}
+\index{CanMove@{CanMove}!GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList@{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList}}
+\doxysubsubsection{\texorpdfstring{CanMove()}{CanMove()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a893616d27d681a8c37720cd169b47479} 
+bool Godmist\+WPF.\+Combat.\+Modifiers.\+Passive\+Effects.\+Passive\+Effect\+List.\+Can\+Move (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sprawdza, czy postać może się poruszyć. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} jeśli postać może się poruszyć; w przeciwnym razie {\ttfamily false}. 
+\end{DoxyReturn}
+
+
+Sprawdza, czy na postaci nie ma efektów uniemożliwiających ruch (ogłuszenie, zamrożenie, sen). \Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a14e51a988790f153470e204bcc0f1a2e}\index{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList@{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList}!ExtendEffects@{ExtendEffects}}
+\index{ExtendEffects@{ExtendEffects}!GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList@{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList}}
+\doxysubsubsection{\texorpdfstring{ExtendEffects()}{ExtendEffects()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a14e51a988790f153470e204bcc0f1a2e} 
+void Godmist\+WPF.\+Combat.\+Modifiers.\+Passive\+Effects.\+Passive\+Effect\+List.\+Extend\+Effects (\begin{DoxyParamCaption}\item[{int}]{turns}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wydłuża czas trwania wszystkich efektów czasowych. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em turns} & Liczba tur, o którą zostaną wydłużone efekty.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a3506ea16a7469b3d899b6e4308694e0e}\index{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList@{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList}!GetModifiers@{GetModifiers}}
+\index{GetModifiers@{GetModifiers}!GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList@{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList}}
+\doxysubsubsection{\texorpdfstring{GetModifiers()}{GetModifiers()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a3506ea16a7469b3d899b6e4308694e0e} 
+List$<$ \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_a1ce9eed8240f2aaa37dc3b7221a146c6}{Stat\+Modifier}} $>$ Godmist\+WPF.\+Combat.\+Modifiers.\+Passive\+Effects.\+Passive\+Effect\+List.\+Get\+Modifiers (\begin{DoxyParamCaption}\item[{string}]{of\+Type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pobiera modyfikatory statystyk określonego typu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em of\+Type} & Typ modyfikatora do pobrania (np. "{}\+Buff"{}, "{}\+Debuff"{}).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista pasujących modyfikatorów statystyk.
+\end{DoxyReturn}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_aff3d2c44a7f2f59435448b968ecfe9d8}\index{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList@{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList}!GetStatScaleModifiers@{GetStatScaleModifiers}}
+\index{GetStatScaleModifiers@{GetStatScaleModifiers}!GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList@{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList}}
+\doxysubsubsection{\texorpdfstring{GetStatScaleModifiers()}{GetStatScaleModifiers()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_aff3d2c44a7f2f59435448b968ecfe9d8} 
+List$<$ \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_a1ce9eed8240f2aaa37dc3b7221a146c6}{Stat\+Modifier}} $>$ Godmist\+WPF.\+Combat.\+Modifiers.\+Passive\+Effects.\+Passive\+Effect\+List.\+Get\+Stat\+Scale\+Modifiers (\begin{DoxyParamCaption}\item[{string}]{of\+Type}{, }\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character}{Character}}}]{owner}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pobiera modyfikatory skalowania statystyk. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em of\+Type} & Typ statystyki do skalowania (np. "{}\+Strength"{}).\\
+\hline
+{\em owner} & Właściciel efektów (postać).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista modyfikatorów skalowania dla określonej statystyki.
+\end{DoxyReturn}
+
+
+Używane do efektów, które modyfikują wartość w procentach innej statystyki. \Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a7978fa0e62ae78529a9637b3812a5853}\index{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList@{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList}!HandleBattleEvent@{HandleBattleEvent}}
+\index{HandleBattleEvent@{HandleBattleEvent}!GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList@{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList}}
+\doxysubsubsection{\texorpdfstring{HandleBattleEvent()}{HandleBattleEvent()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a7978fa0e62ae78529a9637b3812a5853} 
+void Godmist\+WPF.\+Combat.\+Modifiers.\+Passive\+Effects.\+Passive\+Effect\+List.\+Handle\+Battle\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_a6b169aaa2e243e77e9218b46ed8dccba}{Battle\+Event\+Data}}}]{event\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Przetwarza zdarzenie walki, aktywując odpowiednie efekty nasłuchujące. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Data} & Dane zdarzenia do przetworzenia.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a1eec99e3395efd61e819bd1017afdee7}\index{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList@{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList}!Remove@{Remove}}
+\index{Remove@{Remove}!GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList@{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a1eec99e3395efd61e819bd1017afdee7} 
+void Godmist\+WPF.\+Combat.\+Modifiers.\+Passive\+Effects.\+Passive\+Effect\+List.\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_a46e4d309ed29ff5132bb567cc65e27c8}{Passive\+Effect}}}]{effect}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Usuwa efekt pasywny z odpowiedniej listy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em effect} & Efekt do usunięcia.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a0db40ff84e464d56413622208a546ba9}\index{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList@{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList}!TickEffects@{TickEffects}}
+\index{TickEffects@{TickEffects}!GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList@{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList}}
+\doxysubsubsection{\texorpdfstring{TickEffects()}{TickEffects()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a0db40ff84e464d56413622208a546ba9} 
+void Godmist\+WPF.\+Combat.\+Modifiers.\+Passive\+Effects.\+Passive\+Effect\+List.\+Tick\+Effects (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Aktualizuje stan wszystkich efektów czasowych. 
+
+Powinno być wywoływane na początku każdej tury. 
+
+\label{doc-property-members}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a8034f91f29139eba4c752d09b7e84b78}\index{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList@{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList}!InnateEffects@{InnateEffects}}
+\index{InnateEffects@{InnateEffects}!GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList@{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList}}
+\doxysubsubsection{\texorpdfstring{InnateEffects}{InnateEffects}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a8034f91f29139eba4c752d09b7e84b78} 
+List$<$\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_ab887b7e7f901d93863b761db3f34468b}{Innate\+Passive\+Effect}}$>$ Godmist\+WPF.\+Combat.\+Modifiers.\+Passive\+Effects.\+Passive\+Effect\+List.\+Innate\+Effects = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia listę wrodzonych efektów pasywnych. 
+
+Lista efektów, które są stale aktywne dla postaci. \Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_ac8f23ea1d115d761d540abd170cba2e8}\index{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList@{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList}!ListenerEffects@{ListenerEffects}}
+\index{ListenerEffects@{ListenerEffects}!GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList@{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList}}
+\doxysubsubsection{\texorpdfstring{ListenerEffects}{ListenerEffects}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_ac8f23ea1d115d761d540abd170cba2e8} 
+List$<$\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_affcb5abfc21565bf943e705aadb3abcf}{Listener\+Passive\+Effect}}$>$ Godmist\+WPF.\+Combat.\+Modifiers.\+Passive\+Effects.\+Passive\+Effect\+List.\+Listener\+Effects = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia listę efektów nasłuchujących zdarzenia. 
+
+Lista efektów, które aktywują się w odpowiedzi na określone zdarzenia. \Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a58977c17a12d9e13321ffd731db69634}\index{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList@{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList}!TimedEffects@{TimedEffects}}
+\index{TimedEffects@{TimedEffects}!GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList@{GodmistWPF.Combat.Modifiers.PassiveEffects.PassiveEffectList}}
+\doxysubsubsection{\texorpdfstring{TimedEffects}{TimedEffects}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list_a58977c17a12d9e13321ffd731db69634} 
+List$<$\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_a49aec7d242cfcbcfac5a88defedef869}{Timed\+Passive\+Effect}}$>$ Godmist\+WPF.\+Combat.\+Modifiers.\+Passive\+Effects.\+Passive\+Effect\+List.\+Timed\+Effects = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia listę efektów czasowych. 
+
+Lista efektów, które mają ograniczony czas działania. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Combat/\+Modifiers/\+Passive\+Effects/Passive\+Effect\+List.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,79 @@
+\doxysection{Godmist\+WPF.\+App Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_app}{}\label{class_godmist_w_p_f_1_1_app}\index{GodmistWPF.App@{GodmistWPF.App}}
+
+
+Główna klasa aplikacji odpowiedzialna za konfigurację i inicjalizację systemów gry.  
+
+
+Inheritance diagram for Godmist\+WPF.\+App\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_godmist_w_p_f_1_1_app}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_godmist_w_p_f_1_1_app_a9213029c40b173275dcc28f6cb714557}{On\+Startup}} (Startup\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Metoda wywoływana podczas uruchamiania aplikacji. Inicjalizuje wszystkie niezbędne systemy gry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Główna klasa aplikacji odpowiedzialna za konfigurację i inicjalizację systemów gry. 
+
+Klasa \doxylink{class_godmist_w_p_f_1_1_app}{App} pełni następujące funkcje\+:
+
+
+\begin{DoxyItemize}
+\item Dziedziczy po klasie Application, zapewniając punkty wejścia dla aplikacji WPF 
+\item Zarządza cyklem życia aplikacji 
+\item Inicjalizuje i konfiguruje główne systemy gry 
+\item Obsługuje globalne wyjątki i błędy 
+\end{DoxyItemize}
+
+Zawiera metody do zarządzania zasobami, ustawieniami i konfiguracją aplikacji.
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_app_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_app_a9213029c40b173275dcc28f6cb714557}\index{GodmistWPF.App@{GodmistWPF.App}!OnStartup@{OnStartup}}
+\index{OnStartup@{OnStartup}!GodmistWPF.App@{GodmistWPF.App}}
+\doxysubsubsection{\texorpdfstring{OnStartup()}{OnStartup()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_app_a9213029c40b173275dcc28f6cb714557} 
+override void Godmist\+WPF.\+App.\+On\+Startup (\begin{DoxyParamCaption}\item[{Startup\+Event\+Args}]{e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Metoda wywoływana podczas uruchamiania aplikacji. Inicjalizuje wszystkie niezbędne systemy gry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Argumenty zdarzenia uruchomienia aplikacji.\\
+\hline
+\end{DoxyParams}
+
+
+Metoda wykonuje następujące operacje inicjalizacyjne w podanej kolejności\+:
+
+
+\begin{DoxyEnumerate}
+\item Inicjalizacja menedżera przedmiotów (Item\+Manager.\+Init\+Items) 
+\item Inicjalizacja menedżera łupów (Lootbag\+Manager.\+Init\+Items) 
+\item Inicjalizacja menedżera części ekwipunku (Equipment\+Part\+Manager.\+Init\+Items) 
+\item Inicjalizacja fabryki przeciwników (Enemy\+Factory.\+Initialize\+Enemies) 
+\item Inicjalizacja zarządzania upuszczanymi roślinami (Plant\+Drop\+Manager.\+Init\+Plant\+Drops) 
+\item Inicjalizacja menedżera mikstur (Potion\+Manager.\+Init\+Components) 
+\item Inicjalizacja menedżera galdurytów (Galdurite\+Manager.\+Init\+Components) 
+\end{DoxyEnumerate}
+
+W przypadku wystąpienia wyjątku podczas inicjalizacji\+:
+
+
+\begin{DoxyItemize}
+\item Wyświetlany jest komunikat o błędzie 
+\item Aplikacja jest bezpiecznie zamykana 
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App.\+xaml.\+cs\end{DoxyCompactItemize}

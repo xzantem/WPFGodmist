@@ -1,0 +1,158 @@
+\doxysection{Godmist\+WPF.\+Combat.\+Battles.\+Battle\+User Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user}{}\label{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user}\index{GodmistWPF.Combat.Battles.BattleUser@{GodmistWPF.Combat.Battles.BattleUser}}
+
+
+Klasa reprezentująca uczestnika walki, łącząca postać z jej stanem w trakcie bitwy.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_aa19f04dc5edca8c67d00917d3d1b1f63}{Battle\+User}} (\mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character}{Character}} user)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user}{Battle\+User} dla podanej postaci. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_a0a913d7d79e6ac4f1330173a5b73bd28}{Battle\+User}} (\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user}{Battle\+User}} other)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user}{Battle\+User} jako kopię istniejącego uczestnika. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_ac6bcf87b1bb3f6caab1cb609b7927b1a}{Reset\+Action}} ()
+\begin{DoxyCompactList}\small\item\em Resetuje wskaźnik i wartość akcji na podstawie prędkości postaci. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_adfb85502300fa498155e6277498d4e72}{Try\+Move}} ()
+\begin{DoxyCompactList}\small\item\em Próbuje wykonać ruch, jeśli wartość akcji osiągnęła zero. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_a1289d7390763c0ae9cd956dcdb0e9264}{Advance\+Move}} (int amount)
+\begin{DoxyCompactList}\small\item\em Przesuwa wartość akcji o określoną liczbę jednostek. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_a4596d78a481eb0e0e74124f2534134e9}{Use\+Action\+Points}} (double amount)
+\begin{DoxyCompactList}\small\item\em Zużywa określoną liczbę punktów akcji. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_a086c799748a4c58056a8e448b8bf529c}{Start\+New\+Turn}} ()
+\begin{DoxyCompactList}\small\item\em Rozpoczyna nową turę dla uczestnika walki. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_a3ec72c6c9b1c7ab989fa4ea78b5627b9}\label{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_a3ec72c6c9b1c7ab989fa4ea78b5627b9} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character}{Character}} {\bfseries User}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera postać powiązaną z tym uczestnikiem walki. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_a55d2bd489a7a736ea43a422b455a6f5c}\label{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_a55d2bd489a7a736ea43a422b455a6f5c} 
+bool {\bfseries Moved\+This\+Turn}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera informację, czy uczestnik wykonał już ruch w tej turze. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_acf94f7f320edde6a6c8aedac14c184cd}\label{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_acf94f7f320edde6a6c8aedac14c184cd} 
+double {\bfseries Action\+Pointer}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera wskaźnik akcji określający, kiedy uczestnik może wykonać ruch. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_aa01bb79872228db93d4d3b22388a0cae}\label{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_aa01bb79872228db93d4d3b22388a0cae} 
+int {\bfseries Action\+Value}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera wartość akcji użytkownika, która zmniejsza się z każdym taktem. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_aaec1c41fa9d836c649031667f8326efd}\label{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_aaec1c41fa9d836c649031667f8326efd} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}} {\bfseries Max\+Action\+Points}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera maksymalną liczbę punktów akcji dostępnych w turze. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_a320810de21430e33e798937ea96f67db}\label{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_a320810de21430e33e798937ea96f67db} 
+double {\bfseries Current\+Action\+Points}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia bieżącą liczbę dostępnych punktów akcji. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentująca uczestnika walki, łącząca postać z jej stanem w trakcie bitwy. 
+
+Zawiera informacje o dostępnych punktach akcji, wskaźniku akcji i innych stanach związanych z przebiegiem walki. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_aa19f04dc5edca8c67d00917d3d1b1f63}\index{GodmistWPF.Combat.Battles.BattleUser@{GodmistWPF.Combat.Battles.BattleUser}!BattleUser@{BattleUser}}
+\index{BattleUser@{BattleUser}!GodmistWPF.Combat.Battles.BattleUser@{GodmistWPF.Combat.Battles.BattleUser}}
+\doxysubsubsection{\texorpdfstring{BattleUser()}{BattleUser()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_aa19f04dc5edca8c67d00917d3d1b1f63} 
+Godmist\+WPF.\+Combat.\+Battles.\+Battle\+User.\+Battle\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character}{Character}}}]{user}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user}{Battle\+User} dla podanej postaci. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & Postać, która będzie uczestniczyć w walce.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_a0a913d7d79e6ac4f1330173a5b73bd28}\index{GodmistWPF.Combat.Battles.BattleUser@{GodmistWPF.Combat.Battles.BattleUser}!BattleUser@{BattleUser}}
+\index{BattleUser@{BattleUser}!GodmistWPF.Combat.Battles.BattleUser@{GodmistWPF.Combat.Battles.BattleUser}}
+\doxysubsubsection{\texorpdfstring{BattleUser()}{BattleUser()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_a0a913d7d79e6ac4f1330173a5b73bd28} 
+Godmist\+WPF.\+Combat.\+Battles.\+Battle\+User.\+Battle\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user}{Battle\+User}}}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user}{Battle\+User} jako kopię istniejącego uczestnika. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Inny uczestnik walki do skopiowania.\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_a1289d7390763c0ae9cd956dcdb0e9264}\index{GodmistWPF.Combat.Battles.BattleUser@{GodmistWPF.Combat.Battles.BattleUser}!AdvanceMove@{AdvanceMove}}
+\index{AdvanceMove@{AdvanceMove}!GodmistWPF.Combat.Battles.BattleUser@{GodmistWPF.Combat.Battles.BattleUser}}
+\doxysubsubsection{\texorpdfstring{AdvanceMove()}{AdvanceMove()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_a1289d7390763c0ae9cd956dcdb0e9264} 
+void Godmist\+WPF.\+Combat.\+Battles.\+Battle\+User.\+Advance\+Move (\begin{DoxyParamCaption}\item[{int}]{amount}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Przesuwa wartość akcji o określoną liczbę jednostek. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & Liczba jednostek, o którą ma zostać przesunięta wartość akcji.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_ac6bcf87b1bb3f6caab1cb609b7927b1a}\index{GodmistWPF.Combat.Battles.BattleUser@{GodmistWPF.Combat.Battles.BattleUser}!ResetAction@{ResetAction}}
+\index{ResetAction@{ResetAction}!GodmistWPF.Combat.Battles.BattleUser@{GodmistWPF.Combat.Battles.BattleUser}}
+\doxysubsubsection{\texorpdfstring{ResetAction()}{ResetAction()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_ac6bcf87b1bb3f6caab1cb609b7927b1a} 
+void Godmist\+WPF.\+Combat.\+Battles.\+Battle\+User.\+Reset\+Action (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Resetuje wskaźnik i wartość akcji na podstawie prędkości postaci. 
+
+Oblicza nową wartość wskaźnika akcji i aktualizuje maksymalną liczbę punktów akcji. \Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_a086c799748a4c58056a8e448b8bf529c}\index{GodmistWPF.Combat.Battles.BattleUser@{GodmistWPF.Combat.Battles.BattleUser}!StartNewTurn@{StartNewTurn}}
+\index{StartNewTurn@{StartNewTurn}!GodmistWPF.Combat.Battles.BattleUser@{GodmistWPF.Combat.Battles.BattleUser}}
+\doxysubsubsection{\texorpdfstring{StartNewTurn()}{StartNewTurn()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_a086c799748a4c58056a8e448b8bf529c} 
+void Godmist\+WPF.\+Combat.\+Battles.\+Battle\+User.\+Start\+New\+Turn (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Rozpoczyna nową turę dla uczestnika walki. 
+
+Resetuje flagę wykonanego ruchu w turze. \Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_adfb85502300fa498155e6277498d4e72}\index{GodmistWPF.Combat.Battles.BattleUser@{GodmistWPF.Combat.Battles.BattleUser}!TryMove@{TryMove}}
+\index{TryMove@{TryMove}!GodmistWPF.Combat.Battles.BattleUser@{GodmistWPF.Combat.Battles.BattleUser}}
+\doxysubsubsection{\texorpdfstring{TryMove()}{TryMove()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_adfb85502300fa498155e6277498d4e72} 
+bool Godmist\+WPF.\+Combat.\+Battles.\+Battle\+User.\+Try\+Move (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Próbuje wykonać ruch, jeśli wartość akcji osiągnęła zero. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} jeśli ruch został wykonany; w przeciwnym razie {\ttfamily false}. 
+\end{DoxyReturn}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_a4596d78a481eb0e0e74124f2534134e9}\index{GodmistWPF.Combat.Battles.BattleUser@{GodmistWPF.Combat.Battles.BattleUser}!UseActionPoints@{UseActionPoints}}
+\index{UseActionPoints@{UseActionPoints}!GodmistWPF.Combat.Battles.BattleUser@{GodmistWPF.Combat.Battles.BattleUser}}
+\doxysubsubsection{\texorpdfstring{UseActionPoints()}{UseActionPoints()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user_a4596d78a481eb0e0e74124f2534134e9} 
+void Godmist\+WPF.\+Combat.\+Battles.\+Battle\+User.\+Use\+Action\+Points (\begin{DoxyParamCaption}\item[{double}]{amount}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zużywa określoną liczbę punktów akcji. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & Liczba punktów akcji do zużycia.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Combat/\+Battles/Battle\+User.\+cs\end{DoxyCompactItemize}

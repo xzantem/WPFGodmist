@@ -1,0 +1,184 @@
+\doxysection{Godmist\+WPF.\+Combat.\+Modifiers.\+Passive\+Effects Namespace Reference}
+\hypertarget{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects}{}\label{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects}\index{GodmistWPF.Combat.Modifiers.PassiveEffects@{GodmistWPF.Combat.Modifiers.PassiveEffects}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Passive\+Effect\+Factory}
+\begin{DoxyCompactList}\small\item\em Fabryka tworząca gotowe efekty pasywne do wykorzystania w grze. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list}{Passive\+Effect\+List}}
+\begin{DoxyCompactList}\small\item\em Klasa zarządzająca listą efektów pasywnych przypisanych do postaci. \end{DoxyCompactList}\item 
+class {\bfseries Status\+Effect\+Factory}
+\begin{DoxyCompactList}\small\item\em Fabryka tworząca różne rodzaje efektów statusowych w grze. \end{DoxyCompactList}\item 
+class {\bfseries Status\+Effect\+Handler}
+\begin{DoxyCompactList}\small\item\em Klasa pomocnicza do obsługi efektów statusowych w grze. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_a6b169aaa2e243e77e9218b46ed8dccba}{Battle\+Event\+Data}} (string event\+Type, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user}{Battle\+User}} source, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user}{Battle\+User}}? target=null, dynamic\mbox{[}$\,$\mbox{]}? value=null)
+\begin{DoxyCompactList}\small\item\em Klasa przechowująca informacje o zdarzeniu, które wystąpiło podczas walki. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_ab887b7e7f901d93863b761db3f34468b}{Innate\+Passive\+Effect}} (\mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character}{Character}} owner, string source, string type, dynamic\mbox{[}$\,$\mbox{]} effects)
+\begin{DoxyCompactList}\small\item\em Abstrakcyjna klasa bazowa dla wrodzonych efektów pasywnych w grze. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_affcb5abfc21565bf943e705aadb3abcf}{Listener\+Passive\+Effect}} (Func$<$ \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_a6b169aaa2e243e77e9218b46ed8dccba}{Battle\+Event\+Data}}, bool $>$ trigger\+Condition, Action$<$ \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_a6b169aaa2e243e77e9218b46ed8dccba}{Battle\+Event\+Data}} $>$ on\+Trigger, \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character}{Character}} owner, string source)
+\begin{DoxyCompactList}\small\item\em Klasa reprezentująca efekt pasywny, który reaguje na określone zdarzenia w walce. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_a46e4d309ed29ff5132bb567cc65e27c8}{Passive\+Effect}} (\mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character}{Character}} owner, string source)
+\begin{DoxyCompactList}\small\item\em Abstrakcyjna klasa bazowa dla wszystkich efektów pasywnych w grze. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_a49aec7d242cfcbcfac5a88defedef869}{Timed\+Passive\+Effect}} (\mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character}{Character}} owner, string source, string type, int duration, dynamic\mbox{[}$\,$\mbox{]} effects, Action? on\+Tick=null)
+\begin{DoxyCompactList}\small\item\em Klasa bazowa dla efektów pasywnych o ograniczonym czasie trwania. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_a6b169aaa2e243e77e9218b46ed8dccba}\index{GodmistWPF.Combat.Modifiers.PassiveEffects@{GodmistWPF.Combat.Modifiers.PassiveEffects}!BattleEventData@{BattleEventData}}
+\index{BattleEventData@{BattleEventData}!GodmistWPF.Combat.Modifiers.PassiveEffects@{GodmistWPF.Combat.Modifiers.PassiveEffects}}
+\doxysubsubsection{\texorpdfstring{BattleEventData()}{BattleEventData()}}
+{\footnotesize\ttfamily \label{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_a6b169aaa2e243e77e9218b46ed8dccba} 
+class Godmist\+WPF.\+Combat.\+Modifiers.\+Passive\+Effects.\+Battle\+Event\+Data (\begin{DoxyParamCaption}\item[{string}]{event\+Type}{, }\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user}{Battle\+User}}}]{source}{, }\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_battles_1_1_battle_user}{Battle\+User}}?}]{target}{ = {\ttfamily null}, }\item[{dynamic?\mbox{[}$\,$\mbox{]}}]{value}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+
+Klasa przechowująca informacje o zdarzeniu, które wystąpiło podczas walki. 
+
+Używana do przekazywania danych między obiektami w systemie efektów pasywnych. Pozwala na reagowanie na różne typy zdarzeń w walce. Pobiera typ zdarzenia.
+
+Identyfikator typu zdarzenia (np. "{}\+Damage\+Dealt"{}, "{}\+Heal\+Received"{}, itp.). 
+
+Pobiera źródło zdarzenia (postać, która wywołała zdarzenie).
+
+Pobiera cel zdarzenia (opcjonalny).
+
+Postać, na którą wpłynęło zdarzenie, lub null jeśli nie dotyczy. 
+
+Pobiera dodatkowe wartości związane ze zdarzeniem (opcjonalne).
+
+Tablica wartości liczbowych, których znaczenie zależy od typu zdarzenia. Może być używana do przekazywania np. obrażeń, wartości leczenia itp. \Hypertarget{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_ab887b7e7f901d93863b761db3f34468b}\index{GodmistWPF.Combat.Modifiers.PassiveEffects@{GodmistWPF.Combat.Modifiers.PassiveEffects}!InnatePassiveEffect@{InnatePassiveEffect}}
+\index{InnatePassiveEffect@{InnatePassiveEffect}!GodmistWPF.Combat.Modifiers.PassiveEffects@{GodmistWPF.Combat.Modifiers.PassiveEffects}}
+\doxysubsubsection{\texorpdfstring{InnatePassiveEffect()}{InnatePassiveEffect()}}
+{\footnotesize\ttfamily \label{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_ab887b7e7f901d93863b761db3f34468b} 
+class Godmist\+WPF.\+Combat.\+Modifiers.\+Passive\+Effects.\+Innate\+Passive\+Effect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character}{Character}}}]{owner}{, }\item[{string}]{source}{, }\item[{string}]{type}{, }\item[{dynamic\mbox{[}$\,$\mbox{]}}]{effects}{}\end{DoxyParamCaption})}
+
+
+
+Abstrakcyjna klasa bazowa dla wrodzonych efektów pasywnych w grze. 
+
+Efekty wrodzone to stałe właściwości, które są przypisane do postaci lub przedmiotów, takie jak modyfikatory statystyk czy specjalne zdolności. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em owner} & Właściciel efektu (postać)\\
+\hline
+{\em source} & Źródło pochodzenia efektu\\
+\hline
+{\em type} & Typ efektu (np. "{}\+Buff"{}, "{}\+Debuff"{}, "{}\+Aura"{})\\
+\hline
+{\em effects} & Tablica efektów do zastosowania\\
+\hline
+\end{DoxyParams}
+Pobiera typ efektu.
+
+Typ efektu, który określa jego kategorię (np. "{}\+Buff"{}, "{}\+Debuff"{}, "{}\+Aura"{}). 
+
+Pobiera tablicę efektów przypisanych do tego obiektu.
+
+Tablica efektów, które są aktywne dla tego efektu pasywnego. Może zawierać różne typy efektów w zależności od implementacji. \Hypertarget{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_affcb5abfc21565bf943e705aadb3abcf}\index{GodmistWPF.Combat.Modifiers.PassiveEffects@{GodmistWPF.Combat.Modifiers.PassiveEffects}!ListenerPassiveEffect@{ListenerPassiveEffect}}
+\index{ListenerPassiveEffect@{ListenerPassiveEffect}!GodmistWPF.Combat.Modifiers.PassiveEffects@{GodmistWPF.Combat.Modifiers.PassiveEffects}}
+\doxysubsubsection{\texorpdfstring{ListenerPassiveEffect()}{ListenerPassiveEffect()}}
+{\footnotesize\ttfamily \label{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_affcb5abfc21565bf943e705aadb3abcf} 
+class Godmist\+WPF.\+Combat.\+Modifiers.\+Passive\+Effects.\+Listener\+Passive\+Effect (\begin{DoxyParamCaption}\item[{Func$<$ \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_a6b169aaa2e243e77e9218b46ed8dccba}{Battle\+Event\+Data}}, bool $>$}]{trigger\+Condition}{, }\item[{Action$<$ \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_a6b169aaa2e243e77e9218b46ed8dccba}{Battle\+Event\+Data}} $>$}]{on\+Trigger}{, }\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character}{Character}}}]{owner}{, }\item[{string}]{source}{}\end{DoxyParamCaption})}
+
+
+
+Klasa reprezentująca efekt pasywny, który reaguje na określone zdarzenia w walce. 
+
+Ten typ efektu aktywuje się, gdy zostanie spełniony warunek wyzwalacza. Umożliwia tworzenie dynamicznych efektów, które reagują na akcje w walce. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trigger\+Condition} & Warunek, który musi zostać spełniony, aby efekt się aktywował\\
+\hline
+{\em on\+Trigger} & Akcja wykonywana, gdy efekt zostanie aktywowany\\
+\hline
+{\em owner} & Właściciel efektu (postać)\\
+\hline
+{\em source} & Źródło pochodzenia efektu\\
+\hline
+\end{DoxyParams}
+Wywołuje efekt, jeśli warunek wyzwalacza zostanie spełniony.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Data} & Dane zdarzenia, które może wywołać efekt\\
+\hline
+\end{DoxyParams}
+
+
+Sprawdza warunek wyzwalacza i jeśli jest spełniony, wywołuje przypisaną akcję. \Hypertarget{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_a46e4d309ed29ff5132bb567cc65e27c8}\index{GodmistWPF.Combat.Modifiers.PassiveEffects@{GodmistWPF.Combat.Modifiers.PassiveEffects}!PassiveEffect@{PassiveEffect}}
+\index{PassiveEffect@{PassiveEffect}!GodmistWPF.Combat.Modifiers.PassiveEffects@{GodmistWPF.Combat.Modifiers.PassiveEffects}}
+\doxysubsubsection{\texorpdfstring{PassiveEffect()}{PassiveEffect()}}
+{\footnotesize\ttfamily \label{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_a46e4d309ed29ff5132bb567cc65e27c8} 
+class Godmist\+WPF.\+Combat.\+Modifiers.\+Passive\+Effects.\+Passive\+Effect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character}{Character}}}]{owner}{, }\item[{string}]{source}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Abstrakcyjna klasa bazowa dla wszystkich efektów pasywnych w grze. 
+
+Efekty pasywne to specjalne właściwości, które wpływają na postać w sposób ciągły, takie jak modyfikatory statystyk, odporności czy specjalne zdolności. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em owner} & Postać, do której należy efekt\\
+\hline
+{\em source} & Źródło efektu (np. nazwa umiejętności lub przedmiotu)\\
+\hline
+\end{DoxyParams}
+Pobiera postać, do której należy ten efekt.
+
+Pobiera źródło pochodzenia efektu.
+
+Może to być np. nazwa przedmiotu ("{}\+Miecz Płomienia"{}), umiejętności ("{}\+Drzewo Umiejętności\+: Wściekłość Berserka"{}) lub innego źródła efektu. \Hypertarget{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_a49aec7d242cfcbcfac5a88defedef869}\index{GodmistWPF.Combat.Modifiers.PassiveEffects@{GodmistWPF.Combat.Modifiers.PassiveEffects}!TimedPassiveEffect@{TimedPassiveEffect}}
+\index{TimedPassiveEffect@{TimedPassiveEffect}!GodmistWPF.Combat.Modifiers.PassiveEffects@{GodmistWPF.Combat.Modifiers.PassiveEffects}}
+\doxysubsubsection{\texorpdfstring{TimedPassiveEffect()}{TimedPassiveEffect()}}
+{\footnotesize\ttfamily \label{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_a49aec7d242cfcbcfac5a88defedef869} 
+class Godmist\+WPF.\+Combat.\+Modifiers.\+Passive\+Effects.\+Timed\+Passive\+Effect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character}{Character}}}]{owner}{, }\item[{string}]{source}{, }\item[{string}]{type}{, }\item[{int}]{duration}{, }\item[{dynamic\mbox{[}$\,$\mbox{]}}]{effects}{, }\item[{Action?}]{on\+Tick}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+
+Klasa bazowa dla efektów pasywnych o ograniczonym czasie trwania. 
+
+Efekty dziedziczące po tej klasie wygasają po określonej liczbie tur. Można je wykorzystać do efektów tymczasowych, takich jak wzmocnienia czy osłabienia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em owner} & Właściciel efektu (postać)\\
+\hline
+{\em source} & Źródło pochodzenia efektu\\
+\hline
+{\em type} & Typ efektu\\
+\hline
+{\em duration} & Czas trwania efektu w turach\\
+\hline
+\end{DoxyParams}
+Pobiera pozostały czas trwania efektu w turach.
+
+Liczba tur pozostałych do wygaśnięcia efektu. Wartość 0 lub ujemna oznacza, że efekt wygasł. 
+
+Aktualizuje czas trwania efektu, zmniejszając go o jedną turę.
+
+Metoda jest wywoływana na początku każdej tury. Może zostać nadpisana w klasach pochodnych, aby dodać dodatkową logikę. 
+
+Wydłuża czas trwania efektu o określoną liczbę tur.
+
+
+\begin{DoxyParams}{Parameters}
+{\em turns} & Liczba tur, o którą zostanie wydłużony czas trwania efektu.\\
+\hline
+\end{DoxyParams}
+
+
+Aktualizuje akcję wywoływaną przy każdym tikcie efektu.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+On\+Tick} & Nowa akcja, która zostanie wywołana przy każdym tikcie efektu.\\
+\hline
+\end{DoxyParams}

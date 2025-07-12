@@ -1,0 +1,834 @@
+\doxysection{Godmist\+WPF.\+Characters.\+Character Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character}{}\label{class_godmist_w_p_f_1_1_characters_1_1_character}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+
+
+Abstrakcyjna klasa bazowa reprezentująca postać w grze.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Characters.\+Character\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.131313cm]{class_godmist_w_p_f_1_1_characters_1_1_character}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_a4a2725e668850d28aa2dd2def98580fa}{Take\+Damage}} (\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_a7a7998807b5b708ea8f1be1eda55c4ce}{Damage\+Type}} damage\+Type, double damage, dynamic source)
+\begin{DoxyCompactList}\small\item\em Zadaje obrażenia postaci, uwzględniając tarcze i modyfikatory obrażeń. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_ac935e48f5c7851f2ec75fddca77b9481}{Use\+Resource}} (int amount)
+\begin{DoxyCompactList}\small\item\em Zużywa określoną ilość zasobu postaci. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}}? \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_a96fcf0b0eee5c430ac5c553b273def0b}{Get\+Stat}} (string stat)
+\begin{DoxyCompactList}\small\item\em Pobiera obiekt statystyki na podstawie jej nazwy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_a497fd4bb402bbc650cbd54df95e214bd}{Regen\+Resource}} (int amount)
+\begin{DoxyCompactList}\small\item\em Regeneruje zasób postaci o określoną wartość, uwzględniając modyfikatory. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_a34fd2f90fdb86d1e09ced1ee006933ce}{Damage\+Mitigated}} (double damage, \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_a7a7998807b5b708ea8f1be1eda55c4ce}{Damage\+Type}} damage\+Type, dynamic source)
+\begin{DoxyCompactList}\small\item\em Oblicza rzeczywistą wartość obrażeń po uwzględnieniu wszystkich mechanik obronnych. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_a39f58f9f79200cf17a30620af410b75d}{Heal}} (double heal)
+\begin{DoxyCompactList}\small\item\em Leczy postać o określoną wartość zdrowia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_a42409e3220227dcec83825148336a79a}{Add\+Modifier}} (\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_modifiers_a53588f6f3bf0238f2e48f367c4bf2b91}{Stat\+Type}} stat, Stat\+Modifier modifier)
+\begin{DoxyCompactList}\small\item\em Dodaje modyfikator do określonej statystyki postaci. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_a3cdc6bac225ee9b8d9b28203a9b42dff}{Add\+Resistance\+Modifier}} (\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_modifiers_a52280889e9b142cbe799fb30f1fc927c}{Status\+Effect\+Type}} stat, Stat\+Modifier modifier)
+\begin{DoxyCompactList}\small\item\em Dodaje modyfikator do odporności na określony efekt statusowy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_a1f39278c262c5d4e95b9db80460c98cd}{Handle\+Modifiers}} ()
+\begin{DoxyCompactList}\small\item\em Aktualizuje wszystkie modyfikatory statystyk postaci. \end{DoxyCompactList}\item 
+Dictionary$<$ Stat\+Modifier, \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_modifiers_a53588f6f3bf0238f2e48f367c4bf2b91}{Stat\+Type}} $>$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_a352381d7011052bbb36686bfb69b9df6}{Get\+Modifiers}} ()
+\begin{DoxyCompactList}\small\item\em Pobiera słownik wszystkich aktywnych modyfikatorów statystyk postaci. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_ab734ff4f3e3f9d33ef8798e54bcb0c4f}\label{class_godmist_w_p_f_1_1_characters_1_1_character_ab734ff4f3e3f9d33ef8798e54bcb0c4f} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}} {\bfseries \+\_\+maximal\+Health}
+\begin{DoxyCompactList}\small\item\em Pole wspierające dla właściwości Maximal\+Health. Przechowuje bazową wartość maksymalnego zdrowia postaci. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a276dcb18aedb6934410d1b8284f473e9}\label{class_godmist_w_p_f_1_1_characters_1_1_character_a276dcb18aedb6934410d1b8284f473e9} 
+double {\bfseries \+\_\+current\+Health}
+\begin{DoxyCompactList}\small\item\em Pole wspierające dla właściwości Current\+Health. Przechowuje aktualną wartość zdrowia postaci. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a152db4a28097e208c1e05c6f547ef7ec}\label{class_godmist_w_p_f_1_1_characters_1_1_character_a152db4a28097e208c1e05c6f547ef7ec} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}} {\bfseries \+\_\+minimal\+Attack}
+\begin{DoxyCompactList}\small\item\em Pole wspierające dla właściwości Minimal\+Attack. Przechowuje bazową wartość minimalnego ataku postaci. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a99849254779c0e66c19e3371ecc97e1f}\label{class_godmist_w_p_f_1_1_characters_1_1_character_a99849254779c0e66c19e3371ecc97e1f} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}} {\bfseries \+\_\+maximal\+Attack}
+\begin{DoxyCompactList}\small\item\em Pole wspierające dla właściwości Maximal\+Attack. Przechowuje bazową wartość maksymalnego ataku postaci. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a1b6ce651f38bcd963bb562cf25c4024b}\label{class_godmist_w_p_f_1_1_characters_1_1_character_a1b6ce651f38bcd963bb562cf25c4024b} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}} {\bfseries \+\_\+dodge}
+\begin{DoxyCompactList}\small\item\em Pole wspierające dla właściwości Dodge. Przechowuje bazową wartość szansy na unik postaci. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a4481070fb41fc99fa2dbcda5f5475fd9}\label{class_godmist_w_p_f_1_1_characters_1_1_character_a4481070fb41fc99fa2dbcda5f5475fd9} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}} {\bfseries \+\_\+physical\+Defense}
+\begin{DoxyCompactList}\small\item\em Pole wspierające dla właściwości Physical\+Defense. Przechowuje bazową wartość obrony fizycznej postaci. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a0e6e10571c732836da168b07b0dab44f}\label{class_godmist_w_p_f_1_1_characters_1_1_character_a0e6e10571c732836da168b07b0dab44f} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}} {\bfseries \+\_\+magic\+Defense}
+\begin{DoxyCompactList}\small\item\em Pole wspierające dla właściwości Magic\+Defense. Przechowuje bazową wartość obrony magicznej postaci. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_abefcd8cbffa130837f7b38c573404ffc}\label{class_godmist_w_p_f_1_1_characters_1_1_character_abefcd8cbffa130837f7b38c573404ffc} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}} {\bfseries \+\_\+crit\+Chance}
+\begin{DoxyCompactList}\small\item\em Pole wspierające dla właściwości Crit\+Chance. Przechowuje bazową wartość szansy na cios krytyczny. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a341939acb57460385103c26b3ec3177a}\label{class_godmist_w_p_f_1_1_characters_1_1_character_a341939acb57460385103c26b3ec3177a} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}} {\bfseries \+\_\+speed}
+\begin{DoxyCompactList}\small\item\em Pole wspierające dla właściwości Speed. Przechowuje bazową wartość szybkości postaci. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a4f9e64d9912b55ca1a69b42a7c4c53de}\label{class_godmist_w_p_f_1_1_characters_1_1_character_a4f9e64d9912b55ca1a69b42a7c4c53de} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}} {\bfseries \+\_\+accuracy}
+\begin{DoxyCompactList}\small\item\em Pole wspierające dla właściwości Accuracy. Przechowuje bazową wartość celności postaci. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_aad57ae55f5a113f9cc9ba38d8c524e89}\label{class_godmist_w_p_f_1_1_characters_1_1_character_aad57ae55f5a113f9cc9ba38d8c524e89} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}} {\bfseries \+\_\+crit\+Mod}
+\begin{DoxyCompactList}\small\item\em Pole wspierające dla właściwości Crit\+Mod. Przechowuje bazową wartość mnożnika obrażeń krytycznych. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a492bb4fc8cf9eb2a0a3452dd7d079cca}\label{class_godmist_w_p_f_1_1_characters_1_1_character_a492bb4fc8cf9eb2a0a3452dd7d079cca} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}} {\bfseries \+\_\+maximal\+Resource}
+\begin{DoxyCompactList}\small\item\em Pole wspierające dla właściwości Maximal\+Resource. Przechowuje bazową wartość maksymalnej ilości zasobu postaci. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a590ee35d45d710c7888236144377db24}\label{class_godmist_w_p_f_1_1_characters_1_1_character_a590ee35d45d710c7888236144377db24} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}} {\bfseries \+\_\+resource\+Regen}
+\begin{DoxyCompactList}\small\item\em Pole wspierające dla właściwości Resource\+Regen. Przechowuje bazową wartość regeneracji zasobu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_ac1430b76917c2d61968cec0cdd63019d}{Character}} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_characters_1_1_character}{Character} z domyślnymi wartościami. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_a60cb897fae88465824bb28184804a553}{Character}} (string name, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}} max\+Health, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}} minimal\+Attack, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}} maximal\+Attack, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}} crit\+Chance, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}} dodge, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}} physical\+Defense, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}} magic\+Defense, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}} speed, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}} accuracy, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}} crit\+Mod, int level=1)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_characters_1_1_character}{Character} z określonymi parametrami. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a436a23f09ee6c04d6baa6a52b0ac370a}\label{class_godmist_w_p_f_1_1_characters_1_1_character_a436a23f09ee6c04d6baa6a52b0ac370a} 
+double {\bfseries \+\_\+current\+Resource}
+\begin{DoxyCompactList}\small\item\em Pole wspierające dla właściwości Current\+Resource. Przechowuje aktualną wartość zasobu postaci. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_a9396dee63226b52ce759f10dea2206e9}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia nazwę postaci. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_abb10c4205f80f44bae3f5ded82d53e57}{Maximal\+Health}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia maksymalną ilość punktów zdrowia postaci. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_a9e9ba635cdc8b57761e3a404ce2b6f22}{Current\+Health}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia aktualną ilość punktów zdrowia postaci. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_a673fe6f2df235723aea72a67cb448222}{Minimal\+Attack}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia minimalną wartość obrażeń zadawanych przez postać. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_a6685799318515efa97bfe48af4a07447}{Maximal\+Attack}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia maksymalną wartość obrażeń zadawanych przez postać. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_aba171f36ca908a4de443160f9445aa53}{Dodge}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia szansę na uniknięcie ataku przeciwnika. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_af0d1c616367bdce65d4e3922ba427fdb}{Physical\+Defense}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia wartość obrony fizycznej postaci. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_ae6094e25646dbd36e83bda22cb6c9313}{Magic\+Defense}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia wartość obrony magicznej postaci. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_a600258dbbbc2a96f922f6fb5174fd00c}{Crit\+Chance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia szansę na zadanie ciosu krytycznego. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_aed9803dcdeddcc81174e9b9006b4832e}{Speed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia wartość szybkości postaci. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_ab852fd28488f94151221deeb0471a1a5}{Accuracy}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia wartość celności postaci. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_a708ba338f221d827469c165fca55a149}{Crit\+Mod}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia wartość mnożnika obrażeń krytycznych. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_abfc3194cfc1877d5da1800210cb93787}{Maximal\+Resource}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia maksymalną ilość zasobu postaci. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_a3cfffe92befb676169f852ebd0d816be}{Current\+Resource}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia aktualną wartość zasobu postaci. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_a12de8211d1425b4ab1c30ffa747cb46c}{Resource\+Regen}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera wartość regeneracji zasobu w danej turze. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_ad74c01eb6fb046f7abe1ab77b3ee5c26}{Resource\+Type}} \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_a7176712e29f8c35075d91f44adc4efa5}{Resource\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia typ zasobu używany przez postać. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_a2bf140f269654a7382b43706f377f9fb}{Level}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia poziom postaci. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list}{Passive\+Effect\+List}} \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_ab4d5260c114dcb00e248ceaa16ff71ba}{Passive\+Effects}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia listę efektów pasywnych aktywnie działających na postać. \end{DoxyCompactList}\item 
+Dictionary$<$ \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_modifiers_a52280889e9b142cbe799fb30f1fc927c}{Status\+Effect\+Type}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}} $>$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_a456a93444fa3111339259233e82a3bb5}{Resistances}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia słownik odporności na różne typy efektów statusowych. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill}{Active\+Skill}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_character_ae4f498a3c4b06f05f0f99eeb2ed97bcb}{Active\+Skills}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia tablicę aktywnych umiejętności dostępnych dla postaci. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstrakcyjna klasa bazowa reprezentująca postać w grze. 
+
+Klasa dostarcza podstawowe właściwości i mechanizmy wspólne dla wszystkich postaci w grze, w tym\+:
+
+
+\begin{DoxyItemize}
+\item Statystyki postaci (życie, atak, obrona itp.) 
+\item Mechanikę obrażeń i leczenia 
+\item System modyfikatorów i efektów 
+\item Zarządzanie umiejętnościami 
+\end{DoxyItemize}
+
+Klasa jest dziedziczona przez Player\+Character, \doxylink{class_godmist_w_p_f_1_1_characters_1_1_enemy_character}{Enemy\+Character} i inne typy postaci.
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_ac1430b76917c2d61968cec0cdd63019d}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!Character@{Character}}
+\index{Character@{Character}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{Character()}{Character()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_ac1430b76917c2d61968cec0cdd63019d} 
+Godmist\+WPF.\+Characters.\+Character.\+Character (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_characters_1_1_character}{Character} z domyślnymi wartościami. 
+
+Konstruktor chroniony, który może być wywoływany tylko przez klasy dziedziczące. Inicjalizuje podstawowe właściwości postaci z domyślnymi wartościami. \Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a60cb897fae88465824bb28184804a553}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!Character@{Character}}
+\index{Character@{Character}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{Character()}{Character()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_a60cb897fae88465824bb28184804a553} 
+Godmist\+WPF.\+Characters.\+Character.\+Character (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}}}]{max\+Health}{, }\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}}}]{minimal\+Attack}{, }\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}}}]{maximal\+Attack}{, }\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}}}]{crit\+Chance}{, }\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}}}]{dodge}{, }\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}}}]{physical\+Defense}{, }\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}}}]{magic\+Defense}{, }\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}}}]{speed}{, }\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}}}]{accuracy}{, }\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}}}]{crit\+Mod}{, }\item[{int}]{level}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_characters_1_1_character}{Character} z określonymi parametrami. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Nazwa postaci.\\
+\hline
+{\em max\+Health} & Statystyka maksymalnego zdrowia postaci.\\
+\hline
+{\em minimal\+Attack} & Minimalna wartość ataku.\\
+\hline
+{\em maximal\+Attack} & Maksymalna wartość ataku.\\
+\hline
+{\em crit\+Chance} & Szansa na cios krytyczny.\\
+\hline
+{\em dodge} & Szansa na unik.\\
+\hline
+{\em physical\+Defense} & Obrona fizyczna.\\
+\hline
+{\em magic\+Defense} & Obrona magiczna.\\
+\hline
+{\em speed} & Szybkość postaci.\\
+\hline
+{\em accuracy} & Celność ataku.\\
+\hline
+{\em crit\+Mod} & Mnożnik obrażeń krytycznych.\\
+\hline
+{\em level} & Poziom postaci.\\
+\hline
+\end{DoxyParams}
+
+
+Konstruktor chroniony, który może być wywoływany tylko przez klasy dziedziczące. Inicjalizuje wszystkie statystyki postaci na podstawie podanych parametrów. 
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a42409e3220227dcec83825148336a79a}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!AddModifier@{AddModifier}}
+\index{AddModifier@{AddModifier}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{AddModifier()}{AddModifier()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_a42409e3220227dcec83825148336a79a} 
+void Godmist\+WPF.\+Characters.\+Character.\+Add\+Modifier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_modifiers_a53588f6f3bf0238f2e48f367c4bf2b91}{Stat\+Type}}}]{stat}{, }\item[{Stat\+Modifier}]{modifier}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dodaje modyfikator do określonej statystyki postaci. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stat} & Typ statystyki, która ma zostać zmodyfikowana.\\
+\hline
+{\em modifier} & Modyfikator do dodania.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Out\+Of\+Range\+Exception} & Wyrzucany, gdy podany typ statystyki jest nieprawidłowy.\\
+\hline
+\end{DoxyExceptions}
+
+
+Metoda dodaje modyfikator do wybranej statystyki postaci.
+
+Obsługiwane typy statystyk to\+:
+
+
+\begin{DoxyItemize}
+\item Maximal\+Health -\/ Maksymalne zdrowie 
+\item Minimal\+Attack -\/ Minimalny atak 
+\item Maximal\+Attack -\/ Maksymalny atak 
+\item Dodge -\/ Szansa na unik 
+\item Physical\+Defense -\/ Obrona fizyczna 
+\item Magic\+Defense -\/ Obrona magiczna 
+\item Crit\+Chance -\/ Szansa na cios krytyczny 
+\item Speed -\/ Szybkość 
+\item Accuracy -\/ Celność 
+\item Maximal\+Resource -\/ Maksymalny zasób 
+\end{DoxyItemize}
+
+Modyfikator może zwiększać, zmniejszać lub ustawiać nową wartość statystyki.\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a3cdc6bac225ee9b8d9b28203a9b42dff}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!AddResistanceModifier@{AddResistanceModifier}}
+\index{AddResistanceModifier@{AddResistanceModifier}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{AddResistanceModifier()}{AddResistanceModifier()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_a3cdc6bac225ee9b8d9b28203a9b42dff} 
+void Godmist\+WPF.\+Characters.\+Character.\+Add\+Resistance\+Modifier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_modifiers_a52280889e9b142cbe799fb30f1fc927c}{Status\+Effect\+Type}}}]{stat}{, }\item[{Stat\+Modifier}]{modifier}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dodaje modyfikator do odporności na określony efekt statusowy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stat} & Typ efektu statusowego, którego odporność ma zostać zmodyfikowana.\\
+\hline
+{\em modifier} & Modyfikator do dodania.\\
+\hline
+\end{DoxyParams}
+
+
+Metoda dodaje modyfikator do odporności na wybrany efekt statusowy.
+
+Odporność określa szansę na uniknięcie efektu statusowego (np. ogłuszenie, podpalenie).
+
+Im wyższa wartość odporności, tym mniejsza szansa na otrzymanie danego efektu.
+
+Modyfikator może zwiększać, zmniejszać lub ustawiać nową wartość odporności.
+
+Wartość 0 oznacza brak odporności, a 1 całkowitą odporność (100\%).\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a34fd2f90fdb86d1e09ced1ee006933ce}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!DamageMitigated@{DamageMitigated}}
+\index{DamageMitigated@{DamageMitigated}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{DamageMitigated()}{DamageMitigated()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_a34fd2f90fdb86d1e09ced1ee006933ce} 
+double Godmist\+WPF.\+Characters.\+Character.\+Damage\+Mitigated (\begin{DoxyParamCaption}\item[{double}]{damage}{, }\item[{\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_a7a7998807b5b708ea8f1be1eda55c4ce}{Damage\+Type}}}]{damage\+Type}{, }\item[{dynamic}]{source}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Oblicza rzeczywistą wartość obrażeń po uwzględnieniu wszystkich mechanik obronnych. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & Podstawowa wartość obrażeń.\\
+\hline
+{\em damage\+Type} & Typ zadawanych obrażeń.\\
+\hline
+{\em source} & Źródło obrażeń (np. postać lub efekt).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Rzeczywista wartość obrażeń po uwzględnieniu wszystkich modyfikatorów.
+\end{DoxyReturn}
+
+
+Metoda uwzględnia następujące mechaniki obronne\+:
+
+
+\begin{DoxyItemize}
+\item Penetrację pancerza (fizycznego i magicznego) źródła obrażeń 
+\item Redukcję obrażeń w zależności od typu obrażeń i obrony 
+\item Odporności na efekty statusowe (np. krwawienie, trucizna, podpalenie) 
+\item Modyfikatory obrażeń (ogólne i specyficzne dla typu obrażeń) 
+\end{DoxyItemize}
+
+Minimalna wartość zwracanych obrażeń to 1.
+
+Dla każdego typu obrażeń stosowane są odpowiednie modyfikatory obrażeń.\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a352381d7011052bbb36686bfb69b9df6}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!GetModifiers@{GetModifiers}}
+\index{GetModifiers@{GetModifiers}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{GetModifiers()}{GetModifiers()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_a352381d7011052bbb36686bfb69b9df6} 
+Dictionary$<$ Stat\+Modifier, \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_modifiers_a53588f6f3bf0238f2e48f367c4bf2b91}{Stat\+Type}} $>$ Godmist\+WPF.\+Characters.\+Character.\+Get\+Modifiers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pobiera słownik wszystkich aktywnych modyfikatorów statystyk postaci. 
+
+\begin{DoxyReturn}{Returns}
+Słownik, gdzie kluczem jest modyfikator, a wartością typ statystyki, której dotyczy.
+\end{DoxyReturn}
+
+
+Metoda zwraca kompletną listę wszystkich aktywnych modyfikatorów przypisanych do statystyk postaci.
+
+Każdy wpis w słowniku zawiera\+: 
+\begin{DoxyItemize}
+\item Klucz\+: Obiekt modyfikatora (Stat\+Modifier) 
+\item Wartość\+: Typ statystyki (\doxylink{namespace_godmist_w_p_f_1_1_enums_1_1_modifiers_a53588f6f3bf0238f2e48f367c4bf2b91}{Stat\+Type}), której dotyczy modyfikator 
+\end{DoxyItemize}
+
+Przydatne do wyświetlania informacji o wszystkich aktywnych modyfikatorach w interfejsie użytkownika.
+
+Zwracane modyfikatory obejmują wszystkie statystyki postaci, w tym zdrowie, atak, obronę itp.\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a96fcf0b0eee5c430ac5c553b273def0b}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!GetStat@{GetStat}}
+\index{GetStat@{GetStat}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{GetStat()}{GetStat()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_a96fcf0b0eee5c430ac5c553b273def0b} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}}? Godmist\+WPF.\+Characters.\+Character.\+Get\+Stat (\begin{DoxyParamCaption}\item[{string}]{stat}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pobiera obiekt statystyki na podstawie jej nazwy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stat} & Nazwa statystyki do pobrania.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Obiekt \doxylink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat} reprezentujący żądaną statystykę lub null, jeśli statystyka o podanej nazwie nie istnieje.
+\end{DoxyReturn}
+
+
+Metoda obsługuje następujące nazwy statystyk\+:
+
+
+\begin{DoxyItemize}
+\item Maximal\+Health -\/ Maksymalne zdrowie 
+\item Minimal\+Attack -\/ Minimalny atak 
+\item Maximal\+Attack -\/ Maksymalny atak 
+\item Crit\+Chance -\/ Szansa na cios krytyczny 
+\item Dodge -\/ Szansa na unik 
+\item Physical\+Defense -\/ Obrona fizyczna 
+\item Magic\+Defense -\/ Obrona magiczna 
+\item Resource\+Regen -\/ Regeneracja zasobu 
+\item Speed -\/ Szybkość 
+\item Accuracy -\/ Celność 
+\item Crit\+Mod -\/ Mnożnik obrażeń krytycznych 
+\item Maximal\+Resource -\/ Maksymalny zasób 
+\end{DoxyItemize}
+
+Wartość zwracana może być używana do modyfikowania statystyk postaci.\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a1f39278c262c5d4e95b9db80460c98cd}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!HandleModifiers@{HandleModifiers}}
+\index{HandleModifiers@{HandleModifiers}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{HandleModifiers()}{HandleModifiers()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_a1f39278c262c5d4e95b9db80460c98cd} 
+void Godmist\+WPF.\+Characters.\+Character.\+Handle\+Modifiers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Aktualizuje wszystkie modyfikatory statystyk postaci. 
+
+Metoda wywołuje metodę Tick() dla wszystkich statystyk postaci, co powoduje\+:
+
+
+\begin{DoxyItemize}
+\item Zmniejszenie czasu trwania modyfikatorów czasowych 
+\item Usunięcie wygasłych modyfikatorów 
+\item Przeliczenie wartości statystyk z uwzględnieniem aktualnych modyfikatorów 
+\end{DoxyItemize}
+
+Metoda powinna być wywoływana w każdej turze walki lub w odpowiednich momentach gry.
+
+Obsługiwane statystyki to\+: zdrowie, atak, obrona, unik, szybkość i inne.\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a39f58f9f79200cf17a30620af410b75d}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!Heal@{Heal}}
+\index{Heal@{Heal}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{Heal()}{Heal()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_a39f58f9f79200cf17a30620af410b75d} 
+void Godmist\+WPF.\+Characters.\+Character.\+Heal (\begin{DoxyParamCaption}\item[{double}]{heal}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Leczy postać o określoną wartość zdrowia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em heal} & Ilość punktów zdrowia do przywrócenia.\\
+\hline
+\end{DoxyParams}
+
+
+Metoda zwiększa wartość zdrowia postaci o podaną wartość.
+
+Automatycznie dba o to, aby wartość zdrowia nie przekroczyła wartości maksymalnej.
+
+Wyświetla informację o uleczonych punktach zdrowia w interfejsie użytkownika.
+
+Nie ma efektu, jeśli postać ma pełne zdrowie.
+
+Ujemna wartość parametru spowoduje zmniejszenie zdrowia postaci.\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a497fd4bb402bbc650cbd54df95e214bd}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!RegenResource@{RegenResource}}
+\index{RegenResource@{RegenResource}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{RegenResource()}{RegenResource()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_a497fd4bb402bbc650cbd54df95e214bd} 
+void Godmist\+WPF.\+Characters.\+Character.\+Regen\+Resource (\begin{DoxyParamCaption}\item[{int}]{amount}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Regeneruje zasób postaci o określoną wartość, uwzględniając modyfikatory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & Podstawowa ilość zasobu do zregenerowania.\\
+\hline
+\end{DoxyParams}
+
+
+Metoda zwiększa ilość aktualnego zasobu o podaną wartość, uwzględniając modyfikatory regeneracji.
+
+Nie działa, jeśli postać ma efekt "{}\+No\+Resource\+Regen"{}.
+
+Uwzględnia modyfikatory regeneracji zasobu (Resource\+Regen\+Mod).
+
+Automatycznie dba o to, aby wartość zasobu nie przekroczyła wartości maksymalnej.
+
+Wartość zasobu jest zaokrąglana do najbliższej liczby całkowitej.\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a4a2725e668850d28aa2dd2def98580fa}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!TakeDamage@{TakeDamage}}
+\index{TakeDamage@{TakeDamage}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{TakeDamage()}{TakeDamage()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_a4a2725e668850d28aa2dd2def98580fa} 
+double Godmist\+WPF.\+Characters.\+Character.\+Take\+Damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_a7a7998807b5b708ea8f1be1eda55c4ce}{Damage\+Type}}}]{damage\+Type}{, }\item[{double}]{damage}{, }\item[{dynamic}]{source}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zadaje obrażenia postaci, uwzględniając tarcze i modyfikatory obrażeń. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage\+Type} & Typ zadawanych obrażeń.\\
+\hline
+{\em damage} & Podstawowa wartość obrażeń do zadania.\\
+\hline
+{\em source} & Źródło obrażeń (np. postać lub efekt).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Rzeczywista ilość obrażeń zadanych postaci po uwzględnieniu wszystkich modyfikatorów.
+\end{DoxyReturn}
+
+
+Metoda uwzględnia szansę na absorpcję obrażeń magicznych.
+
+Wyświetla informację o otrzymanych obrażeniach w interfejsie użytkownika.
+
+Uwzględnia działanie tarcz, które mogą zredukować otrzymane obrażenia.
+
+Automatycznie aktualizuje wartość zdrowia postaci.\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_ac935e48f5c7851f2ec75fddca77b9481}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!UseResource@{UseResource}}
+\index{UseResource@{UseResource}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{UseResource()}{UseResource()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_ac935e48f5c7851f2ec75fddca77b9481} 
+void Godmist\+WPF.\+Characters.\+Character.\+Use\+Resource (\begin{DoxyParamCaption}\item[{int}]{amount}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zużywa określoną ilość zasobu postaci. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & Ilość zasobu do zużycia.\\
+\hline
+\end{DoxyParams}
+
+
+Metoda zmniejsza ilość aktualnego zasobu o podaną wartość.
+
+W przypadku zasobu innego niż Fury (Wściekłość), wartość zasobu nie może spaść poniżej zera.
+
+Dla zasobu typu Fury, wartość może być ujemna (możliwe jest wejście na "{}debet"{}).
+
+Automatycznie aktualizuje wartość zasobu w interfejsie użytkownika.
+
+\label{doc-property-members}
+\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_ab852fd28488f94151221deeb0471a1a5}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!Accuracy@{Accuracy}}
+\index{Accuracy@{Accuracy}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{Accuracy}{Accuracy}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_ab852fd28488f94151221deeb0471a1a5} 
+virtual double Godmist\+WPF.\+Characters.\+Character.\+Accuracy\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Pobiera lub ustawia wartość celności postaci. 
+
+Wartość określająca szansę na trafienie przeciwnika. Wartość jest obliczana z uwzględnieniem modyfikatorów i dodatkowych efektów. 
+
+Im wyższa wartość celności, tym większa szansa na trafienie przeciwnika.
+
+Jeśli typem zasobu postaci jest \doxylink{}{Furia}, celność jest zmniejszana o 1/3 aktualnej wartości zasobu.
+
+Rzeczywista szansa na trafienie jest porównywana z wartością uniku przeciwnika.
+
+Wartość ujemna oznacza karę do trafienia.\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_ae4f498a3c4b06f05f0f99eeb2ed97bcb}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!ActiveSkills@{ActiveSkills}}
+\index{ActiveSkills@{ActiveSkills}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{ActiveSkills}{ActiveSkills}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_ae4f498a3c4b06f05f0f99eeb2ed97bcb} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill}{Active\+Skill}} \mbox{[}$\,$\mbox{]} Godmist\+WPF.\+Characters.\+Character.\+Active\+Skills\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia tablicę aktywnych umiejętności dostępnych dla postaci. 
+
+Tablica obiektów \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill}{Active\+Skill} reprezentujących umiejętności, które postać może używać w walce. 
+
+Każda postać może posiadać określoną liczbę aktywnych umiejętności, które może używać podczas walki.
+
+Umiejętności mogą wymagać określonych warunków do użycia (np. odpowiedniej ilości zasobów).
+
+Dostępne umiejętności mogą się zmieniać w zależności od poziomu postaci i wyposażenia.\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a600258dbbbc2a96f922f6fb5174fd00c}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!CritChance@{CritChance}}
+\index{CritChance@{CritChance}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{CritChance}{CritChance}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_a600258dbbbc2a96f922f6fb5174fd00c} 
+virtual double Godmist\+WPF.\+Characters.\+Character.\+Crit\+Chance\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Pobiera lub ustawia szansę na zadanie ciosu krytycznego. 
+
+Wartość z przedziału \mbox{[}0, 1\mbox{]} określająca szansę na cios krytyczny. Wartość jest obliczana z uwzględnieniem modyfikatorów i ograniczana do przedziału \mbox{[}0, 1\mbox{]}. 
+
+Wartość 0 oznacza brak szansy na cios krytyczny, a 1 gwarantowany cios krytyczny (100\%).
+
+Rzeczywista szansa na cios krytyczny może być modyfikowana przez różne efekty i umiejętności.
+
+Wartość jest automatycznie ograniczana do przedziału \mbox{[}0, 1\mbox{]} podczas pobierania.
+
+Cios krytyczny zwiększa zadawane obrażenia o wartość określoną przez \doxylink{class_godmist_w_p_f_1_1_characters_1_1_character_a708ba338f221d827469c165fca55a149}{Crit\+Mod}.\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a708ba338f221d827469c165fca55a149}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!CritMod@{CritMod}}
+\index{CritMod@{CritMod}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{CritMod}{CritMod}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_a708ba338f221d827469c165fca55a149} 
+virtual double Godmist\+WPF.\+Characters.\+Character.\+Crit\+Mod\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Pobiera lub ustawia wartość mnożnika obrażeń krytycznych. 
+
+Wartość określająca, o ile zwiększają się obrażenia przy ciosie krytycznym. Wartość jest obliczana z uwzględnieniem modyfikatorów. 
+
+Wartość 0.\+5 oznacza, że cios krytyczny zada 50\% więcej obrażeń (1.\+5x).
+
+Wartość 1.\+0 oznacza, że cios krytyczny zada 100\% więcej obrażeń (2.\+0x).
+
+Mnożnik jest dodawany do bazowych obrażeń, więc wartość 0.\+0 oznacza brak dodatkowych obrażeń krytycznych.
+
+Rzeczywisty wzrost obrażeń może być modyfikowany przez różne efekty i umiejętności.\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a9e9ba635cdc8b57761e3a404ce2b6f22}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!CurrentHealth@{CurrentHealth}}
+\index{CurrentHealth@{CurrentHealth}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{CurrentHealth}{CurrentHealth}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_a9e9ba635cdc8b57761e3a404ce2b6f22} 
+double Godmist\+WPF.\+Characters.\+Character.\+Current\+Health\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Pobiera lub ustawia aktualną ilość punktów zdrowia postaci. 
+
+Aktualna ilość punktów zdrowia postaci. Wartość jest automatycznie ograniczana do zakresu od 0 do \doxylink{class_godmist_w_p_f_1_1_characters_1_1_character_abb10c4205f80f44bae3f5ded82d53e57}{Maximal\+Health}. 
+
+Ustawienie wartości mniejszej niż 0 spowoduje ustawienie 0.
+
+Ustawienie wartości większej niż \doxylink{class_godmist_w_p_f_1_1_characters_1_1_character_abb10c4205f80f44bae3f5ded82d53e57}{Maximal\+Health} spowoduje ustawienie \doxylink{class_godmist_w_p_f_1_1_characters_1_1_character_abb10c4205f80f44bae3f5ded82d53e57}{Maximal\+Health}.
+
+Zmiana wartości może wywołać zdarzenia związane ze zmianą zdrowia.\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a3cfffe92befb676169f852ebd0d816be}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!CurrentResource@{CurrentResource}}
+\index{CurrentResource@{CurrentResource}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{CurrentResource}{CurrentResource}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_a3cfffe92befb676169f852ebd0d816be} 
+double Godmist\+WPF.\+Characters.\+Character.\+Current\+Resource\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Pobiera lub ustawia aktualną wartość zasobu postaci. 
+
+Aktualna wartość zasobu postaci, ograniczona do zakresu \mbox{[}0, \doxylink{class_godmist_w_p_f_1_1_characters_1_1_character_abfc3194cfc1877d5da1800210cb93787}{Maximal\+Resource}\mbox{]}. 
+
+Wartość jest automatycznie ograniczana do przedziału \mbox{[}0, Maximal\+Resource\mbox{]}.
+
+Zmiana wartości wywołuje zdarzenie Property\+Changed dla powiązań danych.
+
+Typ zasobu jest określony przez właściwość \doxylink{class_godmist_w_p_f_1_1_characters_1_1_character_a7176712e29f8c35075d91f44adc4efa5}{Resource\+Type}.
+
+Różne klasy postaci mogą używać tej właściwości do przechowywania specyficznych zasobów, takich jak mana, energia itp.\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_aba171f36ca908a4de443160f9445aa53}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!Dodge@{Dodge}}
+\index{Dodge@{Dodge}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{Dodge}{Dodge}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_aba171f36ca908a4de443160f9445aa53} 
+virtual double Godmist\+WPF.\+Characters.\+Character.\+Dodge\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Pobiera lub ustawia szansę na uniknięcie ataku przeciwnika. 
+
+Wartość z przedziału \mbox{[}0, 1\mbox{]} określająca szansę na uniknięcie ataku. Wartość jest obliczana z uwzględnieniem modyfikatorów. 
+
+Wartość 0 oznacza brak szansy na unik, a 1 gwarantowany unik (100\%).
+
+Rzeczywista szansa na unik może być modyfikowana przez różne efekty i umiejętności.
+
+Wartość jest ograniczona do przedziału \mbox{[}0, 1\mbox{]} podczas obliczeń.\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a2bf140f269654a7382b43706f377f9fb}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!Level@{Level}}
+\index{Level@{Level}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{Level}{Level}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_a2bf140f269654a7382b43706f377f9fb} 
+int Godmist\+WPF.\+Characters.\+Character.\+Level\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia poziom postaci. 
+
+Poziom postaci, który wpływa na jej statystyki i dostępne umiejętności. 
+
+Wzrost poziomu zazwyczaj zwiększa podstawowe statystyki postaci.
+
+Poziom może również odblokowywać nowe umiejętności lub ulepszenia.
+
+Wartość powinna być nieujemna.\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_ae6094e25646dbd36e83bda22cb6c9313}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!MagicDefense@{MagicDefense}}
+\index{MagicDefense@{MagicDefense}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{MagicDefense}{MagicDefense}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_ae6094e25646dbd36e83bda22cb6c9313} 
+virtual double Godmist\+WPF.\+Characters.\+Character.\+Magic\+Defense\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Pobiera lub ustawia wartość obrony magicznej postaci. 
+
+Wartość obrony magicznej, która redukuje otrzymywane obrażenia magiczne. Wartość jest obliczana z uwzględnieniem modyfikatorów. 
+
+Im wyższa wartość obrony magicznej, tym mniejsze obrażenia magiczne otrzymuje postać.
+
+Redukcja obrażeń jest obliczana według wzoru\+: damage \texorpdfstring{$\ast$}{*} damage / (damage + Magic\+Defense)
+
+Oznacza to, że każdy kolejny punkt obrony magicznej daje mniejszą korzyść.
+
+W przeciwieństwie do obrony fizycznej, niektóre umiejętności mogą ignorować część lub całość obrony magicznej.\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a6685799318515efa97bfe48af4a07447}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!MaximalAttack@{MaximalAttack}}
+\index{MaximalAttack@{MaximalAttack}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{MaximalAttack}{MaximalAttack}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_a6685799318515efa97bfe48af4a07447} 
+virtual double Godmist\+WPF.\+Characters.\+Character.\+Maximal\+Attack\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Pobiera lub ustawia maksymalną wartość obrażeń zadawanych przez postać. 
+
+Maksymalna wartość obrażeń, jaką może zadać postać w pojedynczym ataku. Wartość jest obliczana z uwzględnieniem modyfikatorów. 
+
+Wartość ta określa górną granicę przedziału obrażeń ataku podstawowego.
+
+Rzeczywiste obrażenia są losowane z przedziału \mbox{[}\doxylink{class_godmist_w_p_f_1_1_characters_1_1_character_a673fe6f2df235723aea72a67cb448222}{Minimal\+Attack}, Maximal\+Attack\mbox{]}.
+
+Podczas ustawiania wartości, jest ona automatycznie porównywana z wartością \doxylink{class_godmist_w_p_f_1_1_characters_1_1_character_a673fe6f2df235723aea72a67cb448222}{Minimal\+Attack} i ustawiana jako większa z nich.\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_abb10c4205f80f44bae3f5ded82d53e57}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!MaximalHealth@{MaximalHealth}}
+\index{MaximalHealth@{MaximalHealth}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{MaximalHealth}{MaximalHealth}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_abb10c4205f80f44bae3f5ded82d53e57} 
+virtual double Godmist\+WPF.\+Characters.\+Character.\+Maximal\+Health\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Pobiera lub ustawia maksymalną ilość punktów zdrowia postaci. 
+
+Maksymalna ilość punktów zdrowia, która może mieć postać. Wartość jest obliczana z uwzględnieniem modyfikatorów. 
+
+Wartość jest ograniczona od dołu przez 0.
+
+Zmiana wartości aktualizuje również bieżące zdrowie, jeśli przekracza nowe maksimum.\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_abfc3194cfc1877d5da1800210cb93787}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!MaximalResource@{MaximalResource}}
+\index{MaximalResource@{MaximalResource}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{MaximalResource}{MaximalResource}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_abfc3194cfc1877d5da1800210cb93787} 
+virtual double Godmist\+WPF.\+Characters.\+Character.\+Maximal\+Resource\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Pobiera lub ustawia maksymalną ilość zasobu postaci. 
+
+Maksymalna wartość zasobu postaci, jaką może posiadać postać. Wartość jest obliczana z uwzględnieniem modyfikatorów. 
+
+Określa górny limit wartości \doxylink{class_godmist_w_p_f_1_1_characters_1_1_character_a3cfffe92befb676169f852ebd0d816be}{Current\+Resource}.
+
+Typ zasobu jest określony przez właściwość \doxylink{class_godmist_w_p_f_1_1_characters_1_1_character_a7176712e29f8c35075d91f44adc4efa5}{Resource\+Type}.
+
+Różne klasy postaci mogą używać tej właściwości do określania maksymalnej wartości specyficznych zasobów, takich jak mana, energia itp.\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a673fe6f2df235723aea72a67cb448222}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!MinimalAttack@{MinimalAttack}}
+\index{MinimalAttack@{MinimalAttack}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{MinimalAttack}{MinimalAttack}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_a673fe6f2df235723aea72a67cb448222} 
+virtual double Godmist\+WPF.\+Characters.\+Character.\+Minimal\+Attack\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Pobiera lub ustawia minimalną wartość obrażeń zadawanych przez postać. 
+
+Minimalna wartość obrażeń, jaką może zadać postać w pojedynczym ataku. Wartość jest obliczana z uwzględnieniem modyfikatorów. 
+
+Wartość ta określa dolną granicę przedziału obrażeń ataku podstawowego.
+
+Rzeczywiste obrażenia są losowane z przedziału \mbox{[}Minimal\+Attack, Maximal\+Attack\mbox{]}.
+
+Wartość nie może przekroczyć wartości \doxylink{class_godmist_w_p_f_1_1_characters_1_1_character_a6685799318515efa97bfe48af4a07447}{Maximal\+Attack}.\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a9396dee63226b52ce759f10dea2206e9}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!Name@{Name}}
+\index{Name@{Name}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_a9396dee63226b52ce759f10dea2206e9} 
+string Godmist\+WPF.\+Characters.\+Character.\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [abstract]}}
+
+
+
+Pobiera lub ustawia nazwę postaci. 
+
+Nazwa postaci widoczna w interfejsie użytkownika. \Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_ab4d5260c114dcb00e248ceaa16ff71ba}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!PassiveEffects@{PassiveEffects}}
+\index{PassiveEffects@{PassiveEffects}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{PassiveEffects}{PassiveEffects}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_ab4d5260c114dcb00e248ceaa16ff71ba} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_passive_effects_1_1_passive_effect_list}{Passive\+Effect\+List}} Godmist\+WPF.\+Characters.\+Character.\+Passive\+Effects\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia listę efektów pasywnych aktywnie działających na postać. 
+
+Kolekcja efektów pasywnych, które modyfikują statystyki lub zachowanie postaci. 
+
+Efekty pasywne mogą pochodzić z umiejętności, przedmiotów lub innych źródeł.
+
+Każdy efekt może modyfikować różne statystyki postaci.
+
+Efekty mogą mieć określony czas trwania lub być stałe.\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_af0d1c616367bdce65d4e3922ba427fdb}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!PhysicalDefense@{PhysicalDefense}}
+\index{PhysicalDefense@{PhysicalDefense}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{PhysicalDefense}{PhysicalDefense}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_af0d1c616367bdce65d4e3922ba427fdb} 
+virtual double Godmist\+WPF.\+Characters.\+Character.\+Physical\+Defense\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Pobiera lub ustawia wartość obrony fizycznej postaci. 
+
+Wartość obrony fizycznej, która redukuje otrzymywane obrażenia fizyczne. Wartość jest obliczana z uwzględnieniem modyfikatorów. 
+
+Im wyższa wartość obrony fizycznej, tym mniejsze obrażenia fizyczne otrzymuje postać.
+
+Redukcja obrażeń jest obliczana według wzoru\+: damage \texorpdfstring{$\ast$}{*} damage / (damage + Physical\+Defense)
+
+Oznacza to, że każdy kolejny punkt obrony daje mniejszą korzyść.\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a456a93444fa3111339259233e82a3bb5}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!Resistances@{Resistances}}
+\index{Resistances@{Resistances}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{Resistances}{Resistances}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_a456a93444fa3111339259233e82a3bb5} 
+Dictionary$<$\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_modifiers_a52280889e9b142cbe799fb30f1fc927c}{Status\+Effect\+Type}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}}$>$ Godmist\+WPF.\+Characters.\+Character.\+Resistances\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia słownik odporności na różne typy efektów statusowych. 
+
+Słownik, gdzie kluczem jest typ efektu statusowego, a wartością statystyka określająca odporność na ten efekt. 
+
+Im wyższa wartość odporności, tym mniejsza szansa na otrzymanie danego efektu statusowego.
+
+Odporność może być modyfikowana przez różne efekty i umiejętności.
+
+Wartość 0 oznacza brak odporności, a 1 całkowitą odporność (100\%).\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a12de8211d1425b4ab1c30ffa747cb46c}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!ResourceRegen@{ResourceRegen}}
+\index{ResourceRegen@{ResourceRegen}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{ResourceRegen}{ResourceRegen}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_a12de8211d1425b4ab1c30ffa747cb46c} 
+virtual double Godmist\+WPF.\+Characters.\+Character.\+Resource\+Regen\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera wartość regeneracji zasobu w danej turze. 
+
+Wartość określająca, ile jednostek zasobu zostanie przywróconych postaci w danej turze. 
+
+Dla typu zasobu \doxylink{}{Momentum}\+:
+\begin{DoxyItemize}
+\item Jeśli szybkość (Speed) jest większa lub równa 100, zwraca Speed / 10
+\item W przeciwnym razie zwraca Speed / 5
+\end{DoxyItemize}
+
+Dla innych typów zasobów zwraca wartość z modyfikatorami.
+
+Wartość jest obliczana dynamicznie przy każdym wywołaniu, z uwzględnieniem aktualnego stanu postaci.\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_a7176712e29f8c35075d91f44adc4efa5}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!ResourceType@{ResourceType}}
+\index{ResourceType@{ResourceType}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{ResourceType}{ResourceType}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_a7176712e29f8c35075d91f44adc4efa5} 
+\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_ad74c01eb6fb046f7abe1ab77b3ee5c26}{Resource\+Type}} Godmist\+WPF.\+Characters.\+Character.\+Resource\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia typ zasobu używany przez postać. 
+
+Typ zasobu określający, jakiego rodzaju zasób wykorzystuje postać (np. mana, energia, furia itp.). 
+
+Typ zasobu wpływa na sposób działania właściwości \doxylink{class_godmist_w_p_f_1_1_characters_1_1_character_a3cfffe92befb676169f852ebd0d816be}{Current\+Resource} i \doxylink{class_godmist_w_p_f_1_1_characters_1_1_character_a12de8211d1425b4ab1c30ffa747cb46c}{Resource\+Regen}.
+
+Różne klasy postaci mogą mieć różne typy zasobów, które wpływają na ich umiejętności i styl gry.\Hypertarget{class_godmist_w_p_f_1_1_characters_1_1_character_aed9803dcdeddcc81174e9b9006b4832e}\index{GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}!Speed@{Speed}}
+\index{Speed@{Speed}!GodmistWPF.Characters.Character@{GodmistWPF.Characters.Character}}
+\doxysubsubsection{\texorpdfstring{Speed}{Speed}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_characters_1_1_character_aed9803dcdeddcc81174e9b9006b4832e} 
+double Godmist\+WPF.\+Characters.\+Character.\+Speed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Pobiera lub ustawia wartość szybkości postaci. 
+
+Wartość określająca szybkość postaci w walce. Wartość jest obliczana z uwzględnieniem modyfikatorów i dodatkowych efektów. 
+
+Im wyższa wartość szybkości, tym szybciej postać otrzymuje tury w walce.
+
+Jeśli typem zasobu postaci jest \doxylink{}{Momentum}, szybkość jest zwiększana o 10\% aktualnej wartości zasobu.
+
+Szybkość ma kluczowe znaczenie dla kolejności wykonywania akcji w walce.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Characters/Character.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,44 @@
+\doxysection{Godmist\+WPF.\+Items.\+Potions Namespace Reference}
+\hypertarget{namespace_godmist_w_p_f_1_1_items_1_1_potions}{}\label{namespace_godmist_w_p_f_1_1_items_1_1_potions}\index{GodmistWPF.Items.Potions@{GodmistWPF.Items.Potions}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_potions_1_1_potion}{Potion}}
+\begin{DoxyCompactList}\small\item\em Klasa reprezentująca miksturę w grze, którą można użyć, aby uzyskać różnorodne efekty. Mikstury mogą składać się z wielu komponentów i katalizatora, które wpływają na ich działanie. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_potions_1_1_potion_component}{Potion\+Component}}
+\begin{DoxyCompactList}\small\item\em Klasa reprezentująca pojedynczy komponent mikstury, który definiuje jej efekt i właściwości. Każdy komponent odpowiada za konkretny efekt, który jest aktywowany po użyciu mikstury. \end{DoxyCompactList}\item 
+class {\bfseries Potion\+Manager}
+\begin{DoxyCompactList}\small\item\em Statyczna klasa zarządzająca systemem mikstur w grze. Odpowiada za wczytywanie komponentów, przetwarzanie efektów i generowanie losowych mikstur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_items_1_1_potions_a4463832c616c49407cee11b764cb9259}{Potion\+Catalyst}} (\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_a8be22fdbc5fe020fd27753873be15af3}{Potion\+Catalyst\+Effect}} effect, int tier)
+\begin{DoxyCompactList}\small\item\em Klasa reprezentująca katalizator mikstury, który modyfikuje jej właściwości. Katalizator może wpływać na pojemność, siłę efektów, czas trwania lub kondensację mikstury. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespace_godmist_w_p_f_1_1_items_1_1_potions_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_godmist_w_p_f_1_1_items_1_1_potions_a4463832c616c49407cee11b764cb9259}\index{GodmistWPF.Items.Potions@{GodmistWPF.Items.Potions}!PotionCatalyst@{PotionCatalyst}}
+\index{PotionCatalyst@{PotionCatalyst}!GodmistWPF.Items.Potions@{GodmistWPF.Items.Potions}}
+\doxysubsubsection{\texorpdfstring{PotionCatalyst()}{PotionCatalyst()}}
+{\footnotesize\ttfamily \label{namespace_godmist_w_p_f_1_1_items_1_1_potions_a4463832c616c49407cee11b764cb9259} 
+class Godmist\+WPF.\+Items.\+Potions.\+Potion\+Catalyst (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_a8be22fdbc5fe020fd27753873be15af3}{Potion\+Catalyst\+Effect}}}]{effect}{, }\item[{int}]{tier}{}\end{DoxyParamCaption})}
+
+
+
+Klasa reprezentująca katalizator mikstury, który modyfikuje jej właściwości. Katalizator może wpływać na pojemność, siłę efektów, czas trwania lub kondensację mikstury. 
+
+Pobiera typ efektu, który jest aplikowany przez ten katalizator.
+
+Pobiera poziom katalizatora, który wpływa na jego siłę.
+
+Pobiera siłę efektu katalizatora, obliczaną na podstawie typu i poziomu.
+
+Pobiera identyfikator materiału użytego jako ten katalizator.
+
+Generuje opis katalizatora, uwzględniający jego efekt i dostępność w ekwipunku.
+
+\begin{DoxyReturn}{Returns}
+Sformatowany opis katalizatora z informacją o ilości w ekwipunku.
+\end{DoxyReturn}

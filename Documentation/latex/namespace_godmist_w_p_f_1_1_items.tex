@@ -1,0 +1,68 @@
+\doxysection{Godmist\+WPF.\+Items Namespace Reference}
+\hypertarget{namespace_godmist_w_p_f_1_1_items}{}\label{namespace_godmist_w_p_f_1_1_items}\index{GodmistWPF.Items@{GodmistWPF.Items}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_items_1_1_galdurites}{Galdurites}}
+\begin{DoxyCompactList}\small\item\em Zawiera klasy odpowiedzialne za zarządzanie galdurytami w grze. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_ingredient}{Base\+Ingredient}}
+\begin{DoxyCompactList}\small\item\em Klasa bazowa reprezentująca podstawowy składnik używany w procesie tworzenia przedmiotów. Rozszerza klasę \doxylink{class_godmist_w_p_f_1_1_items_1_1_base_item}{Base\+Item}, dodając domyślne ustawienia dla składników. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item}{Base\+Item}}
+\begin{DoxyCompactList}\small\item\em Abstrakcyjna klasa bazowa dla wszystkich przedmiotów w grze. Implementuje podstawową funkcjonalność zdefiniowaną w interfejsie \doxylink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_craftable_ingredient}{Craftable\+Ingredient}}
+\begin{DoxyCompactList}\small\item\em Reprezentuje składnik, który może być używany w procesie tworzenia przedmiotów. Implementuje interfejs \doxylink{interface_godmist_w_p_f_1_1_items_1_1_i_craftable}{ICraftable}, co oznacza, że sam może być wytwarzany. \end{DoxyCompactList}\item 
+class {\bfseries Crafting\+Manager}
+\begin{DoxyCompactList}\small\item\em Klasa zarządzająca procesem tworzenia przedmiotów w grze. Zawiera metody sprawdzające możliwość wytworzenia przedmiotów oraz realizujące ich tworzenie. \end{DoxyCompactList}\item 
+interface \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_craftable}{ICraftable}}
+\begin{DoxyCompactList}\small\item\em Interfejs określający zachowanie przedmiotów, które mogą być wytwarzane przez gracza. Rozszerza interfejs \doxylink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem} o właściwości związane z rzemiosłem. \end{DoxyCompactList}\item 
+interface \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}
+\begin{DoxyCompactList}\small\item\em Interfejs bazowy dla wszystkich przedmiotów w grze. Definiuje podstawowe właściwości i zachowania wspólne dla wszystkich przedmiotów. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_inventory}{Inventory}}
+\begin{DoxyCompactList}\small\item\em Klasa reprezentująca ekwipunek gracza. Zawiera metody do zarządzania przedmiotami, takie jak dodawanie, usuwanie i sortowanie. \end{DoxyCompactList}\item 
+class {\bfseries Item\+Manager}
+\begin{DoxyCompactList}\small\item\em Klasa zarządzająca wszystkimi przedmiotami w grze. Odpowiada za ładowanie, przechowywanie i udostępnianie dostępu do przedmiotów. \end{DoxyCompactList}\item 
+interface \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_usable}{IUsable}}
+\begin{DoxyCompactList}\small\item\em Interfejs określający zachowanie przedmiotów, które mogą być używane przez postać. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_n_p_c_inventory}{NPCInventory}}
+\begin{DoxyCompactList}\small\item\em Klasa reprezentująca ekwipunek NPC, w tym sklep i przedmioty kupione od gracza. Zarządza asortymentem sklepowym, który zmienia się w zależności od poziomu lojalności. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_items_a59b7c22454c4ccedb151e506226ba42d}{Battle\+Reward}} (int gold\+Reward, int honor\+Reward, int experience\+Reward, Dictionary$<$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}, int $>$ items\+Reward)
+\begin{DoxyCompactList}\small\item\em Klasa reprezentująca nagrody otrzymywane po zakończeniu walki. Zawiera informacje o złocie, honorze, doświadczeniu i przedmiotach. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespace_godmist_w_p_f_1_1_items_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_godmist_w_p_f_1_1_items_a59b7c22454c4ccedb151e506226ba42d}\index{GodmistWPF.Items@{GodmistWPF.Items}!BattleReward@{BattleReward}}
+\index{BattleReward@{BattleReward}!GodmistWPF.Items@{GodmistWPF.Items}}
+\doxysubsubsection{\texorpdfstring{BattleReward()}{BattleReward()}}
+{\footnotesize\ttfamily \label{namespace_godmist_w_p_f_1_1_items_a59b7c22454c4ccedb151e506226ba42d} 
+class Godmist\+WPF.\+Items.\+Battle\+Reward (\begin{DoxyParamCaption}\item[{int}]{gold\+Reward}{, }\item[{int}]{honor\+Reward}{, }\item[{int}]{experience\+Reward}{, }\item[{Dictionary$<$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}, int $>$}]{items\+Reward}{}\end{DoxyParamCaption})}
+
+
+
+Klasa reprezentująca nagrody otrzymywane po zakończeniu walki. Zawiera informacje o złocie, honorze, doświadczeniu i przedmiotach. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gold\+Reward} & Ilość złota do otrzymania.\\
+\hline
+{\em honor\+Reward} & Ilość punktów honoru do otrzymania.\\
+\hline
+{\em experience\+Reward} & Ilość doświadczenia do otrzymania.\\
+\hline
+{\em items\+Reward} & Słownik przedmiotów i ich ilości do otrzymania.\\
+\hline
+\end{DoxyParams}
+Pobiera ilość złota przyznaną jako nagrodę.
+
+Pobiera ilość punktów honoru przyznanych jako nagrodę.
+
+Pobiera ilość doświadczenia przyznaną jako nagrodę.
+
+Pobiera słownik przedmiotów i ich ilości przyznanych jako nagroda. Kluczem jest przedmiot, a wartością ilość danego przedmiotu.

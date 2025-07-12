@@ -1,0 +1,101 @@
+\doxysection{Godmist\+WPF.\+Utilities.\+Json\+Converters.\+Player\+Json\+Converter Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_player_json_converter}{}\label{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_player_json_converter}\index{GodmistWPF.Utilities.JsonConverters.PlayerJsonConverter@{GodmistWPF.Utilities.JsonConverters.PlayerJsonConverter}}
+
+
+Konwerter JSON do serializacji i deserializacji obiektów klasy \doxylink{class_godmist_w_p_f_1_1_characters_1_1_player_1_1_player_character}{Player\+Character} i jej pochodnych. Obsługuje różne klasy postaci gracza i zapisuje ich typ w pliku JSON.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Utilities.\+Json\+Converters.\+Player\+Json\+Converter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_player_json_converter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override bool \mbox{\hyperlink{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_player_json_converter_ae27042bb0761a1dea7ae0bdfef47c629}{Can\+Convert}} (Type object\+Type)
+\begin{DoxyCompactList}\small\item\em Określa, czy konwerter może obsłużyć określony typ. \end{DoxyCompactList}\item 
+override object \mbox{\hyperlink{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_player_json_converter_abf11cbc78167e77d7941b512b335b1fd}{Read\+Json}} (Json\+Reader reader, Type object\+Type, object existing\+Value, Json\+Serializer serializer)
+\begin{DoxyCompactList}\small\item\em Deserializuje obiekt JSON do odpowiedniej klasy postaci gracza. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_player_json_converter_a6cfef2c442691fa2d0db94933419198f}{Write\+Json}} (Json\+Writer writer, object value, Json\+Serializer serializer)
+\begin{DoxyCompactList}\small\item\em Serializuje obiekt postaci gracza do formatu JSON. Zapisuje wszystkie pola publiczne i niepubliczne oraz właściwości, które nie są oznaczone atrybutem Json\+Ignore. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Konwerter JSON do serializacji i deserializacji obiektów klasy \doxylink{class_godmist_w_p_f_1_1_characters_1_1_player_1_1_player_character}{Player\+Character} i jej pochodnych. Obsługuje różne klasy postaci gracza i zapisuje ich typ w pliku JSON. 
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_player_json_converter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_player_json_converter_ae27042bb0761a1dea7ae0bdfef47c629}\index{GodmistWPF.Utilities.JsonConverters.PlayerJsonConverter@{GodmistWPF.Utilities.JsonConverters.PlayerJsonConverter}!CanConvert@{CanConvert}}
+\index{CanConvert@{CanConvert}!GodmistWPF.Utilities.JsonConverters.PlayerJsonConverter@{GodmistWPF.Utilities.JsonConverters.PlayerJsonConverter}}
+\doxysubsubsection{\texorpdfstring{CanConvert()}{CanConvert()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_player_json_converter_ae27042bb0761a1dea7ae0bdfef47c629} 
+override bool Godmist\+WPF.\+Utilities.\+Json\+Converters.\+Player\+Json\+Converter.\+Can\+Convert (\begin{DoxyParamCaption}\item[{Type}]{object\+Type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Określa, czy konwerter może obsłużyć określony typ. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Type} & Typ obiektu do sprawdzenia.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, jeśli konwerter może obsłużyć dany typ; w przeciwnym razie false.
+\end{DoxyReturn}
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_player_json_converter_abf11cbc78167e77d7941b512b335b1fd}\index{GodmistWPF.Utilities.JsonConverters.PlayerJsonConverter@{GodmistWPF.Utilities.JsonConverters.PlayerJsonConverter}!ReadJson@{ReadJson}}
+\index{ReadJson@{ReadJson}!GodmistWPF.Utilities.JsonConverters.PlayerJsonConverter@{GodmistWPF.Utilities.JsonConverters.PlayerJsonConverter}}
+\doxysubsubsection{\texorpdfstring{ReadJson()}{ReadJson()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_player_json_converter_abf11cbc78167e77d7941b512b335b1fd} 
+override object Godmist\+WPF.\+Utilities.\+Json\+Converters.\+Player\+Json\+Converter.\+Read\+Json (\begin{DoxyParamCaption}\item[{Json\+Reader}]{reader}{, }\item[{Type}]{object\+Type}{, }\item[{object}]{existing\+Value}{, }\item[{Json\+Serializer}]{serializer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Deserializuje obiekt JSON do odpowiedniej klasy postaci gracza. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & Czytnik JSON.\\
+\hline
+{\em object\+Type} & Typ obiektu do przekonwertowania.\\
+\hline
+{\em existing\+Value} & Istniejąca wartość obiektu.\\
+\hline
+{\em serializer} & Wystąpienie serializatora JSON.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Zdeserializowany obiekt postaci gracza.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Supported\+Exception} & Wyrzucany, gdy klasa postaci nie jest obsługiwana.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_player_json_converter_a6cfef2c442691fa2d0db94933419198f}\index{GodmistWPF.Utilities.JsonConverters.PlayerJsonConverter@{GodmistWPF.Utilities.JsonConverters.PlayerJsonConverter}!WriteJson@{WriteJson}}
+\index{WriteJson@{WriteJson}!GodmistWPF.Utilities.JsonConverters.PlayerJsonConverter@{GodmistWPF.Utilities.JsonConverters.PlayerJsonConverter}}
+\doxysubsubsection{\texorpdfstring{WriteJson()}{WriteJson()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_player_json_converter_a6cfef2c442691fa2d0db94933419198f} 
+override void Godmist\+WPF.\+Utilities.\+Json\+Converters.\+Player\+Json\+Converter.\+Write\+Json (\begin{DoxyParamCaption}\item[{Json\+Writer}]{writer}{, }\item[{object}]{value}{, }\item[{Json\+Serializer}]{serializer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Serializuje obiekt postaci gracza do formatu JSON. Zapisuje wszystkie pola publiczne i niepubliczne oraz właściwości, które nie są oznaczone atrybutem Json\+Ignore. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em writer} & Pisarz JSON.\\
+\hline
+{\em value} & Wartość do zserializowania.\\
+\hline
+{\em serializer} & Wystąpienie serializatora JSON.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Utilities/\+Json\+Converters/Player\+Json\+Converter.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,92 @@
+\doxysection{Godmist\+WPF.\+Quests.\+Quest\+Stage Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_stage}{}\label{class_godmist_w_p_f_1_1_quests_1_1_quest_stage}\index{GodmistWPF.Quests.QuestStage@{GodmistWPF.Quests.QuestStage}}
+
+
+Reprezentuje pojedynczy etap zadania, zawierający listę celów do wykonania. Każdy etap może mieć swoją nazwę i opis, które są pobierane na podstawie aliasu.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_stage_acd0a9cc5374ea5c6eaf3fdabbee8bbbf}\label{class_godmist_w_p_f_1_1_quests_1_1_quest_stage_acd0a9cc5374ea5c6eaf3fdabbee8bbbf} 
+{\bfseries Quest\+Stage} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_quests_1_1_quest_stage}{Quest\+Stage}. Używany przez serializator JSON. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_quest_stage_aeae0eacabf61a8f62cbaeec790bf7161}{Quest\+Stage}} (string alias, List$<$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective}{IQuest\+Objective}} $>$ objectives)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_quests_1_1_quest_stage}{Quest\+Stage} z określonym aliasem i celami. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_stage_aa0df9c496e6164ff44ccefb13db01d30}\label{class_godmist_w_p_f_1_1_quests_1_1_quest_stage_aa0df9c496e6164ff44ccefb13db01d30} 
+List$<$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective}{IQuest\+Objective}} $>$ {\bfseries Objectives}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Lista celów, które muszą zostać wykonane, aby ukończyć ten etap zadania. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_quest_stage_a2691e9881678f4fe92578194ac097ee9}{Alias}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Unikalny identyfikator etapu zadania, używany do lokalizacji nazwy i opisu. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_quest_stage_a1edb97581441ccb9c48d7daf51e4fbb2}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera zlokalizowaną nazwę etapu zadania na podstawie aliasu. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_quest_stage_abc99f9ba64ff131bd833fc8e21d4cdf8}{Description}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera zlokalizowany opis etapu zadania na podstawie aliasu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Reprezentuje pojedynczy etap zadania, zawierający listę celów do wykonania. Każdy etap może mieć swoją nazwę i opis, które są pobierane na podstawie aliasu. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_stage_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_stage_aeae0eacabf61a8f62cbaeec790bf7161}\index{GodmistWPF.Quests.QuestStage@{GodmistWPF.Quests.QuestStage}!QuestStage@{QuestStage}}
+\index{QuestStage@{QuestStage}!GodmistWPF.Quests.QuestStage@{GodmistWPF.Quests.QuestStage}}
+\doxysubsubsection{\texorpdfstring{QuestStage()}{QuestStage()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_quest_stage_aeae0eacabf61a8f62cbaeec790bf7161} 
+Godmist\+WPF.\+Quests.\+Quest\+Stage.\+Quest\+Stage (\begin{DoxyParamCaption}\item[{string}]{alias}{, }\item[{List$<$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_quests_1_1_objectives_1_1_i_quest_objective}{IQuest\+Objective}} $>$}]{objectives}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_quests_1_1_quest_stage}{Quest\+Stage} z określonym aliasem i celami. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & Unikalny identyfikator etapu.\\
+\hline
+{\em objectives} & Lista celów do wykonania w tym etapie.\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-property-members}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_stage_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_stage_a2691e9881678f4fe92578194ac097ee9}\index{GodmistWPF.Quests.QuestStage@{GodmistWPF.Quests.QuestStage}!Alias@{Alias}}
+\index{Alias@{Alias}!GodmistWPF.Quests.QuestStage@{GodmistWPF.Quests.QuestStage}}
+\doxysubsubsection{\texorpdfstring{Alias}{Alias}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_quest_stage_a2691e9881678f4fe92578194ac097ee9} 
+string Godmist\+WPF.\+Quests.\+Quest\+Stage.\+Alias\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Unikalny identyfikator etapu zadania, używany do lokalizacji nazwy i opisu. 
+
+Alias etapu.\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_stage_abc99f9ba64ff131bd833fc8e21d4cdf8}\index{GodmistWPF.Quests.QuestStage@{GodmistWPF.Quests.QuestStage}!Description@{Description}}
+\index{Description@{Description}!GodmistWPF.Quests.QuestStage@{GodmistWPF.Quests.QuestStage}}
+\doxysubsubsection{\texorpdfstring{Description}{Description}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_quest_stage_abc99f9ba64ff131bd833fc8e21d4cdf8} 
+string Godmist\+WPF.\+Quests.\+Quest\+Stage.\+Description\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera zlokalizowany opis etapu zadania na podstawie aliasu. 
+
+Opis etapu.\Hypertarget{class_godmist_w_p_f_1_1_quests_1_1_quest_stage_a1edb97581441ccb9c48d7daf51e4fbb2}\index{GodmistWPF.Quests.QuestStage@{GodmistWPF.Quests.QuestStage}!Name@{Name}}
+\index{Name@{Name}!GodmistWPF.Quests.QuestStage@{GodmistWPF.Quests.QuestStage}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_quests_1_1_quest_stage_a1edb97581441ccb9c48d7daf51e4fbb2} 
+string Godmist\+WPF.\+Quests.\+Quest\+Stage.\+Name\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera zlokalizowaną nazwę etapu zadania na podstawie aliasu. 
+
+Nazwa etapu.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Quests/Quest\+Stage.\+cs\end{DoxyCompactItemize}

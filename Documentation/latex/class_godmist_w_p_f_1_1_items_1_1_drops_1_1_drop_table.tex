@@ -1,0 +1,74 @@
+\doxysection{Godmist\+WPF.\+Items.\+Drops.\+Drop\+Table Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_table}{}\label{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_table}\index{GodmistWPF.Items.Drops.DropTable@{GodmistWPF.Items.Drops.DropTable}}
+
+
+Klasa reprezentująca tabelę dropu, zawierającą listę pul przedmiotów, które mogą wypaść. Zapewnia metody do losowania przedmiotów z uwzględnieniem poziomu postaci i modyfikatorów szansy.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_table_af4636ec927230b5ac0bc45c2725443dd}\label{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_table_af4636ec927230b5ac0bc45c2725443dd} 
+{\bfseries Drop\+Table} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyślny wymagany do deserializacji JSON. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_table_a9ef5af75a79db283c1107676a7d9c034}{Drop\+Table}} (List$<$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_pool}{Drop\+Pool}} $>$ table)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_table}{Drop\+Table} z określoną listą pul przedmiotów. \end{DoxyCompactList}\item 
+Dictionary$<$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}, int $>$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_table_abbe8d01ad4cea41c124b376b90efe248}{Get\+Drops}} (int level)
+\begin{DoxyCompactList}\small\item\em Pobiera słownik przedmiotów, które mają wypaść, wraz z ich ilościami. Uwzględnia modyfikatory szansy na przedmioty z pasywnych umiejętności gracza. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_table_a739f4ae6a66a403a45d51f6e32261e1d}\label{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_table_a739f4ae6a66a403a45d51f6e32261e1d} 
+List$<$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_pool}{Drop\+Pool}} $>$ {\bfseries Table}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Lista pul przedmiotów, z których mogą wypaść przedmioty. Każda pula ma swoją własną tablicę szans na wypadnięcie przedmiotów. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentująca tabelę dropu, zawierającą listę pul przedmiotów, które mogą wypaść. Zapewnia metody do losowania przedmiotów z uwzględnieniem poziomu postaci i modyfikatorów szansy. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_table_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_table_a9ef5af75a79db283c1107676a7d9c034}\index{GodmistWPF.Items.Drops.DropTable@{GodmistWPF.Items.Drops.DropTable}!DropTable@{DropTable}}
+\index{DropTable@{DropTable}!GodmistWPF.Items.Drops.DropTable@{GodmistWPF.Items.Drops.DropTable}}
+\doxysubsubsection{\texorpdfstring{DropTable()}{DropTable()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_table_a9ef5af75a79db283c1107676a7d9c034} 
+Godmist\+WPF.\+Items.\+Drops.\+Drop\+Table.\+Drop\+Table (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_pool}{Drop\+Pool}} $>$}]{table}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_table}{Drop\+Table} z określoną listą pul przedmiotów. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & Lista pul przedmiotów.\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_table_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_table_abbe8d01ad4cea41c124b376b90efe248}\index{GodmistWPF.Items.Drops.DropTable@{GodmistWPF.Items.Drops.DropTable}!GetDrops@{GetDrops}}
+\index{GetDrops@{GetDrops}!GodmistWPF.Items.Drops.DropTable@{GodmistWPF.Items.Drops.DropTable}}
+\doxysubsubsection{\texorpdfstring{GetDrops()}{GetDrops()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_items_1_1_drops_1_1_drop_table_abbe8d01ad4cea41c124b376b90efe248} 
+Dictionary$<$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}, int $>$ Godmist\+WPF.\+Items.\+Drops.\+Drop\+Table.\+Get\+Drops (\begin{DoxyParamCaption}\item[{int}]{level}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pobiera słownik przedmiotów, które mają wypaść, wraz z ich ilościami. Uwzględnia modyfikatory szansy na przedmioty z pasywnych umiejętności gracza. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Poziom postaci, dla którego generowane są przedmioty.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Słownik zawierający przedmioty i ich ilości, które mają wypaść.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Items/\+Drops/Drop\+Table.\+cs\end{DoxyCompactItemize}

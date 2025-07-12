@@ -1,4 +1,5 @@
-﻿using DamageType = GodmistWPF.Enums.DamageType;
+
+using DamageType = GodmistWPF.Enums.DamageType;
 using Difficulty = GodmistWPF.Enums.Difficulty;
 using DungeonType = GodmistWPF.Enums.Dungeons.DungeonType;
 using ModifierType = GodmistWPF.Enums.Modifiers.ModifierType;
@@ -9,29 +10,43 @@ using StatusEffectFactory = GodmistWPF.Combat.Modifiers.PassiveEffects.StatusEff
 
 namespace GodmistWPF.Dungeons.Interactables;
 
+/// <summary>
+/// Klasa reprezentująca pułapkę w lochu, która może zadać obrażenia lub nałożyć efekty na gracza.
+/// </summary>
 public class Trap(Difficulty difficulty, DungeonField location, int trapType, DungeonType dungeonType)
 {
+    /// <summary>
+    /// Pobiera poziom trudności pułapki.
+    /// </summary>
     public Difficulty Difficulty { get; private set; } = difficulty;
+    /// <summary>
+    /// Pobiera typ pułapki.
+    /// </summary>
     public int TrapType { get; private set; } = trapType;
 
+    /// <summary>
+    /// Pobiera lokalizację pułapki w lochu.
+    /// </summary>
     public DungeonField Location { get; private set; } = location;
+    /// <summary>
+    /// Pobiera typ lochu, w którym znajduje się pułapka.
+    /// </summary>
     public DungeonType DungeonType { get; private set; } = dungeonType;
 
+    /// <summary>
+    /// Inicjalizuje nową instancję klasy <see cref="Trap"/> z losowym typem pułapki.
+    /// </summary>
+    /// <param name="difficulty">Poziom trudności pułapki.</param>
+    /// <param name="location">Lokalizacja pułapki w lochu.</param>
+    /// <param name="dungeonType">Typ lochu, w którym znajduje się pułapka.</param>
     public Trap(Difficulty difficulty, DungeonField location, DungeonType dungeonType) : 
-        this(difficulty, location, Random.Shared.Next(0, TrapMinigameManager.MinigameCount), dungeonType)
+        this(difficulty, location, Random.Shared.Next(0, 3), dungeonType)
     {
     }
 
-    public bool Activate()
-    {
-        return TrapMinigameManager.StartMinigame(Difficulty, TrapType);
-    }
-
-    public void Disarm()
-    {
-        Location.Clear();
-    }
-
+    /// <summary>
+    /// Aktywuje pułapkę, zadając obrażenia i/lub nakładając efekty na gracza w zależności od typu lochu.
+    /// </summary>
     public void Trigger()
     {
         switch (DungeonType)

@@ -1,0 +1,53 @@
+\doxysection{Godmist\+WPF.\+Combat.\+Modifiers Namespace Reference}
+\hypertarget{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers}{}\label{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers}\index{GodmistWPF.Combat.Modifiers@{GodmistWPF.Combat.Modifiers}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_modifiers_1_1_stat}{Stat}}
+\begin{DoxyCompactList}\small\item\em Klasa reprezentująca statystykę postaci, która może być modyfikowana przez różne efekty. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_a1ce9eed8240f2aaa37dc3b7221a146c6}{Stat\+Modifier}} (\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_modifiers_a248e2acb6131b347a5fb032f0469ce2b}{Modifier\+Type}} modifier\+Type, double value, string source, int duration=-\/1)
+\begin{DoxyCompactList}\small\item\em Klasa reprezentująca pojedynczy modyfikator statystyki. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_a1ce9eed8240f2aaa37dc3b7221a146c6}\index{GodmistWPF.Combat.Modifiers@{GodmistWPF.Combat.Modifiers}!StatModifier@{StatModifier}}
+\index{StatModifier@{StatModifier}!GodmistWPF.Combat.Modifiers@{GodmistWPF.Combat.Modifiers}}
+\doxysubsubsection{\texorpdfstring{StatModifier()}{StatModifier()}}
+{\footnotesize\ttfamily \label{namespace_godmist_w_p_f_1_1_combat_1_1_modifiers_a1ce9eed8240f2aaa37dc3b7221a146c6} 
+class Godmist\+WPF.\+Combat.\+Modifiers.\+Stat\+Modifier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_modifiers_a248e2acb6131b347a5fb032f0469ce2b}{Modifier\+Type}}}]{modifier\+Type}{, }\item[{double}]{value}{, }\item[{string}]{source}{, }\item[{int}]{duration}{ = {\ttfamily -\/1}}\end{DoxyParamCaption})}
+
+
+
+Klasa reprezentująca pojedynczy modyfikator statystyki. 
+
+Modyfikator może zmieniać wartość statystyki w różny sposób (dodatkowo, mnożnikowo itp.) i posiada określony czas trwania. Wartość -\/1 czasu trwania oznacza modyfikator nieskończony. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em modifier\+Type} & Typ modyfikatora (dodawanie, mnożenie itp.)\\
+\hline
+{\em value} & Wartość modyfikatora\\
+\hline
+{\em source} & Źródło modyfikatora (np. nazwa umiejętności lub efektu)\\
+\hline
+{\em duration} & Czas trwania modyfikatora w turach (-\/1 = nieskończony)\\
+\hline
+\end{DoxyParams}
+Pobiera typ modyfikatora (dodawanie, mnożenie itp.)
+
+Pobiera wartość modyfikatora.
+
+Pobiera pozostały czas trwania modyfikatora w turach.
+
+Liczba tur pozostałych do wygaśnięcia modyfikatora. Wartość -\/1 oznacza modyfikator nieskończony. 
+
+Pobiera źródło modyfikatora (np. nazwę umiejętności lub efektu).
+
+Zmniejsza czas trwania modyfikatora o jedną turę.
+
+Jeśli czas trwania wynosi 0, modyfikator powinien zostać usunięty. Modyfikatory z czasem trwania -\/1 (nieskończone) nie są modyfikowane. 

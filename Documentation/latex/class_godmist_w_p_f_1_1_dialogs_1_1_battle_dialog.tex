@@ -1,0 +1,138 @@
+\doxysection{Godmist\+WPF.\+Dialogs.\+Battle\+Dialog Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_battle_dialog}{}\label{class_godmist_w_p_f_1_1_dialogs_1_1_battle_dialog}\index{GodmistWPF.Dialogs.BattleDialog@{GodmistWPF.Dialogs.BattleDialog}}
+
+
+Okno dialogowe reprezentujące interfejs użytkownika walki. Wyświetla stan walki, umożliwia używanie umiejętności i przedmiotów oraz pokazuje rezultaty walki.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Dialogs.\+Battle\+Dialog\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_godmist_w_p_f_1_1_dialogs_1_1_battle_dialog}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_dialogs_1_1_battle_dialog_a64de2a398b89b86a35dc2099d8f94d44}{Battle\+Dialog}} (Battle battle)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_dialogs_1_1_battle_dialog}{Battle\+Dialog} z określoną walką. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_battle_dialog_a6c265dd67934d726299c4e05ee1ad512}\label{class_godmist_w_p_f_1_1_dialogs_1_1_battle_dialog_a6c265dd67934d726299c4e05ee1ad512} 
+void {\bfseries Update\+Battle\+Display} ()
+\begin{DoxyCompactList}\small\item\em Aktualizuje wyświetlane informacje o stanie walki, w tym zdrowie, zasoby i punkty akcji. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_dialogs_1_1_battle_dialog_ae036365c76750dd652d315bacb1ded28}{End\+Battle}} (int result)
+\begin{DoxyCompactList}\small\item\em Kończy walkę z określonym rezultatem i wyświetla odpowiedni komunikat. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_dialogs_1_1_battle_dialog_a1b188944a9ddc92dc09d44163b48869c}{Add\+To\+Battle\+Log}} (string message, Brush color=null)
+\begin{DoxyCompactList}\small\item\em Dodaje wiadomość do dziennika walki z opcjonalnym kolorem tekstu. Automatycznie formatuje wiadomości na podstawie ich zawartości. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_dialogs_1_1_battle_dialog_a6c288b6a6cc1cb82892955ebba200472}{Show\+Rewards}} (int gold, int exp, int honor, List$<$ Key\+Value\+Pair$<$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}, int $>$ $>$ items)
+\begin{DoxyCompactList}\small\item\em Wyświetla panel z nagrodami otrzymanymi po walce. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_godmist_w_p_f_1_1_dialogs_1_1_battle_dialog_a028464cb521a9f3c16d1996d1a4a41cb}{On\+Closed}} (Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Wywoływana, gdy okno dialogowe jest zamykane. Zapewnia poprawne zakończenie walki i zwolnienie zasobów. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Okno dialogowe reprezentujące interfejs użytkownika walki. Wyświetla stan walki, umożliwia używanie umiejętności i przedmiotów oraz pokazuje rezultaty walki. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_battle_dialog_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_battle_dialog_a64de2a398b89b86a35dc2099d8f94d44}\index{GodmistWPF.Dialogs.BattleDialog@{GodmistWPF.Dialogs.BattleDialog}!BattleDialog@{BattleDialog}}
+\index{BattleDialog@{BattleDialog}!GodmistWPF.Dialogs.BattleDialog@{GodmistWPF.Dialogs.BattleDialog}}
+\doxysubsubsection{\texorpdfstring{BattleDialog()}{BattleDialog()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_dialogs_1_1_battle_dialog_a64de2a398b89b86a35dc2099d8f94d44} 
+Godmist\+WPF.\+Dialogs.\+Battle\+Dialog.\+Battle\+Dialog (\begin{DoxyParamCaption}\item[{Battle}]{battle}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_dialogs_1_1_battle_dialog}{Battle\+Dialog} z określoną walką. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em battle} & Obiekt walki, który ma być wyświetlany w oknie dialogowym.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Null\+Exception} & Występuje, gdy parametr {\itshape battle}  jest równy null.\\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_battle_dialog_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_battle_dialog_a1b188944a9ddc92dc09d44163b48869c}\index{GodmistWPF.Dialogs.BattleDialog@{GodmistWPF.Dialogs.BattleDialog}!AddToBattleLog@{AddToBattleLog}}
+\index{AddToBattleLog@{AddToBattleLog}!GodmistWPF.Dialogs.BattleDialog@{GodmistWPF.Dialogs.BattleDialog}}
+\doxysubsubsection{\texorpdfstring{AddToBattleLog()}{AddToBattleLog()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_dialogs_1_1_battle_dialog_a1b188944a9ddc92dc09d44163b48869c} 
+void Godmist\+WPF.\+Dialogs.\+Battle\+Dialog.\+Add\+To\+Battle\+Log (\begin{DoxyParamCaption}\item[{string}]{message}{, }\item[{Brush}]{color}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dodaje wiadomość do dziennika walki z opcjonalnym kolorem tekstu. Automatycznie formatuje wiadomości na podstawie ich zawartości. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Treść wiadomości do wyświetlenia.\\
+\hline
+{\em color} & Kolor tekstu wiadomości. Jeśli nie podano, kolor jest wybierany automatycznie.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_battle_dialog_ae036365c76750dd652d315bacb1ded28}\index{GodmistWPF.Dialogs.BattleDialog@{GodmistWPF.Dialogs.BattleDialog}!EndBattle@{EndBattle}}
+\index{EndBattle@{EndBattle}!GodmistWPF.Dialogs.BattleDialog@{GodmistWPF.Dialogs.BattleDialog}}
+\doxysubsubsection{\texorpdfstring{EndBattle()}{EndBattle()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_dialogs_1_1_battle_dialog_ae036365c76750dd652d315bacb1ded28} 
+void Godmist\+WPF.\+Dialogs.\+Battle\+Dialog.\+End\+Battle (\begin{DoxyParamCaption}\item[{int}]{result}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Kończy walkę z określonym rezultatem i wyświetla odpowiedni komunikat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & Wynik walki\+: 0 -\/ zwycięstwo, 1 -\/ porażka, 2 -\/ ucieczka.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_battle_dialog_a028464cb521a9f3c16d1996d1a4a41cb}\index{GodmistWPF.Dialogs.BattleDialog@{GodmistWPF.Dialogs.BattleDialog}!OnClosed@{OnClosed}}
+\index{OnClosed@{OnClosed}!GodmistWPF.Dialogs.BattleDialog@{GodmistWPF.Dialogs.BattleDialog}}
+\doxysubsubsection{\texorpdfstring{OnClosed()}{OnClosed()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_dialogs_1_1_battle_dialog_a028464cb521a9f3c16d1996d1a4a41cb} 
+override void Godmist\+WPF.\+Dialogs.\+Battle\+Dialog.\+On\+Closed (\begin{DoxyParamCaption}\item[{Event\+Args}]{e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Wywoływana, gdy okno dialogowe jest zamykane. Zapewnia poprawne zakończenie walki i zwolnienie zasobów. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Dane zdarzenia zamknięcia okna.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_godmist_w_p_f_1_1_dialogs_1_1_battle_dialog_a6c288b6a6cc1cb82892955ebba200472}\index{GodmistWPF.Dialogs.BattleDialog@{GodmistWPF.Dialogs.BattleDialog}!ShowRewards@{ShowRewards}}
+\index{ShowRewards@{ShowRewards}!GodmistWPF.Dialogs.BattleDialog@{GodmistWPF.Dialogs.BattleDialog}}
+\doxysubsubsection{\texorpdfstring{ShowRewards()}{ShowRewards()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_dialogs_1_1_battle_dialog_a6c288b6a6cc1cb82892955ebba200472} 
+void Godmist\+WPF.\+Dialogs.\+Battle\+Dialog.\+Show\+Rewards (\begin{DoxyParamCaption}\item[{int}]{gold}{, }\item[{int}]{exp}{, }\item[{int}]{honor}{, }\item[{List$<$ Key\+Value\+Pair$<$ \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item}{IItem}}, int $>$ $>$}]{items}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wyświetla panel z nagrodami otrzymanymi po walce. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gold} & Ilość otrzymanego złota.\\
+\hline
+{\em exp} & Ilość otrzymanego doświadczenia.\\
+\hline
+{\em honor} & Ilość otrzymanej chwały.\\
+\hline
+{\em items} & Lista otrzymanych przedmiotów wraz z ich ilościami.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dialogs/Battle\+Dialog.\+xaml.\+cs\end{DoxyCompactItemize}

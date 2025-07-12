@@ -1,0 +1,168 @@
+\doxysection{Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Do\+TStatus\+Effect Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect}{}\label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect}}
+
+
+Efekt umiejętności, który nakłada na cel efekt obrażeń odnoszonych z upływem czasu (DoT).  
+
+
+Inheritance diagram for Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Do\+TStatus\+Effect\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_a5740263050962a3914f94c37ac44f83a}{Inflict\+Do\+TStatus\+Effect}} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect}{Inflict\+Do\+TStatus\+Effect}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_ad7f8cb729cd375d84735733d47664315}{Inflict\+Do\+TStatus\+Effect}} (Skill\+Target target, int duration, double strength, string do\+TType, double chance)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect}{Inflict\+Do\+TStatus\+Effect}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_a707f58f5ed1b10fb6acfd9fc160ff0b8}{Execute}} (Character caster, Character enemy, string source)
+\begin{DoxyCompactList}\small\item\em Wykonuje efekt nałożenia obrażeń odnoszonych z upływem czasu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Skill\+Target \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_a5d5c3f9dbe408e9796e0fbc256b2b327}{Target}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia cel efektu (własna postać lub przeciwnik). \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_a785443697263638652dfa9dd54dbe943}\label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_a785443697263638652dfa9dd54dbe943} 
+int {\bfseries Duration}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia czas trwania efektu w turach. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_a6610e485a9b06837b857b524b75e2f1f}{Strength}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia siłę efektu DoT. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_affaa1b4c33a2453cefbb827d289b10ea}{Do\+TType}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia typ efektu DoT. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_a8c9beba851626c5cdd0d957c6080da31}{Chance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia szansę na nałożenie efektu (0.\+0-\/1.\+0). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Efekt umiejętności, który nakłada na cel efekt obrażeń odnoszonych z upływem czasu (DoT). 
+
+Może powodować różne typy obrażeń, takie jak krwawienie, zatrucie czy oparzenia. Efekt działa przez określoną liczbę tur i zadaje obrażenia na początku każdej tury. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_a5740263050962a3914f94c37ac44f83a}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect}!InflictDoTStatusEffect@{InflictDoTStatusEffect}}
+\index{InflictDoTStatusEffect@{InflictDoTStatusEffect}!GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect}}
+\doxysubsubsection{\texorpdfstring{InflictDoTStatusEffect()}{InflictDoTStatusEffect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_a5740263050962a3914f94c37ac44f83a} 
+Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Do\+TStatus\+Effect.\+Inflict\+Do\+TStatus\+Effect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect}{Inflict\+Do\+TStatus\+Effect}. 
+
+Konstruktor używany przez mechanizm deserializacji. \Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_ad7f8cb729cd375d84735733d47664315}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect}!InflictDoTStatusEffect@{InflictDoTStatusEffect}}
+\index{InflictDoTStatusEffect@{InflictDoTStatusEffect}!GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect}}
+\doxysubsubsection{\texorpdfstring{InflictDoTStatusEffect()}{InflictDoTStatusEffect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_ad7f8cb729cd375d84735733d47664315} 
+Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Do\+TStatus\+Effect.\+Inflict\+Do\+TStatus\+Effect (\begin{DoxyParamCaption}\item[{Skill\+Target}]{target}{, }\item[{int}]{duration}{, }\item[{double}]{strength}{, }\item[{string}]{do\+TType}{, }\item[{double}]{chance}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect}{Inflict\+Do\+TStatus\+Effect}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Cel efektu.\\
+\hline
+{\em duration} & Czas trwania efektu w turach.\\
+\hline
+{\em strength} & Siła efektu DoT (mnożnik ataku).\\
+\hline
+{\em do\+TType} & Typ efektu DoT (Bleed, Poison lub Burn).\\
+\hline
+{\em chance} & Szansa na nałożenie efektu (0.\+0-\/1.\+0).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Wyrzucany, gdy podano nieprawidłowy typ efektu DoT.\\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_a707f58f5ed1b10fb6acfd9fc160ff0b8}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect}!Execute@{Execute}}
+\index{Execute@{Execute}!GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_a707f58f5ed1b10fb6acfd9fc160ff0b8} 
+void Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Do\+TStatus\+Effect.\+Execute (\begin{DoxyParamCaption}\item[{Character}]{caster}{, }\item[{Character}]{enemy}{, }\item[{string}]{source}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wykonuje efekt nałożenia obrażeń odnoszonych z upływem czasu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caster} & Postać rzucająca umiejętność.\\
+\hline
+{\em enemy} & Przeciwnik, względem którego określany jest cel.\\
+\hline
+{\em source} & Źródło efektu (nazwa umiejętności).\\
+\hline
+\end{DoxyParams}
+
+
+Oblicza siłę efektu na podstawie ataku postaci i nakłada efekt na cel, o ile ten nie jest na niego odporny. 
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_combat_1_1_skills_1_1_i_active_skill_effect_af280a7f57f091d04800b2e9f3be69059}{Godmist\+WPF.\+Combat.\+Skills.\+IActive\+Skill\+Effect}}.
+
+
+
+\label{doc-property-members}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_a8c9beba851626c5cdd0d957c6080da31}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect}!Chance@{Chance}}
+\index{Chance@{Chance}!GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect}}
+\doxysubsubsection{\texorpdfstring{Chance}{Chance}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_a8c9beba851626c5cdd0d957c6080da31} 
+double Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Do\+TStatus\+Effect.\+Chance\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia szansę na nałożenie efektu (0.\+0-\/1.\+0). 
+
+W przypadku używania na przeciwniku, szansa jest modyfikowana przez jego odporności. \Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_affaa1b4c33a2453cefbb827d289b10ea}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect}!DoTType@{DoTType}}
+\index{DoTType@{DoTType}!GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect}}
+\doxysubsubsection{\texorpdfstring{DoTType}{DoTType}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_affaa1b4c33a2453cefbb827d289b10ea} 
+string Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Do\+TStatus\+Effect.\+Do\+TType\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia typ efektu DoT. 
+
+Dopuszczalne wartości\+: "{}\+Bleed"{}, "{}\+Poison"{}, "{}\+Burn"{} (wielkość liter ma znaczenie).\Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_a6610e485a9b06837b857b524b75e2f1f}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect}!Strength@{Strength}}
+\index{Strength@{Strength}!GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect}}
+\doxysubsubsection{\texorpdfstring{Strength}{Strength}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_a6610e485a9b06837b857b524b75e2f1f} 
+double Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Do\+TStatus\+Effect.\+Strength\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia siłę efektu DoT. 
+
+Mnożnik stosowany do wartości ataku postaci rzucającej umiejętność. \Hypertarget{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_a5d5c3f9dbe408e9796e0fbc256b2b327}\index{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect}!Target@{Target}}
+\index{Target@{Target}!GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect@{GodmistWPF.Combat.Skills.ActiveSkillEffects.InflictDoTStatusEffect}}
+\doxysubsubsection{\texorpdfstring{Target}{Target}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_combat_1_1_skills_1_1_active_skill_effects_1_1_inflict_do_t_status_effect_a5d5c3f9dbe408e9796e0fbc256b2b327} 
+Skill\+Target Godmist\+WPF.\+Combat.\+Skills.\+Active\+Skill\+Effects.\+Inflict\+Do\+TStatus\+Effect.\+Target\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia cel efektu (własna postać lub przeciwnik). 
+
+
+
+Implements \mbox{\hyperlink{interface_godmist_w_p_f_1_1_combat_1_1_skills_1_1_i_active_skill_effect_a6e2adc6221f059bf5b9259f5ecacb969}{Godmist\+WPF.\+Combat.\+Skills.\+IActive\+Skill\+Effect}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Combat/\+Skills/\+Active\+Skill\+Effects/Inflict\+Do\+TStatus\+Effect.\+cs\end{DoxyCompactItemize}

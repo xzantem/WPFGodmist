@@ -1,0 +1,69 @@
+\doxysection{Godmist\+WPF.\+Utilities.\+Data\+Persistance.\+Save\+Data Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_data_persistance_1_1_save_data}{}\label{class_godmist_w_p_f_1_1_utilities_1_1_data_persistance_1_1_save_data}\index{GodmistWPF.Utilities.DataPersistance.SaveData@{GodmistWPF.Utilities.DataPersistance.SaveData}}
+
+
+Klasa reprezentująca dane gry, które mogą być zapisane lub wczytane. Zawiera wszystkie niezbędne informacje do przywrócenia stanu gry.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_data_persistance_1_1_save_data_a1c0c12efb4a5b5c33e2e08b7c728980e}\label{class_godmist_w_p_f_1_1_utilities_1_1_data_persistance_1_1_save_data_a1c0c12efb4a5b5c33e2e08b7c728980e} 
+{\bfseries Save\+Data} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_utilities_1_1_data_persistance_1_1_save_data}{Save\+Data} z domyślnymi wartościami. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_utilities_1_1_data_persistance_1_1_save_data_aa1df1e9ac1953f6cf440e2996f239a24}{Save\+Data}} (\mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_player_1_1_player_character}{Player\+Character}} player, \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_a5ef4afc16e3b4f21dc854d624714c7ee}{Difficulty}} difficulty, List$<$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_quest}{Quest}} $>$\mbox{[}$\,$\mbox{]} quests, Dictionary$<$ \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_dungeons_a15f971492ab6ad201d47cdfc14c3defe}{Dungeon\+Type}}, int $>$ boss\+Quest\+Progress, \mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_town}{Town}} town)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_utilities_1_1_data_persistance_1_1_save_data}{Save\+Data} z określonymi wartościami. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_data_persistance_1_1_save_data_a8346855c5f2109b390498bc6b2824f53}\label{class_godmist_w_p_f_1_1_utilities_1_1_data_persistance_1_1_save_data_a8346855c5f2109b390498bc6b2824f53} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_player_1_1_player_character}{Player\+Character}} {\bfseries Player}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia postać gracza. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_data_persistance_1_1_save_data_a6a251f065ed87d90fa2921da5cc342be}\label{class_godmist_w_p_f_1_1_utilities_1_1_data_persistance_1_1_save_data_a6a251f065ed87d90fa2921da5cc342be} 
+\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_a5ef4afc16e3b4f21dc854d624714c7ee}{Difficulty}} {\bfseries Difficulty}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia poziom trudności gry. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_data_persistance_1_1_save_data_ada33c7169f8e39060673d0d72105f2e5}\label{class_godmist_w_p_f_1_1_utilities_1_1_data_persistance_1_1_save_data_ada33c7169f8e39060673d0d72105f2e5} 
+List$<$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_quest}{Quest}} $>$\mbox{[}$\,$\mbox{]} {\bfseries Quests}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia tablicę list zadań. Indeks 0\+: Zadania główne Indeks 1\+: Losowe zadania poboczne Indeks 2\+: Zadania bossów. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_data_persistance_1_1_save_data_aee9d5e3cd3509162e283513fc9ca742c}\label{class_godmist_w_p_f_1_1_utilities_1_1_data_persistance_1_1_save_data_aee9d5e3cd3509162e283513fc9ca742c} 
+Dictionary$<$ \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_dungeons_a15f971492ab6ad201d47cdfc14c3defe}{Dungeon\+Type}}, int $>$ {\bfseries Boss\+Quest\+Progress}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia słownik śledzący postęp w zadaniach bossów. Klucz to typ lochu, a wartość to aktualny postęp. \end{DoxyCompactList}\item 
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_data_persistance_1_1_save_data_a74706ae92293777fe644312af82acd11}\label{class_godmist_w_p_f_1_1_utilities_1_1_data_persistance_1_1_save_data_a74706ae92293777fe644312af82acd11} 
+\mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_town}{Town}} {\bfseries Town}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia stan miasta (Arungard). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentująca dane gry, które mogą być zapisane lub wczytane. Zawiera wszystkie niezbędne informacje do przywrócenia stanu gry. 
+
+\label{doc-constructors}
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_data_persistance_1_1_save_data_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_data_persistance_1_1_save_data_aa1df1e9ac1953f6cf440e2996f239a24}\index{GodmistWPF.Utilities.DataPersistance.SaveData@{GodmistWPF.Utilities.DataPersistance.SaveData}!SaveData@{SaveData}}
+\index{SaveData@{SaveData}!GodmistWPF.Utilities.DataPersistance.SaveData@{GodmistWPF.Utilities.DataPersistance.SaveData}}
+\doxysubsubsection{\texorpdfstring{SaveData()}{SaveData()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_utilities_1_1_data_persistance_1_1_save_data_aa1df1e9ac1953f6cf440e2996f239a24} 
+Godmist\+WPF.\+Utilities.\+Data\+Persistance.\+Save\+Data.\+Save\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_characters_1_1_player_1_1_player_character}{Player\+Character}}}]{player}{, }\item[{\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_a5ef4afc16e3b4f21dc854d624714c7ee}{Difficulty}}}]{difficulty}{, }\item[{List$<$ \mbox{\hyperlink{class_godmist_w_p_f_1_1_quests_1_1_quest}{Quest}} $>$\mbox{[}$\,$\mbox{]}}]{quests}{, }\item[{Dictionary$<$ \mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_dungeons_a15f971492ab6ad201d47cdfc14c3defe}{Dungeon\+Type}}, int $>$}]{boss\+Quest\+Progress}{, }\item[{\mbox{\hyperlink{class_godmist_w_p_f_1_1_towns_1_1_town}{Town}}}]{town}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_godmist_w_p_f_1_1_utilities_1_1_data_persistance_1_1_save_data}{Save\+Data} z określonymi wartościami. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Postać gracza do zapisania.\\
+\hline
+{\em difficulty} & Poziom trudności gry.\\
+\hline
+{\em quests} & Tablica list zadań do zapisania.\\
+\hline
+{\em boss\+Quest\+Progress} & Słownik postępu zadań bossów.\\
+\hline
+{\em town} & Stan miasta do zapisania.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Utilities/\+Data\+Persistance/Save\+Data.\+cs\end{DoxyCompactItemize}

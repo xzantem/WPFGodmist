@@ -1,7 +1,3 @@
-﻿
-
-using ConsoleGodmist;
-using ConsoleGodmist.TextService;
 using GodmistWPF.Characters.Player;
 using GodmistWPF.Dungeons;
 using GodmistWPF.Enums.Dungeons;
@@ -12,11 +8,24 @@ using GodmistWPF.Utilities.DataPersistance;
 
 namespace GodmistWPF.Towns
 {
+    /// <summary>
+    /// Reprezentuje miasto w grze, zawierające NPC i umożliwiające dostęp do różnych lokacji.
+    /// </summary>
     public class Town
     {
+        /// <summary>
+        /// Pobiera lub ustawia listę NPC w mieście.
+        /// </summary>
         public List<NPC> NPCs { get; set; }
+        /// <summary>
+        /// Pobiera lub ustawia nazwę miasta.
+        /// </summary>
         public string TownName { get; set; }
 
+        /// <summary>
+        /// Inicjalizuje nową instancję klasy <see cref="Town"/> z określoną nazwą.
+        /// </summary>
+        /// <param name="name">Nazwa miasta.</param>
         public Town(string name)
         {
             NPCs = new List<NPC>
@@ -27,7 +36,20 @@ namespace GodmistWPF.Towns
             };
             TownName = name;
         }
+        /// <summary>
+        /// Inicjalizuje nową instancję klasy <see cref="Town"/> bez parametrów.
+        /// </summary>
+        /// <remarks>
+        /// Konstruktor używany przez mechanizmy deserializacji.
+        /// </remarks>
         public Town() {}
+        /// <summary>
+        /// Wybiera loch do eksploracji na podstawie interfejsu użytkownika.
+        /// </summary>
+        /// <returns>Wybrany loch do eksploracji.</returns>
+        /// <remarks>
+        /// W wersji WPF wybór jest dokonywany przez interfejs użytkownika.
+        /// </remarks>
         private Dungeon ChooseDungeon() {
             // WPF handles all UI, so all AnsiConsole calls are removed
             string[] dungeonChoices = {

@@ -1,0 +1,232 @@
+<Window x:Class="GodmistWPF.Dialogs.PotionCraftingDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:GodmistWPF.Dialogs"
+        mc:Ignorable="d"
+        Title="Potion Crafting" 
+        Height="600" 
+        Width="500"
+        WindowStartupLocation="CenterOwner"
+        Style="{StaticResource MaterialDesignWindow}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary>
+                    <ResourceDictionary.MergedDictionaries>
+                        <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Dark.xaml" />
+                        <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                        <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+                        <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+                    </ResourceDictionary.MergedDictionaries>
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+            
+            <!-- Button Styles -->
+            <Style TargetType="Button" BasedOn="{StaticResource MaterialDesignFlatButton}">
+                <Setter Property="Margin" Value="8,4"/>
+                <Setter Property="Padding" Value="16,8"/>
+                <Setter Property="Background" Value="{DynamicResource PrimaryHueMidBrush}"/>
+                <Setter Property="Foreground" Value="{DynamicResource PrimaryHueMidForegroundBrush}"/>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background" Value="{DynamicResource PrimaryHueLightBrush}"/>
+                        <Setter Property="Foreground" Value="{DynamicResource PrimaryHueLightForegroundBrush}"/>
+                    </Trigger>
+                    <Trigger Property="IsEnabled" Value="False">
+                        <Setter Property="Opacity" Value="0.6"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            
+            <Style TargetType="Button" x:Key="OutlinedButton" BasedOn="{StaticResource MaterialDesignOutlinedButton}">
+                <Setter Property="Margin" Value="8,4"/>
+                <Setter Property="Padding" Value="16,8"/>
+                <Setter Property="BorderBrush" Value="{DynamicResource PrimaryHueMidBrush}"/>
+                <Setter Property="Foreground" Value="{DynamicResource PrimaryHueMidBrush}"/>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background" Value="{DynamicResource PrimaryHueLightBrush}" />
+                        <Setter Property="Foreground" Value="{DynamicResource PrimaryHueLightForegroundBrush}" />
+                    </Trigger>
+                    <Trigger Property="IsEnabled" Value="False">
+                        <Setter Property="Opacity" Value="0.6"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            
+            <!-- Custom styles for dark theme -->
+            <Style TargetType="ListBox" BasedOn="{StaticResource MaterialDesignListBox}">
+                <Setter Property="Background" Value="{DynamicResource MaterialDesignBackground}"/>
+                <Setter Property="BorderBrush" Value="{DynamicResource MaterialDesignDivider}"/>
+                <Setter Property="BorderThickness" Value="1"/>
+                <Setter Property="Padding" Value="4"/>
+            </Style>
+            
+            <Style TargetType="ComboBox" BasedOn="{StaticResource MaterialDesignFloatingHintComboBox}">
+                <Setter Property="Background" Value="{DynamicResource MaterialDesignBackground}"/>
+                <Setter Property="BorderBrush" Value="{DynamicResource MaterialDesignDivider}"/>
+                <Setter Property="Foreground" Value="{DynamicResource MaterialDesignBody}"/>
+            </Style>
+            
+            <Style TargetType="TextBox" BasedOn="{StaticResource MaterialDesignFloatingHintTextBox}">
+                <Setter Property="Background" Value="{DynamicResource MaterialDesignBackground}"/>
+                <Setter Property="BorderBrush" Value="{DynamicResource MaterialDesignDivider}"/>
+                <Setter Property="Foreground" Value="{DynamicResource MaterialDesignBody}"/>
+            </Style>
+        </ResourceDictionary>
+    </Window.Resources>
+    
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Header -->
+        <TextBlock Grid.Row="0" 
+                   Text="Potion Crafting" 
+                   Style="{StaticResource MaterialDesignHeadline5TextBlock}"
+                   Margin="0,0,0,16"/>
+        
+        <!-- ScrollViewer to handle overflow -->
+        <ScrollViewer Grid.Row="1" 
+                      VerticalScrollBarVisibility="Auto"
+                      HorizontalScrollBarVisibility="Disabled"
+                      Margin="0,0,0,16">
+            <StackPanel>
+                <!-- Selected Components -->
+                <TextBlock x:Name="SelectedComponentsText"
+                           Text="Selected Components (0/3):" 
+                           Style="{StaticResource MaterialDesignSubtitle2TextBlock}"
+                           Margin="0,0,0,4"/>
+                
+                <ListBox x:Name="SelectedComponentsList" 
+                         Style="{StaticResource MaterialDesignListBox}"
+                         MinHeight="80" 
+                         MaxHeight="120"
+                         Margin="0,0,0,8"
+                         SelectionMode="Single"
+                         SelectionChanged="SelectedComponentsList_SelectionChanged">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding EffectDescription}" 
+                                       TextWrapping="Wrap"
+                                       Margin="4,2"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                
+                <Button x:Name="RemoveComponentButton" 
+                        Content="Remove Selected Component" 
+                        Style="{StaticResource OutlinedButton}"
+                        HorizontalAlignment="Left"
+                        Margin="0,0,0,16"
+                        Click="RemoveComponentButton_Click"
+                        IsEnabled="False"/>
+                
+                <!-- Available Components -->
+                <TextBlock Text="Available Components:" 
+                           Style="{StaticResource MaterialDesignSubtitle2TextBlock}"
+                           Margin="0,0,0,4"/>
+                
+                <ComboBox x:Name="AvailableComponentsComboBox" 
+                          Style="{StaticResource MaterialDesignFloatingHintComboBox}"
+                          DisplayMemberPath="EffectDescription"
+                          Margin="0,0,0,16"
+                          SelectionChanged="AvailableComponentsComboBox_SelectionChanged">
+                    <ComboBox.ItemContainerStyle>
+                        <Style TargetType="ComboBoxItem">
+                            <Setter Property="Padding" Value="8,4"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding HasRequiredMaterials}" Value="False">
+                                    <Setter Property="IsEnabled" Value="False"/>
+                                    <Setter Property="Opacity" Value="0.6"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ComboBox.ItemContainerStyle>
+                </ComboBox>
+                
+                <!-- Catalyst Selection -->
+                <TextBlock Text="Catalyst (Optional):" 
+                           Style="{StaticResource MaterialDesignSubtitle2TextBlock}"
+                           Margin="0,0,0,4"/>
+                
+                <ComboBox x:Name="CatalystComboBox" 
+                          Style="{StaticResource MaterialDesignFloatingHintComboBox}"
+                          DisplayMemberPath="DescriptionText"
+                          Margin="0,0,0,16"
+                          SelectedIndex="0"
+                          SelectionChanged="CatalystComboBox_SelectionChanged">
+                    <ComboBox.ItemContainerStyle>
+                        <Style TargetType="ComboBoxItem">
+                            <Setter Property="Padding" Value="8,4"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding HasRequiredMaterial}" Value="False">
+                                    <Setter Property="IsEnabled" Value="False"/>
+                                    <Setter Property="Opacity" Value="0.6"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ComboBox.ItemContainerStyle>
+                </ComboBox>
+                
+                <!-- Potion Name -->
+                <TextBlock Text="Potion Name:" 
+                           Style="{StaticResource MaterialDesignSubtitle2TextBlock}"
+                           Margin="0,0,0,4"/>
+                
+                <TextBox x:Name="PotionNameTextBox" 
+                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                         materialDesign:HintAssist.Hint="Enter a name for your potion"
+                         Margin="0,0,0,16"
+                         TextChanged="PotionNameTextBox_TextChanged"/>
+                
+                <!-- Status Message -->
+                <Border Background="{DynamicResource MaterialDesignToolBarBackground}"
+                        CornerRadius="4"
+                        Margin="0,16,0,0"
+                        Padding="12,8"
+                        Visibility="{Binding ElementName=StatusText, Path=Text}">
+                    <TextBlock x:Name="StatusText" 
+                               Style="{StaticResource MaterialDesignBody2TextBlock}"
+                               Foreground="{DynamicResource MaterialDesignValidationErrorBrush}"
+                               TextWrapping="Wrap"/>
+                </Border>
+            </StackPanel>
+        </ScrollViewer>
+        
+        <!-- Buttons -->
+        <StackPanel Grid.Row="2" 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Right"
+                    Margin="0,16,0,0">
+            <Button x:Name="CancelButton" 
+                    Content="CANCEL"
+                    Style="{StaticResource OutlinedButton}"
+                    Click="CancelButton_Click"
+                    Margin="8,0,4,0"/>
+            <Button x:Name="CraftButton" 
+                    Content="CRAFT"
+                    Style="{StaticResource MaterialDesignRaisedButton}"
+                    Background="{DynamicResource PrimaryHueMidBrush}"
+                    Foreground="{DynamicResource PrimaryHueMidForegroundBrush}"
+                    Margin="4,0,0,0"
+                    Click="CraftButton_Click"
+                    IsEnabled="False">
+                <materialDesign:ButtonAssist.CornerRadius>2</materialDesign:ButtonAssist.CornerRadius>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

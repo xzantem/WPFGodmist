@@ -1,0 +1,101 @@
+\doxysection{Godmist\+WPF.\+Utilities.\+Json\+Converters.\+Equipment\+Part\+Converter Class Reference}
+\hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_equipment_part_converter}{}\label{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_equipment_part_converter}\index{GodmistWPF.Utilities.JsonConverters.EquipmentPartConverter@{GodmistWPF.Utilities.JsonConverters.EquipmentPartConverter}}
+
+
+Konwerter JSON do serializacji i deserializacji obiektów implementujących interfejs \doxylink{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equipment_part}{IEquipment\+Part}. Obsługuje różne typy części wyposażenia i zapisuje ich typ w pliku JSON.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Utilities.\+Json\+Converters.\+Equipment\+Part\+Converter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_equipment_part_converter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override bool \mbox{\hyperlink{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_equipment_part_converter_aa65606386ed147ca7db90a661ea443b7}{Can\+Convert}} (Type object\+Type)
+\begin{DoxyCompactList}\small\item\em Określa, czy konwerter może obsłużyć określony typ. \end{DoxyCompactList}\item 
+override object \mbox{\hyperlink{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_equipment_part_converter_a72b32b82c409445247b799cf5356a4e9}{Read\+Json}} (Json\+Reader reader, Type object\+Type, object existing\+Value, Json\+Serializer serializer)
+\begin{DoxyCompactList}\small\item\em Deserializuje obiekt JSON do odpowiedniego typu części wyposażenia. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_equipment_part_converter_af671e2c96ea3265ecdedd687c70b34c5}{Write\+Json}} (Json\+Writer writer, object value, Json\+Serializer serializer)
+\begin{DoxyCompactList}\small\item\em Serializuje obiekt części wyposażenia do formatu JSON. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Konwerter JSON do serializacji i deserializacji obiektów implementujących interfejs \doxylink{interface_godmist_w_p_f_1_1_items_1_1_equippable_1_1_i_equipment_part}{IEquipment\+Part}. Obsługuje różne typy części wyposażenia i zapisuje ich typ w pliku JSON. 
+
+\label{doc-func-members}
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_equipment_part_converter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_equipment_part_converter_aa65606386ed147ca7db90a661ea443b7}\index{GodmistWPF.Utilities.JsonConverters.EquipmentPartConverter@{GodmistWPF.Utilities.JsonConverters.EquipmentPartConverter}!CanConvert@{CanConvert}}
+\index{CanConvert@{CanConvert}!GodmistWPF.Utilities.JsonConverters.EquipmentPartConverter@{GodmistWPF.Utilities.JsonConverters.EquipmentPartConverter}}
+\doxysubsubsection{\texorpdfstring{CanConvert()}{CanConvert()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_equipment_part_converter_aa65606386ed147ca7db90a661ea443b7} 
+override bool Godmist\+WPF.\+Utilities.\+Json\+Converters.\+Equipment\+Part\+Converter.\+Can\+Convert (\begin{DoxyParamCaption}\item[{Type}]{object\+Type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Określa, czy konwerter może obsłużyć określony typ. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Type} & Typ obiektu do sprawdzenia.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, jeśli konwerter może obsłużyć dany typ; w przeciwnym razie false.
+\end{DoxyReturn}
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_equipment_part_converter_a72b32b82c409445247b799cf5356a4e9}\index{GodmistWPF.Utilities.JsonConverters.EquipmentPartConverter@{GodmistWPF.Utilities.JsonConverters.EquipmentPartConverter}!ReadJson@{ReadJson}}
+\index{ReadJson@{ReadJson}!GodmistWPF.Utilities.JsonConverters.EquipmentPartConverter@{GodmistWPF.Utilities.JsonConverters.EquipmentPartConverter}}
+\doxysubsubsection{\texorpdfstring{ReadJson()}{ReadJson()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_equipment_part_converter_a72b32b82c409445247b799cf5356a4e9} 
+override object Godmist\+WPF.\+Utilities.\+Json\+Converters.\+Equipment\+Part\+Converter.\+Read\+Json (\begin{DoxyParamCaption}\item[{Json\+Reader}]{reader}{, }\item[{Type}]{object\+Type}{, }\item[{object}]{existing\+Value}{, }\item[{Json\+Serializer}]{serializer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Deserializuje obiekt JSON do odpowiedniego typu części wyposażenia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & Czytnik JSON.\\
+\hline
+{\em object\+Type} & Typ obiektu do przekonwertowania.\\
+\hline
+{\em existing\+Value} & Istniejąca wartość obiektu.\\
+\hline
+{\em serializer} & Wystąpienie serializatora JSON.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Zdeserializowany obiekt części wyposażenia.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Supported\+Exception} & Wyrzucany, gdy typ części wyposażenia nie jest obsługiwany.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_equipment_part_converter_af671e2c96ea3265ecdedd687c70b34c5}\index{GodmistWPF.Utilities.JsonConverters.EquipmentPartConverter@{GodmistWPF.Utilities.JsonConverters.EquipmentPartConverter}!WriteJson@{WriteJson}}
+\index{WriteJson@{WriteJson}!GodmistWPF.Utilities.JsonConverters.EquipmentPartConverter@{GodmistWPF.Utilities.JsonConverters.EquipmentPartConverter}}
+\doxysubsubsection{\texorpdfstring{WriteJson()}{WriteJson()}}
+{\footnotesize\ttfamily \label{class_godmist_w_p_f_1_1_utilities_1_1_json_converters_1_1_equipment_part_converter_af671e2c96ea3265ecdedd687c70b34c5} 
+override void Godmist\+WPF.\+Utilities.\+Json\+Converters.\+Equipment\+Part\+Converter.\+Write\+Json (\begin{DoxyParamCaption}\item[{Json\+Writer}]{writer}{, }\item[{object}]{value}{, }\item[{Json\+Serializer}]{serializer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Serializuje obiekt części wyposażenia do formatu JSON. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em writer} & Pisarz JSON.\\
+\hline
+{\em value} & Wartość do zserializowania.\\
+\hline
+{\em serializer} & Wystąpienie serializatora JSON.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Utilities/\+Json\+Converters/Equipment\+Part\+Converter.\+cs\end{DoxyCompactItemize}

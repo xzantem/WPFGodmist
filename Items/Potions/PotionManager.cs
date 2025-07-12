@@ -1,5 +1,4 @@
-﻿using System.IO;
-using ConsoleGodmist;
+using System.IO;
 using GodmistWPF.Characters.Player;
 using GodmistWPF.Combat.Modifiers;
 using GodmistWPF.Combat.Modifiers.PassiveEffects;
@@ -8,13 +7,23 @@ using GodmistWPF.Enums.Modifiers;
 using GodmistWPF.Utilities;
 using Newtonsoft.Json;
 
-
 namespace GodmistWPF.Items.Potions;
 
+/// <summary>
+/// Statyczna klasa zarządzająca systemem mikstur w grze.
+/// Odpowiada za wczytywanie komponentów, przetwarzanie efektów i generowanie losowych mikstur.
+/// </summary>
 public static class PotionManager
 {
+    /// <summary>
+    /// Lista wszystkich dostępnych komponentów mikstur wczytana z pliku konfiguracyjnego.
+    /// </summary>
     public static List<PotionComponent> PotionComponents { get; private set; }
     
+    /// <summary>
+    /// Inicjalizuje komponenty mikstur, wczytując je z pliku JSON.
+    /// </summary>
+    /// <exception cref="FileNotFoundException">Wyrzucany, gdy nie znaleziono pliku konfiguracyjnego.</exception>
     public static void InitComponents()
     {
         var path = "json/potion-components.json";
@@ -27,6 +36,11 @@ public static class PotionManager
             throw new FileNotFoundException($"JSON file not found in {path}");
     }
 
+    /// <summary>
+    /// Przetwarza efekt komponentu mikstury, uwzględniając modyfikacje z katalizatora.
+    /// </summary>
+    /// <param name="component">Komponent mikstury do przetworzenia.</param>
+    /// <param name="catalyst">Opcjonalny katalizator modyfikujący efekt.</param>
     public static void ProcessComponent(PotionComponent component, PotionCatalyst? catalyst)
     {
         var duration = 10 + (int)(catalyst?.Effect == PotionCatalystEffect.Duration ? catalyst.Strength : 0);
@@ -97,6 +111,11 @@ public static class PotionManager
         }
     }
 
+    /// <summary>
+    /// Generuje losową miksturę o określonym poziomie mocy.
+    /// </summary>
+    /// <param name="tier">Poziom mocy mikstury (1-3).</param>
+    /// <returns>Nowa instancja losowo wygenerowanej mikstury.</returns>
     public static Potion GetRandomPotion(int tier)
     {
         var possibleComponents = PotionComponents.
@@ -113,6 +132,12 @@ public static class PotionManager
                 new PotionCatalyst(UtilityMethods.RandomChoice(Enum.GetValues<PotionCatalystEffect>().ToList()), tier));
     }
 
+    /// <summary>
+    /// Generuje nazwę mikstury na podstawie jej efektów i poziomu mocy.
+    /// </summary>
+    /// <param name="effects">Lista efektów mikstury.</param>
+    /// <param name="tier">Poziom mocy mikstury.</param>
+    /// <returns>Sformatowana nazwa mikstury.</returns>
     public static string GetPotionName(List<PotionEffect> effects, int tier)
     {
         var distinct = effects.ToHashSet().ToList();
@@ -174,6 +199,12 @@ public static class PotionManager
         return txt;
     }
 
+    /// <summary>
+    /// Pobiera identyfikator materiału katalizatora na podstawie jego typu i poziomu.
+    /// </summary>
+    /// <param name="effect">Typ efektu katalizatora.</param>
+    /// <param name="tier">Poziom katalizatora (1-5).</param>
+    /// <returns>Identyfikator materiału katalizatora.</returns>
     public static string GetCatalystMaterial(PotionCatalystEffect effect, int tier)
     {
         return (effect, tier) switch
@@ -203,6 +234,12 @@ public static class PotionManager
             (PotionCatalystEffect.Capacity, 5) => "HerbalDustEarth"
         };
     }
+    /// <summary>
+    /// Oblicza siłę efektu katalizatora na podstawie jego typu i poziomu.
+    /// </summary>
+    /// <param name="effect">Typ efektu katalizatora.</param>
+    /// <param name="tier">Poziom katalizatora (1-5).</param>
+    /// <returns>Wartość siły efektu katalizatora.</returns>
     public static double GetCatalystStrength(PotionCatalystEffect effect, int tier)
     {
         if (effect != PotionCatalystEffect.Strength) return tier;
@@ -212,6 +249,12 @@ public static class PotionManager
         };
     }
 
+    /// <summary>
+    /// Wyświetla interfejs wyboru mikstury (obsługa w interfejsie użytkownika).
+    /// </summary>
+    /// <param name="potions">Lista dostępnych mikstur do wyboru.</param>
+    /// <param name="listMaterials">Czy wyświetlać informacje o materiałach.</param>
+    /// <returns>Wybraną miksturę lub null, jeśli wybór został anulowany.</returns>
     public static Potion? ChoosePotion(List<Potion> potions, bool listMaterials)
     {
         // WPF handles potion selection UI

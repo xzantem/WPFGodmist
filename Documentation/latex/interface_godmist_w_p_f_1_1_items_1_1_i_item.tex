@@ -1,0 +1,288 @@
+\doxysection{Godmist\+WPF.\+Items.\+IItem Interface Reference}
+\hypertarget{interface_godmist_w_p_f_1_1_items_1_1_i_item}{}\label{interface_godmist_w_p_f_1_1_items_1_1_i_item}\index{GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}}
+
+
+Interfejs bazowy dla wszystkich przedmiotów w grze. Definiuje podstawowe właściwości i zachowania wspólne dla wszystkich przedmiotów.  
+
+
+Inheritance diagram for Godmist\+WPF.\+Items.\+IItem\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.112994cm]{interface_godmist_w_p_f_1_1_items_1_1_i_item}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_adaa4ad0bc058f85edbe768b7b46befc2}{Inspect}} (int amount=1)
+\begin{DoxyCompactList}\small\item\em Wyświetla szczegółowe informacje o przedmiocie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_aaa795cd0c16e347636733f8c3dda0abd}{Write\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla nazwę przedmiotu z uwzględnieniem jego rzadkości. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a910a5244e608b0eee8a2d4e2150a2c1f}{Write\+Item\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla typ przedmiotu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a7864db399c3e253324934677eb57feaf}{Write\+Rarity}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla rzadkość przedmiotu. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a7d7114b8736cb248af2f1f611e574a66}{Rarity\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca nazwę rzadkości przedmiotu jako łańcuch znaków. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_aa6364dd4d5e93386c9887a5b65068e8a}{Item\+Type\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca nazwę typu przedmiotu jako łańcuch znaków. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_aa7c0739500303333ba79d83a60d46b08}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera nazwę przedmiotu. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a4918a6743daf1c3d488a727094980148}{Alias}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia alias (skróconą nazwę) przedmiotu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_ada5ec9f15576cff4b7d046a12ef79ab4}{Weight}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia wagę przedmiotu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_afd07fe16d41cf6234ce995cfc57634c8}{ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia unikalny identyfikator przedmiotu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a0f412b6f7655244181eb1d372ac41ddb}{Cost}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia wartość przedmiotu w walucie gry. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_a02934ee73a54ec124f0455457945ab1a}{Item\+Rarity}} \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_affbd29bebf9b3a0e17da29f7b65963a4}{Rarity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia rzadkość przedmiotu. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_af423d9fec16280fec5ccbecaf7d43fbe}{Stackable}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Określa, czy przedmioty tego samego typu mogą być składane w jednym slocie ekwipunku. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a3fe652d290d9677b4503e786578780b9}{Description}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia opis przedmiotu wyświetlany przy inspekcji. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_ac3d61a48fbf15693811c3ce1d463dfe0}{Item\+Type}} \mbox{\hyperlink{interface_godmist_w_p_f_1_1_items_1_1_i_item_a23f5dbd47328d6cbef2ff30a7fe15938}{Item\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia typ przedmiotu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interfejs bazowy dla wszystkich przedmiotów w grze. Definiuje podstawowe właściwości i zachowania wspólne dla wszystkich przedmiotów. 
+
+\label{doc-func-members}
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_i_item_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_i_item_adaa4ad0bc058f85edbe768b7b46befc2}\index{GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}!Inspect@{Inspect}}
+\index{Inspect@{Inspect}!GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}}
+\doxysubsubsection{\texorpdfstring{Inspect()}{Inspect()}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_items_1_1_i_item_adaa4ad0bc058f85edbe768b7b46befc2} 
+void Godmist\+WPF.\+Items.\+IItem.\+Inspect (\begin{DoxyParamCaption}\item[{int}]{amount}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+
+
+Wyświetla szczegółowe informacje o przedmiocie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & Ilość przedmiotów do wyświetlenia (dla przedmiotów składalnych).\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_acc6c4b47f0eada380e37090582522645}{Godmist\+WPF.\+Items.\+Base\+Item}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_a0562b997cae67fbbaed47c811d2dd142}{Godmist\+WPF.\+Items.\+Galdurites.\+Galdurite}}, and \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_potions_1_1_potion_a5e386d28e481b7538aebc6dce299e2af}{Godmist\+WPF.\+Items.\+Potions.\+Potion}}.
+
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_i_item_aa6364dd4d5e93386c9887a5b65068e8a}\index{GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}!ItemTypeName@{ItemTypeName}}
+\index{ItemTypeName@{ItemTypeName}!GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}}
+\doxysubsubsection{\texorpdfstring{ItemTypeName()}{ItemTypeName()}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_items_1_1_i_item_aa6364dd4d5e93386c9887a5b65068e8a} 
+string Godmist\+WPF.\+Items.\+IItem.\+Item\+Type\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Zwraca nazwę typu przedmiotu jako łańcuch znaków. 
+
+\begin{DoxyReturn}{Returns}
+Nazwa typu przedmiotu.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a6c6ca0c4731c9106cef36a4cd606c000}{Godmist\+WPF.\+Items.\+Base\+Item}}.
+
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_i_item_a7d7114b8736cb248af2f1f611e574a66}\index{GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}!RarityName@{RarityName}}
+\index{RarityName@{RarityName}!GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}}
+\doxysubsubsection{\texorpdfstring{RarityName()}{RarityName()}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_items_1_1_i_item_a7d7114b8736cb248af2f1f611e574a66} 
+string Godmist\+WPF.\+Items.\+IItem.\+Rarity\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Zwraca nazwę rzadkości przedmiotu jako łańcuch znaków. 
+
+\begin{DoxyReturn}{Returns}
+Nazwa rzadkości przedmiotu.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a3ca6652033431e54f246307f7b3e9d0d}{Godmist\+WPF.\+Items.\+Base\+Item}}.
+
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_i_item_a910a5244e608b0eee8a2d4e2150a2c1f}\index{GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}!WriteItemType@{WriteItemType}}
+\index{WriteItemType@{WriteItemType}!GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}}
+\doxysubsubsection{\texorpdfstring{WriteItemType()}{WriteItemType()}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_items_1_1_i_item_a910a5244e608b0eee8a2d4e2150a2c1f} 
+void Godmist\+WPF.\+Items.\+IItem.\+Write\+Item\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Wyświetla typ przedmiotu. 
+
+
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_ab80277caef8f091f3245e4c3680a2265}{Godmist\+WPF.\+Items.\+Base\+Item}}.
+
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_i_item_aaa795cd0c16e347636733f8c3dda0abd}\index{GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}!WriteName@{WriteName}}
+\index{WriteName@{WriteName}!GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}}
+\doxysubsubsection{\texorpdfstring{WriteName()}{WriteName()}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_items_1_1_i_item_aaa795cd0c16e347636733f8c3dda0abd} 
+void Godmist\+WPF.\+Items.\+IItem.\+Write\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Wyświetla nazwę przedmiotu z uwzględnieniem jego rzadkości. 
+
+
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a62a7b60026ec2e63d60e5bde7513c7c3}{Godmist\+WPF.\+Items.\+Base\+Item}}.
+
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_i_item_a7864db399c3e253324934677eb57feaf}\index{GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}!WriteRarity@{WriteRarity}}
+\index{WriteRarity@{WriteRarity}!GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}}
+\doxysubsubsection{\texorpdfstring{WriteRarity()}{WriteRarity()}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_items_1_1_i_item_a7864db399c3e253324934677eb57feaf} 
+void Godmist\+WPF.\+Items.\+IItem.\+Write\+Rarity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Wyświetla rzadkość przedmiotu. 
+
+
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_ab8aecf04d7121322a9515bcaccb024b5}{Godmist\+WPF.\+Items.\+Base\+Item}}.
+
+
+
+\label{doc-property-members}
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_i_item_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_i_item_a4918a6743daf1c3d488a727094980148}\index{GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}!Alias@{Alias}}
+\index{Alias@{Alias}!GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}}
+\doxysubsubsection{\texorpdfstring{Alias}{Alias}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_items_1_1_i_item_a4918a6743daf1c3d488a727094980148} 
+string Godmist\+WPF.\+Items.\+IItem.\+Alias\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia alias (skróconą nazwę) przedmiotu. 
+
+
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_ac94e206df1ac952048d7aa9c4d047add}{Godmist\+WPF.\+Items.\+Base\+Item}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_lootbags_1_1_armor_lootbag_aabf2d890753515cc67a8be16cb812178}{Godmist\+WPF.\+Items.\+Lootbags.\+Armor\+Lootbag}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_lootbags_1_1_weapon_lootbag_aa8add516ad929610e69c40431318803d}{Godmist\+WPF.\+Items.\+Lootbags.\+Weapon\+Lootbag}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_antidote_a274a46e79467cbbd39c0b61ee279cd2a}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Antidote}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_bandage_ab53657b090432301d1b976b19b5710a2}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Bandage}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_town_portal_scroll_ab7aea8fccfcaff30d3619262b9ed2391}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Town\+Portal\+Scroll}}, and \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_ae0ec0fb13b5efb6b0af7ecc5be0b1ffb}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Wet\+Towel}}.
+
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_i_item_a0f412b6f7655244181eb1d372ac41ddb}\index{GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}!Cost@{Cost}}
+\index{Cost@{Cost}!GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}}
+\doxysubsubsection{\texorpdfstring{Cost}{Cost}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_items_1_1_i_item_a0f412b6f7655244181eb1d372ac41ddb} 
+int Godmist\+WPF.\+Items.\+IItem.\+Cost\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia wartość przedmiotu w walucie gry. 
+
+
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_adb7ff1df8be6b0e46d36a69f663f989a}{Godmist\+WPF.\+Items.\+Base\+Item}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_craftable_ingredient_a08da6cd5d0c0ec4d2c592ac62792e6ec}{Godmist\+WPF.\+Items.\+Craftable\+Ingredient}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_armors_1_1_armor_a335f23e40beb472dd081c564d2039a28}{Godmist\+WPF.\+Items.\+Equippable.\+Armors.\+Armor}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_acfd1804fe260b28f1768f03a772b04de}{Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_ae8678682051f626d8c65f52e3442f73b}{Godmist\+WPF.\+Items.\+Galdurites.\+Galdurite}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_antidote_ae533eb40f9de7bc3b25f2c8e422b7947}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Antidote}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_bandage_ad5dee9c7033dbb5a29439fe6f1821e7d}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Bandage}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_town_portal_scroll_a344ec6ba17d4a0fc6d01dfab2da8450e}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Town\+Portal\+Scroll}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_a6d97ed09542b5f80fbeb8d3fa7b7bc48}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Wet\+Towel}}, and \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_potions_1_1_potion_aac09a0e0db8a7ef3f3bd341336887d28}{Godmist\+WPF.\+Items.\+Potions.\+Potion}}.
+
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_i_item_a3fe652d290d9677b4503e786578780b9}\index{GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}!Description@{Description}}
+\index{Description@{Description}!GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}}
+\doxysubsubsection{\texorpdfstring{Description}{Description}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_items_1_1_i_item_a3fe652d290d9677b4503e786578780b9} 
+string Godmist\+WPF.\+Items.\+IItem.\+Description\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia opis przedmiotu wyświetlany przy inspekcji. 
+
+
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a763204eb630704caf524369c8de6ebe6}{Godmist\+WPF.\+Items.\+Base\+Item}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_antidote_a0fc2f7a7cf920101b4f527f9913649b6}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Antidote}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_bandage_a3322565befe7f0b689e38ef93fcd1190}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Bandage}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_town_portal_scroll_aae333d4db134fe5c0f71947500309397}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Town\+Portal\+Scroll}}, and \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_ab1c88720c98f4f20e404af798c27dcd1}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Wet\+Towel}}.
+
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_i_item_afd07fe16d41cf6234ce995cfc57634c8}\index{GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}!ID@{ID}}
+\index{ID@{ID}!GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}}
+\doxysubsubsection{\texorpdfstring{ID}{ID}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_items_1_1_i_item_afd07fe16d41cf6234ce995cfc57634c8} 
+int Godmist\+WPF.\+Items.\+IItem.\+ID\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia unikalny identyfikator przedmiotu. 
+
+
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_acdb022869d8836b038d36e27e46c1e89}{Godmist\+WPF.\+Items.\+Base\+Item}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_armors_1_1_armor_aa40444c668e875d4b796dae921f0d7d3}{Godmist\+WPF.\+Items.\+Equippable.\+Armors.\+Armor}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a3a83b1b72049559504ada12b01a52786}{Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_a0824fbda2a97a76000072e3b2b38394b}{Godmist\+WPF.\+Items.\+Galdurites.\+Galdurite}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_lootbags_1_1_armor_lootbag_a2298863ba489f4ce5e421e949f88e328}{Godmist\+WPF.\+Items.\+Lootbags.\+Armor\+Lootbag}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_lootbags_1_1_lootbag_ac29675d232f3a001d28734d443512df0}{Godmist\+WPF.\+Items.\+Lootbags.\+Lootbag}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_antidote_a57209a4755159cbc88fa6359572753db}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Antidote}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_bandage_acb419c129213bd6b7d7deff69225581d}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Bandage}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_town_portal_scroll_abc2d880e8013b63cff67b490711f5e2a}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Town\+Portal\+Scroll}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_a83112dd2ffcd35338917fe8ee9320121}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Wet\+Towel}}, and \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_potions_1_1_potion_a513cc47659d2c3b653f9b3a657160dae}{Godmist\+WPF.\+Items.\+Potions.\+Potion}}.
+
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_i_item_a23f5dbd47328d6cbef2ff30a7fe15938}\index{GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}!ItemType@{ItemType}}
+\index{ItemType@{ItemType}!GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}}
+\doxysubsubsection{\texorpdfstring{ItemType}{ItemType}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_items_1_1_i_item_a23f5dbd47328d6cbef2ff30a7fe15938} 
+\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_ac3d61a48fbf15693811c3ce1d463dfe0}{Item\+Type}} Godmist\+WPF.\+Items.\+IItem.\+Item\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia typ przedmiotu. 
+
+
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a0774084b82083124b6e19ee3de21ee54}{Godmist\+WPF.\+Items.\+Base\+Item}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_armors_1_1_armor_a173b85383135e9699458b4cb13f8cb57}{Godmist\+WPF.\+Items.\+Equippable.\+Armors.\+Armor}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a3149827bd84c1058ff5aaeda0f4bce3e}{Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_lootbags_1_1_lootbag_a197b10667835c0ddb41ecb32d76814e4}{Godmist\+WPF.\+Items.\+Lootbags.\+Lootbag}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_antidote_aac6fa3b0b18b21b03c7a97151028f46c}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Antidote}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_bandage_a22145e428db239cbfabcf52362ed8c23}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Bandage}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_town_portal_scroll_a5b956ad4b55b60922dfc10e5f93b3be9}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Town\+Portal\+Scroll}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_a6851003d3c4e20b9fdb802728fe00cff}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Wet\+Towel}}, and \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_potions_1_1_potion_a1623a08c2e08ac3d887b5bd6c6574a32}{Godmist\+WPF.\+Items.\+Potions.\+Potion}}.
+
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_i_item_aa7c0739500303333ba79d83a60d46b08}\index{GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}!Name@{Name}}
+\index{Name@{Name}!GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_items_1_1_i_item_aa7c0739500303333ba79d83a60d46b08} 
+string Godmist\+WPF.\+Items.\+IItem.\+Name\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera nazwę przedmiotu. 
+
+Nazwa przedmiotu.
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a53f72ba0d1cf21654655cb745eab7ba3}{Godmist\+WPF.\+Items.\+Base\+Item}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_armors_1_1_armor_acf08b10227b9e8fb891460255fec10fa}{Godmist\+WPF.\+Items.\+Equippable.\+Armors.\+Armor}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_aa2fae0a860c0def2082a730e3fc4c99e}{Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_a043f2b7c51da6e2d546c96b2d6f7798f}{Godmist\+WPF.\+Items.\+Galdurites.\+Galdurite}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_lootbags_1_1_lootbag_a8b3789e4b953995c2013cdbd9ce45486}{Godmist\+WPF.\+Items.\+Lootbags.\+Lootbag}}, and \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_potions_1_1_potion_a8919c37b0c083e7c64466e92affb5c4d}{Godmist\+WPF.\+Items.\+Potions.\+Potion}}.
+
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_i_item_affbd29bebf9b3a0e17da29f7b65963a4}\index{GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}!Rarity@{Rarity}}
+\index{Rarity@{Rarity}!GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}}
+\doxysubsubsection{\texorpdfstring{Rarity}{Rarity}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_items_1_1_i_item_affbd29bebf9b3a0e17da29f7b65963a4} 
+\mbox{\hyperlink{namespace_godmist_w_p_f_1_1_enums_1_1_items_a02934ee73a54ec124f0455457945ab1a}{Item\+Rarity}} Godmist\+WPF.\+Items.\+IItem.\+Rarity\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia rzadkość przedmiotu. 
+
+
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_ab8d911e0148244bb7b11241cddf824a6}{Godmist\+WPF.\+Items.\+Base\+Item}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_lootbags_1_1_lootbag_acf0e019d977b220c4fba80e244469754}{Godmist\+WPF.\+Items.\+Lootbags.\+Lootbag}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_antidote_afe629199d80698177a5e729a7a71df92}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Antidote}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_bandage_a5858284dfd90a59980faff235a698e7a}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Bandage}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_town_portal_scroll_a4b621d09c3d6c039d4ee993c82119864}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Town\+Portal\+Scroll}}, and \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_ab200b532f684c3359094e0cd8a6b0584}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Wet\+Towel}}.
+
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_i_item_af423d9fec16280fec5ccbecaf7d43fbe}\index{GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}!Stackable@{Stackable}}
+\index{Stackable@{Stackable}!GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}}
+\doxysubsubsection{\texorpdfstring{Stackable}{Stackable}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_items_1_1_i_item_af423d9fec16280fec5ccbecaf7d43fbe} 
+bool Godmist\+WPF.\+Items.\+IItem.\+Stackable\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Określa, czy przedmioty tego samego typu mogą być składane w jednym slocie ekwipunku. 
+
+
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_afc676c9421e9ad3df5d549ef44c3ae89}{Godmist\+WPF.\+Items.\+Base\+Item}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_armors_1_1_armor_ad4318ccbf448d47813e75380deb17b1f}{Godmist\+WPF.\+Items.\+Equippable.\+Armors.\+Armor}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a20a5ed93acad8ce3b8ca1889823f3e2d}{Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_a16a7e803350254fce0d89bb31506cea7}{Godmist\+WPF.\+Items.\+Galdurites.\+Galdurite}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_lootbags_1_1_lootbag_a57282f386962f55ab948eb0d947110d2}{Godmist\+WPF.\+Items.\+Lootbags.\+Lootbag}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_antidote_a30b04219336d4deab0a9eb79c74abfb9}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Antidote}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_bandage_a0787d4507e6aec9c2f926427ba778ac6}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Bandage}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_town_portal_scroll_aa48b9e50e96651796e48d7c0c9e3e6e5}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Town\+Portal\+Scroll}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_ad2366cffda61d6b5e674061262dd25cf}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Wet\+Towel}}, and \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_potions_1_1_potion_a8830ab5e06412084c19026745da8f9b0}{Godmist\+WPF.\+Items.\+Potions.\+Potion}}.
+
+\Hypertarget{interface_godmist_w_p_f_1_1_items_1_1_i_item_ada5ec9f15576cff4b7d046a12ef79ab4}\index{GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}!Weight@{Weight}}
+\index{Weight@{Weight}!GodmistWPF.Items.IItem@{GodmistWPF.Items.IItem}}
+\doxysubsubsection{\texorpdfstring{Weight}{Weight}}
+{\footnotesize\ttfamily \label{interface_godmist_w_p_f_1_1_items_1_1_i_item_ada5ec9f15576cff4b7d046a12ef79ab4} 
+int Godmist\+WPF.\+Items.\+IItem.\+Weight\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia wagę przedmiotu. 
+
+
+
+Implemented in \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_base_item_a171769b2a12d37acc3f45a1adfe614b6}{Godmist\+WPF.\+Items.\+Base\+Item}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_armors_1_1_armor_aa601822ae6c1bf5fed1be5fa7c5a1238}{Godmist\+WPF.\+Items.\+Equippable.\+Armors.\+Armor}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_equippable_1_1_weapons_1_1_weapon_a2ab1c96e6648f93f6602cd0f9b78a8ba}{Godmist\+WPF.\+Items.\+Equippable.\+Weapons.\+Weapon}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_galdurites_1_1_galdurite_af742d88741ae83d139165bbca78c603a}{Godmist\+WPF.\+Items.\+Galdurites.\+Galdurite}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_lootbags_1_1_lootbag_a89f616f21826f77192e72dfc951ebd97}{Godmist\+WPF.\+Items.\+Lootbags.\+Lootbag}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_antidote_a4d78684b41d23728ae4cd6d0341304e7}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Antidote}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_bandage_a6020e84b483dfbf7b8b53b8a9c381c44}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Bandage}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_town_portal_scroll_af332a91eb57073ce5aa6b73b93020ae0}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Town\+Portal\+Scroll}}, \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_misc_items_1_1_wet_towel_ac850ccb731c88d6b84ac0a0ad8f89315}{Godmist\+WPF.\+Items.\+Misc\+Items.\+Wet\+Towel}}, and \mbox{\hyperlink{class_godmist_w_p_f_1_1_items_1_1_potions_1_1_potion_a1f78da4a7d140f8b5d92daa5a08bf123}{Godmist\+WPF.\+Items.\+Potions.\+Potion}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Items/IItem.\+cs\end{DoxyCompactItemize}

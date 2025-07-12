@@ -1,4 +1,3 @@
-﻿using ConsoleGodmist;
 using GodmistWPF.Characters.Player;
 using GodmistWPF.Combat.Modifiers.PassiveEffects;
 using GodmistWPF.Enums;
@@ -6,38 +5,112 @@ using GodmistWPF.Enums.Items;
 using GodmistWPF.Items.Galdurites;
 using GodmistWPF.Utilities;
 using Newtonsoft.Json;
+
 namespace GodmistWPF.Items.Equippable.Weapons;
 
+/// <summary>
+/// Reprezentuje broń, którą może wyposażyć postać.
+/// Składa się z trzech komponentów: głowicy, oprawy i rękojeści.
+/// Implementuje interfejsy IEquippable i IUsable.
+/// </summary>
 public class Weapon : BaseItem, IEquippable, IUsable
 {
-    //Base IItem implementations
+    // Implementacja interfejsu IItem
+    
+    /// <summary>
+    /// Nazwa broni.
+    /// </summary>
     public override string Name { get; set; }
+    
+    /// <summary>
+    /// Waga broni.
+    /// </summary>
     [JsonIgnore]
     public override int Weight => 5;
+    
+    /// <summary>
+    /// Unikalny identyfikator broni.
+    /// </summary>
     [JsonIgnore]
     public override int ID => 559;
+    
+    /// <summary>
+    /// Bazowy koszt broni przed uwzględnieniem modyfikatorów jakości i rzadkości.
+    /// </summary>
     public int BaseCost { get; set; }
 
+    /// <summary>
+    /// Koszt broni uwzględniający modyfikator rzadkości.
+    /// </summary>
     [JsonIgnore]
     public override int Cost => (int)(BaseCost * EquippableItemService.RarityPriceModifier(Rarity));
+    
+    /// <summary>
+    /// Określa, czy przedmiot może być składowany w stosie.
+    /// Dla broni zawsze zwraca false.
+    /// </summary>
     [JsonIgnore]
     public override bool Stackable => false;
+    
+    /// <summary>
+    /// Typ przedmiotu - zawsze zwraca ItemType.Weapon.
+    /// </summary>
     [JsonIgnore]
     public override ItemType ItemType => ItemType.Weapon;
     
-    //Base IEquippable implementations
+    // Implementacja interfejsu IEquippable
+    
+    /// <summary>
+    /// Wymagany poziom postaci do założenia broni.
+    /// </summary>
     public int RequiredLevel { get; set; }
-    public CharacterClass RequiredClass { get; set;  }
+    
+    /// <summary>
+    /// Klasa postaci, która może używać tej broni.
+    /// </summary>
+    public CharacterClass RequiredClass { get; set; }
+    
+    /// <summary>
+    /// Jakość wykonania broni, wpływająca na jej statystyki.
+    /// </summary>
     public Quality Quality { get; set; }
+    
+    /// <summary>
+    /// Modyfikator ulepszenia broni, wpływający na jej statystyki.
+    /// </summary>
     public double UpgradeModifier { get; set; }
+    
+    /// <summary>
+    /// Lista galdurytów wpiętych w broń.
+    /// </summary>
     public List<Galdurite> Galdurites { get; set; }
+    
+    /// <summary>
+    /// Liczba dostępnych gniazd na galduryty, zależna od poziomu ulepszenia.
+    /// </summary>
     public int GalduriteSlots => (int)Math.Floor(UpgradeModifier * 5 - 5);
 
-    //Weapon implementations
+    // Właściwości specyficzne dla broni
     
+    /// <summary>
+    /// Głowica broni, określająca podstawowe obrażenia i modyfikatory krytyczne.
+    /// </summary>
     public WeaponHead Head { get; set; }
+    
+    /// <summary>
+    /// Oprawa broni, wpływająca na dodatkowe modyfikatory obrażeń.
+    /// </summary>
     public WeaponBinder Binder { get; set; }
+    
+    /// <summary>
+    /// Rękojeść broni, wpływająca na celność i dodatkowe modyfikatory.
+    /// </summary>
     public WeaponHandle Handle { get; set; }
+    
+    /// <summary>
+    /// Minimalna wartość obrażeń zadawanych przez broń.
+    /// Obliczana na podstawie głowicy, klasy postaci i jakości broni.
+    /// </summary>
     [JsonIgnore]
     public int MinimalAttack
     {
@@ -64,6 +137,11 @@ public class Weapon : BaseItem, IEquippable, IUsable
             return (int)value;
         }
     }
+    
+    /// <summary>
+    /// Maksymalna wartość obrażeń zadawanych przez broń.
+    /// Obliczana na podstawie głowicy, klasy postaci i jakości broni.
+    /// </summary>
     [JsonIgnore]
     public int MaximalAttack
     {
@@ -90,6 +168,10 @@ public class Weapon : BaseItem, IEquippable, IUsable
             return (int)value;
         }
     }
+    
+    /// <summary>
+    /// Szansa na trafienie krytyczne (dla klasy Maga zwraca regenerację many).
+    /// </summary>
     [JsonIgnore]
     public double CritChance // Mage gains Mana regen instead of CritChance
     {
@@ -118,6 +200,10 @@ public class Weapon : BaseItem, IEquippable, IUsable
             return value;
         }
     }
+    
+    /// <summary>
+    /// Modyfikator obrażeń krytycznych.
+    /// </summary>
     [JsonIgnore]
     public double CritMod
     {
@@ -144,6 +230,10 @@ public class Weapon : BaseItem, IEquippable, IUsable
             return value;
         }
     }
+    
+    /// <summary>
+    /// Celność broni (dla klasy Maga zwraca maksymalną ilość many).
+    /// </summary>
     [JsonIgnore]
     public int Accuracy // Mage gains Maximal Mana instead of Accuracy
     {
@@ -173,6 +263,15 @@ public class Weapon : BaseItem, IEquippable, IUsable
         }
     }
 
+    /// <summary>
+    /// Inicjalizuje nową instancję klasy Weapon z podanymi komponentami i parametrami.
+    /// </summary>
+    /// <param name="head">Głowica broni.</param>
+    /// <param name="binder">Oprawa broni.</param>
+    /// <param name="handle">Rękojeść broni.</param>
+    /// <param name="requiredClass">Klasa postaci wymagana do używania broni.</param>
+    /// <param name="quality">Jakość wykonania broni.</param>
+    /// <param name="alias">Opcjonalny alias dla niestandardowej nazwy broni.</param>
     public Weapon(WeaponHead head, WeaponBinder binder, WeaponHandle handle, CharacterClass requiredClass, 
         Quality quality, string alias = "")
     {
@@ -223,10 +322,13 @@ public class Weapon : BaseItem, IEquippable, IUsable
         Galdurites = new List<Galdurite>();
     }
     /// <summary>
-    /// Gets Starter weapon for the specified class
+    /// Inicjalizuje nową instancję klasy Weapon jako broń startową dla określonej klasy postaci.
     /// </summary>
-    /// <param name="requiredClass"></param>
-    /// <exception cref="ArgumentOutOfRangeException"></exception>
+    /// <param name="requiredClass">Klasa postaci, dla której ma zostać utworzona broń startowa.</param>
+    /// <exception cref="ArgumentOutOfRangeException">Wyrzucany, gdy podano nieobsługiwaną klasę postaci.</exception>
+    /// <remarks>
+    /// Dla każdej klasy postaci generowana jest inna broń startowa o odpowiednich właściwościach.
+    /// </remarks>
     public Weapon(CharacterClass requiredClass)
     {
         switch (requiredClass)
@@ -267,30 +369,38 @@ public class Weapon : BaseItem, IEquippable, IUsable
         UpgradeModifier = 1;
         Galdurites = new List<Galdurite>();
     }
+    /// <summary>
+    /// Inicjalizuje nową, pustą instancję klasy Weapon.
+    /// Konstruktor używany przez mechanizm deserializacji JSON.
+    /// </summary>
     public Weapon() {}
 
+    /// <summary>
+    /// Próbuje wyposażyć broń na aktualnie wybranej postaci.
+    /// </summary>
+    /// <returns>
+    /// True, jeśli udało się wyposażyć broń; w przeciwnym razie false.
+    /// </returns>
+    /// <remarks>
+    /// Sprawdza, czy postać może używać tej broni (odpowiednia klasa i poziom).
+    /// </remarks>
     public bool Use()
     {
         if (RequiredClass != PlayerHandler.player.CharacterClass)
-        {
-            // WPF handles wrong class error display through UI
             return false;
-        }
         if (RequiredLevel > PlayerHandler.player.Level)
-        {
-            // WPF handles level too low error display through UI
             return false;
-        }
         PlayerHandler.player.SwitchWeapon(this);
         return true;
     }
 
-    public override void Inspect(int amount = 1)
-    {
-        base.Inspect(amount);
-        // WPF handles weapon inspection display through UI
-    }
-
+    /// <summary>
+    /// Aktualizuje efekty pasywne wynikające z galdurytów wpiętych w broń.
+    /// </summary>
+    /// <param name="player">Postać, której mają zostać zaktualizowane efekty.</param>
+    /// <remarks>
+    /// Usuwa stare efekty i dodaje nowe na podstawie aktualnie wpiętych galdurytów.
+    /// </remarks>
     public virtual void UpdatePassives(PlayerCharacter player)
     {
         player.PassiveEffects.InnateEffects.RemoveAll(x => x.Source == "WeaponGaldurites");
@@ -299,6 +409,14 @@ public class Weapon : BaseItem, IEquippable, IUsable
         foreach (var effect in EquippableItemService.GetInnatePassiveEffects(false, player, 
                      GetEffectSums())) player.PassiveEffects.Add(effect);
     }
+    /// <summary>
+    /// Dodaje galduryt do broni, jeśli jest to możliwe.
+    /// </summary>
+    /// <param name="galdurite">Galduryt do dodania.</param>
+    /// <remarks>
+    /// Sprawdza, czy są wolne gniazda i czy typ galdurytu pasuje do broni.
+    /// Po dodaniu aktualizuje efekty pasywne i ujawnia właściwości galdurytu.
+    /// </remarks>
     public void AddGaldurite(Galdurite galdurite)
     {
         if (Galdurites.Count >= GalduriteSlots || galdurite.ItemType != ItemType.WeaponGaldurite) return;
@@ -306,12 +424,26 @@ public class Weapon : BaseItem, IEquippable, IUsable
         UpdatePassives(PlayerHandler.player);
         galdurite.Reveal();
     }
+    /// <summary>
+    /// Usuwa galduryt z broni.
+    /// </summary>
+    /// <param name="galdurite">Galduryt do usunięcia.</param>
+    /// <remarks>
+    /// Po usunięciu aktualizuje efekty pasywne postaci.
+    /// </remarks>
     public void RemoveGaldurite(Galdurite galdurite)
     {
         Galdurites.Remove(galdurite);
         UpdatePassives(PlayerHandler.player);
     }
 
+    /// <summary>
+    /// Oblicza sumaryczne wartości efektów z wszystkich wpiętych galdurytów.
+    /// </summary>
+    /// <returns>Zbiór komponentów galdurytów z zsumowanymi wartościami efektów.</returns>
+    /// <remarks>
+    /// Łączy efekty tego samego typu, sumując ich wartości.
+    /// </remarks>
     private HashSet<GalduriteComponent> GetEffectSums()
     {
         var result = new HashSet<GalduriteComponent>();
